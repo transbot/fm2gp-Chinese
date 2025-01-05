@@ -1,7 +1,7 @@
 # fm2gp-Chinese
 这个项目包含《数学与泛型编程：高效编程的奥秘》的配套资源；This project contains the source code for the Chinese edition of book From Mathematics to Generic Programming by Alexander A. Stepanov &amp; Daniel E. Rose
 1. 本书预计于2025年由清华大学出版社出版。
-2. 本项目为这本书描述的各种算法提供了可视化、可操作的Web app。方便您体验每种算法的运算过程。另外，当然还包含了原书的配套代码。
+2. 本项目为这本书描述的各种算法提供了可视化、可操作的Web app。方便您体验每种算法的运算过程。另外，当然还包含了原书的配套代码和习题答案。
 3. 随着翻译过程的进行，会不断完善。
 
 ## 中文版主页请访问[周靖的博客](https://bookzhou.com)
