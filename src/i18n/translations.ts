@@ -1,0 +1,42 @@
+export const translations = {
+  en: {
+    visualizations: 'Algorithm Visualizations',
+    contents: 'Contents',
+    egyptianMultiplication: 'Section 2.1 - Egyptian Multiplication (Russian Multiplication)',
+    backToHome: 'Back to Home',
+    title: 'Egyptian Multiplication (Russian Multiplication)',
+    description: 'An ancient method of multiplication using doubling and addition',
+    multiply: 'Multiply',
+    firstNumber: 'First Number',
+    secondNumber: 'Second Number',
+    calculate: 'Calculate',
+    steps: 'Steps',
+    result: 'Result',
+    doubling: 'Doubling',
+    powers: 'Powers of Two',
+    selected: 'Selected',
+    finalSum: 'Final Sum',
+    language: '中文',
+    reset: 'Reset'
+  },
+  zh: {
+    visualizations: '算法可视化',
+    contents: '目录',
+    egyptianMultiplication: '2.1节 - 埃及乘法(俄式乘法)',
+    backToHome: '返回主页',
+    title: '埃及乘法(俄式乘法)',
+    description: '一种使用倍增和加法的古代乘法方法',
+    multiply: '相乘',
+    firstNumber: '第一个数',
+    secondNumber: '第二个数',
+    calculate: '计算',
+    steps: '步骤',
+    result: '结果',
+    doubling: '倍增',
+    powers: '2的幂',
+    selected: '选中',
+    finalSum: '最终和',
+    language: 'English',
+    reset: '重置'
+  }
+}
