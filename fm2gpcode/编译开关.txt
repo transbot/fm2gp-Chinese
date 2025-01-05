@@ -1,0 +1,4 @@
+You will need to compile with the following flags: -stdlib=libc++ -std=c++11
+if these are not your compiler's default library and language version settings already.
+注：如果使用MSVC，请使用以下编译开关： /EHsc
+例如： cl /EHsc ch02.cpp
