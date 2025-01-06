@@ -22,6 +22,21 @@ export function Calculator() {
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
+  const handleKeyPress = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' && firstNumber && secondNumber) {
+      calculate();
+    }
+  };
+
+  const handleNumberInput = (e: React.ChangeEvent<HTMLInputElement>, setter: (value: number) => void) => {
+    const value = e.target.value.replace(/[^\d-]/g, '');
+    if (value === '' || value === '-') {
+      setter(0);
+    } else {
+      setter(Number(value));
+    }
+  };
+
   const calculate = () => {
     if (!firstNumber || !secondNumber) return;
 
@@ -74,7 +89,8 @@ export function Calculator() {
           <input
             type="number"
             value={firstNumber || ''}
-            onChange={(e) => setFirstNumber(Number(e.target.value))}
+            onChange={(e) => handleNumberInput(e, setFirstNumber)}
+            onKeyPress={handleKeyPress}
             className="w-full px-4 py-2 border rounded-lg"
           />
         </div>
@@ -85,7 +101,8 @@ export function Calculator() {
           <input
             type="number"
             value={secondNumber || ''}
-            onChange={(e) => setSecondNumber(Number(e.target.value))}
+            onChange={(e) => handleNumberInput(e, setSecondNumber)}
+            onKeyPress={handleKeyPress}
             className="w-full px-4 py-2 border rounded-lg"
           />
         </div>

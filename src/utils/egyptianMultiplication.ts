@@ -13,13 +13,13 @@ export function calculateEgyptianMultiplication(multiplicand: number, multiplier
   
   const steps: Step[] = [];
   let power = 1;
-  let value = n1;
+  let value = n2;
 
-  while (power <= n2) {
+  while (power <= n1) {
     steps.push({
       powerOfTwo: power,
       value,
-      isSelected: (n2 & power) !== 0
+      isSelected: (n1 & power) !== 0
     });
     power *= 2;
     value *= 2;

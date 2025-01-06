@@ -20,8 +20,8 @@ export function CalculationDisplay({ steps, result, firstNumber, secondNumber, l
 
   const getAdditionFormula = (steps: Step[], firstNumber: number, secondNumber: number, result: number) => {
     const selectedSteps = steps.filter(step => step.isSelected);
-    const terms = selectedSteps.map(step => `(${step.powerOfTwo}×${firstNumber})`);
-    return `${firstNumber}×${secondNumber}=${terms.join('+')}=${result}`;
+    const terms = selectedSteps.map(step => `${step.value}`);
+    return `${secondNumber}×${firstNumber}=${terms.join('+')}=${result}`;
   };
 
   return (
