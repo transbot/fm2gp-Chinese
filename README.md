@@ -5,7 +5,7 @@
 3. 随着翻译过程的进行，会不断完善。
 
 ## 中文版主页请访问[周靖的博客](https://bookzhou.com)
-## 中英文版算法可视化Web app请访问[Web app](https://fmpgp-chinese.netlify.app/)
+## 中英文版算法可视化[Web app](https://fm2gp-chinese.netlify.app/)
 
 **若不通晓数学，便难以真正理解世间万物。** ——罗杰·培根，《大著作》 
 
