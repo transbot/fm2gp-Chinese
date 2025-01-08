@@ -157,7 +157,6 @@ export function Sieve() {
       {numbers.length > 0 && (
         <>
           <div className="grid grid-cols-10 gap-2">
-            <div className="p-2 text-center rounded bg-green-500 text-white">2</div>
             {numbers.map((num, index) => (
               <div
                 key={index}
