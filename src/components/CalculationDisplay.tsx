@@ -21,7 +21,11 @@ export function CalculationDisplay({ steps, result, firstNumber, secondNumber, l
   const getAdditionFormula = (steps: Step[], firstNumber: number, secondNumber: number, result: number) => {
     const selectedSteps = steps.filter(step => step.isSelected);
     const terms = selectedSteps.map(step => `${step.value}`);
-    return `${secondNumber}×${firstNumber}=${terms.join('+')}=${result}`;
+    const formula = `${secondNumber}×${firstNumber}=`;
+    if (terms.length > 3) {
+      return `${formula}\n${terms.join('+')}\n=${result}`;
+    }
+    return `${formula}${terms.join('+')}=${result}`;
   };
 
   return (
@@ -59,9 +63,9 @@ export function CalculationDisplay({ steps, result, firstNumber, secondNumber, l
       {result !== null && (
         <div className="p-4 bg-blue-50 rounded-lg">
           <h3 className="font-bold text-lg mb-2">{t.result}</h3>
-          <p className="text-xl font-mono">
+          <pre className="text-xl font-mono whitespace-pre-wrap">
             {getAdditionFormula(steps, firstNumber, secondNumber, result)}
-          </p>
+          </pre>
         </div>
       )}
     </div>

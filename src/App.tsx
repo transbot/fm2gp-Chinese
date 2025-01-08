@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Calculator } from './components/Calculator';
+import { Sieve } from './components/Sieve';
 import { Home } from './pages/Home';
 import { LanguageProvider } from './context/LanguageContext';
 
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/multiply" element={<Calculator />} />
+          <Route path="/sieve" element={<Sieve />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>

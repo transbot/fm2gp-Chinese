@@ -37,6 +37,14 @@ export function Home() {
                 {t.egyptianMultiplication}
               </Link>
             </li>
+            <li>
+              <Link
+                to="/sieve"
+                className="text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                {t.sieveOfEratosthenes}
+              </Link>
+            </li>
             {/* More algorithms will be added here */}
           </ul>
         </div>
