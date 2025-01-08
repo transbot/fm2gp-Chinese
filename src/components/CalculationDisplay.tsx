@@ -21,7 +21,7 @@ export function CalculationDisplay({ steps, result, firstNumber, secondNumber, l
   const getAdditionFormula = (steps: Step[], firstNumber: number, secondNumber: number, result: number) => {
     const selectedSteps = steps.filter(step => step.isSelected);
     const terms = selectedSteps.map(step => `${step.value}`);
-    const formula = `${secondNumber}×${firstNumber}=`;
+    const formula = `${firstNumber}×${secondNumber}=`;
     if (terms.length > 3) {
       return `${formula}\n${terms.join('+')}\n=${result}`;
     }
