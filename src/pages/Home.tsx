@@ -45,6 +45,14 @@ export function Home() {
                 {t.sieveOfEratosthenes}
               </Link>
             </li>
+            <li>
+              <Link
+                to="/prime-counting"
+                className="text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                {t.primeCounting}
+              </Link>
+            </li>
             {/* More algorithms will be added here */}
           </ul>
         </div>
