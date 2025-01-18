@@ -30,15 +30,21 @@ export function Sieve() {
   const handleNumberInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.replace(/[^\d]/g, '');
     if (value === '') {
-      setMaxNumber(0);
+      setMaxNumber(2);
     } else {
       const num = Number(value);
-      setMaxNumber(num > 9999 ? 9999 : num);
+      setMaxNumber(Math.max(2, Math.min(9999, num)));
     }
   };
 
   const generateNumbers = () => {
-    if (!maxNumber || maxNumber < 2) return;
+    if (!maxNumber || maxNumber > 9999) return;
+    
+    // Auto-correct value of 1 to 2
+    if (maxNumber === 1) {
+      setMaxNumber(2);
+      maxNumber = 2;
+    }
 
     // Start with odd numbers only
     const nums: NumberCell[] = Array.from({ length: Math.floor((maxNumber - 1) / 2) }, (_, i) => ({
@@ -120,20 +126,26 @@ export function Sieve() {
           <label className="block text-sm font-medium text-gray-700">
             {t.maxNumber}
           </label>
+          <div className="relative">
           <input
             type="number"
             min="2"
             max="9999"
-            value={maxNumber || ''}
+            value={maxNumber || '2'}
             onChange={handleNumberInput}
             onKeyPress={handleKeyPress}
             className="w-full px-4 py-2 border rounded-lg"
           />
+          <p className="mt-1 text-sm text-gray-500">
+            {lang === 'en' ? '(2-9999)' : '(2-9999的整数)'}
+          </p>
+          </div>
         </div>
 
         <div className="flex gap-4">
           <button
             onClick={generateNumbers}
+            disabled={maxNumber < 2 || maxNumber > 9999}
             className="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
           >
             {t.generate}

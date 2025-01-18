@@ -53,6 +53,14 @@ export function Home() {
                 {t.primeCounting}
               </Link>
             </li>
+            <li>
+              <Link
+                to="/palindromic-primes"
+                className="text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                {t.palindromicPrimes}
+              </Link>
+            </li>
             {/* More algorithms will be added here */}
           </ul>
         </div>
