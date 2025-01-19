@@ -33,7 +33,9 @@ export const translations = {
     selected: 'Selected',
     finalSum: 'Final Sum',
     language: '中文',
-    reset: 'Reset'
+    reset: 'Reset',
+    baseError: 'Base must be at least 2',
+    maxNumberError: 'Maximum number must be at least 2'
   },
   zh: {
     visualizations: '算法可视化',
@@ -69,6 +71,8 @@ export const translations = {
     selected: '选中',
     finalSum: '最终和',
     language: 'English',
-    reset: '重置'
+    reset: '重置',
+    baseError: '至少为2进制',
+    maxNumberError: '最大数至少为2'
   }
 }

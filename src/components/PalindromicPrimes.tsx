@@ -9,6 +9,8 @@ export function PalindromicPrimes() {
   const [maxNumber, setMaxNumber] = useState<number>(0);
   const [inputBase, setInputBase] = useState<string>('10');
   const [currentBase, setCurrentBase] = useState<number>(10);
+  const [baseError, setBaseError] = useState<string>('');
+  const [maxNumberError, setMaxNumberError] = useState<string>('');
   const [numbers, setNumbers] = useState<{value: number, display: string, isPalindromicPrime: boolean}[]>([]);
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
@@ -40,9 +42,11 @@ export function PalindromicPrimes() {
   const handleNumberInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.replace(/[^\d]/g, '');
     if (value === '') {
+      setMaxNumberError('');
       setMaxNumber(0);
     } else {
       const num = Number(value);
+      setMaxNumberError('');
       setMaxNumber(num > 9999 ? 9999 : num);
     }
   };
@@ -50,20 +54,65 @@ export function PalindromicPrimes() {
   const handleBaseInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.replace(/[^\d]/g, '');
     if (value === '') {
+      setBaseError('');
       setInputBase('');
-    } else {
-      const num = Number(value);
-      if (num < 2) setInputBase('2');
-      else if (num > 36) setInputBase('36');
-      else setInputBase(value);
+      return;
+    }
+    
+    const num = Number(value);
+    if (num >= 2 && num <= 36) {
+      setBaseError('');
+      setInputBase(value);
+    } else if (num > 36) {
+      setBaseError('');
+      setInputBase('36');
+    } else if (value === '1') {
+      // Allow typing "1" without immediately changing to "2"
+      setInputBase('1');
+    } else if (num < 2) {
+      setBaseError('');
+      setInputBase('2');
     }
   };
 
-  const generateNumbers = () => {
-    if (!maxNumber || maxNumber < 2) return;
+  const validateBaseBeforeGenerate = () => {
+    if (!inputBase) {
+      setInputBase('10');
+      return 10;
+    }
+    
+    const num = Number(inputBase);
+    if (num === 1) {
+      setBaseError(t.baseError);
+      return 0;
+    } else if (num < 2) {
+      setInputBase('2');
+      return 2;
+    } else if (num > 36) {
+      setInputBase('36');
+      return 36;
+    }
+    return num;
+    return num;
+  };
 
-    // Parse and validate base before generating numbers
-    const base = Number(inputBase) || 10;
+  const validateMaxNumberBeforeGenerate = () => {
+    if (!maxNumber || maxNumber < 2) {
+      setMaxNumberError(t.maxNumberError);
+      return false;
+    }
+    return true;
+  };
+
+  const generateNumbers = () => {
+    setBaseError('');
+    setMaxNumberError('');
+
+    if (!validateMaxNumberBeforeGenerate()) return;
+
+    const base = validateBaseBeforeGenerate();
+    if (base === 0) return; // Invalid base, error is already set
+    
     setCurrentBase(base);
 
     const primes = [];
@@ -101,6 +150,8 @@ export function PalindromicPrimes() {
   const reset = () => {
     setNumbers([]);
     setMaxNumber(0);
+    setBaseError('');
+    setMaxNumberError('');
     setInputBase('10');
     setCurrentBase(10);
   };
@@ -144,6 +195,13 @@ export function PalindromicPrimes() {
               onKeyPress={handleKeyPress}
               className="w-full px-4 py-2 border rounded-lg"
             />
+            <p className="mt-1 text-sm text-gray-500">
+              {maxNumberError ? (
+                <span className="text-red-500">{maxNumberError}</span>
+              ) : (
+                lang === 'en' ? '(2-9999)' : '(2-9999)'
+              )}
+            </p>
           </div>
 
           <div className="space-y-2">
@@ -160,7 +218,11 @@ export function PalindromicPrimes() {
               className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             />
             <p className="mt-1 text-sm text-gray-500">
-              {lang === 'en' ? '(2-36)' : '(2-36进制)'}
+              {baseError ? (
+                <span className="text-red-500">{baseError}</span>
+              ) : (
+                lang === 'en' ? '(2-36)' : '(2-36进制)'
+              )}
             </p>
           </div>
         </div>
