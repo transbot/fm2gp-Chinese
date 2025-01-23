@@ -61,7 +61,14 @@ export function Home() {
                 {t.palindromicPrimes}
               </Link>
             </li>
-            {/* More algorithms will be added here */}
+            <li>
+              <Link
+                to="/gcm"
+                className="text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                {t.euclideanGcm}
+              </Link>
+            </li>
           </ul>
         </div>
 
