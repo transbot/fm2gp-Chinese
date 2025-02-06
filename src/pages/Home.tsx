@@ -69,6 +69,14 @@ export function Home() {
                 {t.euclideanGcm}
               </Link>
             </li>
+            <li>
+              <Link
+                to="/prime-checker"
+                className="text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                {t.primeChecker}
+              </Link>
+            </li>
           </ul>
         </div>
 

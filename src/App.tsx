@@ -5,6 +5,7 @@ import { Sieve } from './components/Sieve';
 import { PrimeCounting } from './components/PrimeCounting';
 import { PalindromicPrimes } from './components/PalindromicPrimes';
 import { Gcm } from './components/Gcm';
+import { PrimeChecker } from './components/PrimeChecker';
 import { Home } from './pages/Home';
 import { LanguageProvider } from './context/LanguageContext';
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/prime-counting" element={<PrimeCounting />} />
           <Route path="/palindromic-primes" element={<PalindromicPrimes />} />
           <Route path="/gcm" element={<Gcm />} />
+          <Route path="/prime-checker" element={<PrimeChecker />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
@@ -26,4 +28,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
