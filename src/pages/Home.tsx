@@ -77,6 +77,22 @@ export function Home() {
                 {t.primeChecker}
               </Link>
             </li>
+            <li>
+              <Link
+                to="/fibonacci"
+                className="text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                {t.fibonacci}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/fast-fibonacci"
+                className="text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                {t.fastFibonacci}
+              </Link>
+            </li>
           </ul>
         </div>
 

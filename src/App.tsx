@@ -6,6 +6,8 @@ import { PrimeCounting } from './components/PrimeCounting';
 import { PalindromicPrimes } from './components/PalindromicPrimes';
 import { Gcm } from './components/Gcm';
 import { PrimeChecker } from './components/PrimeChecker';
+import { Fibonacci } from './components/Fibonacci';
+import { FastFibonacci } from './components/FastFibonacci';
 import { Home } from './pages/Home';
 import { LanguageProvider } from './context/LanguageContext';
 
@@ -21,6 +23,8 @@ function App() {
           <Route path="/palindromic-primes" element={<PalindromicPrimes />} />
           <Route path="/gcm" element={<Gcm />} />
           <Route path="/prime-checker" element={<PrimeChecker />} />
+          <Route path="/fibonacci" element={<Fibonacci />} />
+          <Route path="/fast-fibonacci" element={<FastFibonacci />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
