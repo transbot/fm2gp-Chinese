@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <utility> // 为了使用std::pair
 
 // 定义 line_segment 和 integer 类型

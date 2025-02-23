@@ -67,9 +67,15 @@ export const translations = {
     additionCount: 'Number of additions performed:',
     fibonacciCode: 'Basic recursive algorithm:',
     inputTooLarge: 'Input must be between 0 and 40',
-    fastFibonacciInput: 'Enter n (0-1000)',
+    fastFibonacciInput: 'Enter n (0-5000)',
     fastFibonacciResult: 'The nth Fibonacci number is:',
-    fastFibonacciTooLarge: 'Input must be between 0 and 1000'
+    fastFibonacciTooLarge: 'Input must be between 0 and 5000',
+    fastFibonacciOperations: 'Operation counts:',
+    additions: 'Additions:',
+    subtractions: 'Subtractions:',
+    multiplications: 'Multiplications:',
+    timeComplexityTitle: 'Why limit n to 40?',
+    timeComplexityExplanation: 'This basic recursive algorithm has a time complexity of O(2ⁿ). The number of recursive calls grows exponentially with n. However, as shown in Section 7.7, simple optimizations can reduce the time complexity to O(n), and with further optimization (using the power algorithm) even to O(log n).'
   },
   zh: {
     visualizations: '算法可视化',
@@ -139,8 +145,14 @@ export const translations = {
     additionCount: '执行加法次数：',
     fibonacciCode: '最初级的递归算法：',
     inputTooLarge: '输入必须在0到40之间',
-    fastFibonacciInput: '输入n (0-1000)',
+    fastFibonacciInput: '输入n (0-5000)',
     fastFibonacciResult: '第n个斐波那契数是：',
-    fastFibonacciTooLarge: '输入必须在0到1000之间'
+    fastFibonacciTooLarge: '输入必须在0到5000之间',
+    fastFibonacciOperations: '运算次数统计：',
+    additions: '加法次数：',
+    subtractions: '减法次数：',
+    multiplications: '乘法次数：',
+    timeComplexityTitle: '为什么要限制n不能大于40？',
+    timeComplexityExplanation: '这个过于初级的算法的时间复杂度为O(2ⁿ)。当n较大时，递归调用次数会急剧增加。但是，如7.7节所述，进行简单的调优，即可将时间复杂度降低至O(n)。更进一步调优，甚至能降低至O(log⁡n)。'
   }
-}
+};

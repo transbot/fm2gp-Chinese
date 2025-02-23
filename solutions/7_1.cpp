@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <cmath>
 
 // 递归计算斐波那契数列的第n项（从第0项开始）

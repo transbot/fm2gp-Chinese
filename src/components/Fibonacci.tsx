@@ -95,6 +95,11 @@ export function Fibonacci() {
         </pre>
       </div>
 
+      <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+        <h3 className="text-lg font-semibold mb-2">{t.timeComplexityTitle}</h3>
+        <p className="text-gray-700">{t.timeComplexityExplanation}</p>
+      </div>
+
       <div className="space-y-4">
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">

@@ -5,22 +5,44 @@ import { translations } from '../i18n/translations';
 import { Links } from './Links';
 import { useLanguage } from '../context/LanguageContext';
 
+interface OperationCounts {
+  additions: number;
+  subtractions: number;
+  multiplications: number;
+}
+
 // Matrix multiplication for 2x2 matrices using BigInt
-const multiplyMatrix = (a: bigint[][], b: bigint[][]): bigint[][] => {
+const multiplyMatrix = (a: bigint[][], b: bigint[][], counts: OperationCounts): bigint[][] => {
   return [
     [
-      a[0][0] * b[0][0] + a[0][1] * b[1][0],
-      a[0][0] * b[0][1] + a[0][1] * b[1][1]
+      (() => {
+        counts.multiplications += 2;
+        counts.additions += 1;
+        return a[0][0] * b[0][0] + a[0][1] * b[1][0];
+      })(),
+      (() => {
+        counts.multiplications += 2;
+        counts.additions += 1;
+        return a[0][0] * b[0][1] + a[0][1] * b[1][1];
+      })()
     ],
     [
-      a[1][0] * b[0][0] + a[1][1] * b[1][0],
-      a[1][0] * b[0][1] + a[1][1] * b[1][1]
+      (() => {
+        counts.multiplications += 2;
+        counts.additions += 1;
+        return a[1][0] * b[0][0] + a[1][1] * b[1][0];
+      })(),
+      (() => {
+        counts.multiplications += 2;
+        counts.additions += 1;
+        return a[1][0] * b[0][1] + a[1][1] * b[1][1];
+      })()
     ]
   ];
 };
 
 // Matrix power with BigInt
-const matrixPower = (matrix: bigint[][], n: number): bigint[][] => {
+const matrixPower = (matrix: bigint[][], n: number, counts: OperationCounts): bigint[][] => {
   if (n === 0) {
     return [[1n, 0n], [0n, 1n]]; // Identity matrix
   }
@@ -29,40 +51,47 @@ const matrixPower = (matrix: bigint[][], n: number): bigint[][] => {
   }
 
   const half = Math.floor(n / 2);
-  const halfPower = matrixPower(matrix, half);
-  const result = multiplyMatrix(halfPower, halfPower);
+  const halfPower = matrixPower(matrix, half, counts);
+  const result = multiplyMatrix(halfPower, halfPower, counts);
 
   if (n % 2 === 1) {
-    return multiplyMatrix(result, matrix);
+    counts.subtractions += 1; // For the modulo operation
+    return multiplyMatrix(result, matrix, counts);
   }
+  counts.subtractions += 1; // For the modulo operation
   return result;
 };
 
 // Calculate nth Fibonacci number using matrix exponentiation with BigInt
-const calculateFibonacci = (n: number): bigint => {
+const calculateFibonacci = (n: number, counts: OperationCounts): bigint => {
   if (n === 0) return 0n;
   if (n === 1) return 1n;
 
   const baseMatrix: bigint[][] = [[1n, 1n], [1n, 0n]];
-  const resultMatrix = matrixPower(baseMatrix, n - 1);
+  counts.subtractions += 1; // For n - 1
+  const resultMatrix = matrixPower(baseMatrix, n - 1, counts);
   return resultMatrix[0][0];
 };
 
-// Format large numbers with line breaks every 40 characters
+// Format large numbers with line breaks every 80 characters
 const formatLargeNumber = (num: bigint): string => {
   const str = num.toString();
-  if (str.length <= 40) return str;
+  if (str.length <= 80) return str;
 
   const chunks: string[] = [];
-  for (let i = 0; i < str.length; i += 40) {
-    chunks.push(str.slice(i, i + 40));
+  for (let i = 0; i < str.length; i += 80) {
+    chunks.push(str.slice(i, i + 80));
   }
   return chunks.join('\n');
 };
 
 export function FastFibonacci() {
   const [number, setNumber] = useState<string>('');
-  const [result, setResult] = useState<{ value: bigint; n: string } | null>(null);
+  const [result, setResult] = useState<{
+    value: bigint;
+    n: string;
+    operations: OperationCounts;
+  } | null>(null);
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
@@ -78,10 +107,10 @@ export function FastFibonacci() {
       setNumber('');
     } else {
       const num = parseInt(value);
-      if (num <= 1000) {
+      if (num <= 5000) {
         setNumber(value);
       } else {
-        setNumber('1000');
+        setNumber('5000');
       }
     }
   };
@@ -90,13 +119,23 @@ export function FastFibonacci() {
     if (!number) return;
     
     const n = parseInt(number);
-    if (n > 1000) {
+    if (n > 5000) {
       alert(t.fastFibonacciTooLarge);
       return;
     }
 
-    const fibResult = calculateFibonacci(n);
-    setResult({ value: fibResult, n: number });
+    const counts: OperationCounts = {
+      additions: 0,
+      subtractions: 0,
+      multiplications: 0
+    };
+
+    const fibResult = calculateFibonacci(n, counts);
+    setResult({ 
+      value: fibResult, 
+      n: number,
+      operations: counts
+    });
   };
 
   const reset = () => {
@@ -105,7 +144,7 @@ export function FastFibonacci() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6 space-y-8">
+    <div className="max-w-4xl mx-auto p-6 space-y-8">
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-4">
           <Link
@@ -136,7 +175,7 @@ export function FastFibonacci() {
           <input
             type="number"
             min="0"
-            max="1000"
+            max="5000"
             value={number}
             onChange={handleNumberInput}
             onKeyPress={handleKeyPress}
@@ -162,16 +201,27 @@ export function FastFibonacci() {
       </div>
 
       {result !== null && (
-        <div className="bg-blue-100 p-6 rounded-lg">
-          <div className="text-lg">
-            <span className="font-semibold">
-              {lang === 'en' 
-                ? t.fastFibonacciResult.replace('nth', `${result.n}th`)
-                : t.fastFibonacciResult.replace('n', result.n)}
-            </span>
-            <pre className="mt-2 whitespace-pre-wrap font-mono text-base">
-              {formatLargeNumber(result.value)}
-            </pre>
+        <div className="space-y-6">
+          <div className="bg-blue-100 p-6 rounded-lg">
+            <div className="text-lg">
+              <span className="font-semibold">
+                {lang === 'en' 
+                  ? t.fastFibonacciResult.replace('nth', `${result.n}th`)
+                  : t.fastFibonacciResult.replace('n', result.n)}
+              </span>
+              <pre className="mt-2 whitespace-pre-wrap font-mono text-base overflow-x-auto">
+                {formatLargeNumber(result.value)}
+              </pre>
+            </div>
+          </div>
+
+          <div className="bg-green-100 p-6 rounded-lg">
+            <h3 className="font-semibold mb-2">{t.fastFibonacciOperations}</h3>
+            <div className="space-y-1">
+              <p>{t.additions} {result.operations.additions}</p>
+              <p>{t.subtractions} {result.operations.subtractions}</p>
+              <p>{t.multiplications} {result.operations.multiplications}</p>
+            </div>
           </div>
         </div>
       )}
