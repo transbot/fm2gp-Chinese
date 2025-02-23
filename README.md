@@ -27,11 +27,11 @@ Please visit [Zhou Jing's Blog](https://bookzhou.com) for the Chinese version ho
  --- 
 **若不通晓数学，便难以真正理解世间万物。** ——罗杰·培根，《大著作》 
 
-It is impossible to know things of this world unless you know mathematics. ——Roger Bacon, Opus Majus
+It is impossible to know things of this world unless you know mathematics. ——Roger Bacon, *Opus Majus*
 
 这是一本关于编程的书，但它有别于常见的编程书籍。书中不仅包含算法和代码，还融入了诸多数学证明，以及从古代到20世纪的许多数学发现的历史背景，力求为读者呈现更完整的知识图景。
 
-This is a book about programming, but it is different from common programming books. The book not only contains algorithms and code, but also incorporates many mathematical proofs, as well as the historical backgrounds of many mathematical discoveries from ancient times to the 20th century, striving to present a more complete knowledge picture for readers.
+This is a programming book, but it is different from common programming books. The book not only contains algorithms and code but also incorporates many mathematical proofs, as well as the historical backgrounds of many mathematical discoveries from ancient times to the 20th century, striving to present a more complete knowledge picture for readers.
 
 更具体地说，本书聚焦于泛型编程。这是一种编程范式，它起源于上世纪80年代，并在90年代随着C++标准模板库（Standard Template Library，STL）的诞生而逐渐普及。我们可以将其定义如下：
 
