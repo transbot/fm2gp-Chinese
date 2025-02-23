@@ -19,7 +19,12 @@ Please visit [Zhou Jing's Blog](https://bookzhou.com) for the Chinese version ho
 ## 中英文版算法可视化[Web app](https://fm2gp-chinese.netlify.app/)
 
 [Web app] for the visualization of algorithms in both Chinese and English versions ([https://fm2gp-chinese.netlify.app/](https://fm2gp-chinese.netlify.app/))
+![image](https://github.com/user-attachments/assets/e038b9b9-685d-4ef9-babe-5949f4193c8e)
+![image](https://github.com/user-attachments/assets/b13d930e-e65f-40c1-815a-3d931a0170b1)
+![image](https://github.com/user-attachments/assets/2bfed8d4-627d-489f-aaaf-7f28063f3473)
+![image](https://github.com/user-attachments/assets/df5db73a-ddac-435f-9a40-4258345ca1c6)
 
+ --- 
 **若不通晓数学，便难以真正理解世间万物。** ——罗杰·培根，《大著作》 
 
 It is impossible to know things of this world unless you know mathematics. ——Roger Bacon, Opus Majus
