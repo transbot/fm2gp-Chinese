@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
 type Language = 'en' | 'zh';
 
@@ -9,8 +9,29 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
+// 检测用户的操作系统语言
+const detectUserLanguage = (): Language => {
+  // 获取浏览器语言设置
+  const browserLang = navigator.language.toLowerCase();
+  
+  // 检查是否为中文
+  if (browserLang.startsWith('zh')) {
+    return 'zh';
+  }
+  
+  // 默认返回英文
+  return 'en';
+};
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Language>('zh');
+  // 使用 useState 的函数形式来确保初始值只计算一次
+  const [lang, setLang] = useState<Language>(() => detectUserLanguage());
+
+  // 在组件挂载时检测语言
+  useEffect(() => {
+    const detectedLang = detectUserLanguage();
+    setLang(detectedLang);
+  }, []);
 
   return (
     <LanguageContext.Provider value={{ lang, setLang }}>

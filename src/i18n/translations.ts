@@ -10,6 +10,7 @@ export const translations = {
     primeChecker: 'Section 5.1 - Prime Number Checker',
     fibonacci: 'Exercise 7.1 - How Many Additions Does the Basic Fibonacci Algorithm Need?',
     fastFibonacci: 'Section 7.7 - Calculate nth Fibonacci Number Using Power Algorithm (Time Complexity: O(log n))',
+    shortestPath: 'Section 8.6 - Finding Shortest Distance Between Any Two Nodes in a Directed Graph',
     backToHome: 'Back to Home',
     title: 'Egyptian Multiplication (Russian Multiplication)',
     sieveTitle: 'Sieve of Eratosthenes',
@@ -19,6 +20,7 @@ export const translations = {
     primeCheckerTitle: 'Prime Number Checker',
     fibonacciTitle: 'Basic Fibonacci Algorithm',
     fastFibonacciTitle: 'Fast Fibonacci Calculator',
+    shortestPathTitle: 'Finding Shortest Distance Using Matrix Power',
     description: 'An ancient method of multiplication using doubling and addition',
     sieveDescription: 'An ancient algorithm for finding all prime numbers up to a given limit',
     primeCountingDescription: 'Visualization of π(n) and its approximation by n/ln(n)',
@@ -27,6 +29,7 @@ export const translations = {
     primeCheckerDescription: 'Check if a number is prime and get its prime factorization',
     fibonacciDescription: 'Calculate Fibonacci numbers and count additions using the basic recursive algorithm',
     fastFibonacciDescription: 'Calculate Fibonacci numbers using matrix exponentiation',
+    shortestPathDescription: 'Find shortest paths in a directed graph using matrix power algorithm in the tropical semiring',
     multiply: 'Multiply',
     firstNumber: 'First Number',
     secondNumber: 'Second Number',
@@ -75,7 +78,12 @@ export const translations = {
     subtractions: 'Subtractions:',
     multiplications: 'Multiplications:',
     timeComplexityTitle: 'Why limit n to 40?',
-    timeComplexityExplanation: 'This basic recursive algorithm has a time complexity of O(2ⁿ). The number of recursive calls grows exponentially with n. However, as shown in Section 7.7, simple optimizations can reduce the time complexity to O(n), and with further optimization (using the power algorithm) even to O(log n).'
+    timeComplexityExplanation: 'This basic recursive algorithm has a time complexity of O(2ⁿ). The number of recursive calls grows exponentially with n. However, as shown in Section 7.7, simple optimizations can reduce the time complexity to O(n), and with further optimization (using the power algorithm) even to O(log n).',
+    startCalculation: 'Start Calculation',
+    nextPower: 'Next Power',
+    initialMatrix: 'Initial Distance Matrix',
+    powerStep: 'Matrix Power {0}',
+    calculationComplete: 'Calculation complete! The final matrix shows the shortest path between any two nodes.'
   },
   zh: {
     visualizations: '算法可视化',
@@ -88,6 +96,7 @@ export const translations = {
     primeChecker: '5.1节 - 判断一个数是否为素数',
     fibonacci: '习题7.1 - 最初级的斐波那契数列算法需要执行多少次加法',
     fastFibonacci: '7.7节 - 使用幂算法计算第n个斐波那契数（时间复杂度:O(log⁡n)）',
+    shortestPath: '8.6节 - 找出有向图中任意两个节点之间的最短距离',
     backToHome: '返回主页',
     title: '埃及乘法(俄式乘法)',
     sieveTitle: '埃拉托色尼筛法',
@@ -97,6 +106,7 @@ export const translations = {
     primeCheckerTitle: '素数判定',
     fibonacciTitle: '最初级的斐波那契数列算法',
     fastFibonacciTitle: '快速斐波那契数计算器',
+    shortestPathTitle: '使用矩阵幂计算最短距离',
     description: '一种使用倍增和加法的古代乘法方法',
     sieveDescription: '一种用于查找给定范围内所有素数的古代算法',
     primeCountingDescription: 'π(n)及其近似n/ln(n)的可视化',
@@ -105,6 +115,7 @@ export const translations = {
     primeCheckerDescription: '判断一个数是否为素数，如果不是则显示其因数分解',
     fibonacciDescription: '使用最初级的递归算法计算斐波那契数，并统计加法次数',
     fastFibonacciDescription: '通过计算矩阵幂次来计算第n个斐波那契数',
+    shortestPathDescription: '在热带半环上使用矩阵幂算法计算有向图中的最短路径',
     multiply: '相乘',
     firstNumber: '第一个数',
     secondNumber: '第二个数',
@@ -153,6 +164,11 @@ export const translations = {
     subtractions: '减法次数：',
     multiplications: '乘法次数：',
     timeComplexityTitle: '为什么要限制n不能大于40？',
-    timeComplexityExplanation: '这个过于初级的算法的时间复杂度为O(2ⁿ)。当n较大时，递归调用次数会急剧增加。但是，如7.7节所述，进行简单的调优，即可将时间复杂度降低至O(n)。更进一步调优，甚至能降低至O(log⁡n)。'
+    timeComplexityExplanation: '这个过于初级的算法的时间复杂度为O(2ⁿ)。当n较大时，递归调用次数会急剧增加。但是，如7.7节所述，进行简单的调优，即可将时间复杂度降低至O(n)。更进一步调优，甚至能降低至O(log⁡n)。',
+    startCalculation: '开始计算',
+    nextPower: '下一个幂',
+    initialMatrix: '初始距离矩阵',
+    powerStep: '矩阵的{0}次幂',
+    calculationComplete: '计算完成！最终矩阵显示了任意两个节点之间的最短路径。'
   }
 };

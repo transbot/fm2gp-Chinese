@@ -93,6 +93,14 @@ export function Home() {
                 {t.fastFibonacci}
               </Link>
             </li>
+            <li>
+              <Link
+                to="/shortest-path"
+                className="text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                {t.shortestPath}
+              </Link>
+            </li>
           </ul>
         </div>
 

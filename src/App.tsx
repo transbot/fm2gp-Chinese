@@ -8,6 +8,7 @@ import { Gcm } from './components/Gcm';
 import { PrimeChecker } from './components/PrimeChecker';
 import { Fibonacci } from './components/Fibonacci';
 import { FastFibonacci } from './components/FastFibonacci';
+import { ShortestPath } from './components/ShortestPath';
 import { Home } from './pages/Home';
 import { LanguageProvider } from './context/LanguageContext';
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/prime-checker" element={<PrimeChecker />} />
           <Route path="/fibonacci" element={<Fibonacci />} />
           <Route path="/fast-fibonacci" element={<FastFibonacci />} />
+          <Route path="/shortest-path" element={<ShortestPath />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
@@ -32,4 +34,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
