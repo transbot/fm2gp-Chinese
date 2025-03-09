@@ -101,6 +101,14 @@ export function Home() {
                 {t.shortestPath}
               </Link>
             </li>
+            <li>
+              <Link
+                to="/pi-upper-bound"
+                className="text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                {t.piUpperBound}
+              </Link>
+            </li>
           </ul>
         </div>
 
