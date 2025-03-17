@@ -134,79 +134,90 @@ export function ShortestPath() {
 
       <p className="text-gray-600">{t.shortestPathDescription}</p>
 
-      <div className="space-y-4">
-        <div className="flex gap-4">
-          <button
-            onClick={startCalculation}
-            className="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
-          >
-            {t.startCalculation}
-          </button>
-          <button
-            onClick={nextStep}
-            disabled={currentStep < 0 || isComplete}
-            className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            {t.nextPower}
-          </button>
-          <button
-            onClick={reset}
-            className="px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"
-          >
-            {t.reset}
-          </button>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-xl font-bold mb-4">初始有向图</h2>
+          <img 
+            src="/images/p.147.directed.graph.png" 
+            alt="Initial directed graph"
+            className="w-full"
+          />
         </div>
 
-        {steps.length > 0 && currentStep >= 0 && (
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h2 className="text-xl font-bold mb-4">
-                {steps[currentStep].description}
-              </h2>
-              <div className="overflow-x-auto">
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead>
-                    <tr>
-                      <th className="px-4 py-2 bg-gray-50"></th>
-                      {initialMatrix.map((_, i) => (
-                        <th key={i} className="px-4 py-2 bg-gray-50 font-medium">
-                          {getNodeLabel(i)}
-                        </th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-200">
-                    {steps[currentStep].matrix.map((row, i) => (
-                      <tr key={i}>
-                        <td className="px-4 py-2 font-medium bg-gray-50">
-                          {getNodeLabel(i)}
-                        </td>
-                        {row.map((value, j) => (
-                          <td 
-                            key={j}
-                            className={`px-4 py-2 text-center ${
-                              value !== INF && value !== 0 ? 'font-mono' : ''
-                            }`}
-                          >
-                            {formatValue(value)}
-                          </td>
+        <div className="space-y-4">
+          <div className="flex gap-4">
+            <button
+              onClick={startCalculation}
+              className="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
+            >
+              {t.startCalculation}
+            </button>
+            <button
+              onClick={nextStep}
+              disabled={currentStep < 0 || isComplete}
+              className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {t.nextPower}
+            </button>
+            <button
+              onClick={reset}
+              className="px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"
+            >
+              {t.reset}
+            </button>
+          </div>
+
+          {steps.length > 0 && currentStep >= 0 && (
+            <div className="space-y-6">
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h2 className="text-lg font-bold mb-4">
+                  {steps[currentStep].description}
+                </h2>
+                <div className="overflow-x-auto">
+                  <table className="min-w-full divide-y divide-gray-200 text-sm">
+                    <thead>
+                      <tr>
+                        <th className="px-3 py-2 bg-gray-50"></th>
+                        {initialMatrix.map((_, i) => (
+                          <th key={i} className="px-3 py-2 bg-gray-50 font-medium">
+                            {getNodeLabel(i)}
+                          </th>
                         ))}
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody className="divide-y divide-gray-200">
+                      {steps[currentStep].matrix.map((row, i) => (
+                        <tr key={i}>
+                          <td className="px-3 py-2 font-medium bg-gray-50">
+                            {getNodeLabel(i)}
+                          </td>
+                          {row.map((value, j) => (
+                            <td 
+                              key={j}
+                              className={`px-3 py-2 text-center ${
+                                value !== INF && value !== 0 ? 'font-mono' : ''
+                              }`}
+                            >
+                              {formatValue(value)}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
-            </div>
 
-            {isComplete && (
-              <div className="bg-green-100 p-6 rounded-lg">
-                <p className="text-lg font-semibold text-green-800">
-                  {t.calculationComplete}
-                </p>
-              </div>
-            )}
-          </div>
-        )}
+              {isComplete && (
+                <div className="bg-green-100 p-6 rounded-lg">
+                  <p className="text-lg font-semibold text-green-800">
+                    {t.calculationComplete}
+                  </p>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
       </div>
 
       <Links lang={lang} />

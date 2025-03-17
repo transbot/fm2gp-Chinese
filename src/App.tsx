@@ -8,8 +8,9 @@ import { Gcm } from './components/Gcm';
 import { PrimeChecker } from './components/PrimeChecker';
 import { Fibonacci } from './components/Fibonacci';
 import { FastFibonacci } from './components/FastFibonacci';
-import { ShortestPath } from './components/ShortestPath.tsx';
-import { PiUpperBound } from './components/PiUpperBound.tsx';
+import { ShortestPath } from './components/ShortestPath';
+import { PiUpperBound } from './components/PiUpperBound';
+import { Rotate } from './components/Rotate';
 import { Home } from './pages/Home';
 import { LanguageProvider } from './context/LanguageContext';
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/fast-fibonacci" element={<FastFibonacci />} />
           <Route path="/shortest-path" element={<ShortestPath />} />
           <Route path="/pi-upper-bound" element={<PiUpperBound />} />
+          <Route path="/rotate" element={<Rotate />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
