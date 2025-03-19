@@ -5,12 +5,7 @@ import { translations } from '../i18n/translations';
 import { Links } from './Links';
 import { useLanguage } from '../context/LanguageContext';
 
-// Generate random uppercase letters
-const generateRandomLetters = (count: number): string[] => {
-  return Array.from({ length: count }, () => 
-    String.fromCharCode(65 + Math.floor(Math.random() * 26))
-  );
-};
+const FIXED_LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
 
 interface Element {
   value: string;
@@ -28,12 +23,11 @@ export function Rotate() {
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
-  const TOTAL_ELEMENTS = 7;
+  const TOTAL_ELEMENTS = FIXED_LETTERS.length;
   const ANIMATION_DURATION = 2000; // 2 seconds
 
   useEffect(() => {
-    const letters = generateRandomLetters(TOTAL_ELEMENTS);
-    const newElements = letters.map((letter, index) => ({
+    const newElements = FIXED_LETTERS.map((letter, index) => ({
       value: letter,
       index,
       angle: (index * 2 * Math.PI) / TOTAL_ELEMENTS
@@ -137,8 +131,7 @@ export function Rotate() {
     if (animationRef.current) {
       cancelAnimationFrame(animationRef.current);
     }
-    const letters = generateRandomLetters(TOTAL_ELEMENTS);
-    const newElements = letters.map((letter, index) => ({
+    const newElements = FIXED_LETTERS.map((letter, index) => ({
       value: letter,
       index,
       angle: (index * 2 * Math.PI) / TOTAL_ELEMENTS
