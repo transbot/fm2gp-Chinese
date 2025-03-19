@@ -19,11 +19,12 @@ export function Calculator() {
   const [steps, setSteps] = useState<Step[]>([]);
   const [result, setResult] = useState<number | null>(null);
   const [showResults, setShowResults] = useState(false);
+  const [showError, setShowError] = useState(false);
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' && firstNumber && secondNumber) {
+    if (e.key === 'Enter') {
       calculate();
     }
   };
@@ -35,15 +36,20 @@ export function Calculator() {
     } else {
       setter(Number(value));
     }
+    setShowError(false);
   };
 
   const calculate = () => {
-    if (!firstNumber || !secondNumber) return;
+    if (!firstNumber || !secondNumber) {
+      setShowError(true);
+      return;
+    }
 
     const { steps: newSteps, result: finalResult } = calculateEgyptianMultiplication(firstNumber, secondNumber);
     setSteps(newSteps);
     setResult(finalResult);
     setShowResults(true);
+    setShowError(false);
   };
 
   const reset = () => {
@@ -52,6 +58,7 @@ export function Calculator() {
     setSteps([]);
     setResult(null);
     setShowResults(false);
+    setShowError(false);
   };
 
   return (
@@ -84,29 +91,37 @@ export function Calculator() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
-            {t.firstNumber}
+            {t.firstNumber} <span className="text-red-500">{t.required}</span>
           </label>
           <input
             type="number"
             value={firstNumber || ''}
             onChange={(e) => handleNumberInput(e, setFirstNumber)}
             onKeyPress={handleKeyPress}
-            className="w-full px-4 py-2 border rounded-lg"
+            className={`w-full px-4 py-2 border rounded-lg ${showError && !firstNumber ? 'border-red-500' : 'border-gray-300'}`}
+            placeholder={t.firstNumber}
           />
         </div>
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
-            {t.secondNumber}
+            {t.secondNumber} <span className="text-red-500">{t.required}</span>
           </label>
           <input
             type="number"
             value={secondNumber || ''}
             onChange={(e) => handleNumberInput(e, setSecondNumber)}
             onKeyPress={handleKeyPress}
-            className="w-full px-4 py-2 border rounded-lg"
+            className={`w-full px-4 py-2 border rounded-lg ${showError && !secondNumber ? 'border-red-500' : 'border-gray-300'}`}
+            placeholder={t.secondNumber}
           />
         </div>
       </div>
+
+      {showError && (
+        <div className="text-red-500 text-sm">
+          {t.inputRequired}
+        </div>
+      )}
 
       <div className="flex gap-4">
         <button

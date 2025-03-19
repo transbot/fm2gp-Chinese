@@ -22,9 +22,32 @@ export function CalculationDisplay({ steps, result, firstNumber, secondNumber, l
     const selectedSteps = steps.filter(step => step.isSelected);
     const terms = selectedSteps.map(step => `${step.value}`);
     const formula = `${firstNumber}×${secondNumber}=`;
-    if (terms.length > 3) {
-      return `${formula}\n${terms.join('+')}\n=${result}`;
+
+    // If we have more than 3 terms or any term is longer than 8 digits,
+    // format with line breaks for better readability
+    const shouldBreak = terms.length > 3 || terms.some(term => term.length > 8);
+    
+    if (shouldBreak) {
+      return (
+        <div className="space-y-2">
+          <div>{formula}</div>
+          <div className="pl-4">
+            {terms.map((term, index) => (
+              <React.Fragment key={index}>
+                {term}
+                {index < terms.length - 1 && (
+                  <span className="text-gray-500"> +</span>
+                )}
+                <br />
+              </React.Fragment>
+            ))}
+          </div>
+          <div>={result}</div>
+        </div>
+      );
     }
+
+    // For shorter equations, keep them on one line
     return `${formula}${terms.join('+')}=${result}`;
   };
 
@@ -63,9 +86,9 @@ export function CalculationDisplay({ steps, result, firstNumber, secondNumber, l
       {result !== null && (
         <div className="p-4 bg-blue-50 rounded-lg">
           <h3 className="font-bold text-lg mb-2">{t.result}</h3>
-          <pre className="text-xl font-mono whitespace-pre-wrap">
+          <div className="text-xl font-mono break-words">
             {getAdditionFormula(steps, firstNumber, secondNumber, result)}
-          </pre>
+          </div>
         </div>
       )}
     </div>

@@ -205,9 +205,15 @@ export function FastFibonacci() {
           <div className="bg-blue-100 p-6 rounded-lg">
             <div className="text-lg">
               <span className="font-semibold">
-                {lang === 'en' 
-                  ? t.fastFibonacciResult.replace('nth', `${result.n}th`)
-                  : t.fastFibonacciResult.replace('n', result.n)}
+                {t.fastFibonacciResult ? (
+                  lang === 'en' 
+                    ? t.fastFibonacciResult.replace('nth', `${result.n}th`)
+                    : t.fastFibonacciResult.replace('n', result.n)
+                ) : (
+                  lang === 'en'
+                    ? `The ${result.n}th Fibonacci number is:`
+                    : `第${result.n}个斐波那契数是：`
+                )}
               </span>
               <pre className="mt-2 whitespace-pre-wrap font-mono text-base overflow-x-auto">
                 {formatLargeNumber(result.value)}

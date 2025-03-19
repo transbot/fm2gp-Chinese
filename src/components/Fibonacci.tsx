@@ -8,6 +8,7 @@ import { useLanguage } from '../context/LanguageContext';
 export function Fibonacci() {
   const [number, setNumber] = useState<string>('');
   const [result, setResult] = useState<{ fib: number; additions: number } | null>(null);
+  const [showError, setShowError] = useState(false);
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
@@ -31,12 +32,15 @@ export function Fibonacci() {
     if (value === '') {
       setNumber('');
       setResult(null);
+      setShowError(false);
     } else {
       const num = parseInt(value);
       if (num <= 40) {
         setNumber(value);
+        setShowError(false);
       } else {
         setNumber('40');
+        setShowError(true);
       }
     }
   };
@@ -46,18 +50,20 @@ export function Fibonacci() {
     
     const n = parseInt(number);
     if (n > 40) {
-      alert(t.inputTooLarge);
+      setShowError(true);
       return;
     }
 
     additionCount = 0;
     const fibResult = fib0(n);
     setResult({ fib: fibResult, additions: additionCount });
+    setShowError(false);
   };
 
   const reset = () => {
     setNumber('');
     setResult(null);
+    setShowError(false);
   };
 
   return (
@@ -97,7 +103,8 @@ export function Fibonacci() {
 
       <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
         <h3 className="text-lg font-semibold mb-2">{t.timeComplexityTitle}</h3>
-        <p className="text-gray-700">{t.timeComplexityExplanation}</p>
+        <p className="text-gray-700">{t.fibonacciTimeComplexity}</p>
+        <p className="text-gray-700 mt-2">{t.fibonacciExplanation}</p>
       </div>
 
       <div className="space-y-4">
@@ -112,8 +119,15 @@ export function Fibonacci() {
             value={number}
             onChange={handleNumberInput}
             onKeyPress={handleKeyPress}
-            className="w-full px-4 py-2 border rounded-lg"
+            className={`w-full px-4 py-2 border rounded-lg ${
+              showError ? 'border-red-500' : 'border-gray-300'
+            }`}
           />
+          {showError && (
+            <p className="text-red-500 text-sm">
+              {t.inputTooLarge}
+            </p>
+          )}
         </div>
 
         <div className="flex gap-4">
@@ -134,13 +148,23 @@ export function Fibonacci() {
       </div>
 
       {result && (
-        <div className="bg-blue-100 p-6 rounded-lg">
-          <p className="text-lg">
-            <span className="font-semibold">{t.fibonacciResult}</span> {result.fib}
-          </p>
-          <p className="text-lg">
-            <span className="font-semibold">{t.additionCount}</span> {result.additions}
-          </p>
+        <div className="space-y-4">
+          <div className="bg-blue-100 p-6 rounded-lg">
+            <div className="space-y-2">
+              <p className="text-lg">
+                <span className="font-semibold">
+                  {t.fibonacciResult.replace('{n}', number)}
+                </span>
+                <br />
+                <span className="font-mono">{result.fib}</span>
+              </p>
+              <p className="text-lg">
+                <span className="font-semibold">{t.additionCount}</span>
+                <br />
+                <span className="font-mono">{result.additions}</span>
+              </p>
+            </div>
+          </div>
         </div>
       )}
 

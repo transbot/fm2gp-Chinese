@@ -18,11 +18,12 @@ export function Sieve() {
   const [indexSquare, setIndexSquare] = useState<number>(3);
   const [factor, setFactor] = useState<number>(3);
   const [isComplete, setIsComplete] = useState<boolean>(false);
+  const [showError, setShowError] = useState<boolean>(false);
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' && maxNumber > 0) {
+    if (e.key === 'Enter') {
       generateNumbers();
     }
   };
@@ -31,14 +32,19 @@ export function Sieve() {
     const value = e.target.value.replace(/[^\d]/g, '');
     if (value === '') {
       setMaxNumber(0);
+      setShowError(false);
     } else {
       const num = Number(value);
       setMaxNumber(num > 9999 ? 9999 : num);
+      setShowError(false);
     }
   };
 
   const generateNumbers = () => {
-    if (!maxNumber || maxNumber < 2) return;
+    if (!maxNumber || maxNumber < 2) {
+      setShowError(true);
+      return;
+    }
 
     // Start with odd numbers only
     const nums: NumberCell[] = Array.from({ length: Math.floor((maxNumber - 1) / 2) }, (_, i) => ({
@@ -52,6 +58,7 @@ export function Sieve() {
     setIndexSquare(3);
     setFactor(3);
     setIsComplete(false);
+    setShowError(false);
   };
 
   const nextIteration = () => {
@@ -89,6 +96,8 @@ export function Sieve() {
     setIndexSquare(3);
     setFactor(3);
     setIsComplete(false);
+    setShowError(false);
+    setMaxNumber(0);
   };
 
   return (
@@ -118,8 +127,9 @@ export function Sieve() {
       <div className="space-y-4">
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
-            {t.maxNumber}
+            {t.maxNumber} <span className="text-red-500">{t.required}</span>
           </label>
+          <p className="text-sm text-gray-600">{t.sieveInputDescription}</p>
           <input
             type="number"
             min="2"
@@ -127,8 +137,16 @@ export function Sieve() {
             value={maxNumber || ''}
             onChange={handleNumberInput}
             onKeyPress={handleKeyPress}
-            className="w-full px-4 py-2 border rounded-lg"
+            className={`w-full px-4 py-2 border rounded-lg ${
+              showError ? 'border-red-500' : 'border-gray-300'
+            }`}
+            placeholder={t.maxNumber}
           />
+          {showError && (
+            <p className="text-red-500 text-sm mt-1">
+              {t.sieveInputRequired}
+            </p>
+          )}
         </div>
 
         <div className="flex gap-4">

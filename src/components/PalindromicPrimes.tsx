@@ -93,7 +93,6 @@ export function PalindromicPrimes() {
       return 36;
     }
     return num;
-    return num;
   };
 
   const validateMaxNumberBeforeGenerate = () => {
@@ -181,10 +180,10 @@ export function PalindromicPrimes() {
       <p className="text-gray-600">{t.palindromicPrimesDescription}</p>
 
       <div className="space-y-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="space-y-2">
-            <label className="block text-sm font-medium text-gray-700">
-              {t.maxNumber}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="flex flex-col">
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              {t.maxNumber} <span className="text-red-500">{t.required}</span>
             </label>
             <input
               type="number"
@@ -193,7 +192,10 @@ export function PalindromicPrimes() {
               value={maxNumber || ''}
               onChange={handleNumberInput}
               onKeyPress={handleKeyPress}
-              className="w-full px-4 py-2 border rounded-lg"
+              className={`w-full px-4 py-2 border rounded-lg ${
+                maxNumberError ? 'border-red-500' : 'border-gray-300'
+              }`}
+              placeholder={t.maxNumber}
             />
             <p className="mt-1 text-sm text-gray-500">
               {maxNumberError ? (
@@ -204,9 +206,9 @@ export function PalindromicPrimes() {
             </p>
           </div>
 
-          <div className="space-y-2">
-            <label className="block text-sm font-medium text-gray-700">
-              {t.base}
+          <div className="flex flex-col">
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              {t.base} <span className="text-red-500">{t.required}</span>
             </label>
             <input
               type="number"
@@ -215,7 +217,9 @@ export function PalindromicPrimes() {
               placeholder="2-36"
               value={inputBase}
               onChange={handleBaseInput}
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className={`w-full px-4 py-2 border rounded-lg ${
+                baseError ? 'border-red-500' : 'border-gray-300'
+              }`}
             />
             <p className="mt-1 text-sm text-gray-500">
               {baseError ? (
