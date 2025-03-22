@@ -74,19 +74,38 @@ quotient_remainder(int a, int b) {
   return { a / b, a % b };
 }
 
-template <EuclideanDomain E> 
+// 定义一个模板函数，模板参数 E 必须满足欧几里得域（Euclidean Domain）的要求
+// 欧几里得域是一种代数结构，支持除法和取余运算
+template <EuclideanDomain E>
+// 函数 extended_gcd 用于计算两个元素 a 和 b 的扩展最大公约数
+// 扩展最大公约数算法不仅计算 a 和 b 的最大公约数，还计算满足 ax + by = gcd(a, b) 的系数 x 和 y
+// 这里只返回系数 x 和最大公约数 gcd(a, b)
 std::pair<E, E> extended_gcd(E a, E b) {
-    E x0(1); 
-    E x1(0); 
-    while (b != E(0)) { 
-        // compute new r and x
-        std::pair<E, E> qr = quotient_remainder(a, b); 
+    // 初始化系数 x0 为 1，x0 表示当前迭代中 a 的系数
+    E x0(1);
+    // 初始化系数 x1 为 0，x1 表示当前迭代中 b 的系数
+    E x1(0);
+    // 当 b 不等于 0 时，继续迭代
+    while (b != E(0)) {
+        // 计算 a 除以 b 的商和余数
+        // quotient_remainder 是一个自定义函数，用于返回 a 除以 b 的商和余数组成的 pair
+        std::pair<E, E> qr = quotient_remainder(a, b);
+        // 根据扩展欧几里得算法的递推公式计算新的系数 x2
+        // x2 是下一次迭代中 a 的系数，其计算公式为 x2 = x0 - 商 * x1
         E x2 = x0 - qr.first * x1;
-        // shift r and x
+        // 进行系数的移位操作
+        // 将 x1 的值赋给 x0，更新 x0 为下一次迭代的前一个系数
         x0 = x1;
-        x1 = x2; 
+        // 将 x2 的值赋给 x1，更新 x1 为当前迭代的系数
+        x1 = x2;
+        // 进行余数的移位操作
+        // 将 b 的值赋给 a，更新 a 为下一次迭代的被除数
         a = b;
+        // 将余数 qr.second 赋给 b，更新 b 为下一次迭代的除数
         b = qr.second;
-    } 
-    return {x0, a}; 
-} 
+    }
+    // 当 b 为 0 时，迭代结束
+    // 此时 a 就是 a 和 b 的最大公约数，x0 是满足 ax + by = gcd(a, b) 的系数 x
+    // 返回一个包含系数 x0 和最大公约数 a 的 pair
+    return {x0, a};
+}
