@@ -12,6 +12,7 @@ import { ShortestPath } from './components/ShortestPath';
 import { PiUpperBound } from './components/PiUpperBound';
 import { Rotate } from './components/Rotate';
 import { GcdComparison } from './components/GcdComparison';
+import { Rsa } from './components/Rsa';
 import { Home } from './pages/Home';
 import { LanguageProvider } from './context/LanguageContext';
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/pi-upper-bound" element={<PiUpperBound />} />
           <Route path="/rotate" element={<Rotate />} />
           <Route path="/gcd-comparison" element={<GcdComparison />} />
+          <Route path="/rsa" element={<Rsa />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>

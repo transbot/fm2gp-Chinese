@@ -12,17 +12,20 @@ interface Step {
   isSwap: boolean;
 }
 
+const MAX_NUMBER = Number.MAX_SAFE_INTEGER; // 2^53 - 1
+
 export function Gcm() {
   const [firstNumber, setFirstNumber] = useState<number>(0);
   const [secondNumber, setSecondNumber] = useState<number>(0);
   const [steps, setSteps] = useState<Step[]>([]);
   const [currentStep, setCurrentStep] = useState<number>(-1);
   const [isComplete, setIsComplete] = useState<boolean>(false);
+  const [showError, setShowError] = useState<boolean>(false);
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' && firstNumber > 0 && secondNumber > 0) {
+    if (e.key === 'Enter') {
       startCalculation();
     }
   };
@@ -31,9 +34,20 @@ export function Gcm() {
     const value = e.target.value.replace(/[^\d]/g, '');
     if (value === '') {
       setter(0);
+      setShowError(false);
     } else {
-      setter(Number(value));
+      const num = Number(value);
+      if (num > MAX_NUMBER) {
+        setter(MAX_NUMBER);
+      } else {
+        setter(num);
+      }
+      setShowError(false);
     }
+  };
+
+  const formatNumber = (num: number): string => {
+    return num.toLocaleString('fullwide', { useGrouping: true });
   };
 
   const fastSegmentRemainder = (a: number, b: number): number => {
@@ -46,7 +60,7 @@ export function Gcm() {
 
   const startCalculation = () => {
     if (!firstNumber || !secondNumber) {
-      alert(t.invalidInput);
+      setShowError(true);
       return;
     }
     
@@ -58,6 +72,7 @@ export function Gcm() {
     }]);
     setCurrentStep(0);
     setIsComplete(false);
+    setShowError(false);
   };
 
   const nextStep = () => {
@@ -120,6 +135,7 @@ export function Gcm() {
     setSteps([]);
     setCurrentStep(-1);
     setIsComplete(false);
+    setShowError(false);
   };
 
   return (
@@ -149,29 +165,41 @@ export function Gcm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
-            {t.firstNumber}
+            {t.firstNumber} <span className="text-red-500">{t.required}</span>
           </label>
           <input
             type="number"
             value={firstNumber || ''}
             onChange={(e) => handleNumberInput(e, setFirstNumber)}
             onKeyPress={handleKeyPress}
-            className="w-full px-4 py-2 border rounded-lg"
+            className={`w-full px-4 py-2 border rounded-lg ${
+              showError && !firstNumber ? 'border-red-500' : 'border-gray-300'
+            }`}
+            placeholder={t.firstNumber}
           />
         </div>
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
-            {t.secondNumber}
+            {t.secondNumber} <span className="text-red-500">{t.required}</span>
           </label>
           <input
             type="number"
             value={secondNumber || ''}
             onChange={(e) => handleNumberInput(e, setSecondNumber)}
             onKeyPress={handleKeyPress}
-            className="w-full px-4 py-2 border rounded-lg"
+            className={`w-full px-4 py-2 border rounded-lg ${
+              showError && !secondNumber ? 'border-red-500' : 'border-gray-300'
+            }`}
+            placeholder={t.secondNumber}
           />
         </div>
       </div>
+
+      {showError && (
+        <div className="text-red-500 text-sm">
+          {t.inputRequired}
+        </div>
+      )}
 
       <div className="flex gap-4">
         <button
@@ -200,11 +228,11 @@ export function Gcm() {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-xl font-bold mb-4">{t.currentValues}</h2>
             <div className="space-y-2 font-mono">
-              <p>{t.aValue}{steps[currentStep].a}</p>
-              <p>{t.bValue}{steps[currentStep].b}</p>
+              <p>{t.aValue}{formatNumber(steps[currentStep].a)}</p>
+              <p>{t.bValue}{formatNumber(steps[currentStep].b)}</p>
               {steps[currentStep].remainder !== null && (
                 <p className={steps[currentStep].remainder === 0 ? "text-green-600 font-bold" : ""}>
-                  {t.remainderValue}{steps[currentStep].remainder}
+                  {t.remainderValue}{formatNumber(steps[currentStep].remainder)}
                 </p>
               )}
               {steps[currentStep].isSwap && (
@@ -216,7 +244,7 @@ export function Gcm() {
           {isComplete && (
             <div className="bg-green-100 p-6 rounded-lg">
               <p className="text-lg font-semibold text-green-800">
-                {t.gcmResult}{steps[currentStep].remainder === 0 ? steps[currentStep].b : steps[currentStep].a}
+                {t.gcmResult}{formatNumber(steps[currentStep].remainder === 0 ? steps[currentStep].b : steps[currentStep].a)}
               </p>
             </div>
           )}
@@ -246,12 +274,12 @@ export function Gcm() {
                     className={index === currentStep ? 'bg-blue-50' : ''}
                   >
                     <td className="px-6 py-4 whitespace-nowrap">{index + 1}</td>
-                    <td className="px-6 py-4 whitespace-nowrap">{step.a}</td>
-                    <td className="px-6 py-4 whitespace-nowrap">{step.b}</td>
+                    <td className="px-6 py-4 whitespace-nowrap font-mono">{formatNumber(step.a)}</td>
+                    <td className="px-6 py-4 whitespace-nowrap font-mono">{formatNumber(step.b)}</td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       {step.remainder !== null ? (
                         <span className={step.remainder === 0 ? "text-green-600 font-bold" : ""}>
-                          {lang === 'en' ? 'remainder' : '余数'} = {step.remainder}
+                          {lang === 'en' ? 'remainder' : '余数'} = {formatNumber(step.remainder)}
                         </span>
                       ) : step.isSwap ? (lang === 'en' ? 'swap' : '交换') : ''}
                     </td>

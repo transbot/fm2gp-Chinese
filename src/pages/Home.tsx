@@ -125,7 +125,37 @@ export function Home() {
                 {t.gcdComparison}
               </Link>
             </li>
+            <li>
+              <Link
+                to="/rsa"
+                className="text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                {t.rsaAlgorithm}
+              </Link>
+            </li>
           </ul>
+        </div>
+
+        <div className="bg-white rounded-lg shadow-lg p-6">
+          <div className="space-y-4">
+            {lang === 'zh' ? (
+              <>
+                <h2 className="text-xl font-semibold">《数学与泛型编程：高效编程的奥秘》主旨</h2>
+                <p className="italic text-gray-700">
+                  盖欲成优秀之程序员，必先明泛型编程之理；欲明泛型编程之理，必先悟抽象之义；而欲悟抽象之义，则需究其数学之本。
+                </p>
+              </>
+            ) : (
+              <>
+                <p className="italic text-gray-700">
+                  To be a good programmer, you need to understand the principles of generic programming. To understand the principles of generic programming, you need to understand abstraction. To understand abstraction, you need to understand the mathematics on which it's based.
+                </p>
+                <p>
+                  That's the story <span className="italic">From Mathematics to Generic Programming</span> are hoping to tell.
+                </p>
+              </>
+            )}
+          </div>
         </div>
 
         <Links lang={lang} />

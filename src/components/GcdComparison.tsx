@@ -18,7 +18,6 @@ export function GcdComparison() {
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
-  // Binary GCD (Stein's algorithm)
   const steinGcd = (m: number, n: number): number => {
     if (m === 0) return n;
     if (n === 0) return m;
@@ -62,8 +61,8 @@ export function GcdComparison() {
     return Math.floor(Math.random() * max);
   };
 
-  const CHUNK_SIZE = 1000; // Process 1000 pairs at a time
-  const TOTAL_PAIRS = 90000; // Total number of pairs to test
+  const CHUNK_SIZE = 1000;
+  const TOTAL_PAIRS = 90000;
 
   const runTestChunk = (
     maxValue: number,
@@ -72,7 +71,6 @@ export function GcdComparison() {
     algorithm: (a: number, b: number) => number
   ): number => {
     const pairs = [];
-    // Generate all pairs first to ensure fair comparison
     for (let i = start; i < end; i++) {
       pairs.push({
         a: generateRandomNumber(maxValue),
@@ -91,20 +89,14 @@ export function GcdComparison() {
     let steinTotalTime = 0;
     let euclideanTotalTime = 0;
 
-    // Process in chunks
     for (let i = 0; i < TOTAL_PAIRS; i += CHUNK_SIZE) {
       const end = Math.min(i + CHUNK_SIZE, TOTAL_PAIRS);
       
-      // Run Stein's algorithm chunk
       steinTotalTime += runTestChunk(maxValue, i, end, steinGcd);
-      
-      // Run Euclidean algorithm chunk
       euclideanTotalTime += runTestChunk(maxValue, i, end, euclideanGcd);
 
-      // Update progress
       onProgress((i + CHUNK_SIZE) / TOTAL_PAIRS * 100);
 
-      // Allow UI to update
       await new Promise(resolve => setTimeout(resolve, 0));
     }
 
@@ -120,12 +112,11 @@ export function GcdComparison() {
 
     const ranges = [
       { max: 2 ** 16, label: '[0, 2¹⁶)' },
-      { max: 2 ** 24, label: '[0, 2²⁴)' }, // Using 2^24 instead of 2^32 to avoid overflow
-      { max: 2 ** 30, label: '[0, 2³⁰)' }  // Using 2^30 instead of 2^64 to avoid overflow
+      { max: 2 ** 24, label: '[0, 2²⁴)' },
+      { max: 2 ** 30, label: '[0, 2³⁰)' }
     ];
 
     for (const { max, label } of ranges) {
-      // Add initial result with 0% progress
       setResults(prev => [...prev, { range: label, steinTime: 0, euclideanTime: 0, progress: 0 }]);
 
       try {
@@ -135,14 +126,12 @@ export function GcdComparison() {
           ));
         });
 
-        // Update final result without progress indicator
         setResults(prev => prev.map(r => 
           r.range === label 
             ? { range: label, steinTime: result.steinTime, euclideanTime: result.euclideanTime }
             : r
         ));
 
-        // Small delay between ranges
         await new Promise(resolve => setTimeout(resolve, 100));
       } catch (error) {
         console.error(`Error testing range ${label}:`, error);
@@ -176,6 +165,10 @@ export function GcdComparison() {
           <Languages className="w-4 h-4" />
           {t.language}
         </button>
+      </div>
+
+      <div className="bg-gray-100 p-6 rounded-lg">
+        <p className="text-lg font-mono">{t.gcdExerciseText}</p>
       </div>
 
       <p className="text-gray-600">{t.gcdComparisonDescription}</p>
