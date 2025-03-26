@@ -151,7 +151,7 @@ export function Home() {
                   To be a good programmer, you need to understand the principles of generic programming. To understand the principles of generic programming, you need to understand abstraction. To understand abstraction, you need to understand the mathematics on which it's based.
                 </p>
                 <p>
-                  That's the story <span className="italic">From Mathematics to Generic Programming</span> are hoping to tell.
+                  That is the story <span className="italic">From Mathematics to Generic Programming</span> hopes to tell.
                 </p>
               </>
             )}
