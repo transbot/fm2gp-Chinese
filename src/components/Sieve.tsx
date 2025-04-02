@@ -170,10 +170,14 @@ export function Sieve() {
             {t.reset}
           </button>
         </div>
-      </div>
 
-      {numbers.length > 0 && (
-        <>
+        {isComplete && numbers.length > 0 && (
+          <div className="p-4 bg-green-100 text-green-800 rounded-lg text-center font-medium">
+            {t.allPrimesFound}
+          </div>
+        )}
+
+        {numbers.length > 0 && (
           <div className="grid grid-cols-10 gap-2">
             {numbers.map((num, index) => (
               <div
@@ -190,13 +194,8 @@ export function Sieve() {
               </div>
             ))}
           </div>
-          {isComplete && (
-            <div className="mt-4 p-4 bg-green-100 text-green-800 rounded-lg text-center font-medium">
-              {t.allPrimesFound}
-            </div>
-          )}
-        </>
-      )}
+        )}
+      </div>
 
       <Links lang={lang} />
     </div>

@@ -51,8 +51,17 @@ export function Gcm() {
   };
 
   const fastSegmentRemainder = (a: number, b: number): number => {
-    if (a <= b) return a;
-    if (a - b <= b) return a - b;
+    // Base cases
+    if (b === 0) return a;
+    if (a === b) return 0;
+    if (a < b) return a;
+
+    // For large numbers or when a is close to b, use standard modulo
+    if (a > MAX_NUMBER / 2 || b > MAX_NUMBER / 2 || a - b <= b) {
+      return a % b;
+    }
+
+    // For smaller numbers, use the fast segment method
     const result = fastSegmentRemainder(a, b + b);
     if (result <= b) return result;
     return result - b;
@@ -64,6 +73,20 @@ export function Gcm() {
       return;
     }
     
+    // If both numbers are equal, set result immediately
+    if (firstNumber === secondNumber) {
+      setSteps([{
+        a: firstNumber,
+        b: secondNumber,
+        remainder: 0,
+        isSwap: false
+      }]);
+      setCurrentStep(0);
+      setIsComplete(true);
+      setShowError(false);
+      return;
+    }
+
     setSteps([{
       a: firstNumber,
       b: secondNumber,
@@ -80,20 +103,6 @@ export function Gcm() {
 
     const currentA = steps[currentStep].a;
     const currentB = steps[currentStep].b;
-
-    if (currentA === currentB) {
-      // Add a final step showing remainder = 0 when numbers are equal
-      const newSteps = [...steps, {
-        a: currentA,
-        b: currentB,
-        remainder: 0,
-        isSwap: false
-      }];
-      setSteps(newSteps);
-      setCurrentStep(prev => prev + 1);
-      setIsComplete(true);
-      return;
-    }
 
     if (currentB === 0) {
       setIsComplete(true);
@@ -262,7 +271,7 @@ export function Gcm() {
                   <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     b
                   </th>
-                  <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-[200px]">
                     Action
                   </th>
                 </tr>

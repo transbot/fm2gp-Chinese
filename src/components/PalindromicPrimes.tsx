@@ -136,12 +136,7 @@ export function PalindromicPrimes() {
 
   const getDisplayValue = (num: {display: string, value: number}): string => {
     if (currentBase === 2) {
-      // Remove leading zeros and group binary digits in sets of 4 for readability
-      const digits = num.display.replace(/^0+/, ''); // Remove leading zeros
-      const remainder = digits.length % 4;
-      const padding = remainder ? '0'.repeat(4 - remainder) : '';
-      const paddedForGrouping = padding + digits;
-      return (paddedForGrouping.match(/.{1,4}/g)?.join(' ') || digits).replace(/^0+(?=\d)/, '');
+      return num.display.replace(/^0+/, '');
     }
     return num.display.toUpperCase();
   };

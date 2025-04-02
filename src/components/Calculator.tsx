@@ -13,6 +13,8 @@ interface Step {
   isSelected: boolean;
 }
 
+const MAX_NUMBER = 999999; // Limit to prevent scientific notation
+
 export function Calculator() {
   const [firstNumber, setFirstNumber] = useState<number>(0);
   const [secondNumber, setSecondNumber] = useState<number>(0);
@@ -34,7 +36,12 @@ export function Calculator() {
     if (value === '' || value === '-') {
       setter(0);
     } else {
-      setter(Number(value));
+      const num = Number(value);
+      if (Math.abs(num) > MAX_NUMBER) {
+        setter(num < 0 ? -MAX_NUMBER : MAX_NUMBER);
+      } else {
+        setter(num);
+      }
     }
     setShowError(false);
   };
@@ -100,6 +107,8 @@ export function Calculator() {
             onKeyPress={handleKeyPress}
             className={`w-full px-4 py-2 border rounded-lg ${showError && !firstNumber ? 'border-red-500' : 'border-gray-300'}`}
             placeholder={t.firstNumber}
+            max={MAX_NUMBER}
+            min={-MAX_NUMBER}
           />
         </div>
         <div className="space-y-2">
@@ -113,6 +122,8 @@ export function Calculator() {
             onKeyPress={handleKeyPress}
             className={`w-full px-4 py-2 border rounded-lg ${showError && !secondNumber ? 'border-red-500' : 'border-gray-300'}`}
             placeholder={t.secondNumber}
+            max={MAX_NUMBER}
+            min={-MAX_NUMBER}
           />
         </div>
       </div>
