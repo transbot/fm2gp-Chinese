@@ -8,11 +8,16 @@ import { useLanguage } from '../context/LanguageContext';
 interface Step {
   a: number;
   b: number;
+  quotient?: number;
   remainder: number | null;
   isSwap: boolean;
+  calculation?: {
+    multiplication?: string;
+    subtraction?: string;
+  };
 }
 
-const MAX_NUMBER = Number.MAX_SAFE_INTEGER; // 2^53 - 1
+const MAX_NUMBER = Number.MAX_SAFE_INTEGER;
 
 export function Gcm() {
   const [firstNumber, setFirstNumber] = useState<number>(0);
@@ -48,23 +53,6 @@ export function Gcm() {
 
   const formatNumber = (num: number): string => {
     return num.toLocaleString('fullwide', { useGrouping: true });
-  };
-
-  const fastSegmentRemainder = (a: number, b: number): number => {
-    // Base cases
-    if (b === 0) return a;
-    if (a === b) return 0;
-    if (a < b) return a;
-
-    // For large numbers or when a is close to b, use standard modulo
-    if (a > MAX_NUMBER / 2 || b > MAX_NUMBER / 2 || a - b <= b) {
-      return a % b;
-    }
-
-    // For smaller numbers, use the fast segment method
-    const result = fastSegmentRemainder(a, b + b);
-    if (result <= b) return result;
-    return result - b;
   };
 
   const startCalculation = () => {
@@ -109,14 +97,21 @@ export function Gcm() {
       return;
     }
 
-    const remainder = fastSegmentRemainder(currentA, currentB);
-    
-    // Add the step showing the remainder calculation
+    // Calculate quotient and remainder
+    const quotient = Math.floor(currentA / currentB);
+    const remainder = currentA % currentB;
+
+    // Add step showing the division calculation
     const newSteps = [...steps, {
       a: currentA,
       b: currentB,
+      quotient,
       remainder,
-      isSwap: false
+      isSwap: false,
+      calculation: {
+        multiplication: `${currentB} × ${quotient} = ${currentB * quotient}`,
+        subtraction: `${currentA} - ${currentB * quotient} = ${remainder}`
+      }
     }];
 
     if (remainder === 0) {
@@ -148,7 +143,7 @@ export function Gcm() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6 space-y-8">
+    <div className="max-w-4xl mx-auto p-6 space-y-8">
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-4">
           <Link
@@ -234,18 +229,29 @@ export function Gcm() {
 
       {steps.length > 0 && currentStep >= 0 && (
         <div className="space-y-6">
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-6 rounded-lg shadow-md space-y-4">
             <h2 className="text-xl font-bold mb-4">{t.currentValues}</h2>
             <div className="space-y-2 font-mono">
               <p>{t.aValue}{formatNumber(steps[currentStep].a)}</p>
               <p>{t.bValue}{formatNumber(steps[currentStep].b)}</p>
+              {steps[currentStep].quotient !== undefined && (
+                <div className="pl-4 space-y-1 text-gray-600">
+                  <p>{formatNumber(steps[currentStep].a)} ÷ {formatNumber(steps[currentStep].b)} = {steps[currentStep].quotient} 余 {steps[currentStep].remainder}</p>
+                  {steps[currentStep].calculation?.multiplication && (
+                    <p>{steps[currentStep].calculation.multiplication}</p>
+                  )}
+                  {steps[currentStep].calculation?.subtraction && (
+                    <p>{steps[currentStep].calculation.subtraction}</p>
+                  )}
+                </div>
+              )}
               {steps[currentStep].remainder !== null && (
                 <p className={steps[currentStep].remainder === 0 ? "text-green-600 font-bold" : ""}>
                   {t.remainderValue}{formatNumber(steps[currentStep].remainder)}
                 </p>
               )}
               {steps[currentStep].isSwap && (
-                <p className="text-blue-600">↺ Swap a and b</p>
+                <p className="text-blue-600">↺ {lang === 'en' ? 'Swap a and b' : '交换 a 和 b'}</p>
               )}
             </div>
           </div>
@@ -271,7 +277,7 @@ export function Gcm() {
                   <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     b
                   </th>
-                  <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-[200px]">
+                  <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-[300px]">
                     Action
                   </th>
                 </tr>
@@ -285,12 +291,20 @@ export function Gcm() {
                     <td className="px-6 py-4 whitespace-nowrap">{index + 1}</td>
                     <td className="px-6 py-4 whitespace-nowrap font-mono">{formatNumber(step.a)}</td>
                     <td className="px-6 py-4 whitespace-nowrap font-mono">{formatNumber(step.b)}</td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      {step.remainder !== null ? (
-                        <span className={step.remainder === 0 ? "text-green-600 font-bold" : ""}>
-                          {lang === 'en' ? 'remainder' : '余数'} = {formatNumber(step.remainder)}
-                        </span>
-                      ) : step.isSwap ? (lang === 'en' ? 'swap' : '交换') : ''}
+                    <td className="px-6 py-4">
+                      {step.quotient !== undefined ? (
+                        <div className="space-y-1">
+                          <div>{formatNumber(step.a)} ÷ {formatNumber(step.b)} = {step.quotient} 余 {step.remainder}</div>
+                          {step.calculation?.multiplication && (
+                            <div className="text-gray-600">{step.calculation.multiplication}</div>
+                          )}
+                          {step.calculation?.subtraction && (
+                            <div className="text-gray-600">{step.calculation.subtraction}</div>
+                          )}
+                        </div>
+                      ) : step.isSwap ? (
+                        lang === 'en' ? 'swap' : '交换'
+                      ) : ''}
                     </td>
                   </tr>
                 ))}
