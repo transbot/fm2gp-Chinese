@@ -236,7 +236,7 @@ export function Gcm() {
               <p>{t.bValue}{formatNumber(steps[currentStep].b)}</p>
               {steps[currentStep].quotient !== undefined && (
                 <div className="pl-4 space-y-1 text-gray-600">
-                  <p>{formatNumber(steps[currentStep].a)} ÷ {formatNumber(steps[currentStep].b)} = {steps[currentStep].quotient} 余 {steps[currentStep].remainder}</p>
+                  <p>{formatNumber(steps[currentStep].a)} ÷ {formatNumber(steps[currentStep].b)} = {steps[currentStep].quotient} {lang === 'en' ? 'remainder' : '余'} {steps[currentStep].remainder}</p>
                   {steps[currentStep].calculation?.multiplication && (
                     <p>{steps[currentStep].calculation.multiplication}</p>
                   )}
@@ -294,7 +294,7 @@ export function Gcm() {
                     <td className="px-6 py-4">
                       {step.quotient !== undefined ? (
                         <div className="space-y-1">
-                          <div>{formatNumber(step.a)} ÷ {formatNumber(step.b)} = {step.quotient} 余 {step.remainder}</div>
+                          <div>{formatNumber(step.a)} ÷ {formatNumber(step.b)} = {step.quotient} {lang === 'en' ? 'remainder' : '余'} {step.remainder}</div>
                           {step.calculation?.multiplication && (
                             <div className="text-gray-600">{step.calculation.multiplication}</div>
                           )}
