@@ -1,6 +1,6 @@
 export const translations = {
   en: {
-    visualizations: 'Algorithm Visualizations',
+    visualizations: 'From Mathematics to Generic Programming Interactive Algorithm Visualizations',
     contents: 'Contents',
     egyptianMultiplication: 'Section 2.1 - Egyptian Multiplication (Russian Multiplication)', 
     sieveOfEratosthenes: 'Section 3.2-3.3 - Sieve of Eratosthenes',
@@ -141,7 +141,7 @@ export const translations = {
     rsaStep3Explanation: 'Each encrypted value is decrypted using the private key (d, n) to recover the original bytes.'
   },
   zh: {
-    visualizations: '算法可视化',
+    visualizations: '《数学与泛型编程：高效编程的奥秘》交互式算法演示',
     contents: '目录',
     egyptianMultiplication: '2.1节 - 埃及乘法(俄式乘法)', 
     sieveOfEratosthenes: '3.2节-3.3节 - 埃拉托色尼筛法',
