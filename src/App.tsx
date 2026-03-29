@@ -13,6 +13,8 @@ import { PiUpperBound } from './components/PiUpperBound';
 import { Rotate } from './components/Rotate';
 import { GcdComparison } from './components/GcdComparison';
 import { Rsa } from './components/Rsa';
+import { MillerRabin } from './components/MillerRabin';
+import { ExtendedGcd } from './components/ExtendedGcd';
 import { Home } from './pages/Home';
 import { LanguageProvider } from './context/LanguageContext';
 
@@ -34,7 +36,9 @@ function App() {
           <Route path="/pi-upper-bound" element={<PiUpperBound />} />
           <Route path="/rotate" element={<Rotate />} />
           <Route path="/gcd-comparison" element={<GcdComparison />} />
+          <Route path="/extended-gcd" element={<ExtendedGcd />} />
           <Route path="/rsa" element={<Rsa />} />
+          <Route path="/miller-rabin" element={<MillerRabin />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>

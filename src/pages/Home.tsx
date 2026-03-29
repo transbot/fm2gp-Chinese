@@ -199,6 +199,22 @@ export function Home() {
                     {t.rsaAlgorithm}
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/extended-gcd"
+                    className="block p-3 sm:p-4 rounded-xl hover:bg-blue-50 transition-colors text-blue-600 hover:text-blue-800 text-sm sm:text-base"
+                  >
+                    {t.extendedGcdAlgorithm}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/miller-rabin"
+                    className="block p-3 sm:p-4 rounded-xl hover:bg-blue-50 transition-colors text-blue-600 hover:text-blue-800 text-sm sm:text-base"
+                  >
+                    {t.millerRabinTest}
+                  </Link>
+                </li>
               </ul>
             </div>
 

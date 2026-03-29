@@ -3,6 +3,7 @@ import { Home, Languages } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
 import { Links } from './Links';
+import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
 
 interface NumberCell {
@@ -197,6 +198,7 @@ export function Sieve() {
         )}
       </div>
 
+      <DeveloperNote noteKey="devNoteSieve" />
       <Links lang={lang} />
     </div>
   );

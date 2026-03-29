@@ -138,7 +138,24 @@ export const translations = {
     rsaHideSteps: 'Hide Steps',
     rsaStep1Explanation: 'Two random prime numbers p and q are chosen, and their product n becomes the modulus. The totient φ(n) = (p-1)(q-1) is calculated.',
     rsaStep2Explanation: 'The message is converted to bytes and each byte is encrypted using the public key (e, n).',
-    rsaStep3Explanation: 'Each encrypted value is decrypted using the private key (d, n) to recover the original bytes.'
+    rsaStep3Explanation: 'Each encrypted value is decrypted using the private key (d, n) to recover the original bytes.',
+    extendedGcdAlgorithm: 'Section 12.3 & Exercise 12.7 - Extended GCD & Stein\'s Extended GCD',
+    millerRabinTest: 'Section 13.3 - Miller-Rabin Primality Test',
+    millerRabinTitle: 'Miller-Rabin Primality Test',
+    extendedGcdTitle: 'Extended GCD Algorithms',
+    extendedGcdDescription: 'Compare Traditional Extended GCD and Binary (Stein\'s) Extended GCD',
+    millerRabinDescription: 'Probabilistic primality test based on Fermat\'s Little Theorem (Section 5.3)',
+    // Developer Notes
+    devNoteEqMult: 'Section 2.1 introduces Egyptian Multiplication, demonstrating how transforming repeated addition into shifts and additions reduces time complexity from O(n) to O(log n). This forms the basis for generic power algorithms.',
+    devNoteSieve: 'The Sieve of Eratosthenes (Section 3.3) is a classic example of trading space for time. It also introduces the concept of shifting the inner loop start specifically from i*i to optimize performance.',
+    devNoteGcm: 'The Euclidean Algorithm (Section 4.2) is foundational. It provides a recursive and division-based approach to finding the greatest common measure/divisor, later optimized by Stein\'s algorithm.',
+    devNotePrimeChecker: 'Section 5.1 discusses prime checking. Simple trial division takes O(√n), but the need for cryptographic applications pushes modern systems to use probabilistic tests like Miller-Rabin (Section 13.3).',
+    devNoteFibonacci: 'The naive recursive algorithm for Fibonacci behaves identically to the mathematical definition, simulating the tree of additions. Its exponential growth illustrates why naive implementations of recursive mathematical definitions usually fail in production.',
+    devNoteFastFibonacci: 'By representing Fibonacci numbers as vector multiplication and associating it with matrix powers (Section 7.7), we can apply the O(log n) generic power algorithm originally derived from Egyptian multiplication.',
+    devNoteShortestPath: 'Section 8.6 shows the power of generic programming. By replacing the standard (+, *) algebraic operations with min and addition (a tropical semiring), the exact same matrix power algorithm gives us shortest paths in a graph.',
+    devNoteRsa: 'RSA (Section 13.4) brings all these number-theoretic elements together: large primes (Miller-Rabin), GCDs for checking coprimes, inverse calculation (Extended GCD), and fast modular exponentiation (Generic Power Algorithm).',
+    devNoteExtendedGcd: 'Extended GCD (Section 12.3) not only computes the GCD but also the Bézout coefficients. Stein\'s Extended GCD (Exercise 12.7) further optimizes this using bitwise operations instead of modulo arithmetic, suitable for machine architectures.',
+    devNoteMillerRabin: 'The Miller-Rabin Test (Section 13.3) detects nontrivial square roots of 1 modulo n, relying on Fermat\'s Little Theorem. It trades deterministic certainty for probabilistic speed, crucial for generating RSA primes.'
   },
   zh: {
     visualizations: '《数学与泛型编程：高效编程的奥秘》交互式算法演示',
@@ -279,6 +296,23 @@ export const translations = {
     rsaHideSteps: '隐藏步骤',
     rsaStep1Explanation: '选择两个随机素数p和q，它们的乘积n作为模数。计算欧拉函数值φ(n) = (p-1)(q-1)。',
     rsaStep2Explanation: '将消息转换为字节，使用公钥(e, n)加密每个字节。',
-    rsaStep3Explanation: '使用私钥(d, n)解密每个加密值，恢复原始字节。'
+    rsaStep3Explanation: '使用私钥(d, n)解密每个加密值，恢复原始字节。',
+    extendedGcdAlgorithm: '12.3节与习题12.7 - 扩展欧几里得与斯坦因扩展GCD',
+    millerRabinTest: '13.3节 - 米勒-拉宾(Miller-Rabin)素性测试',
+    millerRabinTitle: '米勒-拉宾素性测试',
+    extendedGcdTitle: '扩展GCD算法对比',
+    extendedGcdDescription: '对比传统扩展欧几里得算法与二进制(斯坦因)扩展GCD',
+    millerRabinDescription: '基于费马小定理(5.3节)的概率素性测试算法',
+    // 开发者笔记
+    devNoteEqMult: '2.1节引入了埃及乘法（俄式乘法），展示了如何通过移位和加法将重复加法的时间复杂度从 O(n) 降低到 O(log n)。这为泛型幂算法（Generic Power Algorithm）奠定了基础。',
+    devNoteSieve: '3.3节的埃拉托色尼筛法是“空间换时间”的经典案例。书中特别指出了内层循环从 i*i 开始优化性能的细节。',
+    devNoteGcm: '4.2节的欧几里得算法是现代算法的基石。它提供了一种基于递归和除法的最大公约数计算方法，后来被斯坦因（Stein）算法进一步优化。',
+    devNotePrimeChecker: '5.1节探讨了素数判定。简单的试除法需要 O(√n) 的时间，但因为密码学等实际应用需要，现代系统更倾向于使用如米勒-拉宾（13.3节）这样的概率测试。',
+    devNoteFibonacci: '最初级的斐波那契递归算法完全照搬数学定义，导致了呈指数增长的执行树。这形象地展示了为什么在生产代码中，原原本本地翻译递归数学定义通常是失败的。',
+    devNoteFastFibonacci: '7.7节展示了如何将斐波那契数列转换为向量与矩阵乘法。通过这种泛型化，我们可以直接重用最初从埃及乘法衍生出来的 O(log n) 泛型幂算法来计算矩阵的幂。',
+    devNoteShortestPath: '8.6节展示了泛型编程的强大威力。只需将标准代数运算 (+, *) 替换为取最小值和加法（即热带半环 Tropical Semiring），完全相同的矩阵幂算法就可以用来求图的最短路径。',
+    devNoteRsa: '13.4节的 RSA 密码系统将所有数论基建结合在了一起：用米勒-拉宾算法寻找大素数，用 GCD 判断互素，用扩展 GCD 计算乘法逆元，并用泛型幂算法进行快速模幂运算。',
+    devNoteExtendedGcd: '12.3节的扩展 GCD 不仅计算出 GCD，还能求解裴蜀等式（Bézout coefficients）。习题12.7的斯坦因扩展GCD进一步将其转换为位运算而不是模运算，这在现代机器架构下性能更好。',
+    devNoteMillerRabin: '13.3节的米勒-拉宾算法依据费马小定理，通过检测模n下的非平凡平方根来进行素性测试。这是一种用“确定性”换取“速度”的概率算法，是生成RSA大素数时不可或缺的工具。'
   }
 };
