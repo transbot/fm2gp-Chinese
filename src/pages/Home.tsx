@@ -177,6 +177,14 @@ export function Home() {
                 </li>
                 <li>
                   <Link
+                    to="/binary-search"
+                    className="block p-3 sm:p-4 rounded-xl hover:bg-blue-50 transition-colors text-blue-600 hover:text-blue-800 text-sm sm:text-base"
+                  >
+                    {t.binarySearchTitle}
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to="/rotate"
                     className="block p-3 sm:p-4 rounded-xl hover:bg-blue-50 transition-colors text-blue-600 hover:text-blue-800 text-sm sm:text-base"
                   >
@@ -193,14 +201,6 @@ export function Home() {
                 </li>
                 <li>
                   <Link
-                    to="/rsa"
-                    className="block p-3 sm:p-4 rounded-xl hover:bg-blue-50 transition-colors text-blue-600 hover:text-blue-800 text-sm sm:text-base"
-                  >
-                    {t.rsaAlgorithm}
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     to="/extended-gcd"
                     className="block p-3 sm:p-4 rounded-xl hover:bg-blue-50 transition-colors text-blue-600 hover:text-blue-800 text-sm sm:text-base"
                   >
@@ -213,6 +213,14 @@ export function Home() {
                     className="block p-3 sm:p-4 rounded-xl hover:bg-blue-50 transition-colors text-blue-600 hover:text-blue-800 text-sm sm:text-base"
                   >
                     {t.millerRabinTest}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/rsa"
+                    className="block p-3 sm:p-4 rounded-xl hover:bg-blue-50 transition-colors text-blue-600 hover:text-blue-800 text-sm sm:text-base"
+                  >
+                    {t.rsaAlgorithm}
                   </Link>
                 </li>
               </ul>

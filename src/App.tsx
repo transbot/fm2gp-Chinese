@@ -15,6 +15,7 @@ import { GcdComparison } from './components/GcdComparison';
 import { Rsa } from './components/Rsa';
 import { MillerRabin } from './components/MillerRabin';
 import { ExtendedGcd } from './components/ExtendedGcd';
+import { BinarySearch } from './components/BinarySearch';
 import { Home } from './pages/Home';
 import { LanguageProvider } from './context/LanguageContext';
 
@@ -39,6 +40,7 @@ function App() {
           <Route path="/extended-gcd" element={<ExtendedGcd />} />
           <Route path="/rsa" element={<Rsa />} />
           <Route path="/miller-rabin" element={<MillerRabin />} />
+          <Route path="/binary-search" element={<BinarySearch />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>

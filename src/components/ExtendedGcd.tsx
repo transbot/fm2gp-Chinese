@@ -6,7 +6,7 @@ import { Links } from './Links';
 import { useLanguage } from '../context/LanguageContext';
 import { DeveloperNote } from './DeveloperNote';
 import { extendedGcdGenerator, binaryExtendedGcdGenerator, ExtendedGcdStep, BinaryExtendedGcdStep } from '../lib/algorithms/extended_gcd';
-import { cn } from '../lib/utils';
+
 import { motion, AnimatePresence } from 'framer-motion';
 
 export function ExtendedGcd() {
@@ -115,14 +115,14 @@ export function ExtendedGcd() {
           />
         </div>
         <div className="flex-1 space-y-2">
-          <label className="block text-sm font-medium text-gray-700">Algorithm</label>
+          <label className="block text-sm font-medium text-gray-700">{t.algorithmLabel}</label>
           <select 
             value={mode} 
             onChange={(e) => setMode(e.target.value as 'traditional' | 'binary')}
             className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
           >
-            <option value="traditional">Traditional Extended GCD</option>
-            <option value="binary">Binary (Stein's) Extended GCD</option>
+            <option value="traditional">{t.traditionalExtendedGcd}</option>
+            <option value="binary">{t.binaryExtendedGcd}</option>
           </select>
         </div>
         <div className="flex items-end gap-2">
@@ -193,8 +193,8 @@ export function ExtendedGcd() {
               <tr>
                 <th className="p-2">Action</th>
                 <th className="p-2">u</th><th className="p-2">v</th>
-                <th className="p-2">u1 (x1)</th><th className="p-2">u2 (x2)</th>
-                <th className="p-2">v1 (y1)</th><th className="p-2">v2 (y2)</th>
+                <th className="p-2">A (x1)</th><th className="p-2">B (x2)</th>
+                <th className="p-2">C (y1)</th><th className="p-2">D (y2)</th>
               </tr>
             </thead>
             <tbody>

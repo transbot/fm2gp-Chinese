@@ -5,6 +5,7 @@ import { translations } from '../i18n/translations';
 import { calculateEgyptianMultiplication } from '../utils/egyptianMultiplication';
 import { CalculationDisplay } from './CalculationDisplay';
 import { Links } from './Links';
+import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
 
 interface Step {
@@ -158,6 +159,7 @@ export function Calculator() {
           lang={lang}
         />
       )}
+      <DeveloperNote noteKey="devNoteEqMult" />
       <Links lang={lang} />
     </div>
   );

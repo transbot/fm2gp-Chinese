@@ -3,6 +3,7 @@ import { Home, Languages } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
 import { Links } from './Links';
+import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
 
 interface Step {
@@ -314,6 +315,7 @@ export function Gcm() {
         </div>
       )}
 
+      <DeveloperNote noteKey="devNoteGcm" />
       <Links lang={lang} />
     </div>
   );

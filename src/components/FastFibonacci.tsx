@@ -3,6 +3,7 @@ import { Home, Languages } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
 import { Links } from './Links';
+import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
 
 interface OperationCounts {
@@ -232,6 +233,7 @@ export function FastFibonacci() {
         </div>
       )}
 
+      <DeveloperNote noteKey="devNoteFastFibonacci" />
       <Links lang={lang} />
     </div>
   );

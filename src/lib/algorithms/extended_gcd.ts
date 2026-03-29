@@ -56,60 +56,53 @@ export interface BinaryExtendedGcdStep {
 
 // Stein's Algorithm (Binary extended GCD)
 export function* binaryExtendedGcdGenerator(a: bigint, b: bigint): Generator<BinaryExtendedGcdStep, { gcd: bigint, x: bigint, y: bigint }, void> {
-  // Simplification for positive integers only for the generator demo
-  let u = a;
-  let v = b;
-
-  if (u === 0n) return { gcd: v, x: 0n, y: 1n };
-  if (v === 0n) return { gcd: u, x: 1n, y: 0n };
+  if (a === 0n) return { gcd: b, x: 0n, y: 1n };
+  if (b === 0n) return { gcd: a, x: 1n, y: 0n };
 
   let shift = 0n;
-  while ((u & 1n) === 0n && (v & 1n) === 0n) {
-    u >>= 1n;
-    v >>= 1n;
-    shift++;
-    yield { u, v, x1: 0n, x2: 0n, y1: 0n, y2: 0n, action: `Shift by 1 (both even)` };
+  let aTemp = a, bTemp = b;
+  while ((aTemp & 1n) === 0n && (bTemp & 1n) === 0n) {
+    aTemp >>= 1n; bTemp >>= 1n; shift++;
+    yield { u: aTemp, v: bTemp, x1: 0n, x2: 0n, y1: 0n, y2: 0n, action: `Shift by 1 (both even)` };
   }
 
-  let u1 = 1n, u2 = 0n;
-  let v1 = 0n, v2 = 1n;
-  let uTemp = u, vTemp = v;
+  // Now at least one of aTemp or bTemp is odd.
+  let u = aTemp, v = bTemp;
+  let A = 1n, B = 0n, C = 0n, D = 1n;
 
-  while ((u & 1n) === 0n) {
-    u >>= 1n;
-    if ((u1 & 1n) === 0n && (u2 & 1n) === 0n) {
-      u1 >>= 1n;
-      u2 >>= 1n;
-    } else {
-      u1 = (u1 + vTemp) >> 1n;
-      u2 = (u2 - uTemp) >> 1n;
+  while (u !== 0n) {
+    while ((u & 1n) === 0n) {
+      u >>= 1n;
+      if ((A & 1n) === 0n && (B & 1n) === 0n) {
+        A >>= 1n; B >>= 1n;
+      } else {
+        A = (A + bTemp) >> 1n; B = (B - aTemp) >> 1n;
+      }
+      yield { u, v, x1: A, x2: B, y1: C, y2: D, action: `Halve u (u is even)` };
     }
-  }
 
-  while (v !== 0n) {
     while ((v & 1n) === 0n) {
       v >>= 1n;
-      if ((v1 & 1n) === 0n && (v2 & 1n) === 0n) {
-        v1 >>= 1n;
-        v2 >>= 1n;
+      if ((C & 1n) === 0n && (D & 1n) === 0n) {
+        C >>= 1n; D >>= 1n;
       } else {
-        v1 = (v1 + vTemp) >> 1n;
-        v2 = (v2 - uTemp) >> 1n;
+        C = (C + bTemp) >> 1n; D = (D - aTemp) >> 1n;
       }
+      yield { u, v, x1: A, x2: B, y1: C, y2: D, action: `Halve v (v is even)` };
     }
 
     if (u >= v) {
       u = u - v;
-      u1 = u1 - v1;
-      u2 = u2 - v2;
+      A = A - C;
+      B = B - D;
+      yield { u, v, x1: A, x2: B, y1: C, y2: D, action: `Subtract (u = u - v)` };
     } else {
       v = v - u;
-      v1 = v1 - u1;
-      v2 = v2 - u2;
+      C = C - A;
+      D = D - B;
+      yield { u, v, x1: A, x2: B, y1: C, y2: D, action: `Subtract (v = v - u)` };
     }
-    
-    yield { u, v, x1: u1, x2: u2, y1: v1, y2: v2, action: `Subtract` };
   }
 
-  return { gcd: u << shift, x: u1, y: u2 };
+  return { gcd: v << shift, x: C, y: D };
 }

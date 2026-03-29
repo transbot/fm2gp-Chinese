@@ -3,6 +3,7 @@ import { Home, Languages } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
 import { Links } from './Links';
+import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
 
 // 定义无穷大
@@ -220,6 +221,7 @@ export function ShortestPath() {
         </div>
       </div>
 
+      <DeveloperNote noteKey="devNoteShortestPath" />
       <Links lang={lang} />
     </div>
   );

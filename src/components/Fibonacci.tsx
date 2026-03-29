@@ -3,6 +3,7 @@ import { Home, Languages } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
 import { Links } from './Links';
+import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
 
 export function Fibonacci() {
@@ -168,6 +169,7 @@ export function Fibonacci() {
         </div>
       )}
 
+      <DeveloperNote noteKey="devNoteFibonacci" />
       <Links lang={lang} />
     </div>
   );

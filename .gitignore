@@ -22,3 +22,47 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# ========== 新增内容 ==========
+
+# 项目特定文件
+patch.py
+
+# Vite 缓存
+.vite/
+.vite-cache/
+
+# 测试覆盖率
+coverage/
+.nyc_output/
+
+# 本地环境变量（保留 .env 用于示例配置）
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# TypeScript 编译缓存
+*.tsbuildinfo
+
+# Windows 特定文件
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+ehthumbs_vista.db
+
+# macOS 补充
+._*
+.Spotlight-V100
+.Trashes
+
+# Vim 交换文件
+*.swp
+*.swo
+*.swn
+
+# 工具缓存目录
+.bolt/
+
+# Claude Code 缓存目录
+.claude/

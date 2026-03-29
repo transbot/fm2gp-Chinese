@@ -3,6 +3,7 @@ import { Home, Languages, Lock, Unlock, Key, ChevronDown, ChevronUp, ArrowRight 
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
 import { Links } from './Links';
+import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
 
 interface KeyPair {
@@ -381,6 +382,7 @@ export function Rsa() {
         )}
       </div>
 
+      <DeveloperNote noteKey="devNoteRsa" />
       <Links lang={lang} />
     </div>
   );
