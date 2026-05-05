@@ -16,6 +16,7 @@ import { Rsa } from './components/Rsa';
 import { MillerRabin } from './components/MillerRabin';
 import { ExtendedGcd } from './components/ExtendedGcd';
 import { BinarySearch } from './components/BinarySearch';
+import { LinearSearch } from './components/algorithms/LinearSearch';
 import { Home } from './pages/Home';
 import { LanguageProvider } from './context/LanguageContext';
 
@@ -41,6 +42,7 @@ function App() {
           <Route path="/rsa" element={<Rsa />} />
           <Route path="/miller-rabin" element={<MillerRabin />} />
           <Route path="/binary-search" element={<BinarySearch />} />
+          <Route path="/linear-search" element={<LinearSearch />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>

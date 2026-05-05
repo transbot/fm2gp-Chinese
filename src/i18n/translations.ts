@@ -177,7 +177,25 @@ export const translations = {
     devNoteRsa: 'RSA (Section 13.4) brings all these number-theoretic elements together: large primes (Miller-Rabin), GCDs for checking coprimes, inverse calculation (Extended GCD), and fast modular exponentiation (Generic Power Algorithm).',
     devNoteExtendedGcd: 'Extended GCD (Section 12.3) not only computes the GCD but also the Bézout coefficients. Stein\'s Extended GCD (Exercise 12.7) further optimizes this using bitwise operations instead of modulo arithmetic, suitable for machine architectures.',
     devNoteBinarySearch: 'Lemma 10.1 formally defines that sorting partitions an array into three strict consecutive segments relative to a target value a: (< a), (== a), and (> a). Binary Search leverages this monotonicity. By calculating lower_bound (bₗ) and upper_bound (bᵤ), it effectively maps these interval boundaries without scanning linearly. Exercise 10.1 demands its proof relying directly on transitive properties.',
-    devNoteMillerRabin: 'The Miller-Rabin Test (Section 13.3) detects nontrivial square roots of 1 modulo n, relying on Fermat\'s Little Theorem. It trades deterministic certainty for probabilistic speed, crucial for generating RSA primes.'
+    devNoteMillerRabin: 'The Miller-Rabin Test (Section 13.3) detects nontrivial square roots of 1 modulo n, relying on Fermat\'s Little Theorem. It trades deterministic certainty for probabilistic speed, crucial for generating RSA primes.',
+
+    // Linear Search
+    linearSearchTitle: 'Section 10.7 - Linear Search',
+    linearSearchDescription: 'Visualizing the Linear Search algorithm - finding an element by checking each element sequentially',
+    array: 'Array',
+    target: 'Target',
+    random: 'Random',
+    commaSeparated: 'comma-separated',
+    searchingFor: 'Searching for',
+    comparisons: 'Comparisons',
+    linearSearchReady: 'Ready to start linear search. Enter an array and target value, then click Start Search.',
+    linearSearchInit: 'Starting linear search',
+    linearSearchCompare: 'Comparing element',
+    linearSearchFound: 'Found target',
+    linearSearchNotFound: 'Target not found',
+    linearSearchEmptyArray: 'Array must not be empty',
+    linearSearchTooLarge: 'Array must have at most 100 elements',
+    devNoteLinearSearch: 'Linear Search (Section 10.7) is the simplest search algorithm, checking each element sequentially. While O(n) time complexity is slower than Binary Search O(log n), it works on unsorted arrays and demonstrates the fundamental concept of iteration with invariant maintenance.',
   },
   zh: {
     visualizations: '《数学与泛型编程：高效编程的奥秘》交互式算法演示',
@@ -357,6 +375,24 @@ export const translations = {
     devNoteRsa: '13.4节的 RSA 密码系统将所有数论基建结合在了一起：用米勒-拉宾算法寻找大素数，用 GCD 判断互素，用扩展 GCD 计算乘法逆元，并用泛型幂算法进行快速模幂运算。',
     devNoteExtendedGcd: '12.3节的扩展 GCD 不仅计算出 GCD，还能求解裴蜀等式（Bézout coefficients）。习题12.7的斯坦因扩展GCD进一步将其转换为位运算而不是模运算，这在现代机器架构下性能更好。',
     devNoteBinarySearch: '引理10.1深刻地定义了序列按照目标元素 a 的大小被严格切分为三个几何阶段：(< a), (== a), 以及 (> a)。这也构成了习题10.1数学推导（依据单调非递减性）的基础。二分查找算法则利用其递推了寻找区间下界和上界(bₗ 和 bᵤ)的最优路径。',
-    devNoteMillerRabin: '13.3节的米勒-拉宾算法依据费马小定理，通过检测模n下的非平凡平方根来进行素性测试。这是一种用“确定性”换取“速度”的概率算法，是生成RSA大素数时不可或缺的工具。'
+    devNoteMillerRabin: '13.3节的米勒-拉宾算法依据费马小定理，通过检测模n下的非平凡平方根来进行素性测试。这是一种用”确定性”换取”速度”的概率算法，是生成RSA大素数时不可或缺的工具。',
+
+    // Linear Search
+    linearSearchTitle: '10.7节 - 线性查找',
+    linearSearchDescription: '线性查找算法可视化 - 逐个检查元素来查找目标值',
+    array: '数组',
+    target: '目标值',
+    random: '随机',
+    commaSeparated: '逗号分隔',
+    searchingFor: '查找目标',
+    comparisons: '比较次数',
+    linearSearchReady: '准备开始线性查找。输入数组和目标值，然后点击”开始查找”。',
+    linearSearchInit: '开始线性查找',
+    linearSearchCompare: '比较元素',
+    linearSearchFound: '找到目标',
+    linearSearchNotFound: '未找到目标',
+    linearSearchEmptyArray: '数组不能为空',
+    linearSearchTooLarge: '数组最多包含100个元素',
+    devNoteLinearSearch: '线性查找（10.7节）是最简单的查找算法，逐个检查每个元素。虽然O(n)的时间复杂度比二分查找的O(log n)慢，但它可以在未排序的数组上工作，并展示了循环不变式维护的基本概念。',
   }
 };
