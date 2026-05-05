@@ -19,6 +19,7 @@ import { BinarySearch } from './components/BinarySearch';
 import { LinearSearch } from './components/algorithms/LinearSearch';
 import { GraphTraversal } from './components/algorithms/GraphTraversal';
 import { Division } from './components/algorithms/Division';
+import { Reverse } from './components/algorithms/Reverse';
 import { Home } from './pages/Home';
 import { LanguageProvider } from './context/LanguageContext';
 
@@ -47,6 +48,7 @@ function App() {
           <Route path="/linear-search" element={<LinearSearch />} />
           <Route path="/graph-traversal" element={<GraphTraversal />} />
           <Route path="/division" element={<Division />} />
+          <Route path="/reverse" element={<Reverse />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
