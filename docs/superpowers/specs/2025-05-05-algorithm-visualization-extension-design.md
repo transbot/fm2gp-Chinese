@@ -71,6 +71,42 @@ interface ValidationResult {
   - 支持跳转（seek）
   - 统一的步进控制逻辑
 
+**内存/性能考虑：**
+
+对于长步骤序列（如大型数组排序），预生成可能导致内存问题。采用以下策略：
+
+1. **步骤分页加载（推荐）**
+   ```typescript
+   interface PaginatedSteps<TState> {
+     steps: Step<TState>[];
+     totalCount: number;
+     hasMore: boolean;
+     loadMore: () => Promise<Step<TState>[]>;
+   }
+   ```
+   - 每次只生成当前视窗附近的步骤（如前后各100步）
+   - 滚动/跳转时按需加载更多
+
+2. **虚拟步骤（用于简单循环）**
+   ```typescript
+   interface VirtualStep<TState> {
+     type: 'loop';
+     iterations: number;
+     getState: (iteration: number) => TState;
+   }
+   ```
+   - 对于重复模式的步骤（如线性查找），只存储模式
+   - 按需展开具体步骤
+
+3. **阈值警告**
+   - 当预估步骤数 > 10000 时，提示用户输入较小数据
+   - 或自动切换到"摘要模式"（只显示关键步骤）
+
+**默认策略：**
+- 步骤数 < 1000：预生成全部
+- 步骤数 1000-10000：预生成 + 分页加载
+- 步骤数 > 10000：提示用户或使用摘要模式
+
 ### 1.1 StepController Component
 
 Universal step-by-step control for all algorithm visualizations.
@@ -199,12 +235,29 @@ Allow users to manipulate data directly.
 - `src/components/common/DraggableArray.tsx`
 - `src/components/common/EditableGraph.tsx`
 
-**EditableGraph 复杂度说明：**
-此组件是最复杂的交互组件，需要实现：
-- 节点/边的增删改
-- 节点拖拽重定位
-- 自动布局算法（力导向或网格布局）
-- 缩放和平移支持
+**EditableGraph 技术选型：**
+
+采用 **react-flow** 库（而非自研），理由：
+- 成熟的图编辑组件，支持拖拽、缩放、连接线
+- 良好的TypeScript支持
+- 活跃的社区和维护
+- 文档完善，降低开发风险
+
+```typescript
+// 依赖添加
+// package.json
+"react-flow-renderer": "^2.10.0"
+```
+
+**若react-flow不满足需求，备选方案：**
+- 方案B：使用 vis-network（更轻量）
+- 方案C：自研SVG图组件（风险最高，仅在前两者都不满足时考虑）
+
+**此组件是最复杂的交互组件，需要实现：**
+- 节点/边的增删改（react-flow内置支持）
+- 节点拖拽重定位（react-flow内置支持）
+- 自动布局算法（使用dagre库进行层次布局）
+- 缩放和平移支持（react-flow内置支持）
 
 **验证策略：** 先用图遍历算法验证此组件的完整性，再批量开发其他算法。
 
@@ -634,17 +687,21 @@ Update `src/App.tsx` with new routes for all 13 new algorithms.
 
 ---
 
-### 里程碑4：现有组件升级（约12人时）
+### 里程碑4：现有组件升级（约14人时）
 
 | 组件 | 改造内容 | 工时 |
 |------|----------|------|
-| Sieve | StepController + ExplanationPanel | 2h |
-| Gcm | ExplanationPanel | 2h |
-| Fibonacci | StepController + ExplanationPanel | 2h |
-| FastFibonacci | StepController + ExplanationPanel | 2h |
-| Calculator | ExplanationPanel | 1h |
-| PrimeChecker | ExplanationPanel | 1h |
-| Rsa | StepController + ExplanationPanel | 2h |
+| Sieve | StepController + ExplanationPanel + 翻译 | 3h |
+| Gcm | ExplanationPanel + 翻译 | 2h |
+| Fibonacci | StepController + ExplanationPanel + 翻译 | 3h |
+| FastFibonacci | StepController + ExplanationPanel + 翻译 | 3h |
+| Calculator | ExplanationPanel + 翻译 | 1h |
+| PrimeChecker | ExplanationPanel + 翻译 | 1h |
+| Rsa | StepController + ExplanationPanel + 翻译 | 3h |
+
+**翻译工作量说明：**
+- 每个组件的ExplanationPanel需要新增翻译键（步骤描述、不变量、复杂度说明）
+- 预估每个组件翻译工作约0.5-1h，已计入上表
 
 ---
 
@@ -666,9 +723,9 @@ Update `src/App.tsx` with new routes for all 13 new algorithms.
 | 里程碑1：架构验证 | 25h | 3.1天 |
 | 里程碑2：原书算法 | 45h | 5.6天 |
 | 里程碑3：进阶算法 | 28h | 3.5天 |
-| 里程碑4：现有升级 | 12h | 1.5天 |
+| 里程碑4：现有升级 | 14h | 1.8天 |
 | 里程碑5：最终打磨 | 8h | 1天 |
-| **总计** | **118h** | **约15工作日** |
+| **总计** | **120h** | **约15工作日** |
 
 ### 风险缓冲
 
@@ -678,10 +735,29 @@ Update `src/App.tsx` with new routes for all 13 new algorithms.
 
 | 风险 | 影响 | 缓解措施 |
 |------|------|----------|
-| EditableGraph复杂度超预期 | 延迟里程碑1 | 可先使用预设图，后续迭代添加编辑功能 |
+| EditableGraph复杂度超预期 | 延迟里程碑1 | 使用react-flow成熟库，降低开发风险；可先使用预设图，后续迭代添加编辑功能 |
 | 动画队列处理复杂 | 影响用户体验 | 采用跳帧策略，优先保证响应性 |
 | 算法状态模型差异大 | useStepControl难以复用 | 在里程碑1验证时及时调整接口 |
 | 翻译遗漏 | 影响双语体验 | 每个里程碑验收时检查翻译完整性 |
+| 长步骤序列内存问题 | 影响大型数据可视化 | 采用分页加载、虚拟步骤、阈值警告策略 |
+
+---
+
+## Appendix B: Dependencies
+
+新增依赖包：
+
+```json
+{
+  "dependencies": {
+    "react-flow-renderer": "^2.10.0",  // 图编辑组件
+    "dagre": "^0.8.5"                   // 图自动布局
+  },
+  "devDependencies": {
+    "@types/dagre": "^0.7.52"
+  }
+}
+```
 
 ---
 
