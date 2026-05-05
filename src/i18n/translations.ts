@@ -2,6 +2,8 @@ export const translations = {
   en: {
     visualizations: 'From Mathematics to Generic Programming Interactive Algorithm Visualizations',
     contents: 'Contents',
+    bookAlgorithms: 'Book Algorithms',
+    advancedAlgorithms: 'Advanced Algorithms',
     egyptianMultiplication: 'Section 2.1 - Egyptian Multiplication (Russian Multiplication)', 
     sieveOfEratosthenes: 'Section 3.2-3.3 - Sieve of Eratosthenes',
     primeCounting: 'Exercise 3.3 - Prime Counting Function',
@@ -474,6 +476,8 @@ export const translations = {
   zh: {
     visualizations: '《数学与泛型编程：高效编程的奥秘》交互式算法演示',
     contents: '目录',
+    bookAlgorithms: '书中算法',
+    advancedAlgorithms: '进阶算法',
     egyptianMultiplication: '2.1节 - 埃及乘法(俄式乘法)', 
     sieveOfEratosthenes: '3.2节-3.3节 - 埃拉托色尼筛法',
     primeCounting: '习题3.3 - 素数计数函数 (计算较慢，请耐心等待)',
