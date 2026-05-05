@@ -22,6 +22,13 @@ import { Division } from './components/algorithms/Division';
 import { Reverse } from './components/algorithms/Reverse';
 import { Swap } from './components/algorithms/Swap';
 import { PowerAlgorithm } from './components/algorithms/PowerAlgorithm';
+import { QuickSort } from './components/algorithms/QuickSort';
+import { SteinGcd } from './components/algorithms/SteinGcd';
+import { Cycle } from './components/algorithms/Cycle';
+import { EulerTheorem } from './components/algorithms/EulerTheorem';
+import { FermatTheorem } from './components/algorithms/FermatTheorem';
+import { MergeSort } from './components/algorithms/MergeSort';
+import { HeapOperations } from './components/algorithms/HeapOperations';
 import { Home } from './pages/Home';
 import { LanguageProvider } from './context/LanguageContext';
 
@@ -53,6 +60,13 @@ function App() {
           <Route path="/reverse" element={<Reverse />} />
           <Route path="/swap" element={<Swap />} />
           <Route path="/power" element={<PowerAlgorithm />} />
+          <Route path="/quick-sort" element={<QuickSort />} />
+          <Route path="/stein-gcd" element={<SteinGcd />} />
+          <Route path="/cycle" element={<Cycle />} />
+          <Route path="/euler" element={<EulerTheorem />} />
+          <Route path="/fermat" element={<FermatTheorem />} />
+          <Route path="/merge-sort" element={<MergeSort />} />
+          <Route path="/heap" element={<HeapOperations />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>

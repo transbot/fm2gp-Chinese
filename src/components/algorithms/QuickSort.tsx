@@ -314,11 +314,11 @@ export function QuickSort() {
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-blue-400 rounded"></div>
-            <span className="text-gray-600">{t.comparing || 'Comparing'}</span>
+            <span className="text-gray-600">{t.quickSortComparing || 'Comparing'}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-yellow-400 rounded"></div>
-            <span className="text-gray-600">{t.swapping || 'Swapping'}</span>
+            <span className="text-gray-600">{t.quickSortSwapping || 'Swapping'}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-blue-200 rounded"></div>

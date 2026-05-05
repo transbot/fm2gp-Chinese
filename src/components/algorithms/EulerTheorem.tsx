@@ -27,7 +27,7 @@ export function EulerTheorem() {
   const [error, setError] = useState<string | null>(null);
 
   // Parse input
-  const parseInput = useCallback(): EulerInput => {
+  const parseInput = useCallback((): EulerInput => {
     const a = parseInt(baseInput) || 0;
     const n = parseInt(modulusInput) || 1;
     return { a, n };
