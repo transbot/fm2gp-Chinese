@@ -5,6 +5,7 @@ import { translations } from '../i18n/translations';
 import { Links } from './Links';
 import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
+import { ExplanationPanel } from './common/ExplanationPanel';
 
 interface Step {
   a: number;
@@ -227,6 +228,32 @@ export function Gcm() {
           {t.reset}
         </button>
       </div>
+
+      {/* Explanation Panel with GCD Invariants */}
+      <ExplanationPanel
+        stepDescription={
+          currentStep >= 0 && steps[currentStep]
+            ? `${t.aValue || 'a = '}${formatNumber(steps[currentStep].a)}, ${t.bValue || 'b = '}${formatNumber(steps[currentStep].b)}${
+                steps[currentStep].remainder !== null
+                  ? `, ${t.remainderValue || 'r = '}${formatNumber(steps[currentStep].remainder)}`
+                  : ''
+              }`
+            : lang === 'en'
+              ? 'Enter two numbers and click Calculate to begin the Euclidean algorithm.'
+              : '输入两个数字，点击计算开始欧几里得算法。'
+        }
+        invariant={
+          lang === 'en'
+            ? 'gcd(a, b) = gcd(b, a mod b)  —  The GCD is preserved at each step.'
+            : 'gcd(a, b) = gcd(b, a mod b)  —  每一步都保持最大公约数不变。'
+        }
+        complexity={{
+          time: 'O(log min(a, b))',
+          space: 'O(1)',
+          worstCase: lang === 'en' ? 'Fibonacci numbers' : '斐波那契数列',
+        }}
+        operationType={currentStep >= 0 && steps[currentStep]?.isSwap ? (lang === 'en' ? 'swap' : '交换') : currentStep >= 0 ? (lang === 'en' ? 'divide' : '除法') : undefined}
+      />
 
       {steps.length > 0 && currentStep >= 0 && (
         <div className="space-y-6">
