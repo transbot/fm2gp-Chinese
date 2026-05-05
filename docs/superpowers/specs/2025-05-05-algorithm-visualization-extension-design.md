@@ -17,6 +17,60 @@ Extend the fm2gp-Chinese web application with new algorithm visualizations and i
 
 ## Part 1: Interaction Infrastructure
 
+### 1.0 Algorithm Visualization Interface (核心接口规范)
+
+所有算法可视化组件必须实现统一接口，确保基础设施可复用：
+
+```typescript
+// 统一的算法可视化接口
+interface AlgorithmVisualization<TInput, TState> {
+  // 预生成步骤序列（推荐，便于回退和跳转）
+  generateSteps(input: TInput): Step<TState>[];
+
+  // 输入验证
+  validateInput(input: TInput): ValidationResult;
+
+  // 初始状态
+  getInitialState(): TState;
+
+  // 步骤描述（用于ExplanationPanel）
+  describeStep(step: Step<TState>, lang: 'en' | 'zh'): string;
+
+  // 不变量（可选）
+  getInvariant?(lang: 'en' | 'zh'): string;
+
+  // 复杂度信息
+  getComplexity(): ComplexityInfo;
+}
+
+interface Step<TState> {
+  state: TState;
+  operation: string;         // 操作类型标识
+  descriptionKey: string;    // 翻译键
+  highlights?: number[];     // 高亮元素索引
+  animation?: AnimationSpec; // 动画规格（可选）
+}
+
+interface ComplexityInfo {
+  time: string;
+  space: string;
+  worstCase?: string;
+  bestCase?: string;
+}
+
+interface ValidationResult {
+  valid: boolean;
+  error?: string;
+  errorKey?: string;  // 翻译键
+}
+```
+
+**设计决策：预生成步骤序列**
+- 采用预生成而非按需计算，便于：
+  - 支持回退（backward）
+  - 支持跳转（seek）
+  - 统一的步进控制逻辑
+
 ### 1.1 StepController Component
 
 Universal step-by-step control for all algorithm visualizations.
@@ -53,7 +107,57 @@ interface StepControllerProps {
 - Value change animations
 - Support `prefers-reduced-motion` for accessibility
 
+**动画队列处理策略：**
+当用户快速点击步进时，采用 **"跳帧"策略**：
+- 检测到新操作时，中断当前动画
+- 直接跳转到目标状态（跳过中间帧）
+- 提供 `skipAnimation` 选项，允许用户禁用动画直接切换状态
+
+```typescript
+interface AnimationOptions {
+  skipAnimation?: boolean;      // 跳过动画直接切换
+  duration?: number;            // 动画时长（毫秒）
+  easing?: 'linear' | 'ease' | 'ease-in-out';
+}
+```
+
 **File:** `src/hooks/useAnimation.ts`
+
+### 1.3 useStepControl Hook
+
+管理步进状态的通用hook，与算法核心接口配合：
+
+```typescript
+interface UseStepControlOptions<TInput, TState> {
+  algorithm: AlgorithmVisualization<TInput, TState>;
+  initialInput: TInput;
+  autoPlay?: boolean;
+  defaultSpeed?: number;
+}
+
+interface UseStepControlReturn<TState> {
+  // 状态
+  currentStep: number;
+  totalSteps: number;
+  currentState: TState;
+  isPlaying: boolean;
+  speed: number;
+
+  // 操作
+  play: () => void;
+  pause: () => void;
+  stepForward: () => void;
+  stepBackward: () => void;
+  seek: (step: number) => void;
+  setSpeed: (speed: number) => void;
+  reset: () => void;
+
+  // 步骤信息
+  steps: Step<TState>[];
+}
+```
+
+**File:** `src/hooks/useStepControl.ts`
 
 ### 1.3 ExplanationPanel Component
 
@@ -81,7 +185,7 @@ interface ExplanationPanelProps {
 
 **File:** `src/components/common/ExplanationPanel.tsx`
 
-### 1.4 Interactive Input Components
+### 1.5 Interactive Input Components
 
 Allow users to manipulate data directly.
 
@@ -94,6 +198,15 @@ Allow users to manipulate data directly.
 **Files:**
 - `src/components/common/DraggableArray.tsx`
 - `src/components/common/EditableGraph.tsx`
+
+**EditableGraph 复杂度说明：**
+此组件是最复杂的交互组件，需要实现：
+- 节点/边的增删改
+- 节点拖拽重定位
+- 自动布局算法（力导向或网格布局）
+- 缩放和平移支持
+
+**验证策略：** 先用图遍历算法验证此组件的完整性，再批量开发其他算法。
 
 ---
 
@@ -400,12 +513,37 @@ src/
 
 ### 6.1 Upgrading Existing Visualizations
 
-After building the interaction infrastructure, upgrade existing components to use:
+**必须改造的组件（步进逻辑可复用）：**
+| 组件 | 改造内容 | 预估工时 |
+|------|----------|----------|
+| Sieve | 替换手动步进按钮为StepController | 2h |
+| Gcm | 添加ExplanationPanel，统一交互 | 2h |
+| Fibonacci | 添加步进控制，优化动画 | 2h |
+| FastFibonacci | 添加步进控制，优化动画 | 2h |
 
-1. Replace manual step buttons with `<StepController>`
-2. Add `<ExplanationPanel>` to each visualization
-3. Wrap animations with `useAnimation` hook
-4. Add developer notes for book section references
+**可选改造的组件（主要是静态展示）：**
+| 组件 | 改造内容 | 预估工时 |
+|------|----------|----------|
+| Calculator | 添加ExplanationPanel | 1h |
+| PrimeChecker | 添加ExplanationPanel | 1h |
+| Rsa | 添加步进控制和ExplanationPanel | 3h |
+
+**暂不改造的组件（已有较好的可视化）：**
+- Rotate - 已有较好的动画展示
+- ShortestPath - 已有矩阵可视化
+- BinarySearch - 已有完整的步进展示
+- MillerRabin - 已有完整流程
+- ExtendedGcd - 已有对比展示
+- GcdComparison - 性能对比，无需步进
+- PrimeCounting - 图表展示，无需步进
+- PalindromicPrimes - 列表展示，无需步进
+- PiUpperBound - 几何可视化，无需步进
+
+**改造原则：**
+1. 保持现有功能不变
+2. 统一交互体验（StepController）
+3. 添加上下文说明（ExplanationPanel）
+4. 添加开发者笔记（引用书中章节）
 
 ### 6.2 Home Page Update
 
@@ -421,41 +559,129 @@ Update `src/App.tsx` with new routes for all 13 new algorithms.
 
 ---
 
-## Part 7: Implementation Order
+## Part 7: Implementation Order (Vertical Slices)
 
-1. **Phase 1: Infrastructure**
-   - StepController component
-   - useAnimation hook
-   - ExplanationPanel component
-   - useStepControl hook
+### 里程碑1：架构验证（约25人时）
 
-2. **Phase 2: Book Algorithms**
-   - Division (4.5)
-   - Power Algorithm (7.5)
-   - Linear Search (10.7)
-   - Swap (11.2)
-   - Reverse (11.5)
-   - Cycle (11.4)
-   - Stein's GCD (12.1-12.2)
-   - Fermat's Theorem (5.2)
-   - Euler's Theorem (5.5)
+**目标：** 验证基础设施的通用性，确保能支持最简单和最复杂的场景
 
-3. **Phase 3: Advanced Algorithms**
-   - Quick Sort
-   - Merge Sort
-   - Heap Operations
-   - Graph Traversal
+**交付物：**
+1. 基础设施组件
+   - StepController (6h)
+   - ExplanationPanel (3h)
+   - useStepControl (5h)
+   - useAnimation (7h)
 
-4. **Phase 4: Upgrade Existing**
-   - Apply StepController to existing visualizations
-   - Add ExplanationPanel to existing visualizations
-   - Add developer notes with section references
+2. 线性查找 - 最简单场景验证 (3h)
+   - 验证基础流程
+   - 验证步进控制
+   - 验证双语支持
 
-5. **Phase 5: Final Polish**
-   - Home page organization
-   - Translation verification
-   - Accessibility testing
-   - Performance optimization
+3. 图遍历 - 最复杂场景验证 (14h)
+   - EditableGraph组件开发
+   - BFS/DFS算法实现
+   - 验证交互极限
+
+**验收标准：**
+- 两个算法可演示，交互流畅
+- 双语完整
+- 步进控制（播放/暂停/前进/后退/跳转）正常工作
+- 动画队列处理正确（快速点击不卡顿）
+
+---
+
+### 里程碑2：原书算法批量开发（约45人时）
+
+**简单组（约16人时）：**
+| 算法 | 开发 | 调试 | 总计 |
+|------|------|------|------|
+| Division (4.5) | 3h | 2h | 5h |
+| Fermat (5.2) | 3h | 1h | 4h |
+| Euler (5.5) | 3h | 1h | 4h |
+| 翻译扩展 | 3h | - | 3h |
+
+**中等组（约23人时）：**
+| 算法 | 开发 | 调试 | 总计 |
+|------|------|------|------|
+| Power (7.5) | 4h | 2h | 6h |
+| Swap (11.2) | 3h | 2h | 5h |
+| Reverse (11.5) | 3h | 2h | 5h |
+| Cycle (11.4) | 4h | 3h | 7h |
+
+**复杂组（约7人时）：**
+| 算法 | 开发 | 调试 | 总计 |
+|------|------|------|------|
+| Stein's GCD (12.1-12.2) | 4h | 3h | 7h |
+
+**每组完成后验收，发现问题及时修正基础设施。**
+
+---
+
+### 里程碑3：进阶算法批量开发（约28人时）
+
+**简单组（约17人时）：**
+| 算法 | 开发 | 调试 | 总计 |
+|------|------|------|------|
+| QuickSort | 5h | 4h | 9h |
+| MergeSort | 5h | 3h | 8h |
+
+**复杂组（约11人时）：**
+| 算法 | 开发 | 调试 | 总计 |
+|------|------|------|------|
+| Heap Operations | 6h | 5h | 11h |
+
+**注：图遍历已在里程碑1完成**
+
+---
+
+### 里程碑4：现有组件升级（约12人时）
+
+| 组件 | 改造内容 | 工时 |
+|------|----------|------|
+| Sieve | StepController + ExplanationPanel | 2h |
+| Gcm | ExplanationPanel | 2h |
+| Fibonacci | StepController + ExplanationPanel | 2h |
+| FastFibonacci | StepController + ExplanationPanel | 2h |
+| Calculator | ExplanationPanel | 1h |
+| PrimeChecker | ExplanationPanel | 1h |
+| Rsa | StepController + ExplanationPanel | 2h |
+
+---
+
+### 里程碑5：最终打磨（约8人时）
+
+- Home页面重组（区分原书算法/进阶算法）
+- 翻译验证（中英文完整性检查）
+- 无障碍测试（键盘导航、屏幕阅读器、减少动画选项）
+- 性能优化（动画流畅度、响应速度）
+
+---
+
+## Part 8: Resource Estimation
+
+### 总工时估算
+
+| 阶段 | 工时 | 工作日（8h/天） |
+|------|------|-----------------|
+| 里程碑1：架构验证 | 25h | 3.1天 |
+| 里程碑2：原书算法 | 45h | 5.6天 |
+| 里程碑3：进阶算法 | 28h | 3.5天 |
+| 里程碑4：现有升级 | 12h | 1.5天 |
+| 里程碑5：最终打磨 | 8h | 1天 |
+| **总计** | **118h** | **约15工作日** |
+
+### 风险缓冲
+
+建议预留20%缓冲时间，总计约 **18工作日**。
+
+### 关键风险项
+
+| 风险 | 影响 | 缓解措施 |
+|------|------|----------|
+| EditableGraph复杂度超预期 | 延迟里程碑1 | 可先使用预设图，后续迭代添加编辑功能 |
+| 动画队列处理复杂 | 影响用户体验 | 采用跳帧策略，优先保证响应性 |
+| 算法状态模型差异大 | useStepControl难以复用 | 在里程碑1验证时及时调整接口 |
+| 翻译遗漏 | 影响双语体验 | 每个里程碑验收时检查翻译完整性 |
 
 ---
 
@@ -468,3 +694,127 @@ Update `src/App.tsx` with new routes for all 13 new algorithms.
 5. Advanced algorithms clearly marked as "进阶"/"Advanced"
 6. Accessibility: keyboard navigation, screen reader support, reduced motion option
 7. Performance: smooth animations, responsive UI
+8. **里程碑验收：每个里程碑完成后可演示，问题及时发现和修正**
+
+---
+
+## Appendix: Algorithm Core Interface Example
+
+以线性查找为例，展示算法核心模块的完整实现：
+
+```typescript
+// src/lib/algorithms/linear_search.ts
+
+interface LinearSearchInput {
+  array: number[];
+  target: number;
+}
+
+interface LinearSearchState {
+  array: number[];
+  target: number;
+  currentIndex: number;
+  found: boolean;
+  foundIndex: number | null;
+  comparisons: number;
+}
+
+const linearSearchVisualization: AlgorithmVisualization<LinearSearchInput, LinearSearchState> = {
+  generateSteps(input: LinearSearchInput): Step<LinearSearchState>[] {
+    const steps: Step<LinearSearchState>[] = [];
+    const { array, target } = input;
+
+    for (let i = 0; i < array.length; i++) {
+      steps.push({
+        state: {
+          array,
+          target,
+          currentIndex: i,
+          found: array[i] === target,
+          foundIndex: array[i] === target ? i : null,
+          comparisons: i + 1,
+        },
+        operation: 'compare',
+        descriptionKey: array[i] === target ? 'linearSearch.found' : 'linearSearch.compare',
+        highlights: [i],
+      });
+
+      if (array[i] === target) break;
+    }
+
+    // 如果没找到，添加最终状态
+    if (steps.length === array.length && array[array.length - 1] !== target) {
+      steps.push({
+        state: {
+          array,
+          target,
+          currentIndex: -1,
+          found: false,
+          foundIndex: null,
+          comparisons: array.length,
+        },
+        operation: 'notFound',
+        descriptionKey: 'linearSearch.notFound',
+      });
+    }
+
+    return steps;
+  },
+
+  validateInput(input: LinearSearchInput): ValidationResult {
+    if (!input.array || input.array.length === 0) {
+      return { valid: false, errorKey: 'linearSearch.emptyArray' };
+    }
+    return { valid: true };
+  },
+
+  getInitialState(): LinearSearchState {
+    return {
+      array: [],
+      target: 0,
+      currentIndex: -1,
+      found: false,
+      foundIndex: null,
+      comparisons: 0,
+    };
+  },
+
+  describeStep(step: Step<LinearSearchState>, lang: 'en' | 'zh'): string {
+    const { state } = step;
+    if (lang === 'zh') {
+      if (step.operation === 'notFound') {
+        return `遍历完成，未找到目标值 ${state.target}`;
+      }
+      if (state.found) {
+        return `在索引 ${state.currentIndex} 处找到目标值 ${state.target}，共比较 ${state.comparisons} 次`;
+      }
+      return `比较 array[${state.currentIndex}]=${state.array[state.currentIndex]} 与目标值 ${state.target}，不匹配`;
+    } else {
+      if (step.operation === 'notFound') {
+        return `Traversal complete, target ${state.target} not found`;
+      }
+      if (state.found) {
+        return `Found target ${state.target} at index ${state.currentIndex} after ${state.comparisons} comparisons`;
+      }
+      return `Comparing array[${state.currentIndex}]=${state.array[state.currentIndex]} with target ${state.target}, no match`;
+    }
+  },
+
+  getInvariant(lang: 'en' | 'zh'): string {
+    return lang === 'zh'
+      ? '已检查区间 [0, currentIndex) 内所有元素均不等于 target'
+      : 'All elements in range [0, currentIndex) have been checked and are not equal to target';
+  },
+
+  getComplexity(): ComplexityInfo {
+    return {
+      time: 'O(n)',
+      space: 'O(1)',
+      worstCase: 'O(n) - target not in array or at last position',
+      bestCase: 'O(1) - target at first position',
+    };
+  },
+};
+
+export { linearSearchVisualization, LinearSearchInput, LinearSearchState };
+```
