@@ -297,7 +297,6 @@ function merge(
       mergeMid: mid,
       mergeI: 0,
       mergeJ: 0,
-      mergedArray: [],
       comparisons: getComparison() - 1,
       rangeStart: start,
       rangeEnd: end,
