@@ -1581,11 +1581,333 @@ Due to the repetitive nature and length constraints, I'll provide the structure 
 
 # Milestone 5: Final Polish
 
-## Task 5.1: Home Page Reorganization
+## Task 5.1: Unit Tests for Core Components
+
+**Files:**
+- Create: `src/hooks/useStepControl.test.ts`
+- Create: `src/lib/algorithms/linear_search.test.ts`
+
+- [ ] **Step 1: Write test for linear_search algorithm**
+
+```typescript
+// src/lib/algorithms/linear_search.test.ts
+
+import { describe, it, expect } from 'vitest';
+import { linearSearchVisualization } from './linear_search';
+
+describe('linearSearchVisualization', () => {
+  it('should generate correct steps for finding target', () => {
+    const input = { array: [5, 3, 8, 1, 9], target: 8 };
+    const steps = linearSearchVisualization.generateSteps(input);
+
+    // Should have init + comparisons + found steps
+    expect(steps.length).toBeGreaterThan(2);
+    expect(steps[0].operation).toBe('init');
+
+    // Find the 'found' step
+    const foundStep = steps.find(s => s.operation === 'found');
+    expect(foundStep).toBeDefined();
+    expect(foundStep?.state.foundIndex).toBe(2);
+    expect(foundStep?.state.comparisons).toBe(3);
+  });
+
+  it('should generate notFound step when target not in array', () => {
+    const input = { array: [1, 2, 3], target: 99 };
+    const steps = linearSearchVisualization.generateSteps(input);
+
+    const notFoundStep = steps.find(s => s.operation === 'notFound');
+    expect(notFoundStep).toBeDefined();
+    expect(notFoundStep?.state.found).toBe(false);
+    expect(notFoundStep?.state.comparisons).toBe(3);
+  });
+
+  it('should validate empty array', () => {
+    const result = linearSearchVisualization.validateInput({ array: [], target: 5 });
+    expect(result.valid).toBe(false);
+    expect(result.errorKey).toBe('linearSearch.emptyArray');
+  });
+
+  it('should validate too large array', () => {
+    const largeArray = Array.from({ length: 101 }, (_, i) => i);
+    const result = linearSearchVisualization.validateInput({ array: largeArray, target: 5 });
+    expect(result.valid).toBe(false);
+    expect(result.errorKey).toBe('linearSearch.tooLarge');
+  });
+
+  it('should describe steps correctly in both languages', () => {
+    const input = { array: [1, 2, 3], target: 2 };
+    const steps = linearSearchVisualization.generateSteps(input);
+
+    const compareStep = steps.find(s => s.operation === 'compare');
+    if (compareStep) {
+      const zhDesc = linearSearchVisualization.describeStep(compareStep, 'zh');
+      const enDesc = linearSearchVisualization.describeStep(compareStep, 'en');
+
+      expect(zhDesc).toContain('比较');
+      expect(enDesc).toContain('Comparing');
+    }
+  });
+
+  it('should return correct complexity info', () => {
+    const complexity = linearSearchVisualization.getComplexity();
+    expect(complexity.time).toBe('O(n)');
+    expect(complexity.space).toBe('O(1)');
+  });
+});
+```
+
+- [ ] **Step 2: Write test for useStepControl hook**
+
+```typescript
+// src/hooks/useStepControl.test.ts
+
+import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { renderHook, act } from '@testing-library/react';
+import { useStepControl } from './useStepControl';
+import { linearSearchVisualization } from '../lib/algorithms/linear_search';
+
+// Mock timers for play/pause
+vi.useFakeTimers();
+
+describe('useStepControl', () => {
+  const defaultInput = { array: [1, 2, 3, 4, 5], target: 3 };
+
+  it('should initialize with correct state', () => {
+    const { result } = renderHook(() =>
+      useStepControl({
+        algorithm: linearSearchVisualization,
+        initialInput: defaultInput,
+      })
+    );
+
+    expect(result.current.currentStep).toBe(0);
+    expect(result.current.isPlaying).toBe(false);
+    expect(result.current.speed).toBe(1);
+    expect(result.current.steps.length).toBeGreaterThan(0);
+  });
+
+  it('should step forward correctly', () => {
+    const { result } = renderHook(() =>
+      useStepControl({
+        algorithm: linearSearchVisualization,
+        initialInput: defaultInput,
+      })
+    );
+
+    act(() => {
+      result.current.stepForward();
+    });
+
+    expect(result.current.currentStep).toBe(1);
+    expect(result.current.isPlaying).toBe(false);
+  });
+
+  it('should step backward correctly', () => {
+    const { result } = renderHook(() =>
+      useStepControl({
+        algorithm: linearSearchVisualization,
+        initialInput: defaultInput,
+      })
+    );
+
+    // Go forward first
+    act(() => {
+      result.current.stepForward();
+      result.current.stepForward();
+    });
+    expect(result.current.currentStep).toBe(2);
+
+    // Then go back
+    act(() => {
+      result.current.stepBackward();
+    });
+    expect(result.current.currentStep).toBe(1);
+  });
+
+  it('should not go below step 0', () => {
+    const { result } = renderHook(() =>
+      useStepControl({
+        algorithm: linearSearchVisualization,
+        initialInput: defaultInput,
+      })
+    );
+
+    act(() => {
+      result.current.stepBackward();
+    });
+
+    expect(result.current.currentStep).toBe(0);
+  });
+
+  it('should not exceed total steps', () => {
+    const { result } = renderHook(() =>
+      useStepControl({
+        algorithm: linearSearchVisualization,
+        initialInput: defaultInput,
+      })
+    );
+
+    const totalSteps = result.current.totalSteps;
+
+    // Try to go beyond
+    for (let i = 0; i < totalSteps + 5; i++) {
+      act(() => {
+        result.current.stepForward();
+      });
+    }
+
+    expect(result.current.currentStep).toBe(totalSteps - 1);
+  });
+
+  it('should seek to specific step', () => {
+    const { result } = renderHook(() =>
+      useStepControl({
+        algorithm: linearSearchVisualization,
+        initialInput: defaultInput,
+      })
+    );
+
+    act(() => {
+      result.current.seek(3);
+    });
+
+    expect(result.current.currentStep).toBe(3);
+    expect(result.current.isPlaying).toBe(false);
+  });
+
+  it('should change speed', () => {
+    const { result } = renderHook(() =>
+      useStepControl({
+        algorithm: linearSearchVisualization,
+        initialInput: defaultInput,
+      })
+    );
+
+    act(() => {
+      result.current.setSpeed(2);
+    });
+
+    expect(result.current.speed).toBe(2);
+  });
+
+  it('should clamp speed to valid range', () => {
+    const { result } = renderHook(() =>
+      useStepControl({
+        algorithm: linearSearchVisualization,
+        initialInput: defaultInput,
+      })
+    );
+
+    act(() => {
+      result.current.setSpeed(10); // Too high
+    });
+    expect(result.current.speed).toBe(3); // Max
+
+    act(() => {
+      result.current.setSpeed(0.1); // Too low
+    });
+    expect(result.current.speed).toBe(0.5); // Min
+  });
+
+  it('should reset to step 0', () => {
+    const { result } = renderHook(() =>
+      useStepControl({
+        algorithm: linearSearchVisualization,
+        initialInput: defaultInput,
+      })
+    );
+
+    act(() => {
+      result.current.seek(3);
+      result.current.play();
+    });
+
+    act(() => {
+      result.current.reset();
+    });
+
+    expect(result.current.currentStep).toBe(0);
+    expect(result.current.isPlaying).toBe(false);
+  });
+
+  it('should play and pause correctly', () => {
+    const { result } = renderHook(() =>
+      useStepControl({
+        algorithm: linearSearchVisualization,
+        initialInput: defaultInput,
+      })
+    );
+
+    act(() => {
+      result.current.play();
+    });
+    expect(result.current.isPlaying).toBe(true);
+
+    // Advance timers
+    act(() => {
+      vi.advanceTimersByTime(1000); // 1 second at speed 1x
+    });
+
+    expect(result.current.currentStep).toBeGreaterThan(0);
+
+    act(() => {
+      result.current.pause();
+    });
+    expect(result.current.isPlaying).toBe(false);
+  });
+
+  it('should provide currentStepData', () => {
+    const { result } = renderHook(() =>
+      useStepControl({
+        algorithm: linearSearchVisualization,
+        initialInput: defaultInput,
+      })
+    );
+
+    expect(result.current.currentStepData).toBeDefined();
+    expect(result.current.currentStepData?.operation).toBe('init');
+
+    act(() => {
+      result.current.stepForward();
+    });
+
+    expect(result.current.currentStepData?.operation).toBe('compare');
+  });
+});
+```
+
+- [ ] **Step 3: Run tests to verify they pass**
+
+```bash
+npm run test src/lib/algorithms/linear_search.test.ts src/hooks/useStepControl.test.ts
+```
+
+Expected: All tests pass
+
+- [ ] **Step 4: Commit tests**
+
+```bash
+git add src/lib/algorithms/linear_search.test.ts src/hooks/useStepControl.test.ts
+git commit -m "test: add unit tests for useStepControl and linear_search
+
+Tests cover:
+- Step generation correctness
+- Input validation
+- Step forward/backward/seek
+- Play/pause behavior
+- Speed clamping
+- Reset functionality
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>"
+```
+
+---
+
+## Task 5.2: Home Page Reorganization
 - Group algorithms by: Book Algorithms (with sections), Advanced Algorithms
 - Add visual separators and category headers
 
-## Task 5.2: Translation Verification
+## Task 5.3: Translation Verification
 - Check all translation keys exist in both en and zh
 - Verify no hardcoded strings
 
