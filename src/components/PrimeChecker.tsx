@@ -5,6 +5,7 @@ import { translations } from '../i18n/translations';
 import { Links } from './Links';
 import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
+import { ExplanationPanel } from './common/ExplanationPanel';
 
 interface Factor {
   prime: number;
@@ -216,10 +217,10 @@ export function PrimeChecker() {
       {result && result.number === number && (
         <div className={`p-6 rounded-lg ${result.isPrime ? 'bg-green-100' : 'bg-blue-100'}`}>
           <p className="text-lg font-semibold mb-2">
-            {number} {result.isMersenne 
+            {number} {result.isMersenne
               ? t.isMersennePrime.replace('{0}', result.mersenneExponent?.toString() || '')
-              : result.isPrime 
-                ? t.isPrime 
+              : result.isPrime
+                ? t.isPrime
                 : t.isNotPrime}
           </p>
           {!result.isPrime && result.factors && (
@@ -229,6 +230,41 @@ export function PrimeChecker() {
           )}
         </div>
       )}
+
+      {/* Explanation Panel with Prime Checker Invariants */}
+      <ExplanationPanel
+        stepDescription={
+          result
+            ? lang === 'en'
+              ? `Tested divisibility up to √${number} = ${Math.sqrt(Number(number)).toFixed(2)}...`
+              : `测试除数直到 √${number} = ${Math.sqrt(Number(number)).toFixed(2)}...`
+            : lang === 'en'
+              ? 'Enter a number to check if it is prime.'
+              : '输入一个数字检查它是否为素数。'
+        }
+        invariant={
+          lang === 'en'
+            ? 'If n has no divisor ≤ √n, then n is prime  —  All composite numbers have a factor ≤ √n.'
+            : '如果 n 没有小于等于 √n 的除数，则 n 是素数  —  所有合数都有一个小于等于 √n 的因子。'
+        }
+        complexity={{
+          time: 'O(√n)',
+          space: 'O(1)',
+          worstCase: lang === 'en' ? 'When n is prime' : '当 n 是素数时',
+          bestCase: lang === 'en' ? 'When n is even' : '当 n 是偶数时',
+        }}
+        operationType={
+          result
+            ? result.isPrime
+              ? lang === 'en'
+                ? 'prime verification'
+                : '素数验证'
+              : lang === 'en'
+                ? 'factorization'
+                : '因式分解'
+            : undefined
+        }
+      />
 
       <DeveloperNote noteKey="devNotePrimeChecker" />
       <Links lang={lang} />
