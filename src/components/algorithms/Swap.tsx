@@ -336,7 +336,7 @@ export function Swap() {
         {/* Range info */}
         {currentState.array.length > 0 && (
           <div className="text-center text-sm text-gray-600">
-            [{currentState.firstRange[0]}, {currentState.firstRange[0]}) ↔ [{currentState.secondRange[0]}, {currentState.secondRange[1]})
+            [{currentState.firstRange[0]}, {currentState.firstRange[1]}) ↔ [{currentState.secondRange[0]}, {currentState.secondRange[1]})
           </div>
         )}
       </div>

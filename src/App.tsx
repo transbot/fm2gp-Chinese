@@ -21,6 +21,7 @@ import { GraphTraversal } from './components/algorithms/GraphTraversal';
 import { Division } from './components/algorithms/Division';
 import { Reverse } from './components/algorithms/Reverse';
 import { Swap } from './components/algorithms/Swap';
+import { PowerAlgorithm } from './components/algorithms/PowerAlgorithm';
 import { Home } from './pages/Home';
 import { LanguageProvider } from './context/LanguageContext';
 
@@ -51,6 +52,7 @@ function App() {
           <Route path="/division" element={<Division />} />
           <Route path="/reverse" element={<Reverse />} />
           <Route path="/swap" element={<Swap />} />
+          <Route path="/power" element={<PowerAlgorithm />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
