@@ -7,6 +7,7 @@ import { CalculationDisplay } from './CalculationDisplay';
 import { Links } from './Links';
 import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
+import { ExplanationPanel } from './common/ExplanationPanel';
 
 interface Step {
   powerOfTwo: number;
@@ -159,6 +160,37 @@ export function Calculator() {
           lang={lang}
         />
       )}
+
+      {/* Explanation Panel with Egyptian Multiplication Invariants */}
+      <ExplanationPanel
+        stepDescription={
+          showResults && steps.length > 0
+            ? lang === 'en'
+              ? `Halving ${Math.abs(secondNumber)} and doubling ${Math.abs(firstNumber)} through ${steps.length} steps`
+              : `将 ${Math.abs(secondNumber)} 减半，将 ${Math.abs(firstNumber)} 加倍，共 ${steps.length} 步`
+            : lang === 'en'
+              ? 'Enter two numbers and click Calculate to perform Egyptian Multiplication.'
+              : '输入两个数字，点击计算开始埃及乘法。'
+        }
+        invariant={
+          lang === 'en'
+            ? 'a × b = sum of selected powers of 2 × a  —  Each halving step preserves the product.'
+            : 'a × b = 选中的 2 的幂次 × a 的和  —  每次减半步骤都保持乘积不变。'
+        }
+        complexity={{
+          time: 'O(log b)',
+          space: 'O(log b)',
+          worstCase: lang === 'en' ? 'When b is a power of 2' : '当 b 是 2 的幂次时',
+        }}
+        operationType={
+          showResults
+            ? lang === 'en'
+              ? 'halving/doubling'
+              : '减半/加倍'
+            : undefined
+        }
+      />
+
       <DeveloperNote noteKey="devNoteEqMult" />
       <Links lang={lang} />
     </div>
