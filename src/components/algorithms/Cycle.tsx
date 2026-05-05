@@ -11,7 +11,7 @@ import {
   cycleVisualization,
   CycleInput,
   CycleState,
-  Cycle,
+  Cycle as CycleType,
   generateRandomPermutation,
   createDefaultCycleInput,
   parsePermutation,
@@ -171,7 +171,7 @@ export function Cycle() {
   }, []);
 
   // Get cycle color for a position
-  const getCycleColor = (position: number, cycles: Cycle[]): { bg: string; border: string; index: number } | null => {
+  const getCycleColor = (position: number, cycles: CycleType[]): { bg: string; border: string; index: number } | null => {
     for (let i = 0; i < cycles.length; i++) {
       if (cycles[i].positions.includes(position)) {
         return {
@@ -195,7 +195,7 @@ export function Cycle() {
   };
 
   // Render cycle notation
-  const renderCycleNotation = (cycle: Cycle, colorIndex: number) => {
+  const renderCycleNotation = (cycle: CycleType, colorIndex: number) => {
     const bgClass = CYCLE_COLORS[colorIndex % CYCLE_COLORS.length];
     return (
       <span className={cn('px-2 py-1 rounded text-white font-mono text-sm', bgClass)}>
