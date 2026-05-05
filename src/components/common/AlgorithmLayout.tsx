@@ -5,8 +5,8 @@ import { Home, Languages } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../i18n/translations';
-import { Links } from './Links';
-import { DeveloperNote } from './DeveloperNote';
+import { Links } from '../Links';
+import { DeveloperNote } from '../DeveloperNote';
 import { AlgorithmVisualization } from '../../lib/algorithms/types';
 
 interface AlgorithmLayoutProps {
