@@ -42,13 +42,17 @@ export interface PowerStepRecord {
  * Power Algorithm visualization implementation
  * Section 7.5 in the book - O(log n) power algorithm derived from Egyptian multiplication
  *
- * Algorithm:
- *   result = 1, currentPower = base, n = exponent
- *   While n > 0:
- *     If n is odd: result *= currentPower
- *     currentPower *= currentPower
- *     n = floor(n/2)
+ * This is the power_accumulate_semigroup algorithm from the book:
+ *   while (true) {
+ *     if (odd(n)) {
+ *       r = r * a;
+ *       if (n == 1) return r;
+ *     }
+ *     n = half(n);
+ *     a = a * a;
+ *   }
  *
+ * Key insight: Replace + with * (and doubling with squaring) in Egyptian multiplication
  * Invariant: result * currentPower^n = base^exponent
  */
 export const powerVisualization: AlgorithmVisualization<
@@ -62,6 +66,39 @@ export const powerVisualization: AlgorithmVisualization<
     const { base, exponent } = input;
     const steps: Step<PowerState>[] = [];
     const stepRecords: PowerStepRecord[] = [];
+
+    // Handle n = 0 case (power_monoid)
+    if (exponent === 0) {
+      steps.push({
+        state: {
+          base,
+          exponent,
+          result: 1,
+          currentPower: base,
+          currentExp: 0,
+          steps: [],
+        },
+        operation: 'init',
+        descriptionKey: 'powerInit',
+        highlights: [],
+      });
+
+      steps.push({
+        state: {
+          base,
+          exponent,
+          result: 1,
+          currentPower: base,
+          currentExp: 0,
+          steps: [{ n: 0, currentPower: base, result: 1, action: 'done' }],
+        },
+        operation: 'result',
+        descriptionKey: 'powerZeroExponent',
+        highlights: [],
+      });
+
+      return steps;
+    }
 
     // Initial state
     steps.push({
@@ -81,16 +118,14 @@ export const powerVisualization: AlgorithmVisualization<
     let result = 1;
     let currentPower = base;
     let n = exponent;
-    let stepNum = 0;
 
-    while (n > 0) {
-      stepNum++;
-
+    // Main loop following power_accumulate_semigroup from the book
+    while (true) {
       // Check if n is odd
       const isOdd = n % 2 === 1;
 
       if (isOdd) {
-        // Multiply result by currentPower
+        // Multiply result by currentPower (r = r * a in the book)
         stepRecords.push({
           n,
           currentPower,
@@ -114,8 +149,25 @@ export const powerVisualization: AlgorithmVisualization<
         });
 
         result *= currentPower;
-
         stepRecords[stepRecords.length - 1].result = result;
+
+        // Early exit optimization from the book: if (n == 1) return r;
+        if (n === 1) {
+          steps.push({
+            state: {
+              base,
+              exponent,
+              result,
+              currentPower,
+              currentExp: 0,
+              steps: [...stepRecords, { n: 0, currentPower, result, action: 'done' }],
+            },
+            operation: 'result',
+            descriptionKey: 'powerResult',
+            highlights: [],
+          });
+          return steps;
+        }
       } else {
         stepRecords.push({
           n,
@@ -126,53 +178,32 @@ export const powerVisualization: AlgorithmVisualization<
         });
       }
 
-      // Square currentPower and halve n
-      if (n > 1) {
-        steps.push({
-          state: {
-            base,
-            exponent,
-            result,
-            currentPower,
-            currentExp: n,
-            steps: [...stepRecords],
-          },
-          operation: 'square',
-          descriptionKey: 'powerSquare',
-          highlights: [],
-        });
-
-        const oldPower = currentPower;
-        currentPower *= currentPower;
-        n = Math.floor(n / 2);
-
-        stepRecords.push({
-          n,
-          currentPower,
+      // n = half(n); a = a * a;
+      steps.push({
+        state: {
+          base,
+          exponent,
           result,
-          action: 'square',
-        });
-      } else {
-        n = Math.floor(n / 2);
-      }
-    }
+          currentPower,
+          currentExp: n,
+          steps: [...stepRecords],
+        },
+        operation: 'square',
+        descriptionKey: 'powerSquare',
+        highlights: [],
+      });
 
-    // Final result step
-    steps.push({
-      state: {
-        base,
-        exponent,
-        result,
+      const oldPower = currentPower;
+      currentPower = currentPower * currentPower;  // a = a * a (squaring)
+      n = Math.floor(n / 2);  // n = half(n)
+
+      stepRecords.push({
+        n,
         currentPower,
-        currentExp: 0,
-        steps: [...stepRecords],
-      },
-      operation: 'result',
-      descriptionKey: 'powerResult',
-      highlights: [],
-    });
-
-    return steps;
+        result,
+        action: 'square',
+      });
+    }
   },
 
   validateInput(input: PowerInput): ValidationResult {
@@ -260,7 +291,9 @@ export const powerVisualization: AlgorithmVisualization<
       time: 'O(log n)',
       space: 'O(1)',
       worstCase: '2 * log2(n) multiplications (when all bits are 1)',
+      worstCaseZh: '2 * log2(n) 次乘法（当所有位都为 1）',
       bestCase: 'log2(n) squarings (when n is power of 2)',
+      bestCaseZh: 'log2(n) 次平方（当 n 是 2 的幂）',
     };
   },
 };

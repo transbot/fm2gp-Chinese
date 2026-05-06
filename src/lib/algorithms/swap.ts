@@ -211,7 +211,9 @@ export const swapVisualization: AlgorithmVisualization<
       time: 'O(min(n, m))',
       space: 'O(1)',
       worstCase: 'n swaps where n = size of smaller range',
+      worstCaseZh: 'n 次交换，n 为较小范围的大小',
       bestCase: '1 swap (when one range has size 1)',
+      bestCaseZh: '1 次交换（当一个范围大小为 1）',
     };
   },
 };

@@ -341,7 +341,9 @@ export const graphTraversalVisualization: AlgorithmVisualization<
       time: 'O(V + E)',
       space: 'O(V)',
       worstCase: 'Visit all vertices and edges',
+      worstCaseZh: '访问所有顶点和边',
       bestCase: 'Start node only (isolated node)',
+      bestCaseZh: '仅访问起始节点（孤立节点）',
     };
   },
 };

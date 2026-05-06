@@ -1,7 +1,8 @@
 // src/components/Sieve.tsx
 
 import React, { useState, useCallback, useEffect } from 'react';
-import { Play, RotateCcw } from 'lucide-react';
+import { Play, RotateCcw, Home, Languages } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../i18n/translations';
 import { Links } from './Links';
@@ -12,7 +13,7 @@ import { sieveVisualization, SieveInput, SieveState } from '../lib/algorithms/si
 import { Step } from '../lib/algorithms/types';
 
 export function Sieve() {
-  const { lang } = useLanguage();
+  const { lang, setLang } = useLanguage();
   const t = translations[lang] as any;
 
   // Input state
@@ -127,8 +128,26 @@ export function Sieve() {
 
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-8">
-      <div className="flex justify-between items-center">
-        <h1 className="text-3xl font-bold">{t.sieveTitle}</h1>
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="flex items-center gap-4">
+          <Link
+            to="/"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-500 text-white hover:bg-gray-600 transition-colors shrink-0"
+          >
+            <Home className="w-4 h-4" />
+            {t.backToHome}
+          </Link>
+          <h1 className="text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+            {t.sieveTitle}
+          </h1>
+        </div>
+        <button
+          onClick={() => setLang(lang === 'en' ? 'zh' : 'en')}
+          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors shadow-md"
+        >
+          <Languages className="w-4 h-4" />
+          {t.language}
+        </button>
       </div>
 
       <p className="text-gray-600">{t.sieveDescription}</p>

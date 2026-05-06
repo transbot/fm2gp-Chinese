@@ -33,6 +33,9 @@ export interface SteinGcdState {
   euclideanSteps?: number;
 }
 
+// Maximum steps to generate to prevent memory issues
+const MAX_STEPS = 500;
+
 /**
  * Stein's GCD (Binary GCD) Algorithm visualization implementation
  * Section 12.1-12.2 in the book - uses bitwise operations instead of modulo
@@ -98,7 +101,10 @@ export const steinGcdVisualization: AlgorithmVisualization<
     let currentB = b;
     let stepNum = 0;
 
-    while ((currentA & 1) === 0 && (currentB & 1) === 0) {
+    // Guard against infinite loop when both are 0
+    while ((currentA & 1) === 0 && (currentB & 1) === 0 && currentA > 0 && currentB > 0) {
+      if (steps.length >= MAX_STEPS) return steps;
+
       stepNum++;
       shift++;
       currentA >>= 1;
@@ -125,8 +131,10 @@ export const steinGcdVisualization: AlgorithmVisualization<
       });
     }
 
-    // Make a odd (if even)
-    while ((currentA & 1) === 0) {
+    // Make a odd (if even and non-zero)
+    while (currentA > 0 && (currentA & 1) === 0) {
+      if (steps.length >= MAX_STEPS) return steps;
+
       stepNum++;
       currentA >>= 1;
 
@@ -140,7 +148,7 @@ export const steinGcdVisualization: AlgorithmVisualization<
           operation: 'make_a_odd',
           bitInfo: {
             aEven: true,
-            bEven: false,
+            bEven: (currentB & 1) === 0,
             shiftAmount: 1,
           },
           euclideanSteps,
@@ -153,8 +161,34 @@ export const steinGcdVisualization: AlgorithmVisualization<
 
     // Main loop - binary GCD
     while (currentB !== 0) {
-      // Make b odd (if even)
-      while ((currentB & 1) === 0) {
+      if (steps.length >= MAX_STEPS) {
+        // Add final step with current result
+        steps.push({
+          state: {
+            a: currentA,
+            b: currentB,
+            gcd: currentA << shift,
+            shift,
+            step: stepNum,
+            operation: 'final_shift',
+            bitInfo: {
+              aEven: (currentA & 1) === 0,
+              bEven: (currentB & 1) === 0,
+              shiftAmount: shift,
+            },
+            euclideanSteps,
+          },
+          operation: 'result',
+          descriptionKey: 'steinGcdFinal',
+          highlights: [],
+        });
+        return steps;
+      }
+
+      // Make b odd (if even and non-zero)
+      while (currentB > 0 && (currentB & 1) === 0) {
+        if (steps.length >= MAX_STEPS) return steps;
+
         stepNum++;
         currentB >>= 1;
 
@@ -167,7 +201,7 @@ export const steinGcdVisualization: AlgorithmVisualization<
             step: stepNum,
             operation: 'make_b_odd',
             bitInfo: {
-              aEven: false,
+              aEven: (currentA & 1) === 0,
               bEven: true,
               shiftAmount: 1,
             },
@@ -203,8 +237,35 @@ export const steinGcdVisualization: AlgorithmVisualization<
           highlights: [],
         });
 
+        // If a became 0, b is the GCD (before shift)
+        if (currentA === 0) {
+          const finalGcd = currentB << shift;
+          steps.push({
+            state: {
+              a: 0,
+              b: currentB,
+              gcd: finalGcd,
+              shift,
+              step: stepNum + 1,
+              operation: 'final_shift',
+              bitInfo: {
+                aEven: false,
+                bEven: (currentB & 1) === 0,
+                shiftAmount: shift,
+              },
+              euclideanSteps,
+            },
+            operation: 'result',
+            descriptionKey: 'steinGcdFinal',
+            highlights: [],
+          });
+          return steps;
+        }
+
         // Make result odd again (will be even after odd-odd subtraction)
         while ((currentA & 1) === 0 && currentA !== 0) {
+          if (steps.length >= MAX_STEPS) return steps;
+
           stepNum++;
           currentA >>= 1;
 
@@ -251,8 +312,35 @@ export const steinGcdVisualization: AlgorithmVisualization<
           highlights: [],
         });
 
+        // If b became 0, a is the GCD (before shift)
+        if (currentB === 0) {
+          const finalGcd = currentA << shift;
+          steps.push({
+            state: {
+              a: currentA,
+              b: 0,
+              gcd: finalGcd,
+              shift,
+              step: stepNum + 1,
+              operation: 'final_shift',
+              bitInfo: {
+                aEven: (currentA & 1) === 0,
+                bEven: false,
+                shiftAmount: shift,
+              },
+              euclideanSteps,
+            },
+            operation: 'result',
+            descriptionKey: 'steinGcdFinal',
+            highlights: [],
+          });
+          return steps;
+        }
+
         // Make result odd again
         while ((currentB & 1) === 0 && currentB !== 0) {
+          if (steps.length >= MAX_STEPS) return steps;
+
           stepNum++;
           currentB >>= 1;
 
@@ -313,10 +401,11 @@ export const steinGcdVisualization: AlgorithmVisualization<
       };
     }
 
-    if (input.a > 1000000 || input.b > 1000000) {
+    // Reduce max to prevent memory issues
+    if (input.a > 100000 || input.b > 100000) {
       return {
         valid: false,
-        error: 'Numbers too large for visualization (max 1,000,000)',
+        error: 'Numbers too large for visualization (max 100,000)',
         errorKey: 'steinGcdTooLarge',
       };
     }
@@ -351,12 +440,12 @@ export const steinGcdVisualization: AlgorithmVisualization<
         zh: `a和b都是偶数。右移1位（除以2）。a=${a}, b=${b}, 公共位移=${shift}。`,
       },
       make_a_odd: {
-        en: `a is even. Shift right by 1: a=${a} (now odd).`,
-        zh: `a是偶数。右移1位：a=${a}（现在是奇数）。`,
+        en: `a is even. Shift right by 1: a=${a} (now ${a === 0 ? 'zero' : (a & 1) ? 'odd' : 'even'}).`,
+        zh: `a是偶数。右移1位：a=${a}（现在是${a === 0 ? '零' : ((a & 1) ? '奇数' : '偶数')}）。`,
       },
       make_b_odd: {
-        en: `b is even. Shift right by 1: b=${b} (now odd).`,
-        zh: `b是偶数。右移1位：b=${b}（现在是奇数）。`,
+        en: `b is even. Shift right by 1: b=${b} (now ${b === 0 ? 'zero' : (b & 1) ? 'odd' : 'even'}).`,
+        zh: `b是偶数。右移1位：b=${b}（现在是${b === 0 ? '零' : ((b & 1) ? '奇数' : '偶数')}）。`,
       },
       subtract_a: {
         en: `Both odd, a >= b. Subtract: a = ${a + b} - ${b} = ${a}. Result is ${bitInfo.aEven ? 'even' : 'odd'}.`,
@@ -398,7 +487,9 @@ export const steinGcdVisualization: AlgorithmVisualization<
       time: 'O(log(max(a, b)))',
       space: 'O(1)',
       worstCase: 'Approximately 2 * log(max(a, b)) operations',
+      worstCaseZh: '约 2 * log(max(a, b)) 次运算',
       bestCase: 'O(1) when one number is 0',
+      bestCaseZh: 'O(1) 当一个数为 0',
     };
   },
 };
@@ -407,13 +498,17 @@ export const steinGcdVisualization: AlgorithmVisualization<
  * Count Euclidean algorithm steps for comparison
  */
 function countEuclideanSteps(a: number, b: number): number {
+  if (a === 0 && b === 0) return 0;
   if (a === 0 || b === 0) return 1;
 
   let steps = 0;
   let currentA = Math.max(a, b);
   let currentB = Math.min(a, b);
 
-  while (currentB !== 0) {
+  // Add safety limit to prevent infinite loop
+  const maxSteps = 100;
+
+  while (currentB !== 0 && steps < maxSteps) {
     steps++;
     const remainder = currentA % currentB;
     currentA = currentB;

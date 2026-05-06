@@ -208,7 +208,9 @@ export const sieveVisualization: AlgorithmVisualization<
       time: 'O(n log log n)',
       space: 'O(n)',
       worstCase: 'The algorithm has the same complexity for all inputs',
+      worstCaseZh: '对所有输入复杂度相同',
       bestCase: 'The algorithm has the same complexity for all inputs',
+      bestCaseZh: '对所有输入复杂度相同',
     };
   },
 };

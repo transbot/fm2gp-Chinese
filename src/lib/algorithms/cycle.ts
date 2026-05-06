@@ -286,7 +286,9 @@ export const cycleVisualization: AlgorithmVisualization<
       time: 'O(n)',
       space: 'O(n)',
       worstCase: 'Single cycle containing all n elements',
+      worstCaseZh: '单个循环包含所有 n 个元素',
       bestCase: 'n fixed points (identity permutation)',
+      bestCaseZh: 'n 个不动点（恒等置换）',
     };
   },
 };
@@ -319,7 +321,7 @@ export function createDefaultCycleInput(): CycleInput {
  */
 export function parsePermutation(input: string, n: number): number[] | null {
   try {
-    const values = input.split(/[,\s]+/).map(s => parseInt(s.trim(), 10));
+    const values = input.split(/[,，\s]+/).map(s => parseInt(s.trim(), 10));  // Support both half-width and full-width commas
     if (values.length !== n) return null;
     if (values.some(v => isNaN(v) || v < 0 || v >= n)) return null;
 

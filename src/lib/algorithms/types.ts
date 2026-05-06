@@ -58,12 +58,14 @@ export interface AnimationSpec {
   easing?: 'linear' | 'ease' | 'ease-in-out';
 }
 
-/** Complexity information for ExplanationPanel */
+/** Complexity information */
 export interface ComplexityInfo {
   time: string;
   space: string;
   worstCase?: string;
+  worstCaseZh?: string;
   bestCase?: string;
+  bestCaseZh?: string;
 }
 
 /** Result of input validation */

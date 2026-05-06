@@ -116,30 +116,62 @@ export function Division() {
 
   // Render visual blocks for subtraction process
   const renderVisualBlocks = () => {
-    const { dividend, divisor, quotient, remainder, step } = currentState;
+    const { dividend, divisor, quotient, remainder, totalSubtractions } = currentState;
+
+    // If quotient is large, show simplified visualization
+    if (quotient > 20 || totalSubtractions > 50) {
+      return (
+        <div className="space-y-4">
+          {/* Progress bar */}
+          <div className="w-full bg-gray-200 rounded-full h-4">
+            <div
+              className="bg-green-500 h-4 rounded-full transition-all duration-300"
+              style={{ width: `${(quotient / totalSubtractions) * 100}%` }}
+            />
+          </div>
+          <div className="text-center text-sm text-gray-600">
+            {t.progress || 'Progress'}: {quotient} / {totalSubtractions} ({Math.round((quotient / totalSubtractions) * 100)}%)
+          </div>
+          {/* Summary */}
+          <div className="flex justify-center gap-8 text-center">
+            <div>
+              <div className="text-3xl font-bold text-green-600">{quotient}</div>
+              <div className="text-xs text-gray-500">{t.timesSubtracted || 'times subtracted'}</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-blue-600">{remainder}</div>
+              <div className="text-xs text-gray-500">{t.remaining || 'remaining'}</div>
+            </div>
+          </div>
+        </div>
+      );
+    }
 
     // Create visual representation of the subtraction process
     const blocks: JSX.Element[] = [];
-    let remaining = dividend;
 
     // Render subtracted groups (each group = divisor)
     for (let i = 0; i < quotient; i++) {
       blocks.push(
         <div key={`subtracted-${i}`} className="flex flex-col items-center gap-1">
           <div className="flex gap-0.5">
-            {Array.from({ length: divisor }).map((_, j) => (
+            {Array.from({ length: Math.min(divisor, 10) }).map((_, j) => (
               <div
                 key={j}
                 className="w-6 h-6 bg-green-400 rounded-sm flex items-center justify-center text-white text-xs font-bold"
               >
-                {j + 1}
+                {divisor > 10 ? '•' : j + 1}
               </div>
             ))}
+            {divisor > 10 && (
+              <div className="w-6 h-6 bg-green-300 rounded-sm flex items-center justify-center text-green-700 text-xs font-bold">
+                +{divisor - 10}
+              </div>
+            )}
           </div>
           <span className="text-xs text-gray-500">-{divisor}</span>
         </div>
       );
-      remaining -= divisor;
     }
 
     // Render remaining blocks (remainder)
@@ -147,14 +179,19 @@ export function Division() {
       blocks.push(
         <div key="remainder" className="flex flex-col items-center gap-1">
           <div className="flex gap-0.5">
-            {Array.from({ length: remainder }).map((_, j) => (
+            {Array.from({ length: Math.min(remainder, 10) }).map((_, j) => (
               <div
                 key={j}
                 className="w-6 h-6 bg-blue-400 rounded-sm flex items-center justify-center text-white text-xs font-bold"
               >
-                {j + 1}
+                {remainder > 10 ? '•' : j + 1}
               </div>
             ))}
+            {remainder > 10 && (
+              <div className="w-6 h-6 bg-blue-300 rounded-sm flex items-center justify-center text-blue-700 text-xs font-bold">
+                +{remainder - 10}
+              </div>
+            )}
           </div>
           <span className="text-xs text-gray-500">{t.remainder || 'Remainder'}</span>
         </div>
@@ -182,7 +219,7 @@ export function Division() {
             <input
               type="number"
               min="0"
-              max="10000"
+              max="1000000"
               value={dividendInput}
               onChange={(e) => setDividendInput(e.target.value)}
               onBlur={handleInputChange}

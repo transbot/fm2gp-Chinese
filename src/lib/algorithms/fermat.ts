@@ -302,7 +302,9 @@ export const fermatVisualization: AlgorithmVisualization<
       time: 'O(log p)',
       space: 'O(1)',
       worstCase: 'O(log p) multiplications using fast exponentiation',
+      worstCaseZh: 'O(log p) 次乘法（使用快速幂运算）',
       bestCase: 'O(log p) - always the same complexity',
+      bestCaseZh: 'O(log p) - 复杂度始终相同',
     };
   },
 };

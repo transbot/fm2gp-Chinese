@@ -171,7 +171,9 @@ export const linearSearchVisualization: AlgorithmVisualization<
       time: 'O(n)',
       space: 'O(1)',
       worstCase: 'n comparisons (target not in array or at last position)',
+      worstCaseZh: 'n 次比较（目标不在数组中或在最后位置）',
       bestCase: '1 comparison (target at first position)',
+      bestCaseZh: '1 次比较（目标在第一个位置）',
     };
   },
 };

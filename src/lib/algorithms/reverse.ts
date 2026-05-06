@@ -185,7 +185,9 @@ export const reverseVisualization: AlgorithmVisualization<
       time: 'O(n)',
       space: 'O(1)',
       worstCase: 'n/2 swaps for array of size n',
+      worstCaseZh: 'n/2 次交换（对于长度为 n 的数组）',
       bestCase: '0 swaps for empty or single-element array',
+      bestCaseZh: '0 次交换（空数组或单元素数组）',
     };
   },
 };

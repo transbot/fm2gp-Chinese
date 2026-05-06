@@ -29,7 +29,7 @@ export function MergeSort() {
   // Parse input
   const parseInput = useCallback((): MergeSortInput => {
     const array = arrayInput
-      .split(',')
+      .split(/[,，]/)  // Support both half-width and full-width commas
       .map((s) => parseInt(s.trim()))
       .filter((n) => !isNaN(n));
     return { array };
@@ -109,11 +109,22 @@ export function MergeSort() {
     setCurrentStep(0);
   }, []);
 
-  // Generate random array
-  const generateRandomArray = useCallback(() => {
+  // Generate random array and regenerate steps
+  const generateRandomAndRegenerate = useCallback(() => {
     const length = Math.floor(Math.random() * 8) + 6; // 6-13 elements (keep small for visualization)
     const arr = Array.from({ length }, () => Math.floor(Math.random() * 100));
-    setArrayInput(arr.join(', '));
+    const newArrayInput = arr.join(', ');
+    setArrayInput(newArrayInput);
+
+    // Directly regenerate steps with the new array (don't wait for state update)
+    const input: MergeSortInput = { array: arr };
+    const validation = mergeSortVisualization.validateInput(input);
+    if (validation.valid) {
+      const newSteps = mergeSortVisualization.generateSteps(input);
+      setSteps(newSteps);
+      setCurrentStep(0);
+      setIsPlaying(false);
+    }
   }, []);
 
   // Handle input change - regenerate steps
@@ -280,8 +291,8 @@ export function MergeSort() {
         <div className="flex gap-2 flex-wrap">
           <button
             onClick={() => {
-              generateRandomArray();
-              setTimeout(() => regenerateSteps(), 0);
+              reset();
+              generateRandomAndRegenerate();
             }}
             className="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-lg hover:bg-indigo-200 transition-colors flex items-center gap-2"
           >

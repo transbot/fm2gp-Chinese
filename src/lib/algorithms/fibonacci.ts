@@ -229,7 +229,9 @@ export const fibonacciVisualization: AlgorithmVisualization<
       time: 'O(phi^n)',
       space: 'O(n)',
       worstCase: 'Exponential time - approximately 1.618^n recursive calls',
+      worstCaseZh: '指数时间 - 约 1.618^n 次递归调用',
       bestCase: 'O(1) for n = 0 or n = 1 (base cases)',
+      bestCaseZh: 'O(1) 当 n = 0 或 n = 1（基本情况）',
     };
   },
 };

@@ -25,15 +25,15 @@ export function MillerRabin() {
     try {
       const n = BigInt(nInput);
       const k = parseInt(kInput, 10) || 5;
-      
+
       if (n <= 3n) {
-        setResultMsg(n <= 1n ? "n must be > 1" : "n <= 3 is prime trivially.");
+        setResultMsg(n <= 1n ? (t.millerRabinMustBeGreaterThanOne || "n must be > 1") : (t.millerRabinTriviallyPrime || "n <= 3 is prime trivially."));
         setIsDone(true);
         setSteps([]);
         return;
       }
       if (n % 2n === 0n) {
-        setResultMsg("n is even, trivially composite.");
+        setResultMsg(t.millerRabinTriviallyComposite || "n is even, trivially composite.");
         setIsDone(true);
         setSteps([]);
         return;
@@ -46,7 +46,7 @@ export function MillerRabin() {
       setResultMsg('');
       setIsPlaying(false);
     } catch (e) {
-      setResultMsg("Invalid input size");
+      setResultMsg(t.invalidInput || "Invalid input size");
     }
   };
 
@@ -57,7 +57,7 @@ export function MillerRabin() {
       setIsDone(true);
       setIsPlaying(false);
       setGenerator(null);
-      setResultMsg(result.value ? "PROBABLY PRIME" : "COMPOSITE");
+      setResultMsg(result.value ? (t.millerRabinProbablyPrime || "PROBABLY PRIME") : (t.millerRabinComposite || "COMPOSITE"));
     } else {
       setSteps(prev => [...prev, result.value]);
     }
@@ -93,55 +93,55 @@ export function MillerRabin() {
       {/* Inputs */}
       <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6">
         <div className="flex-1 space-y-2">
-          <label className="block text-sm font-medium text-gray-700">n (Number to test)</label>
-          <input 
-            type="text" 
-            value={nInput} 
-            onChange={(e) => setNInput(e.target.value.replace(/\D/g, ''))} 
+          <label className="block text-sm font-medium text-gray-700">{t.millerRabinNLabel || 'n (Number to test)'}</label>
+          <input
+            type="text"
+            value={nInput}
+            onChange={(e) => setNInput(e.target.value.replace(/\D/g, ''))}
             className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono"
-            placeholder="e.g. 561"
+            placeholder={t.millerRabinNPlaceholder || "e.g. 561"}
           />
         </div>
         <div className="flex-1 space-y-2">
-          <label className="block text-sm font-medium text-gray-700">k (Number of iterations)</label>
-          <input 
-            type="number" 
+          <label className="block text-sm font-medium text-gray-700">{t.millerRabinKLabel || 'k (Number of iterations)'}</label>
+          <input
+            type="number"
             min="1" max="20"
-            value={kInput} 
-            onChange={(e) => setKInput(e.target.value)} 
+            value={kInput}
+            onChange={(e) => setKInput(e.target.value)}
             className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono"
           />
         </div>
         <div className="flex items-end gap-2">
-           <button 
+           <button
              onClick={initAlgorithm}
              className="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-medium"
            >
-             Initialize
+             {t.initialize || 'Initialize'}
            </button>
         </div>
       </div>
 
       {/* Controls */}
       <div className="flex gap-4">
-        <button 
+        <button
           onClick={handleNextStep}
           disabled={!generator || isDone}
           className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-colors disabled:opacity-50 font-bold shadow-md"
         >
           <Play className="w-5 h-5 fill-current" />
-          Next Step
+          {t.nextStep || 'Next Step'}
         </button>
       </div>
 
       {resultMsg && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           className={cn(
             "p-6 rounded-xl border-2 text-center text-xl font-black shadow-inner",
-            resultMsg === "PROBABLY PRIME" ? "bg-green-100 text-green-800 border-green-300" :
-            resultMsg === "COMPOSITE" ? "bg-red-100 text-red-800 border-red-300" :
+            resultMsg === (t.millerRabinProbablyPrime || "PROBABLY PRIME") ? "bg-green-100 text-green-800 border-green-300" :
+            resultMsg === (t.millerRabinComposite || "COMPOSITE") ? "bg-red-100 text-red-800 border-red-300" :
             "bg-orange-100 text-orange-800 border-orange-300"
           )}
         >
@@ -152,30 +152,30 @@ export function MillerRabin() {
       {/* Steps visualization */}
       {steps.length > 0 && (
         <div className="space-y-4">
-          <h3 className="text-xl font-bold border-b pb-2">Execution Steps</h3>
+          <h3 className="text-xl font-bold border-b pb-2">{t.executionSteps || 'Execution Steps'}</h3>
           <div className="grid gap-3">
             <AnimatePresence>
               {steps.map((step, idx) => (
-                <motion.div 
+                <motion.div
                   key={idx}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   className={cn(
                     "p-4 rounded-lg border",
                     step.phase === 'decomposition' ? "bg-purple-50 border-purple-200" :
-                    step.phase === 'result' ? (step.isProbablyPrime ? "bg-green-50 border-green-200" : "bg-red-50 border-red-200") : 
+                    step.phase === 'result' ? (step.isProbablyPrime ? "bg-green-50 border-green-200" : "bg-red-50 border-red-200") :
                     "bg-gray-50 border-gray-200"
                   )}
                 >
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-semibold text-gray-700 capitalize tracking-wide">{step.phase} Phase</span>
+                    <span className="font-semibold text-gray-700 capitalize tracking-wide">{step.phase} {t.phase || 'Phase'}</span>
                     {step.witness !== 0n && (
                       <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-mono font-bold">
-                        Witness a = {step.witness.toString()}
+                        {t.witness || 'Witness'} a = {step.witness.toString()}
                       </span>
                     )}
                   </div>
-                  
+
                   <div className="grid grid-cols-2 gap-4 font-mono text-sm mt-3">
                     {Object.entries(step.details || {}).map(([key, val]) => (
                       <div key={key} className={cn("bg-white p-2 border rounded select-all", key === 'explanation' || key === 'step' || key === 'reason' ? "col-span-2 text-lg font-bold text-indigo-700" : "")}>

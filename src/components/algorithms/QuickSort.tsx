@@ -27,7 +27,7 @@ export function QuickSort() {
   // Parse input
   const parseInput = useCallback((): QuickSortInput => {
     const array = arrayInput
-      .split(',')
+      .split(/[,，]/)  // Support both half-width and full-width commas
       .map((s) => parseInt(s.trim()))
       .filter((n) => !isNaN(n));
     return { array };
@@ -107,8 +107,8 @@ export function QuickSort() {
     setCurrentStep(0);
   }, []);
 
-  // Generate random array
-  const generateRandomArray = useCallback(() => {
+  // Generate random array and regenerate steps
+  const generateRandomAndRegenerate = useCallback(() => {
     const length = Math.floor(Math.random() * 8) + 6; // 6-13 elements
     const arr = Array.from({ length }, (_, i) => i + 1);
     // Shuffle the array
@@ -117,6 +117,16 @@ export function QuickSort() {
       [arr[i], arr[j]] = [arr[j], arr[i]];
     }
     setArrayInput(arr.join(', '));
+
+    // Directly regenerate steps with the new array (don't wait for state update)
+    const input: QuickSortInput = { array: arr };
+    const validation = quickSortVisualization.validateInput(input);
+    if (validation.valid) {
+      const newSteps = quickSortVisualization.generateSteps(input);
+      setSteps(newSteps);
+      setCurrentStep(0);
+      setIsPlaying(false);
+    }
   }, []);
 
   // Handle input change - regenerate steps
@@ -256,8 +266,8 @@ export function QuickSort() {
         <div className="flex gap-2 flex-wrap">
           <button
             onClick={() => {
-              generateRandomArray();
-              setTimeout(() => regenerateSteps(), 0);
+              reset();
+              generateRandomAndRegenerate();
             }}
             className="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-lg hover:bg-indigo-200 transition-colors flex items-center gap-2"
           >

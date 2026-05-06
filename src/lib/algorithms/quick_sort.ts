@@ -431,7 +431,9 @@ export const quickSortVisualization: AlgorithmVisualization<
       time: 'O(n log n)',
       space: 'O(log n)',
       worstCase: 'O(n²) - when array is already sorted or reverse sorted',
+      worstCaseZh: 'O(n²) - 当数组已排序或逆序',
       bestCase: 'O(n log n) - when partitions are balanced',
+      bestCaseZh: 'O(n log n) - 当分区均衡',
     };
   },
 };

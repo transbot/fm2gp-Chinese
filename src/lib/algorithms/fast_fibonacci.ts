@@ -320,7 +320,9 @@ export const fastFibonacciVisualization: AlgorithmVisualization<
       time: 'O(log n)',
       space: 'O(1)',
       worstCase: 'O(log n) matrix multiplications',
+      worstCaseZh: 'O(log n) 次矩阵乘法',
       bestCase: 'O(log n) - same for all n',
+      bestCaseZh: 'O(log n) - 对所有 n 相同',
     };
   },
 };

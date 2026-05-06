@@ -208,7 +208,9 @@ export const mergeSortVisualization: AlgorithmVisualization<
       time: 'O(n log n)',
       space: 'O(n)',
       worstCase: 'O(n log n) - always divides evenly and merges',
+      worstCaseZh: 'O(n log n) - 总是均匀分割并合并',
       bestCase: 'O(n log n) - even when already sorted',
+      bestCaseZh: 'O(n log n) - 即使已排序',
     };
   },
 };

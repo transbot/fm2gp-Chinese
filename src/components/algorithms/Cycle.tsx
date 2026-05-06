@@ -62,7 +62,7 @@ export function Cycle() {
 
   // Parse array from input
   const parseArray = (input: string): number[] => {
-    return input.split(/[,\s]+/)
+    return input.split(/[,，\s]+/)  // Support both half-width and full-width commas
       .map(s => parseInt(s.trim(), 10))
       .filter(n => !isNaN(n));
   };
@@ -160,14 +160,25 @@ export function Cycle() {
     setCurrentStep(0);
   }, []);
 
-  // Generate random input
-  const generateRandom = useCallback(() => {
+  // Generate random input and regenerate steps
+  const generateRandomAndRegenerate = useCallback(() => {
     const n = Math.floor(Math.random() * 6) + 5; // 5-10 elements
     const array = Array.from({ length: n }, (_, i) => (i + 1) * 10);
     const permutation = generateRandomPermutation(n);
     setArrayInput(array.join(', '));
     setPermutationInput(permutation.join(', '));
     setInputError(null);
+
+    // Directly regenerate steps with the new values (don't wait for state update)
+    const input: CycleInput = { array, permutation };
+    const validation = cycleVisualization.validateInput(input);
+
+    if (validation.valid) {
+      const newSteps = cycleVisualization.generateSteps(input);
+      setSteps(newSteps);
+      setCurrentStep(0);
+      setIsPlaying(false);
+    }
   }, []);
 
   // Get cycle color for a position
@@ -252,7 +263,10 @@ export function Cycle() {
         {/* Action buttons */}
         <div className="flex gap-2 flex-wrap">
           <button
-            onClick={generateRandom}
+            onClick={() => {
+              reset();
+              generateRandomAndRegenerate();
+            }}
             className="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-lg hover:bg-indigo-200 transition-colors flex items-center gap-2"
           >
             <Shuffle className="w-4 h-4" />

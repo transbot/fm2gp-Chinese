@@ -574,7 +574,9 @@ export const heapVisualization: AlgorithmVisualization<
       time: 'Heapify: O(n), Insert: O(log n), Delete: O(log n)',
       space: 'O(1)',
       worstCase: 'Heapify processes n/2 nodes, each potentially sifting down O(log n) levels',
+      worstCaseZh: '堆化处理 n/2 个节点，每个可能下沉 O(log n) 层',
       bestCase: 'Already a heap - O(n) for heapify verification',
+      bestCaseZh: '已是堆 - O(n) 用于堆化验证',
     };
   },
 };

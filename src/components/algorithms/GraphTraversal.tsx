@@ -311,8 +311,8 @@ export function GraphTraversal() {
     setEdgesInput((prev) => prev.filter((e) => e.id !== edgeId));
   }, []);
 
-  // Generate random graph
-  const generateRandomGraph = useCallback(() => {
+  // Generate random graph and regenerate steps
+  const generateRandomGraphAndRegenerate = useCallback(() => {
     const nodeCount = Math.floor(Math.random() * 4) + 5; // 5-8 nodes
     const nodeIds = 'ABCDEFGH'.slice(0, nodeCount).split('');
     const newNodes: GraphNode[] = nodeIds.map((id) => ({ id, label: id }));
@@ -349,7 +349,22 @@ export function GraphTraversal() {
     setNodesInput(newNodes);
     setEdgesInput(newEdges);
     setStartNode(nodeIds[0]);
-  }, []);
+
+    // Directly regenerate steps with the new graph (don't wait for state update)
+    const input: GraphTraversalInput = {
+      nodes: newNodes,
+      edges: newEdges,
+      startNode: nodeIds[0],
+      algorithm,
+    };
+    const validation = graphTraversalVisualization.validateInput(input);
+    if (validation.valid) {
+      const newSteps = graphTraversalVisualization.generateSteps(input);
+      setSteps(newSteps);
+      setCurrentStep(0);
+      setIsPlaying(false);
+    }
+  }, [algorithm]);
 
   return (
     <AlgorithmLayout
@@ -478,8 +493,8 @@ export function GraphTraversal() {
         <div className="flex gap-2 flex-wrap">
           <button
             onClick={() => {
-              generateRandomGraph();
-              setTimeout(() => regenerateSteps(), 0);
+              reset();
+              generateRandomGraphAndRegenerate();
             }}
             className="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-lg hover:bg-indigo-200 transition-colors flex items-center gap-2"
           >
@@ -520,6 +535,7 @@ export function GraphTraversal() {
             fitView
             minZoom={0.5}
             maxZoom={1.5}
+            proOptions={{ hideAttribution: true }}
           >
             <Background />
             <Controls />

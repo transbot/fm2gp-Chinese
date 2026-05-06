@@ -375,7 +375,9 @@ export const eulerVisualization: AlgorithmVisualization<
       time: 'O(sqrt(n)) for factorization + O(log phi(n)) for exponentiation',
       space: 'O(log n) for storing prime factors',
       worstCase: 'Factorization dominates for large n with many prime factors',
+      worstCaseZh: '因式分解主导（对于有多个素因子的大的 n）',
       bestCase: 'n is prime: O(sqrt(n)) factorization + O(log(n-1)) exponentiation',
+      bestCaseZh: 'n 是素数：O(sqrt(n)) 因式分解 + O(log(n-1)) 幂运算',
     };
   },
 };

@@ -78,7 +78,7 @@ export function HeapOperations() {
   // Parse input
   const parseInput = useCallback((): HeapInput => {
     const array = arrayInput
-      .split(',')
+      .split(/[,，]/)  // Support both half-width and full-width commas
       .map((s) => parseInt(s.trim()))
       .filter((n) => !isNaN(n));
     return {
@@ -162,12 +162,27 @@ export function HeapOperations() {
     setCurrentStep(0);
   }, []);
 
-  // Generate random array
-  const generateRandomArray = useCallback(() => {
+  // Generate random array and regenerate steps
+  const generateRandomAndRegenerate = useCallback(() => {
     const length = Math.floor(Math.random() * 10) + 5; // 5-15 elements
     const arr = Array.from({ length }, () => Math.floor(Math.random() * 50) + 1);
-    setArrayInput(arr.join(', '));
-  }, []);
+    const newArrayInput = arr.join(', ');
+    setArrayInput(newArrayInput);
+
+    // Directly regenerate steps with the new array (don't wait for state update)
+    const input: HeapInput = {
+      array: arr,
+      operation,
+      value: operation === 'insert' ? parseInt(insertValue) : undefined,
+    };
+    const validation = heapVisualization.validateInput(input);
+    if (validation.valid) {
+      const newSteps = heapVisualization.generateSteps(input);
+      setSteps(newSteps);
+      setCurrentStep(0);
+      setIsPlaying(false);
+    }
+  }, [operation, insertValue]);
 
   // Handle operation change
   const handleOperationChange = useCallback((newOp: 'heapify' | 'insert' | 'delete') => {
@@ -419,8 +434,8 @@ export function HeapOperations() {
         <div className="flex gap-2 flex-wrap">
           <button
             onClick={() => {
-              generateRandomArray();
-              setTimeout(() => regenerateSteps(), 0);
+              reset();
+              generateRandomAndRegenerate();
             }}
             className="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-lg hover:bg-indigo-200 transition-colors flex items-center gap-2"
           >

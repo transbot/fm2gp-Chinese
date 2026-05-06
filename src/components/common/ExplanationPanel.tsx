@@ -77,12 +77,12 @@ export function ExplanationPanel({
           </div>
           {complexity.worstCase && (
             <div className="text-xs text-gray-500">
-              <span className="font-medium">{t.worstCase || 'Worst'}:</span> {complexity.worstCase}
+              <span className="font-medium">{t.worstCase || 'Worst'}:</span> {lang === 'zh' && complexity.worstCaseZh ? complexity.worstCaseZh : complexity.worstCase}
             </div>
           )}
           {complexity.bestCase && (
             <div className="text-xs text-gray-500">
-              <span className="font-medium">{t.bestCase || 'Best'}:</span> {complexity.bestCase}
+              <span className="font-medium">{t.bestCase || 'Best'}:</span> {lang === 'zh' && complexity.bestCaseZh ? complexity.bestCaseZh : complexity.bestCase}
             </div>
           )}
         </div>
