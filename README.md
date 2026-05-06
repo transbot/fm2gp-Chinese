@@ -30,25 +30,34 @@
 | 章节 | 算法 | 说明 |
 |------|------|------|
 | 2.1 | 埃及乘法 | 俄式乘法，O(n) → O(log n) |
+| 3.2-3.3 | 埃拉托色尼筛法 | 素数筛法 |
+| 习题3.3 | 素数计数函数 | π(n) 及其近似 n/ln(n) |
+| 习题3.4 | 回文素数 | 不同进制下的回文素数 |
+| 4.2 | 欧几里得算法 | GCM/GCD 计算 |
 | 4.5 | 除法算法 | 重复减法实现除法 |
-| 5.3 | 费马小定理 | 概率素性测试基础 |
+| 5.1 | 素数判定 | 判断一个数是否为素数 |
+| 5.2 | 费马小定理 | 概率素性测试基础 |
+| 5.5 | 欧拉定理 | a^φ(n) ≡ 1 (mod n) 验证 |
 | 7.5 | 幂算法 | 快速幂运算，O(log n) |
+| 习题7.1 | 斐波那契加法次数 | 时间复杂度 O(φⁿ) |
+| 7.7 | 快速斐波那契 | 矩阵幂算法，O(log n) |
+| 8.6 | 有向图最短距离 | 矩阵幂在热带半环上的应用 |
+| 习题9.2 | π的上限 | 内接正多边形可视化证明 |
 | 10.7 | 线性查找 | 顺序查找算法 |
 | 10.8 | 二分查找 | 折半查找算法 |
-| 11.2 | 交换 | 迭代器交换算法 |
+| 11.2 | 区间交换 | 迭代器交换算法 |
+| 11.3 | 旋转算法 | 序列旋转演示 |
 | 11.4 | 循环分解 | 置换的循环分解 |
 | 11.5 | 逆序 | 原地反转算法 |
+| 习题12.1 | GCD性能对比 | 斯坦因 vs 欧几里得 |
 | 12.1-12.2 | 斯坦因GCD | 二进制GCD算法 |
-| 12.3-12.4 | 扩展GCD | 贝祖定理与扩展欧几里得 |
+| 12.3-12.4 | 扩展GCD | 贝祖定理与扩展欧几里得（含习题12.7） |
 | 13.3 | 米勒-拉宾测试 | 概率素性测试 |
+| 13.4 | RSA演示 | 加密解密流程 |
 | - | 归并排序 | 分治排序算法 |
 | - | 快速排序 | 原地排序算法 |
 | - | 堆操作 | 堆化、插入、删除 |
 | - | 图遍历 | BFS/DFS 可视化 |
-| - | 斐波那契 | 递归与矩阵快速幂对比 |
-| - | 欧拉函数 | φ(n) 计算 |
-| - | 埃拉托色尼筛 | 素数筛法 |
-| - | RSA演示 | 加密解密流程 |
 
 ### 技术栈
 
@@ -100,25 +109,34 @@ This project contains the source code for the Chinese edition of book _From Math
 | Section | Algorithm | Description |
 |---------|-----------|-------------|
 | 2.1 | Egyptian Multiplication | Russian peasant multiplication, O(n) → O(log n) |
+| 3.2-3.3 | Sieve of Eratosthenes | Prime number sieve |
+| Exercise 3.3 | Prime Counting Function | π(n) and approximation n/ln(n) |
+| Exercise 3.4 | Palindromic Primes | Palindromic primes in different bases |
+| 4.2 | Euclidean Algorithm | GCM/GCD calculation |
 | 4.5 | Division Algorithm | Division via repeated subtraction |
-| 5.3 | Fermat's Little Theorem | Foundation for probabilistic primality testing |
+| 5.1 | Prime Checker | Check if a number is prime |
+| 5.2 | Fermat's Little Theorem | Foundation for probabilistic primality testing |
+| 5.5 | Euler's Theorem | a^φ(n) ≡ 1 (mod n) verification |
 | 7.5 | Power Algorithm | Fast exponentiation, O(log n) |
+| Exercise 7.1 | Fibonacci Additions | Time complexity O(φⁿ) |
+| 7.7 | Fast Fibonacci | Matrix power algorithm, O(log n) |
+| 8.6 | Shortest Path in Directed Graph | Matrix power in tropical semiring |
+| Exercise 9.2 | Upper Bound for π | Inscribed regular polygon visual proof |
 | 10.7 | Linear Search | Sequential search algorithm |
 | 10.8 | Binary Search | Halving search algorithm |
-| 11.2 | Swap | Iterator swap algorithm |
+| 11.2 | Range Swap | Iterator swap algorithm |
+| 11.3 | Rotation Algorithm | Sequence rotation demonstration |
 | 11.4 | Cycle Decomposition | Permutation cycle decomposition |
 | 11.5 | Reverse | In-place reversal algorithm |
+| Exercise 12.1 | GCD Performance Comparison | Stein vs Euclidean |
 | 12.1-12.2 | Stein's GCD | Binary GCD algorithm |
-| 12.3-12.4 | Extended GCD | Bézout's identity and extended Euclidean |
+| 12.3-12.4 | Extended GCD | Bézout's identity and extended Euclidean (including Exercise 12.7) |
 | 13.3 | Miller-Rabin Test | Probabilistic primality testing |
+| 13.4 | RSA Demo | Encryption/decryption flow |
 | - | Merge Sort | Divide-and-conquer sorting |
 | - | Quick Sort | In-place sorting |
 | - | Heap Operations | Heapify, insert, delete |
 | - | Graph Traversal | BFS/DFS visualization |
-| - | Fibonacci | Recursive vs matrix exponentiation |
-| - | Euler's Totient | φ(n) calculation |
-| - | Sieve of Eratosthenes | Prime number sieve |
-| - | RSA Demo | Encryption/decryption flow |
 
 ### Tech Stack
 
