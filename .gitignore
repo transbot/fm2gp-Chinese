@@ -66,3 +66,6 @@ ehthumbs_vista.db
 
 # Claude Code 缓存目录
 .claude/
+
+# 测试和开发目录
+test/
