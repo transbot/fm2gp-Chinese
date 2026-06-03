@@ -1,8 +1,6 @@
-import { fireEvent, render, screen } from '@testing-library/react';
-import type React from 'react';
-import { MemoryRouter } from 'react-router-dom';
+import { fireEvent, screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
-import { LanguageProvider } from '../../context/LanguageContext';
+import { renderAlgorithm } from '../../test/renderAlgorithm';
 import { BinarySearch } from '../BinarySearch';
 import { BubbleSort } from './BubbleSort';
 import { Calculator } from '../Calculator';
@@ -46,26 +44,6 @@ vi.mock('reactflow', () => {
     useNodesState: (initial: unknown[]) => [initial, () => {}, () => {}],
   };
 });
-
-class TestResizeObserver {
-  observe() {}
-  unobserve() {}
-  disconnect() {}
-}
-
-if (!globalThis.ResizeObserver) {
-  globalThis.ResizeObserver = TestResizeObserver as typeof ResizeObserver;
-}
-
-function renderAlgorithm(component: React.ReactElement) {
-  return render(
-    <LanguageProvider>
-      <MemoryRouter future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
-        {component}
-      </MemoryRouter>
-    </LanguageProvider>
-  );
-}
 
 describe('beginner extension algorithm validation errors', () => {
   it('shows an empty-array error on bubble sort', () => {
