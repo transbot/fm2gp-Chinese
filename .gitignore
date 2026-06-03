@@ -67,5 +67,9 @@ ehthumbs_vista.db
 # Claude Code 缓存目录
 .claude/
 
+# Superpowers 临时会话状态
+.superpowers/brainstorm/*/state/
+.superpowers/brainstorm/*/content/
+
 # 测试和开发目录
 test/
