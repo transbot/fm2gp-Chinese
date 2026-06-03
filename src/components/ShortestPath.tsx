@@ -5,6 +5,7 @@ import { translations } from '../i18n/translations';
 import { Links } from './Links';
 import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
+import { ValidationMessage } from './common/ValidationMessage';
 
 // 定义无穷大
 const INF = Number.MAX_SAFE_INTEGER;
@@ -30,6 +31,7 @@ export function ShortestPath() {
   const [steps, setSteps] = useState<Step[]>([]);
   const [currentStep, setCurrentStep] = useState<number>(-1);
   const [isComplete, setIsComplete] = useState(false);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
@@ -73,10 +75,19 @@ export function ShortestPath() {
     setSteps(newSteps);
     setCurrentStep(0);
     setIsComplete(false);
+    setValidationErrorKey(null);
   };
 
   const nextStep = () => {
-    if (currentStep < 0 || isComplete) return;
+    if (currentStep < 0) {
+      setValidationErrorKey('shortestPathStartFirst');
+      return;
+    }
+    if (isComplete) {
+      setValidationErrorKey('shortestPathAlreadyComplete');
+      return;
+    }
+    setValidationErrorKey(null);
 
     const power = steps[currentStep].power;
     if (power >= 6) { // n-1 = 6 for a 7x7 matrix
@@ -101,6 +112,7 @@ export function ShortestPath() {
     setSteps([]);
     setCurrentStep(-1);
     setIsComplete(false);
+    setValidationErrorKey(null);
   };
 
   const formatValue = (value: number): string => {
@@ -155,8 +167,7 @@ export function ShortestPath() {
             </button>
             <button
               onClick={nextStep}
-              disabled={currentStep < 0 || isComplete}
-              className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
             >
               {t.nextPower}
             </button>
@@ -167,6 +178,8 @@ export function ShortestPath() {
               {t.reset}
             </button>
           </div>
+
+          <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
           {steps.length > 0 && currentStep >= 0 && (
             <div className="space-y-6">

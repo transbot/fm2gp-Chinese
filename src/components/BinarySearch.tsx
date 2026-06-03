@@ -8,6 +8,7 @@ import { DeveloperNote } from './DeveloperNote';
 import { lowerBoundGenerator, upperBoundGenerator, quickSortGenerator } from '../lib/algorithms/binary_search';
 import { cn } from '../lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ValidationMessage } from './common/ValidationMessage';
 
 export function BinarySearch() {
   const [arraySize, setArraySize] = useState<number>(40);
@@ -15,6 +16,7 @@ export function BinarySearch() {
   const [targetVal, setTargetVal] = useState<string>('50');
   const [isSorted, setIsSorted] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
   
   // Visual states corresponding to iterators
   const [activeRange, setActiveRange] = useState<[number, number] | null>(null);
@@ -41,6 +43,7 @@ export function BinarySearch() {
     const newArr = Array.from({ length: arraySize }, () => Math.floor(Math.random() * 99) + 1);
     setArray(newArr);
     setIsSorted(false);
+    setValidationErrorKey(null);
     resetSearchState();
   }, [arraySize, resetSearchState]);
 
@@ -50,6 +53,7 @@ export function BinarySearch() {
 
   const handleSort = async () => {
     if (isSorted) return;
+    setValidationErrorKey(null);
     setIsPlaying(true);
     const arrCopy = [...array];
     const gen = quickSortGenerator(arrCopy);
@@ -69,9 +73,18 @@ export function BinarySearch() {
   };
 
   const handleSearch = async () => {
-    if (!isSorted || isPlaying) return;
-    setIsPlaying(true);
+    if (isPlaying) return;
+    if (!isSorted) {
+      setValidationErrorKey('binarySearchSortFirst');
+      return;
+    }
+    if (!targetVal.trim()) {
+      setValidationErrorKey('binarySearchTargetRequired');
+      return;
+    }
+    setValidationErrorKey(null);
     resetSearchState();
+    setIsPlaying(true);
     
     const target = parseInt(targetVal) || 50;
     
@@ -196,8 +209,16 @@ export function BinarySearch() {
           <input 
             type="number" 
             value={targetVal} 
-            onChange={(e) => setTargetVal(e.target.value)}
-            className="w-32 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono"
+            onChange={(e) => {
+              setTargetVal(e.target.value);
+              setValidationErrorKey(null);
+            }}
+            className={cn(
+              'w-32 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono',
+              validationErrorKey === 'binarySearchTargetRequired'
+                ? 'border-red-300 bg-red-50'
+                : 'border-gray-300'
+            )}
             disabled={isPlaying}
           />
         </div>
@@ -213,7 +234,7 @@ export function BinarySearch() {
 
            <button 
              onClick={handleSearch}
-             disabled={!isSorted || isPlaying || !targetVal}
+             disabled={isPlaying}
              className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 font-medium disabled:opacity-50 flex items-center gap-2"
            >
              <Play className="w-4 h-4 fill-current"/> {t.startSearch || 'Start Binary Search'}
@@ -227,6 +248,9 @@ export function BinarySearch() {
            >
              <RotateCcw className="w-5 h-5"/>
            </button>
+        </div>
+        <div className="basis-full">
+          <ValidationMessage errorKey={validationErrorKey} messages={t} />
         </div>
       </div>
 

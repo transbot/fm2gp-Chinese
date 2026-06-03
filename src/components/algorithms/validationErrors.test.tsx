@@ -3,6 +3,7 @@ import type React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 import { describe, expect, it, vi } from 'vitest';
 import { LanguageProvider } from '../../context/LanguageContext';
+import { BinarySearch } from '../BinarySearch';
 import { BubbleSort } from './BubbleSort';
 import { Calculator } from '../Calculator';
 import { Cycle } from './Cycle';
@@ -31,6 +32,7 @@ import { SelectionSort } from './SelectionSort';
 import { SteinGcd } from './SteinGcd';
 import { Swap } from './Swap';
 import { TwoSum } from './TwoSum';
+import { ShortestPath } from '../ShortestPath';
 
 vi.mock('reactflow', () => {
   return {
@@ -131,6 +133,16 @@ describe('beginner extension algorithm validation errors', () => {
 });
 
 describe('core algorithm validation errors', () => {
+  it('explains that binary search requires sorting first', () => {
+    renderAlgorithm(<BinarySearch />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Start Search/i }));
+
+    expect(screen.getByRole('alert')).toHaveTextContent(
+      'Sort the array before starting binary search'
+    );
+  });
+
   it('shows an empty-array error on linear search', () => {
     renderAlgorithm(<LinearSearch />);
 
@@ -304,6 +316,16 @@ describe('legacy algorithm validation errors', () => {
 });
 
 describe('remaining interactive algorithm validation errors', () => {
+  it('explains that shortest path needs initialization before stepping', () => {
+    renderAlgorithm(<ShortestPath />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Next/i }));
+
+    expect(screen.getByRole('alert')).toHaveTextContent(
+      'Start the calculation before advancing to the next power'
+    );
+  });
+
   it('shows an empty-graph error on graph traversal', () => {
     renderAlgorithm(<GraphTraversal />);
 
