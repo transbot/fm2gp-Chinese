@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Home, Languages, Play, Pause } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
@@ -6,6 +6,8 @@ import { Links } from './Links';
 import { useLanguage } from '../context/LanguageContext';
 
 const FIXED_LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+const TOTAL_ELEMENTS = FIXED_LETTERS.length;
+const ANIMATION_DURATION = 2000; // 2 seconds
 
 interface Element {
   value: string;
@@ -23,9 +25,6 @@ export function Rotate() {
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
-  const TOTAL_ELEMENTS = FIXED_LETTERS.length;
-  const ANIMATION_DURATION = 2000; // 2 seconds
-
   useEffect(() => {
     const newElements = FIXED_LETTERS.map((letter, index) => ({
       value: letter,
@@ -35,7 +34,7 @@ export function Rotate() {
     setElements(newElements);
   }, []);
 
-  const drawCircle = (ctx: CanvasRenderingContext2D, rotation: number) => {
+  const drawCircle = useCallback((ctx: CanvasRenderingContext2D, rotation: number) => {
     const canvas = ctx.canvas;
     const centerX = canvas.width / 2;
     const centerY = canvas.height / 2;
@@ -73,7 +72,7 @@ export function Rotate() {
         y + 20 * Math.sin(angle)
       );
     });
-  };
+  }, [elements]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -88,7 +87,7 @@ export function Rotate() {
 
     // Draw initial state
     drawCircle(ctx, currentRotation);
-  }, [elements, currentRotation]);
+  }, [drawCircle, currentRotation]);
 
   const animate = (startTime: number) => {
     const canvas = canvasRef.current;

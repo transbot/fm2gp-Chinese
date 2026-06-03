@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Calculator as CalculatorIcon, Languages, Home } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
 import { calculateEgyptianMultiplication } from '../utils/egyptianMultiplication';
 import { CalculationDisplay } from './CalculationDisplay';
 import { Links } from './Links';
+import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
+import { ExplanationPanel } from './common/ExplanationPanel';
+import { ValidationMessage } from './common/ValidationMessage';
 
 interface Step {
   powerOfTwo: number;
@@ -21,7 +24,7 @@ export function Calculator() {
   const [steps, setSteps] = useState<Step[]>([]);
   const [result, setResult] = useState<number | null>(null);
   const [showResults, setShowResults] = useState(false);
-  const [showError, setShowError] = useState(false);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
@@ -43,12 +46,12 @@ export function Calculator() {
         setter(num);
       }
     }
-    setShowError(false);
+    setValidationErrorKey(null);
   };
 
   const calculate = () => {
     if (!firstNumber || !secondNumber) {
-      setShowError(true);
+      setValidationErrorKey('inputRequired');
       return;
     }
 
@@ -56,7 +59,7 @@ export function Calculator() {
     setSteps(newSteps);
     setResult(finalResult);
     setShowResults(true);
-    setShowError(false);
+    setValidationErrorKey(null);
   };
 
   const reset = () => {
@@ -65,7 +68,7 @@ export function Calculator() {
     setSteps([]);
     setResult(null);
     setShowResults(false);
-    setShowError(false);
+    setValidationErrorKey(null);
   };
 
   return (
@@ -105,7 +108,7 @@ export function Calculator() {
             value={firstNumber || ''}
             onChange={(e) => handleNumberInput(e, setFirstNumber)}
             onKeyPress={handleKeyPress}
-            className={`w-full px-4 py-2 border rounded-lg ${showError && !firstNumber ? 'border-red-500' : 'border-gray-300'}`}
+            className={`w-full px-4 py-2 border rounded-lg ${validationErrorKey && !firstNumber ? 'border-red-500' : 'border-gray-300'}`}
             placeholder={t.firstNumber}
             max={MAX_NUMBER}
             min={-MAX_NUMBER}
@@ -120,7 +123,7 @@ export function Calculator() {
             value={secondNumber || ''}
             onChange={(e) => handleNumberInput(e, setSecondNumber)}
             onKeyPress={handleKeyPress}
-            className={`w-full px-4 py-2 border rounded-lg ${showError && !secondNumber ? 'border-red-500' : 'border-gray-300'}`}
+            className={`w-full px-4 py-2 border rounded-lg ${validationErrorKey && !secondNumber ? 'border-red-500' : 'border-gray-300'}`}
             placeholder={t.secondNumber}
             max={MAX_NUMBER}
             min={-MAX_NUMBER}
@@ -128,11 +131,7 @@ export function Calculator() {
         </div>
       </div>
 
-      {showError && (
-        <div className="text-red-500 text-sm">
-          {t.inputRequired}
-        </div>
-      )}
+      <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
       <div className="flex gap-4">
         <button
@@ -158,6 +157,38 @@ export function Calculator() {
           lang={lang}
         />
       )}
+
+      {/* Explanation Panel with Egyptian Multiplication Invariants */}
+      <ExplanationPanel
+        stepDescription={
+          showResults && steps.length > 0
+            ? lang === 'en'
+              ? `Halving ${Math.abs(secondNumber)} and doubling ${Math.abs(firstNumber)} through ${steps.length} steps`
+              : `将 ${Math.abs(secondNumber)} 减半，将 ${Math.abs(firstNumber)} 加倍，共 ${steps.length} 步`
+            : lang === 'en'
+              ? 'Enter two numbers and click Calculate to perform Egyptian Multiplication.'
+              : '输入两个数字，点击计算开始埃及乘法。'
+        }
+        invariant={
+          lang === 'en'
+            ? 'a × b = sum of selected powers of 2 × a  —  Each halving step preserves the product.'
+            : 'a × b = 选中的 2 的幂次 × a 的和  —  每次减半步骤都保持乘积不变。'
+        }
+        complexity={{
+          time: 'O(log b)',
+          space: 'O(log b)',
+          worstCase: lang === 'en' ? 'When b is a power of 2' : '当 b 是 2 的幂次时',
+        }}
+        operationType={
+          showResults
+            ? lang === 'en'
+              ? 'halving/doubling'
+              : '减半/加倍'
+            : undefined
+        }
+      />
+
+      <DeveloperNote noteKey="devNoteEqMult" />
       <Links lang={lang} />
     </div>
   );

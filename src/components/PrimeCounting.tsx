@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import { Home, Languages } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
@@ -11,34 +11,34 @@ const formatNumber = (n: number) => {
   return n.toString();
 };
 
+const sieveOfEratosthenes = (n: number): boolean[] => {
+  const isPrime = new Array(n + 1).fill(true);
+  isPrime[0] = isPrime[1] = false;
+
+  for (let i = 2; i * i <= n; i++) {
+    if (isPrime[i]) {
+      for (let j = i * i; j <= n; j += i) {
+        isPrime[j] = false;
+      }
+    }
+  }
+  return isPrime;
+};
+
+const countPrimes = (isPrime: boolean[], n: number): number => {
+  let count = 0;
+  for (let i = 2; i <= n; i++) {
+    if (isPrime[i]) count++;
+  }
+  return count;
+};
+
 export function PrimeCounting() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
-  const sieveOfEratosthenes = (n: number): boolean[] => {
-    const isPrime = new Array(n + 1).fill(true);
-    isPrime[0] = isPrime[1] = false;
-    
-    for (let i = 2; i * i <= n; i++) {
-      if (isPrime[i]) {
-        for (let j = i * i; j <= n; j += i) {
-          isPrime[j] = false;
-        }
-      }
-    }
-    return isPrime;
-  };
-
-  const countPrimes = (isPrime: boolean[], n: number): number => {
-    let count = 0;
-    for (let i = 2; i <= n; i++) {
-      if (isPrime[i]) count++;
-    }
-    return count;
-  };
-
-  const drawGraph = () => {
+  const drawGraph = useCallback(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -184,11 +184,11 @@ export function PrimeCounting() {
     ctx.lineTo(legendX + 30, legendY + 20);
     ctx.stroke();
     ctx.fillText('n/ln(n)', legendX + 40, legendY + 20);
-  };
+  }, []);
 
   useEffect(() => {
     drawGraph();
-  }, []);
+  }, [drawGraph]);
 
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-8">

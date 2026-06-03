@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Home, Languages } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
 import { Links } from './Links';
+import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
+import { ExplanationPanel } from './common/ExplanationPanel';
+import { ValidationMessage } from './common/ValidationMessage';
 
 interface Step {
   a: number;
@@ -25,7 +28,7 @@ export function Gcm() {
   const [steps, setSteps] = useState<Step[]>([]);
   const [currentStep, setCurrentStep] = useState<number>(-1);
   const [isComplete, setIsComplete] = useState<boolean>(false);
-  const [showError, setShowError] = useState<boolean>(false);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
@@ -39,7 +42,7 @@ export function Gcm() {
     const value = e.target.value.replace(/[^\d]/g, '');
     if (value === '') {
       setter(0);
-      setShowError(false);
+      setValidationErrorKey(null);
     } else {
       const num = Number(value);
       if (num > MAX_NUMBER) {
@@ -47,7 +50,7 @@ export function Gcm() {
       } else {
         setter(num);
       }
-      setShowError(false);
+      setValidationErrorKey(null);
     }
   };
 
@@ -57,7 +60,7 @@ export function Gcm() {
 
   const startCalculation = () => {
     if (!firstNumber || !secondNumber) {
-      setShowError(true);
+      setValidationErrorKey('inputRequired');
       return;
     }
     
@@ -71,7 +74,7 @@ export function Gcm() {
       }]);
       setCurrentStep(0);
       setIsComplete(true);
-      setShowError(false);
+      setValidationErrorKey(null);
       return;
     }
 
@@ -83,7 +86,7 @@ export function Gcm() {
     }]);
     setCurrentStep(0);
     setIsComplete(false);
-    setShowError(false);
+    setValidationErrorKey(null);
   };
 
   const nextStep = () => {
@@ -139,7 +142,7 @@ export function Gcm() {
     setSteps([]);
     setCurrentStep(-1);
     setIsComplete(false);
-    setShowError(false);
+    setValidationErrorKey(null);
   };
 
   return (
@@ -177,7 +180,7 @@ export function Gcm() {
             onChange={(e) => handleNumberInput(e, setFirstNumber)}
             onKeyPress={handleKeyPress}
             className={`w-full px-4 py-2 border rounded-lg ${
-              showError && !firstNumber ? 'border-red-500' : 'border-gray-300'
+              validationErrorKey && !firstNumber ? 'border-red-500' : 'border-gray-300'
             }`}
             placeholder={t.firstNumber}
           />
@@ -192,18 +195,14 @@ export function Gcm() {
             onChange={(e) => handleNumberInput(e, setSecondNumber)}
             onKeyPress={handleKeyPress}
             className={`w-full px-4 py-2 border rounded-lg ${
-              showError && !secondNumber ? 'border-red-500' : 'border-gray-300'
+              validationErrorKey && !secondNumber ? 'border-red-500' : 'border-gray-300'
             }`}
             placeholder={t.secondNumber}
           />
         </div>
       </div>
 
-      {showError && (
-        <div className="text-red-500 text-sm">
-          {t.inputRequired}
-        </div>
-      )}
+      <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
       <div className="flex gap-4">
         <button
@@ -226,6 +225,32 @@ export function Gcm() {
           {t.reset}
         </button>
       </div>
+
+      {/* Explanation Panel with GCD Invariants */}
+      <ExplanationPanel
+        stepDescription={
+          currentStep >= 0 && steps[currentStep]
+            ? `${t.aValue || 'a = '}${formatNumber(steps[currentStep].a)}, ${t.bValue || 'b = '}${formatNumber(steps[currentStep].b)}${
+                steps[currentStep].remainder !== null
+                  ? `, ${t.remainderValue || 'r = '}${formatNumber(steps[currentStep].remainder)}`
+                  : ''
+              }`
+            : lang === 'en'
+              ? 'Enter two numbers and click Calculate to begin the Euclidean algorithm.'
+              : '输入两个数字，点击计算开始欧几里得算法。'
+        }
+        invariant={
+          lang === 'en'
+            ? 'gcd(a, b) = gcd(b, a mod b)  —  The GCD is preserved at each step.'
+            : 'gcd(a, b) = gcd(b, a mod b)  —  每一步都保持最大公约数不变。'
+        }
+        complexity={{
+          time: 'O(log min(a, b))',
+          space: 'O(1)',
+          worstCase: lang === 'en' ? 'Fibonacci numbers' : '斐波那契数列',
+        }}
+        operationType={currentStep >= 0 && steps[currentStep]?.isSwap ? (lang === 'en' ? 'swap' : '交换') : currentStep >= 0 ? (lang === 'en' ? 'divide' : '除法') : undefined}
+      />
 
       {steps.length > 0 && currentStep >= 0 && (
         <div className="space-y-6">
@@ -314,6 +339,7 @@ export function Gcm() {
         </div>
       )}
 
+      <DeveloperNote noteKey="devNoteGcm" />
       <Links lang={lang} />
     </div>
   );

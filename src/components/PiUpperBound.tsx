@@ -1,9 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Home, Languages, Play, Pause } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
 import { Links } from './Links';
 import { useLanguage } from '../context/LanguageContext';
+
+const MAX_SIDES = 500;
 
 export function PiUpperBound() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -11,11 +13,9 @@ export function PiUpperBound() {
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
   const [currentValue, setCurrentValue] = useState<number>(0);
   const animationRef = useRef<number>();
-  const timeoutRef = useRef<NodeJS.Timeout>();
+  const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
-
-  const MAX_SIDES = 500;
 
   const calculatePerimeter = (sides: number): number => {
     const angleStep = (2 * Math.PI) / sides;
@@ -80,7 +80,7 @@ export function PiUpperBound() {
     ctx.setLineDash([]);
   };
 
-  const stopAnimation = () => {
+  const stopAnimation = useCallback(() => {
     if (animationRef.current) {
       cancelAnimationFrame(animationRef.current);
       animationRef.current = undefined;
@@ -89,28 +89,7 @@ export function PiUpperBound() {
       clearTimeout(timeoutRef.current);
       timeoutRef.current = undefined;
     }
-  };
-
-  const animate = () => {
-    if (!isAnimating) return;
-    
-    if (sides >= MAX_SIDES) {
-      stopAnimation();
-      setIsAnimating(false);
-      return;
-    }
-
-    setSides(prev => prev + 1);
-    
-    // Calculate delay based on current number of sides
-    const delay = sides <= 10 ? 1000 : 100; // Slower for first 10 polygons
-    
-    timeoutRef.current = setTimeout(() => {
-      if (isAnimating) {
-        animationRef.current = requestAnimationFrame(animate);
-      }
-    }, delay);
-  };
+  }, []);
 
   const toggleAnimation = () => {
     if (!isAnimating) {
@@ -125,13 +104,25 @@ export function PiUpperBound() {
   };
 
   useEffect(() => {
-    if (isAnimating) {
-      animate();
+    if (!isAnimating) {
+      return stopAnimation;
     }
-    return () => {
+
+    if (sides >= MAX_SIDES) {
       stopAnimation();
-    };
-  }, [isAnimating]);
+      setIsAnimating(false);
+      return stopAnimation;
+    }
+
+    const delay = sides <= 10 ? 1000 : 100; // Slower for first 10 polygons
+    timeoutRef.current = setTimeout(() => {
+      animationRef.current = requestAnimationFrame(() => {
+        setSides((prev) => Math.min(prev + 1, MAX_SIDES));
+      });
+    }, delay);
+
+    return stopAnimation;
+  }, [isAnimating, sides, stopAnimation]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -159,7 +150,7 @@ export function PiUpperBound() {
     return () => {
       stopAnimation();
     };
-  }, []);
+  }, [stopAnimation]);
 
   const handleSidesChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(e.target.value);

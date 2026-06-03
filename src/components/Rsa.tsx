@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Home, Languages, Lock, Unlock, Key, ChevronDown, ChevronUp, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
 import { Links } from './Links';
+import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
+import { ExplanationPanel } from './common/ExplanationPanel';
 
 interface KeyPair {
   p: bigint;
@@ -31,17 +33,6 @@ export function Rsa() {
   const t = translations[lang];
 
   // Helper functions for RSA operations
-  const isPrime = (n: bigint): boolean => {
-    if (n <= 1n) return false;
-    if (n <= 3n) return true;
-    if (n % 2n === 0n || n % 3n === 0n) return false;
-
-    for (let i = 5n; i * i <= n; i += 6n) {
-      if (n % i === 0n || n % (i + 2n) === 0n) return false;
-    }
-    return true;
-  };
-
   const gcd = (a: bigint, b: bigint): bigint => {
     while (b !== 0n) {
       const temp = b;
@@ -381,6 +372,53 @@ export function Rsa() {
         )}
       </div>
 
+      {/* Explanation Panel with RSA Invariants */}
+      <ExplanationPanel
+        stepDescription={
+          keyPair
+            ? encryptedMessage.length > 0
+              ? decryptedMessage
+                ? lang === 'en'
+                  ? `Decrypted ${steps.length} bytes using private key d = ${keyPair.d.toString().slice(0, 10)}...`
+                  : `使用私钥 d = ${keyPair.d.toString().slice(0, 10)}... 解密了 ${steps.length} 个字节`
+                : lang === 'en'
+                  ? `Encrypted ${steps.length} bytes using public key e = ${keyPair.e.toString()}`
+                  : `使用公钥 e = ${keyPair.e.toString()} 加密了 ${steps.length} 个字节`
+              : lang === 'en'
+                ? `Keys generated: n = p × q = ${keyPair.n.toString()}`
+                : `密钥已生成：n = p × q = ${keyPair.n.toString()}`
+            : lang === 'en'
+              ? 'Click Generate Keys to create an RSA key pair.'
+              : '点击生成密钥创建 RSA 密钥对。'
+        }
+        invariant={
+          lang === 'en'
+            ? 'm^(e×d) ≡ m (mod n)  —  Encryption and decryption are inverse operations.'
+            : 'm^(e×d) ≡ m (mod n)  —  加密和解密是逆运算。'
+        }
+        complexity={{
+          time: 'O(log e × log² n)',
+          space: 'O(log n)',
+          worstCase: lang === 'en' ? 'Modular exponentiation dominates' : '模幂运算占主导',
+        }}
+        operationType={
+          keyPair
+            ? decryptedMessage
+              ? lang === 'en'
+                ? 'decryption'
+                : '解密'
+              : encryptedMessage.length > 0
+                ? lang === 'en'
+                  ? 'encryption'
+                  : '加密'
+                : lang === 'en'
+                  ? 'key generation'
+                  : '密钥生成'
+            : undefined
+        }
+      />
+
+      <DeveloperNote noteKey="devNoteRsa" />
       <Links lang={lang} />
     </div>
   );
