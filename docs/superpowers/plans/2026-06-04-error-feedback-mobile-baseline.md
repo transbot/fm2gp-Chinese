@@ -52,7 +52,7 @@ Use these rules consistently across all algorithm pages:
 **Files:**
 - Modify: `docs/superpowers/plans/2026-06-04-error-feedback-mobile-baseline.md`
 
-- [ ] **Step 1: Confirm the starting branch and working tree**
+- [x] **Step 1: Confirm the starting branch and working tree**
 
 Run:
 
@@ -60,9 +60,9 @@ Run:
 git status --short --branch
 ```
 
-Expected after this plan is saved: `main` is even with `origin/main`, with this plan file shown as untracked or modified.
+Observed on 2026-06-04: `main` was even with `origin/main`; the plan file had already been committed in `9a727c2`.
 
-- [ ] **Step 2: Locate possible silent-click controls**
+- [x] **Step 2: Locate possible silent-click controls**
 
 Run:
 
@@ -72,9 +72,9 @@ Get-ChildItem src/components -Recurse -Filter *.tsx |
   Select-Object Path,LineNumber,Line
 ```
 
-Expected: a list of controls and early returns to classify. Pages already covered by tests still remain in the matrix so future regressions are visible.
+Observed on 2026-06-04: RSA still had an `if (!keyPair || !message) return;` path plus `disabled={!message}` on Encrypt, PrimeCounting still computed a sieve to `10_000_000` during canvas draw, and most remaining disabled controls were playback/navigation controls already tied to step state.
 
-- [ ] **Step 3: Fill this matrix before changing code**
+- [x] **Step 3: Fill this matrix before changing code**
 
 Use `covered` only when a page has a test asserting a user-visible message or a visible disabled-state explanation.
 
@@ -84,10 +84,10 @@ Use `covered` only when a page has a test asserting a user-visible message or a 
 | Graphs | `src/components/ShortestPath.tsx` | Next before start / next after complete | Start-first covered; complete-state test still needed | partial |
 | Crypto | `src/components/Rsa.tsx` | Encrypt with empty message after key generation | Click shows bilingual message | open |
 | Number theory | `src/components/PrimeCounting.tsx` | Heavy graph computation on mount | Mobile-safe compute path | open |
-| Legacy layout | `src/components/Calculator.tsx` | Header and controls on narrow screens | Uses mobile-safe spacing and touch targets | open |
-| Legacy layout | `src/components/Gcm.tsx` | Header and controls on narrow screens | Uses mobile-safe spacing and touch targets | open |
-| Legacy layout | `src/components/Rotate.tsx` | Array controls and explanations | No horizontal overflow on 390px width | open |
-| Legacy layout | `src/components/GcdComparison.tsx` | Heavy comparison and control state | Visible progress/state on mobile | open |
+| Legacy layout | `src/components/Calculator.tsx` | Header and controls on narrow screens | Uses mobile-safe spacing and touch targets | deferred: shared shell not used yet |
+| Legacy layout | `src/components/Gcm.tsx` | Header and controls on narrow screens | Uses mobile-safe spacing and touch targets | deferred: playback next button still disabled |
+| Legacy layout | `src/components/Rotate.tsx` | Canvas and array controls | No horizontal overflow on 390px width | deferred: manual viewport check required |
+| Legacy layout | `src/components/GcdComparison.tsx` | Heavy comparison and control state | Visible progress/state on mobile | deferred: manual viewport check required |
 | Common UI | `src/components/common/StepController.tsx` | Disabled playback states | Touch-safe and accessible labels | open |
 | Common UI | `src/components/common/AlgorithmLayout.tsx` | Safe-area and mobile spacing | Shared shell for responsive pages | open |
 
@@ -747,4 +747,3 @@ git push origin main
 - [ ] Heavy prime-counting computation is extracted and tested.
 - [ ] Manual mobile viewport results are recorded.
 - [ ] Full verification commands exit 0 before the final push.
-
