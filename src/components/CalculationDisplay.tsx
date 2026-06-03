@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import React from 'react';
 import { translations } from '../i18n/translations';
 
 interface Step {
@@ -33,13 +33,13 @@ export function CalculationDisplay({ steps, result, firstNumber, secondNumber, l
           <div>{formula}</div>
           <div className="pl-4">
             {terms.map((term, index) => (
-              <Fragment key={index}>
+              <React.Fragment key={index}>
                 {term}
                 {index < terms.length - 1 && (
                   <span className="text-gray-500"> +</span>
                 )}
                 <br />
-              </Fragment>
+              </React.Fragment>
             ))}
           </div>
           <div>={result}</div>
