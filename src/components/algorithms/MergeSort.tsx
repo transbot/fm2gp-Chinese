@@ -1,21 +1,20 @@
 // src/components/algorithms/MergeSort.tsx
 
-import React, { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Play, RotateCcw, Shuffle } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../i18n/translations';
 import { StepController } from '../common/StepController';
 import { ExplanationPanel } from '../common/ExplanationPanel';
 import { AlgorithmLayout } from '../common/AlgorithmLayout';
+import { ValidationMessage } from '../common/ValidationMessage';
 import { mergeSortVisualization, MergeSortInput, MergeSortState } from '../../lib/algorithms/merge_sort';
 import { Step } from '../../lib/algorithms/types';
 import { cn } from '../../lib/utils';
 
-const SPEED_OPTIONS = [0.5, 1, 1.5, 2, 3];
-
 export function MergeSort() {
   const { lang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   // Input state
   const [arrayInput, setArrayInput] = useState<string>('38, 27, 43, 3, 9, 82, 10');
@@ -25,6 +24,7 @@ export function MergeSort() {
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
 
   // Parse input
   const parseInput = useCallback((): MergeSortInput => {
@@ -44,9 +44,12 @@ export function MergeSort() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
+      setValidationErrorKey(null);
     } else {
       setSteps([]);
       setCurrentStep(0);
+      setIsPlaying(false);
+      setValidationErrorKey(validation.errorKey ?? 'invalidInput');
     }
   }, [parseInput]);
 
@@ -124,6 +127,7 @@ export function MergeSort() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
+      setValidationErrorKey(null);
     }
   }, []);
 
@@ -136,7 +140,7 @@ export function MergeSort() {
   const getCellColor = (index: number) => {
     if (currentState.array.length === 0) return 'bg-gray-100';
 
-    const { phase, comparing, rangeStart, rangeEnd, level } = currentState;
+    const { phase, comparing, rangeStart, rangeEnd } = currentState;
 
     // Highlight range being processed
     if (rangeStart !== undefined && rangeEnd !== undefined) {
@@ -279,13 +283,18 @@ export function MergeSort() {
               setArrayInput(e.target.value);
             }}
             onBlur={handleInputChange}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono text-sm"
+            className={cn(
+              'w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono text-sm',
+              validationErrorKey ? 'border-red-300 bg-red-50' : 'border-gray-300'
+            )}
             placeholder="38, 27, 43, 3, 9, 82, 10"
           />
           <p className="text-xs text-gray-500">
             {t.mergeSortMaxElements || 'Maximum 32 elements for visualization'}
           </p>
         </div>
+
+        <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
         {/* Action buttons */}
         <div className="flex gap-2 flex-wrap">

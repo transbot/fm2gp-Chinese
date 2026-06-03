@@ -10,7 +10,7 @@ interface DeveloperNoteProps {
 
 export function DeveloperNote({ noteKey }: DeveloperNoteProps) {
   const { lang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
   const content = t[noteKey];
 
   if (!content) return null;

@@ -1,13 +1,14 @@
 // src/components/FastFibonacci.tsx
 
-import React, { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Play, RotateCcw } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../i18n/translations';
 import { StepController } from './common/StepController';
 import { ExplanationPanel } from './common/ExplanationPanel';
 import { AlgorithmLayout } from './common/AlgorithmLayout';
-import { fastFibonacciVisualization, FastFibonacciInput, FastFibonacciState, Matrix2x2 } from '../lib/algorithms/fast_fibonacci';
+import { ValidationMessage } from './common/ValidationMessage';
+import { fastFibonacciVisualization, FastFibonacciInput, FastFibonacciState } from '../lib/algorithms/fast_fibonacci';
 import { Step } from '../lib/algorithms/types';
 
 // Format large numbers with line breaks every 80 characters
@@ -22,14 +23,9 @@ const formatLargeNumber = (num: bigint): string => {
   return chunks.join('\n');
 };
 
-// Format matrix for display
-const formatMatrix = (m: Matrix2x2): string => {
-  return `[[${m.a}, ${m.b}], [${m.c}, ${m.d}]]`;
-};
-
 export function FastFibonacci() {
   const { lang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   // Input state
   const [number, setNumber] = useState<string>('100');
@@ -39,7 +35,7 @@ export function FastFibonacci() {
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
-  const [error, setError] = useState<string | null>(null);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
 
   // Parse input
   const parseInput = useCallback((): FastFibonacciInput => {
@@ -56,13 +52,14 @@ export function FastFibonacci() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
-      setError(null);
+      setValidationErrorKey(null);
     } else {
       setSteps([]);
       setCurrentStep(0);
-      setError(validation.errorKey ? t[validation.errorKey] : validation.error || 'Invalid input');
+      setIsPlaying(false);
+      setValidationErrorKey(validation.errorKey ?? 'invalidInput');
     }
-  }, [parseInput, t]);
+  }, [parseInput]);
 
   // Initialize on mount
   useEffect(() => {
@@ -149,13 +146,11 @@ export function FastFibonacci() {
             onChange={(e) => setNumber(e.target.value)}
             onBlur={handleInputChange}
             className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono ${
-              error ? 'border-red-500' : 'border-gray-300'
+              validationErrorKey ? 'border-red-500' : 'border-gray-300'
             }`}
             placeholder="100"
           />
-          {error && (
-            <p className="text-red-500 text-sm">{error}</p>
-          )}
+          <ValidationMessage errorKey={validationErrorKey} messages={t} />
         </div>
 
         {/* Action buttons */}

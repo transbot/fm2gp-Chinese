@@ -1,18 +1,19 @@
 // src/components/algorithms/PowerAlgorithm.tsx
 
-import React, { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Play, RotateCcw } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../i18n/translations';
 import { StepController } from '../common/StepController';
 import { ExplanationPanel } from '../common/ExplanationPanel';
 import { AlgorithmLayout } from '../common/AlgorithmLayout';
-import { powerVisualization, PowerInput, PowerState, PowerStepRecord } from '../../lib/algorithms/power';
+import { ValidationMessage } from '../common/ValidationMessage';
+import { powerVisualization, PowerInput, PowerState } from '../../lib/algorithms/power';
 import { Step } from '../../lib/algorithms/types';
 
 export function PowerAlgorithm() {
   const { lang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   // Input state
   const [baseInput, setBaseInput] = useState<string>('2');
@@ -23,7 +24,7 @@ export function PowerAlgorithm() {
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
-  const [error, setError] = useState<string | null>(null);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
 
   // Parse input
   const parseInput = useCallback((): PowerInput => {
@@ -41,13 +42,14 @@ export function PowerAlgorithm() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
-      setError(null);
+      setValidationErrorKey(null);
     } else {
       setSteps([]);
       setCurrentStep(0);
-      setError(validation.errorKey ? t[validation.errorKey] : validation.error || 'Invalid input');
+      setIsPlaying(false);
+      setValidationErrorKey(validation.errorKey ?? null);
     }
-  }, [parseInput, t]);
+  }, [parseInput]);
 
   // Initialize on mount
   useEffect(() => {
@@ -206,12 +208,7 @@ export function PowerAlgorithm() {
           </div>
         </div>
 
-        {/* Error message */}
-        {error && (
-          <div className="text-red-600 text-sm bg-red-50 p-2 rounded-lg">
-            {error}
-          </div>
-        )}
+        <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
         {/* Action buttons */}
         <div className="flex gap-2 flex-wrap">

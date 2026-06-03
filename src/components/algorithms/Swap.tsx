@@ -1,19 +1,20 @@
 // src/components/algorithms/Swap.tsx
 
-import React, { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Play, RotateCcw, Shuffle } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../i18n/translations';
 import { StepController } from '../common/StepController';
 import { ExplanationPanel } from '../common/ExplanationPanel';
 import { AlgorithmLayout } from '../common/AlgorithmLayout';
+import { ValidationMessage } from '../common/ValidationMessage';
 import { swapVisualization, SwapInput, SwapState } from '../../lib/algorithms/swap';
 import { Step } from '../../lib/algorithms/types';
 import { cn } from '../../lib/utils';
 
 export function Swap() {
   const { lang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   // Input state
   const [arrayInput, setArrayInput] = useState<string>('1,2,3,4,5,6,7');
@@ -27,7 +28,7 @@ export function Swap() {
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
-  const [error, setError] = useState<string | null>(null);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
 
   // Parse input
   const parseInput = useCallback((): SwapInput => {
@@ -55,13 +56,14 @@ export function Swap() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
-      setError(null);
+      setValidationErrorKey(null);
     } else {
       setSteps([]);
       setCurrentStep(0);
-      setError(validation.errorKey ? t[validation.errorKey] : validation.error || 'Invalid input');
+      setIsPlaying(false);
+      setValidationErrorKey(validation.errorKey ?? null);
     }
-  }, [parseInput, t]);
+  }, [parseInput]);
 
   // Initialize on mount
   useEffect(() => {
@@ -146,6 +148,7 @@ export function Swap() {
     setFirstEnd(String(mid));
     setSecondStart(String(mid));
     setSecondEnd(String(size));
+    setValidationErrorKey(null);
   }, []);
 
   // Render array visualization
@@ -282,12 +285,7 @@ export function Swap() {
           </div>
         </div>
 
-        {/* Error message */}
-        {error && (
-          <div className="text-red-600 text-sm bg-red-50 p-2 rounded-lg">
-            {error}
-          </div>
-        )}
+        <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
         {/* Action buttons */}
         <div className="flex gap-2 flex-wrap">

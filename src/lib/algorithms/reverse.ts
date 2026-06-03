@@ -150,7 +150,7 @@ export const reverseVisualization: AlgorithmVisualization<
 
   describeStep(step: Step<ReverseState>, lang: 'en' | 'zh'): string {
     const { state, operation } = step;
-    const { array, leftIndex, rightIndex, swapped, swapCount } = state;
+    const { array, leftIndex, rightIndex, swapCount } = state;
 
     const messages: Record<string, Record<'en' | 'zh', string>> = {
       init: {

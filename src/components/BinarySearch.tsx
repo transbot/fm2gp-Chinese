@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useCallback, useState, useEffect } from 'react';
 import { Home, Languages, Play, RotateCcw } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
@@ -25,37 +25,37 @@ export function BinarySearch() {
   const [searchPhase, setSearchPhase] = useState<'idle' | 'finding_lower' | 'finding_upper' | 'done'>('idle');
 
   const { lang, setLang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
-  // Generate a new random array
-  const generateArray = () => {
-    const newArr = Array.from({ length: arraySize }, () => Math.floor(Math.random() * 99) + 1);
-    setArray(newArr);
-    setIsSorted(false);
-    resetSearchState();
-  };
-
-  useEffect(() => {
-    generateArray();
-  }, [arraySize]);
-
-  const resetSearchState = () => {
+  const resetSearchState = useCallback(() => {
     setActiveRange(null);
     setMidIdx(null);
     setLowerBound(null);
     setUpperBound(null);
     setSearchPhase('idle');
     setIsPlaying(false);
-  };
+  }, []);
+
+  // Generate a new random array
+  const generateArray = useCallback(() => {
+    const newArr = Array.from({ length: arraySize }, () => Math.floor(Math.random() * 99) + 1);
+    setArray(newArr);
+    setIsSorted(false);
+    resetSearchState();
+  }, [arraySize, resetSearchState]);
+
+  useEffect(() => {
+    generateArray();
+  }, [generateArray]);
 
   const handleSort = async () => {
     if (isSorted) return;
     setIsPlaying(true);
-    let arrCopy = [...array];
+    const arrCopy = [...array];
     const gen = quickSortGenerator(arrCopy);
     
     // Animate sort quickly
-    for (let step of gen) {
+    for (const step of gen) {
       setArray([...step.array]);
       await new Promise(r => setTimeout(r, 10)); // 10ms per frame for quicksort
     }
@@ -80,7 +80,7 @@ export function BinarySearch() {
     const lowerGen = lowerBoundGenerator(array, target);
     let l_result = 0;
     
-    for (let step of lowerGen) {
+    for (const step of lowerGen) {
       setActiveRange([step.left, step.right]);
       setMidIdx(step.mid ?? null);
       await new Promise(r => setTimeout(r, 600)); // 600ms per step to show half-reduction
@@ -104,7 +104,7 @@ export function BinarySearch() {
     const upperGen = upperBoundGenerator(array, target);
     let u_result = 0;
     
-    for (let step of upperGen) {
+    for (const step of upperGen) {
       setActiveRange([step.left, step.right]);
       setMidIdx(step.mid ?? null);
       await new Promise(r => setTimeout(r, 600));

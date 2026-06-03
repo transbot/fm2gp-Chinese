@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Home, Languages } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
@@ -6,6 +6,7 @@ import { Links } from './Links';
 import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
 import { ExplanationPanel } from './common/ExplanationPanel';
+import { ValidationMessage } from './common/ValidationMessage';
 
 interface Factor {
   prime: number;
@@ -23,6 +24,7 @@ export function PrimeChecker() {
     factors?: Factor[];
     number: string;
   } | null>(null);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
@@ -34,6 +36,7 @@ export function PrimeChecker() {
 
   const handleNumberInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.replace(/[^\d]/g, '');
+    setValidationErrorKey(null);
     if (value === '') {
       setNumber('');
     } else {
@@ -45,7 +48,7 @@ export function PrimeChecker() {
         } else {
           setNumber(value);
         }
-      } catch (error) {
+      } catch {
         // If BigInt conversion fails, set to max value
         setNumber(MAX_BIGINT.toString());
       }
@@ -111,7 +114,12 @@ export function PrimeChecker() {
   };
 
   const checkNumber = () => {
-    if (!number) return;
+    if (!number) {
+      setValidationErrorKey('primeCheckerInputRequired');
+      setResult(null);
+      return;
+    }
+    setValidationErrorKey(null);
     
     const num = BigInt(number);
     if (num < 2n) {
@@ -145,6 +153,7 @@ export function PrimeChecker() {
   const reset = () => {
     setNumber('');
     setResult(null);
+    setValidationErrorKey(null);
   };
 
   return (
@@ -180,10 +189,16 @@ export function PrimeChecker() {
             type="text"
             value={number}
             onChange={handleNumberInput}
+            onBlur={() => {
+              if (!number) {
+                setValidationErrorKey('primeCheckerInputRequired');
+              }
+            }}
             onKeyPress={handleKeyPress}
             placeholder={t.numberPlaceholder}
             className="w-full px-4 py-2 border rounded-lg"
           />
+          <ValidationMessage errorKey={validationErrorKey} messages={t} />
         </div>
 
         <div className="flex gap-4">

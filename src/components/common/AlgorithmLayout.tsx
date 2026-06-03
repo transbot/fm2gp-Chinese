@@ -1,6 +1,6 @@
 // src/components/common/AlgorithmLayout.tsx
 
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { Home, Languages } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
@@ -8,24 +8,25 @@ import { translations } from '../../i18n/translations';
 import { Links } from '../Links';
 import { DeveloperNote } from '../DeveloperNote';
 import { AlgorithmVisualization } from '../../lib/algorithms/types';
+import { AlgorithmNavigation } from './AlgorithmNavigation';
 
-interface AlgorithmLayoutProps {
+interface AlgorithmLayoutProps<TInput, TState> {
   titleKey: string;
   descriptionKey: string;
   devNoteKey?: string;
-  algorithm: AlgorithmVisualization<any, any>;
+  algorithm: AlgorithmVisualization<TInput, TState>;
   children: ReactNode;
 }
 
-export function AlgorithmLayout({
+export function AlgorithmLayout<TInput, TState>({
   titleKey,
   descriptionKey,
   devNoteKey,
   algorithm,
   children,
-}: AlgorithmLayoutProps) {
+}: AlgorithmLayoutProps<TInput, TState>) {
   const { lang, setLang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   // Build title with section reference
   const buildTitle = () => {
@@ -69,6 +70,8 @@ export function AlgorithmLayout({
 
       {/* Algorithm content */}
       {children}
+
+      <AlgorithmNavigation algorithmId={algorithm.id} lang={lang} />
 
       {/* Developer note */}
       {devNoteKey && <DeveloperNote noteKey={devNoteKey} />}

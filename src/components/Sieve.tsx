@@ -1,6 +1,6 @@
 // src/components/Sieve.tsx
 
-import React, { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Play, RotateCcw, Home, Languages } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
@@ -9,16 +9,17 @@ import { Links } from './Links';
 import { DeveloperNote } from './DeveloperNote';
 import { StepController } from './common/StepController';
 import { ExplanationPanel } from './common/ExplanationPanel';
+import { ValidationMessage } from './common/ValidationMessage';
 import { sieveVisualization, SieveInput, SieveState } from '../lib/algorithms/sieve';
 import { Step } from '../lib/algorithms/types';
 
 export function Sieve() {
   const { lang, setLang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   // Input state
   const [maxNumber, setMaxNumber] = useState<number>(0);
-  const [showError, setShowError] = useState<boolean>(false);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
 
   // Step state (managed locally for flexibility)
   const [steps, setSteps] = useState<Step<SieveState>[]>([]);
@@ -41,17 +42,17 @@ export function Sieve() {
     const value = e.target.value.replace(/[^\d]/g, '');
     if (value === '') {
       setMaxNumber(0);
-      setShowError(false);
+      setValidationErrorKey(null);
     } else {
       const num = Number(value);
       setMaxNumber(num > 9999 ? 9999 : num);
-      setShowError(false);
+      setValidationErrorKey(null);
     }
   };
 
   const generateNumbers = useCallback(() => {
     if (!maxNumber || maxNumber < 2) {
-      setShowError(true);
+      setValidationErrorKey('sieveInputRequired');
       return;
     }
 
@@ -63,9 +64,9 @@ export function Sieve() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
-      setShowError(false);
+      setValidationErrorKey(null);
     } else {
-      setShowError(true);
+      setValidationErrorKey(validation.errorKey ?? 'sieveInputRequired');
     }
   }, [maxNumber]);
 
@@ -113,16 +114,11 @@ export function Sieve() {
     setCurrentStep(Math.max(0, Math.min(step, totalSteps - 1)));
   }, [totalSteps]);
 
-  const reset = useCallback(() => {
-    setIsPlaying(false);
-    setCurrentStep(0);
-  }, []);
-
   const fullReset = useCallback(() => {
     setSteps([]);
     setCurrentStep(0);
     setIsPlaying(false);
-    setShowError(false);
+    setValidationErrorKey(null);
     setMaxNumber(0);
   }, []);
 
@@ -168,15 +164,11 @@ export function Sieve() {
               onChange={handleNumberInput}
               onKeyPress={handleKeyPress}
               className={`w-full px-4 py-2 border rounded-lg ${
-                showError ? 'border-red-500' : 'border-gray-300'
+                validationErrorKey ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder={t.maxNumber}
             />
-            {showError && (
-              <p className="text-red-500 text-sm mt-1">
-                {t.sieveInputRequired}
-              </p>
-            )}
+            <ValidationMessage errorKey={validationErrorKey} messages={t} />
           </div>
 
           <div className="flex gap-4">

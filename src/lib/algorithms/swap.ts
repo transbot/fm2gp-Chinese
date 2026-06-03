@@ -180,7 +180,7 @@ export const swapVisualization: AlgorithmVisualization<
 
   describeStep(step: Step<SwapState>, lang: 'en' | 'zh'): string {
     const { state, operation, highlights } = step;
-    const { array, firstRange, secondRange, swapIndex } = state;
+    const { array, firstRange, secondRange } = state;
 
     const messages: Record<string, Record<'en' | 'zh', string>> = {
       init: {

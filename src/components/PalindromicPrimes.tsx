@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Home, Languages } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
 import { Links } from './Links';
 import { useLanguage } from '../context/LanguageContext';
+import { ValidationMessage } from './common/ValidationMessage';
 
 export function PalindromicPrimes() {
   const [maxNumber, setMaxNumber] = useState<number>(0);
   const [inputBase, setInputBase] = useState<string>('10');
   const [currentBase, setCurrentBase] = useState<number>(10);
-  const [baseError, setBaseError] = useState<string>('');
-  const [maxNumberError, setMaxNumberError] = useState<string>('');
+  const [baseErrorKey, setBaseErrorKey] = useState<string | null>(null);
+  const [maxNumberErrorKey, setMaxNumberErrorKey] = useState<string | null>(null);
   const [numbers, setNumbers] = useState<{value: number, display: string, isPalindromicPrime: boolean}[]>([]);
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
@@ -42,11 +43,11 @@ export function PalindromicPrimes() {
   const handleNumberInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.replace(/[^\d]/g, '');
     if (value === '') {
-      setMaxNumberError('');
+      setMaxNumberErrorKey(null);
       setMaxNumber(0);
     } else {
       const num = Number(value);
-      setMaxNumberError('');
+      setMaxNumberErrorKey(null);
       setMaxNumber(num > 9999 ? 9999 : num);
     }
   };
@@ -54,23 +55,23 @@ export function PalindromicPrimes() {
   const handleBaseInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.replace(/[^\d]/g, '');
     if (value === '') {
-      setBaseError('');
+      setBaseErrorKey(null);
       setInputBase('');
       return;
     }
     
     const num = Number(value);
     if (num >= 2 && num <= 36) {
-      setBaseError('');
+      setBaseErrorKey(null);
       setInputBase(value);
     } else if (num > 36) {
-      setBaseError('');
+      setBaseErrorKey(null);
       setInputBase('36');
     } else if (value === '1') {
       // Allow typing "1" without immediately changing to "2"
       setInputBase('1');
     } else if (num < 2) {
-      setBaseError('');
+      setBaseErrorKey(null);
       setInputBase('2');
     }
   };
@@ -83,7 +84,7 @@ export function PalindromicPrimes() {
     
     const num = Number(inputBase);
     if (num === 1) {
-      setBaseError(t.baseError);
+      setBaseErrorKey('baseError');
       return 0;
     } else if (num < 2) {
       setInputBase('2');
@@ -97,15 +98,15 @@ export function PalindromicPrimes() {
 
   const validateMaxNumberBeforeGenerate = () => {
     if (!maxNumber || maxNumber < 2) {
-      setMaxNumberError(t.maxNumberError);
+      setMaxNumberErrorKey('maxNumberError');
       return false;
     }
     return true;
   };
 
   const generateNumbers = () => {
-    setBaseError('');
-    setMaxNumberError('');
+    setBaseErrorKey(null);
+    setMaxNumberErrorKey(null);
 
     if (!validateMaxNumberBeforeGenerate()) return;
 
@@ -144,8 +145,8 @@ export function PalindromicPrimes() {
   const reset = () => {
     setNumbers([]);
     setMaxNumber(0);
-    setBaseError('');
-    setMaxNumberError('');
+    setBaseErrorKey(null);
+    setMaxNumberErrorKey(null);
     setInputBase('10');
     setCurrentBase(10);
   };
@@ -188,16 +189,12 @@ export function PalindromicPrimes() {
               onChange={handleNumberInput}
               onKeyPress={handleKeyPress}
               className={`w-full px-4 py-2 border rounded-lg ${
-                maxNumberError ? 'border-red-500' : 'border-gray-300'
+                maxNumberErrorKey ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder={t.maxNumber}
             />
             <p className="mt-1 text-sm text-gray-500">
-              {maxNumberError ? (
-                <span className="text-red-500">{maxNumberError}</span>
-              ) : (
-                lang === 'en' ? '(2-9999)' : '(2-9999)'
-              )}
+              {lang === 'en' ? '(2-9999)' : '(2-9999)'}
             </p>
           </div>
 
@@ -213,18 +210,16 @@ export function PalindromicPrimes() {
               value={inputBase}
               onChange={handleBaseInput}
               className={`w-full px-4 py-2 border rounded-lg ${
-                baseError ? 'border-red-500' : 'border-gray-300'
+                baseErrorKey ? 'border-red-500' : 'border-gray-300'
               }`}
             />
             <p className="mt-1 text-sm text-gray-500">
-              {baseError ? (
-                <span className="text-red-500">{baseError}</span>
-              ) : (
-                lang === 'en' ? '(2-36)' : '(2-36进制)'
-              )}
+              {lang === 'en' ? '(2-36)' : '(2-36进制)'}
             </p>
           </div>
         </div>
+
+        <ValidationMessage errorKey={maxNumberErrorKey ?? baseErrorKey} messages={t} />
 
         <div className="flex gap-4">
           <button

@@ -1,6 +1,5 @@
 // src/components/common/ExplanationPanel.tsx
 
-import React from 'react';
 import { Info, Clock, Database } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../i18n/translations';
@@ -22,7 +21,7 @@ export function ExplanationPanel({
   operationType,
 }: ExplanationPanelProps) {
   const { lang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   return (
     <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl border border-gray-200 p-4 space-y-4">

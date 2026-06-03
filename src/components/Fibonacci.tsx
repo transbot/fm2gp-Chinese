@@ -1,18 +1,19 @@
 // src/components/Fibonacci.tsx
 
-import React, { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Play, RotateCcw } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../i18n/translations';
 import { StepController } from './common/StepController';
 import { ExplanationPanel } from './common/ExplanationPanel';
 import { AlgorithmLayout } from './common/AlgorithmLayout';
+import { ValidationMessage } from './common/ValidationMessage';
 import { fibonacciVisualization, FibonacciInput, FibonacciState } from '../lib/algorithms/fibonacci';
 import { Step } from '../lib/algorithms/types';
 
 export function Fibonacci() {
   const { lang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   // Input state
   const [number, setNumber] = useState<string>('10');
@@ -22,7 +23,7 @@ export function Fibonacci() {
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
-  const [error, setError] = useState<string | null>(null);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
 
   // Parse input
   const parseInput = useCallback((): FibonacciInput => {
@@ -39,13 +40,14 @@ export function Fibonacci() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
-      setError(null);
+      setValidationErrorKey(null);
     } else {
       setSteps([]);
       setCurrentStep(0);
-      setError(validation.errorKey ? t[validation.errorKey] : validation.error || 'Invalid input');
+      setIsPlaying(false);
+      setValidationErrorKey(validation.errorKey ?? 'invalidInput');
     }
-  }, [parseInput, t]);
+  }, [parseInput]);
 
   // Initialize on mount
   useEffect(() => {
@@ -132,13 +134,11 @@ export function Fibonacci() {
             onChange={(e) => setNumber(e.target.value)}
             onBlur={handleInputChange}
             className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono ${
-              error ? 'border-red-500' : 'border-gray-300'
+              validationErrorKey ? 'border-red-500' : 'border-gray-300'
             }`}
             placeholder="10"
           />
-          {error && (
-            <p className="text-red-500 text-sm">{error}</p>
-          )}
+          <ValidationMessage errorKey={validationErrorKey} messages={t} />
         </div>
 
         {/* Action buttons */}

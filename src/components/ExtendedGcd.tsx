@@ -5,6 +5,7 @@ import { translations } from '../i18n/translations';
 import { Links } from './Links';
 import { useLanguage } from '../context/LanguageContext';
 import { DeveloperNote } from './DeveloperNote';
+import { ValidationMessage } from './common/ValidationMessage';
 import { extendedGcdGenerator, binaryExtendedGcdGenerator, ExtendedGcdStep, BinaryExtendedGcdStep } from '../lib/algorithms/extended_gcd';
 
 import { motion, AnimatePresence } from 'framer-motion';
@@ -22,11 +23,23 @@ export function ExtendedGcd() {
   const [binGenerator, setBinGenerator] = useState<Generator<BinaryExtendedGcdStep, { gcd: bigint, x: bigint, y: bigint }, void> | null>(null);
   
   const [resultMsg, setResultMsg] = useState<{gcd: bigint, x: bigint, y: bigint} | null>(null);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
 
   const { lang, setLang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   const initAlgorithm = () => {
+    if (!aInput || !bInput) {
+      setValidationErrorKey('inputRequired');
+      setTradGenerator(null);
+      setBinGenerator(null);
+      setTradSteps([]);
+      setBinSteps([]);
+      setIsDone(false);
+      setResultMsg(null);
+      return;
+    }
+
     try {
       const a = BigInt(aInput);
       const b = BigInt(bInput);
@@ -40,8 +53,9 @@ export function ExtendedGcd() {
       }
       setIsDone(false);
       setResultMsg(null);
-    } catch (e) {
-      // ignore
+      setValidationErrorKey(null);
+    } catch {
+      setValidationErrorKey('invalidInput');
     }
   };
 
@@ -101,7 +115,10 @@ export function ExtendedGcd() {
           <input 
             type="text" 
             value={aInput} 
-            onChange={(e) => setAInput(e.target.value.replace(/\D/g, ''))} 
+            onChange={(e) => {
+              setAInput(e.target.value.replace(/\D/g, ''));
+              setValidationErrorKey(null);
+            }} 
             className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono"
           />
         </div>
@@ -110,7 +127,10 @@ export function ExtendedGcd() {
           <input 
             type="text" 
             value={bInput} 
-            onChange={(e) => setBInput(e.target.value.replace(/\D/g, ''))} 
+            onChange={(e) => {
+              setBInput(e.target.value.replace(/\D/g, ''));
+              setValidationErrorKey(null);
+            }} 
             className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono"
           />
         </div>
@@ -134,6 +154,8 @@ export function ExtendedGcd() {
            </button>
         </div>
       </div>
+
+      <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
       <div className="flex gap-4">
         <button 

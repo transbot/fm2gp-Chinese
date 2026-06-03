@@ -1,22 +1,16 @@
 // src/components/algorithms/HeapOperations.tsx
 
-import React, { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Play, RotateCcw, Shuffle, Plus, Trash2, ArrowUp, ArrowDown } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../i18n/translations';
 import { StepController } from '../common/StepController';
 import { ExplanationPanel } from '../common/ExplanationPanel';
 import { AlgorithmLayout } from '../common/AlgorithmLayout';
+import { ValidationMessage } from '../common/ValidationMessage';
 import { heapVisualization, HeapInput, HeapState } from '../../lib/algorithms/heap';
 import { Step } from '../../lib/algorithms/types';
 import { cn } from '../../lib/utils';
-
-/**
- * Get parent index in heap
- */
-function getParentIndex(index: number): number {
-  return Math.floor((index - 1) / 2);
-}
 
 /**
  * Get left child index in heap
@@ -62,7 +56,7 @@ function calculateTreePositions(size: number): Map<number, { x: number; y: numbe
 
 export function HeapOperations() {
   const { lang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   // Input state
   const [arrayInput, setArrayInput] = useState<string>('4, 10, 3, 5, 1, 2, 8');
@@ -74,6 +68,7 @@ export function HeapOperations() {
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
 
   // Parse input
   const parseInput = useCallback((): HeapInput => {
@@ -81,10 +76,11 @@ export function HeapOperations() {
       .split(/[,，]/)  // Support both half-width and full-width commas
       .map((s) => parseInt(s.trim()))
       .filter((n) => !isNaN(n));
+    const parsedInsertValue = Number.parseInt(insertValue, 10);
     return {
       array,
       operation,
-      value: operation === 'insert' ? parseInt(insertValue) : undefined,
+      value: operation === 'insert' && !Number.isNaN(parsedInsertValue) ? parsedInsertValue : undefined,
     };
   }, [arrayInput, operation, insertValue]);
 
@@ -97,9 +93,12 @@ export function HeapOperations() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
+      setValidationErrorKey(null);
     } else {
       setSteps([]);
       setCurrentStep(0);
+      setIsPlaying(false);
+      setValidationErrorKey(validation.errorKey ?? 'invalidInput');
     }
   }, [parseInput]);
 
@@ -168,12 +167,13 @@ export function HeapOperations() {
     const arr = Array.from({ length }, () => Math.floor(Math.random() * 50) + 1);
     const newArrayInput = arr.join(', ');
     setArrayInput(newArrayInput);
+    const parsedInsertValue = Number.parseInt(insertValue, 10);
 
     // Directly regenerate steps with the new array (don't wait for state update)
     const input: HeapInput = {
       array: arr,
       operation,
-      value: operation === 'insert' ? parseInt(insertValue) : undefined,
+      value: operation === 'insert' && !Number.isNaN(parsedInsertValue) ? parsedInsertValue : undefined,
     };
     const validation = heapVisualization.validateInput(input);
     if (validation.valid) {
@@ -181,6 +181,12 @@ export function HeapOperations() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
+      setValidationErrorKey(null);
+    } else {
+      setSteps([]);
+      setCurrentStep(0);
+      setIsPlaying(false);
+      setValidationErrorKey(validation.errorKey ?? 'invalidInput');
     }
   }, [operation, insertValue]);
 
@@ -409,7 +415,10 @@ export function HeapOperations() {
             value={arrayInput}
             onChange={(e) => setArrayInput(e.target.value)}
             onBlur={handleInputChange}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono text-sm"
+            className={cn(
+              'w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono text-sm',
+              validationErrorKey === 'heapEmptyArray' ? 'border-red-300 bg-red-50' : 'border-gray-300'
+            )}
             placeholder="4, 10, 3, 5, 1, 2, 8"
           />
         </div>
@@ -424,11 +433,16 @@ export function HeapOperations() {
               type="number"
               value={insertValue}
               onChange={(e) => setInsertValue(e.target.value)}
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono text-sm"
+              className={cn(
+                'w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono text-sm',
+                validationErrorKey === 'heapInsertNoValue' ? 'border-red-300 bg-red-50' : 'border-gray-300'
+              )}
               placeholder="15"
             />
           </div>
         )}
+
+        <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
         {/* Action buttons */}
         <div className="flex gap-2 flex-wrap">

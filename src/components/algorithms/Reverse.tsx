@@ -1,19 +1,20 @@
 // src/components/algorithms/Reverse.tsx
 
-import React, { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Play, RotateCcw, Shuffle, ArrowLeftRight } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../i18n/translations';
 import { StepController } from '../common/StepController';
 import { ExplanationPanel } from '../common/ExplanationPanel';
 import { AlgorithmLayout } from '../common/AlgorithmLayout';
+import { ValidationMessage } from '../common/ValidationMessage';
 import { reverseVisualization, ReverseInput, ReverseState } from '../../lib/algorithms/reverse';
 import { Step } from '../../lib/algorithms/types';
 import { cn } from '../../lib/utils';
 
 export function Reverse() {
   const { lang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   // Input state
   const [arrayInput, setArrayInput] = useState<string>('1, 2, 3, 4, 5, 6, 7, 8');
@@ -23,6 +24,7 @@ export function Reverse() {
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
 
   // Parse input
   const parseInput = useCallback((): ReverseInput => {
@@ -42,9 +44,12 @@ export function Reverse() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
+      setValidationErrorKey(null);
     } else {
       setSteps([]);
       setCurrentStep(0);
+      setIsPlaying(false);
+      setValidationErrorKey(validation.errorKey ?? null);
     }
   }, [parseInput]);
 
@@ -126,6 +131,7 @@ export function Reverse() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
+      setValidationErrorKey(null);
     }
   }, []);
 
@@ -223,6 +229,8 @@ export function Reverse() {
             placeholder="1, 2, 3, 4, 5, 6, 7, 8"
           />
         </div>
+
+        <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
         {/* Action buttons */}
         <div className="flex gap-2 flex-wrap">

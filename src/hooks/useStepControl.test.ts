@@ -79,11 +79,11 @@ const createMockAlgorithm = (): AlgorithmVisualization<TestInput, TestState> => 
     };
   },
 
-  describeStep(step: Step<TestState>, lang: 'en' | 'zh'): string {
+  describeStep(step: Step<TestState>): string {
     return `Step: ${step.operation}`;
   },
 
-  getInvariant(lang: 'en' | 'zh'): string {
+  getInvariant(): string {
     return 'Test invariant';
   },
 

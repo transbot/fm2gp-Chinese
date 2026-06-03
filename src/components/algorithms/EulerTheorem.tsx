@@ -1,19 +1,20 @@
 // src/components/algorithms/EulerTheorem.tsx
 
-import React, { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Play, RotateCcw } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../i18n/translations';
 import { StepController } from '../common/StepController';
 import { ExplanationPanel } from '../common/ExplanationPanel';
 import { AlgorithmLayout } from '../common/AlgorithmLayout';
+import { ValidationMessage } from '../common/ValidationMessage';
 import { eulerVisualization, EulerInput, EulerState } from '../../lib/algorithms/euler';
 import { Step } from '../../lib/algorithms/types';
 import { cn } from '../../lib/utils';
 
 export function EulerTheorem() {
   const { lang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   // Input state
   const [baseInput, setBaseInput] = useState<string>('3');
@@ -24,31 +25,40 @@ export function EulerTheorem() {
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
-  const [error, setError] = useState<string | null>(null);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
 
   // Parse input
   const parseInput = useCallback((): EulerInput => {
-    const a = parseInt(baseInput) || 0;
-    const n = parseInt(modulusInput) || 1;
+    const a = Number.parseInt(baseInput, 10);
+    const n = Number.parseInt(modulusInput, 10);
     return { a, n };
   }, [baseInput, modulusInput]);
 
   // Generate steps from current input
   const regenerateSteps = useCallback(() => {
     const input = parseInput();
+    if (!Number.isFinite(input.a) || !Number.isFinite(input.n)) {
+      setSteps([]);
+      setCurrentStep(0);
+      setIsPlaying(false);
+      setValidationErrorKey('invalidInput');
+      return;
+    }
+
     const validation = eulerVisualization.validateInput(input);
     if (validation.valid) {
       const newSteps = eulerVisualization.generateSteps(input);
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
-      setError(null);
+      setValidationErrorKey(null);
     } else {
       setSteps([]);
       setCurrentStep(0);
-      setError(validation.errorKey ? t[validation.errorKey] : validation.error || 'Invalid input');
+      setIsPlaying(false);
+      setValidationErrorKey(validation.errorKey ?? 'invalidInput');
     }
-  }, [parseInput, t]);
+  }, [parseInput]);
 
   // Initialize on mount
   useEffect(() => {
@@ -332,12 +342,7 @@ export function EulerTheorem() {
           </div>
         </div>
 
-        {/* Error message */}
-        {error && (
-          <div className="text-red-600 text-sm bg-red-50 p-2 rounded-lg">
-            {error}
-          </div>
-        )}
+        <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
         {/* Action buttons */}
         <div className="flex gap-2 flex-wrap">

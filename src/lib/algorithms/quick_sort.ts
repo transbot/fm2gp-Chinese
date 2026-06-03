@@ -359,7 +359,6 @@ export const quickSortVisualization: AlgorithmVisualization<
       pivotIndex,
       low,
       high,
-      i,
       j,
       sorted,
       comparing,

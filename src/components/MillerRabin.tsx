@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { Home, Languages, Play, Square, RotateCcw } from 'lucide-react';
+import { Home, Languages, Play } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
 import { Links } from './Links';
 import { useLanguage } from '../context/LanguageContext';
 import { DeveloperNote } from './DeveloperNote';
+import { ValidationMessage } from './common/ValidationMessage';
 import { millerRabinGenerator, MillerRabinStep } from '../lib/algorithms/miller_rabin';
 import { cn } from '../lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -14,26 +15,39 @@ export function MillerRabin() {
   const [kInput, setKInput] = useState<string>('3');
   const [steps, setSteps] = useState<MillerRabinStep[]>([]);
   const [isDone, setIsDone] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
   const [generator, setGenerator] = useState<Generator<MillerRabinStep, boolean, void> | null>(null);
   const [resultMsg, setResultMsg] = useState('');
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
 
   const { lang, setLang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   const initAlgorithm = () => {
     try {
       const n = BigInt(nInput);
       const k = parseInt(kInput, 10) || 5;
 
+      if (n <= 1n) {
+        setValidationErrorKey('millerRabinMustBeGreaterThanOne');
+        setResultMsg('');
+        setGenerator(null);
+        setIsDone(true);
+        setSteps([]);
+        return;
+      }
+
+      setValidationErrorKey(null);
+
       if (n <= 3n) {
-        setResultMsg(n <= 1n ? (t.millerRabinMustBeGreaterThanOne || "n must be > 1") : (t.millerRabinTriviallyPrime || "n <= 3 is prime trivially."));
+        setResultMsg(t.millerRabinTriviallyPrime || "n <= 3 is prime trivially.");
+        setGenerator(null);
         setIsDone(true);
         setSteps([]);
         return;
       }
       if (n % 2n === 0n) {
         setResultMsg(t.millerRabinTriviallyComposite || "n is even, trivially composite.");
+        setGenerator(null);
         setIsDone(true);
         setSteps([]);
         return;
@@ -44,9 +58,12 @@ export function MillerRabin() {
       setSteps([]);
       setIsDone(false);
       setResultMsg('');
-      setIsPlaying(false);
-    } catch (e) {
-      setResultMsg(t.invalidInput || "Invalid input size");
+    } catch {
+      setValidationErrorKey('invalidInput');
+      setResultMsg('');
+      setGenerator(null);
+      setIsDone(false);
+      setSteps([]);
     }
   };
 
@@ -55,7 +72,6 @@ export function MillerRabin() {
     const result = generator.next();
     if (result.done) {
       setIsDone(true);
-      setIsPlaying(false);
       setGenerator(null);
       setResultMsg(result.value ? (t.millerRabinProbablyPrime || "PROBABLY PRIME") : (t.millerRabinComposite || "COMPOSITE"));
     } else {
@@ -97,7 +113,10 @@ export function MillerRabin() {
           <input
             type="text"
             value={nInput}
-            onChange={(e) => setNInput(e.target.value.replace(/\D/g, ''))}
+            onChange={(e) => {
+              setNInput(e.target.value.replace(/\D/g, ''));
+              setValidationErrorKey(null);
+            }}
             className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono"
             placeholder={t.millerRabinNPlaceholder || "e.g. 561"}
           />
@@ -121,6 +140,8 @@ export function MillerRabin() {
            </button>
         </div>
       </div>
+
+      <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
       {/* Controls */}
       <div className="flex gap-4">

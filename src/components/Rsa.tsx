@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Home, Languages, Lock, Unlock, Key, ChevronDown, ChevronUp, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
@@ -33,17 +33,6 @@ export function Rsa() {
   const t = translations[lang];
 
   // Helper functions for RSA operations
-  const isPrime = (n: bigint): boolean => {
-    if (n <= 1n) return false;
-    if (n <= 3n) return true;
-    if (n % 2n === 0n || n % 3n === 0n) return false;
-
-    for (let i = 5n; i * i <= n; i += 6n) {
-      if (n % i === 0n || n % (i + 2n) === 0n) return false;
-    }
-    return true;
-  };
-
   const gcd = (a: bigint, b: bigint): bigint => {
     while (b !== 0n) {
       const temp = b;

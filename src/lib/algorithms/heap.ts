@@ -61,7 +61,7 @@ function siftDown(
   arr: number[],
   startIndex: number,
   steps: Step<HeapState>[],
-  operation: string
+  operation: HeapState['operation']
 ): void {
   let index = startIndex;
   const n = arr.length;
@@ -92,7 +92,7 @@ function siftDown(
         rightChildIndex: right,
         swapped: false,
         heapType: 'max',
-        operation: operation as any,
+        operation,
         phase: 'compare',
         isHeap: false,
       },
@@ -115,7 +115,7 @@ function siftDown(
           rightChildIndex: getRightChildIndex(largest),
           swapped: true,
           heapType: 'max',
-          operation: operation as any,
+          operation,
           phase: 'swap',
           isHeap: false,
         },
@@ -140,7 +140,7 @@ function siftUp(
   arr: number[],
   startIndex: number,
   steps: Step<HeapState>[],
-  operation: string
+  operation: HeapState['operation']
 ): void {
   let index = startIndex;
 
@@ -158,7 +158,7 @@ function siftUp(
         rightChildIndex: getRightChildIndex(index),
         swapped: false,
         heapType: 'max',
-        operation: operation as any,
+        operation,
         phase: 'compare',
         isHeap: false,
       },
@@ -181,7 +181,7 @@ function siftUp(
           rightChildIndex: getRightChildIndex(parent),
           swapped: true,
           heapType: 'max',
-          operation: operation as any,
+          operation,
           phase: 'swap',
           isHeap: false,
         },
@@ -390,7 +390,7 @@ export const heapVisualization: AlgorithmVisualization<
         });
 
         // Remove last element (was the root)
-        const removedValue = arr.pop();
+        arr.pop();
 
         steps.push({
           state: {
@@ -489,7 +489,7 @@ export const heapVisualization: AlgorithmVisualization<
 
   describeStep(step: Step<HeapState>, lang: 'en' | 'zh'): string {
     const { state } = step;
-    const { array, currentIndex, parentIndex, swapped, operation, phase, isHeap } = state;
+    const { array, currentIndex, parentIndex, swapped, operation, phase } = state;
 
     const leftChild = getLeftChildIndex(currentIndex);
     const rightChild = getRightChildIndex(currentIndex);

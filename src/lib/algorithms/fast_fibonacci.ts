@@ -89,8 +89,7 @@ export const fastFibonacciVisualization: AlgorithmVisualization<
   FastFibonacciState
 > = {
   id: 'fast-fibonacci',
-  section: '10.7',
-  isAdvanced: true,
+  section: '7.7',
 
   generateSteps(input: FastFibonacciInput): Step<FastFibonacciState>[] {
     const { n } = input;
@@ -161,61 +160,70 @@ export const fastFibonacciVisualization: AlgorithmVisualization<
 
     let result = identityMatrix();
     let base = baseFibMatrix();
-    let opCount = { additions: 0, multiplications: 0 };
+    const opCount = { additions: 0, multiplications: 0 };
 
-    // Binary exponentiation: process each bit from MSB to LSB
-    for (let i = 0; i < binaryDigits.length; i++) {
-      const bit = binaryDigits[i];
+    // Binary exponentiation: process bits from least significant to most significant.
+    let remaining = exp;
+    let bitIndex = binaryDigits.length - 1;
+    let stepNum = 0;
 
-      // Square the base matrix
-      const squareResult = multiplyMatrix(base, base);
-      opCount.adds += squareResult.ops.adds;
-      opCount.mults += squareResult.ops.mults;
+    while (remaining > 0) {
+      const bit = remaining % 2;
 
-      steps.push({
-        state: {
-          n,
-          currentN: exp,
-          matrix: base,
-          result: 0n,
-          phase: 'power',
-          stepNum: i + 1,
-          binaryDigits,
-          currentBitIndex: i,
-          operationCount: { ...opCount },
-        },
-        operation: 'square',
-        descriptionKey: 'fastFibonacciSquare',
-        highlights: [],
-      });
-
-      base = squareResult.result;
-
-      // If bit is 1, multiply result by base
       if (bit === 1) {
         const multResult = multiplyMatrix(result, base);
-        opCount.adds += multResult.ops.adds;
-        opCount.mults += multResult.ops.mults;
+        opCount.additions += multResult.ops.adds;
+        opCount.multiplications += multResult.ops.mults;
 
         result = multResult.result;
+        stepNum++;
 
         steps.push({
           state: {
             n,
-            currentN: exp,
+            currentN: remaining,
             matrix: base,
             result: result.a,
             phase: 'multiply',
-            stepNum: i + 1,
+            stepNum,
             binaryDigits,
-            currentBitIndex: i,
+            currentBitIndex: bitIndex,
             operationCount: { ...opCount },
           },
           operation: 'multiply',
           descriptionKey: 'fastFibonacciMultiply',
-          highlights: [i],
+          highlights: [bitIndex],
         });
       }
+
+      remaining = Math.floor(remaining / 2);
+
+      if (remaining > 0) {
+        const squareResult = multiplyMatrix(base, base);
+        opCount.additions += squareResult.ops.adds;
+        opCount.multiplications += squareResult.ops.mults;
+        base = squareResult.result;
+        stepNum++;
+
+        steps.push({
+          state: {
+            n,
+            currentN: remaining,
+            matrix: base,
+            result: result.a,
+            phase: 'power',
+            stepNum,
+            binaryDigits,
+            currentBitIndex: bitIndex - 1,
+            operationCount: { ...opCount },
+          },
+          operation: 'square',
+          descriptionKey: 'fastFibonacciSquare',
+          highlights: [],
+        });
+      }
+
+      bitIndex--;
     }
 
     // Final result: F(n) = result[0][0]
@@ -277,7 +285,7 @@ export const fastFibonacciVisualization: AlgorithmVisualization<
 
   describeStep(step: Step<FastFibonacciState>, lang: 'en' | 'zh'): string {
     const { state, operation } = step;
-    const { n, matrix, result, phase, stepNum, binaryDigits, currentBitIndex, operationCount } = state;
+    const { n, matrix, result, stepNum, binaryDigits, currentBitIndex, operationCount } = state;
 
     const formatMatrix = (m: Matrix2x2): string => {
       return `[[${m.a}, ${m.b}], [${m.c}, ${m.d}]]`;

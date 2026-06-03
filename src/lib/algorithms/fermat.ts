@@ -255,7 +255,7 @@ export const fermatVisualization: AlgorithmVisualization<
 
   describeStep(step: Step<FermatState>, lang: 'en' | 'zh'): string {
     const { state, operation } = step;
-    const { a, p, exponent, currentPower, modResult, stepIndex, steps: expSteps, isComplete, isPrime } = state;
+    const { a, p, exponent, currentPower, modResult, isComplete, isPrime } = state;
 
     const messages: Record<string, Record<'en' | 'zh', string>> = {
       init: {

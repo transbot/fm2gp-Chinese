@@ -146,12 +146,12 @@ describe('linearSearchVisualization', () => {
 
   describe('getInvariant', () => {
     it('should return English invariant', () => {
-      const invariant = linearSearchVisualization.getInvariant('en');
+      const invariant = linearSearchVisualization.getInvariant!('en');
       expect(invariant).toContain('currentIndex');
     });
 
     it('should return Chinese invariant', () => {
-      const invariant = linearSearchVisualization.getInvariant('zh');
+      const invariant = linearSearchVisualization.getInvariant!('zh');
       expect(invariant).toContain('currentIndex');
     });
   });

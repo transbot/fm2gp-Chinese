@@ -1,18 +1,19 @@
 // src/components/algorithms/FermatTheorem.tsx
 
-import React, { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Play, RotateCcw, CheckCircle, XCircle, AlertTriangle } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../i18n/translations';
 import { StepController } from '../common/StepController';
 import { ExplanationPanel } from '../common/ExplanationPanel';
 import { AlgorithmLayout } from '../common/AlgorithmLayout';
+import { ValidationMessage } from '../common/ValidationMessage';
 import { fermatVisualization, FermatInput, FermatState } from '../../lib/algorithms/fermat';
 import { Step } from '../../lib/algorithms/types';
 
 export function FermatTheorem() {
   const { lang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   // Input state
   const [aInput, setAInput] = useState<string>('2');
@@ -23,31 +24,40 @@ export function FermatTheorem() {
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
-  const [error, setError] = useState<string | null>(null);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
 
   // Parse input
   const parseInput = useCallback((): FermatInput => {
-    const a = parseInt(aInput) || 1;
-    const p = parseInt(pInput) || 2;
+    const a = Number.parseInt(aInput, 10);
+    const p = Number.parseInt(pInput, 10);
     return { a, p };
   }, [aInput, pInput]);
 
   // Generate steps from current input
   const regenerateSteps = useCallback(() => {
     const input = parseInput();
+    if (!Number.isFinite(input.a) || !Number.isFinite(input.p)) {
+      setSteps([]);
+      setCurrentStep(0);
+      setIsPlaying(false);
+      setValidationErrorKey('invalidInput');
+      return;
+    }
+
     const validation = fermatVisualization.validateInput(input);
     if (validation.valid) {
       const newSteps = fermatVisualization.generateSteps(input);
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
-      setError(null);
+      setValidationErrorKey(null);
     } else {
       setSteps([]);
       setCurrentStep(0);
-      setError(validation.errorKey ? t[validation.errorKey] : validation.error || 'Invalid input');
+      setIsPlaying(false);
+      setValidationErrorKey(validation.errorKey ?? 'invalidInput');
     }
-  }, [parseInput, t]);
+  }, [parseInput]);
 
   // Initialize on mount
   useEffect(() => {
@@ -217,12 +227,7 @@ export function FermatTheorem() {
           </div>
         </div>
 
-        {/* Error message */}
-        {error && (
-          <div className="text-red-600 text-sm bg-red-50 p-2 rounded-lg">
-            {error}
-          </div>
-        )}
+        <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
         {/* Action buttons */}
         <div className="flex gap-2 flex-wrap">

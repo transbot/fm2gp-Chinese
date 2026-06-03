@@ -1,6 +1,6 @@
 // src/components/algorithms/GraphTraversal.tsx
 
-import React, { useState, useCallback, useEffect, useMemo } from 'react';
+import { useState, useCallback, useEffect, useMemo } from 'react';
 import ReactFlow, {
   Node,
   Edge,
@@ -20,6 +20,7 @@ import { translations } from '../../i18n/translations';
 import { StepController } from '../common/StepController';
 import { ExplanationPanel } from '../common/ExplanationPanel';
 import { AlgorithmLayout } from '../common/AlgorithmLayout';
+import { ValidationMessage } from '../common/ValidationMessage';
 import {
   graphTraversalVisualization,
   GraphTraversalInput,
@@ -106,7 +107,7 @@ const nodeTypes = {
 
 export function GraphTraversal() {
   const { lang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   // Default graph
   const defaultGraph = useMemo(() => createDefaultGraph(), []);
@@ -127,6 +128,7 @@ export function GraphTraversal() {
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
 
   // ReactFlow state
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
@@ -146,9 +148,12 @@ export function GraphTraversal() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
+      setValidationErrorKey(null);
     } else {
       setSteps([]);
       setCurrentStep(0);
+      setIsPlaying(false);
+      setValidationErrorKey(validation.errorKey ?? 'invalidInput');
     }
   }, [nodesInput, edgesInput, startNode, algorithm]);
 
@@ -202,7 +207,7 @@ export function GraphTraversal() {
       };
     });
     setNodes(flowNodes);
-  }, [nodesInput, currentState.nodes, setNodes]);
+  }, [nodesInput, edgesInput, currentState.nodes, setNodes]);
 
   // Update ReactFlow edges based on current state
   useEffect(() => {
@@ -363,6 +368,7 @@ export function GraphTraversal() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
+      setValidationErrorKey(null);
     }
   }, [algorithm]);
 
@@ -488,6 +494,8 @@ export function GraphTraversal() {
             </div>
           </div>
         </div>
+
+        <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
         {/* Action buttons */}
         <div className="flex gap-2 flex-wrap">

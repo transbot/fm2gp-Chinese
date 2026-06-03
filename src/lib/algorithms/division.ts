@@ -252,7 +252,7 @@ export const divisionVisualization: AlgorithmVisualization<
 
   describeStep(step: Step<DivisionState>, lang: 'en' | 'zh'): string {
     const { state, operation } = step;
-    const { dividend, divisor, quotient, remainder, step: stepNum, isCompressed, subtractionsInStep, totalSubtractions } = state;
+    const { dividend, divisor, quotient, remainder, step: stepNum, subtractionsInStep, totalSubtractions } = state;
 
     const messages: Record<string, Record<'en' | 'zh', string>> = {
       init: {

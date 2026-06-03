@@ -194,7 +194,7 @@ export const fibonacciVisualization: AlgorithmVisualization<
 
   describeStep(step: Step<FibonacciState>, lang: 'en' | 'zh'): string {
     const { state, operation } = step;
-    const { n, currentN, depth, result, additions, callStack } = state;
+    const { n, currentN, result, additions, callStack } = state;
 
     const messages: Record<string, Record<'en' | 'zh', string>> = {
       init: {

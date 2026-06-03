@@ -17,7 +17,7 @@ export interface SortStep {
 // In-place QuickSort Generator
 export function* quickSortGenerator(arr: number[], low = 0, high = arr.length - 1): Generator<SortStep, void, void> {
   if (low < high) {
-    let pivot = arr[high];
+    const pivot = arr[high];
     let i = low - 1;
 
     for (let j = low; j < high; j++) {
@@ -25,7 +25,7 @@ export function* quickSortGenerator(arr: number[], low = 0, high = arr.length - 
       if (arr[j] < pivot) {
         i++;
         // Swap
-        let temp = arr[i];
+        const temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
         yield { array: [...arr], pivotIdx: high, swapping: [i, j] };
@@ -33,10 +33,10 @@ export function* quickSortGenerator(arr: number[], low = 0, high = arr.length - 
     }
 
     // Swap pivot to correct position
-    let temp = arr[i + 1];
+    const temp = arr[i + 1];
     arr[i + 1] = arr[high];
     arr[high] = temp;
-    let pi = i + 1;
+    const pi = i + 1;
     
     yield { array: [...arr], pivotIdx: pi, swapping: [pi, high] };
 
@@ -52,8 +52,8 @@ export function* lowerBoundGenerator(arr: number[], a: number): Generator<Search
   let right = arr.length; // half-open interval [left, right)
   
   while (left !== right) {
-    let half = Math.floor((right - left) / 2);
-    let mid = left + half;
+    const half = Math.floor((right - left) / 2);
+    const mid = left + half;
     
     yield { phase: 'lower_bound', left, right, mid, target: a, valueAtMid: arr[mid] };
     
@@ -75,8 +75,8 @@ export function* upperBoundGenerator(arr: number[], a: number): Generator<Search
   let right = arr.length;
   
   while (left !== right) {
-    let half = Math.floor((right - left) / 2);
-    let mid = left + half;
+    const half = Math.floor((right - left) / 2);
+    const mid = left + half;
     
     yield { phase: 'upper_bound', left, right, mid, target: a, valueAtMid: arr[mid] };
     

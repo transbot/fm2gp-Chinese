@@ -1,6 +1,5 @@
 // src/components/common/StepController.tsx
 
-import React from 'react';
 import { Play, Pause, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../i18n/translations';
@@ -32,7 +31,7 @@ export function StepController({
   disabled = false,
 }: StepControllerProps) {
   const { lang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   const progress = totalSteps > 0 ? (currentStep / (totalSteps - 1)) * 100 : 0;
   const canGoBack = currentStep > 0 && !disabled;

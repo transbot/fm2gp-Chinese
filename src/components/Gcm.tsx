@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Home, Languages } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
@@ -6,6 +6,7 @@ import { Links } from './Links';
 import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
 import { ExplanationPanel } from './common/ExplanationPanel';
+import { ValidationMessage } from './common/ValidationMessage';
 
 interface Step {
   a: number;
@@ -27,7 +28,7 @@ export function Gcm() {
   const [steps, setSteps] = useState<Step[]>([]);
   const [currentStep, setCurrentStep] = useState<number>(-1);
   const [isComplete, setIsComplete] = useState<boolean>(false);
-  const [showError, setShowError] = useState<boolean>(false);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
@@ -41,7 +42,7 @@ export function Gcm() {
     const value = e.target.value.replace(/[^\d]/g, '');
     if (value === '') {
       setter(0);
-      setShowError(false);
+      setValidationErrorKey(null);
     } else {
       const num = Number(value);
       if (num > MAX_NUMBER) {
@@ -49,7 +50,7 @@ export function Gcm() {
       } else {
         setter(num);
       }
-      setShowError(false);
+      setValidationErrorKey(null);
     }
   };
 
@@ -59,7 +60,7 @@ export function Gcm() {
 
   const startCalculation = () => {
     if (!firstNumber || !secondNumber) {
-      setShowError(true);
+      setValidationErrorKey('inputRequired');
       return;
     }
     
@@ -73,7 +74,7 @@ export function Gcm() {
       }]);
       setCurrentStep(0);
       setIsComplete(true);
-      setShowError(false);
+      setValidationErrorKey(null);
       return;
     }
 
@@ -85,7 +86,7 @@ export function Gcm() {
     }]);
     setCurrentStep(0);
     setIsComplete(false);
-    setShowError(false);
+    setValidationErrorKey(null);
   };
 
   const nextStep = () => {
@@ -141,7 +142,7 @@ export function Gcm() {
     setSteps([]);
     setCurrentStep(-1);
     setIsComplete(false);
-    setShowError(false);
+    setValidationErrorKey(null);
   };
 
   return (
@@ -179,7 +180,7 @@ export function Gcm() {
             onChange={(e) => handleNumberInput(e, setFirstNumber)}
             onKeyPress={handleKeyPress}
             className={`w-full px-4 py-2 border rounded-lg ${
-              showError && !firstNumber ? 'border-red-500' : 'border-gray-300'
+              validationErrorKey && !firstNumber ? 'border-red-500' : 'border-gray-300'
             }`}
             placeholder={t.firstNumber}
           />
@@ -194,18 +195,14 @@ export function Gcm() {
             onChange={(e) => handleNumberInput(e, setSecondNumber)}
             onKeyPress={handleKeyPress}
             className={`w-full px-4 py-2 border rounded-lg ${
-              showError && !secondNumber ? 'border-red-500' : 'border-gray-300'
+              validationErrorKey && !secondNumber ? 'border-red-500' : 'border-gray-300'
             }`}
             placeholder={t.secondNumber}
           />
         </div>
       </div>
 
-      {showError && (
-        <div className="text-red-500 text-sm">
-          {t.inputRequired}
-        </div>
-      )}
+      <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
       <div className="flex gap-4">
         <button

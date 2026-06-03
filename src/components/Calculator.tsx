@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Calculator as CalculatorIcon, Languages, Home } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
@@ -8,6 +8,7 @@ import { Links } from './Links';
 import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
 import { ExplanationPanel } from './common/ExplanationPanel';
+import { ValidationMessage } from './common/ValidationMessage';
 
 interface Step {
   powerOfTwo: number;
@@ -23,7 +24,7 @@ export function Calculator() {
   const [steps, setSteps] = useState<Step[]>([]);
   const [result, setResult] = useState<number | null>(null);
   const [showResults, setShowResults] = useState(false);
-  const [showError, setShowError] = useState(false);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
@@ -45,12 +46,12 @@ export function Calculator() {
         setter(num);
       }
     }
-    setShowError(false);
+    setValidationErrorKey(null);
   };
 
   const calculate = () => {
     if (!firstNumber || !secondNumber) {
-      setShowError(true);
+      setValidationErrorKey('inputRequired');
       return;
     }
 
@@ -58,7 +59,7 @@ export function Calculator() {
     setSteps(newSteps);
     setResult(finalResult);
     setShowResults(true);
-    setShowError(false);
+    setValidationErrorKey(null);
   };
 
   const reset = () => {
@@ -67,7 +68,7 @@ export function Calculator() {
     setSteps([]);
     setResult(null);
     setShowResults(false);
-    setShowError(false);
+    setValidationErrorKey(null);
   };
 
   return (
@@ -107,7 +108,7 @@ export function Calculator() {
             value={firstNumber || ''}
             onChange={(e) => handleNumberInput(e, setFirstNumber)}
             onKeyPress={handleKeyPress}
-            className={`w-full px-4 py-2 border rounded-lg ${showError && !firstNumber ? 'border-red-500' : 'border-gray-300'}`}
+            className={`w-full px-4 py-2 border rounded-lg ${validationErrorKey && !firstNumber ? 'border-red-500' : 'border-gray-300'}`}
             placeholder={t.firstNumber}
             max={MAX_NUMBER}
             min={-MAX_NUMBER}
@@ -122,7 +123,7 @@ export function Calculator() {
             value={secondNumber || ''}
             onChange={(e) => handleNumberInput(e, setSecondNumber)}
             onKeyPress={handleKeyPress}
-            className={`w-full px-4 py-2 border rounded-lg ${showError && !secondNumber ? 'border-red-500' : 'border-gray-300'}`}
+            className={`w-full px-4 py-2 border rounded-lg ${validationErrorKey && !secondNumber ? 'border-red-500' : 'border-gray-300'}`}
             placeholder={t.secondNumber}
             max={MAX_NUMBER}
             min={-MAX_NUMBER}
@@ -130,11 +131,7 @@ export function Calculator() {
         </div>
       </div>
 
-      {showError && (
-        <div className="text-red-500 text-sm">
-          {t.inputRequired}
-        </div>
-      )}
+      <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
       <div className="flex gap-4">
         <button

@@ -2,7 +2,6 @@
 
 import { useState, useCallback, useEffect, useRef } from 'react';
 import {
-  AlgorithmVisualization,
   Step,
   UseStepControlOptions,
   UseStepControlReturn,
@@ -28,10 +27,9 @@ export function useStepControl<TInput, TState>(
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(autoPlay);
   const [speed, setSpeedState] = useState(defaultSpeed);
-  const [input, setInput] = useState<TInput>(initialInput);
 
   // Refs for animation frame management
-  const playIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const playIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const skipAnimationRef = useRef(false);
 
   // Derived state
@@ -59,7 +57,6 @@ export function useStepControl<TInput, TState>(
 
     setSteps(newSteps);
     setCurrentStep(0);
-    setInput(newInput);
     return true;
   }, [algorithm, maxSteps]);
 

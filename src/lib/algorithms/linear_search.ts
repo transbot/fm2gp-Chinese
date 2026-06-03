@@ -136,7 +136,7 @@ export const linearSearchVisualization: AlgorithmVisualization<
 
   describeStep(step: Step<LinearSearchState>, lang: 'en' | 'zh'): string {
     const { state, operation } = step;
-    const { currentIndex, target, found, foundIndex, comparisons, array } = state;
+    const { currentIndex, target, foundIndex, comparisons, array } = state;
 
     const messages: Record<string, Record<'en' | 'zh', string>> = {
       init: {

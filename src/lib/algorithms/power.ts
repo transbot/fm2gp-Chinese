@@ -193,7 +193,6 @@ export const powerVisualization: AlgorithmVisualization<
         highlights: [],
       });
 
-      const oldPower = currentPower;
       currentPower = currentPower * currentPower;  // a = a * a (squaring)
       n = Math.floor(n / 2);  // n = half(n)
 

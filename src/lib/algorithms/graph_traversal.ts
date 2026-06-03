@@ -99,14 +99,6 @@ function buildAdjacencyList(
 }
 
 /**
- * Get node label by id
- */
-function getNodeLabel(nodes: GraphNode[], id: string): string {
-  const node = nodes.find((n) => n.id === id);
-  return node?.label ?? id;
-}
-
-/**
  * Graph Traversal algorithm visualization implementation
  * BFS and DFS algorithms
  */
@@ -296,9 +288,6 @@ export const graphTraversalVisualization: AlgorithmVisualization<
   describeStep(step: Step<GraphTraversalState>, lang: 'en' | 'zh'): string {
     const { state, operation } = step;
     const { currentNode, queueOrStack, visitedOrder } = state;
-
-    const containerName = step.descriptionKey.startsWith('bfs') ? 'queue' : 'stack';
-    const algorithmName = step.descriptionKey.startsWith('bfs') ? 'BFS' : 'DFS';
 
     const messages: Record<string, Record<'en' | 'zh', string>> = {
       bfsInit: {

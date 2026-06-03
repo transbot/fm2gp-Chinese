@@ -1,19 +1,20 @@
 // src/components/algorithms/QuickSort.tsx
 
-import React, { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Play, RotateCcw, Shuffle, ArrowLeftRight, Target } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../i18n/translations';
 import { StepController } from '../common/StepController';
 import { ExplanationPanel } from '../common/ExplanationPanel';
 import { AlgorithmLayout } from '../common/AlgorithmLayout';
+import { ValidationMessage } from '../common/ValidationMessage';
 import { quickSortVisualization, QuickSortInput, QuickSortState } from '../../lib/algorithms/quick_sort';
 import { Step } from '../../lib/algorithms/types';
 import { cn } from '../../lib/utils';
 
 export function QuickSort() {
   const { lang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   // Input state
   const [arrayInput, setArrayInput] = useState<string>('3, 7, 2, 9, 1, 5, 8, 4, 6');
@@ -23,6 +24,7 @@ export function QuickSort() {
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
 
   // Parse input
   const parseInput = useCallback((): QuickSortInput => {
@@ -42,9 +44,12 @@ export function QuickSort() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
+      setValidationErrorKey(null);
     } else {
       setSteps([]);
       setCurrentStep(0);
+      setIsPlaying(false);
+      setValidationErrorKey(validation.errorKey ?? 'invalidInput');
     }
   }, [parseInput]);
 
@@ -126,6 +131,7 @@ export function QuickSort() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
+      setValidationErrorKey(null);
     }
   }, []);
 
@@ -143,7 +149,6 @@ export function QuickSort() {
       low,
       high,
       i,
-      j,
       sorted,
       comparing,
       swapping,
@@ -257,10 +262,15 @@ export function QuickSort() {
               setArrayInput(e.target.value);
             }}
             onBlur={handleInputChange}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono text-sm"
+            className={cn(
+              'w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono text-sm',
+              validationErrorKey ? 'border-red-300 bg-red-50' : 'border-gray-300'
+            )}
             placeholder="3, 7, 2, 9, 1, 5, 8, 4, 6"
           />
         </div>
+
+        <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
         {/* Action buttons */}
         <div className="flex gap-2 flex-wrap">

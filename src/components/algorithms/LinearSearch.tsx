@@ -1,21 +1,20 @@
 // src/components/algorithms/LinearSearch.tsx
 
-import React, { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Play, RotateCcw, Shuffle } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../i18n/translations';
 import { StepController } from '../common/StepController';
 import { ExplanationPanel } from '../common/ExplanationPanel';
 import { AlgorithmLayout } from '../common/AlgorithmLayout';
+import { ValidationMessage } from '../common/ValidationMessage';
 import { linearSearchVisualization, LinearSearchInput, LinearSearchState } from '../../lib/algorithms/linear_search';
 import { Step } from '../../lib/algorithms/types';
 import { cn } from '../../lib/utils';
 
-const SPEED_OPTIONS = [0.5, 1, 1.5, 2, 3];
-
 export function LinearSearch() {
   const { lang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   // Input state
   const [arrayInput, setArrayInput] = useState<string>('5, 3, 8, 4, 2, 7, 1, 6, 9, 0');
@@ -26,6 +25,7 @@ export function LinearSearch() {
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
 
   // Parse input
   const parseInput = useCallback((): LinearSearchInput => {
@@ -46,9 +46,12 @@ export function LinearSearch() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
+      setValidationErrorKey(null);
     } else {
       setSteps([]);
       setCurrentStep(0);
+      setIsPlaying(false);
+      setValidationErrorKey(validation.errorKey ?? null);
     }
   }, [parseInput]);
 
@@ -201,6 +204,8 @@ export function LinearSearch() {
             />
           </div>
         </div>
+
+        <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
         {/* Action buttons */}
         <div className="flex gap-2 flex-wrap">

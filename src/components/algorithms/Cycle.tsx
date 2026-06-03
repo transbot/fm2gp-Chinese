@@ -1,12 +1,13 @@
 // src/components/algorithms/Cycle.tsx
 
-import React, { useState, useCallback, useEffect, useMemo } from 'react';
+import { Fragment, useState, useCallback, useEffect, useMemo } from 'react';
 import { Play, RotateCcw, Shuffle, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../i18n/translations';
 import { StepController } from '../common/StepController';
 import { ExplanationPanel } from '../common/ExplanationPanel';
 import { AlgorithmLayout } from '../common/AlgorithmLayout';
+import { ValidationMessage } from '../common/ValidationMessage';
 import {
   cycleVisualization,
   CycleInput,
@@ -44,7 +45,7 @@ const CYCLE_BORDER_COLORS = [
 
 export function Cycle() {
   const { lang } = useLanguage();
-  const t = translations[lang] as any;
+  const t = translations[lang];
 
   // Default input
   const defaultInput = useMemo(() => createDefaultCycleInput(), []);
@@ -52,7 +53,7 @@ export function Cycle() {
   // Input state
   const [arrayInput, setArrayInput] = useState<string>(defaultInput.array.join(', '));
   const [permutationInput, setPermutationInput] = useState<string>(defaultInput.permutation.join(', '));
-  const [inputError, setInputError] = useState<string | null>(null);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
 
   // Step state
   const [steps, setSteps] = useState<Step<CycleState>[]>([]);
@@ -76,7 +77,7 @@ export function Cycle() {
       setSteps([]);
       setCurrentStep(0);
       if (array.length > 0) {
-        setInputError(lang === 'en' ? 'Invalid permutation' : '无效的置换');
+        setValidationErrorKey('cycleInvalidPermutation');
       }
       return;
     }
@@ -89,13 +90,14 @@ export function Cycle() {
       setSteps(newSteps);
       setCurrentStep(0);
       setIsPlaying(false);
-      setInputError(null);
+      setValidationErrorKey(null);
     } else {
       setSteps([]);
       setCurrentStep(0);
-      setInputError(validation.errorKey ? t[validation.errorKey] : validation.error);
+      setIsPlaying(false);
+      setValidationErrorKey(validation.errorKey ?? 'invalidInput');
     }
-  }, [arrayInput, permutationInput, lang, t]);
+  }, [arrayInput, permutationInput]);
 
   // Initialize on mount
   useEffect(() => {
@@ -167,7 +169,7 @@ export function Cycle() {
     const permutation = generateRandomPermutation(n);
     setArrayInput(array.join(', '));
     setPermutationInput(permutation.join(', '));
-    setInputError(null);
+    setValidationErrorKey(null);
 
     // Directly regenerate steps with the new values (don't wait for state update)
     const input: CycleInput = { array, permutation };
@@ -232,7 +234,10 @@ export function Cycle() {
           <input
             type="text"
             value={arrayInput}
-            onChange={(e) => setArrayInput(e.target.value)}
+            onChange={(e) => {
+              setArrayInput(e.target.value);
+              setValidationErrorKey(null);
+            }}
             className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             placeholder="10, 20, 30, 40, 50"
           />
@@ -246,7 +251,10 @@ export function Cycle() {
           <input
             type="text"
             value={permutationInput}
-            onChange={(e) => setPermutationInput(e.target.value)}
+            onChange={(e) => {
+              setPermutationInput(e.target.value);
+              setValidationErrorKey(null);
+            }}
             className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             placeholder="2, 0, 1, 3, 4"
           />
@@ -255,10 +263,7 @@ export function Cycle() {
           </p>
         </div>
 
-        {/* Error message */}
-        {inputError && (
-          <div className="text-red-500 text-sm">{inputError}</div>
-        )}
+        <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
         {/* Action buttons */}
         <div className="flex gap-2 flex-wrap">
@@ -429,7 +434,7 @@ export function Cycle() {
               </span>
               <div className="flex items-center gap-1">
                 {cycle.positions.map((pos, idx) => (
-                  <React.Fragment key={pos}>
+                  <Fragment key={pos}>
                     <div className={cn(
                       'w-10 h-10 rounded-full flex items-center justify-center font-bold text-white',
                       CYCLE_COLORS[cycleIdx % CYCLE_COLORS.length]
@@ -439,7 +444,7 @@ export function Cycle() {
                     {idx < cycle.positions.length - 1 && (
                       <ArrowRight className="w-4 h-4 text-gray-400" />
                     )}
-                  </React.Fragment>
+                  </Fragment>
                 ))}
                 {/* Arrow back to start */}
                 <ArrowRight className="w-4 h-4 text-gray-400 rotate-180" />
@@ -454,8 +459,8 @@ export function Cycle() {
                 {t.tracing || 'Tracing'}
               </span>
               <div className="flex items-center gap-1">
-                {currentState.currentCycle.map((pos, idx) => (
-                  <React.Fragment key={pos}>
+                {currentState.currentCycle.map((pos) => (
+                  <Fragment key={pos}>
                     <div className={cn(
                       'w-10 h-10 rounded-full flex items-center justify-center font-bold',
                       isCurrentPosition(pos) ? 'bg-yellow-500 text-white ring-2 ring-yellow-300' : 'bg-yellow-300 text-gray-800'
@@ -463,7 +468,7 @@ export function Cycle() {
                       {currentState.array[pos]}
                     </div>
                     <ArrowRight className="w-4 h-4 text-yellow-500" />
-                  </React.Fragment>
+                  </Fragment>
                 ))}
                 <span className="text-yellow-500 font-bold">...</span>
               </div>

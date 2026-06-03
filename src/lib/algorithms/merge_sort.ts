@@ -149,12 +149,8 @@ export const mergeSortVisualization: AlgorithmVisualization<
       rightArray,
       mergedArray,
       level,
-      mergeI,
-      mergeJ,
       comparing,
       comparisons,
-      rangeStart,
-      rangeEnd,
     } = state;
 
     const indent = '  '.repeat(level);

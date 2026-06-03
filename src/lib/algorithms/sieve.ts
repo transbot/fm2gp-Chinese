@@ -40,14 +40,14 @@ export interface SieveState {
 
 /**
  * Sieve of Eratosthenes algorithm visualization implementation
- * Section 10.7 in the book
+ * Sections 3.2-3.3 in the book
  */
 export const sieveVisualization: AlgorithmVisualization<
   SieveInput,
   SieveState
 > = {
   id: 'sieve',
-  section: '10.7',
+  section: '3.2-3.3',
 
   generateSteps(input: SieveInput): Step<SieveState>[] {
     const { maxNumber } = input;
@@ -125,15 +125,16 @@ export const sieveVisualization: AlgorithmVisualization<
 
     // Final state
     const finalNumbers = steps[steps.length - 1].state.numbers.map(n => ({ ...n }));
+    const finalPrimeCount = 1 + finalNumbers.filter(n => n.isPrime).length;
     steps.push({
       state: {
         numbers: finalNumbers,
         currentIndex: i,
-        currentPrime: newNumbers[i]?.value ?? 0,
+        currentPrime: finalNumbers[i]?.value ?? 0,
         indexSquare,
         factor,
         isComplete: true,
-        primeCount,
+        primeCount: finalPrimeCount,
       },
       operation: 'complete',
       descriptionKey: 'sieveComplete',
@@ -177,7 +178,7 @@ export const sieveVisualization: AlgorithmVisualization<
 
   describeStep(step: Step<SieveState>, lang: 'en' | 'zh'): string {
     const { state, operation } = step;
-    const { numbers, currentIndex, currentPrime, primeCount, isComplete } = state;
+    const { numbers, currentPrime, primeCount } = state;
 
     const messages: Record<string, Record<'en' | 'zh', string>> = {
       init: {
