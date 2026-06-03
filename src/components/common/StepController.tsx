@@ -65,7 +65,8 @@ export function StepController({
         <button
           onClick={() => onStep('backward')}
           disabled={!canGoBack}
-          className="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          aria-label={t.stepBackward || 'Step Backward'}
+          className="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
           title={t.stepBackward || 'Step Backward'}
         >
           <ChevronLeft className="w-5 h-5" />
@@ -75,7 +76,8 @@ export function StepController({
         <button
           onClick={isPlaying ? onPause : onPlay}
           disabled={disabled || totalSteps <= 1}
-          className="p-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          aria-label={isPlaying ? (t.pause || 'Pause') : (t.play || 'Play')}
+          className="touch-target rounded-lg bg-blue-600 p-3 text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
           title={isPlaying ? (t.pause || 'Pause') : (t.play || 'Play')}
         >
           {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
@@ -85,7 +87,8 @@ export function StepController({
         <button
           onClick={() => onStep('forward')}
           disabled={!canGoForward}
-          className="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          aria-label={t.stepForward || 'Step Forward'}
+          className="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
           title={t.stepForward || 'Step Forward'}
         >
           <ChevronRight className="w-5 h-5" />
