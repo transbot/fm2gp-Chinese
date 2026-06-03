@@ -138,6 +138,13 @@ describe('algorithmCatalog', () => {
       .toContain('insertion-sort');
   });
 
+  it('searches algorithms by localized title text', () => {
+    expect(searchAlgorithms({ query: 'linear', lang: 'en' }).map((item) => item.id))
+      .toContain('linear-search');
+    expect(searchAlgorithms({ query: '线性', lang: 'zh' }).map((item) => item.id))
+      .toContain('linear-search');
+  });
+
   it('filters algorithms by source, difficulty, and topic', () => {
     const results = searchAlgorithms({
       sourceType: 'extra',

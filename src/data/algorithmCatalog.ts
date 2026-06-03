@@ -1,3 +1,5 @@
+import { translations } from '../i18n/translations';
+
 export type Language = 'en' | 'zh';
 export type Difficulty = 'beginner' | 'intermediate' | 'advanced';
 export type SourceType = 'book' | 'exercise' | 'extra';
@@ -881,6 +883,8 @@ export function searchAlgorithms(options: AlgorithmSearchOptions): AlgorithmCata
         item.id,
         item.path,
         item.titleKey,
+        translations.en[item.titleKey] ?? '',
+        translations.zh[item.titleKey] ?? '',
         item.summary.en,
         item.summary.zh,
         item.coreConcept.en,

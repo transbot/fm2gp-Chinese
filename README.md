@@ -29,11 +29,12 @@
 当前 Web app 已从单纯的算法列表升级为双语学习工具：
 
 - **主题化首页**：按“查找与序列、排序与堆、数论基础、GCD 与模运算、综合应用与图”组织算法，并支持搜索、主题、来源和难度筛选。
-- **统一算法元数据**：`src/data/algorithmCatalog.ts` 维护路径、主题、难度、来源、排序和双语摘要。
+- **统一算法元数据**：`src/data/algorithmCatalog.ts` 维护路径、主题、难度、来源、排序、双语标题、双语摘要和核心概念。
+- **双语搜索体验**：搜索会索引中英文标题、摘要、核心概念和补充说明，例如中文“线性”和英文 `linear` 都能找到线性查找。
 - **分阶段入门路径**：推荐路线按“数组扫描与表、基础排序、有序查找”组织，帮助初学者逐步进入二分查找。
 - **页内学习导航**：每个算法页自动显示当前主题、来源、难度、上一篇和下一篇。
 - **入门扩展算法**：新增冒泡排序、插入排序、选择排序、前缀和、频率计数和两数之和，作为非书中内容的基础补充。
-- **路由级懒加载**：算法页按需加载，主入口 chunk 已从约 900 kB 降到约 254 kB。
+- **路由级懒加载**：算法页按需加载，主入口 chunk 已从约 900 kB 降到约 255 kB。
 - **验证输出更干净**：已升级到 Vite 8 工具链，清除了 Browserslist 过期、chunk-size 和 Vite React 插件废弃警告。
 
 ## 已实现的算法可视化
@@ -114,7 +115,7 @@ npm run build
 
 - ESLint 通过
 - TypeScript 类型检查通过
-- Vitest：8 个测试文件，72 个测试通过
+- Vitest：12 个测试文件，120 个测试通过
 - 生产构建通过
 - 构建输出无 Browserslist 过期提示、无 chunk-size 警告、无 Vite React 插件废弃警告
 
@@ -176,11 +177,12 @@ This project supports the Chinese edition of _From Mathematics to Generic Progra
 The Web app has evolved from a flat algorithm list into a bilingual learning tool:
 
 - **Topic dashboard**: algorithms are grouped into Search and Sequences, Sorting and Heaps, Number Theory Basics, GCD and Modular Arithmetic, and Applications and Graphs, with search plus topic, source, and difficulty filters.
-- **Central algorithm metadata**: `src/data/algorithmCatalog.ts` stores path, topic, difficulty, source, order, and bilingual summaries.
+- **Central algorithm metadata**: `src/data/algorithmCatalog.ts` stores path, topic, difficulty, source, order, bilingual titles, bilingual summaries, and core concepts.
+- **Bilingual search experience**: search indexes English and Chinese titles, summaries, core concepts, and supplemental notes, so Chinese `线性` and English `linear` both find Linear Search.
 - **Staged beginner path**: the recommended route now moves through Array Scans and Tables, Basic Sorting, and Ordered Search before Binary Search.
 - **In-page learning navigation**: each algorithm page shows the current topic, source, difficulty, previous algorithm, and next algorithm.
 - **Beginner extension algorithms**: Bubble Sort, Insertion Sort, Selection Sort, Prefix Sum, Frequency Count, and Two Sum are included as non-book foundational supplements.
-- **Route-level lazy loading**: algorithm pages are loaded on demand; the main entry chunk was reduced from about 900 kB to about 254 kB.
+- **Route-level lazy loading**: algorithm pages are loaded on demand; the main entry chunk was reduced from about 900 kB to about 255 kB.
 - **Cleaner verification output**: the project now uses the Vite 8 toolchain and no longer emits Browserslist, chunk-size, or Vite React plugin deprecation warnings during verification.
 
 ## Implemented Algorithm Visualizations
@@ -261,7 +263,7 @@ Current verification status:
 
 - ESLint passes
 - TypeScript typecheck passes
-- Vitest: 8 test files, 72 tests pass
+- Vitest: 12 test files, 120 tests pass
 - Production build passes
 - Build output has no Browserslist outdated warning, no chunk-size warning, and no Vite React plugin deprecation warning
 
