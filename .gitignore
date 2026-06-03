@@ -72,4 +72,4 @@ ehthumbs_vista.db
 .superpowers/brainstorm/*/content/
 
 # 测试和开发目录
-test/
+/test/
