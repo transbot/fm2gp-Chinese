@@ -25,6 +25,7 @@ import { PrefixSum } from './PrefixSum';
 import { PrimeChecker } from '../PrimeChecker';
 import { QuickSort } from './QuickSort';
 import { Reverse } from './Reverse';
+import { Rsa } from '../Rsa';
 import { Sieve } from '../Sieve';
 import { SelectionSort } from './SelectionSort';
 import { SteinGcd } from './SteinGcd';
@@ -294,6 +295,15 @@ describe('legacy algorithm validation errors', () => {
 });
 
 describe('remaining interactive algorithm validation errors', () => {
+  it('explains that RSA needs a message before encryption', () => {
+    renderAlgorithm(<Rsa />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Generate Key Pair/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^Encrypt$/i }));
+
+    expect(screen.getByRole('alert')).toHaveTextContent('Enter a message before encrypting');
+  });
+
   it('explains that shortest path needs initialization before stepping', () => {
     renderAlgorithm(<ShortestPath />);
 
@@ -301,6 +311,20 @@ describe('remaining interactive algorithm validation errors', () => {
 
     expect(screen.getByRole('alert')).toHaveTextContent(
       'Start the calculation before advancing to the next power'
+    );
+  });
+
+  it('explains when shortest path stepping is already complete', () => {
+    renderAlgorithm(<ShortestPath />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Start Calculation/i }));
+
+    for (let i = 0; i < 8; i += 1) {
+      fireEvent.click(screen.getByRole('button', { name: /Next/i }));
+    }
+
+    expect(screen.getByRole('alert')).toHaveTextContent(
+      'The shortest path calculation is already complete'
     );
   });
 

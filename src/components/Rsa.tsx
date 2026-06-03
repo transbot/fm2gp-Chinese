@@ -6,6 +6,7 @@ import { Links } from './Links';
 import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
 import { ExplanationPanel } from './common/ExplanationPanel';
+import { ValidationMessage } from './common/ValidationMessage';
 
 interface KeyPair {
   p: bigint;
@@ -29,6 +30,7 @@ export function Rsa() {
   const [showSteps, setShowSteps] = useState(false);
   const [steps, setSteps] = useState<EncryptionStep[]>([]);
   const [showDetails, setShowDetails] = useState(false);
+  const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
@@ -96,6 +98,7 @@ export function Rsa() {
     setEncryptedMessage([]);
     setDecryptedMessage('');
     setSteps([]);
+    setValidationErrorKey(null);
   };
 
   const modPow = (base: bigint, exponent: bigint, modulus: bigint): bigint => {
@@ -126,7 +129,16 @@ export function Rsa() {
   };
 
   const encrypt = () => {
-    if (!keyPair || !message) return;
+    if (!keyPair) {
+      return;
+    }
+
+    if (!message.trim()) {
+      setValidationErrorKey('rsaMessageRequired');
+      return;
+    }
+
+    setValidationErrorKey(null);
 
     // Convert string to UTF-8 bytes
     const bytes = stringToBytes(message);
@@ -296,20 +308,23 @@ export function Rsa() {
               </label>
               <textarea
                 value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                  setValidationErrorKey(null);
+                }}
                 className="w-full px-4 py-2 border rounded-lg h-24"
                 placeholder={t.enterMessage}
               />
               <div className="flex gap-4">
                 <button
                   onClick={encrypt}
-                  disabled={!message}
-                  className="flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
                 >
                   <Lock className="w-4 h-4" />
                   {t.encrypt}
                 </button>
               </div>
+              <ValidationMessage errorKey={validationErrorKey} messages={t} />
             </div>
 
             {steps.length > 0 && showDetails && (
