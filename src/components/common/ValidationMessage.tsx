@@ -1,9 +1,12 @@
+import { cn } from '../../lib/utils';
+
 interface ValidationMessageProps {
   errorKey: string | null;
   messages: Record<string, string>;
+  className?: string;
 }
 
-export function ValidationMessage({ errorKey, messages }: ValidationMessageProps) {
+export function ValidationMessage({ errorKey, messages, className }: ValidationMessageProps) {
   if (!errorKey) {
     return null;
   }
@@ -11,7 +14,12 @@ export function ValidationMessage({ errorKey, messages }: ValidationMessageProps
   return (
     <div
       role="alert"
-      className="rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700"
+      aria-live="polite"
+      className={cn(
+        'rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm leading-5 text-red-700',
+        'break-words',
+        className
+      )}
     >
       {messages[errorKey] ?? errorKey}
     </div>
