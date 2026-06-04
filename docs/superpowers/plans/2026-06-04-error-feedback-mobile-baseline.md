@@ -767,6 +767,8 @@ Continuation observed on 2026-06-04: shared `ExplanationPanel` code snippets now
 
 Continuation observed on 2026-06-04: shared `StepController` progress and speed controls now have accessible labels, and the speed selector uses the touch-target primitive. The full suite is expected to include 17 test files and 147 tests after verification.
 
+Continuation observed on 2026-06-04: FastFibonacci, RSA, and GraphTraversal primary form controls now expose stable accessible names for mobile and assistive-technology users. The focused validation suite was extended to 48 tests, and the full suite is expected to include 17 test files and 150 tests after verification.
+
 - [x] **Step 5: Commit and push**
 
 Run:

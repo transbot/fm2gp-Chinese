@@ -426,7 +426,7 @@ export function GraphTraversal() {
             <button
               onClick={() => setAlgorithm('bfs')}
               className={cn(
-                'px-4 py-2 rounded-lg transition-colors',
+                'touch-target rounded-lg px-4 py-2 transition-colors',
                 algorithm === 'bfs'
                   ? 'bg-blue-500 text-white'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -437,7 +437,7 @@ export function GraphTraversal() {
             <button
               onClick={() => setAlgorithm('dfs')}
               className={cn(
-                'px-4 py-2 rounded-lg transition-colors',
+                'touch-target rounded-lg px-4 py-2 transition-colors',
                 algorithm === 'dfs'
                   ? 'bg-purple-500 text-white'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -456,7 +456,8 @@ export function GraphTraversal() {
           <select
             value={startNode}
             onChange={(e) => setStartNode(e.target.value)}
-            className="px-3 py-2 border rounded-lg"
+            aria-label={t.selectStartNode || 'Start Node'}
+            className="touch-target rounded-lg border px-3 py-2"
           >
             {nodesInput.map((node) => (
               <option key={node.id} value={node.id}>
@@ -484,6 +485,7 @@ export function GraphTraversal() {
                 }}
                 placeholder="A"
                 maxLength={1}
+                aria-label={t.addNode || 'Add Node'}
                 className="touch-target w-20 rounded border px-2 py-1 text-center uppercase"
                 onKeyDown={(e) => e.key === 'Enter' && handleAddNode()}
               />

@@ -313,13 +313,14 @@ export function Rsa() {
                   setMessage(e.target.value);
                   setValidationErrorKey(null);
                 }}
-                className="w-full px-4 py-2 border rounded-lg h-24"
+                aria-label={t.messageToEncrypt}
+                className="h-24 w-full rounded-lg border px-4 py-2"
                 placeholder={t.enterMessage}
               />
               <div className="flex gap-4">
                 <button
                   onClick={encrypt}
-                  className="flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+                  className="touch-target flex items-center gap-2 rounded-lg bg-blue-500 px-6 py-3 text-white transition-colors hover:bg-blue-600"
                 >
                   <Lock className="w-4 h-4" />
                   {t.encrypt}

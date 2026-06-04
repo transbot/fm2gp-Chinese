@@ -334,6 +334,12 @@ describe('legacy algorithm validation errors', () => {
     );
   });
 
+  it('labels the fast Fibonacci input for assistive technology', () => {
+    renderAlgorithm(<FastFibonacci />);
+
+    expect(screen.getByRole('spinbutton', { name: /Enter a number/i })).toBeInTheDocument();
+  });
+
   it('scopes the fast Fibonacci final result in a labeled visual frame', () => {
     renderAlgorithm(<FastFibonacci />);
 
@@ -379,6 +385,14 @@ describe('remaining interactive algorithm validation errors', () => {
     expect(screen.getByRole('region', { name: /Encrypted Message/i })).toBeInTheDocument();
   });
 
+  it('labels the RSA message input for assistive technology', () => {
+    renderAlgorithm(<Rsa />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Generate Key Pair/i }));
+
+    expect(screen.getByRole('textbox', { name: /Message to Encrypt/i })).toBeInTheDocument();
+  });
+
   it('explains that shortest path needs initialization before stepping', () => {
     renderAlgorithm(<ShortestPath />);
 
@@ -415,6 +429,13 @@ describe('remaining interactive algorithm validation errors', () => {
     fireEvent.click(screen.getByRole('button', { name: /^Reset$/i }));
 
     expect(screen.getByRole('alert')).toHaveTextContent('Graph must have at least one node');
+  });
+
+  it('labels graph traversal edit controls for assistive technology', () => {
+    renderAlgorithm(<GraphTraversal />);
+
+    expect(screen.getByRole('combobox', { name: /Start Node/i })).toBeInTheDocument();
+    expect(screen.getByRole('textbox', { name: /Add Node/i })).toBeInTheDocument();
   });
 
   it('explains when graph traversal adds a node without a label', () => {
