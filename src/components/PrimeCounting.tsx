@@ -4,33 +4,15 @@ import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
 import { Links } from './Links';
 import { useLanguage } from '../context/LanguageContext';
+import { buildPrimeCountingSeries } from '../lib/algorithms/prime_counting';
+
+const PRIME_COUNTING_MAX_N = 1_000_000;
+const PRIME_COUNTING_SAMPLES = 600;
 
 const formatNumber = (n: number) => {
   if (n >= 1000000) return `${(n/1000000).toFixed(1)}M`;
   if (n >= 1000) return `${(n/1000).toFixed(1)}K`;
   return n.toString();
-};
-
-const sieveOfEratosthenes = (n: number): boolean[] => {
-  const isPrime = new Array(n + 1).fill(true);
-  isPrime[0] = isPrime[1] = false;
-
-  for (let i = 2; i * i <= n; i++) {
-    if (isPrime[i]) {
-      for (let j = i * i; j <= n; j += i) {
-        isPrime[j] = false;
-      }
-    }
-  }
-  return isPrime;
-};
-
-const countPrimes = (isPrime: boolean[], n: number): number => {
-  let count = 0;
-  for (let i = 2; i <= n; i++) {
-    if (isPrime[i]) count++;
-  }
-  return count;
 };
 
 export function PrimeCounting() {
@@ -62,26 +44,10 @@ export function PrimeCounting() {
     const graphWidth = canvas.width - padding.left - padding.right;
     const graphHeight = canvas.height - padding.top - padding.bottom;
 
-    // Calculate prime counts
-    const maxN = 10000000; // 10^7
-    const step = Math.max(1, Math.floor(maxN / 1000)); // Adjust step size for performance
-    const isPrime = sieveOfEratosthenes(maxN);
-    const points: [number, number][] = [];
-    const approxPoints: [number, number][] = [];
-
-    for (let n = 2; n <= maxN; n += step) {
-      const count = countPrimes(isPrime, n);
-      points.push([n, count]);
-      // PNT approximation: n/ln(n)
-      approxPoints.push([n, n / Math.log(n)]);
-    }
-
-    // Find max values for scaling
-    const maxX = maxN;
-    const maxY = Math.max(
-      ...points.map(p => p[1]),
-      ...approxPoints.map(p => p[1])
-    );
+    const { points, approxPoints, maxX, maxY } = buildPrimeCountingSeries({
+      maxN: PRIME_COUNTING_MAX_N,
+      samples: PRIME_COUNTING_SAMPLES,
+    });
 
     // Draw axes
     ctx.beginPath();
