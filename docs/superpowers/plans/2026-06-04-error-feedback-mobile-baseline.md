@@ -783,6 +783,8 @@ Continuation observed on 2026-06-04: number-theory input pages `PrimeChecker`, `
 
 Continuation observed on 2026-06-04: arithmetic and theorem pages `Division`, `PowerAlgorithm`, `FermatTheorem`, `EulerTheorem`, and `SteinGcd` now expose stable accessible names for their primary numeric inputs and use touch-target sizing on those controls. The focused validation suite was extended to 69 tests, and the full suite is expected to include 17 test files and 171 tests after verification.
 
+Continuation observed on 2026-06-04: visual legacy pages `Fibonacci`, `Cycle`, `Rotate`, and `PiUpperBound` now expose stable accessible names for their primary inputs and sliders, with touch-target sizing on those controls. The test render helper now stubs canvas drawing context methods so canvas-backed visual pages can be included in component coverage without jsdom console noise. The focused validation suite was extended to 73 tests, and the full suite is expected to include 17 test files and 175 tests after verification.
+
 - [x] **Step 5: Commit and push**
 
 Run:

@@ -178,12 +178,13 @@ export function Rotate() {
                 {t.steps}
               </label>
               <input
+                aria-label={t.steps || 'Steps'}
                 type="range"
                 min="0"
                 max={TOTAL_ELEMENTS - 1}
                 value={steps}
                 onChange={(e) => setSteps(parseInt(e.target.value))}
-                className="w-full"
+                className="touch-target w-full"
               />
               <span className="font-mono w-8 text-center">{steps}</span>
             </div>
@@ -196,12 +197,12 @@ export function Rotate() {
                 {isAnimating ? (
                   <>
                     <Pause className="w-4 h-4" />
-                    {t.pause}
+                    {t.pause || 'Pause'}
                   </>
                 ) : (
                   <>
                     <Play className="w-4 h-4" />
-                    {t.animate}
+                    {t.animate || 'Animate'}
                   </>
                 )}
               </button>
@@ -209,7 +210,7 @@ export function Rotate() {
                 onClick={reset}
                 className="touch-target px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"
               >
-                {t.reset}
+                {t.reset || 'Reset'}
               </button>
             </div>
           </div>

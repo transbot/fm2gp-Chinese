@@ -20,11 +20,13 @@ import { LinearSearch } from './LinearSearch';
 import { MergeSort } from './MergeSort';
 import { MillerRabin } from '../MillerRabin';
 import { PalindromicPrimes } from '../PalindromicPrimes';
+import { PiUpperBound } from '../PiUpperBound';
 import { PowerAlgorithm } from './PowerAlgorithm';
 import { PrefixSum } from './PrefixSum';
 import { PrimeChecker } from '../PrimeChecker';
 import { QuickSort } from './QuickSort';
 import { Reverse } from './Reverse';
+import { Rotate } from '../Rotate';
 import { Rsa } from '../Rsa';
 import { Sieve } from '../Sieve';
 import { SelectionSort } from './SelectionSort';
@@ -463,6 +465,12 @@ describe('legacy algorithm validation errors', () => {
     expect(screen.getByRole('alert')).toHaveTextContent('n must be non-negative');
   });
 
+  it('labels the recursive Fibonacci input for assistive technology', () => {
+    renderAlgorithm(<Fibonacci />);
+
+    expect(screen.getByRole('spinbutton', { name: /Enter a number/i })).toBeInTheDocument();
+  });
+
   it('shows a too-large input error on fast Fibonacci', () => {
     renderAlgorithm(<FastFibonacci />);
 
@@ -501,6 +509,25 @@ describe('legacy algorithm validation errors', () => {
     fireEvent.click(screen.getByRole('button', { name: /^Reset$/i }));
 
     expect(screen.getByRole('alert')).toHaveTextContent('Invalid permutation');
+  });
+
+  it('labels cycle decomposition inputs for assistive technology', () => {
+    renderAlgorithm(<Cycle />);
+
+    expect(screen.getByRole('textbox', { name: /Array/i })).toBeInTheDocument();
+    expect(screen.getByRole('textbox', { name: /Permutation/i })).toBeInTheDocument();
+  });
+
+  it('labels the rotate step slider for assistive technology', () => {
+    renderAlgorithm(<Rotate />);
+
+    expect(screen.getByRole('slider', { name: /Steps/i })).toBeInTheDocument();
+  });
+
+  it('labels the pi upper-bound sides slider for assistive technology', () => {
+    renderAlgorithm(<PiUpperBound />);
+
+    expect(screen.getByRole('slider', { name: /Number of Sides/i })).toBeInTheDocument();
   });
 });
 

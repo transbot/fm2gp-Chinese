@@ -189,15 +189,16 @@ export function PiUpperBound() {
           <div className="space-y-4">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
               <label className="text-sm font-medium text-gray-700">
-                {t.numberOfSides}
+                {t.numberOfSides || 'Number of Sides'}
               </label>
               <input
+                aria-label={t.numberOfSides || 'Number of Sides'}
                 type="range"
                 min="3"
                 max={MAX_SIDES}
                 value={sides}
                 onChange={handleSidesChange}
-                className="w-full"
+                className="touch-target w-full"
               />
               <span className="font-mono w-16 text-center">{sides}</span>
             </div>
@@ -211,12 +212,12 @@ export function PiUpperBound() {
                   <Pause className="w-4 h-4" />
                   {t.pause}
                 </>
-              ) : (
-                <>
-                  <Play className="w-4 h-4" />
-                  {sides >= MAX_SIDES ? t.reset : t.animate}
-                </>
-              )}
+                ) : (
+                  <>
+                    <Play className="w-4 h-4" />
+                  {sides >= MAX_SIDES ? (t.reset || 'Reset') : (t.animate || 'Animate')}
+                  </>
+                )}
             </button>
           </div>
 

@@ -13,6 +13,27 @@ if (!globalThis.ResizeObserver) {
   globalThis.ResizeObserver = TestResizeObserver as typeof ResizeObserver;
 }
 
+if (typeof HTMLCanvasElement !== 'undefined') {
+  Object.defineProperty(HTMLCanvasElement.prototype, 'getContext', {
+    configurable: true,
+    value(this: HTMLCanvasElement) {
+      return {
+        canvas: this,
+        beginPath: () => {},
+        arc: () => {},
+        clearRect: () => {},
+        closePath: () => {},
+        fill: () => {},
+        fillText: () => {},
+        lineTo: () => {},
+        moveTo: () => {},
+        setLineDash: () => {},
+        stroke: () => {},
+      } as unknown as CanvasRenderingContext2D;
+    },
+  });
+}
+
 export function renderAlgorithm(component: React.ReactElement) {
   return render(
     <LanguageProvider>
