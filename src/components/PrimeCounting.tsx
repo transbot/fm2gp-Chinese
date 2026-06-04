@@ -1,13 +1,16 @@
-import { useCallback, useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Home, Languages } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { translations } from '../i18n/translations';
 import { Links } from './Links';
 import { useLanguage } from '../context/LanguageContext';
 import { buildPrimeCountingSeries } from '../lib/algorithms/prime_counting';
+import { ResponsiveVisualFrame } from './common/ResponsiveVisualFrame';
 
 const PRIME_COUNTING_MAX_N = 1_000_000;
 const PRIME_COUNTING_SAMPLES = 600;
+const CHART_MIN_WIDTH = 640;
+const CHART_ASPECT_RATIO = 2;
 
 const formatNumber = (n: number) => {
   if (n >= 1000000) return `${(n/1000000).toFixed(1)}M`;
@@ -16,7 +19,9 @@ const formatNumber = (n: number) => {
 };
 
 export function PrimeCounting() {
+  const frameRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [chartWidth, setChartWidth] = useState(CHART_MIN_WIDTH);
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
@@ -24,15 +29,20 @@ export function PrimeCounting() {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
+    const cssWidth = Math.max(CHART_MIN_WIDTH, chartWidth);
+    const cssHeight = Math.round(cssWidth / CHART_ASPECT_RATIO);
+    const pixelRatio = window.devicePixelRatio || 1;
+
+    canvas.width = Math.round(cssWidth * pixelRatio);
+    canvas.height = Math.round(cssHeight * pixelRatio);
+    canvas.style.width = `${cssWidth}px`;
+    canvas.style.height = `${cssHeight}px`;
+
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Set canvas size
-    canvas.width = 800;
-    canvas.height = 400;
-
-    // Clear canvas
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+    ctx.clearRect(0, 0, cssWidth, cssHeight);
 
     // Set up graph dimensions
     const padding = {
@@ -41,8 +51,8 @@ export function PrimeCounting() {
       top: 40,
       bottom: 60  // Increased bottom padding for x-axis label
     };
-    const graphWidth = canvas.width - padding.left - padding.right;
-    const graphHeight = canvas.height - padding.top - padding.bottom;
+    const graphWidth = cssWidth - padding.left - padding.right;
+    const graphHeight = cssHeight - padding.top - padding.bottom;
 
     const { points, approxPoints, maxX, maxY } = buildPrimeCountingSeries({
       maxN: PRIME_COUNTING_MAX_N,
@@ -54,8 +64,8 @@ export function PrimeCounting() {
     ctx.strokeStyle = '#000';
     ctx.lineWidth = 1;
     ctx.moveTo(padding.left, padding.top);
-    ctx.lineTo(padding.left, canvas.height - padding.bottom);
-    ctx.lineTo(canvas.width - padding.right, canvas.height - padding.bottom);
+    ctx.lineTo(padding.left, cssHeight - padding.bottom);
+    ctx.lineTo(cssWidth - padding.right, cssHeight - padding.bottom);
     ctx.stroke();
 
     // Add axis labels
@@ -65,7 +75,7 @@ export function PrimeCounting() {
     // X-axis label
     ctx.textAlign = 'center';
     ctx.textBaseline = 'top';
-    ctx.fillText('n', padding.left + graphWidth / 2, canvas.height - padding.bottom / 2);
+    ctx.fillText('n', padding.left + graphWidth / 2, cssHeight - padding.bottom / 2);
     
     // Y-axis label
     ctx.textAlign = 'center';
@@ -78,14 +88,14 @@ export function PrimeCounting() {
     
     // Y-axis grid and labels
     for (let i = 0; i <= 10; i++) {
-      const y = canvas.height - padding.bottom - (i * graphHeight / 10);
+      const y = cssHeight - padding.bottom - (i * graphHeight / 10);
       const value = Math.round(maxY * i / 10);
       ctx.fillText(formatNumber(value), padding.left - 5, y);
       
       ctx.beginPath();
       ctx.strokeStyle = '#eee';
       ctx.moveTo(padding.left, y);
-      ctx.lineTo(canvas.width - padding.right, y);
+      ctx.lineTo(cssWidth - padding.right, y);
       ctx.stroke();
     }
 
@@ -96,12 +106,12 @@ export function PrimeCounting() {
     for (let i = 0; i <= 10; i++) {
       const x = padding.left + (i * graphWidth / 10);
       const value = Math.round(maxX * i / 10);
-      ctx.fillText(formatNumber(value), x, canvas.height - padding.bottom + 5);
+      ctx.fillText(formatNumber(value), x, cssHeight - padding.bottom + 5);
       
       ctx.beginPath();
       ctx.strokeStyle = '#eee';
       ctx.moveTo(x, padding.top);
-      ctx.lineTo(x, canvas.height - padding.bottom);
+      ctx.lineTo(x, cssHeight - padding.bottom);
       ctx.stroke();
     }
 
@@ -111,7 +121,7 @@ export function PrimeCounting() {
     ctx.lineWidth = 2;
     points.forEach(([x, y], i) => {
       const canvasX = padding.left + (x / maxX * graphWidth);
-      const canvasY = canvas.height - padding.bottom - (y / maxY * graphHeight);
+      const canvasY = cssHeight - padding.bottom - (y / maxY * graphHeight);
       if (i === 0) ctx.moveTo(canvasX, canvasY);
       else ctx.lineTo(canvasX, canvasY);
     });
@@ -123,7 +133,7 @@ export function PrimeCounting() {
     ctx.lineWidth = 2;
     approxPoints.forEach(([x, y], i) => {
       const canvasX = padding.left + (x / maxX * graphWidth);
-      const canvasY = canvas.height - padding.bottom - (y / maxY * graphHeight);
+      const canvasY = cssHeight - padding.bottom - (y / maxY * graphHeight);
       if (i === 0) ctx.moveTo(canvasX, canvasY);
       else ctx.lineTo(canvasX, canvasY);
     });
@@ -150,11 +160,27 @@ export function PrimeCounting() {
     ctx.lineTo(legendX + 30, legendY + 20);
     ctx.stroke();
     ctx.fillText('n/ln(n)', legendX + 40, legendY + 20);
-  }, []);
+  }, [chartWidth]);
 
   useEffect(() => {
     drawGraph();
   }, [drawGraph]);
+
+  useEffect(() => {
+    const frame = frameRef.current;
+    if (!frame) return;
+
+    const updateWidth = () => {
+      setChartWidth(Math.max(CHART_MIN_WIDTH, Math.round(frame.clientWidth)));
+    };
+
+    updateWidth();
+
+    const observer = new ResizeObserver(updateWidth);
+    observer.observe(frame);
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="safe-app-x safe-app-bottom max-w-4xl mx-auto py-4 sm:py-6 space-y-6 sm:space-y-8">
@@ -180,12 +206,13 @@ export function PrimeCounting() {
 
       <p className="text-gray-600">{t.primeCountingDescription}</p>
 
-      <div className="bg-white rounded-lg shadow-lg p-4">
-        <canvas 
-          ref={canvasRef}
-          className="w-full"
-          style={{ aspectRatio: '2/1' }}
-        />
+      <div ref={frameRef} className="bg-white rounded-lg shadow-lg p-4">
+        <ResponsiveVisualFrame
+          label={lang === 'zh' ? '素数计数图表' : 'Prime counting chart'}
+          minWidth={CHART_MIN_WIDTH}
+        >
+          <canvas ref={canvasRef} className="block max-w-none" />
+        </ResponsiveVisualFrame>
       </div>
 
       <Links lang={lang} />
