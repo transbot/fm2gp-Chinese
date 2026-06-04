@@ -712,6 +712,8 @@ Acceptance checks:
 
 Observed on 2026-06-04: `agent-browser` was not installed in PATH, so Chrome headless screenshots were used instead. Screenshots were generated for home, binary search, RSA, prime counting, shortest path, graph traversal, and heap operations. Header clipping found in the first pass was fixed for home, BinarySearch, RSA, PrimeCounting, and ShortestPath. Prime counting rendered without freezing after the reduced workload. Shortest-path and prime-counting visuals remain wide and need real-device or browser responsive-mode review for final app-store polish.
 
+Follow-up completed on 2026-06-04: `ResponsiveVisualFrame` now scopes wide visual overflow for prime counting and shortest path. Prime counting chart, shortest-path graph, and shortest-path matrix use localized horizontal frames instead of relying on whole-page overflow.
+
 - [x] **Step 3: Record results in README**
 
 Add a short subsection under `## 验证命令` / `## Verification Commands`:

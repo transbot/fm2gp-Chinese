@@ -115,7 +115,7 @@ npm run build
 
 - ESLint 通过
 - TypeScript 类型检查通过
-- Vitest：14 个测试文件，129 个测试通过
+- Vitest：15 个测试文件，133 个测试通过
 - 生产构建通过
 - 构建输出无 Browserslist 过期提示、无 chunk-size 警告、无 Vite React 插件废弃警告
 
@@ -125,7 +125,8 @@ npm run build
 - 430 x 932：图遍历
 - 768 x 1024：堆操作
 - 已修复旧页面移动端 header 裁切，并降低素数计数默认计算规模
-- 最短路径图和素数计数图属于较宽视觉内容，后续上架前仍需在真机或浏览器响应式模式中复核横向滚动体验
+- 宽图表、图片和矩阵使用局部横向滚动容器，避免整页横向溢出
+- 素数计数和最短路径已为宽视觉内容接入局部滚动 frame；上架前仍建议在真机中复核手势滚动体验
 
 ## 项目结构
 
@@ -271,7 +272,7 @@ Current verification status:
 
 - ESLint passes
 - TypeScript typecheck passes
-- Vitest: 14 test files, 129 tests pass
+- Vitest: 15 test files, 133 tests pass
 - Production build passes
 - Build output has no Browserslist outdated warning, no chunk-size warning, and no Vite React plugin deprecation warning
 
@@ -281,7 +282,8 @@ Current verification status:
 - 430 x 932: graph traversal
 - 768 x 1024: heap operations
 - Legacy mobile header clipping has been fixed, and the default prime-counting workload has been reduced
-- Shortest-path and prime-counting visuals are intentionally wide; before app-store release, verify their horizontal scrolling experience on real devices or browser responsive mode
+- Wide charts, images, and matrices use localized horizontal frames to avoid whole-page horizontal overflow
+- Prime counting and shortest path now use localized frames for wide visuals; before app-store release, verify the touch scrolling experience on real devices
 
 ## Project Structure
 

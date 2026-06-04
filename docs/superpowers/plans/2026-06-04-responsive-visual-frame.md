@@ -27,7 +27,7 @@ Do not modify `src/index.css` for this work. Do not add dependencies.
 - Create: `src/components/common/ResponsiveVisualFrame.test.tsx`
 - Create: `src/components/common/ResponsiveVisualFrame.tsx`
 
-- [ ] **Step 1: Write failing component tests**
+- [x] **Step 1: Write failing component tests**
 
 Create `src/components/common/ResponsiveVisualFrame.test.tsx`:
 
@@ -87,7 +87,7 @@ describe('ResponsiveVisualFrame', () => {
 });
 ```
 
-- [ ] **Step 2: Run tests to verify RED**
+- [x] **Step 2: Run tests to verify RED**
 
 Run:
 
@@ -97,7 +97,9 @@ npm run test:run -- src/components/common/ResponsiveVisualFrame.test.tsx
 
 Expected: fail because `./ResponsiveVisualFrame` does not exist.
 
-- [ ] **Step 3: Implement the component**
+Observed on 2026-06-04: failed because `./ResponsiveVisualFrame` could not be resolved.
+
+- [x] **Step 3: Implement the component**
 
 Create `src/components/common/ResponsiveVisualFrame.tsx`:
 
@@ -146,7 +148,7 @@ export function ResponsiveVisualFrame({
 }
 ```
 
-- [ ] **Step 4: Run tests to verify GREEN**
+- [x] **Step 4: Run tests to verify GREEN**
 
 Run:
 
@@ -156,7 +158,9 @@ npm run test:run -- src/components/common/ResponsiveVisualFrame.test.tsx
 
 Expected: 4 tests pass.
 
-- [ ] **Step 5: Commit locally**
+Observed on 2026-06-04: 4 tests passed.
+
+- [x] **Step 5: Commit locally**
 
 Run:
 
@@ -167,12 +171,14 @@ git commit -m "Add responsive visual frame"
 
 Do not push.
 
+Committed locally as `c019aed Add responsive visual frame`.
+
 ## Task 2: PrimeCounting Canvas Frame
 
 **Files:**
 - Modify: `src/components/PrimeCounting.tsx`
 
-- [ ] **Step 1: Update imports and constants**
+- [x] **Step 1: Update imports and constants**
 
 Add imports:
 
@@ -190,7 +196,7 @@ const CHART_MIN_WIDTH = 640;
 const CHART_ASPECT_RATIO = 2;
 ```
 
-- [ ] **Step 2: Make the canvas drawing buffer responsive**
+- [x] **Step 2: Make the canvas drawing buffer responsive**
 
 Add state and refs inside `PrimeCounting`:
 
@@ -225,7 +231,7 @@ Then replace every `canvas.width` and `canvas.height` used for graph geometry wi
 
 Update the callback dependency array from `[]` to `[chartWidth]`.
 
-- [ ] **Step 3: Add ResizeObserver for the visual frame**
+- [x] **Step 3: Add ResizeObserver for the visual frame**
 
 Add this effect before the existing `drawGraph` effect:
 
@@ -247,7 +253,7 @@ useEffect(() => {
 }, []);
 ```
 
-- [ ] **Step 4: Wrap only the chart region**
+- [x] **Step 4: Wrap only the chart region**
 
 Replace the current chart card:
 
@@ -274,7 +280,7 @@ with:
 </div>
 ```
 
-- [ ] **Step 5: Verify**
+- [x] **Step 5: Verify**
 
 Run:
 
@@ -285,7 +291,9 @@ npm run test:run -- src/lib/algorithms/prime_counting.test.ts
 
 Expected: both commands exit 0.
 
-- [ ] **Step 6: Commit locally**
+Observed on 2026-06-04: TypeScript exited 0 and `prime_counting.test.ts` passed 2 tests.
+
+- [x] **Step 6: Commit locally**
 
 Run:
 
@@ -296,13 +304,15 @@ git commit -m "Frame prime counting chart for mobile"
 
 Do not push.
 
+Committed locally as `653a624 Frame prime counting chart for mobile`.
+
 ## Task 3: ShortestPath Graph And Matrix Frames
 
 **Files:**
 - Modify: `src/components/ShortestPath.tsx`
 - Modify: `src/components/algorithms/validationErrors.test.tsx` if tests need accessible-label disambiguation after the new regions are added.
 
-- [ ] **Step 1: Import the frame**
+- [x] **Step 1: Import the frame**
 
 Add:
 
@@ -310,7 +320,7 @@ Add:
 import { ResponsiveVisualFrame } from './common/ResponsiveVisualFrame';
 ```
 
-- [ ] **Step 2: Wrap the directed graph image only**
+- [x] **Step 2: Wrap the directed graph image only**
 
 Replace the image inside the initial graph card:
 
@@ -338,7 +348,7 @@ with:
 </ResponsiveVisualFrame>
 ```
 
-- [ ] **Step 3: Wrap the matrix table only**
+- [x] **Step 3: Wrap the matrix table only**
 
 Replace:
 
@@ -359,7 +369,7 @@ with:
 
 Replace the corresponding closing `</div>` after the table with `</ResponsiveVisualFrame>`.
 
-- [ ] **Step 4: Verify**
+- [x] **Step 4: Verify**
 
 Run:
 
@@ -370,7 +380,9 @@ npx tsc -p tsconfig.app.json --noEmit
 
 Expected: both commands exit 0.
 
-- [ ] **Step 5: Commit locally**
+Observed on 2026-06-04: `validationErrors.test.tsx` passed 33 tests and TypeScript exited 0.
+
+- [x] **Step 5: Commit locally**
 
 Run:
 
@@ -381,6 +393,8 @@ git commit -m "Frame shortest path visuals for mobile"
 
 If `validationErrors.test.tsx` did not change, omit it from `git add`. Do not push.
 
+Committed locally as `85ad111 Frame shortest path visuals for mobile`.
+
 ## Task 4: Manual Viewport Verification And Documentation
 
 **Files:**
@@ -388,7 +402,7 @@ If `validationErrors.test.tsx` did not change, omit it from `git add`. Do not pu
 - Modify: `docs/superpowers/plans/2026-06-04-error-feedback-mobile-baseline.md`
 - Modify: `docs/superpowers/plans/2026-06-04-responsive-visual-frame.md`
 
-- [ ] **Step 1: Start the dev server**
+- [x] **Step 1: Start the dev server**
 
 Run:
 
@@ -398,7 +412,9 @@ npm run dev -- --host 127.0.0.1
 
 Expected: Vite prints a local URL. If 5173 is occupied, use the printed alternate port.
 
-- [ ] **Step 2: Capture or inspect mobile viewports**
+Observed on 2026-06-04: ports 5173 and 5174 were occupied, so Vite started at `http://127.0.0.1:5175/`.
+
+- [x] **Step 2: Capture or inspect mobile viewports**
 
 Use Chrome headless if available:
 
@@ -418,7 +434,9 @@ Acceptance checks:
 - The shortest-path graph and matrix entries remain readable.
 - Page title, explanation, and controls are outside the horizontal scroll regions.
 
-- [ ] **Step 3: Update README mobile baseline notes**
+Observed on 2026-06-04: Chrome headless screenshots were captured at `D:\tmp\fm2gp-prime-counting-frame.png` and `D:\tmp\fm2gp-shortest-path-frame.png`. PrimeCounting shows the chart in a local horizontal frame with readable axis labels. ShortestPath shows the graph in a local horizontal frame while controls remain outside the scroll region.
+
+- [x] **Step 3: Update README mobile baseline notes**
 
 In `README.md`, update both Chinese and English mobile sections to mention:
 
@@ -429,7 +447,7 @@ In `README.md`, update both Chinese and English mobile sections to mention:
 
 Keep wording natural in each language instead of pasting mixed-language text directly.
 
-- [ ] **Step 4: Update the prior Superpowers plan**
+- [x] **Step 4: Update the prior Superpowers plan**
 
 In `docs/superpowers/plans/2026-06-04-error-feedback-mobile-baseline.md`, add a short note near the mobile verification section:
 
@@ -437,7 +455,7 @@ In `docs/superpowers/plans/2026-06-04-error-feedback-mobile-baseline.md`, add a 
 Follow-up completed: `ResponsiveVisualFrame` now scopes wide visual overflow for prime counting and shortest path.
 ```
 
-- [ ] **Step 5: Run final verification**
+- [x] **Step 5: Run final verification**
 
 Run:
 
@@ -450,7 +468,9 @@ npm run build
 
 Expected: all commands exit 0. If `npm run build` changes `dist/index.html`, restore it before committing.
 
-- [ ] **Step 6: Commit locally**
+Observed on 2026-06-04: `npx eslint . --max-warnings=0`, `npx tsc -p tsconfig.app.json --noEmit`, `npm run test:run` with 15 files and 133 tests, and `npm run build` all exited 0. Generated `dist/index.html` noise was restored.
+
+- [x] **Step 6: Commit locally**
 
 Run:
 
@@ -461,18 +481,19 @@ git commit -m "Document responsive visual frame verification"
 
 Do not push.
 
+Observed on 2026-06-04: final documentation commit was created locally and not pushed.
+
 ## Final Checklist
 
-- [ ] `ResponsiveVisualFrame` exists and uses `cn` from `src/lib/utils.ts`.
-- [ ] No new dependency is added.
-- [ ] No new global CSS rule is added.
-- [ ] CSS variable `--visual-min-width` always includes `px`.
-- [ ] PrimeCounting wraps only the chart/canvas region.
-- [ ] PrimeCounting canvas drawing buffer accounts for `devicePixelRatio`.
-- [ ] ShortestPath wraps only the graph image and matrix table.
-- [ ] Page titles, descriptions, and controls remain outside scroll frames.
-- [ ] At 390px, horizontal overflow is scoped to visual frame regions.
-- [ ] README and plan docs record verification results.
-- [ ] Full verification commands pass.
-- [ ] Changes are committed locally and not pushed without explicit approval.
-
+- [x] `ResponsiveVisualFrame` exists and uses `cn` from `src/lib/utils.ts`.
+- [x] No new dependency is added.
+- [x] No new global CSS rule is added.
+- [x] CSS variable `--visual-min-width` always includes `px`.
+- [x] PrimeCounting wraps only the chart/canvas region.
+- [x] PrimeCounting canvas drawing buffer accounts for `devicePixelRatio`.
+- [x] ShortestPath wraps only the graph image and matrix table.
+- [x] Page titles, descriptions, and controls remain outside scroll frames.
+- [x] At 390px, horizontal overflow is scoped to visual frame regions.
+- [x] README and plan docs record verification results.
+- [x] Full verification commands pass.
+- [x] Changes are committed locally and not pushed without explicit approval.
