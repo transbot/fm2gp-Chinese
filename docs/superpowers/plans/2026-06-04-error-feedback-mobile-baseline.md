@@ -755,6 +755,8 @@ Continuation observed on 2026-06-04: the focused validation suite was extended t
 
 Continuation observed on 2026-06-04: the focused validation suite was extended to 38 tests and now verifies labeled local overflow regions for Egyptian multiplication and power step tables.
 
+Continuation observed on 2026-06-04: the focused validation suite was extended to 40 tests and now verifies that GraphTraversal add-node controls have accessible labels and visible feedback for empty or duplicate node input.
+
 - [x] **Step 5: Commit and push**
 
 Run:

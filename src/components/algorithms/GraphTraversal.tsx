@@ -129,6 +129,7 @@ export function GraphTraversal() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
   const [validationErrorKey, setValidationErrorKey] = useState<string | null>(null);
+  const [validationValue, setValidationValue] = useState('');
 
   // ReactFlow state
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
@@ -189,6 +190,15 @@ export function GraphTraversal() {
     steps[currentStep]?.state ?? graphTraversalVisualization.getInitialState();
   const currentStepData = steps[currentStep] ?? null;
   const totalSteps = steps.length;
+  const validationMessages = useMemo(
+    () => ({
+      ...t,
+      graphTraversalNodeDuplicate: (
+        t.graphTraversalNodeDuplicate || 'Node {0} already exists'
+      ).replace('{0}', validationValue),
+    }),
+    [t, validationValue]
+  );
 
   // Update ReactFlow nodes based on current state
   useEffect(() => {
@@ -269,15 +279,26 @@ export function GraphTraversal() {
 
   // Add node
   const handleAddNode = useCallback(() => {
-    if (!newNodeId.trim()) return;
-    if (nodesInput.some((n) => n.id === newNodeId.trim())) return;
+    const normalizedNodeId = newNodeId.trim().toUpperCase();
+    if (!normalizedNodeId) {
+      setValidationValue('');
+      setValidationErrorKey('graphTraversalNodeRequired');
+      return;
+    }
+    if (nodesInput.some((n) => n.id === normalizedNodeId)) {
+      setValidationValue(normalizedNodeId);
+      setValidationErrorKey('graphTraversalNodeDuplicate');
+      return;
+    }
 
     const newNode: GraphNode = {
-      id: newNodeId.trim(),
-      label: newNodeId.trim().toUpperCase(),
+      id: normalizedNodeId,
+      label: normalizedNodeId,
     };
     setNodesInput((prev) => [...prev, newNode]);
     setNewNodeId('');
+    setValidationValue('');
+    setValidationErrorKey(null);
   }, [newNodeId, nodesInput]);
 
   // Remove node
@@ -439,15 +460,21 @@ export function GraphTraversal() {
               <input
                 type="text"
                 value={newNodeId}
-                onChange={(e) => setNewNodeId(e.target.value.toUpperCase())}
+                onChange={(e) => {
+                  setNewNodeId(e.target.value.toUpperCase());
+                  setValidationValue('');
+                  setValidationErrorKey(null);
+                }}
                 placeholder="A"
                 maxLength={1}
-                className="w-20 px-2 py-1 border rounded text-center uppercase"
+                className="touch-target w-20 rounded border px-2 py-1 text-center uppercase"
                 onKeyDown={(e) => e.key === 'Enter' && handleAddNode()}
               />
               <button
                 onClick={handleAddNode}
-                className="px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600"
+                aria-label={t.addNode || 'Add Node'}
+                title={t.addNode || 'Add Node'}
+                className="touch-target flex items-center justify-center rounded bg-green-500 px-3 py-1 text-white hover:bg-green-600"
               >
                 <Plus className="w-4 h-4" />
               </button>
@@ -487,7 +514,9 @@ export function GraphTraversal() {
               </select>
               <button
                 onClick={handleAddEdge}
-                className="px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600"
+                aria-label={t.addEdge || 'Add Edge'}
+                title={t.addEdge || 'Add Edge'}
+                className="touch-target flex items-center justify-center rounded bg-green-500 px-3 py-1 text-white hover:bg-green-600"
               >
                 <Plus className="w-4 h-4" />
               </button>
@@ -495,7 +524,7 @@ export function GraphTraversal() {
           </div>
         </div>
 
-        <ValidationMessage errorKey={validationErrorKey} messages={t} />
+        <ValidationMessage errorKey={validationErrorKey} messages={validationMessages} />
 
         {/* Action buttons */}
         <div className="flex gap-2 flex-wrap">

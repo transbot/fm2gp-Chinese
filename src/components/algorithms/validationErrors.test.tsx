@@ -393,6 +393,24 @@ describe('remaining interactive algorithm validation errors', () => {
     expect(screen.getByRole('alert')).toHaveTextContent('Graph must have at least one node');
   });
 
+  it('explains when graph traversal adds a node without a label', () => {
+    renderAlgorithm(<GraphTraversal />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Add Node/i }));
+
+    expect(screen.getByRole('alert')).toHaveTextContent('Enter a node label before adding a node');
+  });
+
+  it('explains when graph traversal adds a duplicate node', () => {
+    renderAlgorithm(<GraphTraversal />);
+
+    const nodeInput = screen.getByPlaceholderText('A');
+    fireEvent.change(nodeInput, { target: { value: 'A' } });
+    fireEvent.click(screen.getByRole('button', { name: /Add Node/i }));
+
+    expect(screen.getByRole('alert')).toHaveTextContent('Node A already exists');
+  });
+
   it('shows an empty-array error on merge sort', () => {
     renderAlgorithm(<MergeSort />);
 
