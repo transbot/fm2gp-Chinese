@@ -51,6 +51,7 @@ export function StepController({
           max={totalSteps - 1}
           value={currentStep}
           onChange={(e) => onSeek(Number(e.target.value))}
+          aria-label={t.stepProgress || 'Step progress'}
           disabled={disabled || totalSteps <= 1}
           className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer disabled:cursor-not-allowed"
           style={{
@@ -101,8 +102,9 @@ export function StepController({
         <select
           value={speed}
           onChange={(e) => onSpeedChange(Number(e.target.value))}
+          aria-label={t.speed || 'Speed'}
           disabled={disabled}
-          className="px-3 py-1 rounded-lg border border-gray-200 text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+          className="touch-target rounded-lg border border-gray-200 px-3 py-1 text-sm disabled:cursor-not-allowed disabled:opacity-50"
         >
           {SPEED_OPTIONS.map((s) => (
             <option key={s} value={s}>

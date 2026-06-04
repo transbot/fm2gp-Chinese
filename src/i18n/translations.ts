@@ -582,6 +582,8 @@ export const translations: Record<Language, TranslationMap> = {
     bestCase: 'Best Case',
     currentStep: 'Step',
     totalSteps: 'Total',
+    stepProgress: 'Step progress',
+    speed: 'Speed',
     stepBackward: 'Step Backward',
     stepForward: 'Step Forward',
   },
@@ -1165,6 +1167,8 @@ export const translations: Record<Language, TranslationMap> = {
     bestCase: '最好情况',
     currentStep: '步骤',
     totalSteps: '总步数',
+    stepProgress: '步骤进度',
+    speed: '速度',
     stepBackward: '上一步',
     stepForward: '下一步',
   }

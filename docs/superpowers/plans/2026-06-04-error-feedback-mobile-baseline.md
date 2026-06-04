@@ -765,6 +765,8 @@ Continuation observed on 2026-06-04: the focused validation suite was extended t
 
 Continuation observed on 2026-06-04: shared `ExplanationPanel` code snippets now use a labeled `ResponsiveVisualFrame`, covered by a new component test. The full suite is expected to include 16 test files and 146 tests after verification.
 
+Continuation observed on 2026-06-04: shared `StepController` progress and speed controls now have accessible labels, and the speed selector uses the touch-target primitive. The full suite is expected to include 17 test files and 147 tests after verification.
+
 - [x] **Step 5: Commit and push**
 
 Run:
