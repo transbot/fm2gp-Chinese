@@ -355,6 +355,18 @@ describe('remaining interactive algorithm validation errors', () => {
     expect(screen.getByRole('alert')).toHaveTextContent('Enter a message before encrypting');
   });
 
+  it('scopes RSA encrypted output in a labeled visual frame', () => {
+    renderAlgorithm(<Rsa />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Generate Key Pair/i }));
+    fireEvent.change(screen.getByPlaceholderText('Enter your message here'), {
+      target: { value: 'mobile encrypted output needs a local frame' },
+    });
+    fireEvent.click(screen.getByRole('button', { name: /^Encrypt$/i }));
+
+    expect(screen.getByRole('region', { name: /Encrypted Message/i })).toBeInTheDocument();
+  });
+
   it('explains that shortest path needs initialization before stepping', () => {
     renderAlgorithm(<ShortestPath />);
 

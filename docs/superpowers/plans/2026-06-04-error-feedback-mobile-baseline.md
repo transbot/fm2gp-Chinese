@@ -759,6 +759,8 @@ Continuation observed on 2026-06-04: the focused validation suite was extended t
 
 Continuation observed on 2026-06-04: the focused validation suite was extended to 43 tests and now verifies that GraphTraversal add-edge controls show visible feedback for missing endpoints, self-loops, and duplicate directed edges.
 
+Continuation observed on 2026-06-04: the focused validation suite was extended to 44 tests and now verifies that RSA encrypted ciphertext output is scoped inside a labeled `ResponsiveVisualFrame` region.
+
 - [x] **Step 5: Commit and push**
 
 Run:

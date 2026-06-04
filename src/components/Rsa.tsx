@@ -6,6 +6,7 @@ import { Links } from './Links';
 import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
 import { ExplanationPanel } from './common/ExplanationPanel';
+import { ResponsiveVisualFrame } from './common/ResponsiveVisualFrame';
 import { ValidationMessage } from './common/ValidationMessage';
 
 interface KeyPair {
@@ -360,11 +361,15 @@ export function Rsa() {
             {encryptedMessage.length > 0 && (
               <div className="space-y-4">
                 <h3 className="font-bold">{t.encryptedMessage}</h3>
-                <div className="bg-gray-100 p-4 rounded-lg overflow-x-auto">
-                  <pre className="font-mono text-sm whitespace-pre-wrap">
+                <ResponsiveVisualFrame
+                  label={t.encryptedMessage}
+                  className="rounded-lg bg-gray-100 p-4"
+                  contentClassName="sm:min-w-0"
+                >
+                  <pre className="whitespace-pre-wrap font-mono text-sm">
                     {encryptedMessage.join(', ')}
                   </pre>
-                </div>
+                </ResponsiveVisualFrame>
                 <button
                   onClick={decrypt}
                   className="flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
