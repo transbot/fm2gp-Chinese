@@ -183,13 +183,14 @@ export function PowerAlgorithm() {
               {t.powerBase || 'Base'}
             </label>
             <input
+              aria-label={t.powerBase || 'Base'}
               type="number"
               min="0"
               max="1000"
               value={baseInput}
               onChange={(e) => setBaseInput(e.target.value)}
               onBlur={handleInputChange}
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono"
+              className="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
               placeholder="2"
             />
           </div>
@@ -200,13 +201,14 @@ export function PowerAlgorithm() {
               {t.powerExponent || 'Exponent'}
             </label>
             <input
+              aria-label={t.powerExponent || 'Exponent'}
               type="number"
               min="0"
               max="100"
               value={exponentInput}
               onChange={(e) => setExponentInput(e.target.value)}
               onBlur={handleInputChange}
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono"
+              className="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
               placeholder="13"
             />
           </div>
@@ -221,7 +223,7 @@ export function PowerAlgorithm() {
               reset();
               regenerateSteps();
             }}
-            className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-2"
+            className="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
           >
             <RotateCcw className="w-4 h-4" />
             {t.reset || 'Reset'}
@@ -229,7 +231,7 @@ export function PowerAlgorithm() {
           <button
             onClick={play}
             disabled={isPlaying || totalSteps <= 1}
-            className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 font-medium disabled:opacity-50 flex items-center gap-2"
+            className="touch-target flex items-center gap-2 rounded-lg bg-green-500 px-6 py-2 font-medium text-white hover:bg-green-600 disabled:opacity-50"
           >
             <Play className="w-4 h-4 fill-current" />
             {t.startCalculation || 'Start Calculation'}

@@ -781,6 +781,8 @@ Continuation observed on 2026-06-04: legacy number-theory pages `Calculator`, `G
 
 Continuation observed on 2026-06-04: number-theory input pages `PrimeChecker`, `Sieve`, `MillerRabin`, and `PalindromicPrimes` now expose stable accessible names for their primary inputs and use touch-target sizing on those controls. The focused validation suite was extended to 64 tests, and the full suite is expected to include 17 test files and 166 tests after verification.
 
+Continuation observed on 2026-06-04: arithmetic and theorem pages `Division`, `PowerAlgorithm`, `FermatTheorem`, `EulerTheorem`, and `SteinGcd` now expose stable accessible names for their primary numeric inputs and use touch-target sizing on those controls. The focused validation suite was extended to 69 tests, and the full suite is expected to include 17 test files and 171 tests after verification.
+
 - [x] **Step 5: Commit and push**
 
 Run:

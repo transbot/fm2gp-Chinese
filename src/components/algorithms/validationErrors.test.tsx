@@ -227,6 +227,13 @@ describe('core algorithm validation errors', () => {
     expect(screen.getByRole('alert')).toHaveTextContent('Divisor must be positive');
   });
 
+  it('labels division inputs for assistive technology', () => {
+    renderAlgorithm(<Division />);
+
+    expect(screen.getByRole('spinbutton', { name: /Dividend/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /Divisor/i })).toBeInTheDocument();
+  });
+
   it('shows a negative exponent error on power', () => {
     renderAlgorithm(<PowerAlgorithm />);
 
@@ -235,6 +242,13 @@ describe('core algorithm validation errors', () => {
     fireEvent.blur(exponentInput);
 
     expect(screen.getByRole('alert')).toHaveTextContent('Exponent must be non-negative');
+  });
+
+  it('labels power inputs for assistive technology', () => {
+    renderAlgorithm(<PowerAlgorithm />);
+
+    expect(screen.getByRole('spinbutton', { name: /Base/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /Exponent/i })).toBeInTheDocument();
   });
 
   it('scopes power step table overflow to a labeled region', () => {
@@ -296,6 +310,13 @@ describe('number theory validation errors', () => {
     expect(screen.getByRole('alert')).toHaveTextContent('Numbers must be non-negative');
   });
 
+  it('labels Stein GCD inputs for assistive technology', () => {
+    renderAlgorithm(<SteinGcd />);
+
+    expect(screen.getByRole('spinbutton', { name: /First Number/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /Second Number/i })).toBeInTheDocument();
+  });
+
   it('shows a required-input error on extended GCD', () => {
     renderAlgorithm(<ExtendedGcd />);
 
@@ -333,6 +354,13 @@ describe('number theory validation errors', () => {
     expect(screen.getByRole('alert')).toHaveTextContent('Base a must be between 1 and 1000');
   });
 
+  it('labels Fermat theorem inputs for assistive technology', () => {
+    renderAlgorithm(<FermatTheorem />);
+
+    expect(screen.getByRole('spinbutton', { name: /Base/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /Prime Candidate/i })).toBeInTheDocument();
+  });
+
   it('shows an invalid modulus error on Euler theorem', () => {
     renderAlgorithm(<EulerTheorem />);
 
@@ -341,6 +369,13 @@ describe('number theory validation errors', () => {
     fireEvent.blur(modulusInput);
 
     expect(screen.getByRole('alert')).toHaveTextContent('Modulus n must be at least 1');
+  });
+
+  it('labels Euler theorem inputs for assistive technology', () => {
+    renderAlgorithm(<EulerTheorem />);
+
+    expect(screen.getByRole('spinbutton', { name: /Base/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /Modulus/i })).toBeInTheDocument();
   });
 
   it('shows an invalid n error on Miller-Rabin', () => {

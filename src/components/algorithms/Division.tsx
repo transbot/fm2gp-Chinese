@@ -218,13 +218,14 @@ export function Division() {
               {t.dividend || 'Dividend'}
             </label>
             <input
+              aria-label={t.dividend || 'Dividend'}
               type="number"
               min="0"
               max="1000000"
               value={dividendInput}
               onChange={(e) => setDividendInput(e.target.value)}
               onBlur={handleInputChange}
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono"
+              className="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
               placeholder="17"
             />
           </div>
@@ -235,12 +236,13 @@ export function Division() {
               {t.divisor || 'Divisor'}
             </label>
             <input
+              aria-label={t.divisor || 'Divisor'}
               type="number"
               min="1"
               value={divisorInput}
               onChange={(e) => setDivisorInput(e.target.value)}
               onBlur={handleInputChange}
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono"
+              className="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
               placeholder="5"
             />
           </div>
@@ -255,7 +257,7 @@ export function Division() {
               reset();
               regenerateSteps();
             }}
-            className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-2"
+            className="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
           >
             <RotateCcw className="w-4 h-4" />
             {t.reset || 'Reset'}
@@ -263,7 +265,7 @@ export function Division() {
           <button
             onClick={play}
             disabled={isPlaying || totalSteps <= 1}
-            className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 font-medium disabled:opacity-50 flex items-center gap-2"
+            className="touch-target flex items-center gap-2 rounded-lg bg-green-500 px-6 py-2 font-medium text-white hover:bg-green-600 disabled:opacity-50"
           >
             <Play className="w-4 h-4 fill-current" />
             {t.startCalculation || 'Start Calculation'}
