@@ -334,6 +334,18 @@ describe('legacy algorithm validation errors', () => {
     );
   });
 
+  it('scopes the fast Fibonacci final result in a labeled visual frame', () => {
+    renderAlgorithm(<FastFibonacci />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Start Calculation/i }));
+    const stepSlider = screen.getByRole('slider');
+    fireEvent.change(stepSlider, { target: { value: stepSlider.getAttribute('max') ?? '0' } });
+
+    expect(
+      screen.getByRole('region', { name: /The 100th Fibonacci number is:/i })
+    ).toBeInTheDocument();
+  });
+
   it('shows an invalid permutation error on cycle decomposition', () => {
     renderAlgorithm(<Cycle />);
 

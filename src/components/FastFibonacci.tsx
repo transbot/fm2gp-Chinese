@@ -7,6 +7,7 @@ import { translations } from '../i18n/translations';
 import { StepController } from './common/StepController';
 import { ExplanationPanel } from './common/ExplanationPanel';
 import { AlgorithmLayout } from './common/AlgorithmLayout';
+import { ResponsiveVisualFrame } from './common/ResponsiveVisualFrame';
 import { ValidationMessage } from './common/ValidationMessage';
 import { fastFibonacciVisualization, FastFibonacciInput, FastFibonacciState } from '../lib/algorithms/fast_fibonacci';
 import { Step } from '../lib/algorithms/types';
@@ -87,6 +88,11 @@ export function FastFibonacci() {
   const currentState: FastFibonacciState = steps[currentStep]?.state ?? fastFibonacciVisualization.getInitialState();
   const currentStepData = steps[currentStep] ?? null;
   const totalSteps = steps.length;
+  const finalResultLabel = t.fastFibonacciResult
+    ? lang === 'en'
+      ? t.fastFibonacciResult.replace('nth', `${currentState.n}th`)
+      : t.fastFibonacciResult.replace('n', currentState.n.toString())
+    : `F(${currentState.n})`;
 
   // Actions
   const play = useCallback(() => {
@@ -285,16 +291,12 @@ export function FastFibonacci() {
       {/* Final result display (when done) */}
       {currentState.phase === 'done' && currentState.n > 0 && (
         <div className="bg-green-50 p-6 rounded-xl border border-green-200">
-          <h3 className="font-semibold text-green-800 mb-2">
-            {t.fastFibonacciResult
-              ? (lang === 'en'
-                  ? t.fastFibonacciResult.replace('nth', `${currentState.n}th`)
-                  : t.fastFibonacciResult.replace('n', currentState.n.toString()))
-              : `F(${currentState.n})`}
-          </h3>
-          <pre className="whitespace-pre-wrap font-mono text-base text-green-900 overflow-x-auto">
-            {formatLargeNumber(currentState.result)}
-          </pre>
+          <h3 className="font-semibold text-green-800 mb-2">{finalResultLabel}</h3>
+          <ResponsiveVisualFrame label={finalResultLabel} minWidth={640} contentClassName="sm:min-w-0">
+            <pre className="whitespace-pre-wrap font-mono text-base text-green-900">
+              {formatLargeNumber(currentState.result)}
+            </pre>
+          </ResponsiveVisualFrame>
         </div>
       )}
 
