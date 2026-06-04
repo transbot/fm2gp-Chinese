@@ -264,6 +264,12 @@ describe('number theory validation errors', () => {
     expect(screen.getByRole('alert')).toHaveTextContent('Please enter a number');
   });
 
+  it('labels prime checker input for assistive technology', () => {
+    renderAlgorithm(<PrimeChecker />);
+
+    expect(screen.getByRole('textbox', { name: /Enter a number/i })).toBeInTheDocument();
+  });
+
   it('shows an invalid range error on sieve', () => {
     renderAlgorithm(<Sieve />);
 
@@ -272,6 +278,12 @@ describe('number theory validation errors', () => {
     expect(screen.getByRole('alert')).toHaveTextContent(
       'Please enter a number between 2 and 9999'
     );
+  });
+
+  it('labels sieve input for assistive technology', () => {
+    renderAlgorithm(<Sieve />);
+
+    expect(screen.getByRole('spinbutton', { name: /Max/i })).toBeInTheDocument();
   });
 
   it('shows a negative input error on Stein GCD', () => {
@@ -339,6 +351,13 @@ describe('number theory validation errors', () => {
     fireEvent.click(screen.getByRole('button', { name: /Initialize/i }));
 
     expect(screen.getByRole('alert')).toHaveTextContent('n must be > 1');
+  });
+
+  it('labels Miller-Rabin inputs for assistive technology', () => {
+    renderAlgorithm(<MillerRabin />);
+
+    expect(screen.getByRole('textbox', { name: /Number to test/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /Number of iterations/i })).toBeInTheDocument();
   });
 });
 
@@ -645,5 +664,12 @@ describe('remaining interactive algorithm validation errors', () => {
     expect(screen.getByRole('alert')).toHaveTextContent(
       'Please enter a number between 2 and 9999'
     );
+  });
+
+  it('labels palindromic primes inputs for assistive technology', () => {
+    renderAlgorithm(<PalindromicPrimes />);
+
+    expect(screen.getByRole('spinbutton', { name: /Max/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /Base/i })).toBeInTheDocument();
   });
 });

@@ -185,12 +185,13 @@ export function PalindromicPrimes() {
             </label>
             <input
               type="number"
+              aria-label={t.maxNumber}
               min="2"
               max="9999"
               value={maxNumber || ''}
               onChange={handleNumberInput}
               onKeyPress={handleKeyPress}
-              className={`w-full px-4 py-2 border rounded-lg ${
+              className={`touch-target w-full rounded-lg border px-4 py-2 ${
                 maxNumberErrorKey ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder={t.maxNumber}
@@ -206,12 +207,13 @@ export function PalindromicPrimes() {
             </label>
             <input
               type="number"
+              aria-label={t.base}
               min="2"
               max="36" 
               placeholder="2-36"
               value={inputBase}
               onChange={handleBaseInput}
-              className={`w-full px-4 py-2 border rounded-lg ${
+              className={`touch-target w-full rounded-lg border px-4 py-2 ${
                 baseErrorKey ? 'border-red-500' : 'border-gray-300'
               }`}
             />

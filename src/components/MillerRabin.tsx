@@ -112,12 +112,13 @@ export function MillerRabin() {
           <label className="block text-sm font-medium text-gray-700">{t.millerRabinNLabel || 'n (Number to test)'}</label>
           <input
             type="text"
+            aria-label={t.millerRabinNLabel || 'n (Number to test)'}
             value={nInput}
             onChange={(e) => {
               setNInput(e.target.value.replace(/\D/g, ''));
               setValidationErrorKey(null);
             }}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono"
+            className="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
             placeholder={t.millerRabinNPlaceholder || "e.g. 561"}
           />
         </div>
@@ -125,10 +126,11 @@ export function MillerRabin() {
           <label className="block text-sm font-medium text-gray-700">{t.millerRabinKLabel || 'k (Number of iterations)'}</label>
           <input
             type="number"
+            aria-label={t.millerRabinKLabel || 'k (Number of iterations)'}
             min="1" max="20"
             value={kInput}
             onChange={(e) => setKInput(e.target.value)}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono"
+            className="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
           />
         </div>
         <div className="flex items-end gap-2">

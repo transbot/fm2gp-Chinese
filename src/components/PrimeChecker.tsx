@@ -187,6 +187,7 @@ export function PrimeChecker() {
           </label>
           <input
             type="text"
+            aria-label={t.enterNumber}
             value={number}
             onChange={handleNumberInput}
             onBlur={() => {
@@ -196,7 +197,7 @@ export function PrimeChecker() {
             }}
             onKeyPress={handleKeyPress}
             placeholder={t.numberPlaceholder}
-            className="w-full px-4 py-2 border rounded-lg"
+            className="touch-target w-full rounded-lg border px-4 py-2"
           />
           <ValidationMessage errorKey={validationErrorKey} messages={t} />
         </div>

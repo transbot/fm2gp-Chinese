@@ -158,12 +158,13 @@ export function Sieve() {
             <p className="text-sm text-gray-600">{t.sieveInputDescription}</p>
             <input
               type="number"
+              aria-label={t.maxNumber}
               min="2"
               max="9999"
               value={maxNumber || ''}
               onChange={handleNumberInput}
               onKeyPress={handleKeyPress}
-              className={`w-full px-4 py-2 border rounded-lg ${
+              className={`touch-target w-full rounded-lg border px-4 py-2 ${
                 validationErrorKey ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder={t.maxNumber}
