@@ -8,6 +8,7 @@ import { StepController } from '../common/StepController';
 import { ExplanationPanel } from '../common/ExplanationPanel';
 import { AlgorithmLayout } from '../common/AlgorithmLayout';
 import { ValidationMessage } from '../common/ValidationMessage';
+import { ResponsiveVisualFrame } from '../common/ResponsiveVisualFrame';
 import { powerVisualization, PowerInput, PowerState } from '../../lib/algorithms/power';
 import { Step } from '../../lib/algorithms/types';
 
@@ -124,7 +125,10 @@ export function PowerAlgorithm() {
     }
 
     return (
-      <div className="overflow-x-auto">
+      <ResponsiveVisualFrame
+        label={lang === 'zh' ? '幂运算步骤' : 'Power algorithm steps'}
+        minWidth={640}
+      >
         <table className="w-full text-sm">
           <thead>
             <tr className="bg-gray-100">
@@ -159,7 +163,7 @@ export function PowerAlgorithm() {
             ))}
           </tbody>
         </table>
-      </div>
+      </ResponsiveVisualFrame>
     );
   };
 

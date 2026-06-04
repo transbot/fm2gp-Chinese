@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import { translations } from '../i18n/translations';
+import { ResponsiveVisualFrame } from './common/ResponsiveVisualFrame';
 
 interface Step {
   powerOfTwo: number;
@@ -54,7 +55,10 @@ export function CalculationDisplay({ steps, result, firstNumber, secondNumber, l
   return (
     <div className="space-y-6">
       <h2 className="text-2xl font-bold">{t.steps}</h2>
-      <div className="overflow-x-auto">
+      <ResponsiveVisualFrame
+        label={lang === 'zh' ? '埃及乘法步骤' : 'Egyptian multiplication steps'}
+        minWidth={520}
+      >
         <table className="min-w-full divide-y divide-gray-200">
           <thead>
             <tr>
@@ -81,7 +85,7 @@ export function CalculationDisplay({ steps, result, firstNumber, secondNumber, l
             ))}
           </tbody>
         </table>
-      </div>
+      </ResponsiveVisualFrame>
 
       {result !== null && (
         <div className="p-4 bg-blue-50 rounded-lg">

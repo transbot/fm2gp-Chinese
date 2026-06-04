@@ -171,6 +171,14 @@ describe('core algorithm validation errors', () => {
 
     expect(screen.getByRole('alert')).toHaveTextContent('Exponent must be non-negative');
   });
+
+  it('scopes power step table overflow to a labeled region', () => {
+    renderAlgorithm(<PowerAlgorithm />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Step Forward/i }));
+
+    expect(screen.getByRole('region', { name: 'Power algorithm steps' })).toBeInTheDocument();
+  });
 });
 
 describe('number theory validation errors', () => {
@@ -268,6 +276,19 @@ describe('legacy algorithm validation errors', () => {
     fireEvent.click(screen.getByRole('button', { name: /^Calculate$/i }));
 
     expect(screen.getByRole('alert')).toHaveTextContent('Both numbers are required');
+  });
+
+  it('scopes Egyptian multiplication step table overflow to a labeled region', () => {
+    renderAlgorithm(<Calculator />);
+
+    const [firstInput, secondInput] = screen.getAllByRole('spinbutton');
+    fireEvent.change(firstInput, { target: { value: '12' } });
+    fireEvent.change(secondInput, { target: { value: '5' } });
+    fireEvent.click(screen.getByRole('button', { name: /^Calculate$/i }));
+
+    expect(
+      screen.getByRole('region', { name: 'Egyptian multiplication steps' })
+    ).toBeInTheDocument();
   });
 
   it('shows a required-input error on Euclidean GCM', () => {

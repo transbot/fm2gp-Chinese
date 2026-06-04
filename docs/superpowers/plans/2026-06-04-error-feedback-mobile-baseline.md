@@ -720,6 +720,8 @@ Follow-up verification note on 2026-06-04: attempts to capture 390px Chrome head
 
 Follow-up completed on 2026-06-04: number-theory legacy pages `PrimeChecker`, `Sieve`, `MillerRabin`, `ExtendedGcd`, `PalindromicPrimes`, and `PiUpperBound` now use the same safe-area header pattern and touch-target button treatment. `PrimeChecker` no longer disables its primary Check action for empty input; clicking it shows the existing validation message. `ExtendedGcd` now scopes traditional and binary step tables inside labeled `ResponsiveVisualFrame` regions, and `PiUpperBound` wraps its polygon canvas in a labeled visual frame.
 
+Follow-up completed on 2026-06-04: table-style wide content in Egyptian multiplication and the generic power algorithm now uses labeled `ResponsiveVisualFrame` regions. The page body no longer needs to own horizontal overflow for those tables; any narrow-screen horizontal scrolling is scoped to the table frame.
+
 - [x] **Step 3: Record results in README**
 
 Add a short subsection under `## 验证命令` / `## Verification Commands`:
@@ -750,6 +752,8 @@ Observed on 2026-06-04: `npx eslint . --max-warnings=0`, `npx tsc -p tsconfig.ap
 Continuation observed on 2026-06-04: the focused validation suite was extended to 34 tests and now verifies that the Euclidean GCM step table is exposed as a labeled local overflow region.
 
 Continuation observed on 2026-06-04: the focused validation suite was extended to 36 tests and now verifies both PrimeChecker click-time empty-input feedback and the labeled ExtendedGcd table overflow region.
+
+Continuation observed on 2026-06-04: the focused validation suite was extended to 38 tests and now verifies labeled local overflow regions for Egyptian multiplication and power step tables.
 
 - [x] **Step 5: Commit and push**
 
