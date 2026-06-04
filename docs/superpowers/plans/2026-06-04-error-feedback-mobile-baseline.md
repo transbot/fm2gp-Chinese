@@ -81,15 +81,15 @@ Use `covered` only when a page has a test asserting a user-visible message or a 
 | Area | Page | Current focus | Desired state | Status |
 | --- | --- | --- | --- | --- |
 | Search | `src/components/BinarySearch.tsx` | Sort-first and empty-target feedback | Covered by validation tests | covered |
-| Graphs | `src/components/ShortestPath.tsx` | Next before start / next after complete | Start-first covered; complete-state test still needed | partial |
-| Crypto | `src/components/Rsa.tsx` | Encrypt with empty message after key generation | Click shows bilingual message | open |
-| Number theory | `src/components/PrimeCounting.tsx` | Heavy graph computation on mount | Mobile-safe compute path | open |
-| Legacy layout | `src/components/Calculator.tsx` | Header and controls on narrow screens | Uses mobile-safe spacing and touch targets | deferred: shared shell not used yet |
-| Legacy layout | `src/components/Gcm.tsx` | Header and controls on narrow screens | Uses mobile-safe spacing and touch targets | deferred: playback next button still disabled |
-| Legacy layout | `src/components/Rotate.tsx` | Canvas and array controls | No horizontal overflow on 390px width | deferred: manual viewport check required |
-| Legacy layout | `src/components/GcdComparison.tsx` | Heavy comparison and control state | Visible progress/state on mobile | deferred: manual viewport check required |
-| Common UI | `src/components/common/StepController.tsx` | Disabled playback states | Touch-safe and accessible labels | open |
-| Common UI | `src/components/common/AlgorithmLayout.tsx` | Safe-area and mobile spacing | Shared shell for responsive pages | open |
+| Graphs | `src/components/ShortestPath.tsx` | Next before start / next after complete | Start-first and complete-state feedback covered by tests | covered |
+| Crypto | `src/components/Rsa.tsx` | Encrypt with empty message after key generation | Click shows bilingual message | covered |
+| Number theory | `src/components/PrimeCounting.tsx` | Heavy graph computation on mount | Mobile-safe compute path plus localized chart frame | covered |
+| Legacy layout | `src/components/Calculator.tsx` | Header and controls on narrow screens | Uses safe-area spacing and touch targets | covered |
+| Legacy layout | `src/components/Gcm.tsx` | Header, controls, and wide step table on narrow screens | Uses safe-area spacing, touch targets, and a labeled local visual frame for the table | covered |
+| Legacy layout | `src/components/Rotate.tsx` | Canvas and array controls | Header and controls use mobile-safe spacing; canvas still needs browser viewport review | partial |
+| Legacy layout | `src/components/GcdComparison.tsx` | Heavy comparison and control state | Uses safe-area spacing, touch targets, visible progress, and stacked mobile result cards | covered |
+| Common UI | `src/components/common/StepController.tsx` | Disabled playback states | Touch-safe and accessible labels | covered |
+| Common UI | `src/components/common/AlgorithmLayout.tsx` | Safe-area and mobile spacing | Shared shell for responsive pages | covered |
 
 - [ ] **Step 4: Commit the audit-only update**
 
@@ -714,6 +714,10 @@ Observed on 2026-06-04: `agent-browser` was not installed in PATH, so Chrome hea
 
 Follow-up completed on 2026-06-04: `ResponsiveVisualFrame` now scopes wide visual overflow for prime counting and shortest path. Prime counting chart, shortest-path graph, and shortest-path matrix use localized horizontal frames instead of relying on whole-page overflow.
 
+Follow-up completed on 2026-06-04: legacy pages `Calculator`, `Gcm`, `Rotate`, and `GcdComparison` received the same safe-area header pattern and touch-target button treatment used by the newer algorithm pages. `Gcm` now scopes its step table inside a labeled `ResponsiveVisualFrame`; the validation test suite covers that local overflow region. `GcdComparison` result cards stack on phone-width screens. `Rotate` no longer uses the old horizontal header layout, but its canvas still needs manual viewport review before being considered final app-store polish.
+
+Follow-up verification note on 2026-06-04: attempts to capture 390px Chrome headless screenshots from this shell did not produce screenshot files, even for an `about:blank` smoke test. Treat the automated screenshot check as blocked by the local browser/headless environment; manual browser responsive-mode review is still required for the four legacy pages.
+
 - [x] **Step 3: Record results in README**
 
 Add a short subsection under `## 验证命令` / `## Verification Commands`:
@@ -740,6 +744,8 @@ npm run build
 Expected: all commands exit 0. Restore `dist/index.html` if it changes because of `npm run build`.
 
 Observed on 2026-06-04: `npx eslint . --max-warnings=0`, `npx tsc -p tsconfig.app.json --noEmit`, `npm run test:run` with 14 files and 129 tests, and `npm run build` all exited 0. Generated `dist/index.html` noise was restored.
+
+Continuation observed on 2026-06-04: the focused validation suite was extended to 34 tests and now verifies that the Euclidean GCM step table is exposed as a labeled local overflow region.
 
 - [x] **Step 5: Commit and push**
 

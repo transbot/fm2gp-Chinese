@@ -261,6 +261,19 @@ describe('legacy algorithm validation errors', () => {
     expect(screen.getByRole('alert')).toHaveTextContent('Both numbers are required');
   });
 
+  it('scopes Euclidean GCM step table overflow to a labeled region', () => {
+    renderAlgorithm(<Gcm />);
+
+    const [firstInput, secondInput] = screen.getAllByRole('spinbutton');
+    fireEvent.change(firstInput, { target: { value: '48' } });
+    fireEvent.change(secondInput, { target: { value: '18' } });
+    fireEvent.click(screen.getByRole('button', { name: /^Calculate$/i }));
+
+    expect(
+      screen.getByRole('region', { name: 'Euclidean algorithm steps' })
+    ).toBeInTheDocument();
+  });
+
   it('shows a non-negative input error on recursive Fibonacci', () => {
     renderAlgorithm(<Fibonacci />);
 

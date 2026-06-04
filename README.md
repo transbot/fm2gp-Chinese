@@ -115,7 +115,7 @@ npm run build
 
 - ESLint 通过
 - TypeScript 类型检查通过
-- Vitest：15 个测试文件，133 个测试通过
+- Vitest：15 个测试文件，134 个测试通过
 - 生产构建通过
 - 构建输出无 Browserslist 过期提示、无 chunk-size 警告、无 Vite React 插件废弃警告
 
@@ -272,7 +272,7 @@ Current verification status:
 
 - ESLint passes
 - TypeScript typecheck passes
-- Vitest: 15 test files, 133 tests pass
+- Vitest: 15 test files, 134 tests pass
 - Production build passes
 - Build output has no Browserslist outdated warning, no chunk-size warning, and no Vite React plugin deprecation warning
 
