@@ -204,15 +204,16 @@ export function Swap() {
           <div className="flex gap-2">
             <input
               type="text"
+              aria-label={t.array || 'Array'}
               value={arrayInput}
               onChange={(e) => setArrayInput(e.target.value)}
               onBlur={handleInputChange}
-              className="flex-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono"
+              className="touch-target min-w-0 flex-1 rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
               placeholder="1,2,3,4,5,6,7"
             />
             <button
               onClick={generateRandomArray}
-              className="px-4 py-2 bg-purple-100 text-purple-700 rounded-lg hover:bg-purple-200 transition-colors flex items-center gap-2"
+              className="touch-target flex items-center gap-2 rounded-lg bg-purple-100 px-4 py-2 text-purple-700 transition-colors hover:bg-purple-200"
             >
               <Shuffle className="w-4 h-4" />
               {t.random || 'Random'}
@@ -232,22 +233,24 @@ export function Swap() {
                 <label className="block text-xs text-gray-500 mb-1">Start</label>
                 <input
                   type="number"
+                  aria-label={`${t.firstRange || 'First Range'} Start`}
                   min="0"
                   value={firstStart}
                   onChange={(e) => setFirstStart(e.target.value)}
                   onBlur={handleInputChange}
-                  className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono text-sm"
+                  className="touch-target w-full rounded-lg border px-3 py-2 font-mono text-sm focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div>
                 <label className="block text-xs text-gray-500 mb-1">End</label>
                 <input
                   type="number"
+                  aria-label={`${t.firstRange || 'First Range'} End`}
                   min="0"
                   value={firstEnd}
                   onChange={(e) => setFirstEnd(e.target.value)}
                   onBlur={handleInputChange}
-                  className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono text-sm"
+                  className="touch-target w-full rounded-lg border px-3 py-2 font-mono text-sm focus:ring-2 focus:ring-blue-500"
                 />
               </div>
             </div>
@@ -263,22 +266,24 @@ export function Swap() {
                 <label className="block text-xs text-gray-500 mb-1">Start</label>
                 <input
                   type="number"
+                  aria-label={`${t.secondRange || 'Second Range'} Start`}
                   min="0"
                   value={secondStart}
                   onChange={(e) => setSecondStart(e.target.value)}
                   onBlur={handleInputChange}
-                  className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 font-mono text-sm"
+                  className="touch-target w-full rounded-lg border px-3 py-2 font-mono text-sm focus:ring-2 focus:ring-green-500"
                 />
               </div>
               <div>
                 <label className="block text-xs text-gray-500 mb-1">End</label>
                 <input
                   type="number"
+                  aria-label={`${t.secondRange || 'Second Range'} End`}
                   min="0"
                   value={secondEnd}
                   onChange={(e) => setSecondEnd(e.target.value)}
                   onBlur={handleInputChange}
-                  className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 font-mono text-sm"
+                  className="touch-target w-full rounded-lg border px-3 py-2 font-mono text-sm focus:ring-2 focus:ring-green-500"
                 />
               </div>
             </div>
@@ -294,7 +299,7 @@ export function Swap() {
               reset();
               regenerateSteps();
             }}
-            className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-2"
+            className="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
           >
             <RotateCcw className="w-4 h-4" />
             {t.reset || 'Reset'}
@@ -302,7 +307,7 @@ export function Swap() {
           <button
             onClick={play}
             disabled={isPlaying || totalSteps <= 1}
-            className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 font-medium disabled:opacity-50 flex items-center gap-2"
+            className="touch-target flex items-center gap-2 rounded-lg bg-green-500 px-6 py-2 font-medium text-white hover:bg-green-600 disabled:opacity-50"
           >
             <Play className="w-4 h-4 fill-current" />
             {t.startCalculation || 'Start Calculation'}

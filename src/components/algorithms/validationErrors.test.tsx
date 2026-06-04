@@ -103,6 +103,14 @@ describe('beginner extension algorithm validation errors', () => {
     ).toBeInTheDocument();
   });
 
+  it('labels prefix sum inputs for assistive technology', () => {
+    renderAlgorithm(<PrefixSum />);
+
+    expect(screen.getByRole('textbox', { name: /Array/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /Left Index/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /Right Index/i })).toBeInTheDocument();
+  });
+
   it('shows an empty-target error on frequency count', () => {
     renderAlgorithm(<FrequencyCount />);
 
@@ -163,6 +171,16 @@ describe('core algorithm validation errors', () => {
     fireEvent.blur(secondEnd);
 
     expect(screen.getByRole('alert')).toHaveTextContent('Invalid second range');
+  });
+
+  it('labels swap range inputs for assistive technology', () => {
+    renderAlgorithm(<Swap />);
+
+    expect(screen.getByRole('textbox', { name: /Array/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /First Range Start/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /First Range End/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /Second Range Start/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /Second Range End/i })).toBeInTheDocument();
   });
 
   it('shows a non-positive divisor error on division', () => {
