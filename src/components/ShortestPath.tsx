@@ -6,6 +6,7 @@ import { Links } from './Links';
 import { DeveloperNote } from './DeveloperNote';
 import { useLanguage } from '../context/LanguageContext';
 import { ValidationMessage } from './common/ValidationMessage';
+import { ResponsiveVisualFrame } from './common/ResponsiveVisualFrame';
 
 // 定义无穷大
 const INF = Number.MAX_SAFE_INTEGER;
@@ -150,11 +151,17 @@ export function ShortestPath() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-bold mb-4">初始有向图</h2>
-          <img 
-            src="/images/p.147.directed.graph.png" 
-            alt="Initial directed graph"
-            className="w-full"
-          />
+          <ResponsiveVisualFrame
+            label={lang === 'zh' ? '最短路径示例有向图' : 'Directed graph used in the shortest path example'}
+            minWidth={640}
+          >
+            <img
+              src="/images/p.147.directed.graph.png"
+              alt={lang === 'zh' ? '最短路径示例使用的有向图' : 'Directed graph used in the shortest path example'}
+              className="h-auto max-w-none"
+              style={{ width: 640 }}
+            />
+          </ResponsiveVisualFrame>
         </div>
 
         <div className="space-y-4">
@@ -187,7 +194,10 @@ export function ShortestPath() {
                 <h2 className="text-lg font-bold mb-4">
                   {steps[currentStep].description}
                 </h2>
-                <div className="overflow-x-auto">
+                <ResponsiveVisualFrame
+                  label={lang === 'zh' ? '最短路径距离矩阵' : 'Shortest path distance matrix'}
+                  minWidth={520}
+                >
                   <table className="min-w-full divide-y divide-gray-200 text-sm">
                     <thead>
                       <tr>
@@ -219,7 +229,7 @@ export function ShortestPath() {
                       ))}
                     </tbody>
                   </table>
-                </div>
+                </ResponsiveVisualFrame>
               </div>
 
               {isComplete && (
