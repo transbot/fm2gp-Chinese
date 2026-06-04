@@ -537,6 +537,21 @@ describe('remaining interactive algorithm validation errors', () => {
     );
   });
 
+  it('labels advanced sorting and heap inputs for assistive technology', () => {
+    const { unmount: unmountMerge } = renderAlgorithm(<MergeSort />);
+    expect(screen.getByRole('textbox', { name: /Array/i })).toBeInTheDocument();
+    unmountMerge();
+
+    const { unmount: unmountQuick } = renderAlgorithm(<QuickSort />);
+    expect(screen.getByRole('textbox', { name: /Array/i })).toBeInTheDocument();
+    unmountQuick();
+
+    renderAlgorithm(<HeapOperations />);
+    expect(screen.getByRole('textbox', { name: /Array/i })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Insert/i }));
+    expect(screen.getByRole('spinbutton', { name: /Value to Insert/i })).toBeInTheDocument();
+  });
+
   it('shows a missing insert value error on heap operations', () => {
     renderAlgorithm(<HeapOperations />);
 
