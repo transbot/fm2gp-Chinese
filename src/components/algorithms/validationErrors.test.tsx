@@ -411,6 +411,42 @@ describe('remaining interactive algorithm validation errors', () => {
     expect(screen.getByRole('alert')).toHaveTextContent('Node A already exists');
   });
 
+  it('explains when graph traversal adds an edge without both endpoints', () => {
+    renderAlgorithm(<GraphTraversal />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Add Edge/i }));
+
+    expect(screen.getByRole('alert')).toHaveTextContent(
+      'Choose both edge endpoints before adding an edge'
+    );
+  });
+
+  it('explains when graph traversal adds an edge from a node to itself', () => {
+    renderAlgorithm(<GraphTraversal />);
+
+    const sourceSelect = screen.getByRole('combobox', { name: /Add Edge source/i });
+    const targetSelect = screen.getByRole('combobox', { name: /Add Edge target/i });
+    fireEvent.change(sourceSelect, { target: { value: 'A' } });
+    fireEvent.change(targetSelect, { target: { value: 'A' } });
+    fireEvent.click(screen.getByRole('button', { name: /Add Edge/i }));
+
+    expect(screen.getByRole('alert')).toHaveTextContent(
+      'Choose two different nodes for an edge'
+    );
+  });
+
+  it('explains when graph traversal adds a duplicate edge', () => {
+    renderAlgorithm(<GraphTraversal />);
+
+    const sourceSelect = screen.getByRole('combobox', { name: /Add Edge source/i });
+    const targetSelect = screen.getByRole('combobox', { name: /Add Edge target/i });
+    fireEvent.change(sourceSelect, { target: { value: 'A' } });
+    fireEvent.change(targetSelect, { target: { value: 'B' } });
+    fireEvent.click(screen.getByRole('button', { name: /Add Edge/i }));
+
+    expect(screen.getByRole('alert')).toHaveTextContent('Edge A to B already exists');
+  });
+
   it('shows an empty-array error on merge sort', () => {
     renderAlgorithm(<MergeSort />);
 

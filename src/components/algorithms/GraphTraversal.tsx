@@ -196,6 +196,9 @@ export function GraphTraversal() {
       graphTraversalNodeDuplicate: (
         t.graphTraversalNodeDuplicate || 'Node {0} already exists'
       ).replace('{0}', validationValue),
+      graphTraversalEdgeDuplicate: (
+        t.graphTraversalEdgeDuplicate || 'Edge {0} already exists'
+      ).replace('{0}', validationValue),
     }),
     [t, validationValue]
   );
@@ -316,11 +319,23 @@ export function GraphTraversal() {
 
   // Add edge
   const handleAddEdge = useCallback(() => {
-    if (!newEdgeSource || !newEdgeTarget) return;
-    if (newEdgeSource === newEdgeTarget) return;
+    if (!newEdgeSource || !newEdgeTarget) {
+      setValidationValue('');
+      setValidationErrorKey('graphTraversalEdgeEndpointsRequired');
+      return;
+    }
+    if (newEdgeSource === newEdgeTarget) {
+      setValidationValue('');
+      setValidationErrorKey('graphTraversalEdgeSelfLoop');
+      return;
+    }
 
     const edgeId = `e${newEdgeSource}-${newEdgeTarget}`;
-    if (edgesInput.some((e) => e.id === edgeId)) return;
+    if (edgesInput.some((e) => e.source === newEdgeSource && e.target === newEdgeTarget)) {
+      setValidationValue(`${newEdgeSource} to ${newEdgeTarget}`);
+      setValidationErrorKey('graphTraversalEdgeDuplicate');
+      return;
+    }
 
     const newEdge: GraphEdge = {
       id: edgeId,
@@ -330,6 +345,8 @@ export function GraphTraversal() {
     setEdgesInput((prev) => [...prev, newEdge]);
     setNewEdgeSource('');
     setNewEdgeTarget('');
+    setValidationValue('');
+    setValidationErrorKey(null);
   }, [newEdgeSource, newEdgeTarget, edgesInput]);
 
   // Remove edge
@@ -489,8 +506,13 @@ export function GraphTraversal() {
             <div className="flex gap-2 items-center">
               <select
                 value={newEdgeSource}
-                onChange={(e) => setNewEdgeSource(e.target.value)}
-                className="px-2 py-1 border rounded"
+                onChange={(e) => {
+                  setNewEdgeSource(e.target.value);
+                  setValidationValue('');
+                  setValidationErrorKey(null);
+                }}
+                aria-label={`${t.addEdge || 'Add Edge'} source`}
+                className="touch-target rounded border px-2 py-1"
               >
                 <option value="">-</option>
                 {nodesInput.map((node) => (
@@ -502,8 +524,13 @@ export function GraphTraversal() {
               <span>→</span>
               <select
                 value={newEdgeTarget}
-                onChange={(e) => setNewEdgeTarget(e.target.value)}
-                className="px-2 py-1 border rounded"
+                onChange={(e) => {
+                  setNewEdgeTarget(e.target.value);
+                  setValidationValue('');
+                  setValidationErrorKey(null);
+                }}
+                aria-label={`${t.addEdge || 'Add Edge'} target`}
+                className="touch-target rounded border px-2 py-1"
               >
                 <option value="">-</option>
                 {nodesInput.map((node) => (
