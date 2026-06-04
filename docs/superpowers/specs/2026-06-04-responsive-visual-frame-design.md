@@ -46,21 +46,43 @@ Default behavior:
 
 - Outer element: `role="region"` with `aria-label={label}`.
 - Outer class: `w-full max-w-full overflow-x-auto overscroll-x-contain`.
+- The outer element does not add card styling, borders, shadows, backgrounds, or decorative chrome.
 - Inner class: `min-w-[var(--visual-min-width)]`.
 - Default `minWidth`: `360`.
-- At `sm` and wider, content can use `min-w-0` when a page explicitly wants fluid scaling.
+- The inner wrapper receives a CSS variable with a pixel value:
+
+```tsx
+style={
+  {
+    '--visual-min-width': `${minWidth ?? 360}px`,
+  } as React.CSSProperties
+}
+```
+
+- The CSS variable must include the `px` unit.
+- The frame should not automatically remove the minimum width at `sm`.
+- If a specific page wants fluid scaling on wider screens, it may pass `contentClassName="sm:min-w-0"` or an equivalent class explicitly.
+- Consider `tabIndex={0}` for scrollable regions when keyboard horizontal scrolling would otherwise be inaccessible.
 
 ## First Pages To Update
 
 1. `src/components/PrimeCounting.tsx`
-   - Wrap the chart card or canvas area.
-   - Give the canvas a stable drawing buffer and a minimum visual width so axis labels remain readable.
+   - Wrap only the chart/canvas visual region.
+   - Do not place the page title, explanation text, or primary controls inside the horizontal scroll region unless they are visually part of the chart itself.
+   - Give the visual region an appropriate `minWidth` so axis labels remain readable on phones.
+   - The canvas CSS display width may be responsive, but the drawing buffer should account for `devicePixelRatio`.
+   - Redraw when the rendered canvas width changes.
+   - Avoid relying on `window.innerWidth`; prefer measuring the container or canvas with `ResizeObserver` when practical.
    - Keep the reduced `1_000_000` default workload from the previous plan.
 
 2. `src/components/ShortestPath.tsx`
    - Wrap the directed graph image in a horizontal frame.
    - Wrap the matrix table in the same frame.
+   - Do not put unrelated page controls inside the horizontal scroll region.
    - The image should preserve its aspect ratio and avoid right-edge clipping on phones.
+   - Use an explicit readable width or minimum width for the graph image.
+   - Use `max-w-none` or equivalent when default image scaling prevents horizontal scrolling.
+   - Keep meaningful `alt` text, such as `Directed graph used in the shortest path example`.
 
 3. Representative algorithm tables or array-heavy panels
    - Start with one high-risk page found during verification, such as heap operations or graph traversal, only if the first two pages prove the frame works cleanly.
@@ -94,10 +116,13 @@ Future app shell:
 
 Add focused component tests for `ResponsiveVisualFrame`:
 
-- Renders a labeled region.
-- Applies the default minimum width CSS variable.
-- Accepts a custom `minWidth`.
-- Merges caller-provided classes.
+- The region has the expected accessible name.
+- The CSS variable contains the expected pixel value, including the `px` unit.
+- The default minimum width is used when `minWidth` is omitted.
+- A custom `minWidth` is applied.
+- `className` is merged onto the outer element.
+- `contentClassName` is merged onto the inner wrapper.
+- Children render inside the inner content wrapper.
 
 Use existing page tests where possible, but do not overfit tests to Tailwind class strings in every page. The key behavior is that pages use the shared frame for known wide content.
 
@@ -118,9 +143,12 @@ The first implementation should avoid migrating every legacy page at once. Start
 ## Acceptance Criteria
 
 - `ResponsiveVisualFrame` exists in `src/components/common`.
-- Prime counting and shortest path no longer depend on whole-page horizontal overflow for their wide visuals.
-- Component tests cover the frame API.
+- `PrimeCounting` and `ShortestPath` use the shared frame for known wide visual content.
+- At 390px viewport width, these pages do not cause whole-document horizontal overflow because of the framed visuals.
+- Horizontal scrolling, when needed, is scoped to the `ResponsiveVisualFrame` region.
+- Chart labels, matrix entries, and graph labels remain readable without pinch zoom.
+- Component tests cover accessible label, default min width, custom min width, class merging, and child rendering.
 - Existing validation tests and prime-counting tests still pass.
 - TypeScript, ESLint, full Vitest, and production build pass.
+- README and the existing Superpowers plan document are updated with manual verification notes.
 - Changes are committed locally but not pushed without explicit approval.
-
