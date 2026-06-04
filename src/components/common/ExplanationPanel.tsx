@@ -4,6 +4,7 @@ import { Info, Clock, Database } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../i18n/translations';
 import { ComplexityInfo } from '../../lib/algorithms/types';
+import { ResponsiveVisualFrame } from './ResponsiveVisualFrame';
 
 interface ExplanationPanelProps {
   stepDescription: string;
@@ -93,9 +94,15 @@ export function ExplanationPanel({
           <summary className="cursor-pointer text-gray-700 font-medium hover:text-blue-600">
             {t.viewCode || 'View Code'}
           </summary>
-          <pre className="bg-gray-900 text-gray-100 rounded-lg p-3 text-xs overflow-x-auto">
-            <code>{codeSnippet}</code>
-          </pre>
+          <ResponsiveVisualFrame
+            label={t.viewCode || 'View Code'}
+            className="rounded-lg bg-gray-900 p-3"
+            contentClassName="min-w-max"
+          >
+            <pre className="text-xs text-gray-100">
+              <code>{codeSnippet}</code>
+            </pre>
+          </ResponsiveVisualFrame>
         </details>
       )}
     </div>

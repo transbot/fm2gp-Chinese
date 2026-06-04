@@ -763,6 +763,8 @@ Continuation observed on 2026-06-04: the focused validation suite was extended t
 
 Continuation observed on 2026-06-04: the focused validation suite was extended to 45 tests and now verifies that FastFibonacci final large-number output is scoped inside a labeled `ResponsiveVisualFrame` region.
 
+Continuation observed on 2026-06-04: shared `ExplanationPanel` code snippets now use a labeled `ResponsiveVisualFrame`, covered by a new component test. The full suite is expected to include 16 test files and 146 tests after verification.
+
 - [x] **Step 5: Commit and push**
 
 Run:
