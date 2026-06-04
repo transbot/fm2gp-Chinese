@@ -145,6 +145,13 @@ describe('algorithmCatalog', () => {
       .toContain('linear-search');
   });
 
+  it('treats 质数 and 素数 as equivalent Chinese search terms', () => {
+    const resultIds = searchAlgorithms({ query: '质数', lang: 'zh' }).map((item) => item.id);
+
+    expect(resultIds).toContain('prime-checker');
+    expect(resultIds).toContain('sieve');
+  });
+
   it('filters algorithms by source, difficulty, and topic', () => {
     const results = searchAlgorithms({
       sourceType: 'extra',

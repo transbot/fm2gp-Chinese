@@ -785,6 +785,8 @@ Continuation observed on 2026-06-04: arithmetic and theorem pages `Division`, `P
 
 Continuation observed on 2026-06-04: visual legacy pages `Fibonacci`, `Cycle`, `Rotate`, and `PiUpperBound` now expose stable accessible names for their primary inputs and sliders, with touch-target sizing on those controls. The test render helper now stubs canvas drawing context methods so canvas-backed visual pages can be included in component coverage without jsdom console noise. The focused validation suite was extended to 73 tests, and the full suite is expected to include 17 test files and 175 tests after verification.
 
+Continuation observed on 2026-06-05: manual mobile review passed. Follow-up fixes now localize remaining `Rotate` and `PiUpperBound` controls such as animation, pause, number of sides, and explanatory labels in Chinese UI, and Chinese catalog search treats `质数` and `素数` as equivalent terms. The full suite is expected to include 17 test files and 178 tests after verification.
+
 - [x] **Step 5: Commit and push**
 
 Run:

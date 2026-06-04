@@ -524,10 +524,28 @@ describe('legacy algorithm validation errors', () => {
     expect(screen.getByRole('slider', { name: /Steps/i })).toBeInTheDocument();
   });
 
+  it('localizes rotate animation controls in Chinese', () => {
+    renderAlgorithm(<Rotate />);
+
+    fireEvent.click(screen.getByRole('button', { name: '中文' }));
+
+    expect(screen.getByRole('slider', { name: /步/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /动画/i })).toBeInTheDocument();
+  });
+
   it('labels the pi upper-bound sides slider for assistive technology', () => {
     renderAlgorithm(<PiUpperBound />);
 
     expect(screen.getByRole('slider', { name: /Number of Sides/i })).toBeInTheDocument();
+  });
+
+  it('localizes pi upper-bound controls in Chinese', () => {
+    renderAlgorithm(<PiUpperBound />);
+
+    fireEvent.click(screen.getByRole('button', { name: '中文' }));
+
+    expect(screen.getByRole('slider', { name: /边数/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /动画/i })).toBeInTheDocument();
   });
 });
 

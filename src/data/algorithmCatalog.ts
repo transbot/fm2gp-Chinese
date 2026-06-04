@@ -62,6 +62,22 @@ export interface AlgorithmSearchOptions {
   topicId?: TopicId | 'all';
 }
 
+function getSearchQueryVariants(query: string, lang: Language): string[] {
+  if (!query) {
+    return [''];
+  }
+
+  if (lang !== 'zh') {
+    return [query];
+  }
+
+  return Array.from(new Set([
+    query,
+    query.replace(/质数/g, '素数'),
+    query.replace(/素数/g, '质数'),
+  ]));
+}
+
 export const topicCatalog: TopicCatalogItem[] = [
   {
     id: 'search-sequence',
@@ -868,6 +884,7 @@ export function searchAlgorithms(options: AlgorithmSearchOptions): AlgorithmCata
     topicId = 'all',
   } = options;
   const normalizedQuery = query.trim().toLowerCase();
+  const normalizedQueryVariants = getSearchQueryVariants(normalizedQuery, lang);
   const topicOrder = new Map(topicCatalog.map((topic) => [topic.id, topic.order]));
 
   return algorithmCatalog
@@ -897,7 +914,7 @@ export function searchAlgorithms(options: AlgorithmSearchOptions): AlgorithmCata
         .join(' ')
         .toLowerCase();
 
-      return searchableText.includes(normalizedQuery);
+      return normalizedQueryVariants.some((queryVariant) => searchableText.includes(queryVariant));
     })
     .sort((a, b) => {
       const topicDiff = (topicOrder.get(a.topicId) ?? 0) - (topicOrder.get(b.topicId) ?? 0);
