@@ -28,6 +28,8 @@ The component owns only layout and accessibility concerns:
 - Provide optional accessible labels for scrollable regions.
 - Avoid nested card styling; it should be a frame/scroll container, not another decorative card inside existing cards.
 
+Implement this spec with minimal, localized changes. Prefer a shared component and page-level wrapping over global CSS changes. After implementation, run the listed checks and commit locally without pushing.
+
 Pages remain responsible for their domain content. For example, `PrimeCounting` still draws the chart, and `ShortestPath` still renders its graph and matrix; they only wrap wide content with the shared frame.
 
 ## Component API
@@ -63,6 +65,7 @@ style={
 - The frame should not automatically remove the minimum width at `sm`.
 - If a specific page wants fluid scaling on wider screens, it may pass `contentClassName="sm:min-w-0"` or an equivalent class explicitly.
 - Consider `tabIndex={0}` for scrollable regions when keyboard horizontal scrolling would otherwise be inaccessible.
+- Use the app's existing class merge utility if one exists, such as `cn`, `clsx`, or an equivalent helper. Do not introduce a new dependency only for class merging unless necessary.
 
 ## First Pages To Update
 
@@ -151,4 +154,5 @@ The first implementation should avoid migrating every legacy page at once. Start
 - Existing validation tests and prime-counting tests still pass.
 - TypeScript, ESLint, full Vitest, and production build pass.
 - README and the existing Superpowers plan document are updated with manual verification notes.
+- Do not introduce new global CSS rules that affect unrelated pages.
 - Changes are committed locally but not pushed without explicit approval.
