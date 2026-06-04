@@ -6,6 +6,7 @@ import { Links } from './Links';
 import { useLanguage } from '../context/LanguageContext';
 import { DeveloperNote } from './DeveloperNote';
 import { ValidationMessage } from './common/ValidationMessage';
+import { ResponsiveVisualFrame } from './common/ResponsiveVisualFrame';
 import { extendedGcdGenerator, binaryExtendedGcdGenerator, ExtendedGcdStep, BinaryExtendedGcdStep } from '../lib/algorithms/extended_gcd';
 
 import { motion, AnimatePresence } from 'framer-motion';
@@ -82,24 +83,24 @@ export function ExtendedGcd() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto p-6 space-y-8">
+    <div className="safe-app-x safe-app-bottom max-w-5xl mx-auto py-4 sm:py-6 space-y-6 sm:space-y-8">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-        <div className="flex items-center gap-4">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
           <Link
             to="/"
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-500 text-white hover:bg-gray-600 transition-colors shrink-0"
+            className="touch-target flex items-center justify-center gap-2 rounded-lg bg-gray-500 px-4 py-2 text-white transition-colors hover:bg-gray-600"
           >
             <Home className="w-4 h-4" />
             {t.backToHome}
           </Link>
-          <h1 className="text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+          <h1 className="min-w-0 break-words bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-2xl font-bold text-transparent sm:text-3xl">
             {t.extendedGcdTitle}
           </h1>
         </div>
         <button
           onClick={() => setLang(lang === 'en' ? 'zh' : 'en')}
-          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors shadow-md"
+          className="touch-target flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-4 py-2 text-white shadow-md transition-colors hover:bg-blue-600"
         >
           <Languages className="w-4 h-4" />
           {t.language}
@@ -148,7 +149,7 @@ export function ExtendedGcd() {
         <div className="flex items-end gap-2">
            <button 
              onClick={initAlgorithm}
-             className="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-medium"
+             className="touch-target px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-medium"
            >
              Initialize
            </button>
@@ -157,11 +158,11 @@ export function ExtendedGcd() {
 
       <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
-      <div className="flex gap-4">
+      <div className="flex flex-wrap gap-3 sm:gap-4">
         <button 
           onClick={handleNextStep}
           disabled={(!tradGenerator && !binGenerator) || isDone}
-          className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-colors disabled:opacity-50 font-bold shadow-md"
+          className="touch-target flex flex-1 items-center justify-center gap-2 rounded-xl bg-blue-500 px-6 py-3 font-bold text-white shadow-md transition-colors hover:bg-blue-600 disabled:opacity-50 sm:flex-none"
         >
           <Play className="w-5 h-5 fill-current" />
           Next Step
@@ -181,7 +182,11 @@ export function ExtendedGcd() {
 
       {/* Traditional Steps */}
       {mode === 'traditional' && tradSteps.length > 0 && (
-        <div className="overflow-x-auto rounded-xl border">
+        <ResponsiveVisualFrame
+          label={lang === 'zh' ? '扩展 GCD 步骤' : 'Extended GCD steps'}
+          minWidth={720}
+          className="rounded-xl border"
+        >
           <table className="w-full text-left font-mono">
             <thead className="bg-gray-100">
               <tr>
@@ -204,12 +209,16 @@ export function ExtendedGcd() {
               </AnimatePresence>
             </tbody>
           </table>
-        </div>
+        </ResponsiveVisualFrame>
       )}
 
       {/* Binary Steps */}
       {mode === 'binary' && binSteps.length > 0 && (
-        <div className="overflow-x-auto rounded-xl border">
+        <ResponsiveVisualFrame
+          label={lang === 'zh' ? '二进制扩展 GCD 步骤' : 'Binary extended GCD steps'}
+          minWidth={840}
+          className="rounded-xl border"
+        >
           <table className="w-full text-left font-mono text-sm leading-relaxed">
             <thead className="bg-gray-100">
               <tr>
@@ -235,7 +244,7 @@ export function ExtendedGcd() {
               </AnimatePresence>
             </tbody>
           </table>
-        </div>
+        </ResponsiveVisualFrame>
       )}
 
       <DeveloperNote noteKey="devNoteExtendedGcd" />

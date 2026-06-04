@@ -183,6 +183,14 @@ describe('number theory validation errors', () => {
     expect(screen.getByRole('alert')).toHaveTextContent('Please enter a number');
   });
 
+  it('explains when prime checker check is clicked without input', () => {
+    renderAlgorithm(<PrimeChecker />);
+
+    fireEvent.click(screen.getByRole('button', { name: /^Check$/i }));
+
+    expect(screen.getByRole('alert')).toHaveTextContent('Please enter a number');
+  });
+
   it('shows an invalid range error on sieve', () => {
     renderAlgorithm(<Sieve />);
 
@@ -211,6 +219,15 @@ describe('number theory validation errors', () => {
     fireEvent.click(screen.getByRole('button', { name: /Initialize/i }));
 
     expect(screen.getByRole('alert')).toHaveTextContent('Both numbers are required');
+  });
+
+  it('scopes extended GCD step table overflow to a labeled region', () => {
+    renderAlgorithm(<ExtendedGcd />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Initialize/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Next Step/i }));
+
+    expect(screen.getByRole('region', { name: 'Extended GCD steps' })).toBeInTheDocument();
   });
 
   it('shows an invalid base error on Fermat theorem', () => {

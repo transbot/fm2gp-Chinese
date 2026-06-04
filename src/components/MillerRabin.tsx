@@ -80,24 +80,24 @@ export function MillerRabin() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto p-6 space-y-8">
+    <div className="safe-app-x safe-app-bottom max-w-5xl mx-auto py-4 sm:py-6 space-y-6 sm:space-y-8">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-        <div className="flex items-center gap-4">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
           <Link
             to="/"
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-500 text-white hover:bg-gray-600 transition-colors shrink-0"
+            className="touch-target flex items-center justify-center gap-2 rounded-lg bg-gray-500 px-4 py-2 text-white transition-colors hover:bg-gray-600"
           >
             <Home className="w-4 h-4" />
             {t.backToHome}
           </Link>
-          <h1 className="text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+          <h1 className="min-w-0 break-words bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-2xl font-bold text-transparent sm:text-3xl">
             {t.millerRabinTitle}
           </h1>
         </div>
         <button
           onClick={() => setLang(lang === 'en' ? 'zh' : 'en')}
-          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors shadow-md"
+          className="touch-target flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-4 py-2 text-white shadow-md transition-colors hover:bg-blue-600"
         >
           <Languages className="w-4 h-4" />
           {t.language}
@@ -134,7 +134,7 @@ export function MillerRabin() {
         <div className="flex items-end gap-2">
            <button
              onClick={initAlgorithm}
-             className="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-medium"
+             className="touch-target px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-medium"
            >
              {t.initialize || 'Initialize'}
            </button>
@@ -144,11 +144,11 @@ export function MillerRabin() {
       <ValidationMessage errorKey={validationErrorKey} messages={t} />
 
       {/* Controls */}
-      <div className="flex gap-4">
+      <div className="flex flex-wrap gap-3 sm:gap-4">
         <button
           onClick={handleNextStep}
           disabled={!generator || isDone}
-          className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-colors disabled:opacity-50 font-bold shadow-md"
+          className="touch-target flex flex-1 items-center justify-center gap-2 rounded-xl bg-blue-500 px-6 py-3 font-bold text-white shadow-md transition-colors hover:bg-blue-600 disabled:opacity-50 sm:flex-none"
         >
           <Play className="w-5 h-5 fill-current" />
           {t.nextStep || 'Next Step'}

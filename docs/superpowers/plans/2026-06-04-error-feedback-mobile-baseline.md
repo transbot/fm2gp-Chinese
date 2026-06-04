@@ -718,6 +718,8 @@ Follow-up completed on 2026-06-04: legacy pages `Calculator`, `Gcm`, `Rotate`, a
 
 Follow-up verification note on 2026-06-04: attempts to capture 390px Chrome headless screenshots from this shell did not produce screenshot files, even for an `about:blank` smoke test. Treat the automated screenshot check as blocked by the local browser/headless environment; manual browser responsive-mode review is still required for the four legacy pages.
 
+Follow-up completed on 2026-06-04: number-theory legacy pages `PrimeChecker`, `Sieve`, `MillerRabin`, `ExtendedGcd`, `PalindromicPrimes`, and `PiUpperBound` now use the same safe-area header pattern and touch-target button treatment. `PrimeChecker` no longer disables its primary Check action for empty input; clicking it shows the existing validation message. `ExtendedGcd` now scopes traditional and binary step tables inside labeled `ResponsiveVisualFrame` regions, and `PiUpperBound` wraps its polygon canvas in a labeled visual frame.
+
 - [x] **Step 3: Record results in README**
 
 Add a short subsection under `## 验证命令` / `## Verification Commands`:
@@ -746,6 +748,8 @@ Expected: all commands exit 0. Restore `dist/index.html` if it changes because o
 Observed on 2026-06-04: `npx eslint . --max-warnings=0`, `npx tsc -p tsconfig.app.json --noEmit`, `npm run test:run` with 14 files and 129 tests, and `npm run build` all exited 0. Generated `dist/index.html` noise was restored.
 
 Continuation observed on 2026-06-04: the focused validation suite was extended to 34 tests and now verifies that the Euclidean GCM step table is exposed as a labeled local overflow region.
+
+Continuation observed on 2026-06-04: the focused validation suite was extended to 36 tests and now verifies both PrimeChecker click-time empty-input feedback and the labeled ExtendedGcd table overflow region.
 
 - [x] **Step 5: Commit and push**
 
