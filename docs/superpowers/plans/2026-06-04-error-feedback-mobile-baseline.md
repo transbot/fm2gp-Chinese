@@ -513,7 +513,7 @@ git commit -m "Add mobile-safe shared algorithm controls"
 - Create: `src/lib/algorithms/prime_counting.test.ts`
 - Modify: `src/components/PrimeCounting.tsx`
 
-- [ ] **Step 1: Add pure tests**
+- [x] **Step 1: Add pure tests**
 
 Create `src/lib/algorithms/prime_counting.test.ts`:
 
@@ -539,7 +539,7 @@ describe('buildPrimeCountingSeries', () => {
 });
 ```
 
-- [ ] **Step 2: Run tests to verify RED**
+- [x] **Step 2: Run tests to verify RED**
 
 Run:
 
@@ -549,7 +549,9 @@ npm run test:run -- src/lib/algorithms/prime_counting.test.ts
 
 Expected: fail because `prime_counting.ts` does not exist.
 
-- [ ] **Step 3: Implement the pure module**
+Observed on 2026-06-04: failed because `./prime_counting` could not be resolved.
+
+- [x] **Step 3: Implement the pure module**
 
 Create `src/lib/algorithms/prime_counting.ts`:
 
@@ -622,7 +624,7 @@ export function buildPrimeCountingSeries({
 }
 ```
 
-- [ ] **Step 4: Refactor `PrimeCounting` to use a lower mobile default**
+- [x] **Step 4: Refactor `PrimeCounting` to use a lower mobile default**
 
 In `src/components/PrimeCounting.tsx`, import the helper:
 
@@ -646,7 +648,7 @@ const { points, approxPoints, maxX, maxY } = buildPrimeCountingSeries({
 });
 ```
 
-- [ ] **Step 5: Verify**
+- [x] **Step 5: Verify**
 
 Run:
 
@@ -657,7 +659,9 @@ npm run build
 
 Expected: tests pass and production build exits 0. If `dist/index.html` changes, restore it before committing.
 
-- [ ] **Step 6: Commit**
+Observed on 2026-06-04: `prime_counting.test.ts` passed with 2 tests, production build exited 0, and generated `dist/index.html` noise was restored.
+
+- [x] **Step 6: Commit**
 
 Run:
 
@@ -666,13 +670,15 @@ git add src/lib/algorithms/prime_counting.ts src/lib/algorithms/prime_counting.t
 git commit -m "Reduce prime counting mobile workload"
 ```
 
+Committed as `b1e1144 Reduce prime counting mobile workload`.
+
 ## Task 7: Manual Mobile Viewport Verification
 
 **Files:**
 - Modify: `README.md`
 - Modify: `docs/superpowers/plans/2026-06-04-error-feedback-mobile-baseline.md`
 
-- [ ] **Step 1: Start the dev server**
+- [x] **Step 1: Start the dev server**
 
 Run:
 
@@ -682,7 +688,9 @@ npm run dev -- --host 127.0.0.1
 
 Expected: Vite prints a local URL, normally `http://127.0.0.1:5173/`.
 
-- [ ] **Step 2: Check these viewports**
+Observed on 2026-06-04: ports 5173 and 5174 were occupied, so Vite started at `http://127.0.0.1:5175/`.
+
+- [x] **Step 2: Check these viewports**
 
 Use browser responsive mode or an automation tool against the local URL:
 
@@ -702,7 +710,9 @@ Acceptance checks:
 - Prime counting page does not freeze during initial render.
 - Graph and matrix pages remain readable without text overlap.
 
-- [ ] **Step 3: Record results in README**
+Observed on 2026-06-04: `agent-browser` was not installed in PATH, so Chrome headless screenshots were used instead. Screenshots were generated for home, binary search, RSA, prime counting, shortest path, graph traversal, and heap operations. Header clipping found in the first pass was fixed for home, BinarySearch, RSA, PrimeCounting, and ShortestPath. Prime counting rendered without freezing after the reduced workload. Shortest-path and prime-counting visuals remain wide and need real-device or browser responsive-mode review for final app-store polish.
+
+- [x] **Step 3: Record results in README**
 
 Add a short subsection under `## 验证命令` / `## Verification Commands`:
 
@@ -714,7 +724,7 @@ Add a short subsection under `## 验证命令` / `## Verification Commands`:
 - 768 x 1024: home, heap operations, merge sort, GCD comparison
 ```
 
-- [ ] **Step 4: Run final verification**
+- [x] **Step 4: Run final verification**
 
 Run:
 
@@ -727,7 +737,9 @@ npm run build
 
 Expected: all commands exit 0. Restore `dist/index.html` if it changes because of `npm run build`.
 
-- [ ] **Step 5: Commit and push**
+Observed on 2026-06-04: `npx eslint . --max-warnings=0`, `npx tsc -p tsconfig.app.json --noEmit`, `npm run test:run` with 14 files and 129 tests, and `npm run build` all exited 0. Generated `dist/index.html` noise was restored.
+
+- [x] **Step 5: Commit and push**
 
 Run:
 
@@ -737,13 +749,15 @@ git commit -m "Document mobile baseline verification"
 git push origin main
 ```
 
+Observed on 2026-06-04: final local commit was created for the README, plan, mobile header fixes, and TypeScript compatibility cleanup, then pushed to `origin/main`.
+
 ## Final Checklist
 
-- [ ] Every open row in the audit matrix is either `covered` or has a documented reason for remaining deferred.
-- [ ] `ValidationMessage` is accessible and wraps long text.
-- [ ] Main blocked actions show bilingual feedback instead of silently returning.
-- [ ] Shared algorithm layout uses safe-area horizontal/bottom spacing.
-- [ ] Step controls have touch-size buttons and icon button labels.
-- [ ] Heavy prime-counting computation is extracted and tested.
-- [ ] Manual mobile viewport results are recorded.
-- [ ] Full verification commands exit 0 before the final push.
+- [x] Every open row in the audit matrix is either `covered` or has a documented reason for remaining deferred.
+- [x] `ValidationMessage` is accessible and wraps long text.
+- [x] Main blocked actions show bilingual feedback instead of silently returning.
+- [x] Shared algorithm layout uses safe-area horizontal/bottom spacing.
+- [x] Step controls have touch-size buttons and icon button labels.
+- [x] Heavy prime-counting computation is extracted and tested.
+- [x] Manual mobile viewport results are recorded.
+- [x] Full verification commands exit 0 before the final push.

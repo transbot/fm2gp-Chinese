@@ -115,9 +115,17 @@ npm run build
 
 - ESLint 通过
 - TypeScript 类型检查通过
-- Vitest：12 个测试文件，120 个测试通过
+- Vitest：14 个测试文件，129 个测试通过
 - 生产构建通过
 - 构建输出无 Browserslist 过期提示、无 chunk-size 警告、无 Vite React 插件废弃警告
+
+### 移动端基线检查
+
+- 390 x 844：主页、二分查找、RSA、素数计数、最短路径
+- 430 x 932：图遍历
+- 768 x 1024：堆操作
+- 已修复旧页面移动端 header 裁切，并降低素数计数默认计算规模
+- 最短路径图和素数计数图属于较宽视觉内容，后续上架前仍需在真机或浏览器响应式模式中复核横向滚动体验
 
 ## 项目结构
 
@@ -263,9 +271,17 @@ Current verification status:
 
 - ESLint passes
 - TypeScript typecheck passes
-- Vitest: 12 test files, 120 tests pass
+- Vitest: 14 test files, 129 tests pass
 - Production build passes
 - Build output has no Browserslist outdated warning, no chunk-size warning, and no Vite React plugin deprecation warning
+
+### Mobile Baseline Checks
+
+- 390 x 844: home, binary search, RSA, prime counting, shortest path
+- 430 x 932: graph traversal
+- 768 x 1024: heap operations
+- Legacy mobile header clipping has been fixed, and the default prime-counting workload has been reduced
+- Shortest-path and prime-counting visuals are intentionally wide; before app-store release, verify their horizontal scrolling experience on real devices or browser responsive mode
 
 ## Project Structure
 

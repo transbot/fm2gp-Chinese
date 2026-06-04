@@ -50,7 +50,7 @@ export function buildPrimeCountingSeries({
     approxPoints.push([n, n / Math.log(n)]);
   }
 
-  if (points.at(-1)?.[0] !== maxN) {
+  if (points[points.length - 1]?.[0] !== maxN) {
     points.push([maxN, prefixCounts[maxN]]);
     approxPoints.push([maxN, maxN / Math.log(maxN)]);
   }

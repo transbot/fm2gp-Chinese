@@ -172,21 +172,21 @@ export function Rsa() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 space-y-8">
-      <div className="flex justify-between items-center">
-        <div className="flex items-center gap-4">
+    <div className="safe-app-x safe-app-bottom max-w-4xl mx-auto py-4 sm:py-6 space-y-6 sm:space-y-8">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
           <Link
             to="/"
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-500 text-white hover:bg-gray-600 transition-colors"
+            className="touch-target flex items-center justify-center gap-2 rounded-lg bg-gray-500 px-4 py-2 text-white transition-colors hover:bg-gray-600"
           >
             <Home className="w-4 h-4" />
             {t.backToHome}
           </Link>
-          <h1 className="text-3xl font-bold">{t.rsaTitle}</h1>
+          <h1 className="min-w-0 max-w-[18rem] break-words text-2xl font-bold sm:max-w-none sm:text-3xl">{t.rsaTitle}</h1>
         </div>
         <button
           onClick={() => setLang(lang === 'en' ? 'zh' : 'en')}
-          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+          className="touch-target flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-4 py-2 text-white transition-colors hover:bg-blue-600"
         >
           <Languages className="w-4 h-4" />
           {t.language}

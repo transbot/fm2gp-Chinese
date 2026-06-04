@@ -140,13 +140,16 @@ export function Home() {
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-6 sm:space-y-8">
         <div className="bg-white rounded-xl shadow-sm p-6 sm:p-8 border border-gray-100">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6">
-            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+            <div className="flex w-full min-w-0 flex-col items-center gap-4 sm:w-auto sm:flex-row sm:items-start">
               <div className="bg-blue-600 p-3 rounded-lg shadow-sm shrink-0">
                 <BookOpen className="w-8 h-8 text-white" />
               </div>
-              <div>
-                <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 text-center sm:text-left">
+              <div className="w-full min-w-0">
+                <h1
+                  className="mx-auto max-w-[18rem] text-center text-xl font-bold text-gray-800 sm:mx-0 sm:max-w-none sm:text-left sm:text-2xl md:text-3xl"
+                  style={{ overflowWrap: 'anywhere', wordBreak: 'break-all' }}
+                >
                   {lang === 'en' ? (
                     <>
                       <em>From Mathematics to Generic Programming</em>
@@ -156,7 +159,7 @@ export function Home() {
                     </>
                   ) : (
                     <>
-                      <span className="block">《数学与泛型编程：高效编程的奥秘》</span>
+                      <span className="block max-w-full">《数学与泛型编程：高效编程的奥秘》</span>
                       <span className="block text-base sm:text-lg text-blue-600 font-semibold mt-1">
                         交互式算法演示
                       </span>
@@ -185,7 +188,7 @@ export function Home() {
             </div>
             <button
               onClick={() => setLang(lang === 'en' ? 'zh' : 'en')}
-              className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-sm text-sm sm:text-base"
+              className="touch-target flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm text-white shadow-sm transition-colors hover:bg-blue-700 sm:px-6 sm:py-3 sm:text-base"
             >
               <Languages className="w-4 h-4 sm:w-5 sm:h-5" />
               {t.language}
