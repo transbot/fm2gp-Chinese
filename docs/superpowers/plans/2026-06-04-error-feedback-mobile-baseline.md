@@ -777,6 +777,8 @@ Continuation observed on 2026-06-04: `PrefixSum` and `Swap` now expose stable ac
 
 Continuation observed on 2026-06-04: search and array utility pages `BinarySearch`, `LinearSearch`, `FrequencyCount`, `TwoSum`, and `Reverse` now expose stable accessible names for their primary inputs and use touch-target sizing for their main controls. The focused validation suite was extended to 57 tests, and the full suite is expected to include 17 test files and 159 tests after verification.
 
+Continuation observed on 2026-06-04: legacy number-theory pages `Calculator`, `Gcm`, and `ExtendedGcd` now expose stable accessible names for their numeric inputs and algorithm selector, with touch-target sizing on those controls. The focused validation suite was extended to 60 tests, and the full suite is expected to include 17 test files and 162 tests after verification.
+
 - [x] **Step 5: Commit and push**
 
 Run:

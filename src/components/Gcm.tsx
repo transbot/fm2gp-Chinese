@@ -177,10 +177,11 @@ export function Gcm() {
           </label>
           <input
             type="number"
+            aria-label={t.firstNumber}
             value={firstNumber || ''}
             onChange={(e) => handleNumberInput(e, setFirstNumber)}
             onKeyPress={handleKeyPress}
-            className={`w-full px-4 py-2 border rounded-lg ${
+            className={`touch-target w-full rounded-lg border px-4 py-2 ${
               validationErrorKey && !firstNumber ? 'border-red-500' : 'border-gray-300'
             }`}
             placeholder={t.firstNumber}
@@ -192,10 +193,11 @@ export function Gcm() {
           </label>
           <input
             type="number"
+            aria-label={t.secondNumber}
             value={secondNumber || ''}
             onChange={(e) => handleNumberInput(e, setSecondNumber)}
             onKeyPress={handleKeyPress}
-            className={`w-full px-4 py-2 border rounded-lg ${
+            className={`touch-target w-full rounded-lg border px-4 py-2 ${
               validationErrorKey && !secondNumber ? 'border-red-500' : 'border-gray-300'
             }`}
             placeholder={t.secondNumber}

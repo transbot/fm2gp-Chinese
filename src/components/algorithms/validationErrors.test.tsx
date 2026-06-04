@@ -294,6 +294,14 @@ describe('number theory validation errors', () => {
     expect(screen.getByRole('alert')).toHaveTextContent('Both numbers are required');
   });
 
+  it('labels extended GCD controls for assistive technology', () => {
+    renderAlgorithm(<ExtendedGcd />);
+
+    expect(screen.getByRole('textbox', { name: /^a$/i })).toBeInTheDocument();
+    expect(screen.getByRole('textbox', { name: /^b$/i })).toBeInTheDocument();
+    expect(screen.getByRole('combobox', { name: /Algorithm/i })).toBeInTheDocument();
+  });
+
   it('scopes extended GCD step table overflow to a labeled region', () => {
     renderAlgorithm(<ExtendedGcd />);
 
@@ -343,6 +351,13 @@ describe('legacy algorithm validation errors', () => {
     expect(screen.getByRole('alert')).toHaveTextContent('Both numbers are required');
   });
 
+  it('labels Egyptian multiplication inputs for assistive technology', () => {
+    renderAlgorithm(<Calculator />);
+
+    expect(screen.getByRole('spinbutton', { name: /First Number/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /Second Number/i })).toBeInTheDocument();
+  });
+
   it('scopes Egyptian multiplication step table overflow to a labeled region', () => {
     renderAlgorithm(<Calculator />);
 
@@ -362,6 +377,13 @@ describe('legacy algorithm validation errors', () => {
     fireEvent.click(screen.getByRole('button', { name: /^Calculate$/i }));
 
     expect(screen.getByRole('alert')).toHaveTextContent('Both numbers are required');
+  });
+
+  it('labels Euclidean GCM inputs for assistive technology', () => {
+    renderAlgorithm(<Gcm />);
+
+    expect(screen.getByRole('spinbutton', { name: /First Number/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /Second Number/i })).toBeInTheDocument();
   });
 
   it('scopes Euclidean GCM step table overflow to a labeled region', () => {

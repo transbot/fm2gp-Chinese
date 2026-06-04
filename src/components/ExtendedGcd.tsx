@@ -115,32 +115,35 @@ export function ExtendedGcd() {
           <label className="block text-sm font-medium text-gray-700">a</label>
           <input 
             type="text" 
+            aria-label="a"
             value={aInput} 
             onChange={(e) => {
               setAInput(e.target.value.replace(/\D/g, ''));
               setValidationErrorKey(null);
             }} 
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono"
+            className="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
           />
         </div>
         <div className="flex-1 space-y-2">
           <label className="block text-sm font-medium text-gray-700">b</label>
           <input 
             type="text" 
+            aria-label="b"
             value={bInput} 
             onChange={(e) => {
               setBInput(e.target.value.replace(/\D/g, ''));
               setValidationErrorKey(null);
             }} 
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono"
+            className="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
           />
         </div>
         <div className="flex-1 space-y-2">
           <label className="block text-sm font-medium text-gray-700">{t.algorithmLabel}</label>
           <select 
+            aria-label={t.algorithmLabel}
             value={mode} 
             onChange={(e) => setMode(e.target.value as 'traditional' | 'binary')}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+            className="touch-target w-full rounded-lg border px-4 py-2 focus:ring-2 focus:ring-blue-500"
           >
             <option value="traditional">{t.traditionalExtendedGcd}</option>
             <option value="binary">{t.binaryExtendedGcd}</option>
