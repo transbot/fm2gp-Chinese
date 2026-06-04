@@ -138,7 +138,8 @@ export function SelectionSort() {
             value={arrayInput}
             onChange={(event) => setArrayInput(event.target.value)}
             onBlur={regenerateSteps}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono text-sm"
+            aria-label={t.array}
+            className="touch-target w-full rounded-lg border px-4 py-2 font-mono text-sm focus:ring-2 focus:ring-blue-500"
             placeholder="64, 25, 12, 22, 11"
           />
         </div>
@@ -148,7 +149,7 @@ export function SelectionSort() {
         <div className="flex gap-2 flex-wrap">
           <button
             onClick={generateRandomArray}
-            className="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-lg hover:bg-indigo-200 transition-colors flex items-center gap-2"
+            className="touch-target flex items-center gap-2 rounded-lg bg-indigo-100 px-4 py-2 text-indigo-700 transition-colors hover:bg-indigo-200"
           >
             <Shuffle className="w-4 h-4" />
             {t.random}
@@ -158,7 +159,7 @@ export function SelectionSort() {
               reset();
               regenerateSteps();
             }}
-            className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-2"
+            className="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
           >
             <RotateCcw className="w-4 h-4" />
             {t.reset}
@@ -166,7 +167,7 @@ export function SelectionSort() {
           <button
             onClick={play}
             disabled={isPlaying || totalSteps <= 1}
-            className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 font-medium disabled:opacity-50 flex items-center gap-2"
+            className="touch-target flex items-center gap-2 rounded-lg bg-green-500 px-6 py-2 font-medium text-white hover:bg-green-600 disabled:opacity-50"
           >
             <Play className="w-4 h-4 fill-current" />
             {t.startSort}

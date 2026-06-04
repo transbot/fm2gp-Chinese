@@ -77,6 +77,19 @@ describe('beginner extension algorithm validation errors', () => {
     expect(screen.getByText('Array must not be empty')).toBeInTheDocument();
   });
 
+  it('labels beginner sorting array inputs for assistive technology', () => {
+    const { unmount: unmountBubble } = renderAlgorithm(<BubbleSort />);
+    expect(screen.getByRole('textbox', { name: /Array/i })).toBeInTheDocument();
+    unmountBubble();
+
+    const { unmount: unmountInsertion } = renderAlgorithm(<InsertionSort />);
+    expect(screen.getByRole('textbox', { name: /Array/i })).toBeInTheDocument();
+    unmountInsertion();
+
+    renderAlgorithm(<SelectionSort />);
+    expect(screen.getByRole('textbox', { name: /Array/i })).toBeInTheDocument();
+  });
+
   it('shows an invalid-range error on prefix sum', () => {
     renderAlgorithm(<PrefixSum />);
 

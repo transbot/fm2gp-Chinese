@@ -769,6 +769,8 @@ Continuation observed on 2026-06-04: shared `StepController` progress and speed 
 
 Continuation observed on 2026-06-04: FastFibonacci, RSA, and GraphTraversal primary form controls now expose stable accessible names for mobile and assistive-technology users. The focused validation suite was extended to 48 tests, and the full suite is expected to include 17 test files and 150 tests after verification.
 
+Continuation observed on 2026-06-04: beginner sorting pages `BubbleSort`, `InsertionSort`, and `SelectionSort` now expose stable accessible names for their array inputs and use touch-target sizing for primary controls. The focused validation suite was extended to 49 tests, and the full suite is expected to include 17 test files and 151 tests after verification.
+
 - [x] **Step 5: Commit and push**
 
 Run:
