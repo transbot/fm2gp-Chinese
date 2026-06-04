@@ -197,9 +197,10 @@ export function BinarySearch() {
           <label className="block text-sm font-medium text-gray-700">{t.arraySizeLabel} ({arraySize})</label>
           <input 
             type="range" min="10" max="100" 
+            aria-label={`${t.arraySizeLabel} (${arraySize})`}
             value={arraySize} 
             onChange={(e) => setArraySize(Number(e.target.value))}
-            className="w-48"
+            className="touch-target w-48"
             disabled={isPlaying}
           />
         </div>
@@ -208,13 +209,14 @@ export function BinarySearch() {
           <label className="block text-sm font-medium text-gray-700" dangerouslySetInnerHTML={{ __html: t.targetValueLabel }}></label>
           <input 
             type="number" 
+            aria-label={t.targetValueLabel.replace(/<[^>]*>/g, '')}
             value={targetVal} 
             onChange={(e) => {
               setTargetVal(e.target.value);
               setValidationErrorKey(null);
             }}
             className={cn(
-              'w-32 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 font-mono',
+              'touch-target w-32 rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500',
               validationErrorKey === 'binarySearchTargetRequired'
                 ? 'border-red-300 bg-red-50'
                 : 'border-gray-300'
@@ -227,7 +229,7 @@ export function BinarySearch() {
            <button 
              onClick={handleSort}
              disabled={isSorted || isPlaying}
-             className="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-medium disabled:opacity-50 flex items-center gap-2"
+             className="touch-target flex items-center gap-2 rounded-lg bg-indigo-600 px-6 py-2 font-medium text-white hover:bg-indigo-700 disabled:opacity-50"
            >
              {isSorted ? t.sortedLabel || 'Sorted' : t.sortArray || 'Sort Array'}
            </button>
@@ -235,7 +237,7 @@ export function BinarySearch() {
            <button 
              onClick={handleSearch}
              disabled={isPlaying}
-             className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 font-medium disabled:opacity-50 flex items-center gap-2"
+             className="touch-target flex items-center gap-2 rounded-lg bg-green-500 px-6 py-2 font-medium text-white hover:bg-green-600 disabled:opacity-50"
            >
              <Play className="w-4 h-4 fill-current"/> {t.startSearch || 'Start Binary Search'}
            </button>
@@ -243,7 +245,7 @@ export function BinarySearch() {
            <button 
              onClick={generateArray}
              disabled={isPlaying}
-             className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors disabled:opacity-50"
+             className="touch-target rounded-lg bg-gray-200 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-300 disabled:opacity-50"
              title={t.regenerateArray || 'Regenerate Array'}
            >
              <RotateCcw className="w-5 h-5"/>

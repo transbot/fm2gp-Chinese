@@ -775,6 +775,8 @@ Continuation observed on 2026-06-04: advanced sorting and heap pages `MergeSort`
 
 Continuation observed on 2026-06-04: `PrefixSum` and `Swap` now expose stable accessible names for their multi-value and range input controls and use touch-target sizing for primary controls. The focused validation suite was extended to 52 tests, and the full suite is expected to include 17 test files and 154 tests after verification.
 
+Continuation observed on 2026-06-04: search and array utility pages `BinarySearch`, `LinearSearch`, `FrequencyCount`, `TwoSum`, and `Reverse` now expose stable accessible names for their primary inputs and use touch-target sizing for their main controls. The focused validation suite was extended to 57 tests, and the full suite is expected to include 17 test files and 159 tests after verification.
+
 - [x] **Step 5: Commit and push**
 
 Run:

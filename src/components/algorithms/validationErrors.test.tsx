@@ -121,6 +121,13 @@ describe('beginner extension algorithm validation errors', () => {
     expect(screen.getByText('Target must not be empty')).toBeInTheDocument();
   });
 
+  it('labels frequency count inputs for assistive technology', () => {
+    renderAlgorithm(<FrequencyCount />);
+
+    expect(screen.getByRole('textbox', { name: /Values/i })).toBeInTheDocument();
+    expect(screen.getByRole('textbox', { name: /Target/i })).toBeInTheDocument();
+  });
+
   it('shows a too-small error on two sum', () => {
     renderAlgorithm(<TwoSum />);
 
@@ -129,6 +136,13 @@ describe('beginner extension algorithm validation errors', () => {
     fireEvent.blur(input);
 
     expect(screen.getByText('Array must contain at least two values')).toBeInTheDocument();
+  });
+
+  it('labels two sum inputs for assistive technology', () => {
+    renderAlgorithm(<TwoSum />);
+
+    expect(screen.getByRole('textbox', { name: /Array/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /Target/i })).toBeInTheDocument();
   });
 });
 
@@ -143,6 +157,13 @@ describe('core algorithm validation errors', () => {
     );
   });
 
+  it('labels binary search inputs for assistive technology', () => {
+    renderAlgorithm(<BinarySearch />);
+
+    expect(screen.getByRole('slider', { name: /Array Size/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /Target Value/i })).toBeInTheDocument();
+  });
+
   it('shows an empty-array error on linear search', () => {
     renderAlgorithm(<LinearSearch />);
 
@@ -153,6 +174,13 @@ describe('core algorithm validation errors', () => {
     expect(screen.getByRole('alert')).toHaveTextContent('Array must not be empty');
   });
 
+  it('labels linear search inputs for assistive technology', () => {
+    renderAlgorithm(<LinearSearch />);
+
+    expect(screen.getByRole('textbox', { name: /Array/i })).toBeInTheDocument();
+    expect(screen.getByRole('spinbutton', { name: /Target/i })).toBeInTheDocument();
+  });
+
   it('shows an empty-array error on reverse', () => {
     renderAlgorithm(<Reverse />);
 
@@ -161,6 +189,12 @@ describe('core algorithm validation errors', () => {
     fireEvent.blur(input);
 
     expect(screen.getByRole('alert')).toHaveTextContent('Array must not be empty');
+  });
+
+  it('labels reverse input for assistive technology', () => {
+    renderAlgorithm(<Reverse />);
+
+    expect(screen.getByRole('textbox', { name: /Array/i })).toBeInTheDocument();
   });
 
   it('shows an invalid range error on swap', () => {
