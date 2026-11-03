@@ -15,9 +15,14 @@
 
 本项目是《数学与泛型编程：高效编程的奥秘》的中文配套项目，包含面向读者的交互式算法可视化 Web app。
 
-1. 本书预计由清华大学出版社出版。
+1. 已由清华大学出版社2026年10月出版。
 2. Web app 提供中英文双语界面，帮助读者逐步观察算法状态、循环不变式、复杂度和关键操作。
-3. 项目会在翻译、出版、勘误和后续重印过程中持续完善。
+3. 本项目会在翻译、出版、勘误和后续重印过程中持续完善。
+
+## 中文版封面/封底
+
+![image](https://github.com/transbot/fm2gp-Chinese/blob/main/public/%E6%95%B0%E5%AD%A6%E4%B8%8E%E6%B3%9B%E5%9E%8B%E7%BC%96%E7%A8%8B%EF%BC%9A%E9%AB%98%E6%95%88%E7%BC%96%E7%A8%8B%E7%9A%84%E5%A5%A5%E7%A7%98-%E5%B9%B3%E5%B1%95%E5%B0%81.png)
+
 
 ## 访问地址
 
@@ -169,12 +174,15 @@ src/
 <div id="english-version"></div>
 
 ## English Version
+This is the companion project for the Chinese edition of *From Mathematics to Generic Programming* by Alexander A. Stepanov and Daniel E. Rose, featuring an interactive algorithm visualization web app designed for readers.
 
-This project supports the Chinese edition of _From Mathematics to Generic Programming_ by Alexander A. Stepanov and Daniel E. Rose. It provides an interactive bilingual algorithm visualization app for readers.
+1. Published by Tsinghua University Press in October 2026.
+2. The web app provides a bilingual (English and Chinese) interface, helping readers step-by-step observe algorithm states, loop invariants, complexities, and key operations.
+3. This project will be continuously improved throughout the translation, publication, errata, and subsequent reprinting processes.
 
-1. The Chinese edition is expected to be published by Tsinghua University Press.
-2. The Web app is available in Chinese and English, helping readers inspect algorithm states, invariants, complexity, and key operations step by step.
-3. The project will continue to improve throughout translation, publication, errata, and reprint cycles.
+## Chinese Edition Cover / Back Cover
+
+![image](https://github.com/transbot/fm2gp-Chinese/blob/main/public/%E6%95%B0%E5%AD%A6%E4%B8%8E%E6%B3%9B%E5%9E%8B%E7%BC%96%E7%A8%8B%EF%BC%9A%E9%AB%98%E6%95%88%E7%BC%96%E7%A8%8B%E7%9A%84%E5%A5%A5%E7%A7%98-%E5%B9%B3%E5%B1%95%E5%B0%81.png)
 
 ## Links
 
