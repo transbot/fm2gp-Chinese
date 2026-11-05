@@ -373,7 +373,9 @@ export const eulerVisualization: AlgorithmVisualization<
   getComplexity(): ComplexityInfo {
     return {
       time: 'O(sqrt(n)) for factorization + O(log phi(n)) for exponentiation',
+      timeZh: '分解质因数 O(√n) + 求幂 O(log φ(n))',
       space: 'O(log n) for storing prime factors',
+      spaceZh: '存储质因数 O(log n)',
       worstCase: 'Factorization dominates for large n with many prime factors',
       worstCaseZh: '因式分解主导（对于有多个素因子的大的 n）',
       bestCase: 'n is prime: O(sqrt(n)) factorization + O(log(n-1)) exponentiation',

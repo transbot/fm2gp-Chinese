@@ -86,18 +86,18 @@ export function MillerRabin() {
         <div className="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
           <Link
             to="/"
-            className="touch-target flex items-center justify-center gap-2 rounded-lg bg-gray-500 px-4 py-2 text-white transition-colors hover:bg-gray-600"
+            className="learning-secondary flex items-center justify-center gap-2"
           >
             <Home className="w-4 h-4" />
             {t.backToHome}
           </Link>
-          <h1 className="min-w-0 break-words bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-2xl font-bold text-transparent sm:text-3xl">
+          <h1 className="learning-title min-w-0">
             {t.millerRabinTitle}
           </h1>
         </div>
         <button
           onClick={() => setLang(lang === 'en' ? 'zh' : 'en')}
-          className="touch-target flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-4 py-2 text-white shadow-md transition-colors hover:bg-blue-600"
+          className="learning-primary flex items-center justify-center gap-2"
         >
           <Languages className="w-4 h-4" />
           {t.language}
@@ -107,12 +107,12 @@ export function MillerRabin() {
       <p className="text-gray-600 text-lg">{t.millerRabinDescription}</p>
 
       {/* Inputs */}
-      <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6">
+      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6">
         <div className="flex-1 space-y-2">
-          <label className="block text-sm font-medium text-gray-700">{t.millerRabinNLabel || 'n (Number to test)'}</label>
+          <label className="block text-sm font-medium text-gray-700">{t.millerRabinNLabel}</label>
           <input
             type="text"
-            aria-label={t.millerRabinNLabel || 'n (Number to test)'}
+            aria-label={t.millerRabinNLabel}
             value={nInput}
             onChange={(e) => {
               setNInput(e.target.value.replace(/\D/g, ''));
@@ -123,10 +123,10 @@ export function MillerRabin() {
           />
         </div>
         <div className="flex-1 space-y-2">
-          <label className="block text-sm font-medium text-gray-700">{t.millerRabinKLabel || 'k (Number of iterations)'}</label>
+          <label className="block text-sm font-medium text-gray-700">{t.millerRabinKLabel}</label>
           <input
             type="number"
-            aria-label={t.millerRabinKLabel || 'k (Number of iterations)'}
+            aria-label={t.millerRabinKLabel}
             min="1" max="20"
             value={kInput}
             onChange={(e) => setKInput(e.target.value)}
@@ -138,7 +138,7 @@ export function MillerRabin() {
              onClick={initAlgorithm}
              className="touch-target px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-medium"
            >
-             {t.initialize || 'Initialize'}
+             {t.initialize}
            </button>
         </div>
       </div>
@@ -153,7 +153,7 @@ export function MillerRabin() {
           className="touch-target flex flex-1 items-center justify-center gap-2 rounded-xl bg-blue-500 px-6 py-3 font-bold text-white shadow-md transition-colors hover:bg-blue-600 disabled:opacity-50 sm:flex-none"
         >
           <Play className="w-5 h-5 fill-current" />
-          {t.nextStep || 'Next Step'}
+          {t.nextStep}
         </button>
       </div>
 
@@ -175,7 +175,7 @@ export function MillerRabin() {
       {/* Steps visualization */}
       {steps.length > 0 && (
         <div className="space-y-4">
-          <h3 className="text-xl font-bold border-b pb-2">{t.executionSteps || 'Execution Steps'}</h3>
+          <h3 className="text-xl font-bold border-b pb-2">{t.executionSteps}</h3>
           <div className="grid gap-3">
             <AnimatePresence>
               {steps.map((step, idx) => (
@@ -191,10 +191,10 @@ export function MillerRabin() {
                   )}
                 >
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-semibold text-gray-700 capitalize tracking-wide">{step.phase} {t.phase || 'Phase'}</span>
+                    <span className="font-semibold text-gray-700 capitalize tracking-wide">{({decomposition: {zh:'分解',en:'Decomposition'},sequence:{zh:'检验序列',en:'Test sequence'},result:{zh:'结果',en:'Result'}})[step.phase][lang]} {t.phase}</span>
                     {step.witness !== 0n && (
                       <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-mono font-bold">
-                        {t.witness || 'Witness'} a = {step.witness.toString()}
+                        {t.witness} a = {step.witness.toString()}
                       </span>
                     )}
                   </div>
@@ -202,8 +202,8 @@ export function MillerRabin() {
                   <div className="grid grid-cols-2 gap-4 font-mono text-sm mt-3">
                     {Object.entries(step.details || {}).map(([key, val]) => (
                       <div key={key} className={cn("bg-white p-2 border rounded select-all", key === 'explanation' || key === 'step' || key === 'reason' ? "col-span-2 text-lg font-bold text-indigo-700" : "")}>
-                        <span className="text-gray-500 mr-2">{key}:</span>
-                        <span className="font-bold">{val.toString()}</span>
+                        <span className="text-gray-500 mr-2">{lang==='zh' ? ({explanation:'说明',step:'步骤',reason:'原因',base:'底数',exp:'指数',mod:'模数',passCount:'通过次数'}[key] ?? key) : key}:</span>
+                        <span className="font-bold">{key==='reason' && lang==='zh' ? `未通过见证数 ${step.witness} 的米勒–拉宾测试` : val.toString()}</span>
                       </div>
                     ))}
                   </div>

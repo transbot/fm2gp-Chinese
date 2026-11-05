@@ -1,10 +1,10 @@
+import { LocalizedGraphControls } from '../common/LocalizedGraphControls';
 // src/components/algorithms/GraphTraversal.tsx
 
 import { useState, useCallback, useEffect, useMemo } from 'react';
 import ReactFlow, {
   Node,
   Edge,
-  Controls,
   Background,
   useNodesState,
   useEdgesState,
@@ -194,10 +194,10 @@ export function GraphTraversal() {
     () => ({
       ...t,
       graphTraversalNodeDuplicate: (
-        t.graphTraversalNodeDuplicate || 'Node {0} already exists'
+        t.graphTraversalNodeDuplicate
       ).replace('{0}', validationValue),
       graphTraversalEdgeDuplicate: (
-        t.graphTraversalEdgeDuplicate || 'Edge {0} already exists'
+        t.graphTraversalEdgeDuplicate
       ).replace('{0}', validationValue),
     }),
     [t, validationValue]
@@ -418,10 +418,10 @@ export function GraphTraversal() {
       algorithm={graphTraversalVisualization}
     >
       {/* Input Controls */}
-      <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4">
         {/* Algorithm selector */}
         <div className="flex items-center gap-4">
-          <label className="text-sm font-medium text-gray-700">{t.algorithmLabel || 'Algorithm'}:</label>
+          <label className="text-sm font-medium text-gray-700">{t.algorithmLabel}:</label>
           <div className="flex gap-2">
             <button
               onClick={() => setAlgorithm('bfs')}
@@ -432,7 +432,7 @@ export function GraphTraversal() {
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               )}
             >
-              {t.bfs || 'BFS'}
+              {t.bfs}
             </button>
             <button
               onClick={() => setAlgorithm('dfs')}
@@ -443,7 +443,7 @@ export function GraphTraversal() {
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               )}
             >
-              {t.dfs || 'DFS'}
+              {t.dfs}
             </button>
           </div>
         </div>
@@ -451,12 +451,12 @@ export function GraphTraversal() {
         {/* Start node selector */}
         <div className="flex items-center gap-4">
           <label className="text-sm font-medium text-gray-700">
-            {t.selectStartNode || 'Start Node'}:
+            {t.selectStartNode}:
           </label>
           <select
             value={startNode}
             onChange={(e) => setStartNode(e.target.value)}
-            aria-label={t.selectStartNode || 'Start Node'}
+            aria-label={t.selectStartNode}
             className="touch-target rounded-lg border px-3 py-2"
           >
             {nodesInput.map((node) => (
@@ -472,7 +472,7 @@ export function GraphTraversal() {
           {/* Add node */}
           <div className="space-y-2">
             <label className="block text-sm font-medium text-gray-700">
-              {t.addNode || 'Add Node'}
+              {t.addNode}
             </label>
             <div className="flex gap-2">
               <input
@@ -485,15 +485,15 @@ export function GraphTraversal() {
                 }}
                 placeholder="A"
                 maxLength={1}
-                aria-label={t.addNode || 'Add Node'}
+                aria-label={t.addNode}
                 className="touch-target w-20 rounded border px-2 py-1 text-center uppercase"
                 onKeyDown={(e) => e.key === 'Enter' && handleAddNode()}
               />
               <button
                 onClick={handleAddNode}
-                aria-label={t.addNode || 'Add Node'}
-                title={t.addNode || 'Add Node'}
-                className="touch-target flex items-center justify-center rounded bg-green-500 px-3 py-1 text-white hover:bg-green-600"
+                aria-label={t.addNode}
+                title={t.addNode}
+                className="touch-target flex items-center justify-center rounded bg-blue-600 px-3 py-1 text-white hover:bg-blue-600"
               >
                 <Plus className="w-4 h-4" />
               </button>
@@ -503,7 +503,7 @@ export function GraphTraversal() {
           {/* Add edge */}
           <div className="space-y-2">
             <label className="block text-sm font-medium text-gray-700">
-              {t.addEdge || 'Add Edge'}
+              {t.addEdge}
             </label>
             <div className="flex gap-2 items-center">
               <select
@@ -513,7 +513,7 @@ export function GraphTraversal() {
                   setValidationValue('');
                   setValidationErrorKey(null);
                 }}
-                aria-label={`${t.addEdge || 'Add Edge'} source`}
+                aria-label={`${t.addEdge} ${lang === 'zh' ? '起点' : 'source'}`}
                 className="touch-target rounded border px-2 py-1"
               >
                 <option value="">-</option>
@@ -531,7 +531,7 @@ export function GraphTraversal() {
                   setValidationValue('');
                   setValidationErrorKey(null);
                 }}
-                aria-label={`${t.addEdge || 'Add Edge'} target`}
+                aria-label={`${t.addEdge} ${lang === 'zh' ? '终点' : 'target'}`}
                 className="touch-target rounded border px-2 py-1"
               >
                 <option value="">-</option>
@@ -543,9 +543,9 @@ export function GraphTraversal() {
               </select>
               <button
                 onClick={handleAddEdge}
-                aria-label={t.addEdge || 'Add Edge'}
-                title={t.addEdge || 'Add Edge'}
-                className="touch-target flex items-center justify-center rounded bg-green-500 px-3 py-1 text-white hover:bg-green-600"
+                aria-label={t.addEdge}
+                title={t.addEdge}
+                className="touch-target flex items-center justify-center rounded bg-blue-600 px-3 py-1 text-white hover:bg-blue-600"
               >
                 <Plus className="w-4 h-4" />
               </button>
@@ -565,7 +565,7 @@ export function GraphTraversal() {
             className="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-lg hover:bg-indigo-200 transition-colors flex items-center gap-2"
           >
             <Shuffle className="w-4 h-4" />
-            {t.random || 'Random'}
+            {t.random}
           </button>
           <button
             onClick={() => {
@@ -575,15 +575,15 @@ export function GraphTraversal() {
             className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-2"
           >
             <RotateCcw className="w-4 h-4" />
-            {t.reset || 'Reset'}
+            {t.reset}
           </button>
           <button
             onClick={play}
             disabled={isPlaying || totalSteps <= 1}
-            className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 font-medium disabled:opacity-50 flex items-center gap-2"
+            className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-600 font-medium disabled:opacity-50 flex items-center gap-2"
           >
             <Play className="w-4 h-4 fill-current" />
-            {t.startSearch || 'Start'}
+            {t.startSearch}
           </button>
         </div>
       </div>
@@ -591,7 +591,7 @@ export function GraphTraversal() {
       {/* Visualization */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Graph canvas */}
-        <div className="lg:col-span-2 bg-white rounded-2xl shadow-sm border border-gray-100 h-[400px]">
+        <div className="lg:col-span-2 bg-white rounded-xl shadow-sm border border-gray-100 h-[400px]">
           <ReactFlow
             nodes={nodes}
             edges={edges}
@@ -604,7 +604,7 @@ export function GraphTraversal() {
             proOptions={{ hideAttribution: true }}
           >
             <Background />
-            <Controls />
+            <LocalizedGraphControls />
           </ReactFlow>
         </div>
 
@@ -613,12 +613,12 @@ export function GraphTraversal() {
           {/* Queue/Stack panel */}
           <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
             <h3 className="text-sm font-medium text-gray-700 mb-2">
-              {algorithm === 'bfs' ? (t.queue || 'Queue') : (t.stack || 'Stack')}
+              {algorithm === 'bfs' ? (t.queue) : (t.stack)}
             </h3>
             <div className="flex flex-wrap gap-1 min-h-[40px]">
               {currentState.queueOrStack.length === 0 ? (
                 <span className="text-gray-400 text-sm">
-                  {t.empty || '(empty)'}
+                  {t.empty}
                 </span>
               ) : (
                 currentState.queueOrStack.map((nodeId, index) => (
@@ -636,12 +636,12 @@ export function GraphTraversal() {
           {/* Visited order panel */}
           <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
             <h3 className="text-sm font-medium text-gray-700 mb-2">
-              {t.visited || 'Visited Order'}
+              {t.visited}
             </h3>
             <div className="flex flex-wrap gap-1 min-h-[40px]">
               {currentState.visitedOrder.length === 0 ? (
                 <span className="text-gray-400 text-sm">
-                  {t.none || '(none)'}
+                  {t.none}
                 </span>
               ) : (
                 currentState.visitedOrder.map((nodeId, index) => (
@@ -660,7 +660,7 @@ export function GraphTraversal() {
           {currentState.currentNode && (
             <div className="bg-yellow-50 p-4 rounded-xl border border-yellow-200">
               <h3 className="text-sm font-medium text-yellow-800 mb-1">
-                {t.currentNode || 'Current Node'}
+                {t.currentNode}
               </h3>
               <span className="text-2xl font-bold text-yellow-600">
                 {currentState.currentNode}
@@ -673,7 +673,7 @@ export function GraphTraversal() {
       {/* Node/Edge list for removal */}
       <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
         <h3 className="text-sm font-medium text-gray-700 mb-2">
-          {t.editGraph || 'Edit Graph'}
+          {t.editGraph}
         </h3>
         <div className="flex flex-wrap gap-2">
           {nodesInput.map((node) => (
@@ -720,7 +720,7 @@ export function GraphTraversal() {
         stepDescription={
           currentStepData
             ? graphTraversalVisualization.describeStep(currentStepData, lang)
-            : t.graphTraversalReady || 'Ready to start graph traversal.'
+            : t.graphTraversalReady
         }
         invariant={graphTraversalVisualization.getInvariant?.(lang)}
         complexity={graphTraversalVisualization.getComplexity()}

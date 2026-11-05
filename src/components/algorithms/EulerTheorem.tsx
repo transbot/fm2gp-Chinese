@@ -306,7 +306,7 @@ export function EulerTheorem() {
       algorithm={eulerVisualization}
     >
       {/* Input Controls */}
-      <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Base a input */}
           <div className="space-y-2">
@@ -356,21 +356,21 @@ export function EulerTheorem() {
             className="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
           >
             <RotateCcw className="w-4 h-4" />
-            {t.reset || 'Reset'}
+            {t.reset}
           </button>
           <button
             onClick={play}
             disabled={isPlaying || totalSteps <= 1}
-            className="touch-target flex items-center gap-2 rounded-lg bg-green-500 px-6 py-2 font-medium text-white hover:bg-green-600 disabled:opacity-50"
+            className="touch-target flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-medium text-white hover:bg-blue-600 disabled:opacity-50"
           >
             <Play className="w-4 h-4 fill-current" />
-            {t.startCalculation || 'Start Calculation'}
+            {t.startCalculation}
           </button>
         </div>
       </div>
 
       {/* Visualization */}
-      <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200 space-y-6">
+      <div className="bg-gray-50 rounded-xl p-6 border border-gray-200 space-y-6">
         {/* Current values display */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div className="bg-white rounded-lg p-4 border border-gray-200">
@@ -454,7 +454,7 @@ export function EulerTheorem() {
         stepDescription={
           currentStepData
             ? eulerVisualization.describeStep(currentStepData, lang)
-            : t.eulerReady || 'Ready to verify Euler\'s theorem. Enter base and modulus.'
+            : t.eulerReady
         }
         invariant={eulerVisualization.getInvariant?.(lang)}
         complexity={eulerVisualization.getComplexity()}

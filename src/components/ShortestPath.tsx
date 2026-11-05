@@ -61,23 +61,23 @@ export function ShortestPath() {
     <div className="safe-app-x safe-app-bottom max-w-6xl mx-auto py-4 sm:py-6 space-y-6">
       <header className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex min-w-0 flex-col gap-3 sm:flex-row sm:items-center">
-          <Link to="/" className="touch-target flex shrink-0 items-center justify-center gap-2 rounded-lg bg-gray-500 px-4 py-2 text-white hover:bg-gray-600"><Home size={16} />{t.backToHome}</Link>
-          <h1 className="text-2xl sm:text-3xl font-bold text-slate-900">{t.shortestPathTitle}</h1>
+          <Link to="/" className="learning-secondary flex shrink-0 items-center justify-center gap-2"><Home size={16} />{t.backToHome}</Link>
+          <h1 className="learning-title min-w-0">{t.shortestPathTitle}</h1>
         </div>
         <button onClick={() => setLang(zh ? 'en' : 'zh')} className="touch-target flex shrink-0 items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"><Languages size={16} />{t.language}</button>
       </header>
 
-      <section className="rounded-2xl bg-slate-900 p-5 sm:p-7 text-white">
-        <p className="text-xs font-semibold uppercase tracking-widest text-blue-200">{zh ? '第 8.6 节 · 从路线出发理解矩阵' : 'Section 8.6 · Routes first, matrices next'}</p>
+      <section className="learning-intro">
+        <p className="text-xs font-semibold uppercase tracking-widest text-blue-700">{zh ? '第 8.6 节 · 从路线出发理解矩阵' : 'Section 8.6 · Routes first, matrices next'}</p>
         <h2 className="mt-3 text-2xl font-bold">{zh ? '接起来用加法，选路线取最小值。' : 'Add along a route. Take the minimum across routes.'}</h2>
-        <p className="mt-3 max-w-3xl leading-relaxed text-slate-200">{zh ? '先追踪一对起终点：每前进一步，就多允许走一条边。看看哪些新路线能到达终点，再比较它们的总距离。' : 'Follow one start and destination. Each step allows one more edge: see which new routes reach the destination, then compare their total lengths.'}</p>
+        <p className="mt-3 max-w-3xl leading-relaxed text-gray-700">{zh ? '先追踪一对起终点：每前进一步，就多允许走一条边。看看哪些新路线能到达终点，再比较它们的总距离。' : 'Follow one start and destination. Each step allows one more edge: see which new routes reach the destination, then compare their total lengths.'}</p>
         <div className="mt-4 flex flex-wrap gap-2">
-          <button onClick={() => example(5, 2)} className="touch-target rounded-lg border border-slate-500 bg-slate-800 px-3 py-2 text-sm hover:bg-slate-700">{zh ? '例 1：A → F，比较两条路线' : 'Example 1: A → F, compare two routes'}</button>
-          <button onClick={() => example(6, 3)} className="touch-target rounded-lg border border-slate-500 bg-slate-800 px-3 py-2 text-sm hover:bg-slate-700">{zh ? '例 2：A → G，需要三条边' : 'Example 2: A → G, three edges needed'}</button>
+          <button onClick={() => example(5, 2)} className="learning-secondary text-sm">{zh ? '例 1：A → F，比较两条路线' : 'Example 1: A → F, compare two routes'}</button>
+          <button onClick={() => example(6, 3)} className="learning-secondary text-sm">{zh ? '例 2：A → G，需要三条边' : 'Example 2: A → G, three edges needed'}</button>
         </div>
       </section>
 
-      <section className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-6 space-y-4">
+      <section className="rounded-xl border border-slate-200 bg-white p-4 sm:p-6 space-y-4">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="flex items-center gap-3">
             <label className="text-sm font-semibold text-slate-600">{zh ? '起点' : 'Start'}
@@ -115,7 +115,7 @@ export function ShortestPath() {
       </section>
 
       <div id="route-explorer" className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-start">
-        <section className="min-w-0 rounded-2xl border border-slate-200 bg-white p-4 sm:p-6">
+        <section className="min-w-0 rounded-xl border border-slate-200 bg-white p-4 sm:p-6">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <h2 className="text-lg font-bold text-slate-900">{zh ? '① 在图上看路线' : '① Follow the route'}</h2>
             <span className="text-xs text-slate-500">{zh ? '箭头表示方向 · 数字是路段长度' : 'Arrows: direction · Numbers: edge lengths'}</span>
@@ -129,7 +129,7 @@ export function ShortestPath() {
           <p className="mt-3 text-xs text-slate-500">{zh ? '蓝色节点是起点，深色节点是终点；点击候选路线，图中的高亮会随之改变。' : 'Blue vertex: start; dark vertex: destination. Select an alternative to change the highlighted route.'}</p>
         </section>
 
-        <section className="min-w-0 rounded-2xl border border-slate-200 bg-white p-4 sm:p-6">
+        <section className="min-w-0 rounded-xl border border-slate-200 bg-white p-4 sm:p-6">
           <h2 className="text-lg font-bold text-slate-900">{zh ? '② 接起来，再比较' : '② Join, then compare'}</h2>
           <div className="mt-4 flex items-center justify-between gap-4 rounded-xl bg-blue-50 p-4">
             <div><p className="font-semibold text-slate-800">{nodeLabel(from)} → {nodeLabel(to)}</p><p className="text-xs mt-1 text-slate-600">{zh ? `最多 ${power} 条边的最短距离` : `Shortest distance with at most ${power} edges`}</p></div>
@@ -161,7 +161,7 @@ export function ShortestPath() {
         </section>
       </div>
 
-      <section className="min-w-0 rounded-2xl border border-slate-200 bg-white p-4 sm:p-6">
+      <section className="min-w-0 rounded-xl border border-slate-200 bg-white p-4 sm:p-6">
         <h2 className="text-lg font-bold text-slate-900">{zh ? '③ 把所有起终点的答案放进一张表' : '③ Put every pair’s answer in one table'}</h2>
         <p className="mt-2 text-sm leading-6 text-slate-600">{zh ? `行是起点，列是终点。蓝框选中 ${nodeLabel(from)} → ${nodeLabel(to)}；浅绿色表示比上一次幂变短的格子。点击任一格子，就能查看它在图上对应的路线。` : `Rows are starts; columns are destinations. The blue outline selects ${nodeLabel(from)} → ${nodeLabel(to)}. Pale green marks a decrease from the previous power. Select any cell to inspect its route on the graph.`}</p>
         {previous && <p className="my-3 text-sm font-mono text-slate-700">D{powers[power - 1]}[{nodeLabel(from)}, {nodeLabel(to)}] = minₖ (D{powers[power - 2]}[{nodeLabel(from)}, k] + D[k, {nodeLabel(to)}])</p>}

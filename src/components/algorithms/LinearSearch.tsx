@@ -169,16 +169,16 @@ export function LinearSearch() {
       algorithm={linearSearchVisualization}
     >
       {/* Input Controls */}
-      <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Array input */}
           <div className="space-y-2">
             <label className="block text-sm font-medium text-gray-700">
-              {t.array || 'Array'} ({t.commaSeparated || 'comma-separated'})
+              {t.array} ({t.commaSeparated})
             </label>
             <input
               type="text"
-              aria-label={t.array || 'Array'}
+              aria-label={t.array}
               value={arrayInput}
               onChange={(e) => {
                 setArrayInput(e.target.value);
@@ -192,11 +192,11 @@ export function LinearSearch() {
           {/* Target input */}
           <div className="space-y-2">
             <label className="block text-sm font-medium text-gray-700">
-              {t.target || 'Target'}
+              {t.target}
             </label>
             <input
               type="number"
-              aria-label={t.target || 'Target'}
+              aria-label={t.target}
               value={targetInput}
               onChange={(e) => {
                 setTargetInput(e.target.value);
@@ -220,7 +220,7 @@ export function LinearSearch() {
             className="touch-target flex items-center gap-2 rounded-lg bg-indigo-100 px-4 py-2 text-indigo-700 transition-colors hover:bg-indigo-200"
           >
             <Shuffle className="w-4 h-4" />
-            {t.random || 'Random'}
+            {t.random}
           </button>
           <button
             onClick={() => {
@@ -230,21 +230,21 @@ export function LinearSearch() {
             className="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
           >
             <RotateCcw className="w-4 h-4" />
-            {t.reset || 'Reset'}
+            {t.reset}
           </button>
           <button
             onClick={play}
             disabled={isPlaying || totalSteps <= 1}
-            className="touch-target flex items-center gap-2 rounded-lg bg-green-500 px-6 py-2 font-medium text-white hover:bg-green-600 disabled:opacity-50"
+            className="touch-target flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-medium text-white hover:bg-blue-600 disabled:opacity-50"
           >
             <Play className="w-4 h-4 fill-current" />
-            {t.startSearch || 'Start Search'}
+            {t.startSearch}
           </button>
         </div>
       </div>
 
       {/* Visualization */}
-      <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200 space-y-4">
+      <div className="bg-gray-50 rounded-xl p-6 border border-gray-200 space-y-4">
         {/* Array display */}
         <div className="flex flex-wrap justify-center gap-2">
           {currentState.array.map((value, index) => (
@@ -263,14 +263,14 @@ export function LinearSearch() {
 
         {/* Target display */}
         <div className="text-center">
-          <span className="text-sm text-gray-500">{t.searchingFor || 'Searching for'}: </span>
+          <span className="text-sm text-gray-500">{t.searchingFor}: </span>
           <span className="font-mono font-bold text-blue-600">{currentState.target}</span>
         </div>
 
         {/* Progress indicator */}
         {currentState.comparisons > 0 && (
           <div className="text-center text-sm text-gray-600">
-            {t.comparisons || 'Comparisons'}: {currentState.comparisons}
+            {t.comparisons}: {currentState.comparisons}
           </div>
         )}
       </div>
@@ -294,7 +294,7 @@ export function LinearSearch() {
         stepDescription={
           currentStepData
             ? linearSearchVisualization.describeStep(currentStepData, lang)
-            : t.linearSearchReady || 'Ready to start linear search.'
+            : t.linearSearchReady
         }
         invariant={linearSearchVisualization.getInvariant?.(lang)}
         complexity={linearSearchVisualization.getComplexity()}

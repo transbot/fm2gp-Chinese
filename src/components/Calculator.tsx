@@ -77,19 +77,19 @@ export function Calculator() {
         <div className="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
           <Link
             to="/"
-            className="touch-target flex items-center justify-center gap-2 rounded-lg bg-gray-500 px-4 py-2 text-white transition-colors hover:bg-gray-600"
+            className="learning-secondary flex items-center justify-center gap-2"
           >
             <Home className="w-4 h-4" />
             {t.backToHome}
           </Link>
-          <h1 className="flex min-w-0 items-center gap-3 break-words text-2xl font-bold sm:text-3xl">
+          <h1 className="learning-title min-w-0">
             <CalculatorIcon className="w-8 h-8" />
             {t.title}
           </h1>
         </div>
         <button
           onClick={() => setLang(lang === 'en' ? 'zh' : 'en')}
-          className="touch-target flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-4 py-2 text-white transition-colors hover:bg-blue-600"
+          className="learning-primary flex items-center justify-center gap-2"
         >
           <Languages className="w-4 h-4" />
           {t.language}
@@ -138,7 +138,7 @@ export function Calculator() {
       <div className="flex flex-wrap gap-3 sm:gap-4">
         <button
           onClick={calculate}
-          className="touch-target px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
+          className="touch-target px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-600 transition-colors"
         >
           {t.calculate}
         </button>

@@ -1,0 +1,44 @@
+import { useEffect } from 'react';
+import { Link, useLocation, useSearchParams } from 'react-router-dom';
+import { useLanguage } from '../../context/LanguageContext';
+import { algorithmCatalog } from '../../data/algorithmCatalog';
+import { algorithmBookLink, conceptLessons, bookResources, repoFile } from '../../data/bookCatalog';
+import { bookLearningPath } from '../../data/bookLearningPath';
+import { translations } from '../../i18n/translations';
+import { AlgorithmNavigation } from './AlgorithmNavigation';
+const positions = new Map<string, number>();
+export function ReaderNavigation() {
+    const location = useLocation(), [params] = useSearchParams(), { lang } = useLanguage(), zh = lang === 'zh';
+    const algorithm = algorithmCatalog.find(a => a.path === location.pathname), lesson = conceptLessons.find(l => l.path === location.pathname);
+    const positionKey = location.pathname + location.search;
+    useEffect(() => {
+        const timer = requestAnimationFrame(() => {
+            const target = location.hash ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
+            if (target)
+                target.scrollIntoView();
+            else
+                window.scrollTo(0, positions.get(positionKey) ?? 0);
+        });
+        return () => { cancelAnimationFrame(timer); positions.set(positionKey, window.scrollY); };
+    }, [positionKey, location.hash]);
+    if (!algorithm && !lesson)
+        return null;
+    const route = params.get('route');
+    const sequence = route === 'book' ? bookLearningPath.map(s => algorithmCatalog.find(a => a.id === s.id)!.path) : route === 'concepts' ? ['/concepts/algebra', '/power', '/concepts/matrices', '/shortest-path', '/concepts/iterators'] : [];
+    const index = sequence.indexOf(location.pathname);
+    const rawFrom = params.get('from');
+    const from = rawFrom?.startsWith('/book') ? rawFrom : algorithm ? algorithmBookLink(algorithm.id) : `/book/${lesson!.sections[0].split('.')[0]}`;
+    const withContext = (path: string) => `${path}?${new URLSearchParams({ ...route ? { route } : {}, ...from ? { from } : {} })}`;
+    const prerequisite = lesson?.prerequisite ?? (algorithm?.id === 'fast-fibonacci' ? '/power' : algorithm?.id === 'shortest-path' ? '/concepts/matrices' : algorithm?.id === 'binary-search' ? '/concepts/iterators' : undefined);
+    return <aside className="learning-shell max-w-6xl" aria-label={zh ? '学习导航' : 'Learning navigation'}><nav className="learning-card !space-y-0 flex flex-wrap gap-4">
+    {from && <Link className="learning-link" to={from}>{zh ? '返回来源章节／习题' : 'Return to source section / exercise'}</Link>}
+    {prerequisite && <Link className="learning-link" to={prerequisite}>{zh ? '建议先学：相关概念' : 'Learn first: prerequisite concepts'}</Link>}
+    {index > 0 && <Link className="learning-link" to={withContext(sequence[index - 1])}>{zh ? '本路线上一站' : 'Previous stop on this route'}</Link>}
+    {index >= 0 && index < sequence.length - 1 && <Link className="learning-link" to={withContext(sequence[index + 1])}>{zh ? '本路线下一站' : 'Next stop on this route'}</Link>}
+    <Link className="learning-link" to="/book/A">{zh ? '记法速查' : 'Notation'}</Link>
+    <Link className="learning-link" to="/book/B">{zh ? '证明方法' : 'Proof techniques'}</Link>
+    <Link className="learning-link" to="/book/C">{zh ? 'C++语法' : 'C++ syntax'}</Link>
+    {bookResources.filter(r => r.kind === 'code' && r.chapter === (lesson?.sections[0].split('.')[0] ?? algorithm?.source.section?.split('.')[0]) && r.path.endsWith('.h')).map(r => <a key={r.path} className="learning-link" href={repoFile(r.path)}>{zh ? '配套代码：' : 'Companion code: '}{r.path.split('/').pop()}</a>)}
+    {algorithm && <span className="text-sm text-gray-500">{translations[lang][algorithm.titleKey]}</span>}
+  </nav>{algorithm && !sequence.length && <AlgorithmNavigation algorithmId={algorithm.id} lang={lang}/>}</aside>;
+}

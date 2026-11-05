@@ -60,6 +60,8 @@ export interface AnimationSpec {
 
 /** Complexity information */
 export interface ComplexityInfo {
+  timeZh?: string;
+  spaceZh?: string;
   time: string;
   space: string;
   worstCase?: string;

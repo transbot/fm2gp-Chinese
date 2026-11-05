@@ -74,6 +74,7 @@ function getSearchQueryVariants(query: string, lang: Language): string[] {
   return Array.from(new Set([
     query,
     query.replace(/质数/g, '素数'),
+    query.replace(/二叉/g, '二分'),
     query.replace(/素数/g, '质数'),
   ]));
 }
@@ -898,6 +899,7 @@ export function searchAlgorithms(options: AlgorithmSearchOptions): AlgorithmCata
 
       const searchableText = [
         item.id,
+        item.source.section ?? "",
         item.path,
         item.titleKey,
         translations.en[item.titleKey] ?? '',

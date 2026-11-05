@@ -131,17 +131,17 @@ export function Division() {
             />
           </div>
           <div className="text-center text-sm text-gray-600">
-            {t.progress || 'Progress'}: {quotient} / {totalSubtractions} ({Math.round((quotient / totalSubtractions) * 100)}%)
+            {t.progress}: {quotient} / {totalSubtractions} ({Math.round((quotient / totalSubtractions) * 100)}%)
           </div>
           {/* Summary */}
           <div className="flex justify-center gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-green-600">{quotient}</div>
-              <div className="text-xs text-gray-500">{t.timesSubtracted || 'times subtracted'}</div>
+              <div className="text-xs text-gray-500">{t.timesSubtracted}</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-blue-600">{remainder}</div>
-              <div className="text-xs text-gray-500">{t.remaining || 'remaining'}</div>
+              <div className="text-xs text-gray-500">{t.remaining}</div>
             </div>
           </div>
         </div>
@@ -194,7 +194,7 @@ export function Division() {
               </div>
             )}
           </div>
-          <span className="text-xs text-gray-500">{t.remainder || 'Remainder'}</span>
+          <span className="text-xs text-gray-500">{t.remainder}</span>
         </div>
       );
     }
@@ -210,15 +210,15 @@ export function Division() {
       algorithm={divisionVisualization}
     >
       {/* Input Controls */}
-      <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Dividend input */}
           <div className="space-y-2">
             <label className="block text-sm font-medium text-gray-700">
-              {t.dividend || 'Dividend'}
+              {t.dividend}
             </label>
             <input
-              aria-label={t.dividend || 'Dividend'}
+              aria-label={t.dividend}
               type="number"
               min="0"
               max="1000000"
@@ -233,10 +233,10 @@ export function Division() {
           {/* Divisor input */}
           <div className="space-y-2">
             <label className="block text-sm font-medium text-gray-700">
-              {t.divisor || 'Divisor'}
+              {t.divisor}
             </label>
             <input
-              aria-label={t.divisor || 'Divisor'}
+              aria-label={t.divisor}
               type="number"
               min="1"
               value={divisorInput}
@@ -260,37 +260,37 @@ export function Division() {
             className="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
           >
             <RotateCcw className="w-4 h-4" />
-            {t.reset || 'Reset'}
+            {t.reset}
           </button>
           <button
             onClick={play}
             disabled={isPlaying || totalSteps <= 1}
-            className="touch-target flex items-center gap-2 rounded-lg bg-green-500 px-6 py-2 font-medium text-white hover:bg-green-600 disabled:opacity-50"
+            className="touch-target flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-medium text-white hover:bg-blue-600 disabled:opacity-50"
           >
             <Play className="w-4 h-4 fill-current" />
-            {t.startCalculation || 'Start Calculation'}
+            {t.startCalculation}
           </button>
         </div>
       </div>
 
       {/* Visualization */}
-      <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200 space-y-6">
+      <div className="bg-gray-50 rounded-xl p-6 border border-gray-200 space-y-6">
         {/* Current values display */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div className="bg-white rounded-lg p-4 border border-gray-200">
-            <div className="text-xs text-gray-500 mb-1">{t.dividend || 'Dividend'}</div>
+            <div className="text-xs text-gray-500 mb-1">{t.dividend}</div>
             <div className="text-2xl font-bold text-gray-800 font-mono">{currentState.dividend}</div>
           </div>
           <div className="bg-white rounded-lg p-4 border border-gray-200">
-            <div className="text-xs text-gray-500 mb-1">{t.divisor || 'Divisor'}</div>
+            <div className="text-xs text-gray-500 mb-1">{t.divisor}</div>
             <div className="text-2xl font-bold text-gray-800 font-mono">{currentState.divisor}</div>
           </div>
           <div className="bg-white rounded-lg p-4 border border-gray-200">
-            <div className="text-xs text-gray-500 mb-1">{t.quotient || 'Quotient'}</div>
+            <div className="text-xs text-gray-500 mb-1">{t.quotient}</div>
             <div className="text-2xl font-bold text-green-600 font-mono">{currentState.quotient}</div>
           </div>
           <div className="bg-white rounded-lg p-4 border border-gray-200">
-            <div className="text-xs text-gray-500 mb-1">{t.remainder || 'Remainder'}</div>
+            <div className="text-xs text-gray-500 mb-1">{t.remainder}</div>
             <div className="text-2xl font-bold text-blue-600 font-mono">{currentState.remainder}</div>
           </div>
         </div>
@@ -312,13 +312,13 @@ export function Division() {
         {currentState.step > 0 && (
           <div className="bg-white rounded-lg p-4 border border-gray-200">
             <div className="text-xs text-gray-500 mb-3 text-center">
-              {t.subtractionProcess || 'Subtraction Process'}
+              {t.subtractionProcess}
             </div>
             <div className="flex flex-wrap justify-center gap-4">
               {renderVisualBlocks()}
             </div>
             <div className="text-center mt-4 text-sm text-gray-600">
-              {t.subtract || 'Subtracted'} {currentState.quotient} {t.times || 'times'}
+              {t.subtract} {currentState.quotient} {t.times}
             </div>
           </div>
         )}
@@ -326,7 +326,7 @@ export function Division() {
         {/* Step indicator */}
         {currentState.step > 0 && (
           <div className="text-center text-sm text-gray-600">
-            {t.step || 'Step'}: {currentState.step}
+            {t.step}: {currentState.step}
           </div>
         )}
       </div>
@@ -350,7 +350,7 @@ export function Division() {
         stepDescription={
           currentStepData
             ? divisionVisualization.describeStep(currentStepData, lang)
-            : t.divisionReady || 'Ready to start division. Enter dividend and divisor.'
+            : t.divisionReady
         }
         invariant={divisionVisualization.getInvariant?.(lang)}
         complexity={divisionVisualization.getComplexity()}

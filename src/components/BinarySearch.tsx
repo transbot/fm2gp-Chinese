@@ -172,18 +172,18 @@ export function BinarySearch() {
         <div className="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
           <Link
             to="/"
-            className="touch-target flex items-center justify-center gap-2 rounded-lg bg-gray-500 px-4 py-2 text-white transition-colors hover:bg-gray-600"
+            className="learning-secondary flex items-center justify-center gap-2"
           >
             <Home className="w-4 h-4" />
             {t.backToHome}
           </Link>
-          <h1 className="min-w-0 max-w-[18rem] break-words bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-2xl font-bold text-transparent sm:max-w-none sm:text-3xl">
-            {t.binarySearchTitle || 'Binary Search'}
+          <h1 className="learning-title min-w-0">
+            {t.binarySearchTitle}
           </h1>
         </div>
         <button
           onClick={() => setLang(lang === 'en' ? 'zh' : 'en')}
-          className="touch-target flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-4 py-2 text-white shadow-md transition-colors hover:bg-blue-600"
+          className="learning-primary flex items-center justify-center gap-2"
         >
           <Languages className="w-4 h-4" />
           {t.language}
@@ -191,11 +191,11 @@ export function BinarySearch() {
       </div>
 
       <p className="text-gray-600 text-lg">
-        {t.binarySearchDescription || 'Section 10.8 - Visualizing the Binary Search algorithm and proving the Binary Search Lemma (Lemma 10.1).'}
+        {t.binarySearchDescription}
       </p>
 
       {/* Controls */}
-      <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-wrap gap-4 items-end">
+      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-wrap gap-4 items-end">
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">{t.arraySizeLabel} ({arraySize})</label>
           <input 
@@ -235,22 +235,22 @@ export function BinarySearch() {
              disabled={isSorted || isPlaying}
              className="touch-target flex items-center gap-2 rounded-lg bg-indigo-600 px-6 py-2 font-medium text-white hover:bg-indigo-700 disabled:opacity-50"
            >
-             {isSorted ? t.sortedLabel || 'Sorted' : t.sortArray || 'Sort Array'}
+             {isSorted ? t.sortedLabel : t.sortArray}
            </button>
 
            <button 
              onClick={handleSearch}
              disabled={isPlaying}
-             className="touch-target flex items-center gap-2 rounded-lg bg-green-500 px-6 py-2 font-medium text-white hover:bg-green-600 disabled:opacity-50"
+             className="touch-target flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-medium text-white hover:bg-blue-600 disabled:opacity-50"
            >
-             <Play className="w-4 h-4 fill-current"/> {t.startSearch || 'Start Binary Search'}
+             <Play className="w-4 h-4 fill-current"/> {t.startSearch}
            </button>
 
            <button 
              onClick={generateArray}
              disabled={isPlaying}
              className="touch-target rounded-lg bg-gray-200 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-300 disabled:opacity-50"
-             title={t.regenerateArray || 'Regenerate Array'}
+             title={t.regenerateArray}
            >
              <RotateCcw className="w-5 h-5"/>
            </button>
@@ -261,13 +261,13 @@ export function BinarySearch() {
       </div>
 
       {/* Visualizer */}
-      <div className="bg-gray-50 rounded-2xl p-6 h-64 border border-gray-200 flex items-end justify-center gap-1 overflow-hidden relative shadow-inner">
+      <div className="bg-gray-50 rounded-xl p-6 h-64 border border-gray-200 flex items-end justify-center gap-1 overflow-hidden relative shadow-inner">
         {/* Phase Overlay */}
         {searchPhase !== 'idle' && (
            <div className="absolute top-4 left-6 bg-white/80 backdrop-blur px-4 py-2 rounded-lg shadow-sm font-mono text-sm border font-bold text-gray-700">
-             {searchPhase === 'finding_lower' && `${t.findingLowerBound || ''}${targetVal}...`}
-             {searchPhase === 'finding_upper' && `${t.findingUpperBound || ''}${targetVal}...`}
-             {searchPhase === 'done' && (t.searchComplete || 'Search Complete! Lemma Partition Applied.')}
+             {searchPhase === 'finding_lower' && `${t.findingLowerBound}${targetVal}...`}
+             {searchPhase === 'finding_upper' && `${t.findingUpperBound}${targetVal}...`}
+             {searchPhase === 'done' && (t.searchComplete)}
            </div>
         )}
 
@@ -296,7 +296,7 @@ export function BinarySearch() {
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 items-center"
+          className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 items-center"
         >
           <div className="flex-1 space-y-4 w-full">
             <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-gray-600">{t.lemmaVisualized}</h3>

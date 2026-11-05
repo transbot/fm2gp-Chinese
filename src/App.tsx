@@ -1,3 +1,4 @@
+import { ReaderNavigation } from './components/common/ReaderNavigation';
 import { lazy, Suspense } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
@@ -41,6 +42,11 @@ const FermatTheorem = lazy(() => import('./components/algorithms/FermatTheorem')
 const MergeSort = lazy(() => import('./components/algorithms/MergeSort').then((module) => ({ default: module.MergeSort })));
 const HeapOperations = lazy(() => import('./components/algorithms/HeapOperations').then((module) => ({ default: module.HeapOperations })));
 
+const Book = lazy(() => import('./pages/Book').then(m=>({default:m.Book})));
+const Algebra = lazy(() => import('./components/concepts/Algebra').then(m=>({default:m.Algebra})));
+const Matrices = lazy(() => import('./components/concepts/Matrices').then(m=>({default:m.Matrices})));
+const Iterators = lazy(() => import('./components/concepts/Iterators').then(m=>({default:m.Iterators})));
+
 function RouteLoadingFallback() {
   const { lang } = useLanguage();
   const t = translations[lang];
@@ -60,6 +66,11 @@ function AppRoutes() {
       <Suspense fallback={<RouteLoadingFallback />}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/book" element={<Book />} />
+          <Route path="/book/:chapterId" element={<Book />} />
+          <Route path="/concepts/algebra" element={<Algebra />} />
+          <Route path="/concepts/matrices" element={<Matrices />} />
+          <Route path="/concepts/iterators" element={<Iterators />} />
           <Route path={getAlgorithmPath('multiply')} element={<Calculator />} />
           <Route path={getAlgorithmPath('sieve')} element={<Sieve />} />
           <Route path={getAlgorithmPath('prime-counting')} element={<PrimeCounting />} />
@@ -97,6 +108,7 @@ function AppRoutes() {
           <Route path={getAlgorithmPath('heap')} element={<HeapOperations />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+        <ReaderNavigation />
       </Suspense>
     </BrowserRouter>
   );

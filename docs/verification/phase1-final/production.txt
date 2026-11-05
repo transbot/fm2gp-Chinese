@@ -1,0 +1,1 @@
+PASS: 22 routes × 2 languages × 2 widths: direct open, reload, back/forward; searches, anchors, local resource targets and page-number absence.

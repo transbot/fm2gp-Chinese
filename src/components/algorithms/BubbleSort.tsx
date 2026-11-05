@@ -172,7 +172,7 @@ export function BubbleSort() {
           <button
             onClick={play}
             disabled={isPlaying || totalSteps <= 1}
-            className="touch-target flex items-center gap-2 rounded-lg bg-green-500 px-6 py-2 font-medium text-white hover:bg-green-600 disabled:opacity-50"
+            className="touch-target flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-medium text-white hover:bg-blue-600 disabled:opacity-50"
           >
             <Play className="w-4 h-4 fill-current" />
             {t.startSort}

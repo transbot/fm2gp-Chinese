@@ -89,18 +89,18 @@ export function ExtendedGcd() {
         <div className="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
           <Link
             to="/"
-            className="touch-target flex items-center justify-center gap-2 rounded-lg bg-gray-500 px-4 py-2 text-white transition-colors hover:bg-gray-600"
+            className="learning-secondary flex items-center justify-center gap-2"
           >
             <Home className="w-4 h-4" />
             {t.backToHome}
           </Link>
-          <h1 className="min-w-0 break-words bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-2xl font-bold text-transparent sm:text-3xl">
+          <h1 className="learning-title min-w-0">
             {t.extendedGcdTitle}
           </h1>
         </div>
         <button
           onClick={() => setLang(lang === 'en' ? 'zh' : 'en')}
-          className="touch-target flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-4 py-2 text-white shadow-md transition-colors hover:bg-blue-600"
+          className="learning-primary flex items-center justify-center gap-2"
         >
           <Languages className="w-4 h-4" />
           {t.language}
@@ -110,7 +110,7 @@ export function ExtendedGcd() {
       <p className="text-gray-600 text-lg">{t.extendedGcdDescription}</p>
 
       {/* Inputs */}
-      <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6">
+      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6">
         <div className="flex-1 space-y-2">
           <label className="block text-sm font-medium text-gray-700">a</label>
           <input 
@@ -154,7 +154,7 @@ export function ExtendedGcd() {
              onClick={initAlgorithm}
              className="touch-target px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-medium"
            >
-             Initialize
+             {t.initialize}
            </button>
         </div>
       </div>
@@ -168,7 +168,7 @@ export function ExtendedGcd() {
           className="touch-target flex flex-1 items-center justify-center gap-2 rounded-xl bg-blue-500 px-6 py-3 font-bold text-white shadow-md transition-colors hover:bg-blue-600 disabled:opacity-50 sm:flex-none"
         >
           <Play className="w-5 h-5 fill-current" />
-          Next Step
+          {t.nextStep}
         </button>
       </div>
 
@@ -179,7 +179,7 @@ export function ExtendedGcd() {
           className="p-6 rounded-xl border-2 text-center text-xl font-black shadow-inner bg-green-100 text-green-800 border-green-300"
         >
           GCD = {resultMsg.gcd.toString()}<br/>
-          Bézout's Identity: ({aInput})×({resultMsg.x.toString()}) + ({bInput})×({resultMsg.y.toString()}) = {resultMsg.gcd.toString()}
+          {t.bezoutIdentity}: ({aInput})×({resultMsg.x.toString()}) + ({bInput})×({resultMsg.y.toString()}) = {resultMsg.gcd.toString()}
         </motion.div>
       )}
 
@@ -225,7 +225,7 @@ export function ExtendedGcd() {
           <table className="w-full text-left font-mono text-sm leading-relaxed">
             <thead className="bg-gray-100">
               <tr>
-                <th className="p-2">Action</th>
+                <th className="p-2">{t.actionLabel}</th>
                 <th className="p-2">u</th><th className="p-2">v</th>
                 <th className="p-2">A (x1)</th><th className="p-2">B (x2)</th>
                 <th className="p-2">C (y1)</th><th className="p-2">D (y2)</th>
@@ -235,7 +235,7 @@ export function ExtendedGcd() {
               <AnimatePresence>
                 {binSteps.map((s, i) => (
                   <motion.tr key={i} initial={{opacity: 0}} animate={{opacity: 1}} className="border-t">
-                    <td className="p-2 text-indigo-600 font-bold">{s.action}</td>
+                    <td className="p-2 text-indigo-600 font-bold">{lang === 'zh' ? ({'Shift by 1 (both even)': '两数均为偶数，同时折半', 'Halve u (u is even)': 'u 为偶数，将 u 折半', 'Halve v (v is even)': 'v 为偶数，将 v 折半', 'Subtract (u = u - v)': '相减：u = u − v', 'Subtract (v = v - u)': '相减：v = v − u'}[s.action] ?? s.action) : s.action}</td>
                     <td className="p-2">{s.u.toString()}</td>
                     <td className="p-2">{s.v.toString()}</td>
                     <td className="p-2">{s.x1.toString()}</td>

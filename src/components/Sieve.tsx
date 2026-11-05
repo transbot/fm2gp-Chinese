@@ -128,18 +128,18 @@ export function Sieve() {
         <div className="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
           <Link
             to="/"
-            className="touch-target flex items-center justify-center gap-2 rounded-lg bg-gray-500 px-4 py-2 text-white transition-colors hover:bg-gray-600"
+            className="learning-secondary flex items-center justify-center gap-2"
           >
             <Home className="w-4 h-4" />
             {t.backToHome}
           </Link>
-          <h1 className="min-w-0 break-words bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-2xl font-bold text-transparent sm:text-3xl">
+          <h1 className="learning-title min-w-0">
             {t.sieveTitle}
           </h1>
         </div>
         <button
           onClick={() => setLang(lang === 'en' ? 'zh' : 'en')}
-          className="touch-target flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-4 py-2 text-white shadow-md transition-colors hover:bg-blue-600"
+          className="learning-primary flex items-center justify-center gap-2"
         >
           <Languages className="w-4 h-4" />
           {t.language}
@@ -150,7 +150,7 @@ export function Sieve() {
 
       <div className="space-y-4">
         {/* Input Controls */}
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4">
           <div className="space-y-2">
             <label className="block text-sm font-medium text-gray-700">
               {t.maxNumber} <span className="text-red-500">{t.required}</span>
@@ -175,7 +175,7 @@ export function Sieve() {
           <div className="flex flex-wrap gap-3 sm:gap-4">
             <button
               onClick={generateNumbers}
-              className="touch-target flex items-center justify-center gap-2 rounded-lg bg-green-500 px-6 py-3 text-white transition-colors hover:bg-green-600"
+              className="touch-target flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-white transition-colors hover:bg-blue-600"
             >
               <Play className="w-4 h-4" />
               {t.generate}
@@ -192,7 +192,7 @@ export function Sieve() {
 
         {/* Visualization */}
         {currentState.numbers.length > 0 && (
-          <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200 space-y-4">
+          <div className="bg-gray-50 rounded-xl p-6 border border-gray-200 space-y-4">
             {/* Show 2 as prime */}
             <div className="flex justify-center mb-2">
               <div className="p-2 text-center rounded bg-green-500 text-white font-bold">
@@ -258,7 +258,7 @@ export function Sieve() {
             stepDescription={
               currentStepData
                 ? sieveVisualization.describeStep(currentStepData, lang)
-                : (t.sieveReady || 'Ready to start Sieve of Eratosthenes.')
+                : (t.sieveReady)
             }
             invariant={sieveVisualization.getInvariant?.(lang)}
             complexity={sieveVisualization.getComplexity()}

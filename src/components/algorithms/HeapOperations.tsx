@@ -243,7 +243,7 @@ export function HeapOperations() {
     if (currentState.array.length === 0) {
       return (
         <div className="text-center text-gray-500 py-8">
-          {t.heapEmpty || 'Heap is empty'}
+          {t.heapEmpty}
         </div>
       );
     }
@@ -359,11 +359,11 @@ export function HeapOperations() {
       algorithm={heapVisualization}
     >
       {/* Input Controls */}
-      <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4">
         {/* Operation selector */}
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
-            {t.operation || 'Operation'}
+            {t.operation}
           </label>
           <div className="flex gap-2 flex-wrap">
             <button
@@ -376,7 +376,7 @@ export function HeapOperations() {
               )}
             >
               <ArrowDown className="w-4 h-4" />
-              {t.heapify || 'Heapify'}
+              {t.heapify}
             </button>
             <button
             onClick={() => handleOperationChange('insert')}
@@ -388,7 +388,7 @@ export function HeapOperations() {
               )}
             >
               <Plus className="w-4 h-4" />
-              {t.heapInsert || 'Insert'}
+              {t.heapInsert}
             </button>
             <button
             onClick={() => handleOperationChange('delete')}
@@ -400,7 +400,7 @@ export function HeapOperations() {
               )}
             >
               <Trash2 className="w-4 h-4" />
-              {t.deleteMax || 'Delete Max'}
+              {t.deleteMax}
             </button>
           </div>
         </div>
@@ -408,14 +408,14 @@ export function HeapOperations() {
         {/* Array input */}
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
-            {t.array || 'Array'} ({t.commaSeparated || 'comma-separated'})
+            {t.array} ({t.commaSeparated})
           </label>
           <input
             type="text"
             value={arrayInput}
             onChange={(e) => setArrayInput(e.target.value)}
             onBlur={handleInputChange}
-            aria-label={t.array || 'Array'}
+            aria-label={t.array}
             className={cn(
               'touch-target w-full rounded-lg border px-4 py-2 font-mono text-sm focus:ring-2 focus:ring-blue-500',
               validationErrorKey === 'heapEmptyArray' ? 'border-red-300 bg-red-50' : 'border-gray-300'
@@ -428,13 +428,13 @@ export function HeapOperations() {
         {operation === 'insert' && (
           <div className="space-y-2">
             <label className="block text-sm font-medium text-gray-700">
-              {t.valueToInsert || 'Value to Insert'}
+              {t.valueToInsert}
             </label>
             <input
               type="number"
               value={insertValue}
               onChange={(e) => setInsertValue(e.target.value)}
-              aria-label={t.valueToInsert || 'Value to Insert'}
+              aria-label={t.valueToInsert}
               className={cn(
                 'touch-target w-full rounded-lg border px-4 py-2 font-mono text-sm focus:ring-2 focus:ring-blue-500',
                 validationErrorKey === 'heapInsertNoValue' ? 'border-red-300 bg-red-50' : 'border-gray-300'
@@ -456,7 +456,7 @@ export function HeapOperations() {
             className="touch-target flex items-center gap-2 rounded-lg bg-indigo-100 px-4 py-2 text-indigo-700 transition-colors hover:bg-indigo-200"
           >
             <Shuffle className="w-4 h-4" />
-            {t.random || 'Random'}
+            {t.random}
           </button>
           <button
             onClick={() => {
@@ -466,33 +466,33 @@ export function HeapOperations() {
             className="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
           >
             <RotateCcw className="w-4 h-4" />
-            {t.reset || 'Reset'}
+            {t.reset}
           </button>
           <button
             onClick={play}
             disabled={isPlaying || totalSteps <= 1}
-            className="touch-target flex items-center gap-2 rounded-lg bg-green-500 px-6 py-2 font-medium text-white hover:bg-green-600 disabled:opacity-50"
+            className="touch-target flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-medium text-white hover:bg-blue-600 disabled:opacity-50"
           >
             <Play className="w-4 h-4 fill-current" />
-            {t.startSearch || 'Start'}
+            {t.startSearch}
           </button>
         </div>
       </div>
 
       {/* Visualization */}
-      <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200 space-y-6">
+      <div className="bg-gray-50 rounded-xl p-6 border border-gray-200 space-y-6">
         {/* Tree visualization */}
         <div className="space-y-2">
           <h3 className="text-sm font-medium text-gray-600">
-            {t.heapTreeView || 'Binary Tree View'}
+            {t.heapTreeView}
           </h3>
-          {renderTree()}
+          <div role="region" aria-label={t.heapTreeView} tabIndex={0} className="w-full max-w-full overflow-x-auto">{renderTree()}</div>
         </div>
 
         {/* Array visualization */}
         <div className="space-y-2">
           <h3 className="text-sm font-medium text-gray-600">
-            {t.heapArrayView || 'Array View'}
+            {t.heapArrayView}
           </h3>
           <div className="flex flex-wrap justify-center gap-2">
             {currentState.array.map((value, index) => (
@@ -514,23 +514,23 @@ export function HeapOperations() {
         <div className="flex flex-wrap justify-center gap-4 text-sm">
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-blue-400 rounded"></div>
-            <span className="text-gray-600">{t.currentNode || 'Current'}</span>
+            <span className="text-gray-600">{t.currentNode}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-purple-400 rounded"></div>
-            <span className="text-gray-600">{t.parent || 'Parent'}</span>
+            <span className="text-gray-600">{t.parent}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-green-300 rounded"></div>
-            <span className="text-gray-600">{t.children || 'Children'}</span>
+            <span className="text-gray-600">{t.children}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-yellow-400 rounded"></div>
-            <span className="text-gray-600">{t.swapped || 'Swapped'}</span>
+            <span className="text-gray-600">{t.swapped}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-green-500 rounded"></div>
-            <span className="text-gray-600">{t.heapComplete || 'Heap!'}</span>
+            <span className="text-gray-600">{t.heapComplete}</span>
           </div>
         </div>
 
@@ -538,7 +538,7 @@ export function HeapOperations() {
         {currentState.isHeap && (
           <div className="text-center text-green-600 font-medium flex items-center justify-center gap-2">
             <ArrowUp className="w-5 h-5" />
-            {t.heapPropertySatisfied || 'Max-heap property satisfied!'}
+            {t.heapPropertySatisfied}
           </div>
         )}
       </div>
@@ -562,7 +562,7 @@ export function HeapOperations() {
         stepDescription={
           currentStepData
             ? heapVisualization.describeStep(currentStepData, lang)
-            : t.heapReady || 'Ready to start heap operations.'
+            : t.heapReady
         }
         invariant={heapVisualization.getInvariant?.(lang)}
         complexity={heapVisualization.getComplexity()}

@@ -139,10 +139,10 @@ export function FastFibonacci() {
       algorithm={fastFibonacciVisualization}
     >
       {/* Input Controls */}
-      <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4">
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
-            {t.fastFibonacciInput || 'Enter n to compute F(n)'}
+            {t.fastFibonacciInput}
           </label>
           <input
             type="number"
@@ -151,7 +151,7 @@ export function FastFibonacci() {
             value={number}
             onChange={(e) => setNumber(e.target.value)}
             onBlur={handleInputChange}
-            aria-label={t.fastFibonacciInput || 'Enter n to compute F(n)'}
+            aria-label={t.fastFibonacciInput}
             className={`touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500 ${
               validationErrorKey ? 'border-red-500' : 'border-gray-300'
             }`}
@@ -170,37 +170,37 @@ export function FastFibonacci() {
             className="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
           >
             <RotateCcw className="w-4 h-4" />
-            {t.reset || 'Reset'}
+            {t.reset}
           </button>
           <button
             onClick={play}
             disabled={isPlaying || totalSteps <= 1}
-            className="touch-target flex items-center gap-2 rounded-lg bg-green-500 px-6 py-2 font-medium text-white hover:bg-green-600 disabled:opacity-50"
+            className="touch-target flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-medium text-white hover:bg-blue-600 disabled:opacity-50"
           >
             <Play className="w-4 h-4 fill-current" />
-            {t.startCalculation || 'Start Calculation'}
+            {t.startCalculation}
           </button>
         </div>
       </div>
 
       {/* Visualization */}
-      <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200 space-y-6">
+      <div className="bg-gray-50 rounded-xl p-6 border border-gray-200 space-y-6">
         {/* Current values display */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div className="bg-white rounded-lg p-4 border border-gray-200">
-            <div className="text-xs text-gray-500 mb-1">{t.fibonacciN || 'n'}</div>
+            <div className="text-xs text-gray-500 mb-1">{t.fibonacciN}</div>
             <div className="text-2xl font-bold text-gray-800 font-mono">{currentState.n}</div>
           </div>
           <div className="bg-white rounded-lg p-4 border border-gray-200">
-            <div className="text-xs text-gray-500 mb-1">{t.fastFibonacciStep || 'Step'}</div>
+            <div className="text-xs text-gray-500 mb-1">{t.fastFibonacciStep}</div>
             <div className="text-2xl font-bold text-purple-600 font-mono">{currentState.stepNum}</div>
           </div>
           <div className="bg-white rounded-lg p-4 border border-gray-200">
-            <div className="text-xs text-gray-500 mb-1">{t.fastFibonacciPhase || 'Phase'}</div>
-            <div className="text-lg font-bold text-blue-600 font-mono">{currentState.phase}</div>
+            <div className="text-xs text-gray-500 mb-1">{t.fastFibonacciPhase}</div>
+            <div className="text-lg font-bold text-blue-600 font-mono">{({init: {zh: '初始化', en: 'Initialization'}, power: {zh: '平方', en: 'Squaring'}, multiply: {zh: '累积', en: 'Accumulation'}, done: {zh: '完成', en: 'Complete'}})[currentState.phase][lang]}</div>
           </div>
           <div className="bg-white rounded-lg p-4 border border-gray-200">
-            <div className="text-xs text-gray-500 mb-1">{t.result || 'Result'}</div>
+            <div className="text-xs text-gray-500 mb-1">{t.result}</div>
             <div className="text-xl font-bold text-green-600 font-mono truncate">
               {currentState.result.toString().length > 10
                 ? currentState.result.toString().slice(0, 10) + '...'
@@ -211,7 +211,7 @@ export function FastFibonacci() {
 
         {/* Matrix display */}
         <div className="bg-white rounded-lg p-4 border border-gray-200">
-          <div className="text-xs text-gray-500 mb-2">{t.fastFibonacciMatrix || 'Current Matrix'}</div>
+          <div className="text-xs text-gray-500 mb-2">{t.fastFibonacciMatrix}</div>
           <div className="grid grid-cols-2 gap-2 max-w-xs mx-auto">
             <div className="bg-gray-100 rounded p-2 text-center font-mono text-sm border border-gray-200 truncate" title={currentState.matrix.a.toString()}>
               {currentState.matrix.a.toString().length > 15
@@ -239,7 +239,7 @@ export function FastFibonacci() {
         {/* Binary representation */}
         {currentState.binaryDigits.length > 0 && (
           <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-            <div className="text-xs text-gray-500 mb-2">{t.fastFibonacciBinary || 'Binary Representation of (n-1)'}</div>
+            <div className="text-xs text-gray-500 mb-2">{t.fastFibonacciBinary}</div>
             <div className="flex justify-center gap-1 flex-wrap">
               {currentState.binaryDigits.map((bit, idx) => (
                 <span
@@ -265,15 +265,15 @@ export function FastFibonacci() {
         {/* Operation counts */}
         <div className="grid grid-cols-3 gap-4">
           <div className="bg-white rounded-lg p-3 border border-gray-200 text-center">
-            <div className="text-xs text-gray-500 mb-1">{t.additions || 'Additions'}</div>
+            <div className="text-xs text-gray-500 mb-1">{t.additions}</div>
             <div className="text-lg font-bold text-amber-600 font-mono">{currentState.operationCount.additions}</div>
           </div>
           <div className="bg-white rounded-lg p-3 border border-gray-200 text-center">
-            <div className="text-xs text-gray-500 mb-1">{t.multiplications || 'Multiplications'}</div>
+            <div className="text-xs text-gray-500 mb-1">{t.multiplications}</div>
             <div className="text-lg font-bold text-purple-600 font-mono">{currentState.operationCount.multiplications}</div>
           </div>
           <div className="bg-white rounded-lg p-3 border border-gray-200 text-center">
-            <div className="text-xs text-gray-500 mb-1">{t.totalSteps || 'Total Steps'}</div>
+            <div className="text-xs text-gray-500 mb-1">{t.totalSteps}</div>
             <div className="text-lg font-bold text-gray-700 font-mono">{currentState.binaryDigits.length}</div>
           </div>
         </div>
@@ -281,7 +281,7 @@ export function FastFibonacci() {
         {/* Invariant reminder */}
         <div className="bg-amber-50 rounded-lg p-4 border border-amber-200 text-sm">
           <div className="flex items-center gap-2 text-amber-700 font-medium mb-1">
-            <span>Matrix Invariant</span>
+            <span>{lang === 'zh' ? '矩阵不变式' : 'Matrix invariant'}</span>
           </div>
           <div className="text-amber-800 font-mono text-center">
             [[1,1],[1,0]]<sup>n</sup> = [[F(n+1), F(n)], [F(n), F(n-1)]]
@@ -320,7 +320,7 @@ export function FastFibonacci() {
         stepDescription={
           currentStepData
             ? fastFibonacciVisualization.describeStep(currentStepData, lang)
-            : t.fastFibonacciReady || 'Ready to calculate Fibonacci using matrix exponentiation. Enter n and press Start.'
+            : t.fastFibonacciReady
         }
         invariant={fastFibonacciVisualization.getInvariant?.(lang)}
         complexity={fastFibonacciVisualization.getComplexity()}

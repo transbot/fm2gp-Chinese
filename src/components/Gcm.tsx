@@ -152,16 +152,16 @@ export function Gcm() {
         <div className="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
           <Link
             to="/"
-            className="touch-target flex items-center justify-center gap-2 rounded-lg bg-gray-500 px-4 py-2 text-white transition-colors hover:bg-gray-600"
+            className="learning-secondary flex items-center justify-center gap-2"
           >
             <Home className="w-4 h-4" />
             {t.backToHome}
           </Link>
-          <h1 className="min-w-0 break-words text-2xl font-bold sm:text-3xl">{t.gcmTitle}</h1>
+          <h1 className="learning-title min-w-0">{t.gcmTitle}</h1>
         </div>
         <button
           onClick={() => setLang(lang === 'en' ? 'zh' : 'en')}
-          className="touch-target flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-4 py-2 text-white transition-colors hover:bg-blue-600"
+          className="learning-primary flex items-center justify-center gap-2"
         >
           <Languages className="w-4 h-4" />
           {t.language}
@@ -210,7 +210,7 @@ export function Gcm() {
       <div className="flex flex-wrap gap-3 sm:gap-4">
         <button
           onClick={startCalculation}
-          className="touch-target px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
+          className="touch-target px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-600 transition-colors"
         >
           {t.calculate}
         </button>
@@ -233,9 +233,9 @@ export function Gcm() {
       <ExplanationPanel
         stepDescription={
           currentStep >= 0 && steps[currentStep]
-            ? `${t.aValue || 'a = '}${formatNumber(steps[currentStep].a)}, ${t.bValue || 'b = '}${formatNumber(steps[currentStep].b)}${
+            ? `${t.aValue}${formatNumber(steps[currentStep].a)}, ${t.bValue}${formatNumber(steps[currentStep].b)}${
                 steps[currentStep].remainder !== null
-                  ? `, ${t.remainderValue || 'r = '}${formatNumber(steps[currentStep].remainder)}`
+                  ? `, ${t.remainderValue}${formatNumber(steps[currentStep].remainder)}`
                   : ''
               }`
             : lang === 'en'
@@ -300,7 +300,7 @@ export function Gcm() {
               <thead>
                 <tr>
                   <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Step
+                    {t.currentStep}
                   </th>
                   <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     a
@@ -309,7 +309,7 @@ export function Gcm() {
                     b
                   </th>
                   <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-[300px]">
-                    Action
+                    {t.actionLabel}
                   </th>
                 </tr>
               </thead>

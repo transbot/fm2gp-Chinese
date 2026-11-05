@@ -19,7 +19,6 @@ export function ExplanationPanel({
   invariant,
   complexity,
   codeSnippet,
-  operationType,
 }: ExplanationPanelProps) {
   const { lang } = useLanguage();
   const t = translations[lang];
@@ -30,12 +29,8 @@ export function ExplanationPanel({
       <div className="space-y-2">
         <div className="flex items-center gap-2 text-gray-700 font-medium">
           <Info className="w-4 h-4" />
-          <span>{t.currentOperation || 'Current Operation'}</span>
-          {operationType && (
-            <span className="ml-auto text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-mono">
-              {operationType}
-            </span>
-          )}
+          <span>{t.currentOperation}</span>
+
         </div>
         <p className="text-gray-800 bg-white rounded-lg p-3 border border-gray-200">
           {stepDescription}
@@ -47,7 +42,7 @@ export function ExplanationPanel({
         <div className="space-y-2">
           <div className="flex items-center gap-2 text-gray-700 font-medium">
             <span className="text-lg">⚖️</span>
-            <span>{t.invariant || 'Invariant'}</span>
+            <span>{t.invariant}</span>
           </div>
           <p className="text-gray-700 bg-amber-50 rounded-lg p-3 border border-amber-200 text-sm italic">
             {invariant}
@@ -60,29 +55,29 @@ export function ExplanationPanel({
         <div className="space-y-2">
           <div className="flex items-center gap-2 text-gray-700 font-medium">
             <Clock className="w-4 h-4" />
-            <span>{t.complexity || 'Complexity'}</span>
+            <span>{t.complexity}</span>
           </div>
           <div className="grid grid-cols-2 gap-2">
             <div className="bg-white rounded-lg p-2 border border-gray-200">
-              <div className="text-xs text-gray-500">{t.timeComplexity || 'Time'}</div>
-              <div className="font-mono text-blue-600">{complexity.time}</div>
+              <div className="text-xs text-gray-500">{t.timeComplexity}</div>
+              <div className="font-mono text-blue-600">{lang==='zh' ? complexity.timeZh ?? complexity.time : complexity.time}</div>
             </div>
             <div className="bg-white rounded-lg p-2 border border-gray-200">
               <div className="text-xs text-gray-500 flex items-center gap-1">
                 <Database className="w-3 h-3" />
-                {t.spaceComplexity || 'Space'}
+                {t.spaceComplexity}
               </div>
-              <div className="font-mono text-purple-600">{complexity.space}</div>
+              <div className="font-mono text-purple-600">{lang==='zh' ? complexity.spaceZh ?? complexity.space : complexity.space}</div>
             </div>
           </div>
           {complexity.worstCase && (
             <div className="text-xs text-gray-500">
-              <span className="font-medium">{t.worstCase || 'Worst'}:</span> {lang === 'zh' && complexity.worstCaseZh ? complexity.worstCaseZh : complexity.worstCase}
+              <span className="font-medium">{t.worstCase}:</span> {lang === 'zh' && complexity.worstCaseZh ? complexity.worstCaseZh : complexity.worstCase}
             </div>
           )}
           {complexity.bestCase && (
             <div className="text-xs text-gray-500">
-              <span className="font-medium">{t.bestCase || 'Best'}:</span> {lang === 'zh' && complexity.bestCaseZh ? complexity.bestCaseZh : complexity.bestCase}
+              <span className="font-medium">{t.bestCase}:</span> {lang === 'zh' && complexity.bestCaseZh ? complexity.bestCaseZh : complexity.bestCase}
             </div>
           )}
         </div>
@@ -92,10 +87,10 @@ export function ExplanationPanel({
       {codeSnippet && (
         <details className="space-y-2">
           <summary className="cursor-pointer text-gray-700 font-medium hover:text-blue-600">
-            {t.viewCode || 'View Code'}
+            {t.viewCode}
           </summary>
           <ResponsiveVisualFrame
-            label={t.viewCode || 'View Code'}
+            label={t.viewCode}
             className="rounded-lg bg-gray-900 p-3"
             contentClassName="min-w-max"
           >

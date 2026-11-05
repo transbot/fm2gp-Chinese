@@ -8,7 +8,7 @@ export function BookShowcase() {
     title: lang === 'zh' ? '中文版' : 'Chinese edition',
     subtitle: lang === 'zh' ? '清华大学出版社 · 2026 年 10 月' : 'Tsinghua University Press · October 2026',
     image: CHINESE_BOOK_COVER,
-    alt: '数学与泛型编程：高效编程的奥秘',
+    alt: lang === 'zh' ? '数学与泛型编程：高效编程的奥秘' : 'From Mathematics to Generic Programming — Chinese edition',
     url: CHINESE_BOOK_STORE_URL.trim(),
   };
   const english = {

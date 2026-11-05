@@ -174,16 +174,16 @@ export function PiUpperBound() {
         <div className="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
           <Link
             to="/"
-            className="touch-target flex items-center justify-center gap-2 rounded-lg bg-gray-500 px-4 py-2 text-white transition-colors hover:bg-gray-600"
+            className="learning-secondary flex items-center justify-center gap-2"
           >
             <Home className="w-4 h-4" />
             {t.backToHome}
           </Link>
-          <h1 className="min-w-0 break-words text-2xl font-bold sm:text-3xl">{t.piUpperBoundTitle}</h1>
+          <h1 className="learning-title min-w-0">{t.piUpperBoundTitle}</h1>
         </div>
         <button
           onClick={() => setLang(lang === 'en' ? 'zh' : 'en')}
-          className="touch-target flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-4 py-2 text-white transition-colors hover:bg-blue-600"
+          className="learning-primary flex items-center justify-center gap-2"
         >
           <Languages className="w-4 h-4" />
           {t.language}
@@ -197,10 +197,10 @@ export function PiUpperBound() {
           <div className="space-y-4">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
               <label className="text-sm font-medium text-gray-700">
-                {t.numberOfSides || 'Number of Sides'}
+                {t.numberOfSides}
               </label>
               <input
-                aria-label={t.numberOfSides || 'Number of Sides'}
+                aria-label={t.numberOfSides}
                 type="range"
                 min="3"
                 max={MAX_SIDES}
@@ -223,7 +223,7 @@ export function PiUpperBound() {
                 ) : (
                   <>
                     <Play className="w-4 h-4" />
-                  {sides >= MAX_SIDES ? (t.reset || 'Reset') : (t.animate || 'Animate')}
+                  {sides >= MAX_SIDES ? (t.reset) : (t.animate)}
                   </>
                 )}
             </button>

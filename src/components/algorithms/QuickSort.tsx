@@ -249,11 +249,11 @@ export function QuickSort() {
       algorithm={quickSortVisualization}
     >
       {/* Input Controls */}
-      <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4">
         {/* Array input */}
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
-            {t.array || 'Array'} ({t.commaSeparated || 'comma-separated'})
+            {t.array} ({t.commaSeparated})
           </label>
           <input
             type="text"
@@ -262,7 +262,7 @@ export function QuickSort() {
               setArrayInput(e.target.value);
             }}
             onBlur={handleInputChange}
-            aria-label={t.array || 'Array'}
+            aria-label={t.array}
             className={cn(
               'touch-target w-full rounded-lg border px-4 py-2 font-mono text-sm focus:ring-2 focus:ring-blue-500',
               validationErrorKey ? 'border-red-300 bg-red-50' : 'border-gray-300'
@@ -283,7 +283,7 @@ export function QuickSort() {
             className="touch-target flex items-center gap-2 rounded-lg bg-indigo-100 px-4 py-2 text-indigo-700 transition-colors hover:bg-indigo-200"
           >
             <Shuffle className="w-4 h-4" />
-            {t.random || 'Random'}
+            {t.random}
           </button>
           <button
             onClick={() => {
@@ -293,21 +293,21 @@ export function QuickSort() {
             className="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
           >
             <RotateCcw className="w-4 h-4" />
-            {t.reset || 'Reset'}
+            {t.reset}
           </button>
           <button
             onClick={play}
             disabled={isPlaying || totalSteps <= 1}
-            className="touch-target flex items-center gap-2 rounded-lg bg-green-500 px-6 py-2 font-medium text-white hover:bg-green-600 disabled:opacity-50"
+            className="touch-target flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-medium text-white hover:bg-blue-600 disabled:opacity-50"
           >
             <Play className="w-4 h-4 fill-current" />
-            {t.startSearch || 'Start'}
+            {t.startSearch}
           </button>
         </div>
       </div>
 
       {/* Visualization */}
-      <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200 space-y-4">
+      <div className="bg-gray-50 rounded-xl p-6 border border-gray-200 space-y-4">
         {/* Array display */}
         <div className="flex flex-wrap justify-center gap-2">
           {currentState.array.map((value, index) => (
@@ -331,27 +331,27 @@ export function QuickSort() {
             <div className="w-4 h-4 bg-orange-400 rounded flex items-center justify-center">
               <Target className="w-3 h-3 text-orange-800" />
             </div>
-            <span className="text-gray-600">{t.pivot || 'Pivot'}</span>
+            <span className="text-gray-600">{t.pivot}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-blue-400 rounded"></div>
-            <span className="text-gray-600">{t.quickSortComparing || 'Comparing'}</span>
+            <span className="text-gray-600">{t.quickSortComparing}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-yellow-400 rounded"></div>
-            <span className="text-gray-600">{t.quickSortSwapping || 'Swapping'}</span>
+            <span className="text-gray-600">{t.quickSortSwapping}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-blue-200 rounded"></div>
-            <span className="text-gray-600">{t.leftPartition || 'Left Partition'}</span>
+            <span className="text-gray-600">{t.leftPartition}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-purple-200 rounded"></div>
-            <span className="text-gray-600">{t.rightPartition || 'Right Partition'}</span>
+            <span className="text-gray-600">{t.rightPartition}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-green-300 rounded"></div>
-            <span className="text-gray-600">{t.sortedLabel || 'Sorted'}</span>
+            <span className="text-gray-600">{t.sortedLabel}</span>
           </div>
         </div>
 
@@ -359,17 +359,17 @@ export function QuickSort() {
         {currentState.pivot !== null && (
           <div className="text-center space-y-2">
             <div className="text-lg font-medium text-gray-700">
-              {t.pivot || 'Pivot'}: {currentState.pivot}
+              {t.pivot}: {currentState.pivot}
               {currentState.pivotIndex !== null && (
                 <span className="text-sm text-gray-500 ml-2">
-                  (index {currentState.pivotIndex})
+                  ({lang === 'zh' ? '下标' : 'index'} {currentState.pivotIndex})
                 </span>
               )}
             </div>
             {currentState.partitionComplete && (
               <div className="text-green-600 font-medium">
                 <ArrowLeftRight className="w-4 h-4 inline-block mr-1" />
-                {t.partitionComplete || 'Partition complete!'} {currentState.sorted.length} {t.elementsSorted || 'elements sorted'}
+                {t.partitionComplete} {currentState.sorted.length} {t.elementsSorted}
               </div>
             )}
           </div>
@@ -378,7 +378,7 @@ export function QuickSort() {
         {/* Current range info */}
         {currentState.array.length > 0 && (
           <div className="text-center text-sm text-gray-600">
-            {t.currentRange || 'Current Range'}: [{currentState.low}, {currentState.high}]
+            {t.currentRange}: [{currentState.low}, {currentState.high}]
             {currentState.i >= 0 && ` | i = ${currentState.i}`}
             {currentState.j >= 0 && ` | j = ${currentState.j}`}
           </div>
@@ -404,7 +404,7 @@ export function QuickSort() {
         stepDescription={
           currentStepData
             ? quickSortVisualization.describeStep(currentStepData, lang)
-            : t.quickSortReady || 'Ready to start Quick Sort. Enter an array and click Start.'
+            : t.quickSortReady
         }
         invariant={quickSortVisualization.getInvariant?.(lang)}
         complexity={quickSortVisualization.getComplexity()}

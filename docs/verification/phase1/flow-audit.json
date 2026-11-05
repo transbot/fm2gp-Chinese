@@ -1,0 +1,34 @@
+[
+  {
+    "width": 1440,
+    "passed": [
+      "device language",
+      "saved language",
+      "chapter search and source return",
+      "chapter scroll restoration",
+      "anchor refresh",
+      "17 chapter routes",
+      "book route back/forward",
+      "power input and language preservation",
+      "end dereference and bidirectional movement",
+      "keyboard disclosure focus",
+      "home images and empty store link"
+    ]
+  },
+  {
+    "width": 390,
+    "passed": [
+      "device language",
+      "saved language",
+      "chapter search and source return",
+      "chapter scroll restoration",
+      "anchor refresh",
+      "17 chapter routes",
+      "book route back/forward",
+      "power input and language preservation",
+      "end dereference and bidirectional movement",
+      "keyboard disclosure focus",
+      "home images and empty store link"
+    ]
+  }
+]

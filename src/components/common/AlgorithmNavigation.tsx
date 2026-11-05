@@ -19,8 +19,8 @@ const labels = {
     source: 'Source',
     difficulty: 'Difficulty',
     concept: 'Core Concept',
-    before: 'Learn First',
-    after: 'Next Step',
+    before: 'Previous in this topic',
+    after: 'Next in this topic',
     previous: 'Previous',
     next: 'Next',
   },
@@ -29,8 +29,8 @@ const labels = {
     source: '来源',
     difficulty: '难度',
     concept: '核心概念',
-    before: '建议先学',
-    after: '接着学习',
+    before: '同主题上一篇',
+    after: '同主题下一篇',
     previous: '上一篇',
     next: '下一篇',
   },
@@ -87,7 +87,7 @@ export function AlgorithmNavigation({ algorithmId, lang }: AlgorithmNavigationPr
           <div className="mt-1 text-gray-800">
             {navigation.next
               ? t[navigation.next.titleKey] ?? navigation.next.titleKey
-              : lang === 'zh' ? '本主题已完成' : 'This topic is complete'}
+              : lang === 'zh' ? '已到本主题目录末尾' : 'End of this topic directory'}
           </div>
         </div>
       </div>

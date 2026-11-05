@@ -8,7 +8,7 @@ import { translations } from '../../i18n/translations';
 import { Links } from '../Links';
 import { DeveloperNote } from '../DeveloperNote';
 import { AlgorithmVisualization } from '../../lib/algorithms/types';
-import { AlgorithmNavigation } from './AlgorithmNavigation';
+
 
 interface AlgorithmLayoutProps<TInput, TState> {
   titleKey: string;
@@ -30,7 +30,7 @@ export function AlgorithmLayout<TInput, TState>({
 
   // Build title with section reference
   const buildTitle = () => {
-    const baseTitle = t[titleKey] || titleKey;
+    const baseTitle = t[titleKey];
     if (algorithm.isAdvanced) {
       const advancedSuffix = lang === 'zh' ? ' (进阶)' : ' (Advanced)';
       return `${baseTitle}${advancedSuffix}`;
@@ -45,18 +45,18 @@ export function AlgorithmLayout<TInput, TState>({
         <div className="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
           <Link
             to="/"
-            className="touch-target flex items-center justify-center gap-2 rounded-lg bg-gray-500 px-4 py-2 text-white transition-colors hover:bg-gray-600"
+            className="learning-secondary flex items-center justify-center gap-2"
           >
             <Home className="w-4 h-4" />
             {t.backToHome}
           </Link>
-          <h1 className="min-w-0 break-words bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-2xl font-bold text-transparent sm:text-3xl">
+          <h1 className="learning-title min-w-0">
             {buildTitle()}
           </h1>
         </div>
         <button
           onClick={() => setLang(lang === 'en' ? 'zh' : 'en')}
-          className="touch-target flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-4 py-2 text-white shadow-md transition-colors hover:bg-blue-600"
+          className="learning-primary flex items-center justify-center gap-2"
         >
           <Languages className="w-4 h-4" />
           {t.language}
@@ -65,13 +65,13 @@ export function AlgorithmLayout<TInput, TState>({
 
       {/* Description */}
       <p className="text-gray-600 text-lg">
-        {t[descriptionKey] || descriptionKey}
+        {t[descriptionKey]}
       </p>
 
       {/* Algorithm content */}
       {children}
 
-      <AlgorithmNavigation algorithmId={algorithm.id} lang={lang} />
+
 
       {/* Developer note */}
       {devNoteKey && <DeveloperNote noteKey={devNoteKey} />}

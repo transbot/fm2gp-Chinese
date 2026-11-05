@@ -195,16 +195,16 @@ export function Swap() {
       algorithm={swapVisualization}
     >
       {/* Input Controls */}
-      <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4">
         {/* Array input */}
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
-            {t.array || 'Array'} ({t.commaSeparated || 'comma-separated'})
+            {t.array} ({t.commaSeparated})
           </label>
           <div className="flex gap-2">
             <input
               type="text"
-              aria-label={t.array || 'Array'}
+              aria-label={t.array}
               value={arrayInput}
               onChange={(e) => setArrayInput(e.target.value)}
               onBlur={handleInputChange}
@@ -216,7 +216,7 @@ export function Swap() {
               className="touch-target flex items-center gap-2 rounded-lg bg-purple-100 px-4 py-2 text-purple-700 transition-colors hover:bg-purple-200"
             >
               <Shuffle className="w-4 h-4" />
-              {t.random || 'Random'}
+              {t.random}
             </button>
           </div>
         </div>
@@ -226,14 +226,14 @@ export function Swap() {
           {/* First range */}
           <div className="bg-blue-50 p-4 rounded-lg space-y-3">
             <div className="text-sm font-medium text-blue-700">
-              {t.firstRange || 'First Range'} (blue)
+              {t.firstRange} {lang === 'zh' ? '（蓝色）' : '(blue)'}
             </div>
             <div className="grid grid-cols-2 gap-2">
               <div>
-                <label className="block text-xs text-gray-500 mb-1">Start</label>
+                <label className="block text-xs text-gray-500 mb-1">{t.rangeStart}</label>
                 <input
                   type="number"
-                  aria-label={`${t.firstRange || 'First Range'} Start`}
+                  aria-label={`${t.firstRange} ${t.rangeStart}`}
                   min="0"
                   value={firstStart}
                   onChange={(e) => setFirstStart(e.target.value)}
@@ -242,10 +242,10 @@ export function Swap() {
                 />
               </div>
               <div>
-                <label className="block text-xs text-gray-500 mb-1">End</label>
+                <label className="block text-xs text-gray-500 mb-1">{t.rangeEnd}</label>
                 <input
                   type="number"
-                  aria-label={`${t.firstRange || 'First Range'} End`}
+                  aria-label={`${t.firstRange} ${t.rangeEnd}`}
                   min="0"
                   value={firstEnd}
                   onChange={(e) => setFirstEnd(e.target.value)}
@@ -259,14 +259,14 @@ export function Swap() {
           {/* Second range */}
           <div className="bg-green-50 p-4 rounded-lg space-y-3">
             <div className="text-sm font-medium text-green-700">
-              {t.secondRange || 'Second Range'} (green)
+              {t.secondRange} {lang === 'zh' ? '（绿色）' : '(green)'}
             </div>
             <div className="grid grid-cols-2 gap-2">
               <div>
-                <label className="block text-xs text-gray-500 mb-1">Start</label>
+                <label className="block text-xs text-gray-500 mb-1">{t.rangeStart}</label>
                 <input
                   type="number"
-                  aria-label={`${t.secondRange || 'Second Range'} Start`}
+                  aria-label={`${t.secondRange} ${t.rangeStart}`}
                   min="0"
                   value={secondStart}
                   onChange={(e) => setSecondStart(e.target.value)}
@@ -275,10 +275,10 @@ export function Swap() {
                 />
               </div>
               <div>
-                <label className="block text-xs text-gray-500 mb-1">End</label>
+                <label className="block text-xs text-gray-500 mb-1">{t.rangeEnd}</label>
                 <input
                   type="number"
-                  aria-label={`${t.secondRange || 'Second Range'} End`}
+                  aria-label={`${t.secondRange} ${t.rangeEnd}`}
                   min="0"
                   value={secondEnd}
                   onChange={(e) => setSecondEnd(e.target.value)}
@@ -302,21 +302,21 @@ export function Swap() {
             className="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
           >
             <RotateCcw className="w-4 h-4" />
-            {t.reset || 'Reset'}
+            {t.reset}
           </button>
           <button
             onClick={play}
             disabled={isPlaying || totalSteps <= 1}
-            className="touch-target flex items-center gap-2 rounded-lg bg-green-500 px-6 py-2 font-medium text-white hover:bg-green-600 disabled:opacity-50"
+            className="touch-target flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-medium text-white hover:bg-blue-600 disabled:opacity-50"
           >
             <Play className="w-4 h-4 fill-current" />
-            {t.startCalculation || 'Start Calculation'}
+            {t.startCalculation}
           </button>
         </div>
       </div>
 
       {/* Visualization */}
-      <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200 space-y-6">
+      <div className="bg-gray-50 rounded-xl p-6 border border-gray-200 space-y-6">
         {/* Array visualization */}
         {renderArrayVisualization()}
 
@@ -324,15 +324,15 @@ export function Swap() {
         <div className="flex justify-center gap-6 text-sm">
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-blue-400 rounded"></div>
-            <span className="text-gray-600">{t.firstRange || 'First Range'}</span>
+            <span className="text-gray-600">{t.firstRange}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-green-400 rounded"></div>
-            <span className="text-gray-600">{t.secondRange || 'Second Range'}</span>
+            <span className="text-gray-600">{t.secondRange}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 bg-yellow-400 rounded ring-2 ring-yellow-600"></div>
-            <span className="text-gray-600">{t.swapping || 'Swapping'}</span>
+            <span className="text-gray-600">{t.swapping}</span>
           </div>
         </div>
 
@@ -363,7 +363,7 @@ export function Swap() {
         stepDescription={
           currentStepData
             ? swapVisualization.describeStep(currentStepData, lang)
-            : t.swapReady || 'Ready to swap. Enter an array and two adjacent ranges.'
+            : t.swapReady
         }
         invariant={swapVisualization.getInvariant?.(lang)}
         complexity={swapVisualization.getComplexity()}

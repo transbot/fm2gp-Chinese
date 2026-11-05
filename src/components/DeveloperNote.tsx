@@ -15,6 +15,10 @@ export function DeveloperNote({ noteKey }: DeveloperNoteProps) {
 
   if (!content) return null;
 
+  const boundary = content.search(lang === 'zh' ? /。/ : /\.\s/);
+  const lead = boundary >= 0 ? content.slice(0, boundary + 1) : content;
+  const rest = boundary >= 0 ? content.slice(boundary + 1).trim() : '';
+
   return (
     <motion.div 
       initial={{ opacity: 0, y: 10 }}
@@ -27,8 +31,9 @@ export function DeveloperNote({ noteKey }: DeveloperNoteProps) {
         <div>
           <h4 className="font-semibold text-amber-900 mb-1">{lang === 'zh' ? '开发者笔记' : 'Developer Note'}</h4>
           <p className="text-amber-800 text-sm leading-relaxed">
-            {content}
+            {lead}
           </p>
+          {rest && <details className="mt-3"><summary className="cursor-pointer font-medium">{lang === 'zh' ? '展开术语与实现说明' : 'Expand terms and implementation notes'}</summary><p className="mt-2 text-sm leading-relaxed">{rest}</p></details>}
         </div>
       </div>
     </motion.div>

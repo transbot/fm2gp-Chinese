@@ -1,0 +1,60 @@
+import { fireEvent, render, screen, cleanup } from '@testing-library/react';
+import { afterEach, beforeEach, it, expect } from 'vitest';
+import { MemoryRouter } from 'react-router-dom';
+import { LanguageProvider } from '../../context/LanguageContext';
+import { GenericPower } from './GenericPower';
+import { Algebra } from './Algebra';
+import { Iterators } from './Iterators';
+import { Matrices } from './Matrices';
+beforeEach(() => localStorage.setItem('fm2gp-language', 'en'));
+afterEach(cleanup);
+const mount = (node: React.ReactNode) => render(<MemoryRouter><LanguageProvider>{node}</LanguageProvider></MemoryRouter>);
+it('processes actual input, zero and invalid exponents, retaining state when language changes', () => {
+    mount(<GenericPower />);
+    fireEvent.change(screen.getByLabelText('Exponent'), { target: { value: '0' } });
+    expect(screen.getByTestId('power-result')).toHaveTextContent('1');
+    fireEvent.click(screen.getByRole('button', { name: '中文' }));
+    expect(screen.getByLabelText('指数')).toHaveValue(0);
+    expect(screen.getByTestId('power-result')).toHaveTextContent('1');
+    fireEvent.change(screen.getByLabelText('指数'), { target: { value: '-1' } });
+    expect(screen.getByRole('alert')).toHaveTextContent('逆运算');
+    fireEvent.change(screen.getByLabelText('指数'), { target: { value: '1.5' } });
+    expect(screen.getByRole('alert')).toHaveTextContent('整数');
+    fireEvent.change(screen.getByLabelText('指数'), { target: { value: '' } });
+    expect(screen.getByRole('alert')).toHaveTextContent('空白不是 0');
+});
+it('switches models and returns to a consistent initial state', () => {
+    mount(<GenericPower />);
+    fireEvent.change(screen.getByLabelText('Operation model'), { target: { value: 'matrix' } });
+    const progress = screen.getByRole('slider', { name: 'Step progress' });
+    fireEvent.change(progress, { target: { value: progress.getAttribute('max') } });
+    expect(screen.getByTestId('power-result')).toHaveTextContent('[[8,5],[5,3]]');
+    fireEvent.click(screen.getByRole('button', { name: 'Step Backward' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Step Forward' }));
+    expect(screen.getByTestId('power-result')).toHaveTextContent('[[8,5],[5,3]]');
+    fireEvent.change(screen.getByLabelText('Operation model'), { target: { value: 'add' } });
+    expect(screen.getByRole('slider', { name: 'Step progress' })).toHaveValue('0');
+});
+it('shows subtraction as a counterexample and concatenation as noncommutative', () => {
+    mount(<Algebra />);
+    fireEvent.change(screen.getByLabelText('Set and operation'), { target: { value: '4' } });
+    expect(screen.getByText(/Current associativity equality/)).toHaveTextContent('1 ≠ 3');
+    fireEvent.change(screen.getByLabelText('Set and operation'), { target: { value: '3' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Swap ab and c' }));
+    expect(screen.getByText('c ∘ (a ∘ b) = cab')).toBeInTheDocument();
+});
+it('rejects dereferencing end and distinguishes review from iterator capability', () => {
+    mount(<Iterators />);
+    fireEvent.click(screen.getByRole('button', { name: 'advance(3)' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Read current position' }));
+    expect(screen.getByRole('alert')).toHaveTextContent('cannot be dereferenced');
+    fireEvent.click(screen.getByRole('button', { name: 'Review previous step' }));
+    expect(screen.getByText(/Total movement operations/)).toHaveTextContent('0');
+    fireEvent.click(screen.getByRole('button', { name: 'Replay next step' }));
+    expect(screen.getByText(/Total movement operations/)).toHaveTextContent('3');
+});
+it('reports incompatible matrix dimensions before computing', () => {
+    mount(<Matrices />);
+    fireEvent.change(screen.getByLabelText('A'), { target: { value: '[[1,2,3]]' } });
+    expect(screen.getByRole('alert')).toHaveTextContent('dimensions');
+});

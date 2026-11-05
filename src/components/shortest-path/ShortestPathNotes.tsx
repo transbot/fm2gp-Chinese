@@ -14,7 +14,7 @@ export function ShortestPathNotes({ lang }: { lang: 'en' | 'zh' }) {
     ['Generic programming: change the operation, reuse the algorithm', 'Generic programming avoids tying an algorithm to just one data type or operation. Section 7.5 computes powers by halving, squaring, and accumulating. Use matrices as operands and the two rules above inside matrix multiplication, and the same power procedure still works. We display D¹ through D⁶ consecutively to explain the changes, while computing each power by repeated squaring.'],
   ];
   return (
-    <section aria-labelledby="shortest-notes" className="rounded-2xl bg-amber-50 border border-amber-200 p-5 sm:p-6">
+    <section aria-labelledby="shortest-notes" className="rounded-xl bg-amber-50 border border-amber-200 p-5 sm:p-6">
       <h2 id="shortest-notes" className="text-xl font-bold text-amber-950">{zh ? '开发者笔记 · 把术语翻译成直觉' : 'Developer notes · Terms in plain language'}</h2>
       <div className="mt-5 grid gap-5 md:grid-cols-2">
         {notes.map(([title, body]) => <div key={title}><h3 className="font-semibold text-amber-950">{title}</h3><p className="mt-2 text-sm leading-7 text-amber-900">{body}</p></div>)}

@@ -225,14 +225,14 @@ export function Cycle() {
       algorithm={cycleVisualization}
     >
       {/* Input Controls */}
-      <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4">
         {/* Array input */}
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
-            {t.array || 'Array'}:
+            {t.array}:
           </label>
           <input
-            aria-label={t.array || 'Array'}
+            aria-label={t.array}
             type="text"
             value={arrayInput}
             onChange={(e) => {
@@ -247,10 +247,10 @@ export function Cycle() {
         {/* Permutation input */}
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
-            {t.permutation || 'Permutation'}:
+            {t.permutation}:
           </label>
           <input
-            aria-label={t.permutation || 'Permutation'}
+            aria-label={t.permutation}
             type="text"
             value={permutationInput}
             onChange={(e) => {
@@ -261,7 +261,7 @@ export function Cycle() {
             placeholder="2, 0, 1, 3, 4"
           />
           <p className="text-xs text-gray-500">
-            {t.permutationHint || 'Permutation[i] = where element at position i goes (0-indexed)'}
+            {t.permutationHint}
           </p>
         </div>
 
@@ -277,7 +277,7 @@ export function Cycle() {
             className="touch-target flex items-center gap-2 rounded-lg bg-indigo-100 px-4 py-2 text-indigo-700 transition-colors hover:bg-indigo-200"
           >
             <Shuffle className="w-4 h-4" />
-            {t.random || 'Random'}
+            {t.random}
           </button>
           <button
             onClick={() => {
@@ -287,15 +287,15 @@ export function Cycle() {
             className="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
           >
             <RotateCcw className="w-4 h-4" />
-            {t.reset || 'Reset'}
+            {t.reset}
           </button>
           <button
             onClick={play}
             disabled={isPlaying || totalSteps <= 1}
-            className="touch-target flex items-center gap-2 rounded-lg bg-green-500 px-6 py-2 font-medium text-white hover:bg-green-600 disabled:opacity-50"
+            className="touch-target flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-medium text-white hover:bg-blue-600 disabled:opacity-50"
           >
             <Play className="w-4 h-4 fill-current" />
-            {t.startSearch || 'Start'}
+            {t.startSearch}
           </button>
         </div>
       </div>
@@ -303,9 +303,9 @@ export function Cycle() {
       {/* Visualization */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Array visualization */}
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
           <h3 className="text-sm font-medium text-gray-700 mb-4">
-            {t.arrayVisual || 'Array with Permutation Arrows'}
+            {t.arrayVisual}
           </h3>
 
           {/* Array boxes */}
@@ -360,10 +360,10 @@ export function Cycle() {
           {/* Current position indicator */}
           {currentState.currentPosition !== null && (
             <div className="text-center text-sm text-yellow-600 font-medium">
-              {t.currentPosition || 'Current position'}: {currentState.currentPosition}
+              {t.currentPosition}: {currentState.currentPosition}
               {currentState.tracingFrom !== null && (
                 <span className="text-gray-500">
-                  {' '}({t.tracingFrom || 'tracing from'} {currentState.tracingFrom})
+                  {' '}({t.tracingFrom} {currentState.tracingFrom})
                 </span>
               )}
             </div>
@@ -371,25 +371,25 @@ export function Cycle() {
         </div>
 
         {/* Cycles found */}
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
           <h3 className="text-sm font-medium text-gray-700 mb-4">
-            {t.cyclesFound || 'Cycles Found'}
+            {t.cyclesFound}
           </h3>
 
           {currentState.cycles.length === 0 ? (
             <div className="text-gray-400 text-center py-4">
-              {t.noCyclesYet || 'No cycles found yet'}
+              {t.noCyclesYet}
             </div>
           ) : (
             <div className="space-y-3">
               {currentState.cycles.map((cycle, idx) => (
                 <div key={idx} className="flex items-center gap-2">
                   <span className="text-gray-500 text-sm w-16">
-                    {t.cycle || 'Cycle'} {idx + 1}:
+                    {t.cycle} {idx + 1}:
                   </span>
                   {renderCycleNotation(cycle, idx)}
                   <span className="text-xs text-gray-400">
-                    ({t.positions || 'positions'}: {cycle.positions.join(', ')})
+                    ({t.positions}: {cycle.positions.join(', ')})
                   </span>
                 </div>
               ))}
@@ -400,7 +400,7 @@ export function Cycle() {
           {currentState.currentCycle.length > 0 && (
             <div className="mt-4 pt-4 border-t border-gray-200">
               <div className="text-sm text-yellow-600 font-medium mb-2">
-                {t.tracingCycle || 'Currently tracing'}:
+                {t.tracingCycle}:
               </div>
               <div className="flex items-center gap-2">
                 <span className="px-2 py-1 bg-yellow-400 text-gray-900 rounded font-mono text-sm">
@@ -413,16 +413,16 @@ export function Cycle() {
           {/* Total cycles count */}
           {currentState.cycles.length > 0 && (
             <div className="mt-4 pt-4 border-t border-gray-200 text-sm text-gray-600">
-              {t.totalCycles || 'Total cycles'}: {currentState.cycles.length}
+              {t.totalCycles}: {currentState.cycles.length}
             </div>
           )}
         </div>
       </div>
 
       {/* Cycle diagram visualization */}
-      <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
         <h3 className="text-sm font-medium text-gray-700 mb-4">
-          {t.cycleDiagram || 'Cycle Orbit Diagram'}
+          {t.cycleDiagram}
         </h3>
         <div className="space-y-6">
           {/* Show each cycle as a circular diagram */}
@@ -432,7 +432,7 @@ export function Cycle() {
                 'w-20 text-center text-sm font-medium py-1 rounded text-white',
                 CYCLE_COLORS[cycleIdx % CYCLE_COLORS.length]
               )}>
-                {t.cycle || 'Cycle'} {cycleIdx + 1}
+                {t.cycle} {cycleIdx + 1}
               </span>
               <div className="flex items-center gap-1">
                 {cycle.positions.map((pos, idx) => (
@@ -458,7 +458,7 @@ export function Cycle() {
           {currentState.currentCycle.length > 0 && (
             <div className="flex items-center gap-4">
               <span className="w-20 text-center text-sm font-medium py-1 rounded bg-yellow-400 text-gray-900">
-                {t.tracing || 'Tracing'}
+                {t.tracing}
               </span>
               <div className="flex items-center gap-1">
                 {currentState.currentCycle.map((pos) => (
@@ -498,7 +498,7 @@ export function Cycle() {
         stepDescription={
           currentStepData
             ? cycleVisualization.describeStep(currentStepData, lang)
-            : t.cycleReady || 'Ready to start cycle decomposition.'
+            : t.cycleReady
         }
         invariant={cycleVisualization.getInvariant?.(lang)}
         complexity={cycleVisualization.getComplexity()}

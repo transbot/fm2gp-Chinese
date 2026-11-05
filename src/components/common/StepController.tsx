@@ -33,7 +33,7 @@ export function StepController({
   const { lang } = useLanguage();
   const t = translations[lang];
 
-  const progress = totalSteps > 0 ? (currentStep / (totalSteps - 1)) * 100 : 0;
+  const progress = totalSteps > 1 ? (currentStep / (totalSteps - 1)) * 100 : 0;
   const canGoBack = currentStep > 0 && !disabled;
   const canGoForward = currentStep < totalSteps - 1 && !disabled;
 
@@ -42,16 +42,16 @@ export function StepController({
       {/* Progress bar */}
       <div className="space-y-2">
         <div className="flex justify-between text-sm text-gray-600">
-          <span>{t.currentStep || 'Step'}: {currentStep + 1}</span>
-          <span>{t.totalSteps || 'Total'}: {totalSteps}</span>
+          <span>{t.currentStep}: {totalSteps ? currentStep + 1 : 0}</span>
+          <span>{t.totalSteps}: {totalSteps}</span>
         </div>
         <input
           type="range"
           min={0}
-          max={totalSteps - 1}
+          max={Math.max(0, totalSteps - 1)}
           value={currentStep}
           onChange={(e) => onSeek(Number(e.target.value))}
-          aria-label={t.stepProgress || 'Step progress'}
+          aria-label={t.stepProgress}
           disabled={disabled || totalSteps <= 1}
           className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer disabled:cursor-not-allowed"
           style={{
@@ -66,9 +66,9 @@ export function StepController({
         <button
           onClick={() => onStep('backward')}
           disabled={!canGoBack}
-          aria-label={t.stepBackward || 'Step Backward'}
+          aria-label={t.stepBackward}
           className="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
-          title={t.stepBackward || 'Step Backward'}
+          title={t.stepBackward}
         >
           <ChevronLeft className="w-5 h-5" />
         </button>
@@ -77,9 +77,9 @@ export function StepController({
         <button
           onClick={isPlaying ? onPause : onPlay}
           disabled={disabled || totalSteps <= 1}
-          aria-label={isPlaying ? (t.pause || 'Pause') : (t.play || 'Play')}
+          aria-label={isPlaying ? (t.pause) : (t.play)}
           className="touch-target rounded-lg bg-blue-600 p-3 text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
-          title={isPlaying ? (t.pause || 'Pause') : (t.play || 'Play')}
+          title={isPlaying ? (t.pause) : (t.play)}
         >
           {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
         </button>
@@ -88,9 +88,9 @@ export function StepController({
         <button
           onClick={() => onStep('forward')}
           disabled={!canGoForward}
-          aria-label={t.stepForward || 'Step Forward'}
+          aria-label={t.stepForward}
           className="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
-          title={t.stepForward || 'Step Forward'}
+          title={t.stepForward}
         >
           <ChevronRight className="w-5 h-5" />
         </button>
@@ -98,11 +98,11 @@ export function StepController({
 
       {/* Speed selector */}
       <div className="flex items-center justify-center gap-2">
-        <label className="text-sm text-gray-600">{t.speed || 'Speed'}:</label>
+        <label className="text-sm text-gray-600">{t.speed}:</label>
         <select
           value={speed}
           onChange={(e) => onSpeedChange(Number(e.target.value))}
-          aria-label={t.speed || 'Speed'}
+          aria-label={t.speed}
           disabled={disabled}
           className="touch-target rounded-lg border border-gray-200 px-3 py-1 text-sm disabled:cursor-not-allowed disabled:opacity-50"
         >

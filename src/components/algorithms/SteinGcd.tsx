@@ -142,7 +142,7 @@ export function SteinGcd() {
           'text-xs mt-1 text-center font-medium',
           isEven ? 'text-green-600' : 'text-orange-600'
         )}>
-          {isEven ? (t.even || 'Even') : (t.odd || 'Odd')}
+          {isEven ? (t.even) : (t.odd)}
         </div>
       </div>
     );
@@ -155,7 +155,7 @@ export function SteinGcd() {
     if (op === 'init') {
       return (
         <div className="bg-blue-50 rounded-lg p-4 text-center border border-blue-200">
-          <div className="text-blue-800 font-medium">{t.steinGcdInit || 'Initializing...'}</div>
+          <div className="text-blue-800 font-medium">{t.steinGcdInit}</div>
         </div>
       );
     }
@@ -173,7 +173,7 @@ export function SteinGcd() {
               {op.includes('a') || op === 'common_shift' ? currentState.a : currentState.b}
             </span>
           </div>
-          <div className="text-xs text-purple-600 mt-1">{t.steinGcdShift || 'Right shift (divide by 2)'}</div>
+          <div className="text-xs text-purple-600 mt-1">{t.steinGcdShift}</div>
         </div>
       );
     }
@@ -182,7 +182,7 @@ export function SteinGcd() {
       return (
         <div className="bg-orange-50 rounded-lg p-4 text-center border border-orange-200">
           <div className="text-orange-800 font-medium">
-            {t.steinGcdSubtract || 'Subtraction'}: {op === 'subtract_a' ? '|a - b|' : '|b - a|'}
+            {t.steinGcdSubtract}: {op === 'subtract_a' ? '|a - b|' : '|b - a|'}
           </div>
         </div>
       );
@@ -198,7 +198,7 @@ export function SteinGcd() {
             <ArrowRight className="w-4 h-4 text-green-600" />
             <span className="font-mono text-xl font-bold text-green-800">{currentState.gcd}</span>
           </div>
-          <div className="text-xs text-green-600 mt-1">{t.steinGcdFinalShift || 'Final left shift (multiply by 2^shift)'}</div>
+          <div className="text-xs text-green-600 mt-1">{t.steinGcdFinalShift}</div>
         </div>
       );
     }
@@ -214,15 +214,15 @@ export function SteinGcd() {
       algorithm={steinGcdVisualization}
     >
       {/* Input Controls */}
-      <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* A input */}
           <div className="space-y-2">
             <label className="block text-sm font-medium text-gray-700">
-              {t.firstNumber || 'First Number (a)'}
+              {t.firstNumber}
             </label>
             <input
-              aria-label={t.firstNumber || 'First Number (a)'}
+              aria-label={t.firstNumber}
               type="number"
               min="0"
               max="1000000"
@@ -237,10 +237,10 @@ export function SteinGcd() {
           {/* B input */}
           <div className="space-y-2">
             <label className="block text-sm font-medium text-gray-700">
-              {t.secondNumber || 'Second Number (b)'}
+              {t.secondNumber}
             </label>
             <input
-              aria-label={t.secondNumber || 'Second Number (b)'}
+              aria-label={t.secondNumber}
               type="number"
               min="0"
               max="1000000"
@@ -265,32 +265,32 @@ export function SteinGcd() {
             className="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
           >
             <RotateCcw className="w-4 h-4" />
-            {t.reset || 'Reset'}
+            {t.reset}
           </button>
           <button
             onClick={play}
             disabled={isPlaying || totalSteps <= 1}
-            className="touch-target flex items-center gap-2 rounded-lg bg-green-500 px-6 py-2 font-medium text-white hover:bg-green-600 disabled:opacity-50"
+            className="touch-target flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-medium text-white hover:bg-blue-600 disabled:opacity-50"
           >
             <Play className="w-4 h-4 fill-current" />
-            {t.startCalculation || 'Start Calculation'}
+            {t.startCalculation}
           </button>
         </div>
       </div>
 
       {/* Visualization */}
-      <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200 space-y-6">
+      <div className="bg-gray-50 rounded-xl p-6 border border-gray-200 space-y-6">
         {/* Current values display */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           {renderBitVisualization(currentState.a, 'a')}
           {renderBitVisualization(currentState.b, 'b')}
           <div className="bg-white rounded-lg p-3 border border-gray-200">
-            <div className="text-xs text-gray-500 mb-1">{t.steinGcdShift || 'Common Shift'}</div>
+            <div className="text-xs text-gray-500 mb-1">{t.steinGcdShift}</div>
             <div className="text-2xl font-bold font-mono text-purple-600">{currentState.shift}</div>
             <div className="text-xs text-gray-400 mt-1">2^{currentState.shift} = {Math.pow(2, currentState.shift)}</div>
           </div>
           <div className="bg-white rounded-lg p-3 border border-gray-200">
-            <div className="text-xs text-gray-500 mb-1">{t.result || 'GCD'}</div>
+            <div className="text-xs text-gray-500 mb-1">{t.result}</div>
             <div className="text-2xl font-bold font-mono text-green-600">{currentState.gcd || '-'}</div>
           </div>
         </div>
@@ -304,13 +304,13 @@ export function SteinGcd() {
             <div className="bg-white rounded-lg p-4 border border-gray-200">
               <div className="text-xs text-gray-500 mb-1">{t.steinAlgorithm || "Stein's Algorithm"}</div>
               <div className="text-xl font-bold font-mono text-purple-600">
-                {currentState.step} {t.steps || 'steps'}
+                {currentState.step} {t.steps}
               </div>
             </div>
             <div className="bg-white rounded-lg p-4 border border-gray-200">
-              <div className="text-xs text-gray-500 mb-1">{t.euclideanAlgorithm || 'Euclidean Algorithm'}</div>
+              <div className="text-xs text-gray-500 mb-1">{t.euclideanAlgorithm}</div>
               <div className="text-xl font-bold font-mono text-blue-600">
-                {currentState.euclideanSteps} {t.steps || 'steps'}
+                {currentState.euclideanSteps} {t.steps}
               </div>
             </div>
           </div>
@@ -320,10 +320,10 @@ export function SteinGcd() {
         {currentState.gcd > 0 && currentState.operation === 'final_shift' && (
           <div className="bg-green-100 rounded-lg p-4 text-center border border-green-300">
             <div className="text-lg font-semibold text-green-800">
-              {t.steinGcdResult || 'GCD'} = {currentState.gcd}
+              {t.steinGcdResult} = {currentState.gcd}
             </div>
             <div className="text-sm text-green-600 mt-1">
-              ({t.steinGcdEfficiency || 'Stein\'s algorithm is especially efficient for large numbers and on hardware without division'})
+              ({t.steinGcdEfficiency})
             </div>
           </div>
         )}
@@ -348,7 +348,7 @@ export function SteinGcd() {
         stepDescription={
           currentStepData
             ? steinGcdVisualization.describeStep(currentStepData, lang)
-            : (t.steinGcdReady || 'Ready to start Stein\'s GCD. Enter two numbers.')
+            : (t.steinGcdReady)
         }
         invariant={steinGcdVisualization.getInvariant?.(lang)}
         complexity={steinGcdVisualization.getComplexity()}

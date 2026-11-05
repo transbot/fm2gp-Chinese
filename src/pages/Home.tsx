@@ -198,13 +198,14 @@ export function Home() {
           </div>
         </div>
 
+        <section className="learning-card"><h2 className="text-xl font-semibold">{lang === 'zh' ? '按本书章节学习' : 'Learn chapter by chapter'}</h2><p>{lang === 'zh' ? '14章与3个附录：章节导读、演示、代码、习题和阅读资料。' : '14 chapters and 3 appendices: guides, demonstrations, code, exercises, and reading.'}</p><Link className="learning-primary inline-block" to="/book">{lang === 'zh' ? '打开章节目录' : 'Open the chapter directory'}</Link><Link className="learning-link ml-4" to="/concepts/algebra?route=concepts">{lang === 'zh' ? '从运算性质开始' : 'Start with operation properties'}</Link></section>
         <section aria-labelledby="book-path-title" className="rounded-xl border border-blue-100 bg-blue-50 p-5 sm:p-6">
           <h2 id="book-path-title" className="text-xl font-bold text-gray-900">{lang === 'zh' ? '跟着本书学' : 'Learn with the book'}</h2>
           <p className="mt-2 text-sm text-gray-600">{lang === 'zh' ? '从埃及乘法出发，看同一个算法如何走向矩阵与图。' : 'Start with Egyptian multiplication and follow the same algorithm into matrices and graphs.'}</p>
           <ol className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-4">
             {bookLearningPath.map((step, index) => (
               <li key={step.id} className="rounded-lg bg-white p-4 border border-blue-100">
-                <Link to={getAlgorithmById(step.id)!.path} className="inline-block font-semibold text-blue-800 underline underline-offset-4">
+                <Link to={getAlgorithmById(step.id)!.path + "?route=book"} className="inline-block font-semibold text-blue-800 underline underline-offset-4">
                   {index + 1}. {lang === 'zh' ? `第 ${step.section} 节` : `Section ${step.section}`} · {step.title[lang]}
                 </Link>
                 <p className="mt-3 text-sm leading-relaxed text-gray-700">{step.description[lang]}</p>

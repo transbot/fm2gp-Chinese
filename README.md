@@ -15,7 +15,7 @@
 
 《数学与泛型编程：高效编程的奥秘》中文配套仓库与双语算法演示应用。Alexander A. Stepanov、Daniel E. Rose 著，周靖译；清华大学出版社，2026 年 10 月第 1 版、第 1 次印刷。ISBN：978-7-302-72595-4（据本版版权页核实）。
 
-读者入口：[按章演示](#已实现的算法可视化) · [C++ 配套代码](配套代码(fm2gpcode)/) · [习题参考解答](solutions/) · [教学课件](课件(Course%20Materials)/) · [参考文献](参考文档(References)/)
+读者入口：[按章演示](https://fm2gp-chinese.bookzhou.com/book) · [C++ 配套代码](配套代码(fm2gpcode)/) · [习题参考解答](solutions/) · [教学课件](课件(Course%20Materials)/) · [参考文献](参考文档(References)/)
 
 ## 中文版封面/封底
 
@@ -179,7 +179,7 @@ src/
 ## English Version
 Companion repository and bilingual algorithm demos for *From Mathematics to Generic Programming*, Chinese edition: 《数学与泛型编程：高效编程的奥秘》. Written by Alexander A. Stepanov and Daniel E. Rose, translated by Zhou Jing; published by Tsinghua University Press, first edition and first printing, October 2026. ISBN: 978-7-302-72595-4 (verified against this edition's copyright page).
 
-Reader resources: [Demos by chapter](#implemented-algorithm-visualizations) · [Companion C++ code](配套代码(fm2gpcode)/) · [Exercise solutions](solutions/) · [Teaching slides](课件(Course%20Materials)/) · [References](参考文档(References)/)
+Reader resources: [Demos by chapter](https://fm2gp-chinese.bookzhou.com/book) · [Companion C++ code](配套代码(fm2gpcode)/) · [Exercise solutions](solutions/) · [Teaching slides](课件(Course%20Materials)/) · [References](参考文档(References)/)
 
 ## Chinese Edition Cover / Back Cover
 
