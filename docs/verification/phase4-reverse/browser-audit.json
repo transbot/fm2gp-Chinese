@@ -1,0 +1,498 @@
+[
+  {
+    "base": "http://127.0.0.1:4180",
+    "width": 1440,
+    "lang": "zh",
+    "checks": [
+      "direct route and refresh",
+      "every default snapshot: values, origin tags, frames, counts, event and code; seek/back/forward/replay/reset",
+      "apply during playback; independent timers; capacity shortcut resets all players",
+      "strict invalid tokens; empty/singleton base cases; capacity table; 50-element boundary",
+      "language switch keeps snapshots; translated rewind/continue; keyboard slider/reset/local scrolling",
+      "keyboard scroll moves the buffer strip; buffer_end is visible and distinct from readable elements",
+      "notes and accessibility labels: bilingual/no page numbers; no viewport overflow",
+      "section/exercise source return, back/forward, explicit 11.7 distinction, both bilingual searches"
+    ],
+    "errors": [],
+    "snapshots": [
+      {
+        "rootBeforeSwap": {
+          "step": "148",
+          "values": [
+            {
+              "value": 3,
+              "origin": 3
+            },
+            {
+              "value": 2,
+              "origin": 2
+            },
+            {
+              "value": 1,
+              "origin": 1
+            },
+            {
+              "value": 0,
+              "origin": 0
+            },
+            {
+              "value": 4,
+              "origin": 4
+            },
+            {
+              "value": 8,
+              "origin": 8
+            },
+            {
+              "value": 7,
+              "origin": 7
+            },
+            {
+              "value": 6,
+              "origin": 6
+            },
+            {
+              "value": 5,
+              "origin": 5
+            }
+          ],
+          "counts": [
+            8,
+            0,
+            0,
+            24,
+            4,
+            0
+          ],
+          "line": "ranges",
+          "event": "swapCall",
+          "fn": "recursive"
+        },
+        "bufferEnd": {
+          "step": "17",
+          "values": [
+            {
+              "value": 0,
+              "origin": 0
+            },
+            {
+              "value": 1,
+              "origin": 1
+            },
+            {
+              "value": 2,
+              "origin": 2
+            },
+            {
+              "value": 3,
+              "origin": 3
+            },
+            {
+              "value": 4,
+              "origin": 4
+            },
+            {
+              "value": 5,
+              "origin": 5
+            },
+            {
+              "value": 6,
+              "origin": 6
+            },
+            {
+              "value": 7,
+              "origin": 7
+            },
+            {
+              "value": 8,
+              "origin": 8
+            }
+          ],
+          "counts": [
+            0,
+            4,
+            0,
+            4,
+            2,
+            4
+          ],
+          "line": "return",
+          "event": "copyReturn",
+          "fn": "copy_n"
+        }
+      }
+    ]
+  },
+  {
+    "base": "http://127.0.0.1:4180",
+    "width": 1440,
+    "lang": "en",
+    "checks": [
+      "direct route and refresh",
+      "every default snapshot: values, origin tags, frames, counts, event and code; seek/back/forward/replay/reset",
+      "apply during playback; independent timers; capacity shortcut resets all players",
+      "strict invalid tokens; empty/singleton base cases; capacity table; 50-element boundary",
+      "language switch keeps snapshots; translated rewind/continue; keyboard slider/reset/local scrolling",
+      "keyboard scroll moves the buffer strip; buffer_end is visible and distinct from readable elements",
+      "notes and accessibility labels: bilingual/no page numbers; no viewport overflow",
+      "section/exercise source return, back/forward, explicit 11.7 distinction, both bilingual searches"
+    ],
+    "errors": [],
+    "snapshots": [
+      {
+        "rootBeforeSwap": {
+          "step": "148",
+          "values": [
+            {
+              "value": 3,
+              "origin": 3
+            },
+            {
+              "value": 2,
+              "origin": 2
+            },
+            {
+              "value": 1,
+              "origin": 1
+            },
+            {
+              "value": 0,
+              "origin": 0
+            },
+            {
+              "value": 4,
+              "origin": 4
+            },
+            {
+              "value": 8,
+              "origin": 8
+            },
+            {
+              "value": 7,
+              "origin": 7
+            },
+            {
+              "value": 6,
+              "origin": 6
+            },
+            {
+              "value": 5,
+              "origin": 5
+            }
+          ],
+          "counts": [
+            8,
+            0,
+            0,
+            24,
+            4,
+            0
+          ],
+          "line": "ranges",
+          "event": "swapCall",
+          "fn": "recursive"
+        },
+        "bufferEnd": {
+          "step": "17",
+          "values": [
+            {
+              "value": 0,
+              "origin": 0
+            },
+            {
+              "value": 1,
+              "origin": 1
+            },
+            {
+              "value": 2,
+              "origin": 2
+            },
+            {
+              "value": 3,
+              "origin": 3
+            },
+            {
+              "value": 4,
+              "origin": 4
+            },
+            {
+              "value": 5,
+              "origin": 5
+            },
+            {
+              "value": 6,
+              "origin": 6
+            },
+            {
+              "value": 7,
+              "origin": 7
+            },
+            {
+              "value": 8,
+              "origin": 8
+            }
+          ],
+          "counts": [
+            0,
+            4,
+            0,
+            4,
+            2,
+            4
+          ],
+          "line": "return",
+          "event": "copyReturn",
+          "fn": "copy_n"
+        }
+      }
+    ]
+  },
+  {
+    "base": "http://127.0.0.1:4180",
+    "width": 390,
+    "lang": "zh",
+    "checks": [
+      "direct route and refresh",
+      "every default snapshot: values, origin tags, frames, counts, event and code; seek/back/forward/replay/reset",
+      "apply during playback; independent timers; capacity shortcut resets all players",
+      "strict invalid tokens; empty/singleton base cases; capacity table; 50-element boundary",
+      "language switch keeps snapshots; translated rewind/continue; keyboard slider/reset/local scrolling",
+      "keyboard scroll moves the buffer strip; buffer_end is visible and distinct from readable elements",
+      "notes and accessibility labels: bilingual/no page numbers; no viewport overflow",
+      "section/exercise source return, back/forward, explicit 11.7 distinction, both bilingual searches"
+    ],
+    "errors": [],
+    "snapshots": [
+      {
+        "rootBeforeSwap": {
+          "step": "148",
+          "values": [
+            {
+              "value": 3,
+              "origin": 3
+            },
+            {
+              "value": 2,
+              "origin": 2
+            },
+            {
+              "value": 1,
+              "origin": 1
+            },
+            {
+              "value": 0,
+              "origin": 0
+            },
+            {
+              "value": 4,
+              "origin": 4
+            },
+            {
+              "value": 8,
+              "origin": 8
+            },
+            {
+              "value": 7,
+              "origin": 7
+            },
+            {
+              "value": 6,
+              "origin": 6
+            },
+            {
+              "value": 5,
+              "origin": 5
+            }
+          ],
+          "counts": [
+            8,
+            0,
+            0,
+            24,
+            4,
+            0
+          ],
+          "line": "ranges",
+          "event": "swapCall",
+          "fn": "recursive"
+        },
+        "bufferEnd": {
+          "step": "17",
+          "values": [
+            {
+              "value": 0,
+              "origin": 0
+            },
+            {
+              "value": 1,
+              "origin": 1
+            },
+            {
+              "value": 2,
+              "origin": 2
+            },
+            {
+              "value": 3,
+              "origin": 3
+            },
+            {
+              "value": 4,
+              "origin": 4
+            },
+            {
+              "value": 5,
+              "origin": 5
+            },
+            {
+              "value": 6,
+              "origin": 6
+            },
+            {
+              "value": 7,
+              "origin": 7
+            },
+            {
+              "value": 8,
+              "origin": 8
+            }
+          ],
+          "counts": [
+            0,
+            4,
+            0,
+            4,
+            2,
+            4
+          ],
+          "line": "return",
+          "event": "copyReturn",
+          "fn": "copy_n"
+        }
+      }
+    ]
+  },
+  {
+    "base": "http://127.0.0.1:4180",
+    "width": 390,
+    "lang": "en",
+    "checks": [
+      "direct route and refresh",
+      "every default snapshot: values, origin tags, frames, counts, event and code; seek/back/forward/replay/reset",
+      "apply during playback; independent timers; capacity shortcut resets all players",
+      "strict invalid tokens; empty/singleton base cases; capacity table; 50-element boundary",
+      "language switch keeps snapshots; translated rewind/continue; keyboard slider/reset/local scrolling",
+      "keyboard scroll moves the buffer strip; buffer_end is visible and distinct from readable elements",
+      "notes and accessibility labels: bilingual/no page numbers; no viewport overflow",
+      "section/exercise source return, back/forward, explicit 11.7 distinction, both bilingual searches"
+    ],
+    "errors": [],
+    "snapshots": [
+      {
+        "rootBeforeSwap": {
+          "step": "148",
+          "values": [
+            {
+              "value": 3,
+              "origin": 3
+            },
+            {
+              "value": 2,
+              "origin": 2
+            },
+            {
+              "value": 1,
+              "origin": 1
+            },
+            {
+              "value": 0,
+              "origin": 0
+            },
+            {
+              "value": 4,
+              "origin": 4
+            },
+            {
+              "value": 8,
+              "origin": 8
+            },
+            {
+              "value": 7,
+              "origin": 7
+            },
+            {
+              "value": 6,
+              "origin": 6
+            },
+            {
+              "value": 5,
+              "origin": 5
+            }
+          ],
+          "counts": [
+            8,
+            0,
+            0,
+            24,
+            4,
+            0
+          ],
+          "line": "ranges",
+          "event": "swapCall",
+          "fn": "recursive"
+        },
+        "bufferEnd": {
+          "step": "17",
+          "values": [
+            {
+              "value": 0,
+              "origin": 0
+            },
+            {
+              "value": 1,
+              "origin": 1
+            },
+            {
+              "value": 2,
+              "origin": 2
+            },
+            {
+              "value": 3,
+              "origin": 3
+            },
+            {
+              "value": 4,
+              "origin": 4
+            },
+            {
+              "value": 5,
+              "origin": 5
+            },
+            {
+              "value": 6,
+              "origin": 6
+            },
+            {
+              "value": 7,
+              "origin": 7
+            },
+            {
+              "value": 8,
+              "origin": 8
+            }
+          ],
+          "counts": [
+            0,
+            4,
+            0,
+            4,
+            2,
+            4
+          ],
+          "line": "return",
+          "event": "copyReturn",
+          "fn": "copy_n"
+        }
+      }
+    ]
+  }
+]

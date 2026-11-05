@@ -68,7 +68,7 @@
 | 11.2 | 入门 | [区间交换](https://fm2gp-chinese.bookzhou.com/swap) | 交换相邻区间，作为旋转等算法的基础 |
 | 11.3 | 进阶 | [旋转算法](https://fm2gp-chinese.bookzhou.com/rotate) | 用区间交换理解序列旋转 |
 | 11.4 | 进阶 | [循环分解](https://fm2gp-chinese.bookzhou.com/cycle) | 把置换分解成不相交循环 |
-| 11.5 | 入门 | [逆序](https://fm2gp-chinese.bookzhou.com/reverse) | 用双指针完成原地逆序 |
+| 11.5—11.7 | 入门 | [反转](https://fm2gp-chinese.bookzhou.com/reverse) | 比较双向、前向递归与共享缓冲区自适应反转 |
 | 习题 12.1 | 进阶 | [GCD 性能对比](https://fm2gp-chinese.bookzhou.com/gcd-comparison) | 比较欧几里得算法和斯坦因算法性能 |
 | 12.1-12.2 | 进阶 | [斯坦因 GCD](https://fm2gp-chinese.bookzhou.com/stein-gcd) | 用移位和减法替代除法 |
 | 12.3-12.4 | 高级 | [扩展 GCD](https://fm2gp-chinese.bookzhou.com/extended-gcd) | 求出贝祖系数和模逆元 |
@@ -231,7 +231,7 @@ The Web app has evolved from a flat algorithm list into a bilingual learning too
 | 11.2 | Beginner | [Range Swap](https://fm2gp-chinese.bookzhou.com/swap) | Exchange adjacent ranges as a building block |
 | 11.3 | Intermediate | [Rotation Algorithm](https://fm2gp-chinese.bookzhou.com/rotate) | Understand rotation through range exchange |
 | 11.4 | Intermediate | [Cycle Decomposition](https://fm2gp-chinese.bookzhou.com/cycle) | Decompose permutations into disjoint cycles |
-| 11.5 | Beginner | [Reverse](https://fm2gp-chinese.bookzhou.com/reverse) | Reverse a sequence in place with two pointers |
+| 11.5–11.7 | Beginner | [Reverse](https://fm2gp-chinese.bookzhou.com/reverse) | Compare bidirectional, forward recursive, and shared-buffer adaptive reversal |
 | Exercise 12.1 | Intermediate | [GCD Performance Comparison](https://fm2gp-chinese.bookzhou.com/gcd-comparison) | Compare Euclidean and Stein GCD performance |
 | 12.1-12.2 | Intermediate | [Stein's GCD](https://fm2gp-chinese.bookzhou.com/stein-gcd) | Replace division with shifts and subtraction |
 | 12.3-12.4 | Advanced | [Extended GCD](https://fm2gp-chinese.bookzhou.com/extended-gcd) | Compute Bezout coefficients and modular inverses |

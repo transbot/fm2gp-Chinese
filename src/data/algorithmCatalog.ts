@@ -212,8 +212,8 @@ const coreConcepts: Record<string, LocalizedText> = {
     zh: '用不相交循环理解置换结构',
   },
   reverse: {
-    en: 'Two-pointer in-place sequence transformation',
-    zh: '双指针原地序列变换',
+    en: 'Iterator capabilities, recursive halves, and shared-buffer tradeoffs',
+    zh: '迭代器能力、递归半区与共享缓冲区的权衡',
   },
   'bubble-sort': {
     en: 'Adjacent comparisons move large values to the sorted suffix',
@@ -433,10 +433,10 @@ const algorithmCatalogSeed: AlgorithmCatalogSeed[] = [
     topicId: 'search-sequence',
     order: 70,
     difficulty: 'beginner',
-    source: { type: 'book', section: '11.5' },
+    source: { type: 'book', section: '11.5-11.7' },
     summary: {
-      en: 'Reverse a sequence in place with two pointers.',
-      zh: '用双指针完成原地逆序。',
+      en: 'Compare bidirectional, recursive, and memory-adaptive reversal.',
+      zh: '比较双向、前向递归与内存自适应反转。',
     },
   },
   {

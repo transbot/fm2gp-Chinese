@@ -1,0 +1,17 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+ Test Files  4 passed (4)
+      Tests  120 passed (120)
+   Start at  00:22:22
+   Duration  8.00s (transform 1.45s, setup 1.69s, import 3.34s, tests 4.16s, environment 11.01s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

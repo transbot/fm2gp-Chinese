@@ -1,0 +1,37 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+ ❯ src/lib/algorithms/reverseTrace.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/lib/algorithms/reverseTrace.test.ts [ src/lib/algorithms/reverseTrace.test.ts ]
+Error: Failed to resolve import "./reverseTrace" from "src/lib/algorithms/reverseTrace.test.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: D:/Code/fm2gp-Chinese/src/lib/algorithms/reverseTrace.test.ts:2:64
+  1  |  import { expect, it } from "vitest";
+  2  |  import { parseReverseInput, reverseMethods, reverseTrace } from "./reverseTrace";
+     |                                                                   ^
+  3  |  const values = Array.from({ length: 9 }, (_, i) => i);
+  4  |  const oracle = (n, c) => n < 2 ? [
+ ❯ TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/node.js:30602:39
+ ❯ TransformPluginContext.error node_modules/vite/dist/node/chunks/node.js:30599:14
+ ❯ normalizeUrl node_modules/vite/dist/node/chunks/node.js:27842:18
+ ❯ node_modules/vite/dist/node/chunks/node.js:27905:30
+ ❯ TransformPluginContext.transform node_modules/vite/dist/node/chunks/node.js:27873:4
+ ❯ EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/node.js:30387:14
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/node.js:24646:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  00:16:44
+   Duration  2.09s (transform 15ms, setup 198ms, import 0ms, tests 0ms, environment 1.67s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

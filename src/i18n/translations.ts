@@ -350,8 +350,8 @@ export const translations: Record<Language, TranslationMap> = {
     swapReady: 'Ready to swap. Enter an array and two adjacent ranges.',
 
     // Reverse Algorithm
-    reverseTitle: 'Section 11.5 - Reverse',
-    reverseDescription: 'Visualizing bidirectional array reversal using two-pointer swap technique',
+    reverseTitle: 'Sections 11.5–11.7 - Reversal',
+    reverseDescription: 'Compare bidirectional, forward recursive, and adaptive reversal with a shared buffer',
     devNoteReverse: 'Section 11.5 introduces the reverse algorithm, demonstrating bidirectional traversal with two pointers. By swapping elements from both ends moving toward the center, we achieve in-place reversal in O(n) time with only n/2 swaps. This technique is fundamental to many algorithms including rotation and is a prime example of loop invariant reasoning.',
     leftPointer: 'Left',
     rightPointer: 'Right',
@@ -979,8 +979,8 @@ export const translations: Record<Language, TranslationMap> = {
     swapReady: '准备交换。输入数组和两个相邻区间。',
 
     // Reverse Algorithm
-    reverseTitle: '11.5节 - 逆序',
-    reverseDescription: '使用双指针交换技术实现双向数组逆序的可视化演示',
+    reverseTitle: '11.5—11.7节 - 反转',
+    reverseDescription: '比较双向、前向递归与共享缓冲区自适应反转',
     devNoteReverse: '11.5节介绍了逆序算法，演示了使用双指针的双向遍历。通过从两端向中间交换元素，我们可以在O(n)时间内仅用n/2次交换实现原地逆序。这一技术是许多算法（包括旋转）的基础，也是循环不变式推理的经典案例。',
     leftPointer: '左指针',
     rightPointer: '右指针',

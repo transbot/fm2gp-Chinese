@@ -15,6 +15,12 @@ export interface ConceptLesson {
 // Shared by both search entry points and the chapter/reader navigation.
 export const conceptLessons: ConceptLesson[] = [
   {
+    id: 'reverse-methods', path: '/reverse', sections: ['11.5', '11.6', '11.7'], prerequisite: '/concepts/iterators', topicId: 'search-sequence', difficulty: 'intermediate',
+    title: { zh: '反转：递归与内存自适应', en: 'Reversal: recursion and memory adaptation' },
+    summary: { zh: '比较双向反转、前向递归反转和共享缓冲区的自适应反转。', en: 'Compare bidirectional, forward recursive, and shared-buffer adaptive reversal.' },
+    aliases: ['前向反转', '递归反转', '自适应反转', '缓冲区', '双向反转', 'forward reverse', 'recursive reverse', 'adaptive reverse', 'buffer', 'reverse_recursive', 'reverse_n_adaptive', 'reverse_n_with_buffer', 'swap_ranges_n', 'reverse_copy'],
+  },
+  {
     id: 'division-methods', path: '/division', sections: ['4.5', '4.6'], prerequisite: '/multiply', topicId: 'gcd-modular', difficulty: 'beginner',
     title: { zh: '求余与求商：倍增和斐波那契', en: 'Remainders and quotients: doubling and Fibonacci' },
     summary: { zh: '从逐次减法到倍增与斐波那契求余；观察候选量、运算次数与商余共享。', en: 'From repeated subtraction to doubling and Fibonacci remainder; follow candidates, counts, and shared quotient/remainder work.' },

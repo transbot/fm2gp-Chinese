@@ -183,14 +183,12 @@ describe('core algorithm validation errors', () => {
     expect(screen.getByRole('spinbutton', { name: /Target/i })).toBeInTheDocument();
   });
 
-  it('shows an empty-array error on reverse', () => {
+  it('shows a blank-draft prompt on reverse and requires explicit empty preset', () => {
     renderAlgorithm(<Reverse />);
-
-    const input = screen.getByPlaceholderText('1, 2, 3, 4, 5, 6, 7, 8');
+    const input = screen.getByRole('textbox', { name: /Array/i });
     fireEvent.change(input, { target: { value: '' } });
-    fireEvent.blur(input);
-
-    expect(screen.getByRole('alert')).toHaveTextContent('Array must not be empty');
+    fireEvent.click(screen.getByRole('button', { name: 'Apply input' }));
+    expect(screen.getByRole('alert')).toHaveTextContent('Enter a sequence');
   });
 
   it('labels reverse input for assistive technology', () => {
