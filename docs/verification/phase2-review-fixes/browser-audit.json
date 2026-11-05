@@ -4,6 +4,45 @@
     "browser": "156.0.4314.58",
     "width": 1440,
     "lang": "zh",
+    "screenshotQueries": {
+      "home": "霍纳",
+      "chapter": "霍纳"
+    },
+    "explicitSections": [
+      [
+        "第C.7节",
+        "C-7"
+      ],
+      [
+        "Section C.7",
+        "C-7"
+      ],
+      [
+        "section c.7",
+        "C-7"
+      ],
+      [
+        "第a.1节",
+        "A-1"
+      ],
+      [
+        "section b.1",
+        "B-1"
+      ],
+      [
+        "第9.2节",
+        "9-2"
+      ],
+      [
+        "Section 10.8",
+        "10-8"
+      ]
+    ],
+    "exerciseQueries": [
+      "习题9.2",
+      "Exercise 9.2",
+      "exercise 9.2"
+    ],
     "queries": [
       "霍纳",
       "Horner",
@@ -41,6 +80,45 @@
     "browser": "156.0.4314.58",
     "width": 1440,
     "lang": "en",
+    "screenshotQueries": {
+      "home": "Horner",
+      "chapter": "Horner"
+    },
+    "explicitSections": [
+      [
+        "第C.7节",
+        "C-7"
+      ],
+      [
+        "Section C.7",
+        "C-7"
+      ],
+      [
+        "section c.7",
+        "C-7"
+      ],
+      [
+        "第a.1节",
+        "A-1"
+      ],
+      [
+        "section b.1",
+        "B-1"
+      ],
+      [
+        "第9.2节",
+        "9-2"
+      ],
+      [
+        "Section 10.8",
+        "10-8"
+      ]
+    ],
+    "exerciseQueries": [
+      "习题9.2",
+      "Exercise 9.2",
+      "exercise 9.2"
+    ],
     "queries": [
       "霍纳",
       "Horner",
@@ -78,6 +156,45 @@
     "browser": "156.0.4314.58",
     "width": 390,
     "lang": "zh",
+    "screenshotQueries": {
+      "home": "霍纳",
+      "chapter": "霍纳"
+    },
+    "explicitSections": [
+      [
+        "第C.7节",
+        "C-7"
+      ],
+      [
+        "Section C.7",
+        "C-7"
+      ],
+      [
+        "section c.7",
+        "C-7"
+      ],
+      [
+        "第a.1节",
+        "A-1"
+      ],
+      [
+        "section b.1",
+        "B-1"
+      ],
+      [
+        "第9.2节",
+        "9-2"
+      ],
+      [
+        "Section 10.8",
+        "10-8"
+      ]
+    ],
+    "exerciseQueries": [
+      "习题9.2",
+      "Exercise 9.2",
+      "exercise 9.2"
+    ],
     "queries": [
       "霍纳",
       "Horner",
@@ -115,6 +232,45 @@
     "browser": "156.0.4314.58",
     "width": 390,
     "lang": "en",
+    "screenshotQueries": {
+      "home": "Horner",
+      "chapter": "Horner"
+    },
+    "explicitSections": [
+      [
+        "第C.7节",
+        "C-7"
+      ],
+      [
+        "Section C.7",
+        "C-7"
+      ],
+      [
+        "section c.7",
+        "C-7"
+      ],
+      [
+        "第a.1节",
+        "A-1"
+      ],
+      [
+        "section b.1",
+        "B-1"
+      ],
+      [
+        "第9.2节",
+        "9-2"
+      ],
+      [
+        "Section 10.8",
+        "10-8"
+      ]
+    ],
+    "exerciseQueries": [
+      "习题9.2",
+      "Exercise 9.2",
+      "exercise 9.2"
+    ],
     "queries": [
       "霍纳",
       "Horner",

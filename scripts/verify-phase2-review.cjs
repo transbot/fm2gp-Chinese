@@ -21,6 +21,7 @@ let browser;
     page.on('pageerror', e => errors.push(e.message));
     const go = async route => { assert.equal((await page.goto(baseUrl + route)).status(), 200); await page.locator('h1').first().waitFor(); };
     const noOverflow = async () => assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);
+    const screenshotQuery = lang === 'zh' ? '霍纳' : 'Horner';
     await go('/');
     const results = page.getByTestId('lesson-results');
     const paths = await results.locator('a[href]').evaluateAll(es => es.map(e => e.getAttribute('href')));
@@ -30,7 +31,9 @@ let browser;
       await page.getByRole('searchbox').fill(query);
       assert.equal(await results.locator(`a[href="${path}"]`).count(), 1, query);
     }
-    await page.getByRole('searchbox').fill('Horner');
+    await page.getByRole('searchbox').fill(screenshotQuery);
+    const homeScreenshotQuery = await page.getByRole('searchbox').inputValue();
+    assert.equal(homeScreenshotQuery, screenshotQuery);
     await noOverflow(); await page.screenshot({ path: `${out}/home-search-${lang}-${width}.png`, fullPage: true });
     await results.locator('a[href="/horner"]').click(); await page.locator('h1').waitFor();
     await page.reload(); await page.locator('h1').waitFor(); assert.equal(new URL(page.url()).pathname, '/horner');
@@ -39,7 +42,24 @@ let browser;
       await page.getByRole('searchbox').fill(query);
       assert.equal(await page.locator(`a[href*="#section-${section}"]`).count(), 1, query);
     }
-    await page.getByRole('searchbox').fill('Horner');
+    const explicitSections = [['第C.7节', 'C-7'], ['Section C.7', 'C-7'], ['section c.7', 'C-7'], ['第a.1节', 'A-1'], ['section b.1', 'B-1'], ['第9.2节', '9-2'], ['Section 10.8', '10-8']];
+    for (const [query, anchor] of explicitSections) {
+      await page.getByRole('searchbox').fill(query);
+      const sections = page.locator('a[href*="#section-"]');
+      assert.equal(await sections.count(), 1, query);
+      assert.ok((await sections.getAttribute('href')).endsWith('#section-' + anchor), query);
+      assert.equal(await page.locator('a[href*="#exercise-"]').count(), 0, query);
+    }
+    for (const query of ['习题9.2', 'Exercise 9.2', 'exercise 9.2']) {
+      await page.getByRole('searchbox').fill(query);
+      assert.equal(await page.locator('a[href*="#section-"]').count(), 0, query);
+      const exercises = page.locator('a[href*="#exercise-"]');
+      assert.equal(await exercises.count(), 1, query);
+      assert.ok((await exercises.getAttribute('href')).endsWith('#exercise-9-2'), query);
+    }
+    await page.getByRole('searchbox').fill(screenshotQuery);
+    const chapterScreenshotQuery = await page.getByRole('searchbox').inputValue();
+    assert.equal(chapterScreenshotQuery, screenshotQuery);
     await noOverflow(); await page.screenshot({ path: `${out}/chapter-search-${lang}-${width}.png`, fullPage: true });
     await page.locator('a[href*="#section-8-1"]').click(); await page.locator('#section-8-1').waitFor();
     await page.locator('#section-8-1 a[href*="/horner"]').click(); await page.locator('h1').waitFor();
@@ -76,10 +96,10 @@ let browser;
     await page.getByRole('button', { name: lang === 'zh' ? '中文' : 'English', exact: true }).click();
     await noOverflow(); assert.deepEqual(errors, []);
     await page.screenshot({ path: `${out}/overflow-state-${lang}-${width}.png`, fullPage: true });
-    audit.push({ baseUrl, browser: browser.version(), width, lang, queries: queries.map(([q]) => q), homePathsUnique: true, rejectedOriginalTokens: ['[1.00000000000000001,2]', '[1e-400,2]'], overflow: { term: 1000000000000, power: 2, multiplications: 2, review: 'pass', autoplayReplay: 'pass', languageSwitch: 'pass' }, navigation: 'home entry, refresh, chapter source return and back passed', errors });
+    audit.push({ baseUrl, browser: browser.version(), width, lang, screenshotQueries: { home: homeScreenshotQuery, chapter: chapterScreenshotQuery }, explicitSections, exerciseQueries: ['习题9.2', 'Exercise 9.2', 'exercise 9.2'], queries: queries.map(([q]) => q), homePathsUnique: true, rejectedOriginalTokens: ['[1.00000000000000001,2]', '[1e-400,2]'], overflow: { term: 1000000000000, power: 2, multiplications: 2, review: 'pass', autoplayReplay: 'pass', languageSwitch: 'pass' }, navigation: 'home entry, refresh, chapter source return and back passed', errors });
     await context.close();
   }
   fs.writeFileSync(`${out}/browser-audit.json`, JSON.stringify(audit, null, 2));
-  console.log('PASS: both search entry points (14 queries), exact input rejection, overflow review/replay, in both languages at 1440/390.');
+  console.log('PASS: both search entry points (14 queries), localized screenshot queries, exact appendix sections, section/exercise separation, exact input rejection, overflow review/replay, in both languages at 1440/390.');
   await browser.close();
 })().catch(async e => { console.error(e); await browser?.close(); process.exitCode = 1; });

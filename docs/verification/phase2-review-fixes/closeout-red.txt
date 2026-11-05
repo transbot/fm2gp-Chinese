@@ -1,0 +1,112 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+ ❯ src/data/lessonSearch.test.ts (31 tests | 5 failed) 45ms
+   × matches only appendix section C.7 for 第C.7节 5ms
+   × matches only appendix section C.7 for Section C.7 1ms
+   × matches only appendix section C.7 for section c.7 1ms
+   × matches explicit section C.7 exactly in either letter case 1ms
+   × does not loosely match malformed or nonexistent explicit section 第C.7.1节 2ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 5 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/data/lessonSearch.test.ts > matches only appendix section C.7 for 第C.7节
+ FAIL  src/data/lessonSearch.test.ts > matches only appendix section C.7 for Section C.7
+ FAIL  src/data/lessonSearch.test.ts > matches only appendix section C.7 for section c.7
+AssertionError: expected [ '10', 'C' ] to deeply equal [ 'C' ]
+
+- Expected
++ Received
+
+  [
++   "10",
+    "C",
+  ]
+
+ ❯ src/data/lessonSearch.test.ts:38:35
+     36| it.each(['第C.7节', 'Section C.7', 'section c.7'])('matches only appendi…
+     37|   const chapters = searchBook(query);
+     38|   expect(chapters.map(c => c.id)).toEqual(['C']);
+       |                                   ^
+     39|   expect(chapters.flatMap(c => c.sections).map(s => s.id)).toEqual(['C…
+     40|   expect(chapters.flatMap(c => c.exercises)).toEqual([]);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/5]⎯
+
+ FAIL  src/data/lessonSearch.test.ts > matches explicit section C.7 exactly in either letter case
+AssertionError: expected [ '10.4', '10.5', '10.6', 'C.7' ] to deeply equal [ 'C.7' ]
+
+- Expected
++ Received
+
+  [
++   "10.4",
++   "10.5",
++   "10.6",
+    "C.7",
+  ]
+
+ ❯ src/data/lessonSearch.test.ts:45:71
+     43| it.each(['A.1', 'B.1', 'C.7', '9.2', '10.8'])('matches explicit sectio…
+     44|   for (const query of [`第${id}节`, `Section ${id}`, `section ${id.toLow…
+     45|     expect(searchBook(query).flatMap(c => c.sections).map(s => s.id)).…
+       |                                                                       ^
+     46|     expect(searchBook(query).flatMap(c => c.exercises)).toEqual([]);
+     47|   }
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/5]⎯
+
+ FAIL  src/data/lessonSearch.test.ts > does not loosely match malformed or nonexistent explicit section 第C.7.1节
+AssertionError: expected [ { id: '7', title: { …(2) }, …(4) } ] to deeply equal []
+
+- Expected
++ Received
+
+- []
++ [
++   {
++     "exercises": [],
++     "guide": {
++       "en": "Extract the actual requirements of Egyptian multiplication and make the operation a parameter. Use Chapter 6’s associativity to apply one procedure to numbers and matrices.",
++       "zh": "从埃及乘法中提取真正需要的条件，把固定运算变成参数。先理解第6章的结合律，再将同一流程用于数和矩阵。",
++     },
++     "id": "7",
++     "sections": [
++       {
++         "id": "7.1",
++         "sourcePdfPage": 130,
++         "title": {
++           "en": "Identifying algorithm requirements",
++           "zh": "梳理算法的要求",
++         },
++       },
++     ],
++     "sourcePdfPage": 130,
++     "title": {
++       "en": "Deriving a generic algorithm",
++       "zh": "推导泛型算法",
++     },
++   },
++ ]
+
+ ❯ src/data/lessonSearch.test.ts:57:29
+     55|
+     56| it.each(['section C.70', 'Section C.7x', '第C.7.1节', 'Section Z.7'])('d…
+     57|   expect(searchBook(query)).toEqual([]);
+       |                             ^
+     58| });
+     59|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/5]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  5 failed | 26 passed (31)
+   Start at  20:58:32
+   Duration  2.23s (transform 86ms, setup 205ms, import 96ms, tests 45ms, environment 1.67s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

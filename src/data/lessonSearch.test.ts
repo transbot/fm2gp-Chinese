@@ -32,3 +32,27 @@ it('keeps source filtering and section/exercise disambiguation', () => {
   expect(searchBook('第9.2节').flatMap(c => c.exercises)).toEqual([]);
   expect(searchBook('习题9.2').flatMap(c => c.sections)).toEqual([]);
 });
+
+it.each(['第C.7节', 'Section C.7', 'section c.7'])('matches only appendix section C.7 for %s', query => {
+  const chapters = searchBook(query);
+  expect(chapters.map(c => c.id)).toEqual(['C']);
+  expect(chapters.flatMap(c => c.sections).map(s => s.id)).toEqual(['C.7']);
+  expect(chapters.flatMap(c => c.exercises)).toEqual([]);
+});
+
+it.each(['A.1', 'B.1', 'C.7', '9.2', '10.8'])('matches explicit section %s exactly in either letter case', id => {
+  for (const query of [`第${id}节`, `Section ${id}`, `section ${id.toLowerCase()}`]) {
+    expect(searchBook(query).flatMap(c => c.sections).map(s => s.id)).toEqual([id]);
+    expect(searchBook(query).flatMap(c => c.exercises)).toEqual([]);
+  }
+});
+
+it.each(['习题9.2', 'Exercise 9.2', 'exercise 9.2'])('keeps exercise %s separate from its same-number section', query => {
+  const chapters = searchBook(query);
+  expect(chapters.flatMap(c => c.sections)).toEqual([]);
+  expect(chapters.flatMap(c => c.exercises).map(e => e.id)).toEqual(['9.2']);
+});
+
+it.each(['section C.70', 'Section C.7x', '第C.7.1节', 'Section Z.7'])('does not loosely match malformed or nonexistent explicit section %s', query => {
+  expect(searchBook(query)).toEqual([]);
+});
