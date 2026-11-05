@@ -1,0 +1,78 @@
+[
+  {
+    "baseUrl": "https://fm2gp-chinese.bookzhou.com",
+    "width": 1440,
+    "lang": "zh",
+    "passed": [
+      "chapter entry",
+      "direct route refresh",
+      "back/forward",
+      "language preserves state and code highlight",
+      "replay explanations switch language",
+      "input during playback resets both players",
+      "new-input forward/back",
+      "41 and operation counts",
+      "keyboard disclosure",
+      "no page numbers",
+      "no page overflow"
+    ],
+    "errors": []
+  },
+  {
+    "baseUrl": "https://fm2gp-chinese.bookzhou.com",
+    "width": 1440,
+    "lang": "en",
+    "passed": [
+      "chapter entry",
+      "direct route refresh",
+      "back/forward",
+      "language preserves state and code highlight",
+      "replay explanations switch language",
+      "input during playback resets both players",
+      "new-input forward/back",
+      "41 and operation counts",
+      "keyboard disclosure",
+      "no page numbers",
+      "no page overflow"
+    ],
+    "errors": []
+  },
+  {
+    "baseUrl": "https://fm2gp-chinese.bookzhou.com",
+    "width": 390,
+    "lang": "zh",
+    "passed": [
+      "chapter entry",
+      "direct route refresh",
+      "back/forward",
+      "language preserves state and code highlight",
+      "replay explanations switch language",
+      "input during playback resets both players",
+      "new-input forward/back",
+      "41 and operation counts",
+      "keyboard disclosure",
+      "no page numbers",
+      "no page overflow"
+    ],
+    "errors": []
+  },
+  {
+    "baseUrl": "https://fm2gp-chinese.bookzhou.com",
+    "width": 390,
+    "lang": "en",
+    "passed": [
+      "chapter entry",
+      "direct route refresh",
+      "back/forward",
+      "language preserves state and code highlight",
+      "replay explanations switch language",
+      "input during playback resets both players",
+      "new-input forward/back",
+      "41 and operation counts",
+      "keyboard disclosure",
+      "no page numbers",
+      "no page overflow"
+    ],
+    "errors": []
+  }
+]

@@ -1,0 +1,8 @@
+locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: /自动排序/ })
+
+    at D:\Code\fm2gp-Chinese\scripts\verify-release-smoke.cjs:78:76 {
+  log: [ "  - waiting for getByRole('button', { name: /自动排序/ })" ],
+  name: 'TimeoutError'
+}

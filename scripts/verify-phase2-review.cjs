@@ -2,7 +2,7 @@ const { chromium } = require('playwright');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const baseUrl = process.env.READER_BASE_URL || 'http://127.0.0.1:4176';
-const out = 'docs/verification/phase2-review-fixes';
+const out = process.env.READER_OUTPUT_DIR || 'docs/verification/phase2-review-fixes';
 let browser;
 (async () => {
   browser = await chromium.launch({ executablePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe', headless: true });

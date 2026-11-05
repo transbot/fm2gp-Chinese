@@ -1,0 +1,70 @@
+[
+  {
+    "baseUrl": "https://fm2gp-chinese.bookzhou.com",
+    "lang": "zh",
+    "width": 1440,
+    "checkedAt": "2026-11-05T13:32:50.644Z",
+    "passed": [
+      "algebra counterexample and noncommutativity",
+      "power input resets playback; translated replay preserves state and code",
+      "matrix at-most reachability",
+      "iterator end and review movement count",
+      "binary [1,3,5] key 0 and both bounds 0",
+      "shortest distance 7 and selected path",
+      "C.7 exact search, refresh, source return",
+      "no page numbers and no whole-page overflow"
+    ],
+    "errors": []
+  },
+  {
+    "baseUrl": "https://fm2gp-chinese.bookzhou.com",
+    "lang": "en",
+    "width": 1440,
+    "checkedAt": "2026-11-05T13:33:05.297Z",
+    "passed": [
+      "algebra counterexample and noncommutativity",
+      "power input resets playback; translated replay preserves state and code",
+      "matrix at-most reachability",
+      "iterator end and review movement count",
+      "binary [1,3,5] key 0 and both bounds 0",
+      "shortest distance 7 and selected path",
+      "C.7 exact search, refresh, source return",
+      "no page numbers and no whole-page overflow"
+    ],
+    "errors": []
+  },
+  {
+    "baseUrl": "https://fm2gp-chinese.bookzhou.com",
+    "lang": "zh",
+    "width": 390,
+    "checkedAt": "2026-11-05T13:33:19.327Z",
+    "passed": [
+      "algebra counterexample and noncommutativity",
+      "power input resets playback; translated replay preserves state and code",
+      "matrix at-most reachability",
+      "iterator end and review movement count",
+      "binary [1,3,5] key 0 and both bounds 0",
+      "shortest distance 7 and selected path",
+      "C.7 exact search, refresh, source return",
+      "no page numbers and no whole-page overflow"
+    ],
+    "errors": []
+  },
+  {
+    "baseUrl": "https://fm2gp-chinese.bookzhou.com",
+    "lang": "en",
+    "width": 390,
+    "checkedAt": "2026-11-05T13:33:33.097Z",
+    "passed": [
+      "algebra counterexample and noncommutativity",
+      "power input resets playback; translated replay preserves state and code",
+      "matrix at-most reachability",
+      "iterator end and review movement count",
+      "binary [1,3,5] key 0 and both bounds 0",
+      "shortest distance 7 and selected path",
+      "C.7 exact search, refresh, source return",
+      "no page numbers and no whole-page overflow"
+    ],
+    "errors": []
+  }
+]

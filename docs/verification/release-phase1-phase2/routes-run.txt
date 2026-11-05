@@ -1,0 +1,12 @@
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+404 !== 200
+
+    at go (D:\Code\fm2gp-Chinese\scripts\verify-reader-production.cjs:24:14)
+    at async D:\Code\fm2gp-Chinese\scripts\verify-reader-production.cjs:32:7 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 404,
+  expected: 200,
+  operator: 'strictEqual'
+}

@@ -1,0 +1,42 @@
+{
+  "reviewedCommit": "eaa987465d8edba002ecaff777d2e3b8a98338d9",
+  "previousMain": "b8cc389bd84035a363607f0972b06cb6aed22b43",
+  "mergeMethod": "fast-forward; remote main had 0 unique commits and review branch had 5",
+  "applicationReleaseCommit": "863cb9527cd0d6a5b093f61d4fa54bc88ae3e23c",
+  "productionUrl": "https://fm2gp-chinese.bookzhou.com/",
+  "providerEvidence": "Observed authenticated Netlify Deploys and deploy detail UI via browser; not GitHub check status",
+  "deploys": [
+    {
+      "id": "6aec83cde6ffbe659a73346b",
+      "commit": "eaa987465d8edba002ecaff777d2e3b8a98338d9",
+      "stateWhenObserved": "Published; later superseded by routing fix",
+      "branch": "main",
+      "url": "https://app.netlify.com/projects/fm2gp-chinese/deploys/6aec83cde6ffbe659a73346b",
+      "permalink": "https://6aec83cde6ffbe659a73346b--fm2gp-chinese.netlify.app/",
+      "localDate": "2026-11-05",
+      "buildStart": "21:25:35 +08:00",
+      "buildEnd": "21:25:51 +08:00",
+      "deploySeconds": 16,
+      "stages": [
+        "Initializing Complete",
+        "Building Complete",
+        "Deploying Complete",
+        "Cleanup Complete",
+        "Post-processing Complete"
+      ]
+    },
+    {
+      "id": "6aec84be20dc3c5971ef7919",
+      "commit": "863cb9527cd0d6a5b093f61d4fa54bc88ae3e23c",
+      "stateWhenObserved": "Published",
+      "branch": "main",
+      "url": "https://app.netlify.com/projects/fm2gp-chinese/deploys/6aec84be20dc3c5971ef7919",
+      "permalink": "https://6aec84be20dc3c5971ef7919--fm2gp-chinese.netlify.app/",
+      "localPublishedLabel": "2026-11-05 21:29 +08:00",
+      "deploySeconds": 11
+    }
+  ],
+  "runtimeChangeAfterReview": "Only netlify.toml: non-forced /* -> /index.html status 200 rewrite; all src and public files unchanged",
+  "initialFailure": "verify-reader-production.cjs: /book returned 404; routes-run.txt retained",
+  "docs": "https://docs.netlify.com/manage/routing/redirects/rewrites-proxies/#history-pushstate-and-single-page-apps"
+}

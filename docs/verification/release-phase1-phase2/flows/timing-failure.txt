@@ -1,0 +1,13 @@
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ '/power'
+- '/fast-fibonacci'
+
+    at D:\Code\fm2gp-Chinese\scripts\verify-reader-flows.cjs:24:165 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: '/power',
+  expected: '/fast-fibonacci',
+  operator: 'strictEqual'
+}

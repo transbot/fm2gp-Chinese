@@ -1,0 +1,11 @@
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(images.every(i=>i.complete&&i.width>0))
+
+    at D:\Code\fm2gp-Chinese\scripts\verify-reader-flows.cjs:35:152 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
