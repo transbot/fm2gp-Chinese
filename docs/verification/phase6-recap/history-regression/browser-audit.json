@@ -1,0 +1,2766 @@
+[
+  {
+    "base": "http://127.0.0.1:4184",
+    "width": 1440,
+    "lang": "zh",
+    "records": [
+      {
+        "label": "direct-book",
+        "url": "/book/4",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 918,
+            "bottom": 1036,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1060,
+            "bottom": 1178,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2698,
+            "bottom": 2840,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "depart-for-section-4-5",
+        "url": "/book/4",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 918,
+            "bottom": 1036,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1060,
+            "bottom": 1178,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2698,
+            "bottom": 2840,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "arrive-section-4-5",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "fzbwv78r",
+          "idx": 1
+        },
+        "key": "fzbwv78r",
+        "scrollY": 902,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 158,
+            "bottom": 276,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1796,
+            "bottom": 1938,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "depart-for-section-4-6",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "fzbwv78r",
+          "idx": 1
+        },
+        "key": "fzbwv78r",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 918,
+            "bottom": 1036,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1060,
+            "bottom": 1178,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2698,
+            "bottom": 2840,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "arrive-section-4-6",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "x9di7r34",
+          "idx": 2
+        },
+        "key": "x9di7r34",
+        "scrollY": 1044,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -126,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1654,
+            "bottom": 1796,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "leave-46-for-back",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "x9di7r34",
+          "idx": 2
+        },
+        "key": "x9di7r34",
+        "scrollY": 1044,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -126,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1654,
+            "bottom": 1796,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "back-to-45",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "fzbwv78r",
+          "idx": 1
+        },
+        "key": "fzbwv78r",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 918,
+            "bottom": 1036,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1060,
+            "bottom": 1178,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2698,
+            "bottom": 2840,
+            "expectedTop": 692
+          }
+        },
+        "expectedDeparture": "depart-for-section-4-6",
+        "expectedScrollY": 0,
+        "restored": true
+      },
+      {
+        "label": "leave-45-for-forward",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "fzbwv78r",
+          "idx": 1
+        },
+        "key": "fzbwv78r",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 918,
+            "bottom": 1036,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1060,
+            "bottom": 1178,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2698,
+            "bottom": 2840,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "forward-to-46",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "x9di7r34",
+          "idx": 2
+        },
+        "key": "x9di7r34",
+        "scrollY": 1044,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -126,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1654,
+            "bottom": 1796,
+            "expectedTop": 692
+          }
+        },
+        "expectedDeparture": "leave-46-for-back",
+        "expectedScrollY": 1044,
+        "restored": true
+      },
+      {
+        "label": "manual-46-departure",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "x9di7r34",
+          "idx": 2
+        },
+        "key": "x9di7r34",
+        "scrollY": 1167,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -249,
+            "bottom": -131,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": -107,
+            "bottom": 11,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1531,
+            "bottom": 1673,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "back-before-manual-45",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "fzbwv78r",
+          "idx": 1
+        },
+        "key": "fzbwv78r",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 918,
+            "bottom": 1036,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1060,
+            "bottom": 1178,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2698,
+            "bottom": 2840,
+            "expectedTop": 692
+          }
+        },
+        "expectedDeparture": "leave-45-for-forward",
+        "expectedScrollY": 0,
+        "restored": true
+      },
+      {
+        "label": "manual-45-departure",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "fzbwv78r",
+          "idx": 1
+        },
+        "key": "fzbwv78r",
+        "scrollY": 87,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 831,
+            "bottom": 949,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 973,
+            "bottom": 1091,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2611,
+            "bottom": 2753,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "restore-manual-46",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "x9di7r34",
+          "idx": 2
+        },
+        "key": "x9di7r34",
+        "scrollY": 1167,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -249,
+            "bottom": -131,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": -107,
+            "bottom": 11,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1531,
+            "bottom": 1673,
+            "expectedTop": 692
+          }
+        },
+        "expectedDeparture": "manual-46-departure",
+        "expectedScrollY": 1167,
+        "restored": true
+      },
+      {
+        "label": "restore-manual-45",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "fzbwv78r",
+          "idx": 1
+        },
+        "key": "fzbwv78r",
+        "scrollY": 87,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 831,
+            "bottom": 949,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 973,
+            "bottom": 1091,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2611,
+            "bottom": 2753,
+            "expectedTop": 692
+          }
+        },
+        "expectedDeparture": "manual-45-departure",
+        "expectedScrollY": 87,
+        "restored": true
+      },
+      {
+        "label": "depart-for-section-4-5",
+        "url": "/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 918,
+            "bottom": 1036,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1060,
+            "bottom": 1178,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2698,
+            "bottom": 2840,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "arrive-section-4-5",
+        "url": "/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "grc2smmv",
+          "idx": 1
+        },
+        "key": "grc2smmv",
+        "scrollY": 902,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 158,
+            "bottom": 276,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1796,
+            "bottom": 1938,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "depart-for-section-4-6",
+        "url": "/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "grc2smmv",
+          "idx": 1
+        },
+        "key": "grc2smmv",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 918,
+            "bottom": 1036,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1060,
+            "bottom": 1178,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2698,
+            "bottom": 2840,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "arrive-section-4-6",
+        "url": "/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "l2i0hz8n",
+          "idx": 2
+        },
+        "key": "l2i0hz8n",
+        "scrollY": 1044,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -126,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1654,
+            "bottom": 1796,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "direct-hash",
+        "url": "/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99#section-4-6",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 1044,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -126,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1654,
+            "bottom": 1796,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "refresh-hash",
+        "url": "/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99#section-4-6",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 1044,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -126,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1654,
+            "bottom": 1796,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "division-from-section-4-6",
+        "url": "/division?from=%2Fbook%2F4%3Fq%3D%25E6%2596%2590%25E6%25B3%25A2%25E9%2582%25A3%25E5%25A5%2591%25E6%25B1%2582%25E4%25BD%2599%23section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "ao7u4yvq",
+          "idx": 1
+        },
+        "key": "ao7u4yvq",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": null,
+          "section-4-6": null,
+          "exercise-4-6": null
+        }
+      },
+      {
+        "label": "source-return-section-4-6",
+        "url": "/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "0assqjc2",
+          "idx": 2
+        },
+        "key": "0assqjc2",
+        "scrollY": 1044,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -126,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1654,
+            "bottom": 1796,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "division-from-exercise-4-6",
+        "url": "/division?from=%2Fbook%2F4%3Fq%3D%25E6%2596%2590%25E6%25B3%25A2%25E9%2582%25A3%25E5%25A5%2591%25E6%25B1%2582%25E4%25BD%2599%23exercise-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "ak5gac3w",
+          "idx": 3
+        },
+        "key": "ak5gac3w",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": null,
+          "section-4-6": null,
+          "exercise-4-6": null
+        }
+      },
+      {
+        "label": "source-return-exercise-4-6",
+        "url": "/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99#exercise-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "14jpcql2",
+          "idx": 4
+        },
+        "key": "14jpcql2",
+        "scrollY": 2006,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -1088,
+            "bottom": -970,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": -946,
+            "bottom": -828,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 692,
+            "bottom": 834,
+            "expectedTop": 692
+          }
+        }
+      }
+    ],
+    "errors": [],
+    "explicitKeys": [
+      "default",
+      "fzbwv78r",
+      "x9di7r34"
+    ],
+    "uniqueKeys": true
+  },
+  {
+    "base": "http://127.0.0.1:4184",
+    "width": 1440,
+    "lang": "en",
+    "records": [
+      {
+        "label": "direct-book",
+        "url": "/book/4",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 0,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1018,
+            "bottom": 1136,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1160,
+            "bottom": 1278,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2798,
+            "bottom": 2940,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "depart-for-section-4-5",
+        "url": "/book/4",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 0,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1018,
+            "bottom": 1136,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1160,
+            "bottom": 1278,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2798,
+            "bottom": 2940,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "arrive-section-4-5",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "e8d9v9ed",
+          "idx": 1
+        },
+        "key": "e8d9v9ed",
+        "scrollY": 1002,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 158,
+            "bottom": 276,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1796,
+            "bottom": 1938,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "depart-for-section-4-6",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "e8d9v9ed",
+          "idx": 1
+        },
+        "key": "e8d9v9ed",
+        "scrollY": 0,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1018,
+            "bottom": 1136,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1160,
+            "bottom": 1278,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2798,
+            "bottom": 2940,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "arrive-section-4-6",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "p09vspgk",
+          "idx": 2
+        },
+        "key": "p09vspgk",
+        "scrollY": 1144,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -126,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1654,
+            "bottom": 1796,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "leave-46-for-back",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "p09vspgk",
+          "idx": 2
+        },
+        "key": "p09vspgk",
+        "scrollY": 1144,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -126,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1654,
+            "bottom": 1796,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "back-to-45",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "e8d9v9ed",
+          "idx": 1
+        },
+        "key": "e8d9v9ed",
+        "scrollY": 0,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1018,
+            "bottom": 1136,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1160,
+            "bottom": 1278,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2798,
+            "bottom": 2940,
+            "expectedTop": 692
+          }
+        },
+        "expectedDeparture": "depart-for-section-4-6",
+        "expectedScrollY": 0,
+        "restored": true
+      },
+      {
+        "label": "leave-45-for-forward",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "e8d9v9ed",
+          "idx": 1
+        },
+        "key": "e8d9v9ed",
+        "scrollY": 0,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1018,
+            "bottom": 1136,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1160,
+            "bottom": 1278,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2798,
+            "bottom": 2940,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "forward-to-46",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "p09vspgk",
+          "idx": 2
+        },
+        "key": "p09vspgk",
+        "scrollY": 1144,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -126,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1654,
+            "bottom": 1796,
+            "expectedTop": 692
+          }
+        },
+        "expectedDeparture": "leave-46-for-back",
+        "expectedScrollY": 1144,
+        "restored": true
+      },
+      {
+        "label": "manual-46-departure",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "p09vspgk",
+          "idx": 2
+        },
+        "key": "p09vspgk",
+        "scrollY": 1267,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -249,
+            "bottom": -131,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": -107,
+            "bottom": 11,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1531,
+            "bottom": 1673,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "back-before-manual-45",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "e8d9v9ed",
+          "idx": 1
+        },
+        "key": "e8d9v9ed",
+        "scrollY": 0,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1018,
+            "bottom": 1136,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1160,
+            "bottom": 1278,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2798,
+            "bottom": 2940,
+            "expectedTop": 692
+          }
+        },
+        "expectedDeparture": "leave-45-for-forward",
+        "expectedScrollY": 0,
+        "restored": true
+      },
+      {
+        "label": "manual-45-departure",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "e8d9v9ed",
+          "idx": 1
+        },
+        "key": "e8d9v9ed",
+        "scrollY": 87,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 931,
+            "bottom": 1049,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1073,
+            "bottom": 1191,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2711,
+            "bottom": 2853,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "restore-manual-46",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "p09vspgk",
+          "idx": 2
+        },
+        "key": "p09vspgk",
+        "scrollY": 1267,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -249,
+            "bottom": -131,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": -107,
+            "bottom": 11,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1531,
+            "bottom": 1673,
+            "expectedTop": 692
+          }
+        },
+        "expectedDeparture": "manual-46-departure",
+        "expectedScrollY": 1267,
+        "restored": true
+      },
+      {
+        "label": "restore-manual-45",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "e8d9v9ed",
+          "idx": 1
+        },
+        "key": "e8d9v9ed",
+        "scrollY": 87,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 931,
+            "bottom": 1049,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1073,
+            "bottom": 1191,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2711,
+            "bottom": 2853,
+            "expectedTop": 692
+          }
+        },
+        "expectedDeparture": "manual-45-departure",
+        "expectedScrollY": 87,
+        "restored": true
+      },
+      {
+        "label": "depart-for-section-4-5",
+        "url": "/book/4?q=Fibonacci%20remainder",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 0,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1018,
+            "bottom": 1136,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1160,
+            "bottom": 1278,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2798,
+            "bottom": 2940,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "arrive-section-4-5",
+        "url": "/book/4?q=Fibonacci%20remainder#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "8rb7j5up",
+          "idx": 1
+        },
+        "key": "8rb7j5up",
+        "scrollY": 1002,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 158,
+            "bottom": 276,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1796,
+            "bottom": 1938,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "depart-for-section-4-6",
+        "url": "/book/4?q=Fibonacci%20remainder#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "8rb7j5up",
+          "idx": 1
+        },
+        "key": "8rb7j5up",
+        "scrollY": 0,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1018,
+            "bottom": 1136,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1160,
+            "bottom": 1278,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2798,
+            "bottom": 2940,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "arrive-section-4-6",
+        "url": "/book/4?q=Fibonacci%20remainder#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "qidy747z",
+          "idx": 2
+        },
+        "key": "qidy747z",
+        "scrollY": 1144,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -126,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1654,
+            "bottom": 1796,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "direct-hash",
+        "url": "/book/4?q=Fibonacci%20remainder#section-4-6",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 1144,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -126,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1654,
+            "bottom": 1796,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "refresh-hash",
+        "url": "/book/4?q=Fibonacci%20remainder#section-4-6",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 1144,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -126,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1654,
+            "bottom": 1796,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "division-from-section-4-6",
+        "url": "/division?from=%2Fbook%2F4%3Fq%3DFibonacci%2520remainder%23section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "w0d1mrvi",
+          "idx": 1
+        },
+        "key": "w0d1mrvi",
+        "scrollY": 0,
+        "language": "en",
+        "targets": {
+          "section-4-5": null,
+          "section-4-6": null,
+          "exercise-4-6": null
+        }
+      },
+      {
+        "label": "source-return-section-4-6",
+        "url": "/book/4?q=Fibonacci%20remainder#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "bfj276gy",
+          "idx": 2
+        },
+        "key": "bfj276gy",
+        "scrollY": 1144,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -126,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 134,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1654,
+            "bottom": 1796,
+            "expectedTop": 692
+          }
+        }
+      },
+      {
+        "label": "division-from-exercise-4-6",
+        "url": "/division?from=%2Fbook%2F4%3Fq%3DFibonacci%2520remainder%23exercise-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "2p6amctj",
+          "idx": 3
+        },
+        "key": "2p6amctj",
+        "scrollY": 0,
+        "language": "en",
+        "targets": {
+          "section-4-5": null,
+          "section-4-6": null,
+          "exercise-4-6": null
+        }
+      },
+      {
+        "label": "source-return-exercise-4-6",
+        "url": "/book/4?q=Fibonacci%20remainder#exercise-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "h98l73i3",
+          "idx": 4
+        },
+        "key": "h98l73i3",
+        "scrollY": 2106,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -1088,
+            "bottom": -970,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": -946,
+            "bottom": -828,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 692,
+            "bottom": 834,
+            "expectedTop": 692
+          }
+        }
+      }
+    ],
+    "errors": [],
+    "explicitKeys": [
+      "default",
+      "e8d9v9ed",
+      "p09vspgk"
+    ],
+    "uniqueKeys": true
+  },
+  {
+    "base": "http://127.0.0.1:4184",
+    "width": 390,
+    "lang": "zh",
+    "records": [
+      {
+        "label": "direct-book",
+        "url": "/book/4",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 1034,
+            "bottom": 1136,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1160,
+            "bottom": 1262,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2862,
+            "bottom": 2988,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "depart-for-section-4-5",
+        "url": "/book/4",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 1034,
+            "bottom": 1136,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1160,
+            "bottom": 1262,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2862,
+            "bottom": 2988,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "arrive-section-4-5",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "m3h7ycpa",
+          "idx": 1
+        },
+        "key": "m3h7ycpa",
+        "scrollY": 1018,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 16,
+            "bottom": 118,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 142,
+            "bottom": 244,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1844,
+            "bottom": 1970,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "depart-for-section-4-6",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "m3h7ycpa",
+          "idx": 1
+        },
+        "key": "m3h7ycpa",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 1034,
+            "bottom": 1136,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1160,
+            "bottom": 1262,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2862,
+            "bottom": 2988,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "arrive-section-4-6",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "ndehakzf",
+          "idx": 2
+        },
+        "key": "ndehakzf",
+        "scrollY": 1144,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -110,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 118,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1718,
+            "bottom": 1844,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "leave-46-for-back",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "ndehakzf",
+          "idx": 2
+        },
+        "key": "ndehakzf",
+        "scrollY": 1144,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -110,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 118,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1718,
+            "bottom": 1844,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "back-to-45",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "m3h7ycpa",
+          "idx": 1
+        },
+        "key": "m3h7ycpa",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 1034,
+            "bottom": 1136,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1160,
+            "bottom": 1262,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2862,
+            "bottom": 2988,
+            "expectedTop": 732
+          }
+        },
+        "expectedDeparture": "depart-for-section-4-6",
+        "expectedScrollY": 0,
+        "restored": true
+      },
+      {
+        "label": "leave-45-for-forward",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "m3h7ycpa",
+          "idx": 1
+        },
+        "key": "m3h7ycpa",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 1034,
+            "bottom": 1136,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1160,
+            "bottom": 1262,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2862,
+            "bottom": 2988,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "forward-to-46",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "ndehakzf",
+          "idx": 2
+        },
+        "key": "ndehakzf",
+        "scrollY": 1144,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -110,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 118,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1718,
+            "bottom": 1844,
+            "expectedTop": 732
+          }
+        },
+        "expectedDeparture": "leave-46-for-back",
+        "expectedScrollY": 1144,
+        "restored": true
+      },
+      {
+        "label": "manual-46-departure",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "ndehakzf",
+          "idx": 2
+        },
+        "key": "ndehakzf",
+        "scrollY": 1267,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -233,
+            "bottom": -131,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": -107,
+            "bottom": -5,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1595,
+            "bottom": 1721,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "back-before-manual-45",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "m3h7ycpa",
+          "idx": 1
+        },
+        "key": "m3h7ycpa",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 1034,
+            "bottom": 1136,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1160,
+            "bottom": 1262,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2862,
+            "bottom": 2988,
+            "expectedTop": 732
+          }
+        },
+        "expectedDeparture": "leave-45-for-forward",
+        "expectedScrollY": 0,
+        "restored": true
+      },
+      {
+        "label": "manual-45-departure",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "m3h7ycpa",
+          "idx": 1
+        },
+        "key": "m3h7ycpa",
+        "scrollY": 87,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 947,
+            "bottom": 1049,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1073,
+            "bottom": 1175,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2775,
+            "bottom": 2901,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "restore-manual-46",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "ndehakzf",
+          "idx": 2
+        },
+        "key": "ndehakzf",
+        "scrollY": 1267,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -233,
+            "bottom": -131,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": -107,
+            "bottom": -5,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1595,
+            "bottom": 1721,
+            "expectedTop": 732
+          }
+        },
+        "expectedDeparture": "manual-46-departure",
+        "expectedScrollY": 1267,
+        "restored": true
+      },
+      {
+        "label": "restore-manual-45",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "m3h7ycpa",
+          "idx": 1
+        },
+        "key": "m3h7ycpa",
+        "scrollY": 87,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 947,
+            "bottom": 1049,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1073,
+            "bottom": 1175,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2775,
+            "bottom": 2901,
+            "expectedTop": 732
+          }
+        },
+        "expectedDeparture": "manual-45-departure",
+        "expectedScrollY": 87,
+        "restored": true
+      },
+      {
+        "label": "depart-for-section-4-5",
+        "url": "/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 1034,
+            "bottom": 1136,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1160,
+            "bottom": 1262,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2862,
+            "bottom": 2988,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "arrive-section-4-5",
+        "url": "/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "4mca1pzr",
+          "idx": 1
+        },
+        "key": "4mca1pzr",
+        "scrollY": 1018,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 16,
+            "bottom": 118,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 142,
+            "bottom": 244,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1844,
+            "bottom": 1970,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "depart-for-section-4-6",
+        "url": "/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "4mca1pzr",
+          "idx": 1
+        },
+        "key": "4mca1pzr",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": 1034,
+            "bottom": 1136,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1160,
+            "bottom": 1262,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 2862,
+            "bottom": 2988,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "arrive-section-4-6",
+        "url": "/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "zzskmnav",
+          "idx": 2
+        },
+        "key": "zzskmnav",
+        "scrollY": 1144,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -110,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 118,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1718,
+            "bottom": 1844,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "direct-hash",
+        "url": "/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99#section-4-6",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 1144,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -110,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 118,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1718,
+            "bottom": 1844,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "refresh-hash",
+        "url": "/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99#section-4-6",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 1144,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -110,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 118,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1718,
+            "bottom": 1844,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "division-from-section-4-6",
+        "url": "/division?from=%2Fbook%2F4%3Fq%3D%25E6%2596%2590%25E6%25B3%25A2%25E9%2582%25A3%25E5%25A5%2591%25E6%25B1%2582%25E4%25BD%2599%23section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "6hllc8tu",
+          "idx": 1
+        },
+        "key": "6hllc8tu",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": null,
+          "section-4-6": null,
+          "exercise-4-6": null
+        }
+      },
+      {
+        "label": "source-return-section-4-6",
+        "url": "/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "anru6o5n",
+          "idx": 2
+        },
+        "key": "anru6o5n",
+        "scrollY": 1144,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -110,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 118,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1718,
+            "bottom": 1844,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "division-from-exercise-4-6",
+        "url": "/division?from=%2Fbook%2F4%3Fq%3D%25E6%2596%2590%25E6%25B3%25A2%25E9%2582%25A3%25E5%25A5%2591%25E6%25B1%2582%25E4%25BD%2599%23exercise-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "bxqgoqd2",
+          "idx": 3
+        },
+        "key": "bxqgoqd2",
+        "scrollY": 0,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": null,
+          "section-4-6": null,
+          "exercise-4-6": null
+        }
+      },
+      {
+        "label": "source-return-exercise-4-6",
+        "url": "/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99#exercise-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "ur6stkfv",
+          "idx": 4
+        },
+        "key": "ur6stkfv",
+        "scrollY": 2130,
+        "language": "zh-CN",
+        "targets": {
+          "section-4-5": {
+            "top": -1096,
+            "bottom": -994,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": -970,
+            "bottom": -868,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 732,
+            "bottom": 858,
+            "expectedTop": 732
+          }
+        }
+      }
+    ],
+    "errors": [],
+    "explicitKeys": [
+      "default",
+      "m3h7ycpa",
+      "ndehakzf"
+    ],
+    "uniqueKeys": true
+  },
+  {
+    "base": "http://127.0.0.1:4184",
+    "width": 390,
+    "lang": "en",
+    "records": [
+      {
+        "label": "direct-book",
+        "url": "/book/4",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 0,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1510,
+            "bottom": 1664,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1688,
+            "bottom": 1814,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 3490,
+            "bottom": 3616,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "depart-for-section-4-5",
+        "url": "/book/4",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 0,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1510,
+            "bottom": 1664,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1688,
+            "bottom": 1814,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 3490,
+            "bottom": 3616,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "arrive-section-4-5",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "53goxrrq",
+          "idx": 1
+        },
+        "key": "53goxrrq",
+        "scrollY": 1494,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 16,
+            "bottom": 170,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 194,
+            "bottom": 320,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1996,
+            "bottom": 2122,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "depart-for-section-4-6",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "53goxrrq",
+          "idx": 1
+        },
+        "key": "53goxrrq",
+        "scrollY": 93,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1417,
+            "bottom": 1571,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1595,
+            "bottom": 1721,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 3397,
+            "bottom": 3523,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "arrive-section-4-6",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "lhvwicnl",
+          "idx": 2
+        },
+        "key": "lhvwicnl",
+        "scrollY": 1672,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -162,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 142,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1818,
+            "bottom": 1944,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "leave-46-for-back",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "lhvwicnl",
+          "idx": 2
+        },
+        "key": "lhvwicnl",
+        "scrollY": 1672,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -162,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 142,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1818,
+            "bottom": 1944,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "back-to-45",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "53goxrrq",
+          "idx": 1
+        },
+        "key": "53goxrrq",
+        "scrollY": 93,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1417,
+            "bottom": 1571,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1595,
+            "bottom": 1721,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 3397,
+            "bottom": 3523,
+            "expectedTop": 732
+          }
+        },
+        "expectedDeparture": "depart-for-section-4-6",
+        "expectedScrollY": 93,
+        "restored": true
+      },
+      {
+        "label": "leave-45-for-forward",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "53goxrrq",
+          "idx": 1
+        },
+        "key": "53goxrrq",
+        "scrollY": 93,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1417,
+            "bottom": 1571,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1595,
+            "bottom": 1721,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 3397,
+            "bottom": 3523,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "forward-to-46",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "lhvwicnl",
+          "idx": 2
+        },
+        "key": "lhvwicnl",
+        "scrollY": 1672,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -162,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 142,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1818,
+            "bottom": 1944,
+            "expectedTop": 732
+          }
+        },
+        "expectedDeparture": "leave-46-for-back",
+        "expectedScrollY": 1672,
+        "restored": true
+      },
+      {
+        "label": "manual-46-departure",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "lhvwicnl",
+          "idx": 2
+        },
+        "key": "lhvwicnl",
+        "scrollY": 1795,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -285,
+            "bottom": -131,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": -107,
+            "bottom": 19,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1695,
+            "bottom": 1821,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "back-before-manual-45",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "53goxrrq",
+          "idx": 1
+        },
+        "key": "53goxrrq",
+        "scrollY": 93,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1417,
+            "bottom": 1571,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1595,
+            "bottom": 1721,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 3397,
+            "bottom": 3523,
+            "expectedTop": 732
+          }
+        },
+        "expectedDeparture": "leave-45-for-forward",
+        "expectedScrollY": 93,
+        "restored": true
+      },
+      {
+        "label": "manual-45-departure",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "53goxrrq",
+          "idx": 1
+        },
+        "key": "53goxrrq",
+        "scrollY": 180,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1330,
+            "bottom": 1484,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1508,
+            "bottom": 1634,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 3310,
+            "bottom": 3436,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "restore-manual-46",
+        "url": "/book/4#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "lhvwicnl",
+          "idx": 2
+        },
+        "key": "lhvwicnl",
+        "scrollY": 1795,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -285,
+            "bottom": -131,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": -107,
+            "bottom": 19,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1695,
+            "bottom": 1821,
+            "expectedTop": 732
+          }
+        },
+        "expectedDeparture": "manual-46-departure",
+        "expectedScrollY": 1795,
+        "restored": true
+      },
+      {
+        "label": "restore-manual-45",
+        "url": "/book/4#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "53goxrrq",
+          "idx": 1
+        },
+        "key": "53goxrrq",
+        "scrollY": 180,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1330,
+            "bottom": 1484,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1508,
+            "bottom": 1634,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 3310,
+            "bottom": 3436,
+            "expectedTop": 732
+          }
+        },
+        "expectedDeparture": "manual-45-departure",
+        "expectedScrollY": 180,
+        "restored": true
+      },
+      {
+        "label": "depart-for-section-4-5",
+        "url": "/book/4?q=Fibonacci%20remainder",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 0,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1510,
+            "bottom": 1664,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1688,
+            "bottom": 1814,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 3490,
+            "bottom": 3616,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "arrive-section-4-5",
+        "url": "/book/4?q=Fibonacci%20remainder#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "4m6r0bok",
+          "idx": 1
+        },
+        "key": "4m6r0bok",
+        "scrollY": 1494,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 16,
+            "bottom": 170,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 194,
+            "bottom": 320,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1996,
+            "bottom": 2122,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "depart-for-section-4-6",
+        "url": "/book/4?q=Fibonacci%20remainder#section-4-5",
+        "historyState": {
+          "usr": null,
+          "key": "4m6r0bok",
+          "idx": 1
+        },
+        "key": "4m6r0bok",
+        "scrollY": 93,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": 1417,
+            "bottom": 1571,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 1595,
+            "bottom": 1721,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 3397,
+            "bottom": 3523,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "arrive-section-4-6",
+        "url": "/book/4?q=Fibonacci%20remainder#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "s8hykls0",
+          "idx": 2
+        },
+        "key": "s8hykls0",
+        "scrollY": 1672,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -162,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 142,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1818,
+            "bottom": 1944,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "direct-hash",
+        "url": "/book/4?q=Fibonacci%20remainder#section-4-6",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 1672,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -162,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 142,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1818,
+            "bottom": 1944,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "refresh-hash",
+        "url": "/book/4?q=Fibonacci%20remainder#section-4-6",
+        "historyState": {
+          "idx": 0
+        },
+        "key": "default",
+        "scrollY": 1672,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -162,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 142,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1818,
+            "bottom": 1944,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "division-from-section-4-6",
+        "url": "/division?from=%2Fbook%2F4%3Fq%3DFibonacci%2520remainder%23section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "l6mimkar",
+          "idx": 1
+        },
+        "key": "l6mimkar",
+        "scrollY": 0,
+        "language": "en",
+        "targets": {
+          "section-4-5": null,
+          "section-4-6": null,
+          "exercise-4-6": null
+        }
+      },
+      {
+        "label": "source-return-section-4-6",
+        "url": "/book/4?q=Fibonacci%20remainder#section-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "6h7oqm0v",
+          "idx": 2
+        },
+        "key": "6h7oqm0v",
+        "scrollY": 1672,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -162,
+            "bottom": -8,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": 16,
+            "bottom": 142,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 1818,
+            "bottom": 1944,
+            "expectedTop": 732
+          }
+        }
+      },
+      {
+        "label": "division-from-exercise-4-6",
+        "url": "/division?from=%2Fbook%2F4%3Fq%3DFibonacci%2520remainder%23exercise-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "gq9q9edp",
+          "idx": 3
+        },
+        "key": "gq9q9edp",
+        "scrollY": 0,
+        "language": "en",
+        "targets": {
+          "section-4-5": null,
+          "section-4-6": null,
+          "exercise-4-6": null
+        }
+      },
+      {
+        "label": "source-return-exercise-4-6",
+        "url": "/book/4?q=Fibonacci%20remainder#exercise-4-6",
+        "historyState": {
+          "usr": null,
+          "key": "iayqwobk",
+          "idx": 4
+        },
+        "key": "iayqwobk",
+        "scrollY": 2758,
+        "language": "en",
+        "targets": {
+          "section-4-5": {
+            "top": -1248,
+            "bottom": -1094,
+            "expectedTop": 16
+          },
+          "section-4-6": {
+            "top": -1070,
+            "bottom": -944,
+            "expectedTop": 16
+          },
+          "exercise-4-6": {
+            "top": 732,
+            "bottom": 858,
+            "expectedTop": 732
+          }
+        }
+      }
+    ],
+    "errors": [],
+    "explicitKeys": [
+      "default",
+      "53goxrrq",
+      "lhvwicnl"
+    ],
+    "uniqueKeys": true
+  }
+]

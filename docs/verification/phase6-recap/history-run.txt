@@ -1,0 +1,1 @@
+PASS: independent chapter history keys, departure-position restoration, query/hash/source navigation in four contexts.

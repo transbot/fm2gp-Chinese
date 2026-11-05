@@ -1,0 +1,525 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+ ❯ src/pages/BookRecap.test.tsx (5 tests | 3 failed) 3918ms
+   × restores review-power departure position and expanded explanation through explicit source return 1175ms
+   × restores review-gcd departure position and expanded explanation through explicit source return 1126ms
+   × restores review-iterators departure position and expanded explanation through explicit source return 1097ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/pages/BookRecap.test.tsx > restores review-power departure position and expanded explanation through explicit source return
+AssertionError: expected 100 to be 777 // Object.is equality
+
+Ignored nodes: comments, script, style
+<html
+  lang="en"
+>
+  <head />
+  <body>
+    <div>
+      <main
+        class="learning-shell max-w-4xl"
+      >
+        <header
+          class="flex flex-wrap items-center justify-between gap-3"
+        >
+          <a
+            class="learning-secondary"
+            href="/"
+          >
+            Back to Home
+          </a>
+          <a
+            class="learning-secondary"
+            href="/book"
+          >
+            Browse chapters
+          </a>
+          <button
+            class="learning-primary"
+          >
+            中文
+          </button>
+        </header>
+        <div>
+          <h1
+            class="learning-title min-w-0"
+          >
+            14 · Conclusions
+          </h1>
+          <p
+            class="mt-3 text-gray-600 leading-7"
+          >
+            Review generalization, efficiency, interfaces, and concepts through multiplication and generic power, integer remainders and polynomial GCD, and iterator capabilities and memory trade-offs. Check your understanding with questions, explanations, and existing demonstrations.
+          </p>
+        </div>
+        <a
+          class="learning-link"
+          href="/book?q=recap"
+        >
+          Back to chapter directory
+        </a>
+        <nav
+          aria-label="Book review topics"
+          class="learning-card !space-y-0 flex flex-wrap gap-3"
+        >
+          <a
+            class="learning-link"
+            href="/book/14?q=recap&source=reader#review-power"
+          >
+            From multiplication to generic power
+          </a>
+          <a
+            class="learning-link"
+            href="/book/14?q=recap&source=reader#review-gcd"
+          >
+            From integer remainders to polynomial GCD
+          </a>
+          <a
+            class="learning-link"
+            href="/book/14?q=recap&source=reader#review-iterators"
+          >
+            Iterator capabilities and memory trade-offs
+          </a>
+        </nav>
+        <p
+          class="text-sm text-gray-600"
+        >
+          These themes review Chapter 14; they are not additional numbered sections. Try answering first, then open the reference explanations and use the linked demonstrations to check your understanding.
+        </p>
+        <section
+          class="learning-card min-w-0"
+          id="review-power"
+        >
+          <h2
+            class="text-xl font-semibold text-blue-900"
+          >
+            From multiplication to generic power
+          </h2>
+          <p
+            class="leading-7"
+          >
+            Start with a concrete, efficient multiplication algorithm and separate its steps from the objects it handles. Replace addition with an operation meeting the required laws, retaining halving and accumulation while working with new objects such as matrices. Generalization broadens applicability while preserving efficiency.
+          </p>
+          <nav
+            aria-label="From multiplication to generic power · Related demonstrations"
+            class="flex flex-wrap gap-x-5 gap-y-3"
+            data-testid="review-power-demos"
+          >
+            <a
+              class="learning-link"
+              href="/multiply?from=%2Fbook%2F14%3Fq%3Drecap%26source%3Dreader%23review-power"
+            >
+              Sections 2.1–2.2 - Egyptian Multiplication: Recursion and Iteration
+            </a>
+            <a
+              class="learning-link"
+              href="/concepts/algebra?from=%2Fbook%2F14%3Fq%3Drecap%26source%3Dreader%23review-power"
+            >
+              Operations and algebraic structures
+            </a>
+            <a
+              class="learning-link"
+              href="/power?from=%2Fbook%2F14%3Fq%3Drecap%26source%3Dreader%23review-power"
+            >
+              Section 7.5 - Generic Power Algorithm
+            </a>
+            <a
+              class="learning-link"
+              href="/concepts/matrices?from=%2Fbook%2F14%3Fq%3Drecap%26source%3Dreader%23review-power"
+            >
+              Matrices and reachability
+            </a>
+            <a
+              class="learning-link"
+              href="/shortest-path?from=%2Fbook%2F14%3Fq%3Drecap%26source%3Dreader%23review-power"
+            >
+              Section 8.6 - Finding Shortest Distance Between Any Two Nodes in a Directed Graph
+            </a>
+          </nav>
+          <div
+            class="space-y-5"
+          >
+            <article
+              class="border-t pt-4"
+            >
+              <h3
+                class="font-semibold leading-7"
+                id="power-conditions-question"
+              >
+                Review question
+
+                1
+                 ·
+                What algebraic conditions are needed for positive integer exponents and for exponent zero?
+              </h3>
+              <details
+                class="learning-note mt-3"
+                data-testid="power-conditions"
+                open=""
+              >
+                <summary
+                  aria-label="Reference explanation: What algebraic conditions are needed for positive integer exponents and fo...
+
+- Expected
++ Received
+
+- 777
++ 100
+
+ ❯ src/pages/BookRecap.test.tsx:30:179
+
+ ❯ runWithExpensiveErrorDiagnosticsDisabled node_modules/@testing-library/dom/dist/config.js:47:12
+ ❯ checkCallback node_modules/@testing-library/dom/dist/wait-for.js:124:77
+ ❯ Timeout.checkRealTimersCallback node_modules/@testing-library/dom/dist/wait-for.js:118:16
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  src/pages/BookRecap.test.tsx > restores review-gcd departure position and expanded explanation through explicit source return
+AssertionError: expected 200 to be 777 // Object.is equality
+
+Ignored nodes: comments, script, style
+<html
+  lang="en"
+>
+  <head />
+  <body>
+    <div>
+      <main
+        class="learning-shell max-w-4xl"
+      >
+        <header
+          class="flex flex-wrap items-center justify-between gap-3"
+        >
+          <a
+            class="learning-secondary"
+            href="/"
+          >
+            Back to Home
+          </a>
+          <a
+            class="learning-secondary"
+            href="/book"
+          >
+            Browse chapters
+          </a>
+          <button
+            class="learning-primary"
+          >
+            中文
+          </button>
+        </header>
+        <div>
+          <h1
+            class="learning-title min-w-0"
+          >
+            14 · Conclusions
+          </h1>
+          <p
+            class="mt-3 text-gray-600 leading-7"
+          >
+            Review generalization, efficiency, interfaces, and concepts through multiplication and generic power, integer remainders and polynomial GCD, and iterator capabilities and memory trade-offs. Check your understanding with questions, explanations, and existing demonstrations.
+          </p>
+        </div>
+        <a
+          class="learning-link"
+          href="/book?q=recap"
+        >
+          Back to chapter directory
+        </a>
+        <nav
+          aria-label="Book review topics"
+          class="learning-card !space-y-0 flex flex-wrap gap-3"
+        >
+          <a
+            class="learning-link"
+            href="/book/14?q=recap&source=reader#review-power"
+          >
+            From multiplication to generic power
+          </a>
+          <a
+            class="learning-link"
+            href="/book/14?q=recap&source=reader#review-gcd"
+          >
+            From integer remainders to polynomial GCD
+          </a>
+          <a
+            class="learning-link"
+            href="/book/14?q=recap&source=reader#review-iterators"
+          >
+            Iterator capabilities and memory trade-offs
+          </a>
+        </nav>
+        <p
+          class="text-sm text-gray-600"
+        >
+          These themes review Chapter 14; they are not additional numbered sections. Try answering first, then open the reference explanations and use the linked demonstrations to check your understanding.
+        </p>
+        <section
+          class="learning-card min-w-0"
+          id="review-power"
+        >
+          <h2
+            class="text-xl font-semibold text-blue-900"
+          >
+            From multiplication to generic power
+          </h2>
+          <p
+            class="leading-7"
+          >
+            Start with a concrete, efficient multiplication algorithm and separate its steps from the objects it handles. Replace addition with an operation meeting the required laws, retaining halving and accumulation while working with new objects such as matrices. Generalization broadens applicability while preserving efficiency.
+          </p>
+          <nav
+            aria-label="From multiplication to generic power · Related demonstrations"
+            class="flex flex-wrap gap-x-5 gap-y-3"
+            data-testid="review-power-demos"
+          >
+            <a
+              class="learning-link"
+              href="/multiply?from=%2Fbook%2F14%3Fq%3Drecap%26source%3Dreader%23review-power"
+            >
+              Sections 2.1–2.2 - Egyptian Multiplication: Recursion and Iteration
+            </a>
+            <a
+              class="learning-link"
+              href="/concepts/algebra?from=%2Fbook%2F14%3Fq%3Drecap%26source%3Dreader%23review-power"
+            >
+              Operations and algebraic structures
+            </a>
+            <a
+              class="learning-link"
+              href="/power?from=%2Fbook%2F14%3Fq%3Drecap%26source%3Dreader%23review-power"
+            >
+              Section 7.5 - Generic Power Algorithm
+            </a>
+            <a
+              class="learning-link"
+              href="/concepts/matrices?from=%2Fbook%2F14%3Fq%3Drecap%26source%3Dreader%23review-power"
+            >
+              Matrices and reachability
+            </a>
+            <a
+              class="learning-link"
+              href="/shortest-path?from=%2Fbook%2F14%3Fq%3Drecap%26source%3Dreader%23review-power"
+            >
+              Section 8.6 - Finding Shortest Distance Between Any Two Nodes in a Directed Graph
+            </a>
+          </nav>
+          <div
+            class="space-y-5"
+          >
+            <article
+              class="border-t pt-4"
+            >
+              <h3
+                class="font-semibold leading-7"
+                id="power-conditions-question"
+              >
+                Review question
+
+                1
+                 ·
+                What algebraic conditions are needed for positive integer exponents and for exponent zero?
+              </h3>
+              <details
+                class="learning-note mt-3"
+                data-testid="power-conditions"
+              >
+                <summary
+                  aria-label="Reference explanation: What algebraic conditions are needed for positive integer exponents and for exponent zero?"
+                  [3...
+
+- Expected
++ Received
+
+- 777
++ 200
+
+ ❯ src/pages/BookRecap.test.tsx:30:179
+
+ ❯ runWithExpensiveErrorDiagnosticsDisabled node_modules/@testing-library/dom/dist/config.js:47:12
+ ❯ checkCallback node_modules/@testing-library/dom/dist/wait-for.js:124:77
+ ❯ Timeout.checkRealTimersCallback node_modules/@testing-library/dom/dist/wait-for.js:118:16
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  src/pages/BookRecap.test.tsx > restores review-iterators departure position and expanded explanation through explicit source return
+AssertionError: expected 300 to be 777 // Object.is equality
+
+Ignored nodes: comments, script, style
+<html
+  lang="en"
+>
+  <head />
+  <body>
+    <div>
+      <main
+        class="learning-shell max-w-4xl"
+      >
+        <header
+          class="flex flex-wrap items-center justify-between gap-3"
+        >
+          <a
+            class="learning-secondary"
+            href="/"
+          >
+            Back to Home
+          </a>
+          <a
+            class="learning-secondary"
+            href="/book"
+          >
+            Browse chapters
+          </a>
+          <button
+            class="learning-primary"
+          >
+            中文
+          </button>
+        </header>
+        <div>
+          <h1
+            class="learning-title min-w-0"
+          >
+            14 · Conclusions
+          </h1>
+          <p
+            class="mt-3 text-gray-600 leading-7"
+          >
+            Review generalization, efficiency, interfaces, and concepts through multiplication and generic power, integer remainders and polynomial GCD, and iterator capabilities and memory trade-offs. Check your understanding with questions, explanations, and existing demonstrations.
+          </p>
+        </div>
+        <a
+          class="learning-link"
+          href="/book?q=recap"
+        >
+          Back to chapter directory
+        </a>
+        <nav
+          aria-label="Book review topics"
+          class="learning-card !space-y-0 flex flex-wrap gap-3"
+        >
+          <a
+            class="learning-link"
+            href="/book/14?q=recap&source=reader#review-power"
+          >
+            From multiplication to generic power
+          </a>
+          <a
+            class="learning-link"
+            href="/book/14?q=recap&source=reader#review-gcd"
+          >
+            From integer remainders to polynomial GCD
+          </a>
+          <a
+            class="learning-link"
+            href="/book/14?q=recap&source=reader#review-iterators"
+          >
+            Iterator capabilities and memory trade-offs
+          </a>
+        </nav>
+        <p
+          class="text-sm text-gray-600"
+        >
+          These themes review Chapter 14; they are not additional numbered sections. Try answering first, then open the reference explanations and use the linked demonstrations to check your understanding.
+        </p>
+        <section
+          class="learning-card min-w-0"
+          id="review-power"
+        >
+          <h2
+            class="text-xl font-semibold text-blue-900"
+          >
+            From multiplication to generic power
+          </h2>
+          <p
+            class="leading-7"
+          >
+            Start with a concrete, efficient multiplication algorithm and separate its steps from the objects it handles. Replace addition with an operation meeting the required laws, retaining halving and accumulation while working with new objects such as matrices. Generalization broadens applicability while preserving efficiency.
+          </p>
+          <nav
+            aria-label="From multiplication to generic power · Related demonstrations"
+            class="flex flex-wrap gap-x-5 gap-y-3"
+            data-testid="review-power-demos"
+          >
+            <a
+              class="learning-link"
+              href="/multiply?from=%2Fbook%2F14%3Fq%3Drecap%26source%3Dreader%23review-power"
+            >
+              Sections 2.1–2.2 - Egyptian Multiplication: Recursion and Iteration
+            </a>
+            <a
+              class="learning-link"
+              href="/concepts/algebra?from=%2Fbook%2F14%3Fq%3Drecap%26source%3Dreader%23review-power"
+            >
+              Operations and algebraic structures
+            </a>
+            <a
+              class="learning-link"
+              href="/power?from=%2Fbook%2F14%3Fq%3Drecap%26source%3Dreader%23review-power"
+            >
+              Section 7.5 - Generic Power Algorithm
+            </a>
+            <a
+              class="learning-link"
+              href="/concepts/matrices?from=%2Fbook%2F14%3Fq%3Drecap%26source%3Dreader%23review-power"
+            >
+              Matrices and reachability
+            </a>
+            <a
+              class="learning-link"
+              href="/shortest-path?from=%2Fbook%2F14%3Fq%3Drecap%26source%3Dreader%23review-power"
+            >
+              Section 8.6 - Finding Shortest Distance Between Any Two Nodes in a Directed Graph
+            </a>
+          </nav>
+          <div
+            class="space-y-5"
+          >
+            <article
+              class="border-t pt-4"
+            >
+              <h3
+                class="font-semibold leading-7"
+                id="power-conditions-question"
+              >
+                Review question
+
+                1
+                 ·
+                What algebraic conditions are needed for positive integer exponents and for exponent zero?
+              </h3>
+              <details
+                class="learning-note mt-3"
+                data-testid="power-conditions"
+              >
+                <summary
+                  aria-label="Reference explanation: What algebraic conditions are needed for positive integer exponents and for exponent zero?"
+                  [3...
+
+- Expected
++ Received
+
+- 777
++ 300
+
+ ❯ src/pages/BookRecap.test.tsx:30:179
+
+ ❯ runWithExpensiveErrorDiagnosticsDisabled node_modules/@testing-library/dom/dist/config.js:47:12
+ ❯ checkCallback node_modules/@testing-library/dom/dist/wait-for.js:124:77
+ ❯ Timeout.checkRealTimersCallback node_modules/@testing-library/dom/dist/wait-for.js:118:16
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  3 failed | 2 passed (5)
+   Start at  03:05:51
+   Duration  6.38s (transform 159ms, setup 217ms, import 341ms, tests 3.92s, environment 1.72s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

@@ -910,8 +910,8 @@ export const bookContent = {
         "en": "Conclusions"
       },
       "guide": {
-        "zh": "回看从具体问题到运算要求再到泛型算法的过程。尝试说明矩阵与整数为何可以共享幂算法，并沿章节入口回顾薄弱环节。",
-        "en": "Review the path from concrete problems through operation requirements to generic algorithms. Explain why matrices and integers can share a power algorithm, then revisit any gaps."
+        "zh": "围绕泛化、效率、接口与概念，回顾从乘法到通用幂算法、从整数求余到多项式GCD，以及迭代器能力与内存权衡。通过问题、解释和已有演示检验理解。",
+        "en": "Review generalization, efficiency, interfaces, and concepts through multiplication and generic power, integer remainders and polynomial GCD, and iterator capabilities and memory trade-offs. Check your understanding with questions, explanations, and existing demonstrations."
       },
       "sourcePdfPage": 273,
       "sections": []

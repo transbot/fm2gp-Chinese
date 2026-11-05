@@ -22,9 +22,14 @@ export function ReaderNavigation() {
         // Search edits replace the current entry, including clearing/resetting
         // an already empty query. They are not a new reading destination.
         const editingQuery = navigationType === 'REPLACE' && from?.pathname === location.pathname && from.hash === location.hash;
+        // A review link carries the source entry key; an explicit source return
+        // restores that entry's actual departure position, not just its anchor.
+        const readerReturn = location.state?.readerReturn;
+        const returningToSource = readerReturn?.url === location.pathname + location.search + location.hash && typeof readerReturn?.key === 'string';
         const saved = editingQuery && from
             ? positions.current.get(from.key) ?? window.scrollY
-            : navigationType === 'POP' ? positions.current.get(location.key) : undefined;
+            : navigationType === 'POP' ? positions.current.get(location.key)
+            : returningToSource ? positions.current.get(readerReturn.key) : undefined;
         previous.current = location;
         const record = () => { positions.current.set(location.key, window.scrollY); };
         const timer = requestAnimationFrame(() => {
@@ -51,10 +56,12 @@ export function ReaderNavigation() {
     const index = sequence.indexOf(location.pathname);
     const rawFrom = params.get('from');
     const from = rawFrom?.startsWith('/book') ? rawFrom : algorithm ? algorithmBookLink(algorithm.id) : `/book/${lesson!.sections[0].split('.')[0]}`;
+    const readerSource = location.state?.readerSource;
+    const returnState = readerSource?.url === from && typeof readerSource?.key === 'string' ? {readerReturn: readerSource} : undefined;
     const withContext = (path: string) => `${path}?${new URLSearchParams({ ...route ? { route } : {}, ...from ? { from } : {} })}`;
     const prerequisite = lesson?.prerequisite ?? (algorithm?.id === 'fast-fibonacci' ? '/power' : algorithm?.id === 'shortest-path' ? '/concepts/matrices' : algorithm?.id === 'binary-search' ? '/concepts/iterators' : undefined);
     return <aside className="learning-shell max-w-6xl" aria-label={zh ? '学习导航' : 'Learning navigation'}><nav className="learning-card !space-y-0 flex flex-wrap gap-4">
-    {from && <Link className="learning-link" to={from}>{zh ? '返回来源章节／习题' : 'Return to source section / exercise'}</Link>}
+    {from && <Link className="learning-link" to={from} state={returnState}>{zh ? '返回来源章节／习题' : 'Return to source section / exercise'}</Link>}
     {prerequisite && <Link className="learning-link" to={prerequisite}>{zh ? '建议先学：相关概念' : 'Learn first: prerequisite concepts'}</Link>}
     {index > 0 && <Link className="learning-link" to={withContext(sequence[index - 1])}>{zh ? '本路线上一站' : 'Previous stop on this route'}</Link>}
     {index >= 0 && index < sequence.length - 1 && <Link className="learning-link" to={withContext(sequence[index + 1])}>{zh ? '本路线下一站' : 'Next stop on this route'}</Link>}

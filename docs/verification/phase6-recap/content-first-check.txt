@@ -1,0 +1,33 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+ ❯ src/data/bookRecap.test.ts (3 tests | 1 failed) 13ms
+   × states sufficient algebraic requirements without assuming commutativity or a degree for zero 3ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/data/bookRecap.test.ts > states sufficient algebraic requirements without assuming commutativity or a degree for zero
+AssertionError: expected 'For positive integer exponents, a clo…' to match /closure/
+
+- Expected:
+/closure/
+
++ Received:
+"For positive integer exponents, a closed associative binary operation is sufficient: a semigroup. Closure keeps combined objects in the same set; associativity allows regrouping without changing the result. Repeated combination can therefore become squaring and accumulation without requiring an identity element or commutativity. To include exponent zero, also require an identity e with e·a=a·e=a and define a⁰=e: a monoid. A type models a concept only when it meets the semantic laws and required value operations, not merely when its function names or operators compile. Do not impose an unused identity requirement on the positive-exponent algorithm. Multiplication of square matrices of the same size is closed and associative. The power algorithm changes grouping while preserving factor order, so it does not require commutativity. Positive exponents use this semigroup operation; exponent zero returns the identity matrix of that size. Check the matrix type together with its chosen operation. Recheck the requirements when changing objects and operations. The reachability lab replaces scalar addition and multiplication with OR and AND; the shortest-path lab uses minimum and addition over the tropical semiring. Both reuse the power algorithm. A shared interface and laws do not mean one matrix operation costs the same as one integer operation. Division gives A = BQ + R. A common divisor of A and B divides R, and a common divisor of B and R divides A. Replacing (A,B) by (B,R) preserves common divisors. The loop only tests for zero, calls remainder, and swaps the values. Types supply different remainder implementations; their internal division steps need not be identical. For nonnegative integers, each nonzero divisor B gives 0≤R<B. In ℚ[x], R is zero or deg(R)<deg(B). The size or degree of the nonzero divisor strictly decreases and cannot decrease indefinitely, so the loop ends at b=0 and returns a. The zero polynomial has no ordinary degree; test for zero before comparing degrees. Polynomial GCD is made monic separately after the loop returns; the lab defines gcd(0,0)=0. Returning only one result may force the caller to repeat the process. The shared quotient/remainder demonstration reuses doubling, halving, and subtraction while updating quotient n, then returns (q,r) together. For 45÷6 it returns (7,3), with 45=7×6+3 and 0≤3<6. Recording the quotient requires extra updates, but avoids independently repeating the whole remainder computation for the other result. The law of useful return preserves information obtained during computation that is valuable to later applications. Expand “Quotient and remainder together” in the integer division lab and inspect the completed n,c,a checkpoints: A=n×c+a holds after each paired update is complete. The polynomial lab displays Q and R in A=BQ+R; Horner connects coefficient sequences with evaluation. Reverse the left half recursively and use its returned position to locate the middle. For odd lengths, skip the middle element, then reverse the right half. Finally, swap_ranges_n advances two iterators from the half starts, swapping pairs. No backward movement is required, but elements must be writable and swappable; forward iterators also allow position copies to be saved and reused. For nine elements, h=4; the left call returns m=4, skipping position 4 makes m=5, and the right call returns l=9 (end). Before the root swaps, the sequence is [3,2,1,0,4,8,7,6,5]. Swapping (0,5), (1,6), (2,7), (3,8) completes reversal. There are 4 reversal-call levels and O(log n) auxiliary stack space. Bidirectional reversal can approach from both ends with O(1) auxiliary space. The book’s swap costs 3 transfers: one copy construction and two assignments. Each copy into the buffer or write back costs 1 transfer. With capacity 1, n=0 and n=1 take the base cases first, so the buffer is unused: 12 swaps give 36 transfers, with 4 reversal-call levels. With capacity 2, four length-2 subranges use the same shared buffer: 8 copies in and 8 writes back, plus 8 remaining swaps. Thus 3×8+8+8=40 transfers, although maximum depth falls to 3 and peak buffer use is 2. Recursion and swaps decrease, but copying increases. Compare the algorithm’s stack, buffer, and transfer costs; replay snapshots are simulator storage, not algorithm auxiliary space."
+
+ ❯ src/data/bookRecap.test.ts:25:84
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 2 passed (3)
+   Start at  03:05:04
+   Duration  2.16s (transform 102ms, setup 212ms, import 114ms, tests 13ms, environment 1.63s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice
