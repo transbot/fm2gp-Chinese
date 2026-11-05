@@ -61,7 +61,7 @@ export function ReaderNavigation() {
     <Link className="learning-link" to="/book/A">{zh ? '记法速查' : 'Notation'}</Link>
     <Link className="learning-link" to="/book/B">{zh ? '证明方法' : 'Proof techniques'}</Link>
     <Link className="learning-link" to="/book/C">{zh ? 'C++语法' : 'C++ syntax'}</Link>
-    {bookResources.filter(r => r.kind === 'code' && r.chapter === (lesson?.sections[0].split('.')[0] ?? algorithm?.source.section?.split('.')[0]) && r.path.endsWith('.h')).map(r => <a key={r.path} className="learning-link" href={repoFile(r.path)}>{zh ? '配套代码：' : 'Companion code: '}{r.path.split('/').pop()}</a>)}
+    {bookResources.filter(r => r.kind === 'code' && (lesson?.codePaths ? lesson.codePaths.includes(r.path) : r.chapter === (lesson?.sections[0].split('.')[0] ?? algorithm?.source.section?.split('.')[0])) && r.path.endsWith('.h')).map(r => <a key={r.path} className="learning-link" href={repoFile(r.path)}>{zh ? '配套代码：' : 'Companion code: '}{r.path.split('/').pop()}</a>)}
     {algorithm && <span className="text-sm text-gray-500">{translations[lang][algorithm.titleKey]}</span>}
   </nav>{algorithm && !sequence.length && <AlgorithmNavigation algorithmId={algorithm.id} lang={lang}/>}</aside>;
 }

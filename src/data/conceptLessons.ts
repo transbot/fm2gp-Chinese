@@ -8,12 +8,20 @@ export interface ConceptLesson {
   summary: LocalizedText;
   aliases: string[];
   prerequisite: string;
+  codePaths?: string[];
   topicId: TopicId;
   difficulty: Difficulty;
 }
 
 // Shared by both search entry points and the chapter/reader navigation.
 export const conceptLessons: ConceptLesson[] = [
+  {
+    id: 'polynomial-gcd', path: '/polynomial-gcd', sections: ['8.1', '8.7', '8.8'], prerequisite: '/horner', topicId: 'gcd-modular', difficulty: 'intermediate',
+    codePaths: ['配套代码(fm2gpcode)/ch12.h'],
+    title: { zh: '多项式带余除法与最大公约数', en: 'Polynomial division with remainder and GCD' },
+    summary: { zh: '在有理数系数多项式中逐步消元、求余，复用泛型GCD循环，最后首一化。', en: 'Eliminate leading terms with exact rational coefficients, reuse the generic GCD loop, then make the result monic.' },
+    aliases: ['多项式求余', '多项式GCD', '长除法', '首一化', '有理数系数', 'polynomial remainder', 'polynomial gcd', 'long division', 'monic', 'rational coefficients', 'gcd'],
+  },
   {
     id: 'reverse-methods', path: '/reverse', sections: ['11.5', '11.6', '11.7'], prerequisite: '/concepts/iterators', topicId: 'search-sequence', difficulty: 'intermediate',
     title: { zh: '反转：递归与内存自适应', en: 'Reversal: recursion and memory adaptation' },

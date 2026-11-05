@@ -1,0 +1,11 @@
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(state.top>=0&&state.bottom<=1000&&state.focused)
+
+    at D:\Code\fm2gp-Chinese\scripts\verify-polynomial-gcd.cjs:47:554 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}

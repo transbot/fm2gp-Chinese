@@ -22,6 +22,7 @@ export function Book() {
       <Link className="learning-link" to={`/book${query ? `?q=${encodeURIComponent(query)}` : ''}`}>{zh ? '返回章节目录' : 'Back to chapter directory'}</Link>
 
       <nav className="learning-card !space-y-0 flex flex-wrap gap-3">{chapter.sections.map(s => <Link className="learning-link" key={s.id} to={{ pathname: location.pathname, search: location.search, hash: `#${sectionAnchor(s.id)}` }}>{s.id} {s.title[lang]}</Link>)}</nav>
+      {chapter.id === '8' && <nav className="learning-card" aria-label={zh ? '多项式学习路线' : 'Polynomial learning route'}><h2 className="text-xl font-semibold">{zh ? '多项式学习路线' : 'Polynomial learning route'}</h2><p>{zh ? '先用霍纳法则求值，再用带余除法理解A(r)为何等于余数，最后把求余接入泛型GCD循环。第8.8节解释有理数系数为什么能够相除。' : 'Evaluate with Horner, use division to understand why A(r) equals the remainder, then connect remainders to generic GCD. Section 8.8 explains division of rational coefficients.'}</p><div className="flex flex-wrap gap-4"><Link className="learning-link" to={'/horner' + from(sectionAnchor('8.1'))}>{zh ? '霍纳法则' : 'Horner'}</Link><Link className="learning-link" to={'/polynomial-gcd' + from(sectionAnchor('8.7'))}>{zh ? '带余除法与GCD' : 'Division and GCD'}</Link><Link className="learning-link" to={{pathname:location.pathname,search:location.search,hash:'#section-8-8'}}>{zh ? '第8.8节：域' : 'Section 8.8: fields'}</Link></div></nav>}
       {chapter.sections.map(s => {
                 const demos = sectionAlgorithms(s.id), lessons = conceptLessons.filter(l => l.sections.includes(s.id));
                 return <section className="learning-card" id={sectionAnchor(s.id)} key={s.id}>
@@ -39,6 +40,7 @@ export function Book() {
         {algorithmCatalog.filter(a => a.source.type === 'exercise' && a.source.section === e.id).map(a => <Link key={a.id} className="learning-link" to={a.path + from(exerciseAnchor(e.id))}>{t[a.titleKey]}</Link>)}
         {e.id === '4.6' && <Link className="learning-link" to={'/division' + from(exerciseAnchor(e.id))}>{zh ? '斐波那契求余演示：45÷6' : 'Fibonacci remainder demonstration: 45÷6'}</Link>}
         {e.id === '11.13' && <Link className="learning-link" to={'/reverse' + from(exerciseAnchor(e.id))}>{zh ? '递归反转演示：九元素' : 'Recursive reverse demonstration: nine elements'}</Link>}
+        {e.id === '8.3' && <Link className="learning-link" to={'/polynomial-gcd' + from(exerciseAnchor(e.id))}>{zh ? '多项式GCD演示：前两题' : 'Polynomial GCD demonstration: first two parts'}</Link>}
         {e.id === '8.7' && <Link className="learning-link" to={'/concepts/matrices' + from(exerciseAnchor(e.id))}>{zh ? '可达性演示' : 'Reachability demonstration'}</Link>}
         {!e.resources.length && <p>{zh ? '阅读题目与本章导引；此处尚无参考解答。' : 'Read the exercise with the chapter guide; no reference solution is available here yet.'}</p>}
         {e.id === '7.1' && <p className="text-sm text-gray-600">{zh ? '原 PDF 外链已失效；现提供可访问的配套程序。' : 'The original PDF link is unavailable; the companion program remains accessible.'}</p>}

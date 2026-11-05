@@ -1,0 +1,12 @@
+locator.click: Error: strict mode violation: locator('#section-8-1').getByRole('link').filter({ hasText: '多项式' }) resolved to 2 elements:
+    1) <a class="learning-link" href="/polynomial-gcd?from=%2Fbook%2F8%23section-8-1">概念演示：多项式带余除法与最大公约数</a> aka locator('#section-8-1').getByRole('link', { name: '概念演示：多项式带余除法与最大公约数' })
+    2) <a class="learning-link" href="/horner?from=%2Fbook%2F8%23section-8-1">概念演示：霍纳法则：多项式求值</a> aka getByRole('link', { name: '概念演示：霍纳法则：多项式求值' })
+
+Call log:
+  - waiting for locator('#section-8-1').getByRole('link').filter({ hasText: '多项式' })
+
+    at D:\Code\fm2gp-Chinese\scripts\verify-polynomial-gcd.cjs:44:201 {
+  log: [
+    "  - waiting for locator('#section-8-1').getByRole('link').filter({ hasText: '多项式' })"
+  ]
+}
