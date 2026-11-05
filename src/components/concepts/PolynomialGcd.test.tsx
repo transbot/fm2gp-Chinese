@@ -48,3 +48,17 @@ it('shows the exact companion gcd body and complete bilingual event/error dictio
  expect(companion.replace(/\s/g,'')).toContain(polynomialGcdCode.gcd.map(l=>l.text).join('').replace(/\s/g,''));
  for(const pair of Object.values(gcdMessages)){expect(pair).toHaveLength(2);expect(pair[0].trim()).not.toBe('');expect(pair[1].trim()).not.toBe('');expect(pair[1]).not.toMatch(/[\u3400-\u9fff]/);}
 });
+it.each([
+ ['book','6','1'],['exercise1','−4x² + 24x − 35','x² − 6x + 35/4'],
+ ['exercise2','(605/1521)x² + (1210/1521)x + 605/1521','x² + 2x + 1'],['constants','6','1'],['zero','0','0'],
+])('restores fixed adjacent return displays for %s',(id,raw,result)=>{
+ mount();fireEvent.click(screen.getByTestId(`example-${id}`));end();
+ const check=(monic:boolean)=>{
+  expect(panel().getByTestId('formula-Latest returned value')).toHaveTextContent(`Latest returned value = ${monic?result:raw}`);
+  expect(panel().getByTestId('formula-Raw GCD return')).toHaveTextContent(`Raw GCD return = ${raw}`);
+  expect(screen.getByTestId('polynomial-gcd')).toHaveAttribute('data-function',monic?'monic':'gcd');
+  expect(screen.getByTestId('polynomial-gcd').querySelector('[aria-current="step"]')).toHaveAttribute('data-line',monic?(id==='zero'?'zero':'normalize'):'return');
+  if(monic)expect(panel().getByTestId('formula-Monic GCD')).toHaveTextContent(`Monic GCD = ${result}`);else expect(panel().queryByTestId('formula-Monic GCD')).toBeNull();
+ };
+ check(true);const counts=panel().getByTestId('counts').textContent;fireEvent.click(panel().getByRole('button',{name:'Step Backward'}));check(false);expect(panel().getByTestId('counts').textContent).toBe(counts);fireEvent.click(panel().getByRole('button',{name:'Step Forward'}));check(true);
+});

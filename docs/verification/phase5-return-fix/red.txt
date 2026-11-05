@@ -1,0 +1,154 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+ ❯ src/lib/algorithms/polynomialGcd.test.ts (31 tests | 4 failed) 274ms
+   × keeps fixed adjacent raw and monic function returns independent ([ 3, -4, -6, 10 ]) 5ms
+   × keeps fixed adjacent raw and monic function returns independent ([ 16, -56, -88, 278, 105 ]) 2ms
+   × keeps fixed adjacent raw and monic function returns independent ([ 7, 6, -8, -6, 1 ]) 2ms
+   × keeps fixed adjacent raw and monic function returns independent ([ 4 ]) 1ms
+ ❯ src/components/concepts/PolynomialGcd.test.tsx (11 tests | 4 failed) 1024ms
+   × restores fixed adjacent return displays for book 28ms
+   × restores fixed adjacent return displays for exercise1 21ms
+   × restores fixed adjacent return displays for exercise2 23ms
+   × restores fixed adjacent return displays for constants 20ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 8 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/components/concepts/PolynomialGcd.test.tsx > restores fixed adjacent return displays for book
+ FAIL  src/components/concepts/PolynomialGcd.test.tsx > restores fixed adjacent return displays for constants
+Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  Latest returned value = 1
+Received:
+  Latest returned value = 6
+ ❯ check src/components/concepts/PolynomialGcd.test.tsx:57:64
+     55|  mount();fireEvent.click(screen.getByTestId(`example-${id}`));end();
+     56|  const check=(monic:boolean)=>{
+     57|   expect(panel().getByTestId('formula-Latest returned value')).toHaveT…
+       |                                                                ^
+     58|   expect(panel().getByTestId('formula-Raw GCD return')).toHaveTextCont…
+     59|   expect(screen.getByTestId('polynomial-gcd')).toHaveAttribute('data-f…
+ ❯ src/components/concepts/PolynomialGcd.test.tsx:63:2
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/8]⎯
+
+ FAIL  src/components/concepts/PolynomialGcd.test.tsx > restores fixed adjacent return displays for exercise1
+Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  Latest returned value = x² − 6x + 35/4
+Received:
+  Latest returned value = −4x² + 24x − 35
+ ❯ check src/components/concepts/PolynomialGcd.test.tsx:57:64
+     55|  mount();fireEvent.click(screen.getByTestId(`example-${id}`));end();
+     56|  const check=(monic:boolean)=>{
+     57|   expect(panel().getByTestId('formula-Latest returned value')).toHaveT…
+       |                                                                ^
+     58|   expect(panel().getByTestId('formula-Raw GCD return')).toHaveTextCont…
+     59|   expect(screen.getByTestId('polynomial-gcd')).toHaveAttribute('data-f…
+ ❯ src/components/concepts/PolynomialGcd.test.tsx:63:2
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/8]⎯
+
+ FAIL  src/components/concepts/PolynomialGcd.test.tsx > restores fixed adjacent return displays for exercise2
+Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  Latest returned value = x² + 2x + 1
+Received:
+  Latest returned value = (605/1521)x² + (1210/1521)x + 605/1521
+ ❯ check src/components/concepts/PolynomialGcd.test.tsx:57:64
+     55|  mount();fireEvent.click(screen.getByTestId(`example-${id}`));end();
+     56|  const check=(monic:boolean)=>{
+     57|   expect(panel().getByTestId('formula-Latest returned value')).toHaveT…
+       |                                                                ^
+     58|   expect(panel().getByTestId('formula-Raw GCD return')).toHaveTextCont…
+     59|   expect(screen.getByTestId('polynomial-gcd')).toHaveAttribute('data-f…
+ ❯ src/components/concepts/PolynomialGcd.test.tsx:63:2
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/8]⎯
+
+ FAIL  src/lib/algorithms/polynomialGcd.test.ts > keeps fixed adjacent raw and monic function returns independent ([ 3, -4, -6, 10 ])
+ FAIL  src/lib/algorithms/polynomialGcd.test.ts > keeps fixed adjacent raw and monic function returns independent ([ 4 ])
+AssertionError: expected [ '6' ] to deeply equal [ '1' ]
+
+- Expected
++ Received
+
+  [
+-   "1",
++   "6",
+  ]
+
+ ❯ src/lib/algorithms/polynomialGcd.test.ts:91:83
+     89|  expect(g).toMatchObject({fn:'gcd',event:'gcdReturn',line:'return',cou…
+     90|  expect(m).toMatchObject({fn:'monic',event:'monic',line:monic[0]==='0'…
+     91|  expect(coefficients(g.returned!)).toEqual(raw);expect(coefficients(m.…
+       |                                                                                   ^
+     92|  expect(coefficients(g.rawGcd!)).toEqual(raw);expect(coefficients(m.ra…
+     93|  expect(g.counts).toEqual(before.counts);expect(m.counts).toEqual(g.co…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/8]⎯
+
+ FAIL  src/lib/algorithms/polynomialGcd.test.ts > keeps fixed adjacent raw and monic function returns independent ([ 16, -56, -88, 278, 105 ])
+AssertionError: expected [ '-4', '24', '-35' ] to deeply equal [ '1', '-6', '35/4' ]
+
+- Expected
++ Received
+
+  [
+-   "1",
+-   "-6",
+-   "35/4",
++   "-4",
++   "24",
++   "-35",
+  ]
+
+ ❯ src/lib/algorithms/polynomialGcd.test.ts:91:83
+     89|  expect(g).toMatchObject({fn:'gcd',event:'gcdReturn',line:'return',cou…
+     90|  expect(m).toMatchObject({fn:'monic',event:'monic',line:monic[0]==='0'…
+     91|  expect(coefficients(g.returned!)).toEqual(raw);expect(coefficients(m.…
+       |                                                                                   ^
+     92|  expect(coefficients(g.rawGcd!)).toEqual(raw);expect(coefficients(m.ra…
+     93|  expect(g.counts).toEqual(before.counts);expect(m.counts).toEqual(g.co…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/8]⎯
+
+ FAIL  src/lib/algorithms/polynomialGcd.test.ts > keeps fixed adjacent raw and monic function returns independent ([ 7, 6, -8, -6, 1 ])
+AssertionError: expected [ '605/1521', '1210/1521', '605/1521' ] to deeply equal [ '1', '2', '1' ]
+
+- Expected
++ Received
+
+  [
+-   "1",
+-   "2",
+-   "1",
++   "605/1521",
++   "1210/1521",
++   "605/1521",
+  ]
+
+ ❯ src/lib/algorithms/polynomialGcd.test.ts:91:83
+     89|  expect(g).toMatchObject({fn:'gcd',event:'gcdReturn',line:'return',cou…
+     90|  expect(m).toMatchObject({fn:'monic',event:'monic',line:monic[0]==='0'…
+     91|  expect(coefficients(g.returned!)).toEqual(raw);expect(coefficients(m.…
+       |                                                                                   ^
+     92|  expect(coefficients(g.rawGcd!)).toEqual(raw);expect(coefficients(m.ra…
+     93|  expect(g.counts).toEqual(before.counts);expect(m.counts).toEqual(g.co…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/8]⎯
+
+
+ Test Files  2 failed (2)
+      Tests  8 failed | 34 passed (42)
+   Start at  02:20:59
+   Duration  3.73s (transform 250ms, setup 475ms, import 440ms, tests 1.30s, environment 3.73s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

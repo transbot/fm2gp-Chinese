@@ -78,3 +78,20 @@ it('accepts maximum input size and lets intermediate exact fractions grow beyond
  expect(steps.some(s=>s.inner?.R.some(q=>q.n>BigInt(Number.MAX_SAFE_INTEGER)||q.n< -BigInt(Number.MAX_SAFE_INTEGER)||q.d>BigInt(Number.MAX_SAFE_INTEGER)))).toBe(true);
  expect(coefficients(last.result!)).toEqual(['1']);
 });
+it.each([
+ {a:[3,-4,-6,10],b:[1,-2],raw:['6'],monic:['1'],counts:{gcdRounds:2,eliminations:5}},
+ {a:[16,-56,-88,278,105],b:[16,-64,-44,232,70],raw:['-4','24','-35'],monic:['1','-6','35/4'],counts:{gcdRounds:3,eliminations:5}},
+ {a:[7,6,-8,-6,1],b:[11,15,-2,-5,1],raw:['605/1521','1210/1521','605/1521'],monic:['1','2','1'],counts:{gcdRounds:3,eliminations:5}},
+ {a:[4],b:[6],raw:['6'],monic:['1'],counts:{gcdRounds:1,eliminations:1}},
+ {a:[0],b:[0],raw:['0'],monic:['0'],counts:{gcdRounds:0,eliminations:0}},
+])('keeps fixed adjacent raw and monic function returns independent ($a)',({a,b,raw,monic,counts})=>{
+ const t=polynomialGcdTrace(P(a),P(b)),before=t[t.length-3],g=t[t.length-2],m=t[t.length-1];
+ expect(g).toMatchObject({fn:'gcd',event:'gcdReturn',line:'return',counts,result:null});
+ expect(m).toMatchObject({fn:'monic',event:'monic',line:monic[0]==='0'?'zero':'normalize',counts});
+ expect(coefficients(g.returned!)).toEqual(raw);expect(coefficients(m.returned!)).toEqual(monic);
+ expect(coefficients(g.rawGcd!)).toEqual(raw);expect(coefficients(m.rawGcd!)).toEqual(raw);expect(coefficients(m.result!)).toEqual(monic);
+ expect(g.counts).toEqual(before.counts);expect(m.counts).toEqual(g.counts);
+ expect(m.returned).not.toBe(m.result);expect(m.returned![0]).not.toBe(m.result![0]);
+ // Mutating the most recent returned value must not rewrite the stored result or the prior return.
+ m.returned![0].n=123456n;expect(coefficients(m.result!)).toEqual(monic);expect(coefficients(g.returned!)).toEqual(raw);expect(coefficients(m.rawGcd!)).toEqual(raw);
+});

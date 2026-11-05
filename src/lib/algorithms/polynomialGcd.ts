@@ -120,6 +120,7 @@ function trace(A:Poly,B:Poly,gcd:boolean):PolynomialGcdStep[] {
   }
   s.rawGcd=normalize(s.outer!.a);s.returned=normalize(s.rawGcd);emit('gcdReturn','return');
   s.fn='monic';s.result=isZero(s.rawGcd)?zero():scalePoly(s.rawGcd,divideFraction(fraction(1n),s.rawGcd[0]));
+  s.returned=normalize(s.result); // Latest function return; preserve rawGcd and an independent result.
   emit('monic',isZero(s.rawGcd)?'zero':'normalize');return steps;
 }
 export const divisionTrace=(A:Poly,B:Poly)=>trace(A,B,false);

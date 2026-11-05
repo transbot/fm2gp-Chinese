@@ -1,0 +1,219 @@
+{
+  "base": "http://127.0.0.1:4183",
+  "commit": "4461e0b4677bda188ef41f28b669e7cd3ab401e1",
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "remote": [
+        "/assets/index-CFen8v2r.css",
+        "/assets/index-DS6HpcKT.js",
+        "/assets/translations-AD-v6l-I.js"
+      ],
+      "local": [
+        "/assets/index-CFen8v2r.css",
+        "/assets/index-DS6HpcKT.js",
+        "/assets/translations-AD-v6l-I.js"
+      ],
+      "match": true
+    },
+    {
+      "route": "/book/8",
+      "status": 200,
+      "remote": [
+        "/assets/index-CFen8v2r.css",
+        "/assets/index-DS6HpcKT.js",
+        "/assets/translations-AD-v6l-I.js"
+      ],
+      "local": [
+        "/assets/index-CFen8v2r.css",
+        "/assets/index-DS6HpcKT.js",
+        "/assets/translations-AD-v6l-I.js"
+      ],
+      "match": true
+    },
+    {
+      "route": "/polynomial-gcd",
+      "status": 200,
+      "remote": [
+        "/assets/index-CFen8v2r.css",
+        "/assets/index-DS6HpcKT.js",
+        "/assets/translations-AD-v6l-I.js"
+      ],
+      "local": [
+        "/assets/index-CFen8v2r.css",
+        "/assets/index-DS6HpcKT.js",
+        "/assets/translations-AD-v6l-I.js"
+      ],
+      "match": true
+    },
+    {
+      "route": "/horner",
+      "status": 200,
+      "remote": [
+        "/assets/index-CFen8v2r.css",
+        "/assets/index-DS6HpcKT.js",
+        "/assets/translations-AD-v6l-I.js"
+      ],
+      "local": [
+        "/assets/index-CFen8v2r.css",
+        "/assets/index-DS6HpcKT.js",
+        "/assets/translations-AD-v6l-I.js"
+      ],
+      "match": true
+    },
+    {
+      "route": "/division",
+      "status": 200,
+      "remote": [
+        "/assets/index-CFen8v2r.css",
+        "/assets/index-DS6HpcKT.js",
+        "/assets/translations-AD-v6l-I.js"
+      ],
+      "local": [
+        "/assets/index-CFen8v2r.css",
+        "/assets/index-DS6HpcKT.js",
+        "/assets/translations-AD-v6l-I.js"
+      ],
+      "match": true
+    },
+    {
+      "route": "/reverse",
+      "status": 200,
+      "remote": [
+        "/assets/index-CFen8v2r.css",
+        "/assets/index-DS6HpcKT.js",
+        "/assets/translations-AD-v6l-I.js"
+      ],
+      "local": [
+        "/assets/index-CFen8v2r.css",
+        "/assets/index-DS6HpcKT.js",
+        "/assets/translations-AD-v6l-I.js"
+      ],
+      "match": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "/assets/index-CFen8v2r.css",
+      "status": 200,
+      "sha256": "1724eb4f2407d58a946a506d7ef4515ef147c5290c574fa27b67449e7cd939f8",
+      "expected": "1724eb4f2407d58a946a506d7ef4515ef147c5290c574fa27b67449e7cd939f8",
+      "match": true
+    },
+    {
+      "path": "/assets/index-DS6HpcKT.js",
+      "status": 200,
+      "sha256": "84209282758f3ded3c1814f23f9ebcad4f511133135aedffeff9b7f039f7ddcb",
+      "expected": "84209282758f3ded3c1814f23f9ebcad4f511133135aedffeff9b7f039f7ddcb",
+      "match": true
+    },
+    {
+      "path": "/assets/translations-AD-v6l-I.js",
+      "status": 200,
+      "sha256": "b0a7b138bad239fdab9e5d1a0f02773b48dd19f309f0206ceeb4bfc757501603",
+      "expected": "b0a7b138bad239fdab9e5d1a0f02773b48dd19f309f0206ceeb4bfc757501603",
+      "match": true
+    },
+    {
+      "path": "/assets/languages-4E2IPbrv.js",
+      "status": 200,
+      "sha256": "5119aded043566f31d890a8a52cf176d9b893826a08bb381cd37219670a0b2da",
+      "expected": "5119aded043566f31d890a8a52cf176d9b893826a08bb381cd37219670a0b2da",
+      "match": true
+    },
+    {
+      "path": "/assets/rotate-ccw-Cq6JovLH.js",
+      "status": 200,
+      "sha256": "6e4c100353c00ad7af5ae6944a170b0f96204d7ae79ae7d92880febfa0b3c4bd",
+      "expected": "6e4c100353c00ad7af5ae6944a170b0f96204d7ae79ae7d92880febfa0b3c4bd",
+      "match": true
+    },
+    {
+      "path": "/assets/Home-B7tBU4Xj.js",
+      "status": 200,
+      "sha256": "1701c9e122368f2361af88a0eda53f751133374a5f05293effe484aa9c77c8a0",
+      "expected": "1701c9e122368f2361af88a0eda53f751133374a5f05293effe484aa9c77c8a0",
+      "match": true
+    },
+    {
+      "path": "/assets/Book-C2mSDFFg.js",
+      "status": 200,
+      "sha256": "04fdb48706003d1dafb2d69c67dcf5985e6480dc4344e84071c72efd6dfa581d",
+      "expected": "04fdb48706003d1dafb2d69c67dcf5985e6480dc4344e84071c72efd6dfa581d",
+      "match": true
+    },
+    {
+      "path": "/assets/LearningShell-BZiJHWqQ.js",
+      "status": 200,
+      "sha256": "fae797525e799bdec62435b17374a0b0b3539bdf1377d1beec4c9b20caae74cc",
+      "expected": "fae797525e799bdec62435b17374a0b0b3539bdf1377d1beec4c9b20caae74cc",
+      "match": true
+    },
+    {
+      "path": "/assets/TraceCode-44vwjcBq.js",
+      "status": 200,
+      "sha256": "83e744bd07dbb07004db5f302b7b75c402e59db5b273f4eb520490b9ba288f9d",
+      "expected": "83e744bd07dbb07004db5f302b7b75c402e59db5b273f4eb520490b9ba288f9d",
+      "match": true
+    },
+    {
+      "path": "/assets/PolynomialGcd-CwK2XbCg.js",
+      "status": 200,
+      "sha256": "5ab9a22f504f220a9c0ef8a3e20d4ff9cbd431db6b8de8cb4a52f5d4f1fbda8d",
+      "expected": "5ab9a22f504f220a9c0ef8a3e20d4ff9cbd431db6b8de8cb4a52f5d4f1fbda8d",
+      "match": true
+    },
+    {
+      "path": "/assets/usePlayback-zEsm5vBX.js",
+      "status": 200,
+      "sha256": "d8bbbe7a7fd6e423eb386adf0abbe14cf7751e8479342773378c3da4e28a314f",
+      "expected": "d8bbbe7a7fd6e423eb386adf0abbe14cf7751e8479342773378c3da4e28a314f",
+      "match": true
+    },
+    {
+      "path": "/assets/pause-BAHxrnW2.js",
+      "status": 200,
+      "sha256": "8d5bcb73b76acfe19cc5ce5da10bd797f4074feeccde24eb92cc6c5a4af42c43",
+      "expected": "8d5bcb73b76acfe19cc5ce5da10bd797f4074feeccde24eb92cc6c5a4af42c43",
+      "match": true
+    },
+    {
+      "path": "/assets/play-vLGkVUeo.js",
+      "status": 200,
+      "sha256": "e4ac28c554c08ee6398504825caab83148e6d1521ed7c1359dd354141eff5764",
+      "expected": "e4ac28c554c08ee6398504825caab83148e6d1521ed7c1359dd354141eff5764",
+      "match": true
+    },
+    {
+      "path": "/assets/StepController-xoT-Qdr1.js",
+      "status": 200,
+      "sha256": "d4d944bd5ba16d7b1cd8329c283cfdcf43bf61de6039116fa7d08e934fb6191a",
+      "expected": "d4d944bd5ba16d7b1cd8329c283cfdcf43bf61de6039116fa7d08e934fb6191a",
+      "match": true
+    },
+    {
+      "path": "/assets/Horner-CnXJqSXF.js",
+      "status": 200,
+      "sha256": "c1b2eaac8c76ec3bcc3302a0fd67076a826915798e8cc2642939a0aa216af155",
+      "expected": "c1b2eaac8c76ec3bcc3302a0fd67076a826915798e8cc2642939a0aa216af155",
+      "match": true
+    },
+    {
+      "path": "/assets/Division-BMeI00U9.js",
+      "status": 200,
+      "sha256": "a91b19a3997009202f9ce0ac1db530c63f766a37d5a7f6bb2beac7c855e03211",
+      "expected": "a91b19a3997009202f9ce0ac1db530c63f766a37d5a7f6bb2beac7c855e03211",
+      "match": true
+    },
+    {
+      "path": "/assets/Reverse-BjZawkzu.js",
+      "status": 200,
+      "sha256": "306a21b0ffcaedac5bdd95400e4ea6b3be707a4e1810c9fb7aabc5a205645b3e",
+      "expected": "306a21b0ffcaedac5bdd95400e4ea6b3be707a4e1810c9fb7aabc5a205645b3e",
+      "match": true
+    }
+  ],
+  "failures": [],
+  "transportNote": "Actual browser response bodies; no asset absent from the local build is silently skipped."
+}
