@@ -1,0 +1,1 @@
+REPRODUCED: wrong helper scope at fixed return steps in four contexts.

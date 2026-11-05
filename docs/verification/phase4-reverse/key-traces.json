@@ -19335,9 +19335,7 @@
           }
         ],
         "helper": {
-          "f": 0,
-          "l": 0,
-          "result": 4
+          "buffer_end": 4
         },
         "fn": "reverse_n_with_buffer",
         "line": "write",
@@ -22247,9 +22245,7 @@
           }
         ],
         "helper": {
-          "f": 0,
-          "l": 0,
-          "result": 9
+          "buffer_end": 4
         },
         "fn": "reverse_n_with_buffer",
         "line": "write",

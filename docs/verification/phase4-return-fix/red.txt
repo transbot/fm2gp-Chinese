@@ -1,0 +1,150 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+ ❯ src/lib/algorithms/reverseTrace.test.ts (35 tests | 4 failed) 791ms
+   × restores source-scoped locals at return step 19 (size 2, capacity 2) 7ms
+   × restores source-scoped locals at return step 31 (size 9, capacity 4) 2ms
+   × restores source-scoped locals at return step 59 (size 9, capacity 4) 1ms
+   × restores source-scoped locals at return step 40 (size 9, capacity 9) 1ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/lib/algorithms/reverseTrace.test.ts > restores source-scoped locals at return step 19 (size 2, capacity 2)
+AssertionError: expected { method: 'adaptive', …(16) } to match object { fn: 'reverse_n_with_buffer', …(5) }
+(20 matching properties omitted from actual)
+
+- Expected
++ Received
+
+  {
+    "event": "writeReturn",
+    "fn": "reverse_n_with_buffer",
+    "helper": {
+-     "buffer_end": 2,
++     "f": 0,
++     "l": 0,
++     "result": 2,
+    },
+    "line": "write",
+    "returnPosition": 2,
+    "returnSpace": "sequence",
+  }
+
+ ❯ src/lib/algorithms/reverseTrace.test.ts:20:15
+     18|   expected.forEach((scope,i)=>{
+     19|     const index=step-2+i,s=trace[index];
+     20|     expect(s).toMatchObject({...scope,returnSpace:'sequence',returnPos…
+       |               ^
+     21|     expect(s.helper).toEqual(scope.helper);
+     22|     expect(s.frames[s.frames.length-1]).toMatchObject({f:start,n});
+ ❯ src/lib/algorithms/reverseTrace.test.ts:18:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  src/lib/algorithms/reverseTrace.test.ts > restores source-scoped locals at return step 31 (size 9, capacity 4)
+AssertionError: expected { method: 'adaptive', …(16) } to match object { fn: 'reverse_n_with_buffer', …(5) }
+(20 matching properties omitted from actual)
+
+- Expected
++ Received
+
+  {
+    "event": "writeReturn",
+    "fn": "reverse_n_with_buffer",
+    "helper": {
+-     "buffer_end": 4,
++     "f": 0,
++     "l": 0,
++     "result": 4,
+    },
+    "line": "write",
+    "returnPosition": 4,
+    "returnSpace": "sequence",
+  }
+
+ ❯ src/lib/algorithms/reverseTrace.test.ts:20:15
+     18|   expected.forEach((scope,i)=>{
+     19|     const index=step-2+i,s=trace[index];
+     20|     expect(s).toMatchObject({...scope,returnSpace:'sequence',returnPos…
+       |               ^
+     21|     expect(s.helper).toEqual(scope.helper);
+     22|     expect(s.frames[s.frames.length-1]).toMatchObject({f:start,n});
+ ❯ src/lib/algorithms/reverseTrace.test.ts:18:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  src/lib/algorithms/reverseTrace.test.ts > restores source-scoped locals at return step 59 (size 9, capacity 4)
+AssertionError: expected { method: 'adaptive', …(16) } to match object { fn: 'reverse_n_with_buffer', …(5) }
+(20 matching properties omitted from actual)
+
+- Expected
++ Received
+
+  {
+    "event": "writeReturn",
+    "fn": "reverse_n_with_buffer",
+    "helper": {
+-     "buffer_end": 4,
++     "f": 0,
++     "l": 0,
++     "result": 9,
+    },
+    "line": "write",
+    "returnPosition": 9,
+    "returnSpace": "sequence",
+  }
+
+ ❯ src/lib/algorithms/reverseTrace.test.ts:20:15
+     18|   expected.forEach((scope,i)=>{
+     19|     const index=step-2+i,s=trace[index];
+     20|     expect(s).toMatchObject({...scope,returnSpace:'sequence',returnPos…
+       |               ^
+     21|     expect(s.helper).toEqual(scope.helper);
+     22|     expect(s.frames[s.frames.length-1]).toMatchObject({f:start,n});
+ ❯ src/lib/algorithms/reverseTrace.test.ts:18:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+ FAIL  src/lib/algorithms/reverseTrace.test.ts > restores source-scoped locals at return step 40 (size 9, capacity 9)
+AssertionError: expected { method: 'adaptive', …(16) } to match object { fn: 'reverse_n_with_buffer', …(5) }
+(20 matching properties omitted from actual)
+
+- Expected
++ Received
+
+  {
+    "event": "writeReturn",
+    "fn": "reverse_n_with_buffer",
+    "helper": {
+-     "buffer_end": 9,
++     "f": 0,
++     "l": 0,
++     "result": 9,
+    },
+    "line": "write",
+    "returnPosition": 9,
+    "returnSpace": "sequence",
+  }
+
+ ❯ src/lib/algorithms/reverseTrace.test.ts:20:15
+     18|   expected.forEach((scope,i)=>{
+     19|     const index=step-2+i,s=trace[index];
+     20|     expect(s).toMatchObject({...scope,returnSpace:'sequence',returnPos…
+       |               ^
+     21|     expect(s.helper).toEqual(scope.helper);
+     22|     expect(s.frames[s.frames.length-1]).toMatchObject({f:start,n});
+ ❯ src/lib/algorithms/reverseTrace.test.ts:18:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  4 failed | 31 passed (35)
+   Start at  01:12:54
+   Duration  3.02s (transform 38ms, setup 209ms, import 28ms, tests 791ms, environment 1.81s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

@@ -2,6 +2,28 @@ import { expect, it } from 'vitest';
 import { parseReverseInput, reverseMethods, reverseTrace } from './reverseTrace';
 
 const values = Array.from({length:9},(_,i)=>i);
+it.each([
+  {size:2,capacity:2,start:0,n:2,step:19,counts:{swaps:0,bufferWrites:2,sourceWrites:2,transfers:4,maxDepth:1,bufferPeak:2}},
+  {size:9,capacity:4,start:0,n:4,step:31,counts:{swaps:0,bufferWrites:4,sourceWrites:4,transfers:8,maxDepth:2,bufferPeak:4}},
+  {size:9,capacity:4,start:5,n:4,step:59,counts:{swaps:0,bufferWrites:8,sourceWrites:8,transfers:16,maxDepth:2,bufferPeak:4}},
+  {size:9,capacity:9,start:0,n:9,step:40,counts:{swaps:0,bufferWrites:9,sourceWrites:9,transfers:18,maxDepth:1,bufferPeak:9}},
+])('restores source-scoped locals at return step $step (size $size, capacity $capacity)',({size,capacity,start,n,step,counts})=>{
+  const trace=reverseTrace(values.slice(0,size),capacity,'adaptive');
+  // Fixed source-scope expectations, not derived from the generated helper data.
+  const expected=[
+    {fn:'reverse_copy',line:'return',event:'writeReturn',helper:{f:0,l:0,result:start+n}},
+    {fn:'reverse_n_with_buffer',line:'write',event:'writeReturn',helper:{buffer_end:n}},
+    {fn:'adaptive',line:'fits',event:'return',helper:null},
+  ];
+  expected.forEach((scope,i)=>{
+    const index=step-2+i,s=trace[index];
+    expect(s).toMatchObject({...scope,returnSpace:'sequence',returnPosition:start+n});
+    expect(s.helper).toEqual(scope.helper);
+    expect(s.frames[s.frames.length-1]).toMatchObject({f:start,n});
+    expect(s.counts).toEqual(counts);
+    expect(s.counts).toEqual(trace[index-1].counts);
+  });
+});
 const oracle = (n:number,c:number):number[] => n<2 ? [0,0,1,0] : n<=c ? [0,n,1,n] : (()=>{const [s,w,d,p]=oracle(Math.floor(n/2),c);return [2*s+Math.floor(n/2),2*w,d+1,p];})();
 it.each(['1.5','1x','1,,2','1e2','1.00000000000000001','9007199254740992',''])('rejects raw sequence %s before conversion', raw=>expect(parseReverseInput(raw,'4').ok).toBe(false));
 it.each(['','-1','51','1.5','1e1'])('rejects capacity %s', c=>expect(parseReverseInput('1,2',c).ok).toBe(false));

@@ -4,7 +4,7 @@ const { execFileSync } = require('node:child_process');
 const destination = 'docs/verification/phase4-reverse/source-manifest.json';
 const paths = [...new Set(execFileSync('git', ['ls-files', '--cached', '--others', '--exclude-standard', '-z'], {encoding:'utf8'}).split('\0'))]
   .filter(p => p && fs.existsSync(p) && p !== destination)
-  .filter(p => !p.includes('/') || /^(src|scripts|public)\//.test(p) || /^docs\/verification\/phase4-reverse\//.test(p) || ['dist/index.html','配套代码(fm2gpcode)/ch11.h'].includes(p))
+  .filter(p => !p.includes('/') || /^(src|scripts|public)\//.test(p) || /^docs\/verification\/phase4-(reverse|return-fix)\//.test(p) || ['dist/index.html','配套代码(fm2gpcode)/ch11.h'].includes(p))
   .sort();
 function hash(path) {
   let bytes = fs.readFileSync(path);
@@ -15,7 +15,8 @@ function hash(path) {
   return crypto.createHash('sha256').update(bytes).digest('hex');
 }
 fs.writeFileSync(destination, JSON.stringify({
-  baseCommit:'b0a49de9c1dee11d57f801642f30754a63fb655d',
+  baseCommit:'cdc965fac9b669ff6c45b0f44a8224a8fab6cf81',
+  implementationBase:'b0a49de9c1dee11d57f801642f30754a63fb655d',
   branch:'codex/phase4-reverse-adaptive',
   hashPolicy:'SHA-256; UTF-8 text normalized to LF; binary unchanged; manifest excludes itself',
   deleted:[],

@@ -1,0 +1,2 @@
+PASS application/tests
+PASS Vite configuration

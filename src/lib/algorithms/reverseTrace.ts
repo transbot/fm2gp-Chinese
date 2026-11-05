@@ -65,7 +65,9 @@ export function reverseTrace(values:number[],capacity:number,method:ReverseMetho
           s.helper={f:0,l:index,result:start+j+1};emit('write','write');
         }
         emit('check','loop',false);s.returnPosition=start+n;s.returnSpace='sequence';emit('writeReturn','return');
-        s.fn='reverse_n_with_buffer';emit('writeReturn','write');s.helper=null;s.valid=0;
+        // Restore the caller's locals; reverse_copy's iterator copies belong only
+        // to its own return snapshot, already emitted above.
+        s.fn='reverse_n_with_buffer';s.helper={buffer_end:n};emit('writeReturn','write');s.helper=null;s.valid=0;
         return returned(f,start+n,'fits');
       }
     }

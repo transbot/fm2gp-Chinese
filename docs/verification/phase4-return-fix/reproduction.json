@@ -1,0 +1,1718 @@
+[
+  {
+    "base": "http://127.0.0.1:4181",
+    "width": 1440,
+    "lang": "zh",
+    "reproduce": true,
+    "states": [
+      {
+        "case": {
+          "n": 2,
+          "c": 2,
+          "start": 0,
+          "length": 2,
+          "step": 19,
+          "total": 21,
+          "counts": [
+            0,
+            2,
+            2,
+            4,
+            1,
+            2
+          ]
+        },
+        "offset": -1,
+        "language": "zh",
+        "step": 18,
+        "fn": "reverse_copy",
+        "line": "return",
+        "helper": "f=0 · l=0 · result=2",
+        "helperTitle": "辅助函数局部变量（独立副本）: reverse_copy",
+        "returned": "最近返回位置 · 原序列: 2 (end)",
+        "frames": "#0 · [0, 2) · 使用共享缓冲区\n\nf=0 · n=2 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          2,
+          2,
+          4,
+          1,
+          2
+        ]
+      },
+      {
+        "case": {
+          "n": 2,
+          "c": 2,
+          "start": 0,
+          "length": 2,
+          "step": 19,
+          "total": 21,
+          "counts": [
+            0,
+            2,
+            2,
+            4,
+            1,
+            2
+          ]
+        },
+        "offset": 0,
+        "language": "zh",
+        "step": 19,
+        "fn": "reverse_n_with_buffer",
+        "line": "write",
+        "helper": "f=0 · l=0 · result=2",
+        "helperTitle": "辅助函数局部变量（独立副本）: reverse_n_with_buffer",
+        "returned": "最近返回位置 · 原序列: 2 (end)",
+        "frames": "#0 · [0, 2) · 使用共享缓冲区\n\nf=0 · n=2 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          2,
+          2,
+          4,
+          1,
+          2
+        ]
+      },
+      {
+        "case": {
+          "n": 2,
+          "c": 2,
+          "start": 0,
+          "length": 2,
+          "step": 19,
+          "total": 21,
+          "counts": [
+            0,
+            2,
+            2,
+            4,
+            1,
+            2
+          ]
+        },
+        "offset": 1,
+        "language": "zh",
+        "step": 20,
+        "fn": "adaptive",
+        "line": "fits",
+        "helper": null,
+        "helperTitle": null,
+        "returned": "最近返回位置 · 原序列: 2 (end)",
+        "frames": "#0 · [0, 2) · 返回\n\nf=0 · n=2 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          2,
+          2,
+          4,
+          1,
+          2
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 0,
+          "length": 4,
+          "step": 31,
+          "total": 80,
+          "counts": [
+            0,
+            4,
+            4,
+            8,
+            2,
+            4
+          ]
+        },
+        "offset": -1,
+        "language": "zh",
+        "step": 30,
+        "fn": "reverse_copy",
+        "line": "return",
+        "helper": "f=0 · l=0 · result=4",
+        "helperTitle": "辅助函数局部变量（独立副本）: reverse_copy",
+        "returned": "最近返回位置 · 原序列: 4",
+        "frames": "#0 · [0, 9) · 等待左半返回\n\nf=0 · n=9 · h=4 · m=— · l=—\n\n#1 · [0, 4) · 使用共享缓冲区\n\nf=0 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          4,
+          4,
+          8,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 0,
+          "length": 4,
+          "step": 31,
+          "total": 80,
+          "counts": [
+            0,
+            4,
+            4,
+            8,
+            2,
+            4
+          ]
+        },
+        "offset": 0,
+        "language": "zh",
+        "step": 31,
+        "fn": "reverse_n_with_buffer",
+        "line": "write",
+        "helper": "f=0 · l=0 · result=4",
+        "helperTitle": "辅助函数局部变量（独立副本）: reverse_n_with_buffer",
+        "returned": "最近返回位置 · 原序列: 4",
+        "frames": "#0 · [0, 9) · 等待左半返回\n\nf=0 · n=9 · h=4 · m=— · l=—\n\n#1 · [0, 4) · 使用共享缓冲区\n\nf=0 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          4,
+          4,
+          8,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 0,
+          "length": 4,
+          "step": 31,
+          "total": 80,
+          "counts": [
+            0,
+            4,
+            4,
+            8,
+            2,
+            4
+          ]
+        },
+        "offset": 1,
+        "language": "zh",
+        "step": 32,
+        "fn": "adaptive",
+        "line": "fits",
+        "helper": null,
+        "helperTitle": null,
+        "returned": "最近返回位置 · 原序列: 4",
+        "frames": "#0 · [0, 9) · 等待左半返回\n\nf=0 · n=9 · h=4 · m=— · l=—\n\n#1 · [0, 4) · 返回\n\nf=0 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          4,
+          4,
+          8,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 5,
+          "length": 4,
+          "step": 59,
+          "total": 80,
+          "counts": [
+            0,
+            8,
+            8,
+            16,
+            2,
+            4
+          ]
+        },
+        "offset": -1,
+        "language": "zh",
+        "step": 58,
+        "fn": "reverse_copy",
+        "line": "return",
+        "helper": "f=0 · l=0 · result=9",
+        "helperTitle": "辅助函数局部变量（独立副本）: reverse_copy",
+        "returned": "最近返回位置 · 原序列: 9 (end)",
+        "frames": "#0 · [0, 9) · 处理右半\n\nf=0 · n=9 · h=4 · m=5 · l=—\n\n#2 · [5, 9) · 使用共享缓冲区\n\nf=5 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          8,
+          8,
+          16,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 5,
+          "length": 4,
+          "step": 59,
+          "total": 80,
+          "counts": [
+            0,
+            8,
+            8,
+            16,
+            2,
+            4
+          ]
+        },
+        "offset": 0,
+        "language": "zh",
+        "step": 59,
+        "fn": "reverse_n_with_buffer",
+        "line": "write",
+        "helper": "f=0 · l=0 · result=9",
+        "helperTitle": "辅助函数局部变量（独立副本）: reverse_n_with_buffer",
+        "returned": "最近返回位置 · 原序列: 9 (end)",
+        "frames": "#0 · [0, 9) · 处理右半\n\nf=0 · n=9 · h=4 · m=5 · l=—\n\n#2 · [5, 9) · 使用共享缓冲区\n\nf=5 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          8,
+          8,
+          16,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 5,
+          "length": 4,
+          "step": 59,
+          "total": 80,
+          "counts": [
+            0,
+            8,
+            8,
+            16,
+            2,
+            4
+          ]
+        },
+        "offset": 1,
+        "language": "zh",
+        "step": 60,
+        "fn": "adaptive",
+        "line": "fits",
+        "helper": null,
+        "helperTitle": null,
+        "returned": "最近返回位置 · 原序列: 9 (end)",
+        "frames": "#0 · [0, 9) · 处理右半\n\nf=0 · n=9 · h=4 · m=5 · l=—\n\n#2 · [5, 9) · 返回\n\nf=5 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          8,
+          8,
+          16,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 9,
+          "start": 0,
+          "length": 9,
+          "step": 40,
+          "total": 42,
+          "counts": [
+            0,
+            9,
+            9,
+            18,
+            1,
+            9
+          ]
+        },
+        "offset": -1,
+        "language": "zh",
+        "step": 39,
+        "fn": "reverse_copy",
+        "line": "return",
+        "helper": "f=0 · l=0 · result=9",
+        "helperTitle": "辅助函数局部变量（独立副本）: reverse_copy",
+        "returned": "最近返回位置 · 原序列: 9 (end)",
+        "frames": "#0 · [0, 9) · 使用共享缓冲区\n\nf=0 · n=9 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          9,
+          9,
+          18,
+          1,
+          9
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 9,
+          "start": 0,
+          "length": 9,
+          "step": 40,
+          "total": 42,
+          "counts": [
+            0,
+            9,
+            9,
+            18,
+            1,
+            9
+          ]
+        },
+        "offset": 0,
+        "language": "zh",
+        "step": 40,
+        "fn": "reverse_n_with_buffer",
+        "line": "write",
+        "helper": "f=0 · l=0 · result=9",
+        "helperTitle": "辅助函数局部变量（独立副本）: reverse_n_with_buffer",
+        "returned": "最近返回位置 · 原序列: 9 (end)",
+        "frames": "#0 · [0, 9) · 使用共享缓冲区\n\nf=0 · n=9 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          9,
+          9,
+          18,
+          1,
+          9
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 9,
+          "start": 0,
+          "length": 9,
+          "step": 40,
+          "total": 42,
+          "counts": [
+            0,
+            9,
+            9,
+            18,
+            1,
+            9
+          ]
+        },
+        "offset": 1,
+        "language": "zh",
+        "step": 41,
+        "fn": "adaptive",
+        "line": "fits",
+        "helper": null,
+        "helperTitle": null,
+        "returned": "最近返回位置 · 原序列: 9 (end)",
+        "frames": "#0 · [0, 9) · 返回\n\nf=0 · n=9 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          9,
+          9,
+          18,
+          1,
+          9
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:4181",
+    "width": 1440,
+    "lang": "en",
+    "reproduce": true,
+    "states": [
+      {
+        "case": {
+          "n": 2,
+          "c": 2,
+          "start": 0,
+          "length": 2,
+          "step": 19,
+          "total": 21,
+          "counts": [
+            0,
+            2,
+            2,
+            4,
+            1,
+            2
+          ]
+        },
+        "offset": -1,
+        "language": "en",
+        "step": 18,
+        "fn": "reverse_copy",
+        "line": "return",
+        "helper": "f=0 · l=0 · result=2",
+        "helperTitle": "Helper locals (independent copies): reverse_copy",
+        "returned": "Latest returned position · Sequence: 2 (end)",
+        "frames": "#0 · [0, 2) · Using shared buffer\n\nf=0 · n=2 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          2,
+          2,
+          4,
+          1,
+          2
+        ]
+      },
+      {
+        "case": {
+          "n": 2,
+          "c": 2,
+          "start": 0,
+          "length": 2,
+          "step": 19,
+          "total": 21,
+          "counts": [
+            0,
+            2,
+            2,
+            4,
+            1,
+            2
+          ]
+        },
+        "offset": 0,
+        "language": "en",
+        "step": 19,
+        "fn": "reverse_n_with_buffer",
+        "line": "write",
+        "helper": "f=0 · l=0 · result=2",
+        "helperTitle": "Helper locals (independent copies): reverse_n_with_buffer",
+        "returned": "Latest returned position · Sequence: 2 (end)",
+        "frames": "#0 · [0, 2) · Using shared buffer\n\nf=0 · n=2 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          2,
+          2,
+          4,
+          1,
+          2
+        ]
+      },
+      {
+        "case": {
+          "n": 2,
+          "c": 2,
+          "start": 0,
+          "length": 2,
+          "step": 19,
+          "total": 21,
+          "counts": [
+            0,
+            2,
+            2,
+            4,
+            1,
+            2
+          ]
+        },
+        "offset": 1,
+        "language": "en",
+        "step": 20,
+        "fn": "adaptive",
+        "line": "fits",
+        "helper": null,
+        "helperTitle": null,
+        "returned": "Latest returned position · Sequence: 2 (end)",
+        "frames": "#0 · [0, 2) · Returning\n\nf=0 · n=2 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          2,
+          2,
+          4,
+          1,
+          2
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 0,
+          "length": 4,
+          "step": 31,
+          "total": 80,
+          "counts": [
+            0,
+            4,
+            4,
+            8,
+            2,
+            4
+          ]
+        },
+        "offset": -1,
+        "language": "en",
+        "step": 30,
+        "fn": "reverse_copy",
+        "line": "return",
+        "helper": "f=0 · l=0 · result=4",
+        "helperTitle": "Helper locals (independent copies): reverse_copy",
+        "returned": "Latest returned position · Sequence: 4",
+        "frames": "#0 · [0, 9) · Waiting for left half\n\nf=0 · n=9 · h=4 · m=— · l=—\n\n#1 · [0, 4) · Using shared buffer\n\nf=0 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          4,
+          4,
+          8,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 0,
+          "length": 4,
+          "step": 31,
+          "total": 80,
+          "counts": [
+            0,
+            4,
+            4,
+            8,
+            2,
+            4
+          ]
+        },
+        "offset": 0,
+        "language": "en",
+        "step": 31,
+        "fn": "reverse_n_with_buffer",
+        "line": "write",
+        "helper": "f=0 · l=0 · result=4",
+        "helperTitle": "Helper locals (independent copies): reverse_n_with_buffer",
+        "returned": "Latest returned position · Sequence: 4",
+        "frames": "#0 · [0, 9) · Waiting for left half\n\nf=0 · n=9 · h=4 · m=— · l=—\n\n#1 · [0, 4) · Using shared buffer\n\nf=0 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          4,
+          4,
+          8,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 0,
+          "length": 4,
+          "step": 31,
+          "total": 80,
+          "counts": [
+            0,
+            4,
+            4,
+            8,
+            2,
+            4
+          ]
+        },
+        "offset": 1,
+        "language": "en",
+        "step": 32,
+        "fn": "adaptive",
+        "line": "fits",
+        "helper": null,
+        "helperTitle": null,
+        "returned": "Latest returned position · Sequence: 4",
+        "frames": "#0 · [0, 9) · Waiting for left half\n\nf=0 · n=9 · h=4 · m=— · l=—\n\n#1 · [0, 4) · Returning\n\nf=0 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          4,
+          4,
+          8,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 5,
+          "length": 4,
+          "step": 59,
+          "total": 80,
+          "counts": [
+            0,
+            8,
+            8,
+            16,
+            2,
+            4
+          ]
+        },
+        "offset": -1,
+        "language": "en",
+        "step": 58,
+        "fn": "reverse_copy",
+        "line": "return",
+        "helper": "f=0 · l=0 · result=9",
+        "helperTitle": "Helper locals (independent copies): reverse_copy",
+        "returned": "Latest returned position · Sequence: 9 (end)",
+        "frames": "#0 · [0, 9) · Processing right half\n\nf=0 · n=9 · h=4 · m=5 · l=—\n\n#2 · [5, 9) · Using shared buffer\n\nf=5 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          8,
+          8,
+          16,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 5,
+          "length": 4,
+          "step": 59,
+          "total": 80,
+          "counts": [
+            0,
+            8,
+            8,
+            16,
+            2,
+            4
+          ]
+        },
+        "offset": 0,
+        "language": "en",
+        "step": 59,
+        "fn": "reverse_n_with_buffer",
+        "line": "write",
+        "helper": "f=0 · l=0 · result=9",
+        "helperTitle": "Helper locals (independent copies): reverse_n_with_buffer",
+        "returned": "Latest returned position · Sequence: 9 (end)",
+        "frames": "#0 · [0, 9) · Processing right half\n\nf=0 · n=9 · h=4 · m=5 · l=—\n\n#2 · [5, 9) · Using shared buffer\n\nf=5 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          8,
+          8,
+          16,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 5,
+          "length": 4,
+          "step": 59,
+          "total": 80,
+          "counts": [
+            0,
+            8,
+            8,
+            16,
+            2,
+            4
+          ]
+        },
+        "offset": 1,
+        "language": "en",
+        "step": 60,
+        "fn": "adaptive",
+        "line": "fits",
+        "helper": null,
+        "helperTitle": null,
+        "returned": "Latest returned position · Sequence: 9 (end)",
+        "frames": "#0 · [0, 9) · Processing right half\n\nf=0 · n=9 · h=4 · m=5 · l=—\n\n#2 · [5, 9) · Returning\n\nf=5 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          8,
+          8,
+          16,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 9,
+          "start": 0,
+          "length": 9,
+          "step": 40,
+          "total": 42,
+          "counts": [
+            0,
+            9,
+            9,
+            18,
+            1,
+            9
+          ]
+        },
+        "offset": -1,
+        "language": "en",
+        "step": 39,
+        "fn": "reverse_copy",
+        "line": "return",
+        "helper": "f=0 · l=0 · result=9",
+        "helperTitle": "Helper locals (independent copies): reverse_copy",
+        "returned": "Latest returned position · Sequence: 9 (end)",
+        "frames": "#0 · [0, 9) · Using shared buffer\n\nf=0 · n=9 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          9,
+          9,
+          18,
+          1,
+          9
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 9,
+          "start": 0,
+          "length": 9,
+          "step": 40,
+          "total": 42,
+          "counts": [
+            0,
+            9,
+            9,
+            18,
+            1,
+            9
+          ]
+        },
+        "offset": 0,
+        "language": "en",
+        "step": 40,
+        "fn": "reverse_n_with_buffer",
+        "line": "write",
+        "helper": "f=0 · l=0 · result=9",
+        "helperTitle": "Helper locals (independent copies): reverse_n_with_buffer",
+        "returned": "Latest returned position · Sequence: 9 (end)",
+        "frames": "#0 · [0, 9) · Using shared buffer\n\nf=0 · n=9 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          9,
+          9,
+          18,
+          1,
+          9
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 9,
+          "start": 0,
+          "length": 9,
+          "step": 40,
+          "total": 42,
+          "counts": [
+            0,
+            9,
+            9,
+            18,
+            1,
+            9
+          ]
+        },
+        "offset": 1,
+        "language": "en",
+        "step": 41,
+        "fn": "adaptive",
+        "line": "fits",
+        "helper": null,
+        "helperTitle": null,
+        "returned": "Latest returned position · Sequence: 9 (end)",
+        "frames": "#0 · [0, 9) · Returning\n\nf=0 · n=9 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          9,
+          9,
+          18,
+          1,
+          9
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:4181",
+    "width": 390,
+    "lang": "zh",
+    "reproduce": true,
+    "states": [
+      {
+        "case": {
+          "n": 2,
+          "c": 2,
+          "start": 0,
+          "length": 2,
+          "step": 19,
+          "total": 21,
+          "counts": [
+            0,
+            2,
+            2,
+            4,
+            1,
+            2
+          ]
+        },
+        "offset": -1,
+        "language": "zh",
+        "step": 18,
+        "fn": "reverse_copy",
+        "line": "return",
+        "helper": "f=0 · l=0 · result=2",
+        "helperTitle": "辅助函数局部变量（独立副本）: reverse_copy",
+        "returned": "最近返回位置 · 原序列: 2 (end)",
+        "frames": "#0 · [0, 2) · 使用共享缓冲区\n\nf=0 · n=2 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          2,
+          2,
+          4,
+          1,
+          2
+        ]
+      },
+      {
+        "case": {
+          "n": 2,
+          "c": 2,
+          "start": 0,
+          "length": 2,
+          "step": 19,
+          "total": 21,
+          "counts": [
+            0,
+            2,
+            2,
+            4,
+            1,
+            2
+          ]
+        },
+        "offset": 0,
+        "language": "zh",
+        "step": 19,
+        "fn": "reverse_n_with_buffer",
+        "line": "write",
+        "helper": "f=0 · l=0 · result=2",
+        "helperTitle": "辅助函数局部变量（独立副本）: reverse_n_with_buffer",
+        "returned": "最近返回位置 · 原序列: 2 (end)",
+        "frames": "#0 · [0, 2) · 使用共享缓冲区\n\nf=0 · n=2 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          2,
+          2,
+          4,
+          1,
+          2
+        ]
+      },
+      {
+        "case": {
+          "n": 2,
+          "c": 2,
+          "start": 0,
+          "length": 2,
+          "step": 19,
+          "total": 21,
+          "counts": [
+            0,
+            2,
+            2,
+            4,
+            1,
+            2
+          ]
+        },
+        "offset": 1,
+        "language": "zh",
+        "step": 20,
+        "fn": "adaptive",
+        "line": "fits",
+        "helper": null,
+        "helperTitle": null,
+        "returned": "最近返回位置 · 原序列: 2 (end)",
+        "frames": "#0 · [0, 2) · 返回\n\nf=0 · n=2 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          2,
+          2,
+          4,
+          1,
+          2
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 0,
+          "length": 4,
+          "step": 31,
+          "total": 80,
+          "counts": [
+            0,
+            4,
+            4,
+            8,
+            2,
+            4
+          ]
+        },
+        "offset": -1,
+        "language": "zh",
+        "step": 30,
+        "fn": "reverse_copy",
+        "line": "return",
+        "helper": "f=0 · l=0 · result=4",
+        "helperTitle": "辅助函数局部变量（独立副本）: reverse_copy",
+        "returned": "最近返回位置 · 原序列: 4",
+        "frames": "#0 · [0, 9) · 等待左半返回\n\nf=0 · n=9 · h=4 · m=— · l=—\n\n#1 · [0, 4) · 使用共享缓冲区\n\nf=0 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          4,
+          4,
+          8,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 0,
+          "length": 4,
+          "step": 31,
+          "total": 80,
+          "counts": [
+            0,
+            4,
+            4,
+            8,
+            2,
+            4
+          ]
+        },
+        "offset": 0,
+        "language": "zh",
+        "step": 31,
+        "fn": "reverse_n_with_buffer",
+        "line": "write",
+        "helper": "f=0 · l=0 · result=4",
+        "helperTitle": "辅助函数局部变量（独立副本）: reverse_n_with_buffer",
+        "returned": "最近返回位置 · 原序列: 4",
+        "frames": "#0 · [0, 9) · 等待左半返回\n\nf=0 · n=9 · h=4 · m=— · l=—\n\n#1 · [0, 4) · 使用共享缓冲区\n\nf=0 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          4,
+          4,
+          8,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 0,
+          "length": 4,
+          "step": 31,
+          "total": 80,
+          "counts": [
+            0,
+            4,
+            4,
+            8,
+            2,
+            4
+          ]
+        },
+        "offset": 1,
+        "language": "zh",
+        "step": 32,
+        "fn": "adaptive",
+        "line": "fits",
+        "helper": null,
+        "helperTitle": null,
+        "returned": "最近返回位置 · 原序列: 4",
+        "frames": "#0 · [0, 9) · 等待左半返回\n\nf=0 · n=9 · h=4 · m=— · l=—\n\n#1 · [0, 4) · 返回\n\nf=0 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          4,
+          4,
+          8,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 5,
+          "length": 4,
+          "step": 59,
+          "total": 80,
+          "counts": [
+            0,
+            8,
+            8,
+            16,
+            2,
+            4
+          ]
+        },
+        "offset": -1,
+        "language": "zh",
+        "step": 58,
+        "fn": "reverse_copy",
+        "line": "return",
+        "helper": "f=0 · l=0 · result=9",
+        "helperTitle": "辅助函数局部变量（独立副本）: reverse_copy",
+        "returned": "最近返回位置 · 原序列: 9 (end)",
+        "frames": "#0 · [0, 9) · 处理右半\n\nf=0 · n=9 · h=4 · m=5 · l=—\n\n#2 · [5, 9) · 使用共享缓冲区\n\nf=5 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          8,
+          8,
+          16,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 5,
+          "length": 4,
+          "step": 59,
+          "total": 80,
+          "counts": [
+            0,
+            8,
+            8,
+            16,
+            2,
+            4
+          ]
+        },
+        "offset": 0,
+        "language": "zh",
+        "step": 59,
+        "fn": "reverse_n_with_buffer",
+        "line": "write",
+        "helper": "f=0 · l=0 · result=9",
+        "helperTitle": "辅助函数局部变量（独立副本）: reverse_n_with_buffer",
+        "returned": "最近返回位置 · 原序列: 9 (end)",
+        "frames": "#0 · [0, 9) · 处理右半\n\nf=0 · n=9 · h=4 · m=5 · l=—\n\n#2 · [5, 9) · 使用共享缓冲区\n\nf=5 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          8,
+          8,
+          16,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 5,
+          "length": 4,
+          "step": 59,
+          "total": 80,
+          "counts": [
+            0,
+            8,
+            8,
+            16,
+            2,
+            4
+          ]
+        },
+        "offset": 1,
+        "language": "zh",
+        "step": 60,
+        "fn": "adaptive",
+        "line": "fits",
+        "helper": null,
+        "helperTitle": null,
+        "returned": "最近返回位置 · 原序列: 9 (end)",
+        "frames": "#0 · [0, 9) · 处理右半\n\nf=0 · n=9 · h=4 · m=5 · l=—\n\n#2 · [5, 9) · 返回\n\nf=5 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          8,
+          8,
+          16,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 9,
+          "start": 0,
+          "length": 9,
+          "step": 40,
+          "total": 42,
+          "counts": [
+            0,
+            9,
+            9,
+            18,
+            1,
+            9
+          ]
+        },
+        "offset": -1,
+        "language": "zh",
+        "step": 39,
+        "fn": "reverse_copy",
+        "line": "return",
+        "helper": "f=0 · l=0 · result=9",
+        "helperTitle": "辅助函数局部变量（独立副本）: reverse_copy",
+        "returned": "最近返回位置 · 原序列: 9 (end)",
+        "frames": "#0 · [0, 9) · 使用共享缓冲区\n\nf=0 · n=9 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          9,
+          9,
+          18,
+          1,
+          9
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 9,
+          "start": 0,
+          "length": 9,
+          "step": 40,
+          "total": 42,
+          "counts": [
+            0,
+            9,
+            9,
+            18,
+            1,
+            9
+          ]
+        },
+        "offset": 0,
+        "language": "zh",
+        "step": 40,
+        "fn": "reverse_n_with_buffer",
+        "line": "write",
+        "helper": "f=0 · l=0 · result=9",
+        "helperTitle": "辅助函数局部变量（独立副本）: reverse_n_with_buffer",
+        "returned": "最近返回位置 · 原序列: 9 (end)",
+        "frames": "#0 · [0, 9) · 使用共享缓冲区\n\nf=0 · n=9 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          9,
+          9,
+          18,
+          1,
+          9
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 9,
+          "start": 0,
+          "length": 9,
+          "step": 40,
+          "total": 42,
+          "counts": [
+            0,
+            9,
+            9,
+            18,
+            1,
+            9
+          ]
+        },
+        "offset": 1,
+        "language": "zh",
+        "step": 41,
+        "fn": "adaptive",
+        "line": "fits",
+        "helper": null,
+        "helperTitle": null,
+        "returned": "最近返回位置 · 原序列: 9 (end)",
+        "frames": "#0 · [0, 9) · 返回\n\nf=0 · n=9 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          9,
+          9,
+          18,
+          1,
+          9
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:4181",
+    "width": 390,
+    "lang": "en",
+    "reproduce": true,
+    "states": [
+      {
+        "case": {
+          "n": 2,
+          "c": 2,
+          "start": 0,
+          "length": 2,
+          "step": 19,
+          "total": 21,
+          "counts": [
+            0,
+            2,
+            2,
+            4,
+            1,
+            2
+          ]
+        },
+        "offset": -1,
+        "language": "en",
+        "step": 18,
+        "fn": "reverse_copy",
+        "line": "return",
+        "helper": "f=0 · l=0 · result=2",
+        "helperTitle": "Helper locals (independent copies): reverse_copy",
+        "returned": "Latest returned position · Sequence: 2 (end)",
+        "frames": "#0 · [0, 2) · Using shared buffer\n\nf=0 · n=2 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          2,
+          2,
+          4,
+          1,
+          2
+        ]
+      },
+      {
+        "case": {
+          "n": 2,
+          "c": 2,
+          "start": 0,
+          "length": 2,
+          "step": 19,
+          "total": 21,
+          "counts": [
+            0,
+            2,
+            2,
+            4,
+            1,
+            2
+          ]
+        },
+        "offset": 0,
+        "language": "en",
+        "step": 19,
+        "fn": "reverse_n_with_buffer",
+        "line": "write",
+        "helper": "f=0 · l=0 · result=2",
+        "helperTitle": "Helper locals (independent copies): reverse_n_with_buffer",
+        "returned": "Latest returned position · Sequence: 2 (end)",
+        "frames": "#0 · [0, 2) · Using shared buffer\n\nf=0 · n=2 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          2,
+          2,
+          4,
+          1,
+          2
+        ]
+      },
+      {
+        "case": {
+          "n": 2,
+          "c": 2,
+          "start": 0,
+          "length": 2,
+          "step": 19,
+          "total": 21,
+          "counts": [
+            0,
+            2,
+            2,
+            4,
+            1,
+            2
+          ]
+        },
+        "offset": 1,
+        "language": "en",
+        "step": 20,
+        "fn": "adaptive",
+        "line": "fits",
+        "helper": null,
+        "helperTitle": null,
+        "returned": "Latest returned position · Sequence: 2 (end)",
+        "frames": "#0 · [0, 2) · Returning\n\nf=0 · n=2 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          2,
+          2,
+          4,
+          1,
+          2
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 0,
+          "length": 4,
+          "step": 31,
+          "total": 80,
+          "counts": [
+            0,
+            4,
+            4,
+            8,
+            2,
+            4
+          ]
+        },
+        "offset": -1,
+        "language": "en",
+        "step": 30,
+        "fn": "reverse_copy",
+        "line": "return",
+        "helper": "f=0 · l=0 · result=4",
+        "helperTitle": "Helper locals (independent copies): reverse_copy",
+        "returned": "Latest returned position · Sequence: 4",
+        "frames": "#0 · [0, 9) · Waiting for left half\n\nf=0 · n=9 · h=4 · m=— · l=—\n\n#1 · [0, 4) · Using shared buffer\n\nf=0 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          4,
+          4,
+          8,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 0,
+          "length": 4,
+          "step": 31,
+          "total": 80,
+          "counts": [
+            0,
+            4,
+            4,
+            8,
+            2,
+            4
+          ]
+        },
+        "offset": 0,
+        "language": "en",
+        "step": 31,
+        "fn": "reverse_n_with_buffer",
+        "line": "write",
+        "helper": "f=0 · l=0 · result=4",
+        "helperTitle": "Helper locals (independent copies): reverse_n_with_buffer",
+        "returned": "Latest returned position · Sequence: 4",
+        "frames": "#0 · [0, 9) · Waiting for left half\n\nf=0 · n=9 · h=4 · m=— · l=—\n\n#1 · [0, 4) · Using shared buffer\n\nf=0 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          4,
+          4,
+          8,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 0,
+          "length": 4,
+          "step": 31,
+          "total": 80,
+          "counts": [
+            0,
+            4,
+            4,
+            8,
+            2,
+            4
+          ]
+        },
+        "offset": 1,
+        "language": "en",
+        "step": 32,
+        "fn": "adaptive",
+        "line": "fits",
+        "helper": null,
+        "helperTitle": null,
+        "returned": "Latest returned position · Sequence: 4",
+        "frames": "#0 · [0, 9) · Waiting for left half\n\nf=0 · n=9 · h=4 · m=— · l=—\n\n#1 · [0, 4) · Returning\n\nf=0 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          4,
+          4,
+          8,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 5,
+          "length": 4,
+          "step": 59,
+          "total": 80,
+          "counts": [
+            0,
+            8,
+            8,
+            16,
+            2,
+            4
+          ]
+        },
+        "offset": -1,
+        "language": "en",
+        "step": 58,
+        "fn": "reverse_copy",
+        "line": "return",
+        "helper": "f=0 · l=0 · result=9",
+        "helperTitle": "Helper locals (independent copies): reverse_copy",
+        "returned": "Latest returned position · Sequence: 9 (end)",
+        "frames": "#0 · [0, 9) · Processing right half\n\nf=0 · n=9 · h=4 · m=5 · l=—\n\n#2 · [5, 9) · Using shared buffer\n\nf=5 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          8,
+          8,
+          16,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 5,
+          "length": 4,
+          "step": 59,
+          "total": 80,
+          "counts": [
+            0,
+            8,
+            8,
+            16,
+            2,
+            4
+          ]
+        },
+        "offset": 0,
+        "language": "en",
+        "step": 59,
+        "fn": "reverse_n_with_buffer",
+        "line": "write",
+        "helper": "f=0 · l=0 · result=9",
+        "helperTitle": "Helper locals (independent copies): reverse_n_with_buffer",
+        "returned": "Latest returned position · Sequence: 9 (end)",
+        "frames": "#0 · [0, 9) · Processing right half\n\nf=0 · n=9 · h=4 · m=5 · l=—\n\n#2 · [5, 9) · Using shared buffer\n\nf=5 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          8,
+          8,
+          16,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 4,
+          "start": 5,
+          "length": 4,
+          "step": 59,
+          "total": 80,
+          "counts": [
+            0,
+            8,
+            8,
+            16,
+            2,
+            4
+          ]
+        },
+        "offset": 1,
+        "language": "en",
+        "step": 60,
+        "fn": "adaptive",
+        "line": "fits",
+        "helper": null,
+        "helperTitle": null,
+        "returned": "Latest returned position · Sequence: 9 (end)",
+        "frames": "#0 · [0, 9) · Processing right half\n\nf=0 · n=9 · h=4 · m=5 · l=—\n\n#2 · [5, 9) · Returning\n\nf=5 · n=4 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          8,
+          8,
+          16,
+          2,
+          4
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 9,
+          "start": 0,
+          "length": 9,
+          "step": 40,
+          "total": 42,
+          "counts": [
+            0,
+            9,
+            9,
+            18,
+            1,
+            9
+          ]
+        },
+        "offset": -1,
+        "language": "en",
+        "step": 39,
+        "fn": "reverse_copy",
+        "line": "return",
+        "helper": "f=0 · l=0 · result=9",
+        "helperTitle": "Helper locals (independent copies): reverse_copy",
+        "returned": "Latest returned position · Sequence: 9 (end)",
+        "frames": "#0 · [0, 9) · Using shared buffer\n\nf=0 · n=9 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          9,
+          9,
+          18,
+          1,
+          9
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 9,
+          "start": 0,
+          "length": 9,
+          "step": 40,
+          "total": 42,
+          "counts": [
+            0,
+            9,
+            9,
+            18,
+            1,
+            9
+          ]
+        },
+        "offset": 0,
+        "language": "en",
+        "step": 40,
+        "fn": "reverse_n_with_buffer",
+        "line": "write",
+        "helper": "f=0 · l=0 · result=9",
+        "helperTitle": "Helper locals (independent copies): reverse_n_with_buffer",
+        "returned": "Latest returned position · Sequence: 9 (end)",
+        "frames": "#0 · [0, 9) · Using shared buffer\n\nf=0 · n=9 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          9,
+          9,
+          18,
+          1,
+          9
+        ]
+      },
+      {
+        "case": {
+          "n": 9,
+          "c": 9,
+          "start": 0,
+          "length": 9,
+          "step": 40,
+          "total": 42,
+          "counts": [
+            0,
+            9,
+            9,
+            18,
+            1,
+            9
+          ]
+        },
+        "offset": 1,
+        "language": "en",
+        "step": 41,
+        "fn": "adaptive",
+        "line": "fits",
+        "helper": null,
+        "helperTitle": null,
+        "returned": "Latest returned position · Sequence: 9 (end)",
+        "frames": "#0 · [0, 9) · Returning\n\nf=0 · n=9 · h=— · m=— · l=—",
+        "counts": [
+          0,
+          9,
+          9,
+          18,
+          1,
+          9
+        ]
+      }
+    ],
+    "errors": []
+  }
+]
