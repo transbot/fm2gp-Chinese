@@ -1,0 +1,2526 @@
+
+> vite-react-typescript-starter@0.0.0 test:run
+> vitest run
+
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+ ❯ src/components/algorithms/validationErrors.test.tsx (75 tests | 2 failed) 3538ms
+     × shows a non-positive divisor error on division 442ms
+     × labels division inputs for assistive technology 310ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/components/algorithms/validationErrors.test.tsx > core algorithm validation errors > shows a non-positive divisor error on division
+TestingLibraryElementError: Unable to find an accessible element with the role "spinbutton"
+
+Here are the accessible roles:
+
+  main:
+
+  Name "":
+  <main
+    class="learning-shell max-w-6xl"
+  />
+
+  --------------------------------------------------
+  banner:
+
+  Name "":
+  <header
+    class="flex flex-wrap items-center justify-between gap-3"
+  />
+
+  --------------------------------------------------
+  link:
+
+  Name "Back to Home":
+  <a
+    class="learning-secondary"
+    href="/"
+  />
+
+  Name "Browse chapters":
+  <a
+    class="learning-secondary"
+    href="/book"
+  />
+
+  Name "largest_doubling · remainder · remainder_fibonacci · quotient_remainder — ch04.h":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/%E9%85%8D%E5%A5%97%E4%BB%A3%E7%A0%81(fm2gpcode)/ch04.h"
+  />
+
+  Name "Exercise 4.6: trace the Fibonacci remainder of 45÷6":
+  <a
+    class="learning-link block"
+    href="/book/4#exercise-4-6"
+  />
+
+  Name "Exercise 4.6 reference solution":
+  <a
+    class="learning-link block"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/4_6.md"
+  />
+
+  Name "Read the book guide":
+  <a
+    class="learning-link"
+    href="/book/4#section-4-6"
+  />
+
+  --------------------------------------------------
+  button:
+
+  Name "中文":
+  <button
+    class="learning-primary"
+  />
+
+  Name "Apply input":
+  <button
+    class="learning-primary"
+    type="submit"
+  />
+
+  Name "45 ÷ 6":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "42 ÷ 6":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "5 ÷ 6":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "6 ÷ 6":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "0 ÷ 6":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "47 ÷ 7":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "256 ÷ 1":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "770 ÷ 3":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "1000000 ÷ 1000000":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "Step Backward":
+  <button
+    aria-label="Step Backward"
+    class="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+    disabled=""
+    title="Step Backward"
+  />
+
+  Name "Play":
+  <button
+    aria-label="Play"
+    class="touch-target rounded-lg bg-blue-600 p-3 text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+    title="Play"
+  />
+
+  Name "Step Forward":
+  <button
+    aria-label="Step Forward"
+    class="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+    title="Step Forward"
+  />
+
+  Name "Reset":
+  <button
+    class="learning-secondary"
+  />
+
+  Name "Step Backward":
+  <button
+    aria-label="Step Backward"
+    class="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+    disabled=""
+    title="Step Backward"
+  />
+
+  Name "Play":
+  <button
+    aria-label="Play"
+    class="touch-target rounded-lg bg-blue-600 p-3 text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+    title="Play"
+  />
+
+  Name "Step Forward":
+  <button
+    aria-label="Step Forward"
+    class="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+    title="Step Forward"
+  />
+
+  Name "Reset":
+  <button
+    class="learning-secondary"
+  />
+
+  Name "Step Backward":
+  <button
+    aria-label="Step Backward"
+    class="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+    disabled=""
+    title="Step Backward"
+  />
+
+  Name "Play":
+  <button
+    aria-label="Play"
+    class="touch-target rounded-lg bg-blue-600 p-3 text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+    title="Play"
+  />
+
+  Name "Step Forward":
+  <button
+    aria-label="Step Forward"
+    class="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+    title="Step Forward"
+  />
+
+  Name "Reset":
+  <button
+    class="learning-secondary"
+  />
+
+  Name "Step Backward":
+  <button
+    aria-label="Step Backward"
+    class="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+    disabled=""
+    title="Step Backward"
+  />
+
+  Name "Play":
+  <button
+    aria-label="Play"
+    class="touch-target rounded-lg bg-blue-600 p-3 text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+    title="Play"
+  />
+
+  Name "Step Forward":
+  <button
+    aria-label="Step Forward"
+    class="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+    title="Step Forward"
+  />
+
+  Name "Reset":
+  <button
+    class="learning-secondary"
+  />
+
+  --------------------------------------------------
+  heading:
+
+  Name "Remainders and quotients: doubling and Fibonacci":
+  <h1
+    class="learning-title min-w-0"
+  />
+
+  Name "Applied problem and complete-run comparison: 45 ÷ 6":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Repeated subtraction":
+  <h2
+    class="text-xl font-semibold text-blue-900"
+  />
+
+  Name "Doubling remainder":
+  <h2
+    class="text-xl font-semibold text-blue-900"
+  />
+
+  Name "Fibonacci remainder":
+  <h2
+    class="text-xl font-semibold text-blue-900"
+  />
+
+  Name "Quotient and remainder together":
+  <h2
+    class="text-xl font-semibold text-blue-900"
+  />
+
+  --------------------------------------------------
+  paragraph:
+
+  Name "":
+  <p
+    class="mt-3 text-gray-600 leading-7"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    class="font-mono font-semibold"
+    data-testid="original-input"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    data-testid="counts"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    class="font-mono w-max"
+    data-testid="remainder-path"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p
+    class="font-mono font-semibold"
+    data-testid="original-input"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    data-testid="counts"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    class="font-mono w-max"
+    data-testid="remainder-path"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p
+    class="font-mono font-semibold"
+    data-testid="original-input"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    data-testid="counts"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    class="font-mono w-max"
+    data-testid="remainder-path"
+  />
+
+  Name "":
+  <p
+    class="font-mono w-max"
+    data-testid="growth-pairs"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    class="font-mono font-semibold"
+    data-testid="original-input"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    data-testid="counts"
+  />
+
+  Name "":
+  <p
+    class="learning-intro"
+    data-testid="invariant"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    class="font-mono w-max"
+    data-testid="remainder-path"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  --------------------------------------------------
+  textbox:
+
+  Name "A: original dividend":
+  <input
+    aria-invalid="false"
+    class="learning-input w-full mt-2"
+    id="division-A"
+    inputmode="numeric"
+    value="45"
+  />
+
+  Name "B: original divisor":
+  <input
+    aria-invalid="false"
+    class="learning-input w-full mt-2"
+    id="division-B"
+    inputmode="numeric"
+    value="6"
+  />
+
+  --------------------------------------------------
+  region:
+
+  Name "Operation count comparison":
+  <div
+    aria-label="Operation count comparison"
+    class="overflow-x-auto"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Remainder deduction history":
+  <div
+    aria-label="Remainder deduction history"
+    class="overflow-auto max-h-28 rounded-lg bg-gray-50 p-3"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Code just executed":
+  <div
+    aria-label="Code just executed"
+    class="overflow-x-auto rounded-lg border border-gray-200 bg-gray-50"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Remainder deduction history":
+  <div
+    aria-label="Remainder deduction history"
+    class="overflow-auto max-h-28 rounded-lg bg-gray-50 p-3"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Code just executed":
+  <div
+    aria-label="Code just executed"
+    class="overflow-x-auto rounded-lg border border-gray-200 bg-gray-50"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Remainder deduction history":
+  <div
+    aria-label="Remainder deduction history"
+    class="overflow-auto max-h-28 rounded-lg bg-gray-50 p-3"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Candidate pairs during growth":
+  <div
+    aria-label="Candidate pairs during growth"
+    class="overflow-auto max-h-28 rounded-lg bg-gray-50 p-3"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Code just executed":
+  <div
+    aria-label="Code just executed"
+    class="overflow-x-auto rounded-lg border border-gray-200 bg-gray-50"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Remainder deduction history":
+  <div
+    aria-label="Remainder deduction history"
+    class="overflow-auto max-h-28 rounded-lg bg-gray-50 p-3"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Code just executed":
+  <div
+    aria-label="Code just executed"
+    class="overflow-x-auto rounded-lg border border-gray-200 bg-gray-50"
+    role="region"
+    tabindex="0"
+  />
+
+  --------------------------------------------------
+  table:
+
+  Name "":
+  <table
+    class="w-full text-left text-sm"
+  />
+
+  --------------------------------------------------
+  rowgroup:
+
+  Name "":
+  <thead />
+
+  Name "":
+  <tbody />
+
+  --------------------------------------------------
+  row:
+
+  Name "Method Final remainder Additions Subtractions Halvings Deductions Current execution":
+  <tr />
+
+  Name "Repeated subtraction 3 0 7 0 7 1/17 · a = 45Enter the algorithm with running variables initialized from the applied A and B.":
+  <tr
+    data-testid="summary-repeated"
+  />
+
+  Name "Doubling remainder 3 2 6 2 3 1/22 · a = 45Enter the algorithm with running variables initialized from the applied A and B.":
+  <tr
+    data-testid="summary-doubling"
+  />
+
+  Name "Fibonacci remainder 3 4 6 0 2 1/42 · a = 45Enter the algorithm with running variables initialized from the applied A and B.":
+  <tr
+    data-testid="summary-fibonacci"
+  />
+
+  Name "Quotient and remainder together 3 6 6 2 3 1/27 · a = 45Enter the algorithm with running variables initialized from the applied A and B.":
+  <tr
+    data-testid="summary-quotient"
+  />
+
+  --------------------------------------------------
+  columnheader:
+
+  Name "Method":
+  <th
+    class="p-2"
+  />
+
+  Name "Final remainder":
+  <th
+    class="p-2"
+  />
+
+  Name "Additions":
+  <th
+    class="p-2"
+  />
+
+  Name "Subtractions":
+  <th
+    class="p-2"
+  />
+
+  Name "Halvings":
+  <th
+    class="p-2"
+  />
+
+  Name "Deductions":
+  <th
+    class="p-2"
+  />
+
+  Name "Current execution":
+  <th
+    class="p-2"
+  />
+
+  Name "Repeated subtraction":
+  <th
+    class="p-2"
+  />
+
+  Name "Doubling remainder":
+  <th
+    class="p-2"
+  />
+
+  Name "Fibonacci remainder":
+  <th
+    class="p-2"
+  />
+
+  Name "Quotient and remainder together":
+  <th
+    class="p-2"
+  />
+
+  --------------------------------------------------
+  cell:
+
+  Name "3":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "0":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "7":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "0":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "7":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "1/17 · a = 45Enter the algorithm with running variables initialized from the applied A and B.":
+  <td
+    class="p-2 border-t"
+    data-testid="current-repeated"
+  />
+
+  Name "3":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "2":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "6":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "2":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "3":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "1/22 · a = 45Enter the algorithm with running variables initialized from the applied A and B.":
+  <td
+    class="p-2 border-t"
+    data-testid="current-doubling"
+  />
+
+  Name "3":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "4":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "6":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "0":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "2":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "1/42 · a = 45Enter the algorithm with running variables initialized from the applied A and B.":
+  <td
+    class="p-2 border-t"
+    data-testid="current-fibonacci"
+  />
+
+  Name "3":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "6":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "6":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "2":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "3":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "1/27 · a = 45Enter the algorithm with running variables initialized from the applied A and B.":
+  <td
+    class="p-2 border-t"
+    data-testid="current-quotient"
+  />
+
+  --------------------------------------------------
+  slider:
+
+  Name "Step progress":
+  <input
+    aria-label="Step progress"
+    class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer disabled:cursor-not-allowed"
+    max="16"
+    min="0"
+    style="background: linear-gradient(to right, rgb(59, 130, 246) 0%, rgb(59, 130, 246) 0%, rgb(229, 231, 235) 0%, rgb(229, 231, 235) 100%);"
+    type="range"
+    value="0"
+  />
+
+  Name "Step progress":
+  <input
+    aria-label="Step progress"
+    class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer disabled:cursor-not-allowed"
+    max="21"
+    min="0"
+    style="background: linear-gradient(to right, rgb(59, 130, 246) 0%, rgb(59, 130, 246) 0%, rgb(229, 231, 235) 0%, rgb(229, 231, 235) 100%);"
+    type="range"
+    value="0"
+  />
+
+  Name "Step progress":
+  <input
+    aria-label="Step progress"
+    class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer disabled:cursor-not-allowed"
+    max="41"
+    min="0"
+    style="background: linear-gradient(to right, rgb(59, 130, 246) 0%, rgb(59, 130, 246) 0%, rgb(229, 231, 235) 0%, rgb(229, 231, 235) 100%);"
+    type="range"
+    value="0"
+  />
+
+  Name "Step progress":
+  <input
+    aria-label="Step progress"
+    class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer disabled:cursor-not-allowed"
+    max="26"
+    min="0"
+    style="background: linear-gradient(to right, rgb(59, 130, 246) 0%, rgb(59, 130, 246) 0%, rgb(229, 231, 235) 0%, rgb(229, 231, 235) 100%);"
+    type="range"
+    value="0"
+  />
+
+  --------------------------------------------------
+  combobox:
+
+  Name "Speed":
+  <select
+    aria-label="Speed"
+    class="touch-target rounded-lg border border-gray-200 px-3 py-1 text-sm disabled:cursor-not-allowed disabled:opacity-50"
+  />
+
+  Name "Speed":
+  <select
+    aria-label="Speed"
+    class="touch-target rounded-lg border border-gray-200 px-3 py-1 text-sm disabled:cursor-not-allowed disabled:opacity-50"
+  />
+
+  Name "Speed":
+  <select
+    aria-label="Speed"
+    class="touch-target rounded-lg border border-gray-200 px-3 py-1 text-sm disabled:cursor-not-allowed disabled:opacity-50"
+  />
+
+  Name "Speed":
+  <select
+    aria-label="Speed"
+    class="touch-target rounded-lg border border-gray-200 px-3 py-1 text-sm disabled:cursor-not-allowed disabled:opacity-50"
+  />
+
+  --------------------------------------------------
+  option:
+
+  Name "0.5x":
+  <option
+    value="0.5"
+  />
+
+  Name "1x":
+  <option
+    value="1"
+  />
+
+  Name "1.5x":
+  <option
+    value="1.5"
+  />
+
+  Name "2x":
+  <option
+    value="2"
+  />
+
+  Name "3x":
+  <option
+    value="3"
+  />
+
+  Name "0.5x":
+  <option
+    value="0.5"
+  />
+
+  Name "1x":
+  <option
+    value="1"
+  />
+
+  Name "1.5x":
+  <option
+    value="1.5"
+  />
+
+  Name "2x":
+  <option
+    value="2"
+  />
+
+  Name "3x":
+  <option
+    value="3"
+  />
+
+  Name "0.5x":
+  <option
+    value="0.5"
+  />
+
+  Name "1x":
+  <option
+    value="1"
+  />
+
+  Name "1.5x":
+  <option
+    value="1.5"
+  />
+
+  Name "2x":
+  <option
+    value="2"
+  />
+
+  Name "3x":
+  <option
+    value="3"
+  />
+
+  Name "0.5x":
+  <option
+    value="0.5"
+  />
+
+  Name "1x":
+  <option
+    value="1"
+  />
+
+  Name "1.5x":
+  <option
+    value="1.5"
+  />
+
+  Name "2x":
+  <option
+    value="2"
+  />
+
+  Name "3x":
+  <option
+    value="3"
+  />
+
+  --------------------------------------------------
+  status:
+
+  Name "":
+  <p
+    data-testid="explanation"
+    role="status"
+  />
+
+  Name "":
+  <p
+    data-testid="explanation"
+    role="status"
+  />
+
+  Name "":
+  <p
+    data-testid="explanation"
+    role="status"
+  />
+
+  Name "":
+  <p
+    data-testid="explanation"
+    role="status"
+  />
+
+  --------------------------------------------------
+  strong:
+
+  Name "":
+  <strong
+    data-testid="result"
+  />
+
+  Name "":
+  <strong
+    data-testid="result"
+  />
+
+  Name "":
+  <strong
+    data-testid="result"
+  />
+
+  Name "":
+  <strong
+    data-testid="result"
+  />
+
+  --------------------------------------------------
+  code:
+
+  Name "":
+  <code />
+
+  Name "":
+  <code />
+
+  Name "":
+  <code />
+
+  Name "":
+  <code />
+
+  --------------------------------------------------
+  group:
+
+  Name "":
+  <details
+    class="learning-card"
+    data-testid="quotient-disclosure"
+  />
+
+  Name "":
+  <details
+    class="learning-note"
+  />
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <main
+      class="learning-shell max-w-6xl"
+    >
+      <header
+        class="flex flex-wrap items-center justify-between gap-3"
+      >
+        <a
+          class="learning-secondary"
+          href="/"
+        >
+          Back to Home
+        </a>
+        <a
+          class="learning-secondary"
+          href="/book"
+        >
+          Browse chapters
+        </a>
+        <button
+          class="learning-primary"
+        >
+          中文
+        </button>
+      </header>
+      <div>
+        <h1
+          class="learning-title min-w-0"
+        >
+          Remainders and quotients: doubling and Fibonacci
+        </h1>
+        <p
+          class="mt-3 text-gray-600 leading-7"
+        >
+          Sections 4.5–4.6 · Compare three remainder methods with the same input, then reuse doubling to compute quotient and remainder together.
+        </p>
+      </div>
+      <form
+        class="learning-card"
+      >
+        <div
+          class="grid sm:grid-cols-2 gap-4"
+        >
+          <div>
+            <label
+              class="block"
+              for="division-A"
+            >
+              A: original dividend
+            </label>
+            <input
+              aria-invalid="false"
+              class="learning-input w-full mt-2"
+              id="division-A"
+              inputmode="numeric"
+              value="45"
+            />
+          </div>
+          <div>
+            <label
+              class="block"
+              for="division-B"
+            >
+              B: original divisor
+            </label>
+            <input
+              aria-invalid="false"
+              class="learning-input w-full mt-2"
+              id="division-B"
+              inputmode="numeric"
+              value="6"
+            />
+          </div>
+        </div>
+        <p
+          class="text-sm text-gray-600"
+        >
+          Integer A: 0–1,000,000; integer B: 1–1,000,000. Quotient up to 256 (A &lt; 257B); every step is retained. Internal candidates may exceed the input limit; every operation is checked for safe-integer precision.
+        </p>
+        <button
+          class="learning-primary"
+          type="submit"
+        >
+          Apply input
+        </button>
+        <div
+          class="flex flex-wrap gap-2"
+        >
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            45
+             ÷ 
+            6
+          </button>
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            42
+             ÷ 
+            6
+          </button>
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            5
+             ÷ 
+            6
+          </button>
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            6
+             ÷ 
+            6
+          </button>
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            0
+             ÷ 
+            6
+          </button>
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            47
+             ÷ 
+            7
+          </button>
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            256
+             ÷ 
+            1
+          </button>
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            770
+             ÷ 
+            3
+          </button>
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            1000000
+             ÷ 
+            1000000
+          </button>
+        </div>
+      </form>
+      <section
+        class="learning-card"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Applied problem and complete-run comparison
+          : 
+          45
+           ÷ 
+          6
+        </h2>
+        <p>
+          Totals come from complete traces; the last column follows each player’s current snapshot. The four players are independent.
+        </p>
+        <div
+          aria-label="Operation count comparison"
+          class="overflow-x-auto"
+          role="region"
+          tabindex="0"
+        >
+          <table
+            class="w-full text-left text-sm"
+          >
+            <thead>
+              <tr>
+                <th
+                  class="p-2"
+                >
+                  Method
+                </th>
+                <th
+                  class=[32...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:109:15
+ ❯ src/components/algorithms/validationErrors.test.tsx:225:37
+    223|     renderAlgorithm(<Division />);
+    224|
+    225|     const [, divisorInput] = screen.getAllByRole('spinbutton');
+       |                                     ^
+    226|     fireEvent.change(divisorInput, { target: { value: '0' } });
+    227|     fireEvent.blur(divisorInput);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  src/components/algorithms/validationErrors.test.tsx > core algorithm validation errors > labels division inputs for assistive technology
+TestingLibraryElementError: Unable to find an accessible element with the role "spinbutton" and name `/Dividend/i`
+
+Here are the accessible roles:
+
+  main:
+
+  Name "":
+  <main
+    class="learning-shell max-w-6xl"
+  />
+
+  --------------------------------------------------
+  banner:
+
+  Name "":
+  <header
+    class="flex flex-wrap items-center justify-between gap-3"
+  />
+
+  --------------------------------------------------
+  link:
+
+  Name "Back to Home":
+  <a
+    class="learning-secondary"
+    href="/"
+  />
+
+  Name "Browse chapters":
+  <a
+    class="learning-secondary"
+    href="/book"
+  />
+
+  Name "largest_doubling · remainder · remainder_fibonacci · quotient_remainder — ch04.h":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/%E9%85%8D%E5%A5%97%E4%BB%A3%E7%A0%81(fm2gpcode)/ch04.h"
+  />
+
+  Name "Exercise 4.6: trace the Fibonacci remainder of 45÷6":
+  <a
+    class="learning-link block"
+    href="/book/4#exercise-4-6"
+  />
+
+  Name "Exercise 4.6 reference solution":
+  <a
+    class="learning-link block"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/4_6.md"
+  />
+
+  Name "Read the book guide":
+  <a
+    class="learning-link"
+    href="/book/4#section-4-6"
+  />
+
+  --------------------------------------------------
+  button:
+
+  Name "中文":
+  <button
+    class="learning-primary"
+  />
+
+  Name "Apply input":
+  <button
+    class="learning-primary"
+    type="submit"
+  />
+
+  Name "45 ÷ 6":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "42 ÷ 6":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "5 ÷ 6":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "6 ÷ 6":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "0 ÷ 6":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "47 ÷ 7":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "256 ÷ 1":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "770 ÷ 3":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "1000000 ÷ 1000000":
+  <button
+    class="learning-secondary"
+    type="button"
+  />
+
+  Name "Step Backward":
+  <button
+    aria-label="Step Backward"
+    class="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+    disabled=""
+    title="Step Backward"
+  />
+
+  Name "Play":
+  <button
+    aria-label="Play"
+    class="touch-target rounded-lg bg-blue-600 p-3 text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+    title="Play"
+  />
+
+  Name "Step Forward":
+  <button
+    aria-label="Step Forward"
+    class="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+    title="Step Forward"
+  />
+
+  Name "Reset":
+  <button
+    class="learning-secondary"
+  />
+
+  Name "Step Backward":
+  <button
+    aria-label="Step Backward"
+    class="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+    disabled=""
+    title="Step Backward"
+  />
+
+  Name "Play":
+  <button
+    aria-label="Play"
+    class="touch-target rounded-lg bg-blue-600 p-3 text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+    title="Play"
+  />
+
+  Name "Step Forward":
+  <button
+    aria-label="Step Forward"
+    class="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+    title="Step Forward"
+  />
+
+  Name "Reset":
+  <button
+    class="learning-secondary"
+  />
+
+  Name "Step Backward":
+  <button
+    aria-label="Step Backward"
+    class="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+    disabled=""
+    title="Step Backward"
+  />
+
+  Name "Play":
+  <button
+    aria-label="Play"
+    class="touch-target rounded-lg bg-blue-600 p-3 text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+    title="Play"
+  />
+
+  Name "Step Forward":
+  <button
+    aria-label="Step Forward"
+    class="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+    title="Step Forward"
+  />
+
+  Name "Reset":
+  <button
+    class="learning-secondary"
+  />
+
+  Name "Step Backward":
+  <button
+    aria-label="Step Backward"
+    class="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+    disabled=""
+    title="Step Backward"
+  />
+
+  Name "Play":
+  <button
+    aria-label="Play"
+    class="touch-target rounded-lg bg-blue-600 p-3 text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+    title="Play"
+  />
+
+  Name "Step Forward":
+  <button
+    aria-label="Step Forward"
+    class="touch-target rounded-lg bg-gray-100 p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+    title="Step Forward"
+  />
+
+  Name "Reset":
+  <button
+    class="learning-secondary"
+  />
+
+  --------------------------------------------------
+  heading:
+
+  Name "Remainders and quotients: doubling and Fibonacci":
+  <h1
+    class="learning-title min-w-0"
+  />
+
+  Name "Applied problem and complete-run comparison: 45 ÷ 6":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Repeated subtraction":
+  <h2
+    class="text-xl font-semibold text-blue-900"
+  />
+
+  Name "Doubling remainder":
+  <h2
+    class="text-xl font-semibold text-blue-900"
+  />
+
+  Name "Fibonacci remainder":
+  <h2
+    class="text-xl font-semibold text-blue-900"
+  />
+
+  Name "Quotient and remainder together":
+  <h2
+    class="text-xl font-semibold text-blue-900"
+  />
+
+  --------------------------------------------------
+  paragraph:
+
+  Name "":
+  <p
+    class="mt-3 text-gray-600 leading-7"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    class="font-mono font-semibold"
+    data-testid="original-input"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    data-testid="counts"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    class="font-mono w-max"
+    data-testid="remainder-path"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p
+    class="font-mono font-semibold"
+    data-testid="original-input"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    data-testid="counts"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    class="font-mono w-max"
+    data-testid="remainder-path"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p
+    class="font-mono font-semibold"
+    data-testid="original-input"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    data-testid="counts"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    class="font-mono w-max"
+    data-testid="remainder-path"
+  />
+
+  Name "":
+  <p
+    class="font-mono w-max"
+    data-testid="growth-pairs"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    class="font-mono font-semibold"
+    data-testid="original-input"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    data-testid="counts"
+  />
+
+  Name "":
+  <p
+    class="learning-intro"
+    data-testid="invariant"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p
+    class="font-mono w-max"
+    data-testid="remainder-path"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  --------------------------------------------------
+  textbox:
+
+  Name "A: original dividend":
+  <input
+    aria-invalid="false"
+    class="learning-input w-full mt-2"
+    id="division-A"
+    inputmode="numeric"
+    value="45"
+  />
+
+  Name "B: original divisor":
+  <input
+    aria-invalid="false"
+    class="learning-input w-full mt-2"
+    id="division-B"
+    inputmode="numeric"
+    value="6"
+  />
+
+  --------------------------------------------------
+  region:
+
+  Name "Operation count comparison":
+  <div
+    aria-label="Operation count comparison"
+    class="overflow-x-auto"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Remainder deduction history":
+  <div
+    aria-label="Remainder deduction history"
+    class="overflow-auto max-h-28 rounded-lg bg-gray-50 p-3"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Code just executed":
+  <div
+    aria-label="Code just executed"
+    class="overflow-x-auto rounded-lg border border-gray-200 bg-gray-50"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Remainder deduction history":
+  <div
+    aria-label="Remainder deduction history"
+    class="overflow-auto max-h-28 rounded-lg bg-gray-50 p-3"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Code just executed":
+  <div
+    aria-label="Code just executed"
+    class="overflow-x-auto rounded-lg border border-gray-200 bg-gray-50"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Remainder deduction history":
+  <div
+    aria-label="Remainder deduction history"
+    class="overflow-auto max-h-28 rounded-lg bg-gray-50 p-3"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Candidate pairs during growth":
+  <div
+    aria-label="Candidate pairs during growth"
+    class="overflow-auto max-h-28 rounded-lg bg-gray-50 p-3"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Code just executed":
+  <div
+    aria-label="Code just executed"
+    class="overflow-x-auto rounded-lg border border-gray-200 bg-gray-50"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Remainder deduction history":
+  <div
+    aria-label="Remainder deduction history"
+    class="overflow-auto max-h-28 rounded-lg bg-gray-50 p-3"
+    role="region"
+    tabindex="0"
+  />
+
+  Name "Code just executed":
+  <div
+    aria-label="Code just executed"
+    class="overflow-x-auto rounded-lg border border-gray-200 bg-gray-50"
+    role="region"
+    tabindex="0"
+  />
+
+  --------------------------------------------------
+  table:
+
+  Name "":
+  <table
+    class="w-full text-left text-sm"
+  />
+
+  --------------------------------------------------
+  rowgroup:
+
+  Name "":
+  <thead />
+
+  Name "":
+  <tbody />
+
+  --------------------------------------------------
+  row:
+
+  Name "Method Final remainder Additions Subtractions Halvings Deductions Current execution":
+  <tr />
+
+  Name "Repeated subtraction 3 0 7 0 7 1/17 · a = 45Enter the algorithm with running variables initialized from the applied A and B.":
+  <tr
+    data-testid="summary-repeated"
+  />
+
+  Name "Doubling remainder 3 2 6 2 3 1/22 · a = 45Enter the algorithm with running variables initialized from the applied A and B.":
+  <tr
+    data-testid="summary-doubling"
+  />
+
+  Name "Fibonacci remainder 3 4 6 0 2 1/42 · a = 45Enter the algorithm with running variables initialized from the applied A and B.":
+  <tr
+    data-testid="summary-fibonacci"
+  />
+
+  Name "Quotient and remainder together 3 6 6 2 3 1/27 · a = 45Enter the algorithm with running variables initialized from the applied A and B.":
+  <tr
+    data-testid="summary-quotient"
+  />
+
+  --------------------------------------------------
+  columnheader:
+
+  Name "Method":
+  <th
+    class="p-2"
+  />
+
+  Name "Final remainder":
+  <th
+    class="p-2"
+  />
+
+  Name "Additions":
+  <th
+    class="p-2"
+  />
+
+  Name "Subtractions":
+  <th
+    class="p-2"
+  />
+
+  Name "Halvings":
+  <th
+    class="p-2"
+  />
+
+  Name "Deductions":
+  <th
+    class="p-2"
+  />
+
+  Name "Current execution":
+  <th
+    class="p-2"
+  />
+
+  Name "Repeated subtraction":
+  <th
+    class="p-2"
+  />
+
+  Name "Doubling remainder":
+  <th
+    class="p-2"
+  />
+
+  Name "Fibonacci remainder":
+  <th
+    class="p-2"
+  />
+
+  Name "Quotient and remainder together":
+  <th
+    class="p-2"
+  />
+
+  --------------------------------------------------
+  cell:
+
+  Name "3":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "0":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "7":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "0":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "7":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "1/17 · a = 45Enter the algorithm with running variables initialized from the applied A and B.":
+  <td
+    class="p-2 border-t"
+    data-testid="current-repeated"
+  />
+
+  Name "3":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "2":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "6":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "2":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "3":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "1/22 · a = 45Enter the algorithm with running variables initialized from the applied A and B.":
+  <td
+    class="p-2 border-t"
+    data-testid="current-doubling"
+  />
+
+  Name "3":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "4":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "6":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "0":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "2":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "1/42 · a = 45Enter the algorithm with running variables initialized from the applied A and B.":
+  <td
+    class="p-2 border-t"
+    data-testid="current-fibonacci"
+  />
+
+  Name "3":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "6":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "6":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "2":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "3":
+  <td
+    class="p-2 border-t"
+  />
+
+  Name "1/27 · a = 45Enter the algorithm with running variables initialized from the applied A and B.":
+  <td
+    class="p-2 border-t"
+    data-testid="current-quotient"
+  />
+
+  --------------------------------------------------
+  slider:
+
+  Name "Step progress":
+  <input
+    aria-label="Step progress"
+    class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer disabled:cursor-not-allowed"
+    max="16"
+    min="0"
+    style="background: linear-gradient(to right, rgb(59, 130, 246) 0%, rgb(59, 130, 246) 0%, rgb(229, 231, 235) 0%, rgb(229, 231, 235) 100%);"
+    type="range"
+    value="0"
+  />
+
+  Name "Step progress":
+  <input
+    aria-label="Step progress"
+    class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer disabled:cursor-not-allowed"
+    max="21"
+    min="0"
+    style="background: linear-gradient(to right, rgb(59, 130, 246) 0%, rgb(59, 130, 246) 0%, rgb(229, 231, 235) 0%, rgb(229, 231, 235) 100%);"
+    type="range"
+    value="0"
+  />
+
+  Name "Step progress":
+  <input
+    aria-label="Step progress"
+    class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer disabled:cursor-not-allowed"
+    max="41"
+    min="0"
+    style="background: linear-gradient(to right, rgb(59, 130, 246) 0%, rgb(59, 130, 246) 0%, rgb(229, 231, 235) 0%, rgb(229, 231, 235) 100%);"
+    type="range"
+    value="0"
+  />
+
+  Name "Step progress":
+  <input
+    aria-label="Step progress"
+    class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer disabled:cursor-not-allowed"
+    max="26"
+    min="0"
+    style="background: linear-gradient(to right, rgb(59, 130, 246) 0%, rgb(59, 130, 246) 0%, rgb(229, 231, 235) 0%, rgb(229, 231, 235) 100%);"
+    type="range"
+    value="0"
+  />
+
+  --------------------------------------------------
+  combobox:
+
+  Name "Speed":
+  <select
+    aria-label="Speed"
+    class="touch-target rounded-lg border border-gray-200 px-3 py-1 text-sm disabled:cursor-not-allowed disabled:opacity-50"
+  />
+
+  Name "Speed":
+  <select
+    aria-label="Speed"
+    class="touch-target rounded-lg border border-gray-200 px-3 py-1 text-sm disabled:cursor-not-allowed disabled:opacity-50"
+  />
+
+  Name "Speed":
+  <select
+    aria-label="Speed"
+    class="touch-target rounded-lg border border-gray-200 px-3 py-1 text-sm disabled:cursor-not-allowed disabled:opacity-50"
+  />
+
+  Name "Speed":
+  <select
+    aria-label="Speed"
+    class="touch-target rounded-lg border border-gray-200 px-3 py-1 text-sm disabled:cursor-not-allowed disabled:opacity-50"
+  />
+
+  --------------------------------------------------
+  option:
+
+  Name "0.5x":
+  <option
+    value="0.5"
+  />
+
+  Name "1x":
+  <option
+    value="1"
+  />
+
+  Name "1.5x":
+  <option
+    value="1.5"
+  />
+
+  Name "2x":
+  <option
+    value="2"
+  />
+
+  Name "3x":
+  <option
+    value="3"
+  />
+
+  Name "0.5x":
+  <option
+    value="0.5"
+  />
+
+  Name "1x":
+  <option
+    value="1"
+  />
+
+  Name "1.5x":
+  <option
+    value="1.5"
+  />
+
+  Name "2x":
+  <option
+    value="2"
+  />
+
+  Name "3x":
+  <option
+    value="3"
+  />
+
+  Name "0.5x":
+  <option
+    value="0.5"
+  />
+
+  Name "1x":
+  <option
+    value="1"
+  />
+
+  Name "1.5x":
+  <option
+    value="1.5"
+  />
+
+  Name "2x":
+  <option
+    value="2"
+  />
+
+  Name "3x":
+  <option
+    value="3"
+  />
+
+  Name "0.5x":
+  <option
+    value="0.5"
+  />
+
+  Name "1x":
+  <option
+    value="1"
+  />
+
+  Name "1.5x":
+  <option
+    value="1.5"
+  />
+
+  Name "2x":
+  <option
+    value="2"
+  />
+
+  Name "3x":
+  <option
+    value="3"
+  />
+
+  --------------------------------------------------
+  status:
+
+  Name "":
+  <p
+    data-testid="explanation"
+    role="status"
+  />
+
+  Name "":
+  <p
+    data-testid="explanation"
+    role="status"
+  />
+
+  Name "":
+  <p
+    data-testid="explanation"
+    role="status"
+  />
+
+  Name "":
+  <p
+    data-testid="explanation"
+    role="status"
+  />
+
+  --------------------------------------------------
+  strong:
+
+  Name "":
+  <strong
+    data-testid="result"
+  />
+
+  Name "":
+  <strong
+    data-testid="result"
+  />
+
+  Name "":
+  <strong
+    data-testid="result"
+  />
+
+  Name "":
+  <strong
+    data-testid="result"
+  />
+
+  --------------------------------------------------
+  code:
+
+  Name "":
+  <code />
+
+  Name "":
+  <code />
+
+  Name "":
+  <code />
+
+  Name "":
+  <code />
+
+  --------------------------------------------------
+  group:
+
+  Name "":
+  <details
+    class="learning-card"
+    data-testid="quotient-disclosure"
+  />
+
+  Name "":
+  <details
+    class="learning-note"
+  />
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <main
+      class="learning-shell max-w-6xl"
+    >
+      <header
+        class="flex flex-wrap items-center justify-between gap-3"
+      >
+        <a
+          class="learning-secondary"
+          href="/"
+        >
+          Back to Home
+        </a>
+        <a
+          class="learning-secondary"
+          href="/book"
+        >
+          Browse chapters
+        </a>
+        <button
+          class="learning-primary"
+        >
+          中文
+        </button>
+      </header>
+      <div>
+        <h1
+          class="learning-title min-w-0"
+        >
+          Remainders and quotients: doubling and Fibonacci
+        </h1>
+        <p
+          class="mt-3 text-gray-600 leading-7"
+        >
+          Sections 4.5–4.6 · Compare three remainder methods with the same input, then reuse doubling to compute quotient and remainder together.
+        </p>
+      </div>
+      <form
+        class="learning-card"
+      >
+        <div
+          class="grid sm:grid-cols-2 gap-4"
+        >
+          <div>
+            <label
+              class="block"
+              for="division-A"
+            >
+              A: original dividend
+            </label>
+            <input
+              aria-invalid="false"
+              class="learning-input w-full mt-2"
+              id="division-A"
+              inputmode="numeric"
+              value="45"
+            />
+          </div>
+          <div>
+            <label
+              class="block"
+              for="division-B"
+            >
+              B: original divisor
+            </label>
+            <input
+              aria-invalid="false"
+              class="learning-input w-full mt-2"
+              id="division-B"
+              inputmode="numeric"
+              value="6"
+            />
+          </div>
+        </div>
+        <p
+          class="text-sm text-gray-600"
+        >
+          Integer A: 0–1,000,000; integer B: 1–1,000,000. Quotient up to 256 (A &lt; 257B); every step is retained. Internal candidates may exceed the input limit; every operation is checked for safe-integer precision.
+        </p>
+        <button
+          class="learning-primary"
+          type="submit"
+        >
+          Apply input
+        </button>
+        <div
+          class="flex flex-wrap gap-2"
+        >
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            45
+             ÷ 
+            6
+          </button>
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            42
+             ÷ 
+            6
+          </button>
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            5
+             ÷ 
+            6
+          </button>
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            6
+             ÷ 
+            6
+          </button>
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            0
+             ÷ 
+            6
+          </button>
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            47
+             ÷ 
+            7
+          </button>
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            256
+             ÷ 
+            1
+          </button>
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            770
+             ÷ 
+            3
+          </button>
+          <button
+            class="learning-secondary"
+            type="button"
+          >
+            1000000
+             ÷ 
+            1000000
+          </button>
+        </div>
+      </form>
+      <section
+        class="learning-card"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Applied problem and complete-run comparison
+          : 
+          45
+           ÷ 
+          6
+        </h2>
+        <p>
+          Totals come from complete traces; the last column follows each player’s current snapshot. The four players are independent.
+        </p>
+        <div
+          aria-label="Operation count comparison"
+          class="overflow-x-auto"
+          role="region"
+          tabindex="0"
+        >
+          <table
+            class="w-full text-left text-sm"
+          >
+            <thead>
+              <tr>
+                <th
+                  class="p-2"
+                >
+                  Method
+                </th>
+                <th
+                  class=[32...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/components/algorithms/validationErrors.test.tsx:235:19
+    233|     renderAlgorithm(<Division />);
+    234|
+    235|     expect(screen.getByRole('spinbutton', { name: /Dividend/i })).toBe…
+       |                   ^
+    236|     expect(screen.getByRole('spinbutton', { name: /Divisor/i })).toBeI…
+    237|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed | 36 passed (37)
+      Tests  2 failed | 346 passed (348)
+   Start at  22:07:47
+   Duration  13.19s (transform 5.20s, setup 19.38s, import 16.95s, tests 15.90s, environment 154.51s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

@@ -1,0 +1,930 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+stderr | src/components/algorithms/Division.test.tsx > rejects invalid original A=1.00000000000000001 next to its input
+⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+ ❯ src/components/algorithms/Division.test.tsx (8 tests | 7 failed) 154ms
+   × rejects invalid original A=1.00000000000000001 next to its input 73ms
+   × rejects invalid original A=1e-400 next to its input 14ms
+   × rejects invalid original A=257 next to its input 12ms
+   × distinguishes valid zero dividend, zero divisor and full replay capacity 14ms
+   × keeps draft edits separate, applies during playback and resets all four independent players 13ms
+   × links post-statement variables, counters, highlight and translations while reviewing and playing 13ms
+   × shows the quotient invariant only at stable updates and final bounds only at completion 12ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 7 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/components/algorithms/Division.test.tsx > rejects invalid original A=1.00000000000000001 next to its input
+ FAIL  src/components/algorithms/Division.test.tsx > rejects invalid original A=1e-400 next to its input
+ FAIL  src/components/algorithms/Division.test.tsx > rejects invalid original A=257 next to its input
+TestingLibraryElementError: Unable to find a label with the text of: A: original dividend
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div
+      class="safe-app-x safe-app-bottom max-w-4xl mx-auto py-4 sm:py-6 space-y-6 sm:space-y-8"
+    >
+      <div
+        class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <div
+          class="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center"
+        >
+          <a
+            class="learning-secondary flex items-center justify-center gap-2"
+            href="/"
+          >
+            <svg
+              class="lucide lucide-home w-4 h-4"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+              />
+              <polyline
+                points="9 22 9 12 15 12 15 22"
+              />
+            </svg>
+            Back to Home
+          </a>
+          <h1
+            class="learning-title min-w-0"
+          >
+            Section 4.5 - Division Algorithm
+          </h1>
+        </div>
+        <button
+          class="learning-primary flex items-center justify-center gap-2"
+        >
+          <svg
+            class="lucide lucide-languages w-4 h-4"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m5 8 6 6"
+            />
+            <path
+              d="m4 14 6-6 2-3"
+            />
+            <path
+              d="M2 5h12"
+            />
+            <path
+              d="M7 2h1"
+            />
+            <path
+              d="m22 22-5-10-5 10"
+            />
+            <path
+              d="M14 18h6"
+            />
+          </svg>
+          中文
+        </button>
+      </div>
+      <p
+        class="text-gray-600 text-lg"
+      >
+        Visualizing quotient/remainder computation through repeated subtraction
+      </p>
+      <div
+        class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-4"
+        >
+          <div
+            class="space-y-2"
+          >
+            <label
+              class="block text-sm font-medium text-gray-700"
+            >
+              Dividend
+            </label>
+            <input
+              aria-label="Dividend"
+              class="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
+              max="1000000"
+              min="0"
+              placeholder="17"
+              type="number"
+              value="17"
+            />
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <label
+              class="block text-sm font-medium text-gray-700"
+            >
+              Divisor
+            </label>
+            <input
+              aria-label="Divisor"
+              class="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
+              min="1"
+              placeholder="5"
+              type="number"
+              value="5"
+            />
+          </div>
+        </div>
+        <div
+          class="flex gap-2 flex-wrap"
+        >
+          <button
+            class="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
+          >
+            <svg
+              class="lucide lucide-rotate-ccw w-4 h-4"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"
+              />
+              <path
+                d="M3 3v5h5"
+              />
+            </svg>
+            Reset
+          </button>
+          <button
+            class="touch-target flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-medium text-white hover:bg-blue-600 disabled:opacity-50"
+          >
+            <svg
+              class="lucide lucide-play w-4 h-4 fill-current"
+              fill="none"
+              height="24"
+              ...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ getAllByLabelText node_modules/@testing-library/dom/dist/queries/label-text.js:111:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ input src/components/algorithms/Division.test.tsx:15:27
+     13| const seek = (m: string, n: number | string) => fireEvent.change(playe…
+     14| const input = (A: string, B: string) => {
+     15|   fireEvent.change(screen.getByLabelText('A: original dividend'),{targ…
+       |                           ^
+     16|   fireEvent.change(screen.getByLabelText('B: original divisor'),{targe…
+     17| };
+ ❯ src/components/algorithms/Division.test.tsx:19:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/7]⎯
+
+ FAIL  src/components/algorithms/Division.test.tsx > distinguishes valid zero dividend, zero divisor and full replay capacity
+TestingLibraryElementError: Unable to find a label with the text of: A: original dividend
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div
+      class="safe-app-x safe-app-bottom max-w-4xl mx-auto py-4 sm:py-6 space-y-6 sm:space-y-8"
+    >
+      <div
+        class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <div
+          class="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center"
+        >
+          <a
+            class="learning-secondary flex items-center justify-center gap-2"
+            href="/"
+          >
+            <svg
+              class="lucide lucide-home w-4 h-4"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+              />
+              <polyline
+                points="9 22 9 12 15 12 15 22"
+              />
+            </svg>
+            Back to Home
+          </a>
+          <h1
+            class="learning-title min-w-0"
+          >
+            Section 4.5 - Division Algorithm
+          </h1>
+        </div>
+        <button
+          class="learning-primary flex items-center justify-center gap-2"
+        >
+          <svg
+            class="lucide lucide-languages w-4 h-4"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m5 8 6 6"
+            />
+            <path
+              d="m4 14 6-6 2-3"
+            />
+            <path
+              d="M2 5h12"
+            />
+            <path
+              d="M7 2h1"
+            />
+            <path
+              d="m22 22-5-10-5 10"
+            />
+            <path
+              d="M14 18h6"
+            />
+          </svg>
+          中文
+        </button>
+      </div>
+      <p
+        class="text-gray-600 text-lg"
+      >
+        Visualizing quotient/remainder computation through repeated subtraction
+      </p>
+      <div
+        class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-4"
+        >
+          <div
+            class="space-y-2"
+          >
+            <label
+              class="block text-sm font-medium text-gray-700"
+            >
+              Dividend
+            </label>
+            <input
+              aria-label="Dividend"
+              class="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
+              max="1000000"
+              min="0"
+              placeholder="17"
+              type="number"
+              value="17"
+            />
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <label
+              class="block text-sm font-medium text-gray-700"
+            >
+              Divisor
+            </label>
+            <input
+              aria-label="Divisor"
+              class="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
+              min="1"
+              placeholder="5"
+              type="number"
+              value="5"
+            />
+          </div>
+        </div>
+        <div
+          class="flex gap-2 flex-wrap"
+        >
+          <button
+            class="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
+          >
+            <svg
+              class="lucide lucide-rotate-ccw w-4 h-4"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"
+              />
+              <path
+                d="M3 3v5h5"
+              />
+            </svg>
+            Reset
+          </button>
+          <button
+            class="touch-target flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-medium text-white hover:bg-blue-600 disabled:opacity-50"
+          >
+            <svg
+              class="lucide lucide-play w-4 h-4 fill-current"
+              fill="none"
+              height="24"
+              ...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ getAllByLabelText node_modules/@testing-library/dom/dist/queries/label-text.js:111:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ input src/components/algorithms/Division.test.tsx:15:27
+     13| const seek = (m: string, n: number | string) => fireEvent.change(playe…
+     14| const input = (A: string, B: string) => {
+     15|   fireEvent.change(screen.getByLabelText('A: original dividend'),{targ…
+       |                           ^
+     16|   fireEvent.change(screen.getByLabelText('B: original divisor'),{targe…
+     17| };
+ ❯ src/components/algorithms/Division.test.tsx:24:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/7]⎯
+
+ FAIL  src/components/algorithms/Division.test.tsx > keeps draft edits separate, applies during playback and resets all four independent players
+TestingLibraryElementError: Unable to find an element by: [data-testid="division-repeated"]
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div
+      class="safe-app-x safe-app-bottom max-w-4xl mx-auto py-4 sm:py-6 space-y-6 sm:space-y-8"
+    >
+      <div
+        class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <div
+          class="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center"
+        >
+          <a
+            class="learning-secondary flex items-center justify-center gap-2"
+            href="/"
+          >
+            <svg
+              class="lucide lucide-home w-4 h-4"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+              />
+              <polyline
+                points="9 22 9 12 15 12 15 22"
+              />
+            </svg>
+            Back to Home
+          </a>
+          <h1
+            class="learning-title min-w-0"
+          >
+            Section 4.5 - Division Algorithm
+          </h1>
+        </div>
+        <button
+          class="learning-primary flex items-center justify-center gap-2"
+        >
+          <svg
+            class="lucide lucide-languages w-4 h-4"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m5 8 6 6"
+            />
+            <path
+              d="m4 14 6-6 2-3"
+            />
+            <path
+              d="M2 5h12"
+            />
+            <path
+              d="M7 2h1"
+            />
+            <path
+              d="m22 22-5-10-5 10"
+            />
+            <path
+              d="M14 18h6"
+            />
+          </svg>
+          中文
+        </button>
+      </div>
+      <p
+        class="text-gray-600 text-lg"
+      >
+        Visualizing quotient/remainder computation through repeated subtraction
+      </p>
+      <div
+        class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-4"
+        >
+          <div
+            class="space-y-2"
+          >
+            <label
+              class="block text-sm font-medium text-gray-700"
+            >
+              Dividend
+            </label>
+            <input
+              aria-label="Dividend"
+              class="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
+              max="1000000"
+              min="0"
+              placeholder="17"
+              type="number"
+              value="17"
+            />
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <label
+              class="block text-sm font-medium text-gray-700"
+            >
+              Divisor
+            </label>
+            <input
+              aria-label="Divisor"
+              class="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
+              min="1"
+              placeholder="5"
+              type="number"
+              value="5"
+            />
+          </div>
+        </div>
+        <div
+          class="flex gap-2 flex-wrap"
+        >
+          <button
+            class="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
+          >
+            <svg
+              class="lucide lucide-rotate-ccw w-4 h-4"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"
+              />
+              <path
+                d="M3 3v5h5"
+              />
+            </svg>
+            Reset
+          </button>
+          <button
+            class="touch-target flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-medium text-white hover:bg-blue-600 disabled:opacity-50"
+          >
+            <svg
+              class="lucide lucide-play w-4 h-4 fill-current"
+              fill="none"
+              height="24"
+              ...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ root src/components/algorithms/Division.test.tsx:11:41
+      9| afterEach(() => { cleanup(); vi.useRealTimers(); });
+     10| const mount = () => render(<MemoryRouter><LanguageProvider><Division /…
+     11| const root = (m = 'doubling') => screen.getByTestId('division-'+m);
+       |                                         ^
+     12| const player = (m = 'doubling') => within(root(m));
+     13| const seek = (m: string, n: number | string) => fireEvent.change(playe…
+ ❯ player src/components/algorithms/Division.test.tsx:12:43
+ ❯ src/components/algorithms/Division.test.tsx:34:51
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/7]⎯
+
+ FAIL  src/components/algorithms/Division.test.tsx > links post-statement variables, counters, highlight and translations while reviewing and playing
+TestingLibraryElementError: Unable to find an element with the text: Quotient and remainder together, which matches selector 'summary'. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div
+      class="safe-app-x safe-app-bottom max-w-4xl mx-auto py-4 sm:py-6 space-y-6 sm:space-y-8"
+    >
+      <div
+        class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <div
+          class="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center"
+        >
+          <a
+            class="learning-secondary flex items-center justify-center gap-2"
+            href="/"
+          >
+            <svg
+              class="lucide lucide-home w-4 h-4"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+              />
+              <polyline
+                points="9 22 9 12 15 12 15 22"
+              />
+            </svg>
+            Back to Home
+          </a>
+          <h1
+            class="learning-title min-w-0"
+          >
+            Section 4.5 - Division Algorithm
+          </h1>
+        </div>
+        <button
+          class="learning-primary flex items-center justify-center gap-2"
+        >
+          <svg
+            class="lucide lucide-languages w-4 h-4"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m5 8 6 6"
+            />
+            <path
+              d="m4 14 6-6 2-3"
+            />
+            <path
+              d="M2 5h12"
+            />
+            <path
+              d="M7 2h1"
+            />
+            <path
+              d="m22 22-5-10-5 10"
+            />
+            <path
+              d="M14 18h6"
+            />
+          </svg>
+          中文
+        </button>
+      </div>
+      <p
+        class="text-gray-600 text-lg"
+      >
+        Visualizing quotient/remainder computation through repeated subtraction
+      </p>
+      <div
+        class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-4"
+        >
+          <div
+            class="space-y-2"
+          >
+            <label
+              class="block text-sm font-medium text-gray-700"
+            >
+              Dividend
+            </label>
+            <input
+              aria-label="Dividend"
+              class="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
+              max="1000000"
+              min="0"
+              placeholder="17"
+              type="number"
+              value="17"
+            />
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <label
+              class="block text-sm font-medium text-gray-700"
+            >
+              Divisor
+            </label>
+            <input
+              aria-label="Divisor"
+              class="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
+              min="1"
+              placeholder="5"
+              type="number"
+              value="5"
+            />
+          </div>
+        </div>
+        <div
+          class="flex gap-2 flex-wrap"
+        >
+          <button
+            class="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
+          >
+            <svg
+              class="lucide lucide-rotate-ccw w-4 h-4"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"
+              />
+              <path
+                d="M3 3v5h5"
+              />
+            </svg>
+            Reset
+          </button>
+          <button
+            class="touch-target flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-medium text-white hover:bg-blue-600 disabled:opacity-50"
+          >
+            <svg
+              class="lucide lucide-play w-4 h-4 fill-current"
+              fill="none"
+              height="24"
+              ...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/components/algorithms/Division.test.tsx:53:26
+     51| it('links post-statement variables, counters, highlight and translatio…
+     52|   vi.useFakeTimers();mount();
+     53|   fireEvent.click(screen.getByText('Quotient and remainder together', …
+       |                          ^
+     54|   for(const m of divisionMethods) {
+     55|     const trace=divisionTrace(45,6,m),index=trace.findIndex(s=>s.event…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/7]⎯
+
+ FAIL  src/components/algorithms/Division.test.tsx > shows the quotient invariant only at stable updates and final bounds only at completion
+TestingLibraryElementError: Unable to find an element with the text: Quotient and remainder together, which matches selector 'summary'. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div
+      class="safe-app-x safe-app-bottom max-w-4xl mx-auto py-4 sm:py-6 space-y-6 sm:space-y-8"
+    >
+      <div
+        class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <div
+          class="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center"
+        >
+          <a
+            class="learning-secondary flex items-center justify-center gap-2"
+            href="/"
+          >
+            <svg
+              class="lucide lucide-home w-4 h-4"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+              />
+              <polyline
+                points="9 22 9 12 15 12 15 22"
+              />
+            </svg>
+            Back to Home
+          </a>
+          <h1
+            class="learning-title min-w-0"
+          >
+            Section 4.5 - Division Algorithm
+          </h1>
+        </div>
+        <button
+          class="learning-primary flex items-center justify-center gap-2"
+        >
+          <svg
+            class="lucide lucide-languages w-4 h-4"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m5 8 6 6"
+            />
+            <path
+              d="m4 14 6-6 2-3"
+            />
+            <path
+              d="M2 5h12"
+            />
+            <path
+              d="M7 2h1"
+            />
+            <path
+              d="m22 22-5-10-5 10"
+            />
+            <path
+              d="M14 18h6"
+            />
+          </svg>
+          中文
+        </button>
+      </div>
+      <p
+        class="text-gray-600 text-lg"
+      >
+        Visualizing quotient/remainder computation through repeated subtraction
+      </p>
+      <div
+        class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-4"
+        >
+          <div
+            class="space-y-2"
+          >
+            <label
+              class="block text-sm font-medium text-gray-700"
+            >
+              Dividend
+            </label>
+            <input
+              aria-label="Dividend"
+              class="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
+              max="1000000"
+              min="0"
+              placeholder="17"
+              type="number"
+              value="17"
+            />
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <label
+              class="block text-sm font-medium text-gray-700"
+            >
+              Divisor
+            </label>
+            <input
+              aria-label="Divisor"
+              class="touch-target w-full rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500"
+              min="1"
+              placeholder="5"
+              type="number"
+              value="5"
+            />
+          </div>
+        </div>
+        <div
+          class="flex gap-2 flex-wrap"
+        >
+          <button
+            class="touch-target flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
+          >
+            <svg
+              class="lucide lucide-rotate-ccw w-4 h-4"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"
+              />
+              <path
+                d="M3 3v5h5"
+              />
+            </svg>
+            Reset
+          </button>
+          <button
+            class="touch-target flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-medium text-white hover:bg-blue-600 disabled:opacity-50"
+          >
+            <svg
+              class="lucide lucide-play w-4 h-4 fill-current"
+              fill="none"
+              height="24"
+              ...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/components/algorithms/Division.test.tsx:70:34
+     68| });
+     69| it('shows the quotient invariant only at stable updates and final boun…
+     70|   mount();fireEvent.click(screen.getByText('Quotient and remainder tog…
+       |                                  ^
+     71|   const t=divisionTrace(45,6,'quotient');
+     72|   seek('quotient',t.findIndex(s=>s.event==='half'));
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/7]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  7 failed | 1 passed (8)
+   Start at  22:01:43
+   Duration  3.10s (transform 158ms, setup 232ms, import 640ms, tests 154ms, environment 1.85s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

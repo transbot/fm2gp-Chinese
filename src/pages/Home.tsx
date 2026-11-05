@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { BookOpen, Languages, RotateCcw, Search } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../i18n/translations';
 import { BookShowcase } from '../components/BookShowcase';
@@ -48,7 +48,13 @@ const links = {
 export function Home() {
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
-  const [query, setQuery] = useState('');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const query = searchParams.get('q') || '';
+  const setQuery = (value: string) => setSearchParams(previous => {
+    const next = new URLSearchParams(previous);
+    if (value) next.set('q', value); else next.delete('q');
+    return next;
+  }, { replace: true });
   const [sourceFilter, setSourceFilter] = useState<SourceType | 'all'>('all');
   const [difficultyFilter, setDifficultyFilter] = useState<Difficulty | 'all'>('all');
   const [topicFilter, setTopicFilter] = useState<TopicId | 'all'>('all');

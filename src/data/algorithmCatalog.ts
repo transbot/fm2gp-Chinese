@@ -268,8 +268,8 @@ const coreConcepts: Record<string, LocalizedText> = {
     zh: '用余数归约并保持最大公约数不变',
   },
   division: {
-    en: 'Quotient and remainder from repeated subtraction',
-    zh: '从重复减法理解商与余数',
+    en: 'Compare subtraction, doubling, Fibonacci recovery, and shared quotient/remainder',
+    zh: '比较逐次减法、倍增、斐波那契回退与商余共享',
   },
   'stein-gcd': {
     en: 'Binary GCD using shifts and subtraction',
@@ -615,10 +615,10 @@ const algorithmCatalogSeed: AlgorithmCatalogSeed[] = [
     topicId: 'gcd-modular',
     order: 20,
     difficulty: 'beginner',
-    source: { type: 'book', section: '4.5' },
+    source: { type: 'book', section: '4.5-4.6' },
     summary: {
-      en: 'Understand quotient and remainder through subtraction.',
-      zh: '通过重复减法理解商和余数。',
+      en: 'Compare doubling and Fibonacci remainders, then share the work to compute the quotient.',
+      zh: '比较倍增求余与斐波那契求余，再共享计算过程求商。',
     },
   },
   {

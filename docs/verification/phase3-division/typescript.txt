@@ -1,0 +1,17 @@
+src/components/algorithms/Division.test.tsx(46,64): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(role: ByRoleMatcher, options?: ByRoleOptions | undefined): HTMLElement', gave the following error.
+    Object literal may only specify known properties, and 'exact' does not exist in type 'ByRoleOptions'.
+  Overload 2 of 2, '(role: ByRoleMatcher, options?: ByRoleOptions | undefined): HTMLElement', gave the following error.
+    Object literal may only specify known properties, and 'exact' does not exist in type 'ByRoleOptions'.
+src/components/algorithms/Division.test.tsx(62,56): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(role: ByRoleMatcher, options?: ByRoleOptions | undefined): HTMLElement', gave the following error.
+    Object literal may only specify known properties, and 'exact' does not exist in type 'ByRoleOptions'.
+  Overload 2 of 2, '(role: ByRoleMatcher, options?: ByRoleOptions | undefined): HTMLElement', gave the following error.
+    Object literal may only specify known properties, and 'exact' does not exist in type 'ByRoleOptions'.
+src/components/concepts/divisionSource.test.ts(2,30): error TS2307: Cannot find module 'node:fs' or its corresponding type declarations.
+src/lib/algorithms/divisionTrace.test.ts(23,57): error TS2550: Property 'at' does not exist on type 'DivisionStep[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2022' or later.
+src/lib/algorithms/divisionTrace.test.ts(34,41): error TS2550: Property 'at' does not exist on type 'DivisionStep[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2022' or later.
+src/lib/algorithms/divisionTrace.test.ts(44,14): error TS2550: Property 'at' does not exist on type 'DivisionStep[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2022' or later.
+src/lib/algorithms/divisionTrace.test.ts(71,43): error TS2550: Property 'at' does not exist on type 'DivisionStep[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2022' or later.
+src/lib/algorithms/divisionTrace.test.ts(71,69): error TS2550: Property 'at' does not exist on type 'DivisionStep[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2022' or later.
+src/lib/algorithms/divisionTrace.test.ts(78,36): error TS2550: Property 'at' does not exist on type 'DivisionStep[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2022' or later.

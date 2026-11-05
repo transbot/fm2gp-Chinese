@@ -1,0 +1,26 @@
+{
+  "node": "v22.17.1",
+  "npm": "11.7.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "preview": "http://127.0.0.1:4177",
+  "serverCommand": "node node_modules/vite/bin/vite.js preview --host 127.0.0.1 --port 4177 --strictPort",
+  "baseline": "863cb9527cd0d6a5b093f61d4fa54bc88ae3e23c",
+  "branch": "codex/phase3-division-doubling-fibonacci",
+  "browser": "156.0.4314.58",
+  "verifiedAt": "2026-11-05T22:14:55.881108+08:00",
+  "sourcePdf": {
+    "path": "D:\\Work\\From Mathematics to Generic Programming\\中文翻译\\数学与泛型编程：高效编程的奥秘.pdf",
+    "sha256": "aa0b3762c2ea451803e325c695c0d90d3dd02b30d9cf5ab0818464f4bb1dbdae",
+    "verifiedSections": [
+      "4.5",
+      "4.6",
+      "Exercise 4.6"
+    ],
+    "method": "pdftotext layout extraction and visual inspection of rendered source; local only, not redistributed"
+  },
+  "bookCode": {
+    "path": "配套代码(fm2gpcode)/ch04.h",
+    "sha256": "92ccb800da37e7fed899df49f6863fc8def1ccae4e46a485854ee06b99179c45"
+  },
+  "buildIndexSha256LF": "4d1d8a71c2659bf0c0e110eb84c1cd80f8911e071b9633af3b9f71e88c79cadd"
+}

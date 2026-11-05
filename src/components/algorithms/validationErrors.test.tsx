@@ -222,18 +222,18 @@ describe('core algorithm validation errors', () => {
   it('shows a non-positive divisor error on division', () => {
     renderAlgorithm(<Division />);
 
-    const [, divisorInput] = screen.getAllByRole('spinbutton');
+    const divisorInput = screen.getByRole('textbox', { name: 'B: original divisor' });
     fireEvent.change(divisorInput, { target: { value: '0' } });
-    fireEvent.blur(divisorInput);
+    fireEvent.click(screen.getByRole('button', { name: 'Apply input' }));
 
-    expect(screen.getByRole('alert')).toHaveTextContent('Divisor must be positive');
+    expect(screen.getByRole('alert')).toHaveTextContent('the divisor cannot be zero or negative');
   });
 
   it('labels division inputs for assistive technology', () => {
     renderAlgorithm(<Division />);
 
-    expect(screen.getByRole('spinbutton', { name: /Dividend/i })).toBeInTheDocument();
-    expect(screen.getByRole('spinbutton', { name: /Divisor/i })).toBeInTheDocument();
+    expect(screen.getByRole('textbox', { name: 'A: original dividend' })).toBeInTheDocument();
+    expect(screen.getByRole('textbox', { name: 'B: original divisor' })).toBeInTheDocument();
   });
 
   it('shows a negative exponent error on power', () => {

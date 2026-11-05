@@ -15,6 +15,12 @@ export interface ConceptLesson {
 // Shared by both search entry points and the chapter/reader navigation.
 export const conceptLessons: ConceptLesson[] = [
   {
+    id: 'division-methods', path: '/division', sections: ['4.5', '4.6'], prerequisite: '/multiply', topicId: 'gcd-modular', difficulty: 'beginner',
+    title: { zh: '求余与求商：倍增和斐波那契', en: 'Remainders and quotients: doubling and Fibonacci' },
+    summary: { zh: '从逐次减法到倍增与斐波那契求余；观察候选量、运算次数与商余共享。', en: 'From repeated subtraction to doubling and Fibonacci remainder; follow candidates, counts, and shared quotient/remainder work.' },
+    aliases: ['倍增求余', '斐波那契求余', '逐次减法', '求商求余', '埃及除法', 'Fibonacci remainder', 'doubling remainder', 'repeated subtraction', 'Egyptian division', 'largest_doubling', 'remainder', 'remainder_fibonacci', 'quotient_remainder'],
+  },
+  {
     id: 'horner', path: '/horner', sections: ['8.1'], prerequisite: '/power', topicId: 'applications-graphs', difficulty: 'beginner',
     title: { zh: '霍纳法则：多项式求值', en: 'Horner’s rule: polynomial evaluation' },
     summary: { zh: '比较逐项求值与嵌套累积，观察表达式、变量和运算次数。', en: 'Compare direct evaluation with nested accumulation through expressions, variables, and operation counts.' },

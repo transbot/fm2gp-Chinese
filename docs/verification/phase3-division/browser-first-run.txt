@@ -1,0 +1,12 @@
+Checking zh / 1440
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+'' !== '斐波那契求余'
+
+    at D:\Code\fm2gp-Chinese\scripts\verify-division.cjs:107:237 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: '',
+  expected: '斐波那契求余',
+  operator: 'strictEqual'
+}

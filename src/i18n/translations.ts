@@ -309,9 +309,9 @@ export const translations: Record<Language, TranslationMap> = {
     dfsComplete: 'DFS complete',
 
     // Division Algorithm
-    divisionTitle: 'Section 4.5 - Division Algorithm',
-    divisionDescription: 'Visualizing quotient/remainder computation through repeated subtraction',
-    devNoteDivision: 'Section 4.5 introduces the Division Algorithm, the fundamental operation that computes quotient and remainder. The algorithm states: given integers a (dividend) and b (divisor, b > 0), there exist unique integers q (quotient) and r (remainder) such that a = q*b + r and 0 <= r < b. This forms the basis for Euclidean GCD and modular arithmetic.',
+    divisionTitle: 'Sections 4.5–4.6 - Doubling and Fibonacci remainder',
+    divisionDescription: 'Compare repeated subtraction, doubling and Fibonacci remainder with complete independent traces',
+    devNoteDivision: 'Sections 4.5–4.6 compare remainder algorithms and share their work with quotient computation. A=n*c+a holds after complete paired updates in quotient_remainder; 0<=r<B is a final condition.',
     dividend: 'Dividend',
     divisor: 'Divisor',
     quotient: 'Quotient',
@@ -938,9 +938,9 @@ export const translations: Record<Language, TranslationMap> = {
     dfsComplete: '深度优先搜索完成',
 
     // Division Algorithm
-    divisionTitle: '4.5节 - 除法算法',
-    divisionDescription: '通过反复减法计算商和余数的可视化演示',
-    devNoteDivision: '4.5节介绍了除法算法，这是计算商和余数的基本运算。算法指出：给定整数a（被除数）和b（除数，b > 0），存在唯一的整数q（商）和r（余数），使得 a = q*b + r 且 0 <= r < b。这构成了欧几里得GCD算法和模运算的基础。',
+    divisionTitle: '4.5—4.6节 - 倍增与斐波那契求余',
+    divisionDescription: '通过完整的独立轨迹比较逐次减法、倍增求余和斐波那契求余',
+    devNoteDivision: '第4.5—4.6节比较求余算法，并复用计算过程求商。quotient_remainder 的成对更新完成后满足 A=n*c+a；0<=r<B 是终止后的余数条件。',
     dividend: '被除数',
     divisor: '除数',
     quotient: '商',

@@ -54,7 +54,7 @@
 | 习题 3.3 | 进阶 | [素数计数函数](https://fm2gp-chinese.bookzhou.com/prime-counting) | 观察 π(n) 与 n/ln(n) 的近似关系 |
 | 习题 3.4 | 入门 | [回文素数](https://fm2gp-chinese.bookzhou.com/palindromic-primes) | 探索不同进制下的回文素数 |
 | 4.2 | 入门 | [欧几里得算法](https://fm2gp-chinese.bookzhou.com/gcm) | 用余数反复缩小 GCD 问题 |
-| 4.5 | 入门 | [除法算法](https://fm2gp-chinese.bookzhou.com/division) | 通过重复减法理解商和余数 |
+| 4.5—4.6 | 入门 | [求余与求商](https://fm2gp-chinese.bookzhou.com/division) | 比较逐次减法、倍增与斐波那契求余，再同时求商与余数 |
 | 5.1 | 入门 | [素数判定](https://fm2gp-chinese.bookzhou.com/prime-checker) | 用试除法判断一个数是否为素数 |
 | 5.2 | 进阶 | [费马小定理](https://fm2gp-chinese.bookzhou.com/fermat) | 理解概率素性测试的基础 |
 | 5.5 | 进阶 | [欧拉定理](https://fm2gp-chinese.bookzhou.com/euler) | 把费马小定理推广到互素整数 |
@@ -217,7 +217,7 @@ The Web app has evolved from a flat algorithm list into a bilingual learning too
 | Exercise 3.3 | Intermediate | [Prime Counting Function](https://fm2gp-chinese.bookzhou.com/prime-counting) | Compare pi(n) with the approximation n/ln(n) |
 | Exercise 3.4 | Beginner | [Palindromic Primes](https://fm2gp-chinese.bookzhou.com/palindromic-primes) | Explore palindromic primes in different bases |
 | 4.2 | Beginner | [Euclidean Algorithm](https://fm2gp-chinese.bookzhou.com/gcm) | Repeatedly reduce a GCD problem using remainders |
-| 4.5 | Beginner | [Division Algorithm](https://fm2gp-chinese.bookzhou.com/division) | Understand quotient and remainder through subtraction |
+| 4.5–4.6 | Beginner | [Remainders and quotients](https://fm2gp-chinese.bookzhou.com/division) | Compare repeated subtraction, doubling and Fibonacci remainder, then compute quotient and remainder together |
 | 5.1 | Beginner | [Prime Checker](https://fm2gp-chinese.bookzhou.com/prime-checker) | Use trial division to test primality |
 | 5.2 | Intermediate | [Fermat's Little Theorem](https://fm2gp-chinese.bookzhou.com/fermat) | Understand the basis of probabilistic primality tests |
 | 5.5 | Intermediate | [Euler's Theorem](https://fm2gp-chinese.bookzhou.com/euler) | Generalize Fermat to coprime integers |

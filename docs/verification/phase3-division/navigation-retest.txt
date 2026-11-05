@@ -1,0 +1,190 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+stderr | src/pages/Home.navigation.test.tsx > restores a home search from the URL and preserves it after visiting a result
+⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+ ❯ src/pages/Home.navigation.test.tsx (1 test | 1 failed) 132ms
+   × restores a home search from the URL and preserves it after visiting a result 130ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/pages/Home.navigation.test.tsx > restores a home search from the URL and preserves it after visiting a result
+TestingLibraryElementError: Unable to find an accessible element with the role "link" and name `/Division/`
+
+Here are the accessible roles:
+
+  heading:
+
+  Name "Browse Demonstrations by Topic":
+  <h2
+    class="text-xl sm:text-2xl font-bold text-gray-800"
+  />
+
+  --------------------------------------------------
+  paragraph:
+
+  Name "":
+  <p
+    class="text-sm text-gray-600 mt-1"
+  />
+
+  --------------------------------------------------heading:
+
+  Name "GCD and Modular Arithmetic":
+  <h3
+    class="text-lg font-bold text-gray-800"
+  />
+
+  --------------------------------------------------
+  paragraph:
+
+  Name "":
+  <p
+    class="text-sm text-gray-600 mt-1"
+  />
+
+  Name "":
+  <p
+    class="text-sm text-gray-600 mt-1"
+  />
+
+  --------------------------------------------------
+  link:
+
+  Name "Sections 4.5–4.6 - Doubling and Fibonacci remainder Compare doubling and Fibonacci remainders, then share the work to compute the quotient. 4.5, 4.6Beginner":
+  <a
+    class="block py-3 first:pt-0 last:pb-0 group"
+    href="/division"
+  />
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+<div
+  class="space-y-4"
+  data-testid="lesson-results"
+>
+  <div
+    class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2"
+  >
+    <div>
+      <h2
+        class="text-xl sm:text-2xl font-bold text-gray-800"
+      >
+        Browse Demonstrations by Topic
+      </h2>
+      <p
+        class="text-sm text-gray-600 mt-1"
+      >
+        Each topic keeps source labels and marks a good starting point.
+      </p>
+    </div>
+  </div>
+  <div
+    class="grid grid-cols-1 lg:grid-cols-2 gap-4"
+  >
+    <section
+      class="bg-white rounded-xl shadow-sm p-5 sm:p-6 border border-gray-100"
+    >
+      <div
+        class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4"
+      >
+        <div>
+          <h3
+            class="text-lg font-bold text-gray-800"
+          >
+            GCD and Modular Arithmetic
+          </h3>
+          <p
+            class="text-sm text-gray-600 mt-1"
+          >
+            Connect division, remainders, greatest common divisors, and inverses.
+          </p>
+        </div>
+        <div
+          class="flex sm:flex-col gap-2 sm:items-end text-xs"
+        >
+          <span
+            class="px-2 py-1 rounded-full bg-gray-100 text-gray-600"
+          >
+            1
+             
+            algorithms
+          </span>
+          <span
+            class="px-2 py-1 rounded-full bg-blue-50 text-blue-700"
+          >
+            Start: 
+            Sections 4.5–4.6 - Doubling and Fibonacci remainder
+          </span>
+        </div>
+      </div>
+      <div
+        class="divide-y divide-gray-100"
+      >
+        <a
+          class="block py-3 first:pt-0 last:pb-0 group"
+          href="/division"
+        >
+          <div
+            class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2"
+          >
+            <div>
+              <div
+                class="font-medium text-blue-700 group-hover:text-blue-900"
+              >
+                Sections 4.5–4.6 - Doubling and Fibonacci remainder
+              </div>
+              <p
+                class="text-sm text-gray-600 mt-1"
+              >
+                Compare doubling and Fibonacci remainders, then share the work to compute the quotient.
+              </p>
+            </div>
+            <div
+              class="flex gap-2 shrink-0 text-xs"
+            >
+              <span
+                class="px-2 py-1 rounded-full bg-gray-50 text-gray-600 border border-gray-200"
+              >
+                4.5, 4.6
+              </span>
+              <span
+                class="px-2 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-100"
+              >
+                Beginner
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/pages/Home.navigation.test.tsx:16:64
+     14|   expect(screen.getByRole('searchbox')).toHaveValue('Fibonacci remaind…
+     15|   fireEvent.change(screen.getByRole('searchbox'), {target:{value:'quot…
+     16|   fireEvent.click(within(screen.getByTestId('lesson-results')).getByRo…
+       |                                                                ^
+     17|   fireEvent.click(screen.getByRole('button', {name:'Browser back'}));
+     18|   expect(screen.getByRole('searchbox')).toHaveValue('quotient_remainde…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+   Start at  22:11:07
+   Duration  2.53s (transform 114ms, setup 201ms, import 284ms, tests 132ms, environment 1.72s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

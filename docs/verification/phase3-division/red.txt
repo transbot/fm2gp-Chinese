@@ -1,0 +1,212 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+ ❯ src/lib/algorithms/divisionTrace.test.ts (42 tests | 42 failed) 10ms
+     × accepts 45 / 6 3ms
+     × accepts 42 / 6 0ms
+     × accepts 5 / 6 0ms
+     × accepts 6 / 6 0ms
+     × accepts 0 / 6 0ms
+     × accepts 47 / 7 0ms
+     × accepts 256 / 1 0ms
+     × accepts 770 / 3 0ms
+     × accepts 1000000 / 1000000 0ms
+     × rejects dividend "" 0ms
+     × rejects dividend " " 0ms
+     × rejects dividend "-1" 0ms
+     × rejects dividend "1.5" 0ms
+     × rejects dividend "1.00000000000000001" 0ms
+     × rejects dividend "1e-400" 0ms
+     × rejects dividend "1e3" 0ms
+     × rejects dividend "NaN" 0ms
+     × rejects dividend "Infinity" 0ms
+     × rejects dividend "12oops" 0ms
+     × rejects dividend "+2" 0ms
+     × rejects dividend "1000001" 0ms
+     × rejects divisor "" 0ms
+     × rejects divisor "0" 0ms
+     × rejects divisor "-2" 0ms
+     × rejects divisor "2.1" 0ms
+     × rejects divisor "6e0" 0ms
+     × rejects divisor "1000001" 0ms
+     × uses A < 257B capacity, including nonzero remainder at quotient 256 0ms
+     × returns 45 / 6 = 7 remainder 3 0ms
+     × returns 42 / 6 = 7 remainder 0 0ms
+     × returns 5 / 6 = 0 remainder 5 0ms
+     × returns 6 / 6 = 1 remainder 0 0ms
+     × returns 0 / 6 = 0 remainder 0 0ms
+     × returns 47 / 7 = 6 remainder 5 0ms
+     × returns 256 / 1 = 256 remainder 0 0ms
+     × returns 770 / 3 = 256 remainder 2 0ms
+     × returns 1000000 / 1000000 = 1 remainder 0 0ms
+     × fixes exact arithmetic counts and remainder paths for 45 / 6 0ms
+     × retains Fibonacci candidate growth, recovery and original B 0ms
+     × marks only completed quotient updates as invariant checkpoints 0ms
+     × records arithmetic only on its executed line and owns each complete snapshot 0ms
+     × keeps all 256 repeated subtractions and independently checks a range of results 0ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 42 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > accepts 45 / 6
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > accepts 42 / 6
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > accepts 5 / 6
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > accepts 6 / 6
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > accepts 0 / 6
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > accepts 47 / 7
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > accepts 256 / 1
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > accepts 770 / 3
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > accepts 1000000 / 1000000
+Error: Not implemented
+ ❯ parseDivisionInput src/lib/algorithms/divisionTrace.ts:2:75
+      1| export const divisionMethods = ['repeated', 'doubling', 'fibonacci', '…
+      2| export function parseDivisionInput(_a: string, _b: string): never { th…
+       |                                                                           ^
+      3| export function divisionTrace(_a: number, _b: number, _method: typeof …
+      4|
+ ❯ src/lib/algorithms/divisionTrace.test.ts:6:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/42]⎯
+
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects dividend ""
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects dividend " "
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects dividend "-1"
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects dividend "1.5"
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects dividend "1.00000000000000001"
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects dividend "1e-400"
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects dividend "1e3"
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects dividend "NaN"
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects dividend "Infinity"
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects dividend "12oops"
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects dividend "+2"
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects dividend "1000001"
+Error: Not implemented
+ ❯ parseDivisionInput src/lib/algorithms/divisionTrace.ts:2:75
+      1| export const divisionMethods = ['repeated', 'doubling', 'fibonacci', '…
+      2| export function parseDivisionInput(_a: string, _b: string): never { th…
+       |                                                                           ^
+      3| export function divisionTrace(_a: number, _b: number, _method: typeof …
+      4|
+ ❯ src/lib/algorithms/divisionTrace.test.ts:9:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/42]⎯
+
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects divisor ""
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects divisor "0"
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects divisor "-2"
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects divisor "2.1"
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects divisor "6e0"
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > rejects divisor "1000001"
+Error: Not implemented
+ ❯ parseDivisionInput src/lib/algorithms/divisionTrace.ts:2:75
+      1| export const divisionMethods = ['repeated', 'doubling', 'fibonacci', '…
+      2| export function parseDivisionInput(_a: string, _b: string): never { th…
+       |                                                                           ^
+      3| export function divisionTrace(_a: number, _b: number, _method: typeof …
+      4|
+ ❯ src/lib/algorithms/divisionTrace.test.ts:12:18
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/42]⎯
+
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > strict original-text division inputs > uses A < 257B capacity, including nonzero remainder at quotient 256
+Error: Not implemented
+ ❯ parseDivisionInput src/lib/algorithms/divisionTrace.ts:2:75
+      1| export const divisionMethods = ['repeated', 'doubling', 'fibonacci', '…
+      2| export function parseDivisionInput(_a: string, _b: string): never { th…
+       |                                                                           ^
+      3| export function divisionTrace(_a: number, _b: number, _method: typeof …
+      4|
+ ❯ src/lib/algorithms/divisionTrace.test.ts:16:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/42]⎯
+
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > source-level division traces > returns 45 / 6 = 7 remainder 3
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > source-level division traces > returns 42 / 6 = 7 remainder 0
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > source-level division traces > returns 5 / 6 = 0 remainder 5
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > source-level division traces > returns 6 / 6 = 1 remainder 0
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > source-level division traces > returns 0 / 6 = 0 remainder 0
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > source-level division traces > returns 47 / 7 = 6 remainder 5
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > source-level division traces > returns 256 / 1 = 256 remainder 0
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > source-level division traces > returns 770 / 3 = 256 remainder 2
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > source-level division traces > returns 1000000 / 1000000 = 1 remainder 0
+Error: Not implemented
+ ❯ divisionTrace src/lib/algorithms/divisionTrace.ts:3:111
+      1| export const divisionMethods = ['repeated', 'doubling', 'fibonacci', '…
+      2| export function parseDivisionInput(_a: string, _b: string): never { th…
+      3| export function divisionTrace(_a: number, _b: number, _method: typeof …
+       |                                                                                                               ^
+      4|
+ ❯ src/lib/algorithms/divisionTrace.test.ts:23:19
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/42]⎯
+
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > source-level division traces > fixes exact arithmetic counts and remainder paths for 45 / 6
+Error: Not implemented
+ ❯ divisionTrace src/lib/algorithms/divisionTrace.ts:3:111
+      1| export const divisionMethods = ['repeated', 'doubling', 'fibonacci', '…
+      2| export function parseDivisionInput(_a: string, _b: string): never { th…
+      3| export function divisionTrace(_a: number, _b: number, _method: typeof …
+       |                                                                                                               ^
+      4|
+ ❯ src/lib/algorithms/divisionTrace.test.ts:34:15
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/42]⎯
+
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > source-level division traces > retains Fibonacci candidate growth, recovery and original B
+Error: Not implemented
+ ❯ divisionTrace src/lib/algorithms/divisionTrace.ts:3:111
+      1| export const divisionMethods = ['repeated', 'doubling', 'fibonacci', '…
+      2| export function parseDivisionInput(_a: string, _b: string): never { th…
+      3| export function divisionTrace(_a: number, _b: number, _method: typeof …
+       |                                                                                                               ^
+      4|
+ ❯ src/lib/algorithms/divisionTrace.test.ts:43:13
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/42]⎯
+
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > source-level division traces > marks only completed quotient updates as invariant checkpoints
+Error: Not implemented
+ ❯ divisionTrace src/lib/algorithms/divisionTrace.ts:3:111
+      1| export const divisionMethods = ['repeated', 'doubling', 'fibonacci', '…
+      2| export function parseDivisionInput(_a: string, _b: string): never { th…
+      3| export function divisionTrace(_a: number, _b: number, _method: typeof …
+       |                                                                                                               ^
+      4|
+ ❯ src/lib/algorithms/divisionTrace.test.ts:51:13
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/42]⎯
+
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > source-level division traces > records arithmetic only on its executed line and owns each complete snapshot
+Error: Not implemented
+ ❯ divisionTrace src/lib/algorithms/divisionTrace.ts:3:111
+      1| export const divisionMethods = ['repeated', 'doubling', 'fibonacci', '…
+      2| export function parseDivisionInput(_a: string, _b: string): never { th…
+      3| export function divisionTrace(_a: number, _b: number, _method: typeof …
+       |                                                                                                               ^
+      4|
+ ❯ src/lib/algorithms/divisionTrace.test.ts:60:15
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/42]⎯
+
+ FAIL  src/lib/algorithms/divisionTrace.test.ts > source-level division traces > keeps all 256 repeated subtractions and independently checks a range of results
+Error: Not implemented
+ ❯ divisionTrace src/lib/algorithms/divisionTrace.ts:3:111
+      1| export const divisionMethods = ['repeated', 'doubling', 'fibonacci', '…
+      2| export function parseDivisionInput(_a: string, _b: string): never { th…
+      3| export function divisionTrace(_a: number, _b: number, _method: typeof …
+       |                                                                                                               ^
+      4|
+ ❯ src/lib/algorithms/divisionTrace.test.ts:76:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/42]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  42 failed (42)
+   Start at  21:59:24
+   Duration  2.30s (transform 34ms, setup 202ms, import 24ms, tests 10ms, environment 1.69s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

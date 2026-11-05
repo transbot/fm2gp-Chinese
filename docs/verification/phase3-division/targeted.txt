@@ -1,0 +1,52 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+ ❯ src/components/concepts/divisionSource.test.ts (4 tests | 4 failed) 8ms
+   × preserves the actual largest_doubling source statements 3ms
+   × preserves the actual doubling source statements 3ms
+   × preserves the actual fibonacci source statements 0ms
+   × preserves the actual quotient source statements 0ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/components/concepts/divisionSource.test.ts > preserves the actual largest_doubling source statements
+ FAIL  src/components/concepts/divisionSource.test.ts > preserves the actual doubling source statements
+ FAIL  src/components/concepts/divisionSource.test.ts > preserves the actual fibonacci source statements
+ FAIL  src/components/concepts/divisionSource.test.ts > preserves the actual quotient source statements
+ReferenceError: localStorage is not defined
+ ❯ src/test/setup.ts:6:30
+      4| import { afterEach } from 'vitest';
+      5|
+      6| afterEach(() => localStorage.clear());
+       |                              ^
+      7|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/5]⎯
+
+ FAIL  src/components/concepts/divisionSource.test.ts > preserves the actual doubling source statements
+AssertionError: expected 'remainder(line_segmenta,line_segmentb…' to be 'remainder(line_segmenta,line_segmentb…' // Object.is equality
+
+Expected: "remainder(line_segmenta,line_segmentb){while(b<a)a=a-b;returna;}"
+Received: "remainder(line_segmenta,line_segmentb){if(a<b)returna;line_segmentc=largest_doubling(a,b);a=a-c;while(c!=b){c=half(c);if(c<=a)a=a-c;}returna;}"
+
+ ❯ src/components/concepts/divisionSource.test.ts:11:60
+      9|   while(depth) { if(source[end]==='{') depth++; if(source[end]==='}') …
+     10|   const shown=divisionCode[key].map(l=>l.text).join('\n');
+     11|   expect(normalized(shown.slice(shown.indexOf(name+'(')))).toBe(normal…
+       |                                                            ^
+     12| });
+     13|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/5]⎯
+
+
+ Test Files  1 failed | 3 passed (4)
+      Tests  4 failed | 62 passed (66)
+   Start at  22:04:16
+   Duration  3.40s (transform 245ms, setup 910ms, import 463ms, tests 925ms, environment 5.66s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

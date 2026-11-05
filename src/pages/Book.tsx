@@ -35,6 +35,7 @@ export function Book() {
       {chapterExercises.filter(e => e.id.split('.')[0] === chapter.id).map(e => <section key={e.id} id={exerciseAnchor(e.id)} className="learning-card"><h2 className="text-lg font-semibold">{zh ? '习题' : 'Exercise'} {e.id}</h2>
         {e.resources.map(r => <p key={r.path}><a className="learning-link" href={repoFile(r.path)}>{r.kind === 'program' ? (zh ? '程序' : 'Program') : e.id === '2.1' ? (zh ? '提示与参考' : 'Hint and reference') : (zh ? '参考解答' : 'Reference solution')} · {r.format.toUpperCase()}</a></p>)}
         {algorithmCatalog.filter(a => a.source.type === 'exercise' && a.source.section === e.id).map(a => <Link key={a.id} className="learning-link" to={a.path + from(exerciseAnchor(e.id))}>{t[a.titleKey]}</Link>)}
+        {e.id === '4.6' && <Link className="learning-link" to={'/division' + from(exerciseAnchor(e.id))}>{zh ? '斐波那契求余演示：45÷6' : 'Fibonacci remainder demonstration: 45÷6'}</Link>}
         {e.id === '8.7' && <Link className="learning-link" to={'/concepts/matrices' + from(exerciseAnchor(e.id))}>{zh ? '可达性演示' : 'Reachability demonstration'}</Link>}
         {!e.resources.length && <p>{zh ? '阅读题目与本章导引；此处尚无参考解答。' : 'Read the exercise with the chapter guide; no reference solution is available here yet.'}</p>}
         {e.id === '7.1' && <p className="text-sm text-gray-600">{zh ? '原 PDF 外链已失效；现提供可访问的配套程序。' : 'The original PDF link is unavailable; the companion program remains accessible.'}</p>}
