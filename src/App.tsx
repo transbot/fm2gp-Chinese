@@ -42,6 +42,7 @@ const FermatTheorem = lazy(() => import('./components/algorithms/FermatTheorem')
 const MergeSort = lazy(() => import('./components/algorithms/MergeSort').then((module) => ({ default: module.MergeSort })));
 const HeapOperations = lazy(() => import('./components/algorithms/HeapOperations').then((module) => ({ default: module.HeapOperations })));
 
+const Horner = lazy(() => import('./components/concepts/Horner').then(m=>({default:m.Horner})));
 const Book = lazy(() => import('./pages/Book').then(m=>({default:m.Book})));
 const Algebra = lazy(() => import('./components/concepts/Algebra').then(m=>({default:m.Algebra})));
 const Matrices = lazy(() => import('./components/concepts/Matrices').then(m=>({default:m.Matrices})));
@@ -68,6 +69,7 @@ function AppRoutes() {
           <Route path="/" element={<Home />} />
           <Route path="/book" element={<Book />} />
           <Route path="/book/:chapterId" element={<Book />} />
+          <Route path="/horner" element={<Horner />} />
           <Route path="/concepts/algebra" element={<Algebra />} />
           <Route path="/concepts/matrices" element={<Matrices />} />
           <Route path="/concepts/iterators" element={<Iterators />} />

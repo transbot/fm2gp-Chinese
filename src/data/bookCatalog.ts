@@ -13,6 +13,7 @@ export const conceptLessons: {
     title: LocalizedText;
     prerequisite: string;
 }[] = [
+    { id: 'horner', path: '/horner', sections: ['8.1'], title: { zh: '霍纳法则：多项式求值', en: 'Horner’s rule: polynomial evaluation' }, prerequisite: '/power' },
     { id: 'algebra', path: '/concepts/algebra', sections: ['6.1', '6.2'], title: { zh: '运算与代数结构', en: 'Operations and algebraic structures' }, prerequisite: '/book/5' },
     { id: 'generic-power', path: '/power', sections: ['7.1', '7.2', '7.3', '7.4', '7.5', '7.6'], title: { zh: '同一个幂算法', en: 'One power algorithm' }, prerequisite: '/concepts/algebra' },
     { id: 'matrices', path: '/concepts/matrices', sections: ['8.5', '8.6'], title: { zh: '矩阵与可达性', en: 'Matrices and reachability' }, prerequisite: '/power' },

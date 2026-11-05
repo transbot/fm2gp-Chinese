@@ -1,0 +1,37 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+ ❯ src/lib/algorithms/polynomial.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/lib/algorithms/polynomial.test.ts [ src/lib/algorithms/polynomial.test.ts ]
+Error: Failed to resolve import "./polynomial" from "src/lib/algorithms/polynomial.test.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: D:/Code/fm2gp-Chinese/src/lib/algorithms/polynomial.test.ts:2:54
+  1  |  import { describe, expect, it } from "vitest";
+  2  |  import { polynomialTrace, parsePolynomialInput } from "./polynomial";
+     |                                                         ^
+  3  |  describe("source-order polynomial traces", () => {
+  4  |  	it.each([
+ ❯ TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/node.js:30602:39
+ ❯ TransformPluginContext.error node_modules/vite/dist/node/chunks/node.js:30599:14
+ ❯ normalizeUrl node_modules/vite/dist/node/chunks/node.js:27842:18
+ ❯ node_modules/vite/dist/node/chunks/node.js:27905:30
+ ❯ TransformPluginContext.transform node_modules/vite/dist/node/chunks/node.js:27873:4
+ ❯ EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/node.js:30387:14
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/node.js:24646:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  19:01:48
+   Duration  2.30s (transform 17ms, setup 208ms, import 0ms, tests 0ms, environment 1.81s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice
