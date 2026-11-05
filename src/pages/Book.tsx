@@ -1,4 +1,4 @@
-import { Link, useParams, useSearchParams } from 'react-router-dom';
+import { Link, useLocation, useParams, useSearchParams } from 'react-router-dom';
 import { LearningShell } from '../components/common/LearningShell';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../i18n/translations';
@@ -7,6 +7,7 @@ import { bookCatalog, bookResources, chapterExercises, conceptLessons, sectionAl
 export function Book() {
     const { lang } = useLanguage(), zh = lang === 'zh', t = translations[lang];
     const { chapterId } = useParams();
+    const location = useLocation();
     const [params, setParams] = useSearchParams();
     const query = params.get('q') || '';
     const chapter = bookCatalog.find(c => c.id === chapterId);
@@ -20,7 +21,7 @@ export function Book() {
     </> : chapter ? <>
       <Link className="learning-link" to={`/book${query ? `?q=${encodeURIComponent(query)}` : ''}`}>{zh ? '返回章节目录' : 'Back to chapter directory'}</Link>
 
-      <nav className="learning-card !space-y-0 flex flex-wrap gap-3">{chapter.sections.map(s => <a className="learning-link" key={s.id} href={`#${sectionAnchor(s.id)}`}>{s.id} {s.title[lang]}</a>)}</nav>
+      <nav className="learning-card !space-y-0 flex flex-wrap gap-3">{chapter.sections.map(s => <Link className="learning-link" key={s.id} to={{ pathname: location.pathname, search: location.search, hash: `#${sectionAnchor(s.id)}` }}>{s.id} {s.title[lang]}</Link>)}</nav>
       {chapter.sections.map(s => {
                 const demos = sectionAlgorithms(s.id), lessons = conceptLessons.filter(l => l.sections.includes(s.id));
                 return <section className="learning-card" id={sectionAnchor(s.id)} key={s.id}>

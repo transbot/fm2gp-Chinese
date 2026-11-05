@@ -2,7 +2,8 @@ const {chromium,expect}=require('playwright/test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const base=process.env.READER_BASE_URL||'http://127.0.0.1:4177';
-const out='docs/verification/phase3-scroll';
+const out=process.env.SCROLL_AUDIT_DIR||'docs/verification/phase3-scroll';
+fs.mkdirSync(out,{recursive:true});
 const reproduce=process.argv.includes('--reproduce');
 const audit=[];
 let browser;
@@ -71,8 +72,8 @@ let browser;
         await page.locator(`#${id} a[href^="/division"]`).click();await page.locator('#division-A').waitFor();await settle();
         await page.reload();await page.locator('#division-A').waitFor();await returnLink().click();await page.locator('#'+id).waitFor();await settle();await anchor(id);
       }
-      // Same chapter, explicit native hash link is a real anchor navigation.
-      await page.locator('nav a[href="#section-4-5"]').click();await settle();await anchor('section-4-5');
+      // Same chapter, explicit router link is a real anchor navigation.
+      await page.locator('nav a[href$="#section-4-5"]').click();await settle();await anchor('section-4-5');
     }
     audit.push({base,width,lang,query,records,errors});assert.deepEqual(errors,[]);
     fs.writeFileSync(`${out}/${reproduce?'reproduction':'browser-audit'}.json`,JSON.stringify(audit,null,2));await context.close();

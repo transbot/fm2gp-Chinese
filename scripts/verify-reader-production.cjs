@@ -40,8 +40,9 @@ let browser;
       await checkCopy();
       const links = await page.locator('a[href]').evaluateAll(es => es.map(e => e.getAttribute('href')));
       for (const href of links) {
-        if (href.startsWith('#')) {
-          assert.equal(await page.locator('[id="' + href.slice(1) + '"]').count(), 1); anchors++;
+        const target = new URL(href, page.url());
+        if (target.origin === new URL(baseUrl).origin && target.pathname === route && target.hash) {
+          assert.equal(await page.locator('[id="' + decodeURIComponent(target.hash.slice(1)) + '"]').count(), 1); anchors++;
         }
         const prefix = 'https://github.com/transbot/fm2gp-Chinese/blob/main/';
         if (href.startsWith(prefix)) {

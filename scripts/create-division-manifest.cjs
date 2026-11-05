@@ -4,7 +4,7 @@ const { execFileSync } = require('node:child_process');
 const destination = 'docs/verification/phase3-division/source-manifest.json';
 const paths = [...new Set(execFileSync('git', ['ls-files', '--cached', '--others', '--exclude-standard', '-z'], {encoding:'utf8'}).split('\0'))]
   .filter(p => p && fs.existsSync(p) && p !== destination)
-  .filter(p => !p.includes('/') || /^(src|scripts|public)\//.test(p) || /^docs\/verification\/phase3-(division|scroll)\//.test(p) || ['dist/index.html','配套代码(fm2gpcode)/ch04.h','solutions/4_6.md'].includes(p))
+  .filter(p => !p.includes('/') || /^(src|scripts|public)\//.test(p) || /^docs\/verification\/phase3-(division|scroll|history)\//.test(p) || ['dist/index.html','配套代码(fm2gpcode)/ch04.h','solutions/4_6.md'].includes(p))
   .sort();
 function hash(path) {
   let bytes = fs.readFileSync(path);
@@ -15,7 +15,7 @@ function hash(path) {
   return crypto.createHash('sha256').update(bytes).digest('hex');
 }
 fs.writeFileSync(destination, JSON.stringify({
-  baseCommit:'74e2c7282f7c879966350bf5933b2cccf928377d',
+  baseCommit:'5f346c4c5bb49c513022d2c7d5a4c52a98881c92',
   branch:'codex/phase3-division-doubling-fibonacci',
   hashPolicy:'SHA-256; UTF-8 text normalized to LF; binary unchanged; manifest excludes itself',
   deleted:[],

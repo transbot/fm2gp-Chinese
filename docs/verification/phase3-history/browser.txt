@@ -1,0 +1,9 @@
+AssertionError [ERR_ASSERTION]: {"label":"direct-hash","url":"/book/4?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99#section-4-6","historyState":null,"key":"default","scrollY":0,"language":"zh-CN","targets":{"section-4-5":{"top":918,"bottom":1036,"expectedTop":16},"section-4-6":{"top":1060,"bottom":1178,"expectedTop":16},"exercise-4-6":{"top":2698,"bottom":2840,"expectedTop":692}}}
+    at atAnchor (D:\Code\fm2gp-Chinese\scripts\verify-chapter-history.cjs:21:85)
+    at D:\Code\fm2gp-Chinese\scripts\verify-chapter-history.cjs:41:128 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}

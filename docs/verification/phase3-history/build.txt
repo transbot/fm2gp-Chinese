@@ -1,0 +1,81 @@
+
+> vite-react-typescript-starter@0.0.0 build
+> vite build
+
+vite v8.0.16 building client environment for production...
+[2K
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+transforming...✓ 2411 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                  0.56 kB │ gzip:  0.34 kB
+dist/assets/GraphTraversal-spzl8Vqr.css          6.88 kB │ gzip:  1.50 kB
+dist/assets/index-CTzzF_-F.css                  42.46 kB │ gzip:  7.65 kB
+dist/assets/play-Dxg596AQ.js                     0.12 kB │ gzip:  0.13 kB
+dist/assets/pause-BNvOo3J6.js                    0.18 kB │ gzip:  0.15 kB
+dist/assets/rotate-ccw-F5fGg1B3.js               0.18 kB │ gzip:  0.17 kB
+dist/assets/arrow-left-right-B_569db5.js         0.23 kB │ gzip:  0.18 kB
+dist/assets/languages-CFXh_Wyc.js                0.30 kB │ gzip:  0.20 kB
+dist/assets/ValidationMessage-BmHZt_cg.js        0.35 kB │ gzip:  0.28 kB
+dist/assets/shuffle-COfA8X_M.js                  0.37 kB │ gzip:  0.25 kB
+dist/assets/trash-2-fKRR612w.js                  0.44 kB │ gzip:  0.28 kB
+dist/assets/ResponsiveVisualFrame-DWeWo4rU.js    0.54 kB │ gzip:  0.36 kB
+dist/assets/usePlayback-BJwJVtlH.js              0.62 kB │ gzip:  0.41 kB
+dist/assets/TraceCode-BEXRvENE.js                0.79 kB │ gzip:  0.49 kB
+dist/assets/Links-CkbZ79GF.js                    0.85 kB │ gzip:  0.51 kB
+dist/assets/LearningShell-DReoSYxt.js            1.22 kB │ gzip:  0.61 kB
+dist/assets/AlgorithmLayout-CU2NS-wR.js          1.29 kB │ gzip:  0.63 kB
+dist/assets/shared-BORu5RRC.js                   1.35 kB │ gzip:  0.69 kB
+dist/assets/concepts-ChC0jsB_.js                 1.76 kB │ gzip:  0.89 kB
+dist/assets/StepController-nAkO-EAu.js           2.72 kB │ gzip:  1.05 kB
+dist/assets/ExplanationPanel-BQvykO5J.js         3.13 kB │ gzip:  1.00 kB
+dist/assets/AnimatePresence-CAJc9CXY.js          3.97 kB │ gzip:  1.85 kB
+dist/assets/PrimeCounting-WNLwh1LF.js            4.21 kB │ gzip:  1.79 kB
+dist/assets/PalindromicPrimes-BOftoSRZ.js        4.34 kB │ gzip:  1.64 kB
+dist/assets/GcdComparison-VCSqGFbx.js            4.53 kB │ gzip:  1.67 kB
+dist/assets/Rotate-Cul-0yXJ.js                   4.64 kB │ gzip:  1.68 kB
+dist/assets/PrimeChecker-CW01tuPx.js             4.66 kB │ gzip:  2.14 kB
+dist/assets/PiUpperBound-BMC40JsI.js             5.29 kB │ gzip:  1.94 kB
+dist/assets/Book-ErEoe2JH.js                     5.84 kB │ gzip:  2.38 kB
+dist/assets/Algebra-B9JM_1ih.js                  6.63 kB │ gzip:  2.98 kB
+dist/assets/MillerRabin-D2qWXPXC.js              6.87 kB │ gzip:  2.77 kB
+dist/assets/Iterators-DoOvboDF.js                6.97 kB │ gzip:  3.16 kB
+dist/assets/BubbleSort-CRuUQEtr.js               7.49 kB │ gzip:  3.17 kB
+dist/assets/Gcm-DHgMwUu7.js                      7.54 kB │ gzip:  2.57 kB
+dist/assets/Sieve-DD9ARJSn.js                    7.54 kB │ gzip:  3.00 kB
+dist/assets/PowerAlgorithm-C7BON5B6.js           7.72 kB │ gzip:  3.67 kB
+dist/assets/InsertionSort-DxtSZPsJ.js            7.72 kB │ gzip:  3.11 kB
+dist/assets/LinearSearch-D2clA-HK.js             7.76 kB │ gzip:  3.03 kB
+dist/assets/SelectionSort-ifPvTXee.js            7.89 kB │ gzip:  3.24 kB
+dist/assets/ExtendedGcd-BXvOsk8t.js              8.17 kB │ gzip:  2.56 kB
+dist/assets/BinarySearch-Cr-9-ZF7.js             8.18 kB │ gzip:  2.90 kB
+dist/assets/TwoSum-IvpKR1sQ.js                   8.27 kB │ gzip:  3.26 kB
+dist/assets/FrequencyCount-CP57O4gY.js           8.32 kB │ gzip:  3.05 kB
+dist/assets/Fibonacci-BkVpac3V.js                8.60 kB │ gzip:  2.79 kB
+dist/assets/Reverse-tyGFurEh.js                  8.93 kB │ gzip:  3.23 kB
+dist/assets/PrefixSum-BhsC_qTO.js                9.29 kB │ gzip:  3.25 kB
+dist/assets/Matrices-faBRVD8-.js                 9.73 kB │ gzip:  4.71 kB
+dist/assets/Swap-CRxlyXZG.js                     9.98 kB │ gzip:  3.32 kB
+dist/assets/Rsa-DZpLivTN.js                     10.57 kB │ gzip:  3.13 kB
+dist/assets/FastFibonacci-U9EtS6tD.js           12.36 kB │ gzip:  3.81 kB
+dist/assets/FermatTheorem-CmhDt0lH.js           12.80 kB │ gzip:  4.24 kB
+dist/assets/MergeSort-Cv51PvPg.js               12.90 kB │ gzip:  3.85 kB
+dist/assets/Horner-DaqL5cXS.js                  13.17 kB │ gzip:  5.91 kB
+dist/assets/Cycle-BN6eD68m.js                   13.41 kB │ gzip:  4.33 kB
+dist/assets/QuickSort-BCb99FEv.js               13.64 kB │ gzip:  4.58 kB
+dist/assets/SteinGcd-D7GEcSRj.js                14.16 kB │ gzip:  4.11 kB
+dist/assets/EulerTheorem-DgoWouAL.js            15.54 kB │ gzip:  4.54 kB
+dist/assets/Home-BjwlytT3.js                    17.05 kB │ gzip:  5.29 kB
+dist/assets/HeapOperations-CJyY9UQX.js          17.72 kB │ gzip:  5.32 kB
+dist/assets/Calculator-CufbaUVZ.js              20.32 kB │ gzip:  8.32 kB
+dist/assets/ShortestPath-DXJPR9iy.js            20.64 kB │ gzip:  8.33 kB
+dist/assets/Division-gYkjbhxw.js                23.36 kB │ gzip:  9.81 kB
+dist/assets/utils-BzOWElVW.js                   26.40 kB │ gzip:  8.43 kB
+dist/assets/index-Bk3oIx8z.js                   78.56 kB │ gzip: 24.62 kB
+dist/assets/DeveloperNote-BCBaBj7b.js          121.75 kB │ gzip: 39.76 kB
+dist/assets/translations-CNV4SxOi.js           231.99 kB │ gzip: 78.24 kB
+dist/assets/GraphTraversal-Dlrhlt3W.js         236.80 kB │ gzip: 74.86 kB
+
+✓ built in 1.57s
