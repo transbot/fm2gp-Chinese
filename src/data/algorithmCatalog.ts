@@ -323,8 +323,8 @@ const coreConcepts: Record<string, LocalizedText> = {
     zh: '基于队列的 BFS 与基于栈的 DFS',
   },
   'pi-upper-bound': {
-    en: 'Geometric approximation through inscribed polygons',
-    zh: '通过内接多边形进行几何近似',
+    en: 'Bounding π with inscribed and circumscribed polygons',
+    zh: '通过内接与外切正多边形夹逼 π',
   },
   'miller-rabin': {
     en: 'Witnesses and probabilistic primality testing',
@@ -762,8 +762,8 @@ const algorithmCatalogSeed: AlgorithmCatalogSeed[] = [
     difficulty: 'beginner',
     source: { type: 'exercise', section: '9.2' },
     summary: {
-      en: 'Use inscribed polygons to approach an upper bound for pi.',
-      zh: '用内接正多边形观察 π 的上界。',
+      en: 'Inscribed half-perimeters bound π below; circumscribed half-perimeters bound it above.',
+      zh: '内接半周长给出 π 的下界，外切半周长给出上界。',
     },
   },
   {

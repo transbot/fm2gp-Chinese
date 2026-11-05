@@ -3,6 +3,8 @@ import { BookOpen, Languages, RotateCcw, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../i18n/translations';
+import { BookShowcase } from '../components/BookShowcase';
+import { bookLearningPath } from '../data/bookLearningPath';
 import {
   algorithmCatalog,
   Difficulty,
@@ -148,7 +150,7 @@ export function Home() {
               <div className="w-full min-w-0">
                 <h1
                   className="mx-auto max-w-[18rem] text-center text-xl font-bold text-gray-800 sm:mx-0 sm:max-w-none sm:text-left sm:text-2xl md:text-3xl"
-                  style={{ overflowWrap: 'anywhere', wordBreak: 'break-all' }}
+                  style={{ overflowWrap: 'anywhere', wordBreak: 'normal' }}
                 >
                   {lang === 'en' ? (
                     <>
@@ -196,11 +198,26 @@ export function Home() {
           </div>
         </div>
 
+        <section aria-labelledby="book-path-title" className="rounded-xl border border-blue-100 bg-blue-50 p-5 sm:p-6">
+          <h2 id="book-path-title" className="text-xl font-bold text-gray-900">{lang === 'zh' ? '跟着本书学' : 'Learn with the book'}</h2>
+          <p className="mt-2 text-sm text-gray-600">{lang === 'zh' ? '从埃及乘法出发，看同一个算法如何走向矩阵与图。' : 'Start with Egyptian multiplication and follow the same algorithm into matrices and graphs.'}</p>
+          <ol className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-4">
+            {bookLearningPath.map((step, index) => (
+              <li key={step.id} className="rounded-lg bg-white p-4 border border-blue-100">
+                <Link to={getAlgorithmById(step.id)!.path} className="inline-block font-semibold text-blue-800 underline underline-offset-4">
+                  {index + 1}. {lang === 'zh' ? `第 ${step.section} 节` : `Section ${step.section}`} · {step.title[lang]}
+                </Link>
+                <p className="mt-3 text-sm leading-relaxed text-gray-700">{step.description[lang]}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
         <div className="bg-white rounded-xl shadow-sm p-5 sm:p-6 border border-gray-100">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
             <div>
               <h2 className="text-lg sm:text-xl font-bold text-gray-800">
-                {lang === 'zh' ? '推荐学习顺序' : 'Recommended Learning Path'}
+                {lang === 'zh' ? '算法入门' : 'Algorithm foundations'}
               </h2>
               <p className="text-sm text-gray-600 mt-1">
                 {lang === 'zh'
@@ -424,16 +441,7 @@ export function Home() {
           </div>
         </div>
 
-        <div className="flex justify-center px-4">
-          <div className="relative group w-full sm:w-auto">
-            <img
-              src="/images/EnglishEditionCover.png"
-              alt="From Mathematics to Generic Programming Book Cover"
-              className="w-full sm:max-w-sm rounded-xl shadow-xl transition-transform duration-300 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </div>
-        </div>
+        <BookShowcase />
       </div>
     </div>
   );

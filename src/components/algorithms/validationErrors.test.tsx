@@ -163,7 +163,7 @@ describe('core algorithm validation errors', () => {
     renderAlgorithm(<BinarySearch />);
 
     expect(screen.getByRole('slider', { name: /Array Size/i })).toBeInTheDocument();
-    expect(screen.getByRole('spinbutton', { name: /Target Value/i })).toBeInTheDocument();
+    expect(screen.getByRole('textbox', { name: /Target Value/i })).toBeInTheDocument();
   });
 
   it('shows an empty-array error on linear search', () => {

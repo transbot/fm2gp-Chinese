@@ -10,25 +10,37 @@ const MAX_SIDES = 500;
 
 export function PiUpperBound() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [sides, setSides] = useState<number>(3);
+  const [sides, setSides] = useState<number>(6);
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
-  const [currentValue, setCurrentValue] = useState<number>(0);
   const animationRef = useRef<number>();
   const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
   const { lang, setLang } = useLanguage();
   const t = translations[lang];
 
-  const calculatePerimeter = (sides: number): number => {
-    const angleStep = (2 * Math.PI) / sides;
-    const sideLength = 2 * Math.sin(angleStep / 2);
-    return sides * sideLength;
-  };
+  const lowerBound = sides * Math.sin(Math.PI / sides);
+  const upperBound = sides * Math.tan(Math.PI / sides);
 
   const drawPolygon = (ctx: CanvasRenderingContext2D, sides: number) => {
     const canvas = ctx.canvas;
     const centerX = canvas.width / 2;
     const centerY = canvas.height / 2;
-    const radius = Math.min(centerX, centerY) * 0.8;
+    // Fit even the circumscribed triangle (circumradius = 2 * inradius).
+    const radius = Math.min(centerX, centerY) * 0.44;
+
+    // Tangent sides touch the same unit circle at the inscribed vertices.
+    const outerRadius = radius / Math.cos(Math.PI / sides);
+    ctx.beginPath();
+    ctx.strokeStyle = '#047857';
+    ctx.lineWidth = 3;
+    for (let i = 0; i < sides; i++) {
+      const angle = ((2 * i + 1) * Math.PI) / sides;
+      const x = centerX + outerRadius * Math.cos(angle);
+      const y = centerY + outerRadius * Math.sin(angle);
+      if (i === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+    ctx.stroke();
 
     // Draw circle
     ctx.beginPath();
@@ -141,10 +153,6 @@ export function PiUpperBound() {
 
     // Draw current state
     drawPolygon(ctx, sides);
-
-    // Calculate current value
-    const perimeter = calculatePerimeter(sides);
-    setCurrentValue(perimeter);
   }, [sides]);
 
   useEffect(() => {
@@ -222,8 +230,12 @@ export function PiUpperBound() {
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="font-semibold mb-2">{t.upperBound}</h3>
-            <p className="font-mono text-lg">{(currentValue / 2).toFixed(6)}</p>
+            <h3 className="font-semibold mb-2 text-red-700">{t.lowerBound}</h3>
+            <p className="font-mono">n sin(π/n) = {lowerBound.toFixed(6)}</p>
+            <h3 className="font-semibold mt-4 mb-2 text-emerald-700">{t.upperBound}</h3>
+            <p className="font-mono">n tan(π/n) = {upperBound.toFixed(6)}</p>
+            <p className="mt-4 font-semibold">{sides === 6 ? '3 < π < 2√3 ≈ 3.464102' : `${lowerBound.toFixed(6)} < π < ${upperBound.toFixed(6)}`}</p>
+            <p className="mt-2 text-xs text-gray-500">{t.piRoundingNote}</p>
           </div>
 
           <div className="bg-blue-50 p-6 rounded-lg">
@@ -234,8 +246,8 @@ export function PiUpperBound() {
 
         <div className="bg-white p-4 rounded-lg shadow-md">
           <ResponsiveVisualFrame
-            label={lang === 'zh' ? '圆周率上界多边形图' : 'Pi upper-bound polygon diagram'}
-            minWidth={360}
+            label={lang === 'zh' ? '单位圆的内接与外切正多边形' : 'Inscribed and circumscribed polygons of a unit circle'}
+            minWidth={240}
           >
           <canvas 
             ref={canvasRef}
@@ -243,6 +255,11 @@ export function PiUpperBound() {
             style={{ aspectRatio: '1/1' }}
           />
           </ResponsiveVisualFrame>
+          <div className="space-y-2 text-sm mt-3">
+            <p className="text-blue-700">● {t.piUnitCircle}</p>
+            <p className="text-red-700">— {t.piInscribed}</p>
+            <p className="text-emerald-700">— {t.piCircumscribed}</p>
+          </div>
         </div>
       </div>
 

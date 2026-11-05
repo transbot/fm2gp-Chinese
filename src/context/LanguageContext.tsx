@@ -9,29 +9,34 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-// 检测用户的操作系统语言
+const LANGUAGE_STORAGE_KEY = 'fm2gp-language';
+
+// Web apps can read browser/device language preferences, not OS settings directly.
 const detectUserLanguage = (): Language => {
-  // 获取浏览器语言设置
-  const browserLang = navigator.language.toLowerCase();
-  
-  // 检查是否为中文
-  if (browserLang.startsWith('zh')) {
-    return 'zh';
+  try {
+    const saved = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    if (saved === 'zh' || saved === 'en') return saved;
+  } catch { /* Language detection still works when storage is unavailable. */ }
+  const preferences = navigator.languages?.length ? navigator.languages : [navigator.language];
+  for (const preference of preferences) {
+    const language = preference.toLowerCase().split('-')[0];
+    if (language === 'zh' || language === 'en') return language;
   }
-  
-  // 默认返回英文
   return 'en';
 };
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   // 使用 useState 的函数形式来确保初始值只计算一次
-  const [lang, setLang] = useState<Language>(() => detectUserLanguage());
+  const [lang, updateLang] = useState<Language>(() => detectUserLanguage());
+  const setLang = (language: Language) => {
+    updateLang(language);
+    try { localStorage.setItem(LANGUAGE_STORAGE_KEY, language); } catch { /* Optional persistence. */ }
+  };
 
-  // 在组件挂载时检测语言
+  // Keep assistive technology and browser language metadata in sync.
   useEffect(() => {
-    const detectedLang = detectUserLanguage();
-    setLang(detectedLang);
-  }, []);
+    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+  }, [lang]);
 
   return (
     <LanguageContext.Provider value={{ lang, setLang }}>

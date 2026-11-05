@@ -82,12 +82,15 @@ export function BinarySearch() {
       setValidationErrorKey('binarySearchTargetRequired');
       return;
     }
+    const target = Number(targetVal);
+    if (!Number.isFinite(target)) {
+      setValidationErrorKey('binarySearchTargetInvalid');
+      return;
+    }
     setValidationErrorKey(null);
     resetSearchState();
     setIsPlaying(true);
-    
-    const target = parseInt(targetVal) || 50;
-    
+
     // 1. Find lower_bound (b_l)
     setSearchPhase('finding_lower');
     const lowerGen = lowerBoundGenerator(array, target);
@@ -196,7 +199,7 @@ export function BinarySearch() {
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">{t.arraySizeLabel} ({arraySize})</label>
           <input 
-            type="range" min="10" max="100" 
+            type="range" min="3" max="100"
             aria-label={`${t.arraySizeLabel} (${arraySize})`}
             value={arraySize} 
             onChange={(e) => setArraySize(Number(e.target.value))}
@@ -208,7 +211,8 @@ export function BinarySearch() {
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700" dangerouslySetInnerHTML={{ __html: t.targetValueLabel }}></label>
           <input 
-            type="number" 
+            type="text"
+            inputMode="decimal"
             aria-label={t.targetValueLabel.replace(/<[^>]*>/g, '')}
             value={targetVal} 
             onChange={(e) => {
@@ -217,7 +221,7 @@ export function BinarySearch() {
             }}
             className={cn(
               'touch-target w-32 rounded-lg border px-4 py-2 font-mono focus:ring-2 focus:ring-blue-500',
-              validationErrorKey === 'binarySearchTargetRequired'
+              validationErrorKey?.startsWith('binarySearchTarget')
                 ? 'border-red-300 bg-red-50'
                 : 'border-gray-300'
             )}
