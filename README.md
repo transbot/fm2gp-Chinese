@@ -334,13 +334,3 @@ More specifically, this book focuses on generic programming. This is a programmi
 <div align="center" style="margin: 2em 0;">
   <a href="#fm2gp-chinese--数学与泛型编程高效编程的奥秘">Back to top / 返回顶部</a> | <a href="#中文版">Switch to Chinese / 切换至中文版</a>
 </div>
-
-## 封面与购书入口 / Cover and bookstore configuration
-
-在 `src/config/book.ts` 的 `CHINESE_BOOK_STORE_URL` 填入正式商店 URL。留空时中文版封面仅为普通图片，无购买提示、手形光标或链接；填入后整张封面成为可用键盘聚焦的链接。`WEB_APP_URL` 和静态二维码独立指向网页版应用。
-
-Set `CHINESE_BOOK_STORE_URL` in `src/config/book.ts` to the official store URL. When empty, the Chinese cover is an ordinary image with no purchase prompt or link; once configured, the whole cover is a keyboard-accessible link. `WEB_APP_URL` and the static QR code independently point to the web app.
-
-首次访问按浏览器提供的设备首选语言选择中英文；手动切换会保存在本机。网页无法越过浏览器直接读取操作系统语言。
-
-On first visit, the app selects the first supported language in the device preferences exposed by the browser; manual choices are saved locally. A website cannot read OS language settings independently of the browser.
