@@ -4,3 +4,9 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# Serve client-side routes on direct visits and refreshes; real assets take priority.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
