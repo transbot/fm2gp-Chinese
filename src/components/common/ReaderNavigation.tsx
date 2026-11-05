@@ -1,26 +1,49 @@
-import { useEffect } from 'react';
-import { Link, useLocation, useSearchParams } from 'react-router-dom';
+import { useEffect, useLayoutEffect, useRef } from 'react';
+import { Link, useLocation, useNavigationType, useSearchParams } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 import { algorithmCatalog } from '../../data/algorithmCatalog';
 import { algorithmBookLink, conceptLessons, bookResources, repoFile } from '../../data/bookCatalog';
 import { bookLearningPath } from '../../data/bookLearningPath';
 import { translations } from '../../i18n/translations';
 import { AlgorithmNavigation } from './AlgorithmNavigation';
-const positions = new Map<string, number>();
 export function ReaderNavigation() {
     const location = useLocation(), [params] = useSearchParams(), { lang } = useLanguage(), zh = lang === 'zh';
+    const navigationType = useNavigationType();
+    const positions = useRef(new Map<string, number>());
+    const previous = useRef<typeof location>();
     const algorithm = algorithmCatalog.find(a => a.path === location.pathname), lesson = conceptLessons.find(l => l.path === location.pathname);
-    const positionKey = location.pathname + location.search;
     useEffect(() => {
+        const original = window.history.scrollRestoration;
+        window.history.scrollRestoration = 'manual';
+        return () => { window.history.scrollRestoration = original; };
+    }, []);
+    useLayoutEffect(() => {
+        const from = previous.current;
+        // Search edits replace the current entry, including clearing/resetting
+        // an already empty query. They are not a new reading destination.
+        const editingQuery = navigationType === 'REPLACE' && from?.pathname === location.pathname && from.hash === location.hash;
+        const saved = editingQuery && from
+            ? positions.current.get(from.key) ?? window.scrollY
+            : navigationType === 'POP' ? positions.current.get(location.key) : undefined;
+        previous.current = location;
+        const record = () => { positions.current.set(location.key, window.scrollY); };
         const timer = requestAnimationFrame(() => {
             const target = location.hash ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
-            if (target)
+            // A known history entry restores its reading position, even if it
+            // has a hash. A new explicit anchor navigation selects the anchor.
+            if (saved !== undefined)
+                window.scrollTo(0, saved);
+            else if (target)
                 target.scrollIntoView();
             else
-                window.scrollTo(0, positions.get(positionKey) ?? 0);
+                window.scrollTo(0, 0);
+            record();
         });
-        return () => { cancelAnimationFrame(timer); positions.set(positionKey, window.scrollY); };
-    }, [positionKey, location.hash]);
+        window.addEventListener('scroll', record, { passive: true });
+        // Record while the old page is visible, not during effect cleanup after
+        // a shorter new page may already have clamped the browser's scrollY.
+        return () => { cancelAnimationFrame(timer); window.removeEventListener('scroll', record); };
+    }, [location, navigationType]);
     if (!algorithm && !lesson)
         return null;
     const route = params.get('route');

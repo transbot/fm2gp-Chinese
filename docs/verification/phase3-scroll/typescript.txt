@@ -1,0 +1,1 @@
+src/pages/Home.navigation.test.tsx(14,85): error TS2339: Property 'top' does not exist on type 'never'.

@@ -1,0 +1,1 @@
+Recorded baseline per-character scrolling in four environments.

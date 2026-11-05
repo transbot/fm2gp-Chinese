@@ -1,0 +1,30 @@
+{
+  "baseline": "74e2c7282f7c879966350bf5933b2cccf928377d",
+  "branch": "codex/phase3-division-doubling-fibonacci",
+  "verifiedAt": "2026-11-05T22:38:22.329514+08:00",
+  "preview": "http://127.0.0.1:4178",
+  "browser": "Edge 156.0.4314.58",
+  "node": "22.17.1",
+  "npm": "11.7.0",
+  "vite": "8.0.16",
+  "vitest": "4.1.8",
+  "viewports": [
+    [
+      1440,
+      1000
+    ],
+    [
+      390,
+      1000
+    ]
+  ],
+  "languages": [
+    "zh-CN",
+    "en-US"
+  ],
+  "typedCharacterChecks": 300,
+  "deletedCharacterChecks": 50,
+  "maxTypedPositionDeviationPx": 0,
+  "buildIndexSha256LF": "0fa11052d1a59900e4fd8fe7ed4b4650e5993e15779f5a56668ebd3f65a27693",
+  "divisionTracesUnchangedFromBaseline": true
+}

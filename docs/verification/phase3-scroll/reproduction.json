@@ -1,0 +1,632 @@
+[
+  {
+    "base": "http://127.0.0.1:4178",
+    "width": 1440,
+    "lang": "zh",
+    "query": "斐波那契求余",
+    "records": [
+      {
+        "label": "before",
+        "scrollY": 1053,
+        "top": 219.75,
+        "bottom": 259.75,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "",
+        "url": "/",
+        "language": "zh-CN"
+      },
+      {
+        "label": "type:斐",
+        "scrollY": 0,
+        "top": 1272.75,
+        "bottom": 1312.75,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "斐",
+        "url": "/?q=%E6%96%90",
+        "language": "zh-CN"
+      },
+      {
+        "label": "type:斐波",
+        "scrollY": 0,
+        "top": 1272.75,
+        "bottom": 1312.75,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "斐波",
+        "url": "/?q=%E6%96%90%E6%B3%A2",
+        "language": "zh-CN"
+      },
+      {
+        "label": "type:斐波那",
+        "scrollY": 0,
+        "top": 1272.75,
+        "bottom": 1312.75,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "斐波那",
+        "url": "/?q=%E6%96%90%E6%B3%A2%E9%82%A3",
+        "language": "zh-CN"
+      },
+      {
+        "label": "type:斐波那契",
+        "scrollY": 0,
+        "top": 1272.75,
+        "bottom": 1312.75,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "斐波那契",
+        "url": "/?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91",
+        "language": "zh-CN"
+      },
+      {
+        "label": "type:斐波那契求",
+        "scrollY": 0,
+        "top": 1272.75,
+        "bottom": 1312.75,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "斐波那契求",
+        "url": "/?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82",
+        "language": "zh-CN"
+      },
+      {
+        "label": "type:斐波那契求余",
+        "scrollY": 0,
+        "top": 1272.75,
+        "bottom": 1312.75,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "斐波那契求余",
+        "url": "/?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99",
+        "language": "zh-CN"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:4178",
+    "width": 1440,
+    "lang": "en",
+    "query": "Fibonacci remainder",
+    "records": [
+      {
+        "label": "before",
+        "scrollY": 1146,
+        "top": 220.25,
+        "bottom": 260.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "",
+        "url": "/",
+        "language": "en"
+      },
+      {
+        "label": "type:F",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "F",
+        "url": "/?q=F",
+        "language": "en"
+      },
+      {
+        "label": "type:Fi",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fi",
+        "url": "/?q=Fi",
+        "language": "en"
+      },
+      {
+        "label": "type:Fib",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fib",
+        "url": "/?q=Fib",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibo",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibo",
+        "url": "/?q=Fibo",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibon",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibon",
+        "url": "/?q=Fibon",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibona",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibona",
+        "url": "/?q=Fibona",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonac",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonac",
+        "url": "/?q=Fibonac",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacc",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacc",
+        "url": "/?q=Fibonacc",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci",
+        "url": "/?q=Fibonacci",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci ",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci ",
+        "url": "/?q=Fibonacci+",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci r",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci r",
+        "url": "/?q=Fibonacci+r",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci re",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci re",
+        "url": "/?q=Fibonacci+re",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci rem",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci rem",
+        "url": "/?q=Fibonacci+rem",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci rema",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci rema",
+        "url": "/?q=Fibonacci+rema",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci remai",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci remai",
+        "url": "/?q=Fibonacci+remai",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci remain",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci remain",
+        "url": "/?q=Fibonacci+remain",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci remaind",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci remaind",
+        "url": "/?q=Fibonacci+remaind",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci remainde",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci remainde",
+        "url": "/?q=Fibonacci+remainde",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci remainder",
+        "scrollY": 0,
+        "top": 1366.25,
+        "bottom": 1406.25,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci remainder",
+        "url": "/?q=Fibonacci+remainder",
+        "language": "en"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:4178",
+    "width": 390,
+    "lang": "zh",
+    "query": "斐波那契求余",
+    "records": [
+      {
+        "label": "before",
+        "scrollY": 1722,
+        "top": 220,
+        "bottom": 260,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "",
+        "url": "/",
+        "language": "zh-CN"
+      },
+      {
+        "label": "type:斐",
+        "scrollY": 0,
+        "top": 1942,
+        "bottom": 1982,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "斐",
+        "url": "/?q=%E6%96%90",
+        "language": "zh-CN"
+      },
+      {
+        "label": "type:斐波",
+        "scrollY": 0,
+        "top": 1942,
+        "bottom": 1982,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "斐波",
+        "url": "/?q=%E6%96%90%E6%B3%A2",
+        "language": "zh-CN"
+      },
+      {
+        "label": "type:斐波那",
+        "scrollY": 0,
+        "top": 1942,
+        "bottom": 1982,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "斐波那",
+        "url": "/?q=%E6%96%90%E6%B3%A2%E9%82%A3",
+        "language": "zh-CN"
+      },
+      {
+        "label": "type:斐波那契",
+        "scrollY": 0,
+        "top": 1942,
+        "bottom": 1982,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "斐波那契",
+        "url": "/?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91",
+        "language": "zh-CN"
+      },
+      {
+        "label": "type:斐波那契求",
+        "scrollY": 0,
+        "top": 1942,
+        "bottom": 1982,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "斐波那契求",
+        "url": "/?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82",
+        "language": "zh-CN"
+      },
+      {
+        "label": "type:斐波那契求余",
+        "scrollY": 0,
+        "top": 1942,
+        "bottom": 1982,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "斐波那契求余",
+        "url": "/?q=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%B1%82%E4%BD%99",
+        "language": "zh-CN"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:4178",
+    "width": 390,
+    "lang": "en",
+    "query": "Fibonacci remainder",
+    "records": [
+      {
+        "label": "before",
+        "scrollY": 2103,
+        "top": 219.5,
+        "bottom": 259.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "",
+        "url": "/",
+        "language": "en"
+      },
+      {
+        "label": "type:F",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "F",
+        "url": "/?q=F",
+        "language": "en"
+      },
+      {
+        "label": "type:Fi",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fi",
+        "url": "/?q=Fi",
+        "language": "en"
+      },
+      {
+        "label": "type:Fib",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fib",
+        "url": "/?q=Fib",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibo",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibo",
+        "url": "/?q=Fibo",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibon",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibon",
+        "url": "/?q=Fibon",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibona",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibona",
+        "url": "/?q=Fibona",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonac",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonac",
+        "url": "/?q=Fibonac",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacc",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacc",
+        "url": "/?q=Fibonacc",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci",
+        "url": "/?q=Fibonacci",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci ",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci ",
+        "url": "/?q=Fibonacci+",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci r",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci r",
+        "url": "/?q=Fibonacci+r",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci re",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci re",
+        "url": "/?q=Fibonacci+re",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci rem",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci rem",
+        "url": "/?q=Fibonacci+rem",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci rema",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci rema",
+        "url": "/?q=Fibonacci+rema",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci remai",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci remai",
+        "url": "/?q=Fibonacci+remai",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci remain",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci remain",
+        "url": "/?q=Fibonacci+remain",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci remaind",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci remaind",
+        "url": "/?q=Fibonacci+remaind",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci remainde",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci remainde",
+        "url": "/?q=Fibonacci+remainde",
+        "language": "en"
+      },
+      {
+        "label": "type:Fibonacci remainder",
+        "scrollY": 0,
+        "top": 2322.5,
+        "bottom": 2362.5,
+        "focus": true,
+        "activeElement": "INPUT",
+        "value": "Fibonacci remainder",
+        "url": "/?q=Fibonacci+remainder",
+        "language": "en"
+      }
+    ],
+    "errors": []
+  }
+]

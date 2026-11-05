@@ -1,0 +1,9 @@
+AssertionError [ERR_ASSERTION]: exercise-4-6 anchor offset 692, expected 16
+    at anchor (D:\Code\fm2gp-Chinese\scripts\verify-search-scroll.cjs:56:281)
+    at async D:\Code\fm2gp-Chinese\scripts\verify-search-scroll.cjs:63:152 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}

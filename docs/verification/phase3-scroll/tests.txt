@@ -1,0 +1,16 @@
+
+> vite-react-typescript-starter@0.0.0 test:run
+> vitest run
+
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+ Test Files  38 passed (38)
+      Tests  353 passed (353)
+   Start at  22:33:29
+   Duration  16.63s (transform 6.33s, setup 22.94s, import 20.79s, tests 19.93s, environment 202.75s)
+

@@ -1,0 +1,4462 @@
+{
+  "cases": [
+    {
+      "A": 45,
+      "B": 6,
+      "q": 7,
+      "r": 3,
+      "methods": [
+        {
+          "method": "repeated",
+          "steps": 17,
+          "counts": {
+            "add": 0,
+            "subtract": 7,
+            "half": 0,
+            "deductions": 7
+          }
+        },
+        {
+          "method": "doubling",
+          "steps": 22,
+          "counts": {
+            "add": 2,
+            "subtract": 6,
+            "half": 2,
+            "deductions": 3
+          }
+        },
+        {
+          "method": "fibonacci",
+          "steps": 42,
+          "counts": {
+            "add": 4,
+            "subtract": 6,
+            "half": 0,
+            "deductions": 2
+          }
+        },
+        {
+          "method": "quotient",
+          "steps": 27,
+          "counts": {
+            "add": 6,
+            "subtract": 6,
+            "half": 2,
+            "deductions": 3
+          }
+        }
+      ]
+    },
+    {
+      "A": 42,
+      "B": 6,
+      "q": 7,
+      "r": 0,
+      "methods": [
+        {
+          "method": "repeated",
+          "steps": 17,
+          "counts": {
+            "add": 0,
+            "subtract": 7,
+            "half": 0,
+            "deductions": 7
+          }
+        },
+        {
+          "method": "doubling",
+          "steps": 22,
+          "counts": {
+            "add": 2,
+            "subtract": 6,
+            "half": 2,
+            "deductions": 3
+          }
+        },
+        {
+          "method": "fibonacci",
+          "steps": 42,
+          "counts": {
+            "add": 4,
+            "subtract": 6,
+            "half": 0,
+            "deductions": 2
+          }
+        },
+        {
+          "method": "quotient",
+          "steps": 27,
+          "counts": {
+            "add": 6,
+            "subtract": 6,
+            "half": 2,
+            "deductions": 3
+          }
+        }
+      ]
+    },
+    {
+      "A": 5,
+      "B": 6,
+      "q": 0,
+      "r": 5,
+      "methods": [
+        {
+          "method": "repeated",
+          "steps": 3,
+          "counts": {
+            "add": 0,
+            "subtract": 0,
+            "half": 0,
+            "deductions": 0
+          }
+        },
+        {
+          "method": "doubling",
+          "steps": 3,
+          "counts": {
+            "add": 0,
+            "subtract": 0,
+            "half": 0,
+            "deductions": 0
+          }
+        },
+        {
+          "method": "fibonacci",
+          "steps": 3,
+          "counts": {
+            "add": 0,
+            "subtract": 0,
+            "half": 0,
+            "deductions": 0
+          }
+        },
+        {
+          "method": "quotient",
+          "steps": 3,
+          "counts": {
+            "add": 0,
+            "subtract": 0,
+            "half": 0,
+            "deductions": 0
+          }
+        }
+      ]
+    },
+    {
+      "A": 6,
+      "B": 6,
+      "q": 1,
+      "r": 0,
+      "methods": [
+        {
+          "method": "repeated",
+          "steps": 5,
+          "counts": {
+            "add": 0,
+            "subtract": 1,
+            "half": 0,
+            "deductions": 1
+          }
+        },
+        {
+          "method": "doubling",
+          "steps": 10,
+          "counts": {
+            "add": 0,
+            "subtract": 2,
+            "half": 0,
+            "deductions": 1
+          }
+        },
+        {
+          "method": "fibonacci",
+          "steps": 14,
+          "counts": {
+            "add": 1,
+            "subtract": 2,
+            "half": 0,
+            "deductions": 1
+          }
+        },
+        {
+          "method": "quotient",
+          "steps": 11,
+          "counts": {
+            "add": 0,
+            "subtract": 2,
+            "half": 0,
+            "deductions": 1
+          }
+        }
+      ]
+    },
+    {
+      "A": 0,
+      "B": 6,
+      "q": 0,
+      "r": 0,
+      "methods": [
+        {
+          "method": "repeated",
+          "steps": 3,
+          "counts": {
+            "add": 0,
+            "subtract": 0,
+            "half": 0,
+            "deductions": 0
+          }
+        },
+        {
+          "method": "doubling",
+          "steps": 3,
+          "counts": {
+            "add": 0,
+            "subtract": 0,
+            "half": 0,
+            "deductions": 0
+          }
+        },
+        {
+          "method": "fibonacci",
+          "steps": 3,
+          "counts": {
+            "add": 0,
+            "subtract": 0,
+            "half": 0,
+            "deductions": 0
+          }
+        },
+        {
+          "method": "quotient",
+          "steps": 3,
+          "counts": {
+            "add": 0,
+            "subtract": 0,
+            "half": 0,
+            "deductions": 0
+          }
+        }
+      ]
+    },
+    {
+      "A": 47,
+      "B": 7,
+      "q": 6,
+      "r": 5,
+      "methods": [
+        {
+          "method": "repeated",
+          "steps": 15,
+          "counts": {
+            "add": 0,
+            "subtract": 6,
+            "half": 0,
+            "deductions": 6
+          }
+        },
+        {
+          "method": "doubling",
+          "steps": 21,
+          "counts": {
+            "add": 2,
+            "subtract": 5,
+            "half": 2,
+            "deductions": 2
+          }
+        },
+        {
+          "method": "fibonacci",
+          "steps": 42,
+          "counts": {
+            "add": 4,
+            "subtract": 6,
+            "half": 0,
+            "deductions": 2
+          }
+        },
+        {
+          "method": "quotient",
+          "steps": 25,
+          "counts": {
+            "add": 5,
+            "subtract": 5,
+            "half": 2,
+            "deductions": 2
+          }
+        }
+      ]
+    },
+    {
+      "A": 256,
+      "B": 1,
+      "q": 256,
+      "r": 0,
+      "methods": [
+        {
+          "method": "repeated",
+          "steps": 515,
+          "counts": {
+            "add": 0,
+            "subtract": 256,
+            "half": 0,
+            "deductions": 256
+          }
+        },
+        {
+          "method": "doubling",
+          "steps": 50,
+          "counts": {
+            "add": 8,
+            "subtract": 10,
+            "half": 8,
+            "deductions": 1
+          }
+        },
+        {
+          "method": "fibonacci",
+          "steps": 115,
+          "counts": {
+            "add": 12,
+            "subtract": 15,
+            "half": 0,
+            "deductions": 3
+          }
+        },
+        {
+          "method": "quotient",
+          "steps": 59,
+          "counts": {
+            "add": 16,
+            "subtract": 10,
+            "half": 8,
+            "deductions": 1
+          }
+        }
+      ]
+    },
+    {
+      "A": 770,
+      "B": 3,
+      "q": 256,
+      "r": 2,
+      "methods": [
+        {
+          "method": "repeated",
+          "steps": 515,
+          "counts": {
+            "add": 0,
+            "subtract": 256,
+            "half": 0,
+            "deductions": 256
+          }
+        },
+        {
+          "method": "doubling",
+          "steps": 50,
+          "counts": {
+            "add": 8,
+            "subtract": 10,
+            "half": 8,
+            "deductions": 1
+          }
+        },
+        {
+          "method": "fibonacci",
+          "steps": 115,
+          "counts": {
+            "add": 12,
+            "subtract": 15,
+            "half": 0,
+            "deductions": 3
+          }
+        },
+        {
+          "method": "quotient",
+          "steps": 59,
+          "counts": {
+            "add": 16,
+            "subtract": 10,
+            "half": 8,
+            "deductions": 1
+          }
+        }
+      ]
+    },
+    {
+      "A": 1000000,
+      "B": 1000000,
+      "q": 1,
+      "r": 0,
+      "methods": [
+        {
+          "method": "repeated",
+          "steps": 5,
+          "counts": {
+            "add": 0,
+            "subtract": 1,
+            "half": 0,
+            "deductions": 1
+          }
+        },
+        {
+          "method": "doubling",
+          "steps": 10,
+          "counts": {
+            "add": 0,
+            "subtract": 2,
+            "half": 0,
+            "deductions": 1
+          }
+        },
+        {
+          "method": "fibonacci",
+          "steps": 14,
+          "counts": {
+            "add": 1,
+            "subtract": 2,
+            "half": 0,
+            "deductions": 1
+          }
+        },
+        {
+          "method": "quotient",
+          "steps": 11,
+          "counts": {
+            "add": 0,
+            "subtract": 2,
+            "half": 0,
+            "deductions": 1
+          }
+        }
+      ]
+    }
+  ],
+  "traces45by6": {
+    "repeated": [
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "entry",
+        "event": "init",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "loop",
+        "event": "check",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "45 >= 6",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "deduct",
+        "event": "deduct",
+        "a": 39,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 1,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "45 − 6 = 39",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          39
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "loop",
+        "event": "check",
+        "a": 39,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 1,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "39 >= 6",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          39
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "deduct",
+        "event": "deduct",
+        "a": 33,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 2,
+          "half": 0,
+          "deductions": 2
+        },
+        "calculation": "39 − 6 = 33",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          39,
+          33
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "loop",
+        "event": "check",
+        "a": 33,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 2,
+          "half": 0,
+          "deductions": 2
+        },
+        "calculation": "33 >= 6",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          39,
+          33
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "deduct",
+        "event": "deduct",
+        "a": 27,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 3,
+          "half": 0,
+          "deductions": 3
+        },
+        "calculation": "33 − 6 = 27",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          39,
+          33,
+          27
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "loop",
+        "event": "check",
+        "a": 27,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 3,
+          "half": 0,
+          "deductions": 3
+        },
+        "calculation": "27 >= 6",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          39,
+          33,
+          27
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "deduct",
+        "event": "deduct",
+        "a": 21,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 4,
+          "half": 0,
+          "deductions": 4
+        },
+        "calculation": "27 − 6 = 21",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          39,
+          33,
+          27,
+          21
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "loop",
+        "event": "check",
+        "a": 21,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 4,
+          "half": 0,
+          "deductions": 4
+        },
+        "calculation": "21 >= 6",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          39,
+          33,
+          27,
+          21
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "deduct",
+        "event": "deduct",
+        "a": 15,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 5,
+          "half": 0,
+          "deductions": 5
+        },
+        "calculation": "21 − 6 = 15",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          39,
+          33,
+          27,
+          21,
+          15
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "loop",
+        "event": "check",
+        "a": 15,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 5,
+          "half": 0,
+          "deductions": 5
+        },
+        "calculation": "15 >= 6",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          39,
+          33,
+          27,
+          21,
+          15
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "deduct",
+        "event": "deduct",
+        "a": 9,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 6,
+          "half": 0,
+          "deductions": 6
+        },
+        "calculation": "15 − 6 = 9",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          39,
+          33,
+          27,
+          21,
+          15,
+          9
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "loop",
+        "event": "check",
+        "a": 9,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 6,
+          "half": 0,
+          "deductions": 6
+        },
+        "calculation": "9 >= 6",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          39,
+          33,
+          27,
+          21,
+          15,
+          9
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "deduct",
+        "event": "deduct",
+        "a": 3,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 7,
+          "half": 0,
+          "deductions": 7
+        },
+        "calculation": "9 − 6 = 3",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          39,
+          33,
+          27,
+          21,
+          15,
+          9,
+          3
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "loop",
+        "event": "check",
+        "a": 3,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 7,
+          "half": 0,
+          "deductions": 7
+        },
+        "calculation": "3 >= 6",
+        "condition": false,
+        "result": null,
+        "remainders": [
+          45,
+          39,
+          33,
+          27,
+          21,
+          15,
+          9,
+          3
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "repeated",
+        "fn": "repeated",
+        "line": "return",
+        "event": "done",
+        "a": 3,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 7,
+          "half": 0,
+          "deductions": 7
+        },
+        "calculation": "",
+        "condition": null,
+        "result": 3,
+        "remainders": [
+          45,
+          39,
+          33,
+          27,
+          21,
+          15,
+          9,
+          3
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      }
+    ],
+    "doubling": [
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "doubling",
+        "line": "entry",
+        "event": "init",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "doubling",
+        "line": "early",
+        "event": "check",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "45 < 6",
+        "condition": false,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "doubling",
+        "line": "candidate",
+        "event": "call",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "largest_doubling",
+        "line": "entry",
+        "event": "enter",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": {
+          "a": 45,
+          "b": 6
+        },
+        "counts": {
+          "add": 0,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "largest_doubling",
+        "line": "test",
+        "event": "probe",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": {
+          "a": 45,
+          "b": 6
+        },
+        "counts": {
+          "add": 0,
+          "subtract": 1,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "45 − 6 = 39; 39 >= 6",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "largest_doubling",
+        "line": "double",
+        "event": "double",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": {
+          "a": 45,
+          "b": 12
+        },
+        "counts": {
+          "add": 1,
+          "subtract": 1,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "6 + 6 = 12",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "largest_doubling",
+        "line": "test",
+        "event": "probe",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": {
+          "a": 45,
+          "b": 12
+        },
+        "counts": {
+          "add": 1,
+          "subtract": 2,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "45 − 12 = 33; 33 >= 12",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "largest_doubling",
+        "line": "double",
+        "event": "double",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": {
+          "a": 45,
+          "b": 24
+        },
+        "counts": {
+          "add": 2,
+          "subtract": 2,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "12 + 12 = 24",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "largest_doubling",
+        "line": "test",
+        "event": "probe",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": {
+          "a": 45,
+          "b": 24
+        },
+        "counts": {
+          "add": 2,
+          "subtract": 3,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "45 − 24 = 21; 21 >= 24",
+        "condition": false,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "largest_doubling",
+        "line": "return",
+        "event": "helperReturn",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": {
+          "a": 45,
+          "b": 24
+        },
+        "counts": {
+          "add": 2,
+          "subtract": 3,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "24",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "doubling",
+        "line": "candidate",
+        "event": "candidate",
+        "a": 45,
+        "b": 6,
+        "c": 24,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 3,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "doubling",
+        "line": "first",
+        "event": "deduct",
+        "a": 21,
+        "b": 6,
+        "c": 24,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 4,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "45 − 24 = 21",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          21
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "doubling",
+        "line": "loop",
+        "event": "check",
+        "a": 21,
+        "b": 6,
+        "c": 24,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 4,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "24 != 6",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          21
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "doubling",
+        "line": "half",
+        "event": "half",
+        "a": 21,
+        "b": 6,
+        "c": 12,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 4,
+          "half": 1,
+          "deductions": 1
+        },
+        "calculation": "half(24) = 12",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          21
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "doubling",
+        "line": "deductTest",
+        "event": "check",
+        "a": 21,
+        "b": 6,
+        "c": 12,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 4,
+          "half": 1,
+          "deductions": 1
+        },
+        "calculation": "12 <= 21",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          21
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "doubling",
+        "line": "deduct",
+        "event": "deduct",
+        "a": 9,
+        "b": 6,
+        "c": 12,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 5,
+          "half": 1,
+          "deductions": 2
+        },
+        "calculation": "21 − 12 = 9",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          21,
+          9
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "doubling",
+        "line": "loop",
+        "event": "check",
+        "a": 9,
+        "b": 6,
+        "c": 12,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 5,
+          "half": 1,
+          "deductions": 2
+        },
+        "calculation": "12 != 6",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          21,
+          9
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "doubling",
+        "line": "half",
+        "event": "half",
+        "a": 9,
+        "b": 6,
+        "c": 6,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 5,
+          "half": 2,
+          "deductions": 2
+        },
+        "calculation": "half(12) = 6",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          21,
+          9
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "doubling",
+        "line": "deductTest",
+        "event": "check",
+        "a": 9,
+        "b": 6,
+        "c": 6,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 5,
+          "half": 2,
+          "deductions": 2
+        },
+        "calculation": "6 <= 9",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          21,
+          9
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "doubling",
+        "line": "deduct",
+        "event": "deduct",
+        "a": 3,
+        "b": 6,
+        "c": 6,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 6,
+          "half": 2,
+          "deductions": 3
+        },
+        "calculation": "9 − 6 = 3",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          21,
+          9,
+          3
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "doubling",
+        "line": "loop",
+        "event": "check",
+        "a": 3,
+        "b": 6,
+        "c": 6,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 6,
+          "half": 2,
+          "deductions": 3
+        },
+        "calculation": "6 != 6",
+        "condition": false,
+        "result": null,
+        "remainders": [
+          45,
+          21,
+          9,
+          3
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "doubling",
+        "fn": "doubling",
+        "line": "return",
+        "event": "done",
+        "a": 3,
+        "b": 6,
+        "c": 6,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 6,
+          "half": 2,
+          "deductions": 3
+        },
+        "calculation": "",
+        "condition": null,
+        "result": 3,
+        "remainders": [
+          45,
+          21,
+          9,
+          3
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      }
+    ],
+    "fibonacci": [
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "entry",
+        "event": "init",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "early",
+        "event": "check",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "45 < 6",
+        "condition": false,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "seed",
+        "event": "seed",
+        "a": 45,
+        "b": 6,
+        "c": 6,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "save",
+        "event": "save",
+        "a": 45,
+        "b": 6,
+        "c": 6,
+        "n": null,
+        "tmp": 6,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "grow",
+        "event": "grow",
+        "a": 45,
+        "b": 6,
+        "c": 12,
+        "n": null,
+        "tmp": 6,
+        "helper": null,
+        "counts": {
+          "add": 1,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "6 + 6 = 12",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "growPair",
+        "event": "growPair",
+        "a": 45,
+        "b": 6,
+        "c": 12,
+        "n": null,
+        "tmp": 6,
+        "helper": null,
+        "counts": {
+          "add": 1,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "growTest",
+        "event": "check",
+        "a": 45,
+        "b": 6,
+        "c": 12,
+        "n": null,
+        "tmp": 6,
+        "helper": null,
+        "counts": {
+          "add": 1,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "45 >= 12",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "save",
+        "event": "save",
+        "a": 45,
+        "b": 6,
+        "c": 12,
+        "n": null,
+        "tmp": 12,
+        "helper": null,
+        "counts": {
+          "add": 1,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "grow",
+        "event": "grow",
+        "a": 45,
+        "b": 6,
+        "c": 18,
+        "n": null,
+        "tmp": 12,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "6 + 12 = 18",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "growPair",
+        "event": "growPair",
+        "a": 45,
+        "b": 12,
+        "c": 18,
+        "n": null,
+        "tmp": 12,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "growTest",
+        "event": "check",
+        "a": 45,
+        "b": 12,
+        "c": 18,
+        "n": null,
+        "tmp": 12,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "45 >= 18",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "save",
+        "event": "save",
+        "a": 45,
+        "b": 12,
+        "c": 18,
+        "n": null,
+        "tmp": 18,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "grow",
+        "event": "grow",
+        "a": 45,
+        "b": 12,
+        "c": 30,
+        "n": null,
+        "tmp": 18,
+        "helper": null,
+        "counts": {
+          "add": 3,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "12 + 18 = 30",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "growPair",
+        "event": "growPair",
+        "a": 45,
+        "b": 18,
+        "c": 30,
+        "n": null,
+        "tmp": 18,
+        "helper": null,
+        "counts": {
+          "add": 3,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "growTest",
+        "event": "check",
+        "a": 45,
+        "b": 18,
+        "c": 30,
+        "n": null,
+        "tmp": 18,
+        "helper": null,
+        "counts": {
+          "add": 3,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "45 >= 30",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "save",
+        "event": "save",
+        "a": 45,
+        "b": 18,
+        "c": 30,
+        "n": null,
+        "tmp": 30,
+        "helper": null,
+        "counts": {
+          "add": 3,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "grow",
+        "event": "grow",
+        "a": 45,
+        "b": 18,
+        "c": 48,
+        "n": null,
+        "tmp": 30,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "18 + 30 = 48",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "growPair",
+        "event": "growPair",
+        "a": 45,
+        "b": 30,
+        "c": 48,
+        "n": null,
+        "tmp": 30,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "growTest",
+        "event": "check",
+        "a": 45,
+        "b": 30,
+        "c": 48,
+        "n": null,
+        "tmp": 30,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "45 >= 48",
+        "condition": false,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "deductTest",
+        "event": "check",
+        "a": 45,
+        "b": 30,
+        "c": 48,
+        "n": null,
+        "tmp": 30,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "45 >= 30",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "deduct",
+        "event": "deduct",
+        "a": 15,
+        "b": 30,
+        "c": 48,
+        "n": null,
+        "tmp": 30,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 1,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "45 − 30 = 15",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          15
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "recover",
+        "event": "recover",
+        "a": 15,
+        "b": 30,
+        "c": 48,
+        "n": null,
+        "tmp": 18,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 2,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "48 − 30 = 18",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          15
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "shift",
+        "event": "shift",
+        "a": 15,
+        "b": 30,
+        "c": 30,
+        "n": null,
+        "tmp": 18,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 2,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          15
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "backPair",
+        "event": "backPair",
+        "a": 15,
+        "b": 18,
+        "c": 30,
+        "n": null,
+        "tmp": 18,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 2,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          15
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "backTest",
+        "event": "check",
+        "a": 15,
+        "b": 18,
+        "c": 30,
+        "n": null,
+        "tmp": 18,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 2,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "18 < 30",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          15
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "deductTest",
+        "event": "check",
+        "a": 15,
+        "b": 18,
+        "c": 30,
+        "n": null,
+        "tmp": 18,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 2,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "15 >= 18",
+        "condition": false,
+        "result": null,
+        "remainders": [
+          45,
+          15
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "recover",
+        "event": "recover",
+        "a": 15,
+        "b": 18,
+        "c": 30,
+        "n": null,
+        "tmp": 12,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 3,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "30 − 18 = 12",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          15
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "shift",
+        "event": "shift",
+        "a": 15,
+        "b": 18,
+        "c": 18,
+        "n": null,
+        "tmp": 12,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 3,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          15
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "backPair",
+        "event": "backPair",
+        "a": 15,
+        "b": 12,
+        "c": 18,
+        "n": null,
+        "tmp": 12,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 3,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          15
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "backTest",
+        "event": "check",
+        "a": 15,
+        "b": 12,
+        "c": 18,
+        "n": null,
+        "tmp": 12,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 3,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "12 < 18",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          15
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "deductTest",
+        "event": "check",
+        "a": 15,
+        "b": 12,
+        "c": 18,
+        "n": null,
+        "tmp": 12,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 3,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "15 >= 12",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          15
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "deduct",
+        "event": "deduct",
+        "a": 3,
+        "b": 12,
+        "c": 18,
+        "n": null,
+        "tmp": 12,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 4,
+          "half": 0,
+          "deductions": 2
+        },
+        "calculation": "15 − 12 = 3",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          15,
+          3
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "recover",
+        "event": "recover",
+        "a": 3,
+        "b": 12,
+        "c": 18,
+        "n": null,
+        "tmp": 6,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 5,
+          "half": 0,
+          "deductions": 2
+        },
+        "calculation": "18 − 12 = 6",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          15,
+          3
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "shift",
+        "event": "shift",
+        "a": 3,
+        "b": 12,
+        "c": 12,
+        "n": null,
+        "tmp": 6,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 5,
+          "half": 0,
+          "deductions": 2
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          15,
+          3
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "backPair",
+        "event": "backPair",
+        "a": 3,
+        "b": 6,
+        "c": 12,
+        "n": null,
+        "tmp": 6,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 5,
+          "half": 0,
+          "deductions": 2
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          15,
+          3
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "backTest",
+        "event": "check",
+        "a": 3,
+        "b": 6,
+        "c": 12,
+        "n": null,
+        "tmp": 6,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 5,
+          "half": 0,
+          "deductions": 2
+        },
+        "calculation": "6 < 12",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          15,
+          3
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "deductTest",
+        "event": "check",
+        "a": 3,
+        "b": 6,
+        "c": 12,
+        "n": null,
+        "tmp": 6,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 5,
+          "half": 0,
+          "deductions": 2
+        },
+        "calculation": "3 >= 6",
+        "condition": false,
+        "result": null,
+        "remainders": [
+          45,
+          15,
+          3
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "recover",
+        "event": "recover",
+        "a": 3,
+        "b": 6,
+        "c": 12,
+        "n": null,
+        "tmp": 6,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 6,
+          "half": 0,
+          "deductions": 2
+        },
+        "calculation": "12 − 6 = 6",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          15,
+          3
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "shift",
+        "event": "shift",
+        "a": 3,
+        "b": 6,
+        "c": 6,
+        "n": null,
+        "tmp": 6,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 6,
+          "half": 0,
+          "deductions": 2
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          15,
+          3
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "backPair",
+        "event": "backPair",
+        "a": 3,
+        "b": 6,
+        "c": 6,
+        "n": null,
+        "tmp": 6,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 6,
+          "half": 0,
+          "deductions": 2
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          15,
+          3
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "backTest",
+        "event": "check",
+        "a": 3,
+        "b": 6,
+        "c": 6,
+        "n": null,
+        "tmp": 6,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 6,
+          "half": 0,
+          "deductions": 2
+        },
+        "calculation": "6 < 6",
+        "condition": false,
+        "result": null,
+        "remainders": [
+          45,
+          15,
+          3
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "fibonacci",
+        "fn": "fibonacci",
+        "line": "return",
+        "event": "done",
+        "a": 3,
+        "b": 6,
+        "c": 6,
+        "n": null,
+        "tmp": 6,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 6,
+          "half": 0,
+          "deductions": 2
+        },
+        "calculation": "",
+        "condition": null,
+        "result": 3,
+        "remainders": [
+          45,
+          15,
+          3
+        ],
+        "pairs": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            18,
+            30
+          ],
+          [
+            30,
+            48
+          ]
+        ],
+        "invariant": "notStarted",
+        "checkpoint": false
+      }
+    ],
+    "quotient": [
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "entry",
+        "event": "init",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "early",
+        "event": "check",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "45 < 6",
+        "condition": false,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "candidate",
+        "event": "call",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 0,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "largest_doubling",
+        "line": "entry",
+        "event": "enter",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": {
+          "a": 45,
+          "b": 6
+        },
+        "counts": {
+          "add": 0,
+          "subtract": 0,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "largest_doubling",
+        "line": "test",
+        "event": "probe",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": {
+          "a": 45,
+          "b": 6
+        },
+        "counts": {
+          "add": 0,
+          "subtract": 1,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "45 − 6 = 39; 39 >= 6",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "largest_doubling",
+        "line": "double",
+        "event": "double",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": {
+          "a": 45,
+          "b": 12
+        },
+        "counts": {
+          "add": 1,
+          "subtract": 1,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "6 + 6 = 12",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "largest_doubling",
+        "line": "test",
+        "event": "probe",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": {
+          "a": 45,
+          "b": 12
+        },
+        "counts": {
+          "add": 1,
+          "subtract": 2,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "45 − 12 = 33; 33 >= 12",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "largest_doubling",
+        "line": "double",
+        "event": "double",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": {
+          "a": 45,
+          "b": 24
+        },
+        "counts": {
+          "add": 2,
+          "subtract": 2,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "12 + 12 = 24",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "largest_doubling",
+        "line": "test",
+        "event": "probe",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": {
+          "a": 45,
+          "b": 24
+        },
+        "counts": {
+          "add": 2,
+          "subtract": 3,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "45 − 24 = 21; 21 >= 24",
+        "condition": false,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "largest_doubling",
+        "line": "return",
+        "event": "helperReturn",
+        "a": 45,
+        "b": 6,
+        "c": null,
+        "n": null,
+        "tmp": null,
+        "helper": {
+          "a": 45,
+          "b": 24
+        },
+        "counts": {
+          "add": 2,
+          "subtract": 3,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "24",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "candidate",
+        "event": "candidate",
+        "a": 45,
+        "b": 6,
+        "c": 24,
+        "n": null,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 3,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "notStarted",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "seed",
+        "event": "seed",
+        "a": 45,
+        "b": 6,
+        "c": 24,
+        "n": 1,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 3,
+          "half": 0,
+          "deductions": 0
+        },
+        "calculation": "",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45
+        ],
+        "pairs": [],
+        "invariant": "updating",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "first",
+        "event": "deduct",
+        "a": 21,
+        "b": 6,
+        "c": 24,
+        "n": 1,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 4,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "45 − 24 = 21",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          21
+        ],
+        "pairs": [],
+        "invariant": "holds",
+        "checkpoint": true
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "loop",
+        "event": "check",
+        "a": 21,
+        "b": 6,
+        "c": 24,
+        "n": 1,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 4,
+          "half": 0,
+          "deductions": 1
+        },
+        "calculation": "24 != 6",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          21
+        ],
+        "pairs": [],
+        "invariant": "holds",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "half",
+        "event": "half",
+        "a": 21,
+        "b": 6,
+        "c": 12,
+        "n": 1,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 2,
+          "subtract": 4,
+          "half": 1,
+          "deductions": 1
+        },
+        "calculation": "half(24) = 12",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          21
+        ],
+        "pairs": [],
+        "invariant": "updating",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "doubleN",
+        "event": "doubleN",
+        "a": 21,
+        "b": 6,
+        "c": 12,
+        "n": 2,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 3,
+          "subtract": 4,
+          "half": 1,
+          "deductions": 1
+        },
+        "calculation": "1 + 1 = 2",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          21
+        ],
+        "pairs": [],
+        "invariant": "holds",
+        "checkpoint": true
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "deductTest",
+        "event": "check",
+        "a": 21,
+        "b": 6,
+        "c": 12,
+        "n": 2,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 3,
+          "subtract": 4,
+          "half": 1,
+          "deductions": 1
+        },
+        "calculation": "12 <= 21",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          21
+        ],
+        "pairs": [],
+        "invariant": "holds",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "deduct",
+        "event": "deduct",
+        "a": 9,
+        "b": 6,
+        "c": 12,
+        "n": 2,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 3,
+          "subtract": 5,
+          "half": 1,
+          "deductions": 2
+        },
+        "calculation": "21 − 12 = 9",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          21,
+          9
+        ],
+        "pairs": [],
+        "invariant": "updating",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "incrementN",
+        "event": "incrementN",
+        "a": 9,
+        "b": 6,
+        "c": 12,
+        "n": 3,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 5,
+          "half": 1,
+          "deductions": 2
+        },
+        "calculation": "2 + 1 = 3",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          21,
+          9
+        ],
+        "pairs": [],
+        "invariant": "holds",
+        "checkpoint": true
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "loop",
+        "event": "check",
+        "a": 9,
+        "b": 6,
+        "c": 12,
+        "n": 3,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 5,
+          "half": 1,
+          "deductions": 2
+        },
+        "calculation": "12 != 6",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          21,
+          9
+        ],
+        "pairs": [],
+        "invariant": "holds",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "half",
+        "event": "half",
+        "a": 9,
+        "b": 6,
+        "c": 6,
+        "n": 3,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 4,
+          "subtract": 5,
+          "half": 2,
+          "deductions": 2
+        },
+        "calculation": "half(12) = 6",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          21,
+          9
+        ],
+        "pairs": [],
+        "invariant": "updating",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "doubleN",
+        "event": "doubleN",
+        "a": 9,
+        "b": 6,
+        "c": 6,
+        "n": 6,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 5,
+          "subtract": 5,
+          "half": 2,
+          "deductions": 2
+        },
+        "calculation": "3 + 3 = 6",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          21,
+          9
+        ],
+        "pairs": [],
+        "invariant": "holds",
+        "checkpoint": true
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "deductTest",
+        "event": "check",
+        "a": 9,
+        "b": 6,
+        "c": 6,
+        "n": 6,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 5,
+          "subtract": 5,
+          "half": 2,
+          "deductions": 2
+        },
+        "calculation": "6 <= 9",
+        "condition": true,
+        "result": null,
+        "remainders": [
+          45,
+          21,
+          9
+        ],
+        "pairs": [],
+        "invariant": "holds",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "deduct",
+        "event": "deduct",
+        "a": 3,
+        "b": 6,
+        "c": 6,
+        "n": 6,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 5,
+          "subtract": 6,
+          "half": 2,
+          "deductions": 3
+        },
+        "calculation": "9 − 6 = 3",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          21,
+          9,
+          3
+        ],
+        "pairs": [],
+        "invariant": "updating",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "incrementN",
+        "event": "incrementN",
+        "a": 3,
+        "b": 6,
+        "c": 6,
+        "n": 7,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 6,
+          "subtract": 6,
+          "half": 2,
+          "deductions": 3
+        },
+        "calculation": "6 + 1 = 7",
+        "condition": null,
+        "result": null,
+        "remainders": [
+          45,
+          21,
+          9,
+          3
+        ],
+        "pairs": [],
+        "invariant": "holds",
+        "checkpoint": true
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "loop",
+        "event": "check",
+        "a": 3,
+        "b": 6,
+        "c": 6,
+        "n": 7,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 6,
+          "subtract": 6,
+          "half": 2,
+          "deductions": 3
+        },
+        "calculation": "6 != 6",
+        "condition": false,
+        "result": null,
+        "remainders": [
+          45,
+          21,
+          9,
+          3
+        ],
+        "pairs": [],
+        "invariant": "holds",
+        "checkpoint": false
+      },
+      {
+        "A": 45,
+        "B": 6,
+        "method": "quotient",
+        "fn": "quotient",
+        "line": "return",
+        "event": "done",
+        "a": 3,
+        "b": 6,
+        "c": 6,
+        "n": 7,
+        "tmp": null,
+        "helper": null,
+        "counts": {
+          "add": 6,
+          "subtract": 6,
+          "half": 2,
+          "deductions": 3
+        },
+        "calculation": "",
+        "condition": null,
+        "result": 3,
+        "remainders": [
+          45,
+          21,
+          9,
+          3
+        ],
+        "pairs": [],
+        "invariant": "holds",
+        "checkpoint": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+stderr | src/pages/Home.navigation.test.tsx > keeps actual navigation scroll stable for typing, deletion, clear and reset
+⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+ ❯ src/pages/Home.navigation.test.tsx (5 tests | 4 failed) 224ms
+   × keeps actual navigation scroll stable for typing, deletion, clear and reset 123ms
+   × restores query and entry-specific reading positions on back and forward 30ms
+   × keeps book query edits stable and returns to the section source anchor 27ms
+   × keeps book query edits stable and returns to the exercise source anchor 23ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/pages/Home.navigation.test.tsx > keeps actual navigation scroll stable for typing, deletion, clear and reset
+AssertionError: expected +0 to be 1200 // Object.is equality
+
+- Expected
++ Received
+
+- 1200
++ 0
+
+ ❯ type src/pages/Home.navigation.test.tsx:31:123
+     29| const type=(text:string,expectedY:number)=>{
+     30|   const field=screen.getByRole('searchbox');field.focus();
+     31|   for(let i=1;i<=text.length;i++){fireEvent.change(field,{target:{valu…
+       |                                                                                                                           ^
+     32| };
+     33| it('keeps actual navigation scroll stable for typing, deletion, clear …
+ ❯ src/pages/Home.navigation.test.tsx:34:24
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  src/pages/Home.navigation.test.tsx > restores query and entry-specific reading positions on back and forward
+AssertionError: expected +0 to be 1200 // Object.is equality
+
+- Expected
++ Received
+
+- 1200
++ 0
+
+ ❯ type src/pages/Home.navigation.test.tsx:31:123
+     29| const type=(text:string,expectedY:number)=>{
+     30|   const field=screen.getByRole('searchbox');field.focus();
+     31|   for(let i=1;i<=text.length;i++){fireEvent.change(field,{target:{valu…
+       |                                                                                                                           ^
+     32| };
+     33| it('keeps actual navigation scroll stable for typing, deletion, clear …
+ ❯ src/pages/Home.navigation.test.tsx:41:24
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  src/pages/Home.navigation.test.tsx > keeps book query edits stable and returns to the section source anchor
+ FAIL  src/pages/Home.navigation.test.tsx > keeps book query edits stable and returns to the exercise source anchor
+AssertionError: expected +0 to be 120 // Object.is equality
+
+- Expected
++ Received
+
+- 120
++ 0
+
+ ❯ type src/pages/Home.navigation.test.tsx:31:123
+     29| const type=(text:string,expectedY:number)=>{
+     30|   const field=screen.getByRole('searchbox');field.focus();
+     31|   for(let i=1;i<=text.length;i++){fireEvent.change(field,{target:{valu…
+       |                                                                                                                           ^
+     32| };
+     33| it('keeps actual navigation scroll stable for typing, deletion, clear …
+ ❯ src/pages/Home.navigation.test.tsx:50:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  4 failed | 1 passed (5)
+   Start at  22:29:52
+   Duration  2.93s (transform 181ms, setup 229ms, import 373ms, tests 224ms, environment 1.88s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

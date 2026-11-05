@@ -1,0 +1,10 @@
+AssertionError [ERR_ASSERTION]: {"before":{"label":"before","scrollY":4,"top":220,"bottom":264,"focus":true,"activeElement":"INPUT","value":"","url":"/book","language":"zh-CN"},"after":{"label":"type:斐","scrollY":0,"top":224,"bottom":268,"focus":true,"activeElement":"INPUT","value":"斐","url":"/book?q=%E6%96%90","language":"zh-CN"}}
+    at stable (D:\Code\fm2gp-Chinese\scripts\verify-search-scroll.cjs:24:14)
+    at type (D:\Code\fm2gp-Chinese\scripts\verify-search-scroll.cjs:28:301)
+    at async D:\Code\fm2gp-Chinese\scripts\verify-search-scroll.cjs:50:7 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
