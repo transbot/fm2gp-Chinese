@@ -6,7 +6,7 @@ import { translations } from '../i18n/translations';
 import { BookShowcase } from '../components/BookShowcase';
 import { bookLearningPath } from '../data/bookLearningPath';
 import {
-  algorithmCatalog,
+  lessonSearchCatalog,
   Difficulty,
   getAlgorithmById,
   getSourceLabel,
@@ -94,8 +94,8 @@ export function Home() {
             .map((algorithm) => ({
               id: algorithm.id,
               path: algorithm.path,
-              label: t[algorithm.titleKey] ?? algorithm.titleKey,
-              section: getSourceLabel(algorithm, lang),
+              label: algorithm.title[lang],
+              section: algorithm.source.type === 'book' ? algorithm.sections.join(', ') : getSourceLabel(algorithm, lang),
               difficulty: algorithm.difficulty,
               summary: algorithm.summary[lang],
             }));
@@ -114,7 +114,7 @@ export function Home() {
           };
         })
         .filter((topic) => topic.algorithms.length > 0),
-    [filteredAlgorithms, lang, t, topicFilter]
+    [filteredAlgorithms, lang, topicFilter]
   );
 
   const recommendedStages = recommendedLearningStages.map((stage) => ({
@@ -343,16 +343,16 @@ export function Home() {
           </div>
           <div className="mt-3 text-xs text-gray-500">
             {lang === 'zh'
-              ? `找到 ${filteredAlgorithms.length} / ${algorithmCatalog.length} 个算法`
-              : `${filteredAlgorithms.length} of ${algorithmCatalog.length} algorithms`}
+              ? `找到 ${filteredAlgorithms.length} / ${lessonSearchCatalog.length} 个演示`
+              : `${filteredAlgorithms.length} of ${lessonSearchCatalog.length} demonstrations`}
           </div>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4" data-testid="lesson-results">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2">
             <div>
               <h2 className="text-xl sm:text-2xl font-bold text-gray-800">
-                {lang === 'zh' ? '按主题浏览算法' : 'Browse Algorithms by Topic'}
+                {lang === 'zh' ? '按主题浏览演示' : 'Browse Demonstrations by Topic'}
               </h2>
               <p className="text-sm text-gray-600 mt-1">
                 {lang === 'zh'
@@ -364,7 +364,7 @@ export function Home() {
 
           {topicSections.length === 0 ? (
             <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100 text-sm text-gray-600">
-              {lang === 'zh' ? '没有匹配的算法。' : 'No matching algorithms.'}
+              {lang === 'zh' ? '没有匹配的演示。' : 'No matching demonstrations.'}
             </div>
           ) : (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">

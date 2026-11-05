@@ -10,6 +10,36 @@ const mount = () => render(<MemoryRouter><LanguageProvider><Horner /></LanguageP
 const panel = () => within(screen.getByTestId('polynomial-horner'));
 const seek = (value: string) => fireEvent.change(panel().getByRole('slider'), { target: { value } });
 
+it.each(['[1.00000000000000001,2]', '[1e-400,2]'])('rejects the original fractional coefficient through real inputs: %s', raw => {
+  mount();
+  fireEvent.change(screen.getByLabelText('Coefficients (descending powers)'), { target: { value: raw } });
+  fireEvent.click(screen.getByRole('button', { name: 'Apply input' }));
+  expect(screen.getByRole('alert')).toHaveTextContent('integer');
+  expect(screen.queryByTestId('polynomial-horner')).toBeNull();
+});
+
+it('restores the exact term, exponent, count and highlight on overflow review and autoplay replay', () => {
+  vi.useFakeTimers(); mount();
+  fireEvent.change(screen.getByLabelText('Coefficients (descending powers)'), { target: { value: '[1,0,0,0]' } });
+  fireEvent.change(screen.getByLabelText('x'), { target: { value: '1000000' } });
+  fireEvent.click(screen.getByRole('button', { name: 'Apply input' }));
+  const root = screen.getByTestId('polynomial-direct'), p = within(root);
+  const progress = p.getByRole('slider');
+  fireEvent.change(progress, { target: { value: progress.getAttribute('max') } });
+  const check = () => {
+    expect(p.getByTestId('variables')).toHaveTextContent('term = 1000000000000 · k = 2');
+    expect(p.getByTestId('current-expression')).toHaveTextContent('(1) · x^2');
+    expect(p.getByTestId('counts')).toHaveTextContent('Multiplications: 2 · Additions: 0');
+    expect(root.querySelector('[aria-current="step"]')).toHaveAttribute('data-line', 'multiply');
+  };
+  check(); expect(p.getByRole('alert')).toHaveTextContent('safe-integer');
+  fireEvent.click(p.getByRole('button', { name: 'Step Backward' })); check(); expect(p.queryByRole('alert')).toBeNull();
+  fireEvent.click(p.getByRole('button', { name: 'Step Forward' })); check();
+  fireEvent.click(p.getByRole('button', { name: 'Play' }));
+  for (let i = 0; i < 4; i++) act(() => vi.advanceTimersByTime(1100));
+  check(); expect(p.getByRole('alert')).toHaveTextContent('safe-integer');
+});
+
 it('applies new input during playback and replays only the new immutable trace', () => {
   vi.useFakeTimers(); mount();
   fireEvent.click(panel().getByRole('button', { name: 'Play' }));

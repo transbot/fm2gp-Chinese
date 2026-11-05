@@ -4,6 +4,15 @@ import { polynomialTrace, parsePolynomialInput } from './polynomial';
 const last = <T,>(items: T[]) => items[items.length - 1];
 
 describe('source-order polynomial traces', () => {
+  it.each(['[1.00000000000000001,2]', '[1e-400,2]', '[1e2,2]', '[1.0,2]'])('rejects non-integer source tokens before Number conversion: %s', raw => {
+    expect(() => parsePolynomialInput(raw, '2')).toThrow('format');
+  });
+  it('keeps the successful term exponent when the next direct multiplication overflows', () => {
+    const steps = polynomialTrace([1, 0, 0, 0], 1000000, 'direct');
+    expect(last(steps)).toMatchObject({ event: 'overflow', term: 1000000000000, power: 2, multiplications: 2, additions: 0 });
+    expect(last(steps).failure).toBe('1000000000000 × (1000000) = 1000000000000000000');
+    for (const s of steps.filter(s => s.index === 0)) if (s.term !== null) expect(BigInt(s.term)).toBe(1000000n ** BigInt(s.power));
+  });
   it.each([
     [[2, 3, 4, 5], [2, 7, 18, 41]],
     [[2, 0, 4, 5], [2, 4, 12, 29]],

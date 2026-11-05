@@ -45,7 +45,7 @@ const messages: Record<PolynomialEvent, [string, string]> = {
 const errors: Record<string, [string, string]> = {
   empty: ['请填写系数与 x；留空不是零。空序列请明确输入 []。', 'Enter coefficients and x; blank is not zero. Use [] for an explicitly empty sequence.'],
   integer: ['x 必须是整数。', 'x must be an integer.'],
-  format: ['系数须为整数数组，例如 [2,0,4,5]。', 'Use an integer array, such as [2,0,4,5].'],
+  format: ['系数须为十进制整数数组，例如 [2,0,4,5]；不接受小数或科学记数法。', 'Use decimal integer coefficients, such as [2,0,4,5]; fractions and scientific notation are not accepted.'],
   capacity: ['最多支持 33 个系数，以便完整回放。', 'At most 33 coefficients are supported for complete replay.'],
   range: ['系数与 x 须为绝对值不超过 1,000,000 的整数。', 'Coefficients and x must be integers with absolute value at most 1,000,000.'],
 };

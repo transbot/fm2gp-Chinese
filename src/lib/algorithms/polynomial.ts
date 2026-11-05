@@ -17,12 +17,16 @@ export interface PolynomialStep {
 export function parsePolynomialInput(raw: string, xRaw: string) {
   if (!raw.trim() || !xRaw.trim()) throw Error('empty');
   if (!/^-?\d+$/.test(xRaw.trim())) throw Error('integer');
-  let coefficients: unknown;
-  try { coefficients = JSON.parse(raw); } catch { throw Error('format'); }
-  if (!Array.isArray(coefficients) || coefficients.some(c => typeof c !== 'number' || !Number.isInteger(c))) throw Error('format');
+  // Validate original tokens before any Number conversion can round or underflow.
+  const array = raw.trim().match(/^\[([\s\S]*)\]$/);
+  if (!array) throw Error('format');
+  const tokens = array[1].trim() ? array[1].split(',').map(token => token.trim()) : [];
+  if (tokens.length > 33) throw Error('capacity');
+  if (tokens.some(token => !/^-?\d+$/.test(token))) throw Error('format');
+  const coefficients = tokens.map(Number);
   const x = Number(xRaw);
   validate(coefficients, x);
-  return { coefficients: coefficients as number[], x };
+  return { coefficients, x };
 }
 
 function validate(a: number[], x: number) {
@@ -50,6 +54,7 @@ export function polynomialTrace(a: number[], x: number, mode: PolynomialMode): P
       return false;
     }
     state[target] = Number(value);
+    if (target === 'term' && op === '*') state.power++;
     if (op === '*') state.multiplications++; else state.additions++;
     if (mode === 'horner' && op === '+') state.completed.push(state.sum!);
     emit(op === '*' ? 'multiply' : mode === 'direct' ? 'collect' : 'add', line, `${calculation} = ${value}`);
@@ -68,7 +73,6 @@ export function polynomialTrace(a: number[], x: number, mode: PolynomialMode): P
     for (let i = 0; i < a.length; i++) {
       state.index = i; state.power = 0; state.term = a[i]; emit('term', 'term');
       for (let k = 0; k < a.length - 1 - i; k++) {
-        state.power = k + 1;
         if (!operation(state.term!, x, '*', 'term')) return steps;
       }
       if (i === 0) { state.sum = state.term; emit('seed', 'seed'); }

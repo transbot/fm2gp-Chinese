@@ -1,0 +1,150 @@
+[
+  {
+    "baseUrl": "http://127.0.0.1:4176",
+    "browser": "156.0.4314.58",
+    "width": 1440,
+    "lang": "zh",
+    "queries": [
+      "霍纳",
+      "Horner",
+      "8.1",
+      "矩阵与可达性",
+      "Matrices and reachability",
+      "运算与代数结构",
+      "Operations and algebraic structures",
+      "迭代器与区间",
+      "Iterators and ranges",
+      "同一个幂算法",
+      "One power algorithm",
+      "Horner's rule",
+      "矩阵可达性",
+      "generic power"
+    ],
+    "homePathsUnique": true,
+    "rejectedOriginalTokens": [
+      "[1.00000000000000001,2]",
+      "[1e-400,2]"
+    ],
+    "overflow": {
+      "term": 1000000000000,
+      "power": 2,
+      "multiplications": 2,
+      "review": "pass",
+      "autoplayReplay": "pass",
+      "languageSwitch": "pass"
+    },
+    "navigation": "home entry, refresh, chapter source return and back passed",
+    "errors": []
+  },
+  {
+    "baseUrl": "http://127.0.0.1:4176",
+    "browser": "156.0.4314.58",
+    "width": 1440,
+    "lang": "en",
+    "queries": [
+      "霍纳",
+      "Horner",
+      "8.1",
+      "矩阵与可达性",
+      "Matrices and reachability",
+      "运算与代数结构",
+      "Operations and algebraic structures",
+      "迭代器与区间",
+      "Iterators and ranges",
+      "同一个幂算法",
+      "One power algorithm",
+      "Horner's rule",
+      "矩阵可达性",
+      "generic power"
+    ],
+    "homePathsUnique": true,
+    "rejectedOriginalTokens": [
+      "[1.00000000000000001,2]",
+      "[1e-400,2]"
+    ],
+    "overflow": {
+      "term": 1000000000000,
+      "power": 2,
+      "multiplications": 2,
+      "review": "pass",
+      "autoplayReplay": "pass",
+      "languageSwitch": "pass"
+    },
+    "navigation": "home entry, refresh, chapter source return and back passed",
+    "errors": []
+  },
+  {
+    "baseUrl": "http://127.0.0.1:4176",
+    "browser": "156.0.4314.58",
+    "width": 390,
+    "lang": "zh",
+    "queries": [
+      "霍纳",
+      "Horner",
+      "8.1",
+      "矩阵与可达性",
+      "Matrices and reachability",
+      "运算与代数结构",
+      "Operations and algebraic structures",
+      "迭代器与区间",
+      "Iterators and ranges",
+      "同一个幂算法",
+      "One power algorithm",
+      "Horner's rule",
+      "矩阵可达性",
+      "generic power"
+    ],
+    "homePathsUnique": true,
+    "rejectedOriginalTokens": [
+      "[1.00000000000000001,2]",
+      "[1e-400,2]"
+    ],
+    "overflow": {
+      "term": 1000000000000,
+      "power": 2,
+      "multiplications": 2,
+      "review": "pass",
+      "autoplayReplay": "pass",
+      "languageSwitch": "pass"
+    },
+    "navigation": "home entry, refresh, chapter source return and back passed",
+    "errors": []
+  },
+  {
+    "baseUrl": "http://127.0.0.1:4176",
+    "browser": "156.0.4314.58",
+    "width": 390,
+    "lang": "en",
+    "queries": [
+      "霍纳",
+      "Horner",
+      "8.1",
+      "矩阵与可达性",
+      "Matrices and reachability",
+      "运算与代数结构",
+      "Operations and algebraic structures",
+      "迭代器与区间",
+      "Iterators and ranges",
+      "同一个幂算法",
+      "One power algorithm",
+      "Horner's rule",
+      "矩阵可达性",
+      "generic power"
+    ],
+    "homePathsUnique": true,
+    "rejectedOriginalTokens": [
+      "[1.00000000000000001,2]",
+      "[1e-400,2]"
+    ],
+    "overflow": {
+      "term": 1000000000000,
+      "power": 2,
+      "multiplications": 2,
+      "review": "pass",
+      "autoplayReplay": "pass",
+      "languageSwitch": "pass"
+    },
+    "navigation": "home entry, refresh, chapter source return and back passed",
+    "errors": []
+  }
+]

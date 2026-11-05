@@ -1,3 +1,4 @@
+import { conceptLessons, normalizeLessonSearch } from './conceptLessons';
 import { translations } from '../i18n/translations';
 
 export type Language = 'en' | 'zh';
@@ -60,23 +61,6 @@ export interface AlgorithmSearchOptions {
   sourceType?: SourceType | 'all';
   difficulty?: Difficulty | 'all';
   topicId?: TopicId | 'all';
-}
-
-function getSearchQueryVariants(query: string, lang: Language): string[] {
-  if (!query) {
-    return [''];
-  }
-
-  if (lang !== 'zh') {
-    return [query];
-  }
-
-  return Array.from(new Set([
-    query,
-    query.replace(/质数/g, '素数'),
-    query.replace(/二叉/g, '二分'),
-    query.replace(/素数/g, '质数'),
-  ]));
 }
 
 export const topicCatalog: TopicCatalogItem[] = [
@@ -801,7 +785,47 @@ export const algorithmCatalog: AlgorithmCatalogItem[] = algorithmCatalogSeed.map
   learningNote: item.source.type === 'extra' ? extensionLearningNote : undefined,
 }));
 
-export function getSourceLabel(item: AlgorithmCatalogItem, lang: Language): string {
+export interface LessonSearchItem extends Omit<AlgorithmCatalogItem, 'titleKey'> {
+  title: LocalizedText;
+  sections: string[];
+  aliases: string[];
+}
+
+function sourceSections(source: AlgorithmSource): string[] {
+  if (!source.section) return [];
+  const range = source.section.match(/^(\d+)\.(\d+)-(\d+)\.(\d+)$/);
+  if (!range || range[1] !== range[3]) return [source.section];
+  return Array.from({ length: Number(range[4]) - Number(range[2]) + 1 }, (_, i) => `${range[1]}.${Number(range[2]) + i}`);
+}
+
+export const lessonSearchCatalog: LessonSearchItem[] = (() => {
+  const byPath = new Map<string, LessonSearchItem>();
+  for (const { titleKey, ...algorithm } of algorithmCatalog) {
+    byPath.set(algorithm.path, {
+      ...algorithm,
+      title: { en: translations.en[titleKey], zh: translations.zh[titleKey] },
+      sections: sourceSections(algorithm.source),
+      aliases: [titleKey],
+    });
+  }
+  conceptLessons.forEach((lesson, i) => {
+    const existing = byPath.get(lesson.path);
+    if (existing) {
+      existing.sections = [...new Set([...existing.sections, ...lesson.sections])].sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+      existing.aliases.push(lesson.id, lesson.title.en, lesson.title.zh, lesson.summary.en, lesson.summary.zh, ...lesson.aliases);
+    } else {
+      byPath.set(lesson.path, {
+        id: lesson.id, path: lesson.path, title: lesson.title, summary: lesson.summary,
+        coreConcept: lesson.summary, sections: [...lesson.sections], aliases: [...lesson.aliases],
+        topicId: lesson.topicId, difficulty: lesson.difficulty, order: 1000 + i,
+        source: { type: 'book', section: lesson.sections.join(', ') },
+      });
+    }
+  });
+  return [...byPath.values()];
+})();
+
+export function getSourceLabel(item: Pick<AlgorithmCatalogItem, 'source'>, lang: Language): string {
   if (item.source.type === 'extra') {
     return lang === 'zh' ? '扩展' : 'Extra';
   }
@@ -876,7 +900,7 @@ export function getAlgorithmNavigation(id: string): AlgorithmNavigationInfo | un
   };
 }
 
-export function searchAlgorithms(options: AlgorithmSearchOptions): AlgorithmCatalogItem[] {
+export function searchAlgorithms(options: AlgorithmSearchOptions): LessonSearchItem[] {
   const {
     query = '',
     lang,
@@ -884,11 +908,10 @@ export function searchAlgorithms(options: AlgorithmSearchOptions): AlgorithmCata
     difficulty = 'all',
     topicId = 'all',
   } = options;
-  const normalizedQuery = query.trim().toLowerCase();
-  const normalizedQueryVariants = getSearchQueryVariants(normalizedQuery, lang);
+  const normalizedQuery = normalizeLessonSearch(query);
   const topicOrder = new Map(topicCatalog.map((topic) => [topic.id, topic.order]));
 
-  return algorithmCatalog
+  return lessonSearchCatalog
     .filter((item) => sourceType === 'all' || item.source.type === sourceType)
     .filter((item) => difficulty === 'all' || item.difficulty === difficulty)
     .filter((item) => topicId === 'all' || item.topicId === topicId)
@@ -901,9 +924,10 @@ export function searchAlgorithms(options: AlgorithmSearchOptions): AlgorithmCata
         item.id,
         item.source.section ?? "",
         item.path,
-        item.titleKey,
-        translations.en[item.titleKey] ?? '',
-        translations.zh[item.titleKey] ?? '',
+        item.title.en,
+        item.title.zh,
+        ...item.sections,
+        ...item.aliases,
         item.summary.en,
         item.summary.zh,
         item.coreConcept.en,
@@ -916,7 +940,7 @@ export function searchAlgorithms(options: AlgorithmSearchOptions): AlgorithmCata
         .join(' ')
         .toLowerCase();
 
-      return normalizedQueryVariants.some((queryVariant) => searchableText.includes(queryVariant));
+      return normalizeLessonSearch(searchableText).includes(normalizedQuery);
     })
     .sort((a, b) => {
       const topicDiff = (topicOrder.get(a.topicId) ?? 0) - (topicOrder.get(b.topicId) ?? 0);
