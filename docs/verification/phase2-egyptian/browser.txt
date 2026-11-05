@@ -1,0 +1,1 @@
+PASS: Egyptian production preview, both languages at 1440/390.

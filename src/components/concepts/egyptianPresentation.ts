@@ -1,0 +1,63 @@
+import { TraceLine } from '../common/TraceCode';
+import { MultiplyEvent, MultiplyStep } from '../../lib/algorithms/egyptianTrace';
+export const egyptianCode: Record<MultiplyStep['fn'], TraceLine[]> = {
+  wrapper: [
+    { id: 'entry', text: 'input(n, a);' },
+    { id: 'zero', text: 'if (n == 0) return 0;' },
+    { id: 'normalize', text: 'if (n < 0) { n = -n; a = -a; }' },
+    { id: 'call', text: 'result = selected_algorithm(n, a);' },
+    { id: 'done', text: 'return result;' },
+  ],
+  multiply0: [
+    { id: 'entry', text: 'int multiply0(int n, int a) {' },
+    { id: 'base', text: '    if (n == 1) return a;' },
+    { id: 'recurse', text: '    return multiply0(n - 1, a) + a;' },
+    { id: 'end', text: '}' },
+  ],
+  multiply1: [
+    { id: 'entry', text: 'int multiply1(int n, int a) {' },
+    { id: 'base', text: '    if (n == 1) return a;' },
+    { id: 'recurse', text: '    int result = multiply1(half(n), a + a);' },
+    { id: 'odd', text: '    if (odd(n)) result = result + a;' },
+    { id: 'return', text: '    return result;' },
+    { id: 'end', text: '}' },
+  ],
+  multiply4: [
+    { id: 'entry', text: 'int multiply4(int n, int a) {' },
+    { id: 'even', text: '    while (!odd(n)) {' },
+    { id: 'double', text: '        a = a + a;' },
+    { id: 'half', text: '        n = half(n);' },
+    { id: 'close', text: '    }' },
+    { id: 'base', text: '    if (n == 1) return a;' },
+    { id: 'accumulate', text: '    return mult_acc4(a, half(n - 1), a + a);' },
+    { id: 'end', text: '}' },
+  ],
+  mult_acc4: [
+    { id: 'entry', text: 'int mult_acc4(int r, int n, int a) {' },
+    { id: 'loop', text: '    while (true) {' },
+    { id: 'odd', text: '        if (odd(n)) {' },
+    { id: 'add', text: '            r = r + a;' },
+    { id: 'base', text: '            if (n == 1) return r;' },
+    { id: 'closeIf', text: '        }' },
+    { id: 'half', text: '        n = half(n);' },
+    { id: 'double', text: '        a = a + a;' },
+    { id: 'close', text: '    }' },
+    { id: 'end', text: '}' },
+  ],
+};
+export const egyptianMessages: Record<MultiplyEvent, [string, string]> = {
+  init: ['输入包装初始化：尚未进入书中算法。', 'Initialize the input wrapper; no book algorithm frame yet.'],
+  normalize: ['入口准备：负 n 转为正重复次数，同时翻转 a 的符号；正 n 保持不变。不交换两个参数。', 'Prepare input: a negative n becomes a positive repetition count and flips the sign of a; positive n is unchanged. Never swap the parameters.'],
+  zero: ['n 为零，包装直接返回零，不进入书中要求 n ≥ 1 的算法。', 'For n = 0 the wrapper returns zero without entering a book algorithm, which requires n ≥ 1.'],
+  enter: ['进入算法函数，新活动帧已入栈。', 'Enter the algorithm function; its active frame has been pushed.'],
+  check: ['检查当前条件；不增加数据加法次数。', 'Check the current condition; no data addition is counted.'],
+  call: ['准备递归调用；调用者保留在栈中等待结果。', 'Prepare the recursive call; the caller stays on the stack awaiting its result.'],
+  argument: ['计算调用参数中的 a＋a，计一次加法；调用者的 a 保持不变，下一步进入新调用。half 只作为当前语句的辅助操作。', 'Evaluate a + a in the call arguments, counting one addition. The caller’s a is unchanged; next enter the new call. half is an operation within this statement.'],
+  double: ['执行 a＝a＋a，倍增计一次数据加法。', 'Execute a = a + a; doubling counts as one data addition.'],
+  half: ['执行 n＝half(n)，只改变重复次数，不计数据加法。', 'Execute n = half(n); change the repetition count without a data addition.'],
+  add: ['执行当前语句的数据加法；变量和累计次数同步更新。', 'Execute the data addition in the current statement; update the variable and count together.'],
+  returned: ['调用者已恢复到自己的 n、a，并收到子调用的返回值。', 'The caller resumes with its own n and a and receives the child’s return value.'],
+  return: ['当前函数准备返回这个值；其帧仍在栈中。', 'The current function is returning this value; its frame is still on the stack.'],
+  exit: ['当前函数已退出，活动帧同步出栈；返回值交给调用者。', 'The function has exited and its active frame has been popped; pass the value to its caller.'],
+  done: ['包装收到最终结果，算法调用栈已清空。', 'The wrapper has the final result; the algorithm call stack is empty.'],
+};

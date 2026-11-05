@@ -683,7 +683,7 @@ const algorithmCatalogSeed: AlgorithmCatalogSeed[] = [
     topicId: 'applications-graphs',
     order: 10,
     difficulty: 'beginner',
-    source: { type: 'book', section: '2.1' },
+    source: { type: 'book', section: '2.1-2.2' },
     summary: {
       en: 'Replace repeated addition with doubling and selection.',
       zh: '用倍增和选择替代重复加法。',

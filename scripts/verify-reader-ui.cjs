@@ -6,7 +6,7 @@ const baseUrl = process.env.READER_BASE_URL || 'http://127.0.0.1:5174';
 const path = require('node:path');
 const out=path.resolve(process.env.READER_OUTPUT_DIR || 'docs/verification/phase1');fs.mkdirSync(out,{recursive:true});
 const catalog=fs.readFileSync('src/data/algorithmCatalog.ts','utf8');
-const routes=['/','/book','/book/6',...new Set([...catalog.matchAll(/path: '(\/[^']+)'/g)].map(m=>m[1])),'/concepts/algebra','/concepts/matrices','/concepts/iterators'];
+const routes=['/','/book','/book/6','/horner',...new Set([...catalog.matchAll(/path: '(\/[^']+)'/g)].map(m=>m[1])),'/concepts/algebra','/concepts/matrices','/concepts/iterators'];
 let activeBrowser;
 (async()=>{
  const browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});

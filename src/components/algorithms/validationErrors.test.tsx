@@ -399,32 +399,26 @@ describe('number theory validation errors', () => {
 });
 
 describe('legacy algorithm validation errors', () => {
-  it('shows a required-input error on Egyptian multiplication', () => {
+  it('distinguishes missing repetition count from zero on Egyptian multiplication', () => {
     renderAlgorithm(<Calculator />);
-
-    fireEvent.click(screen.getByRole('button', { name: /^Calculate$/i }));
-
-    expect(screen.getByRole('alert')).toHaveTextContent('Both numbers are required');
+    fireEvent.change(screen.getByRole('textbox', { name: 'n: repetition count' }), { target: { value: '' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Apply input' }));
+    expect(screen.getByRole('alert')).toHaveTextContent('Both n and a are required');
   });
 
-  it('labels Egyptian multiplication inputs for assistive technology', () => {
+  it('labels Egyptian multiplication parameter roles for assistive technology', () => {
     renderAlgorithm(<Calculator />);
-
-    expect(screen.getByRole('spinbutton', { name: /First Number/i })).toBeInTheDocument();
-    expect(screen.getByRole('spinbutton', { name: /Second Number/i })).toBeInTheDocument();
+    expect(screen.getByRole('textbox', { name: 'n: repetition count' })).toBeInTheDocument();
+    expect(screen.getByRole('textbox', { name: 'a: value to add' })).toBeInTheDocument();
   });
 
   it('scopes Egyptian multiplication step table overflow to a labeled region', () => {
     renderAlgorithm(<Calculator />);
-
-    const [firstInput, secondInput] = screen.getAllByRole('spinbutton');
-    fireEvent.change(firstInput, { target: { value: '12' } });
-    fireEvent.change(secondInput, { target: { value: '5' } });
-    fireEvent.click(screen.getByRole('button', { name: /^Calculate$/i }));
-
-    expect(
-      screen.getByRole('region', { name: 'Egyptian multiplication steps' })
-    ).toBeInTheDocument();
+    fireEvent.change(screen.getByRole('textbox', { name: 'n: repetition count' }), { target: { value: '12' } });
+    fireEvent.change(screen.getByRole('textbox', { name: 'a: value to add' }), { target: { value: '5' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Apply input' }));
+    fireEvent.click(screen.getByText('View doubling table: split the repetition count into powers of two'));
+    expect(screen.getByRole('region', { name: 'Egyptian multiplication steps' })).toBeInTheDocument();
   });
 
   it('shows a required-input error on Euclidean GCM', () => {

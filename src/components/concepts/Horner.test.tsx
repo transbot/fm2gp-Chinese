@@ -33,7 +33,7 @@ it('applies new input during playback and replays only the new immutable trace',
 });
 
 it('switches language at a multiplication checkpoint without changing variables, count or highlighted code', () => {
-  mount(); seek('3');
+  vi.useFakeTimers(); mount(); seek('3');
   const root = screen.getByTestId('polynomial-horner');
   const variables = panel().getByTestId('variables').textContent;
   const activeLine = root.querySelector('[aria-current="step"]')?.getAttribute('data-line');
@@ -46,7 +46,13 @@ it('switches language at a multiplication checkpoint without changing variables,
   expect(panel().getByTestId('counts')).toHaveTextContent('乘法: 1 · 加法: 0');
   seek('2'); expect(panel().getByTestId('explanation')).toHaveTextContent('移到下一个系数');
   seek('4'); expect(panel().getByTestId('explanation')).toHaveTextContent('加上当前系数');
+  fireEvent.click(panel().getByRole('button', { name: '播放' }));
+  act(() => vi.advanceTimersByTime(1100));
+  fireEvent.click(panel().getByRole('button', { name: '暂停' }));
+  expect(panel().getByTestId('explanation')).toHaveTextContent('移到下一个系数');
   fireEvent.click(screen.getByRole('button', { name: 'English' }));
+  expect(panel().getByTestId('explanation')).toHaveTextContent('Move to the next coefficient');
+  seek('4');
   expect(panel().getByTestId('explanation')).toHaveTextContent('Add the current coefficient');
 });
 

@@ -1,0 +1,37 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+ ❯ src/lib/algorithms/egyptianTrace.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/lib/algorithms/egyptianTrace.test.ts [ src/lib/algorithms/egyptianTrace.test.ts ]
+Error: Failed to resolve import "./egyptianTrace" from "src/lib/algorithms/egyptianTrace.test.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: D:/Code/fm2gp-Chinese/src/lib/algorithms/egyptianTrace.test.ts:2:50
+  1  |  import { expect, it } from "vitest";
+  2  |  import { egyptianTrace, parseEgyptianInput } from "./egyptianTrace";
+     |                                                     ^
+  3  |  const end = (s) => s[s.length - 1];
+  4  |  const versions = [
+ ❯ TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/node.js:30602:39
+ ❯ TransformPluginContext.error node_modules/vite/dist/node/chunks/node.js:30599:14
+ ❯ normalizeUrl node_modules/vite/dist/node/chunks/node.js:27842:18
+ ❯ node_modules/vite/dist/node/chunks/node.js:27905:30
+ ❯ TransformPluginContext.transform node_modules/vite/dist/node/chunks/node.js:27873:4
+ ❯ EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/node.js:30387:14
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/node.js:24646:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  19:09:27
+   Duration  2.08s (transform 15ms, setup 206ms, import 0ms, tests 0ms, environment 1.65s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

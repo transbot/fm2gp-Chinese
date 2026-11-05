@@ -1,0 +1,86 @@
+[
+  {
+    "baseUrl": "http://127.0.0.1:4174",
+    "width": 1440,
+    "lang": "zh",
+    "passed": [
+      "chapter 2.2 entry",
+      "refresh and back/forward",
+      "new input pauses and resets all players",
+      "new-input forward/back/replay",
+      "all four count baselines",
+      "1 vs 2 helper frames",
+      "language preserves counts and code",
+      "language replay uses new explanations",
+      "zero/negative wrapper",
+      "capacity error",
+      "keyboard disclosure",
+      "no mixed English copy",
+      "no page numbers or whole-page overflow"
+    ],
+    "errors": []
+  },
+  {
+    "baseUrl": "http://127.0.0.1:4174",
+    "width": 1440,
+    "lang": "en",
+    "passed": [
+      "chapter 2.2 entry",
+      "refresh and back/forward",
+      "new input pauses and resets all players",
+      "new-input forward/back/replay",
+      "all four count baselines",
+      "1 vs 2 helper frames",
+      "language preserves counts and code",
+      "language replay uses new explanations",
+      "zero/negative wrapper",
+      "capacity error",
+      "keyboard disclosure",
+      "no mixed English copy",
+      "no page numbers or whole-page overflow"
+    ],
+    "errors": []
+  },
+  {
+    "baseUrl": "http://127.0.0.1:4174",
+    "width": 390,
+    "lang": "zh",
+    "passed": [
+      "chapter 2.2 entry",
+      "refresh and back/forward",
+      "new input pauses and resets all players",
+      "new-input forward/back/replay",
+      "all four count baselines",
+      "1 vs 2 helper frames",
+      "language preserves counts and code",
+      "language replay uses new explanations",
+      "zero/negative wrapper",
+      "capacity error",
+      "keyboard disclosure",
+      "no mixed English copy",
+      "no page numbers or whole-page overflow"
+    ],
+    "errors": []
+  },
+  {
+    "baseUrl": "http://127.0.0.1:4174",
+    "width": 390,
+    "lang": "en",
+    "passed": [
+      "chapter 2.2 entry",
+      "refresh and back/forward",
+      "new input pauses and resets all players",
+      "new-input forward/back/replay",
+      "all four count baselines",
+      "1 vs 2 helper frames",
+      "language preserves counts and code",
+      "language replay uses new explanations",
+      "zero/negative wrapper",
+      "capacity error",
+      "keyboard disclosure",
+      "no mixed English copy",
+      "no page numbers or whole-page overflow"
+    ],
+    "errors": []
+  }
+]
