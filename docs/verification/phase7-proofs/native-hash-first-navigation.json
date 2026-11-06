@@ -1,0 +1,513 @@
+[
+  {
+    "width": 1440,
+    "lang": "zh",
+    "base": "http://127.0.0.1:4187",
+    "browser": "156.0.4314.58",
+    "entries": [
+      {
+        "id": "section-9-1",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-9-6",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-9-7",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "induction-subset",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "add-two-three",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-first",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-second",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-third",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-base",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-three",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-four",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-five",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "left-zero",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-base",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-hypothesis",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-successor",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-replace",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "addition-associativity",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-base",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-base-reverse",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-hypothesis",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-successor",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-substitute",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-outer",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-inner",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "instances-and-proofs",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "peano-axioms",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-A-1",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-A-2",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-A-3",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-not",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-or",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-and",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-implies",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-iff",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-member",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-nonmember",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-forall",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-exists",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-union",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-intersection",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-builder",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-naturals",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-integers",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-residues",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-rationals",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-reals",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-complex",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "parity",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "even-set",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "quantifier-scope",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sets-implication",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "implication-table",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "integer-implication",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-B-1",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-B-2",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-B-3",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "parity-contradiction",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "induction-sum",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "subset-sums",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      }
+    ],
+    "searches": [],
+    "returns": [
+      {
+        "demo": "/power",
+        "source": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+        "anchorY": 3756,
+        "departure": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 4001,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "pop": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 4001,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "demoDeparture": {
+          "url": "/power?from=%2Fbook%2F9%3Fq%3D%25E5%25BD%2592%25E7%25BA%25B3%26source%3Dproof-reader%26tag%3Dtwo%2Bwords%23assoc-outer",
+          "key": "whvlr0ib",
+          "y": 690,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "okartcjj",
+          "y": 4001,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "stable": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "okartcjj",
+          "y": 4001,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hard": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "rywbul7g",
+          "y": 2622,
+          "open": [
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hardAnchorY": 2622
+      },
+      {
+        "demo": "/concepts/algebra",
+        "source": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+        "anchorY": 3756,
+        "departure": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 4001,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "pop": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 4001,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "demoDeparture": {
+          "url": "/concepts/algebra?from=%2Fbook%2F9%3Fq%3D%25E5%25BD%2592%25E7%25BA%25B3%26source%3Dproof-reader%26tag%3Dtwo%2Bwords%23assoc-outer",
+          "key": "wd8jbvgj",
+          "y": 279,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "e2zw4izv",
+          "y": 4001,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "stable": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "e2zw4izv",
+          "y": 4001,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hard": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "1ijwxqkh",
+          "y": 2622,
+          "open": [
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hardAnchorY": 2622
+      }
+    ],
+    "errors": [],
+    "crossReferences": []
+  }
+]

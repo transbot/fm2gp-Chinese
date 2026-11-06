@@ -1,3 +1,4 @@
+import { ReadingDetail, ReadingLink } from '../book/ReadingTools';
 import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
@@ -19,11 +20,13 @@ export function LearningShell({ title, description, children, wide = false }: {
     {children}
   </main>;
 }
-export function TermHelp({ term, children, href }: {
+export function TermHelp({ term, children, href, id }: {
+    id?: string;
     term: string;
     children: ReactNode;
     href: string;
 }) {
     const { lang } = useLanguage();
+    if (id) return <ReadingDetail id={id} label={term}>{children}<p><ReadingLink to={href}>{lang === 'zh' ? '查看书中说明' : 'Read the book guide'}</ReadingLink></p></ReadingDetail>;
     return <details className="learning-note"><summary className="cursor-pointer font-semibold">{term}</summary><div className="mt-3 space-y-3">{children}<p><Link className="learning-link" to={href}>{lang === 'zh' ? '查看书中说明' : 'Read the book guide'}</Link></p></div></details>;
 }

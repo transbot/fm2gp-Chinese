@@ -45,3 +45,12 @@ it.each(['section','exercise'])('returns from division to its %s 4.6 source',asy
   await screen.findByLabelText('A: original dividend');fireEvent.click(screen.getByRole('link',{name:'Return to source section / exercise'}));
   await waitFor(()=>expect(window.location.hash).toBe(`#${kind}-4-6`));await waitFor(()=>expect(y).toBe(kind==='section'?600:900));expect(window.location.search).toBe('?q=Fibonacci');
 });
+
+it('distinguishes keyless native fragments when restoring history positions',async()=>{
+  window.history.replaceState(null,'','/book/4#section-4-5');mount();
+  await waitFor(()=>expect(y).toBe(450));window.scrollTo(0,581);
+  window.location.hash='section-4-6';
+  await waitFor(()=>expect(y).toBe(600));window.scrollTo(0,733);
+  window.history.back();await waitFor(()=>expect(y).toBe(581));
+  window.history.forward();await waitFor(()=>expect(y).toBe(733));
+});

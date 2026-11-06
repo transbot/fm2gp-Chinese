@@ -26,20 +26,36 @@ export function ReaderNavigation() {
         // restores that entry's actual departure position, not just its anchor.
         const readerReturn = location.state?.readerReturn;
         const returningToSource = readerReturn?.url === location.pathname + location.search + location.hash && typeof readerReturn?.key === 'string';
+        // Native same-document hash entries may have no router key (all appear
+        // as "default"). Do not let an unrelated fragment claim their POP scroll.
+        const url = location.pathname + location.search + location.hash;
+        const popKey = location.key === 'default' ? 'default:' + url : location.key;
         const saved = editingQuery && from
             ? positions.current.get(from.key) ?? window.scrollY
-            : navigationType === 'POP' ? positions.current.get(location.key)
-            : returningToSource ? positions.current.get(readerReturn.key) : undefined;
+            : navigationType === 'POP' ? positions.current.get(popKey)
+            : returningToSource ? (readerReturn.key === 'default' ? positions.current.get('default:' + url) : undefined) ?? positions.current.get(readerReturn.key) : undefined;
         previous.current = location;
-        const record = () => { positions.current.set(location.key, window.scrollY); };
+        const record = () => {
+            positions.current.set(popKey, window.scrollY);
+            // Sources can be linked from an entry which did not yet have a hash.
+            if (popKey !== location.key) positions.current.set(location.key, window.scrollY);
+        };
         const timer = requestAnimationFrame(() => {
             const target = location.hash ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
             // A known history entry restores its reading position, even if it
             // has a hash. A new explicit anchor navigation selects the anchor.
             if (saved !== undefined)
                 window.scrollTo(0, saved);
-            else if (target)
+            else if (target) {
+                // Reveal a nested reading entry before measuring it. Only this
+                // fallback scrolls to the anchor: a saved position wins above.
+                let detail = target.closest<HTMLDetailsElement>('details[data-reader-disclosure]');
+                while (detail) {
+                    detail.open = true;
+                    detail = detail.parentElement?.closest<HTMLDetailsElement>('details[data-reader-disclosure]') ?? null;
+                }
                 target.scrollIntoView();
+            }
             else
                 window.scrollTo(0, 0);
             record();

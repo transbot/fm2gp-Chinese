@@ -552,8 +552,8 @@ export const bookContent = {
         "en": "Organizing mathematical knowledge"
       },
       "guide": {
-        "zh": "区分例子、反例和一般证明，理解公理如何组织理论。结合附录B练习证明方法，为第10章的概念要求建立依据。",
-        "en": "Distinguish examples, counterexamples, and general proofs. Explore how axioms organize theories, using Appendix B before the concept requirements of Chapter 10."
+        "zh": "从定义到归纳证明：9.1辨认实例与反例，9.6读懂五条皮亚诺公理，9.7用加法定义计算并证明左单位元与结合律。",
+        "en": "From definitions to induction: distinguish examples from counterexamples in 9.1, read the five Peano axioms in 9.6, then evaluate a sum and prove left identity and associativity in 9.7."
       },
       "sourcePdfPage": 175,
       "sections": [
@@ -923,8 +923,8 @@ export const bookContent = {
         "en": "Notation"
       },
       "guide": {
-        "zh": "按需查阅量词、集合、蕴含与逆否命题。把符号读成一句话，再回到正在阅读的证明。",
-        "en": "Look up quantifiers, sets, implication, and contraposition. Read a symbolic statement as a sentence before returning to the proof."
+        "zh": "A.1查符号与数集，A.2把公式读成一句话，A.3用真值表和整数例区分蕴含、逆否命题与逆命题。",
+        "en": "Look up notation in A.1, read formulas as sentences in A.2, and compare implications, contrapositives and converses in A.3."
       },
       "sourcePdfPage": 280,
       "sections": [
@@ -961,8 +961,8 @@ export const bookContent = {
         "en": "Common proof techniques"
       },
       "guide": {
-        "zh": "反证法从假设结论不成立出发；归纳法检查起点与递推；鸽巢原理比较对象和容器的数量。少量成功例子不能替代证明。",
-        "en": "Contradiction assumes the conclusion is false; induction checks a base case and an inductive step; the pigeonhole principle compares objects with containers. Examples alone are not a proof."
+        "zh": "B.1用平方的奇偶性练习反证法，B.2用正整数求和练习归纳，B.3用子集和理解鸽巢原理。",
+        "en": "Practice contradiction with parity in B.1, induction with a sum in B.2, and the pigeonhole principle with subset sums in B.3."
       },
       "sourcePdfPage": 285,
       "sections": [

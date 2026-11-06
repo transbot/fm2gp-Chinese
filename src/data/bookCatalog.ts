@@ -1,3 +1,4 @@
+import { readingKeywords } from './readingSections';
 import { algorithmCatalog, searchAlgorithms } from './algorithmCatalog';
 export { conceptLessons } from './conceptLessons';
 import { bookContent } from './bookContent';
@@ -33,7 +34,7 @@ export function searchBook(query: string) {
     return bookCatalog.map(ch => {
         const related = bookResources.filter(r => r.chapter === ch.id).map(r => r.path + ' ' + ('functions' in r ? r.functions?.map(f => f.name).join(' ') : '')).join(' ');
         const matchChapter = !explicitExercise && !explicitSection && `${ch.title.zh}${ch.title.en}${related}`.toLowerCase().replace(/\s/g, '').includes(needle);
-        const sections = ch.sections.filter(s => !explicitExercise && (explicitSection ? s.id.toUpperCase() === identifier : matchChapter || lessonHits.some(lesson => lesson.sections.includes(s.id)) || `${s.id}${s.title.zh}${s.title.en}${sectionAlgorithms(s.id).map(a => a.id + ' ' + a.summary.zh + ' ' + a.summary.en).join(' ')}`.toLowerCase().replace(/\s/g, '').replace('二叉', '二分').includes(needle)));
+        const sections = ch.sections.filter(s => !explicitExercise && (explicitSection ? s.id.toUpperCase() === identifier : matchChapter || readingKeywords[s.id]?.some(term => term.toLowerCase().replace(/\s/g, '').includes(needle)) || lessonHits.some(lesson => lesson.sections.includes(s.id)) || `${s.id}${s.title.zh}${s.title.en}${sectionAlgorithms(s.id).map(a => a.id + ' ' + a.summary.zh + ' ' + a.summary.en).join(' ')}`.toLowerCase().replace(/\s/g, '').replace('二叉', '二分').includes(needle)));
         const exercises = chapterExercises.filter(e => e.id.split('.')[0] === ch.id && !explicitSection && (!q || matchChapter || e.id === (identifier || needle)));
         return { ...ch, sections, exercises };
     }).filter(c => !q || c.sections.length || c.exercises.length || `${c.id}${c.title.zh}${c.title.en}`.toLowerCase().includes(needle));

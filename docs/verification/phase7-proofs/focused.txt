@@ -1,0 +1,8 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+
+ Test Files  2 passed (2)
+      Tests  20 passed (20)
+   Start at  12:28:43
+   Duration  2.73s (transform 208ms, setup 458ms, import 375ms, tests 161ms, environment 3.75s)

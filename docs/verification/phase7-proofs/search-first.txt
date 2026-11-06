@@ -1,0 +1,50 @@
+ExpectError: expect(locator).toHaveValue(expected) failed
+
+Locator:  getByRole('searchbox')
+Expected: "induction"
+Received: "idcon"
+Timeout:  5000ms
+
+Call log:
+  - Expect "to.have.value" with timeout 5000ms
+  - waiting for getByRole('searchbox')
+    - locator resolved to <input value="idco" type="search" class="learning-input w-full mt-2"/>
+    - unexpected value "idco"
+    13 × locator resolved to <input type="search" value="idcon" class="learning-input w-full mt-2"/>
+       - unexpected value "idcon"
+
+    at captureRawStack (C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1103-91-0_26.1103.91.0_x64__3k8sg7r9htsxt\dependencies\node\node_modules\playwright-core\lib\coreBundle.js:9681:17)
+    at callMatcherAsStep (C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1103-91-0_26.1103.91.0_x64__3k8sg7r9htsxt\dependencies\node\node_modules\playwright\lib\matchers\expect.js:13310:57)
+    at Object.toHaveValue (C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1103-91-0_26.1103.91.0_x64__3k8sg7r9htsxt\dependencies\node\node_modules\playwright\lib\matchers\expect.js:13300:23)
+    at D:\Code\fm2gp-Chinese\scripts\verify-proofs-reference.cjs:98:23 {
+  matcherResult: {
+    name: 'toHaveValue',
+    expected: 'induction',
+    message: 'expect(locator).toHaveValue(expected) failed\n' +
+      '\n' +
+      "Locator:  getByRole('searchbox')\n" +
+      'Expected: "induction"\n' +
+      'Received: "idcon"\n' +
+      'Timeout:  5000ms\n' +
+      '\n' +
+      'Call log:\n' +
+      '  - Expect "to.have.value" with timeout 5000ms\n' +
+      "  - waiting for getByRole('searchbox')\n" +
+      '    - locator resolved to <input value="idco" type="search" class="learning-input w-full mt-2"/>\n' +
+      '    - unexpected value "idco"\n' +
+      '    13 × locator resolved to <input type="search" value="idcon" class="learning-input w-full mt-2"/>\n' +
+      '       - unexpected value "idcon"\n',
+    pass: false,
+    actual: 'idcon',
+    log: [
+      '  - Expect "to.have.value" with timeout 5000ms',
+      "  - waiting for getByRole('searchbox')",
+      '    - locator resolved to <input value="idco" type="search" class="learning-input w-full mt-2"/>',
+      '    - unexpected value "idco"',
+      '    13 × locator resolved to <input type="search" value="idcon" class="learning-input w-full mt-2"/>',
+      '       - unexpected value "idcon"'
+    ],
+    timeout: 5000,
+    ariaSnapshot: '- searchbox "Search chapters, sections, exercises, terms, or functions": idcon'
+  }
+}

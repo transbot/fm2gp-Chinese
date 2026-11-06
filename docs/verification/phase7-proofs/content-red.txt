@@ -1,0 +1,299 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+stderr | src/pages/ProofsReference.test.tsx > keeps the two reverse rewrites distinct and scoped to different expressions
+⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+ ❯ src/pages/ProofsReference.test.tsx (2 tests | 2 failed) 140ms
+   × keeps the two reverse rewrites distinct and scoped to different expressions 30ms
+   × separates arbitrary truth assignments from attainable integer examples in both languages 109ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/pages/ProofsReference.test.tsx > keeps the two reverse rewrites distinct and scoped to different expressions
+AssertionError: the given combination of arguments (undefined and string) is invalid for this assertion. You can use an array, a map, an object, a set, a string, or a weakset instead of a string
+ ❯ src/pages/ProofsReference.test.tsx:14:63
+     12| it('keeps the two reverse rewrites distinct and scoped to different ex…
+     13|   book('9');
+     14|   expect(document.getElementById('assoc-outer')?.textContent).toContai…
+       |                                                               ^
+     15|   expect(document.getElementById('assoc-inner')?.textContent).toContai…
+     16| });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  src/pages/ProofsReference.test.tsx > separates arbitrary truth assignments from attainable integer examples in both languages
+TestingLibraryElementError: Unable to find an accessible element with the role "table"
+
+Here are the accessible roles:
+
+  main:
+
+  Name "":
+  <main
+    class="learning-shell max-w-4xl"
+  />
+
+  --------------------------------------------------
+  banner:
+
+  Name "":
+  <header
+    class="flex flex-wrap items-center justify-between gap-3"
+  />
+
+  --------------------------------------------------
+  link:
+
+  Name "Back to Home":
+  <a
+    class="learning-secondary"
+    href="/"
+  />
+
+  Name "Browse chapters":
+  <a
+    class="learning-secondary"
+    href="/book"
+  />
+
+  Name "Back to chapter directory":
+  <a
+    class="learning-link"
+    href="/book"
+  />
+
+  Name "A.1 Notation":
+  <a
+    class="learning-link"
+    href="/book/A#section-A-1"
+  />
+
+  Name "A.2 Examples":
+  <a
+    class="learning-link"
+    href="/book/A#section-A-2"
+  />
+
+  Name "A.3 Implication and contraposition":
+  <a
+    class="learning-link"
+    href="/book/A#section-A-3"
+  />
+
+  --------------------------------------------------
+  button:
+
+  Name "中文":
+  <button
+    class="learning-primary"
+  />
+
+  --------------------------------------------------
+  heading:
+
+  Name "A · Notation":
+  <h1
+    class="learning-title min-w-0"
+  />
+
+  Name "Section A.1 · Notation":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section A.2 · Examples":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section A.3 · Implication and contraposition":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Companion code and reading":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  --------------------------------------------------
+  paragraph:
+
+  Name "":
+  <p
+    class="mt-3 text-gray-600 leading-7"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  --------------------------------------------------
+  navigation:
+
+  Name "":
+  <nav
+    class="learning-card !space-y-0 flex flex-wrap gap-3"
+  />
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <main
+      class="learning-shell max-w-4xl"
+    >
+      <header
+        class="flex flex-wrap items-center justify-between gap-3"
+      >
+        <a
+          class="learning-secondary"
+          href="/"
+        >
+          Back to Home
+        </a>
+        <a
+          class="learning-secondary"
+          href="/book"
+        >
+          Browse chapters
+        </a>
+        <button
+          class="learning-primary"
+        >
+          中文
+        </button>
+      </header>
+      <div>
+        <h1
+          class="learning-title min-w-0"
+        >
+          A · Notation
+        </h1>
+        <p
+          class="mt-3 text-gray-600 leading-7"
+        >
+          Look up quantifiers, sets, implication, and contraposition. Read a symbolic statement as a sentence before returning to the proof.
+        </p>
+      </div>
+      <a
+        class="learning-link"
+        href="/book"
+      >
+        Back to chapter directory
+      </a>
+      <nav
+        class="learning-card !space-y-0 flex flex-wrap gap-3"
+      >
+        <a
+          class="learning-link"
+          href="/book/A#section-A-1"
+        >
+          A.1
+
+          Notation
+        </a>
+        <a
+          class="learning-link"
+          href="/book/A#section-A-2"
+        >
+          A.2
+
+          Examples
+        </a>
+        <a
+          class="learning-link"
+          href="/book/A#section-A-3"
+        >
+          A.3
+
+          Implication and contraposition
+        </a>
+      </nav>
+      <section
+        class="learning-card"
+        id="section-A-1"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          A.1
+           ·
+          Notation
+        </h2>
+        <p>
+          Reading guide: use the chapter overview to connect this section’s definitions, assumptions, and examples.
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-A-2"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          A.2
+           ·
+          Examples
+        </h2>
+        <p>
+          Reading guide: use the chapter overview to connect this section’s definitions, assumptions, and examples.
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-A-3"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          A.3
+           ·
+          Implication and contraposition
+        </h2>
+        <p>
+          Reading guide: use the chapter overview to connect this section’s definitions, assumptions, and examples.
+        </p>
+      </section>
+      <section
+        class="learning-card"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Companion code and reading
+        </h2>
+      </section>
+    </main>
+  </div>
+</body>
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/pages/ProofsReference.test.tsx:19:22
+     17| it('separates arbitrary truth assignments from attainable integer exam…
+     18|   book('A');
+     19|   const table=screen.getByRole('table');
+       |                      ^
+     20|   const rows=within(table).getAllByRole('row').slice(1);
+     21|   expect(rows.map(r=>within(r).getAllByRole('cell').map(c=>c.textConte…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed (2)
+   Start at  12:22:57
+   Duration  4.21s (transform 194ms, setup 407ms, import 619ms, tests 140ms, environment 2.74s)

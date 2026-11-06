@@ -1,0 +1,2746 @@
+[
+  {
+    "width": 1440,
+    "lang": "zh",
+    "base": "http://127.0.0.1:4187",
+    "browser": "156.0.4314.58",
+    "entries": [
+      {
+        "id": "section-9-1",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-9-6",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-9-7",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "induction-subset",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "add-two-three",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-first",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-second",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-third",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-base",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-three",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-four",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-five",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "left-zero",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-base",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-hypothesis",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-successor",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-replace",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "addition-associativity",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-base",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-base-reverse",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-hypothesis",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-successor",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-substitute",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-outer",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-inner",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "instances-and-proofs",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "peano-axioms",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-A-1",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-A-2",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-A-3",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-not",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-or",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-and",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-implies",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-iff",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-member",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-nonmember",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-forall",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-exists",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-union",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-intersection",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-builder",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-naturals",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-integers",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-residues",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-rationals",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-reals",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-complex",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "parity",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "even-set",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "quantifier-scope",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sets-implication",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "implication-table",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "integer-implication",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-B-1",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-B-2",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-B-3",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "parity-contradiction",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "induction-sum",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "subset-sums",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      }
+    ],
+    "searches": [
+      {
+        "q": "第9.2节",
+        "id": "section-9-2"
+      },
+      {
+        "q": "习题9.2",
+        "id": "exercise-9-2"
+      },
+      {
+        "q": "Section A.3",
+        "id": "section-A-3"
+      },
+      {
+        "q": "section a.3",
+        "id": "section-A-3"
+      },
+      {
+        "q": "Section B.2",
+        "id": "section-B-2"
+      },
+      {
+        "q": "section b.2",
+        "id": "section-B-2"
+      }
+    ],
+    "returns": [
+      {
+        "demo": "/power",
+        "source": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+        "anchorY": 3756,
+        "departure": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 4001,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "pop": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 4001,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "demoDeparture": {
+          "url": "/power?from=%2Fbook%2F9%3Fq%3D%25E5%25BD%2592%25E7%25BA%25B3%26source%3Dproof-reader%26tag%3Dtwo%2Bwords%23assoc-outer",
+          "key": "1t8syt4d",
+          "y": 690,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "wq4japug",
+          "y": 4001,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "stable": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "wq4japug",
+          "y": 4001,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hard": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "ujdp24ks",
+          "y": 2622,
+          "open": [
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hardAnchorY": 2622
+      },
+      {
+        "demo": "/concepts/algebra",
+        "source": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+        "anchorY": 3756,
+        "departure": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 4001,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "pop": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 4001,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "demoDeparture": {
+          "url": "/concepts/algebra?from=%2Fbook%2F9%3Fq%3D%25E5%25BD%2592%25E7%25BA%25B3%26source%3Dproof-reader%26tag%3Dtwo%2Bwords%23assoc-outer",
+          "key": "28857tml",
+          "y": 279,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "6lx7ugqp",
+          "y": 4001,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "stable": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "6lx7ugqp",
+          "y": 4001,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hard": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "xlgdjg8t",
+          "y": 2622,
+          "open": [
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hardAnchorY": 2622
+      }
+    ],
+    "errors": [],
+    "crossReferences": [
+      {
+        "from": "/book/9#left-zero",
+        "to": "/book/B#induction-sum",
+        "left": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#left-zero",
+          "key": "default",
+          "y": 2045,
+          "open": [
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "reached": {
+          "url": "/book/B?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#induction-sum",
+          "key": "xvze4r45",
+          "y": 364,
+          "open": [
+            "induction-sum"
+          ]
+        },
+        "returned": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#left-zero",
+          "key": "default",
+          "y": 2045,
+          "open": [
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        }
+      },
+      {
+        "from": "/book/B#induction-sum",
+        "to": "/book/9#addition-associativity",
+        "left": {
+          "url": "/book/B?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#induction-sum",
+          "key": "default",
+          "y": 364,
+          "open": [
+            "induction-sum"
+          ]
+        },
+        "reached": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#addition-associativity",
+          "key": "hmeb1iil",
+          "y": 2587,
+          "open": [
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "returned": {
+          "url": "/book/B?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#induction-sum",
+          "key": "default",
+          "y": 364,
+          "open": [
+            "induction-sum"
+          ]
+        }
+      },
+      {
+        "from": "/book/A#integer-implication",
+        "to": "/book/B#parity-contradiction",
+        "left": {
+          "url": "/book/A?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#integer-implication",
+          "key": "default",
+          "y": 1380,
+          "open": []
+        },
+        "reached": {
+          "url": "/book/B?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#parity-contradiction",
+          "key": "wg2mudky",
+          "y": 367,
+          "open": [
+            "parity-contradiction",
+            "induction-sum"
+          ]
+        },
+        "returned": {
+          "url": "/book/A?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#integer-implication",
+          "key": "default",
+          "y": 1380,
+          "open": []
+        }
+      },
+      {
+        "from": "/book/B#parity-contradiction",
+        "to": "/book/A#integer-implication",
+        "left": {
+          "url": "/book/B?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#parity-contradiction",
+          "key": "default",
+          "y": 367,
+          "open": [
+            "parity-contradiction",
+            "induction-sum"
+          ]
+        },
+        "reached": {
+          "url": "/book/A?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#integer-implication",
+          "key": "blq7jj4v",
+          "y": 1380,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/B?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#parity-contradiction",
+          "key": "default",
+          "y": 367,
+          "open": [
+            "parity-contradiction",
+            "induction-sum"
+          ]
+        }
+      },
+      {
+        "from": "/book/9#induction-subset",
+        "to": "/book/A#notation-forall",
+        "left": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#induction-subset",
+          "key": "default",
+          "y": 1577,
+          "open": [
+            "induction-subset",
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "reached": {
+          "url": "/book/A?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#notation-forall",
+          "key": "2he7qu8a",
+          "y": 625,
+          "open": [
+            "notation-forall"
+          ]
+        },
+        "returned": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#induction-subset",
+          "key": "default",
+          "y": 1577,
+          "open": [
+            "induction-subset",
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "lang": "en",
+    "base": "http://127.0.0.1:4187",
+    "browser": "156.0.4314.58",
+    "entries": [
+      {
+        "id": "section-9-1",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-9-6",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-9-7",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "induction-subset",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "add-two-three",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-first",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-second",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-third",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-base",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-three",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-four",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-five",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "left-zero",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-base",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-hypothesis",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-successor",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-replace",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "addition-associativity",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-base",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-base-reverse",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-hypothesis",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-successor",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-substitute",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-outer",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-inner",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "instances-and-proofs",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "peano-axioms",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-A-1",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-A-2",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-A-3",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-not",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-or",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-and",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-implies",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-iff",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-member",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-nonmember",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-forall",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-exists",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-union",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-intersection",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-builder",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-naturals",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-integers",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-residues",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-rationals",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-reals",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-complex",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "parity",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "even-set",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "quantifier-scope",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sets-implication",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "implication-table",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "integer-implication",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-B-1",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-B-2",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-B-3",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "parity-contradiction",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "induction-sum",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "subset-sums",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      }
+    ],
+    "searches": [
+      {
+        "q": "第9.2节",
+        "id": "section-9-2"
+      },
+      {
+        "q": "习题9.2",
+        "id": "exercise-9-2"
+      },
+      {
+        "q": "Section A.3",
+        "id": "section-A-3"
+      },
+      {
+        "q": "section a.3",
+        "id": "section-A-3"
+      },
+      {
+        "q": "Section B.2",
+        "id": "section-B-2"
+      },
+      {
+        "q": "section b.2",
+        "id": "section-B-2"
+      }
+    ],
+    "returns": [
+      {
+        "demo": "/power",
+        "source": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+        "anchorY": 3908,
+        "departure": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 4237,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "pop": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 4237,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "demoDeparture": {
+          "url": "/power?from=%2Fbook%2F9%3Fq%3Dinduction%26source%3Dproof-reader%26tag%3Dtwo%2Bwords%23assoc-outer",
+          "key": "l98fb3mc",
+          "y": 774,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "ydn6r8c3",
+          "y": 4237,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "stable": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "ydn6r8c3",
+          "y": 4237,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hard": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "q04xjyre",
+          "y": 2746,
+          "open": [
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hardAnchorY": 2746
+      },
+      {
+        "demo": "/concepts/algebra",
+        "source": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+        "anchorY": 3908,
+        "departure": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 4237,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "pop": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 4237,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "demoDeparture": {
+          "url": "/concepts/algebra?from=%2Fbook%2F9%3Fq%3Dinduction%26source%3Dproof-reader%26tag%3Dtwo%2Bwords%23assoc-outer",
+          "key": "gmqqz8e4",
+          "y": 347,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "gi84o4lk",
+          "y": 4237,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "stable": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "gi84o4lk",
+          "y": 4237,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hard": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "3ipyp1yl",
+          "y": 2746,
+          "open": [
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hardAnchorY": 2746
+      }
+    ],
+    "errors": [],
+    "crossReferences": [
+      {
+        "from": "/book/9#left-zero",
+        "to": "/book/B#induction-sum",
+        "left": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#left-zero",
+          "key": "default",
+          "y": 2169,
+          "open": [
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "reached": {
+          "url": "/book/B?q=induction&source=proof-reader&tag=two+words#induction-sum",
+          "key": "96gfs06y",
+          "y": 392,
+          "open": [
+            "induction-sum"
+          ]
+        },
+        "returned": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#left-zero",
+          "key": "default",
+          "y": 2169,
+          "open": [
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        }
+      },
+      {
+        "from": "/book/B#induction-sum",
+        "to": "/book/9#addition-associativity",
+        "left": {
+          "url": "/book/B?q=induction&source=proof-reader&tag=two+words#induction-sum",
+          "key": "default",
+          "y": 392,
+          "open": [
+            "induction-sum"
+          ]
+        },
+        "reached": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#addition-associativity",
+          "key": "737rk9be",
+          "y": 2739,
+          "open": [
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "returned": {
+          "url": "/book/B?q=induction&source=proof-reader&tag=two+words#induction-sum",
+          "key": "default",
+          "y": 392,
+          "open": [
+            "induction-sum"
+          ]
+        }
+      },
+      {
+        "from": "/book/A#integer-implication",
+        "to": "/book/B#parity-contradiction",
+        "left": {
+          "url": "/book/A?q=induction&source=proof-reader&tag=two+words#integer-implication",
+          "key": "default",
+          "y": 1436,
+          "open": []
+        },
+        "reached": {
+          "url": "/book/B?q=induction&source=proof-reader&tag=two+words#parity-contradiction",
+          "key": "y45xwl9e",
+          "y": 395,
+          "open": [
+            "parity-contradiction",
+            "induction-sum"
+          ]
+        },
+        "returned": {
+          "url": "/book/A?q=induction&source=proof-reader&tag=two+words#integer-implication",
+          "key": "default",
+          "y": 1436,
+          "open": []
+        }
+      },
+      {
+        "from": "/book/B#parity-contradiction",
+        "to": "/book/A#integer-implication",
+        "left": {
+          "url": "/book/B?q=induction&source=proof-reader&tag=two+words#parity-contradiction",
+          "key": "default",
+          "y": 395,
+          "open": [
+            "parity-contradiction",
+            "induction-sum"
+          ]
+        },
+        "reached": {
+          "url": "/book/A?q=induction&source=proof-reader&tag=two+words#integer-implication",
+          "key": "n9l3p45c",
+          "y": 1436,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/B?q=induction&source=proof-reader&tag=two+words#parity-contradiction",
+          "key": "default",
+          "y": 395,
+          "open": [
+            "parity-contradiction",
+            "induction-sum"
+          ]
+        }
+      },
+      {
+        "from": "/book/9#induction-subset",
+        "to": "/book/A#notation-forall",
+        "left": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#induction-subset",
+          "key": "default",
+          "y": 1701,
+          "open": [
+            "induction-subset",
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "reached": {
+          "url": "/book/A?q=induction&source=proof-reader&tag=two+words#notation-forall",
+          "key": "ttnx6x5m",
+          "y": 653,
+          "open": [
+            "notation-forall"
+          ]
+        },
+        "returned": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#induction-subset",
+          "key": "default",
+          "y": 1701,
+          "open": [
+            "induction-subset",
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "lang": "zh",
+    "base": "http://127.0.0.1:4187",
+    "browser": "156.0.4314.58",
+    "entries": [
+      {
+        "id": "section-9-1",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-9-6",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-9-7",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "induction-subset",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "add-two-three",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-first",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-second",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-third",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-base",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-three",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-four",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-five",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "left-zero",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-base",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-hypothesis",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-successor",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-replace",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "addition-associativity",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-base",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-base-reverse",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-hypothesis",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-successor",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-substitute",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-outer",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-inner",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "instances-and-proofs",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "peano-axioms",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-A-1",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-A-2",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-A-3",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-not",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-or",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-and",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-implies",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-iff",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-member",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-nonmember",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-forall",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-exists",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-union",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-intersection",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-builder",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-naturals",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-integers",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-residues",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-rationals",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-reals",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-complex",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "parity",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "even-set",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "quantifier-scope",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sets-implication",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "implication-table",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "integer-implication",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-B-1",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-B-2",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-B-3",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "parity-contradiction",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "induction-sum",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "subset-sums",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      }
+    ],
+    "searches": [
+      {
+        "q": "第9.2节",
+        "id": "section-9-2"
+      },
+      {
+        "q": "习题9.2",
+        "id": "exercise-9-2"
+      },
+      {
+        "q": "Section A.3",
+        "id": "section-A-3"
+      },
+      {
+        "q": "section a.3",
+        "id": "section-A-3"
+      },
+      {
+        "q": "Section B.2",
+        "id": "section-B-2"
+      },
+      {
+        "q": "section b.2",
+        "id": "section-B-2"
+      }
+    ],
+    "returns": [
+      {
+        "demo": "/power",
+        "source": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+        "anchorY": 4504,
+        "departure": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 4917,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "pop": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 4917,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "demoDeparture": {
+          "url": "/power?from=%2Fbook%2F9%3Fq%3D%25E5%25BD%2592%25E7%25BA%25B3%26source%3Dproof-reader%26tag%3Dtwo%2Bwords%23assoc-outer",
+          "key": "4u469kgb",
+          "y": 875,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "okhi97c5",
+          "y": 4917,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "stable": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "okhi97c5",
+          "y": 4917,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hard": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "rsrfmivc",
+          "y": 3174,
+          "open": [
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hardAnchorY": 3174
+      },
+      {
+        "demo": "/concepts/algebra",
+        "source": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+        "anchorY": 4504,
+        "departure": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 4917,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "pop": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 4917,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "demoDeparture": {
+          "url": "/concepts/algebra?from=%2Fbook%2F9%3Fq%3D%25E5%25BD%2592%25E7%25BA%25B3%26source%3Dproof-reader%26tag%3Dtwo%2Bwords%23assoc-outer",
+          "key": "isfwlyc9",
+          "y": 419,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "5gumw7kb",
+          "y": 4917,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "stable": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "5gumw7kb",
+          "y": 4917,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hard": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "r05fkxo4",
+          "y": 3174,
+          "open": [
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hardAnchorY": 3174
+      }
+    ],
+    "errors": [],
+    "crossReferences": [
+      {
+        "from": "/book/9#left-zero",
+        "to": "/book/B#induction-sum",
+        "left": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#left-zero",
+          "key": "default",
+          "y": 2541,
+          "open": [
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "reached": {
+          "url": "/book/B?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#induction-sum",
+          "key": "1k30n55b",
+          "y": 500,
+          "open": [
+            "induction-sum"
+          ]
+        },
+        "returned": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#left-zero",
+          "key": "default",
+          "y": 2541,
+          "open": [
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        }
+      },
+      {
+        "from": "/book/B#induction-sum",
+        "to": "/book/9#addition-associativity",
+        "left": {
+          "url": "/book/B?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#induction-sum",
+          "key": "default",
+          "y": 500,
+          "open": [
+            "induction-sum"
+          ]
+        },
+        "reached": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#addition-associativity",
+          "key": "lgued7jc",
+          "y": 3167,
+          "open": [
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "returned": {
+          "url": "/book/B?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#induction-sum",
+          "key": "default",
+          "y": 500,
+          "open": [
+            "induction-sum"
+          ]
+        }
+      },
+      {
+        "from": "/book/A#integer-implication",
+        "to": "/book/B#parity-contradiction",
+        "left": {
+          "url": "/book/A?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#integer-implication",
+          "key": "default",
+          "y": 2134,
+          "open": []
+        },
+        "reached": {
+          "url": "/book/B?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#parity-contradiction",
+          "key": "saya3tpy",
+          "y": 359,
+          "open": [
+            "parity-contradiction",
+            "induction-sum"
+          ]
+        },
+        "returned": {
+          "url": "/book/A?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#integer-implication",
+          "key": "default",
+          "y": 2134,
+          "open": []
+        }
+      },
+      {
+        "from": "/book/B#parity-contradiction",
+        "to": "/book/A#integer-implication",
+        "left": {
+          "url": "/book/B?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#parity-contradiction",
+          "key": "default",
+          "y": 359,
+          "open": [
+            "parity-contradiction",
+            "induction-sum"
+          ]
+        },
+        "reached": {
+          "url": "/book/A?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#integer-implication",
+          "key": "loganuh2",
+          "y": 2134,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/B?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#parity-contradiction",
+          "key": "default",
+          "y": 359,
+          "open": [
+            "parity-contradiction",
+            "induction-sum"
+          ]
+        }
+      },
+      {
+        "from": "/book/9#induction-subset",
+        "to": "/book/A#notation-forall",
+        "left": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#induction-subset",
+          "key": "default",
+          "y": 2025,
+          "open": [
+            "induction-subset",
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "reached": {
+          "url": "/book/A?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#notation-forall",
+          "key": "2qbn8sc7",
+          "y": 937,
+          "open": [
+            "notation-forall"
+          ]
+        },
+        "returned": {
+          "url": "/book/9?q=%E5%BD%92%E7%BA%B3&source=proof-reader&tag=two+words#induction-subset",
+          "key": "default",
+          "y": 2025,
+          "open": [
+            "induction-subset",
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "lang": "en",
+    "base": "http://127.0.0.1:4187",
+    "browser": "156.0.4314.58",
+    "entries": [
+      {
+        "id": "section-9-1",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-9-6",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-9-7",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "induction-subset",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "add-two-three",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-first",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-second",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-third",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-base",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-three",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-four",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sum-five",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "left-zero",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-base",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-hypothesis",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-successor",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "zero-replace",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "addition-associativity",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-base",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-base-reverse",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-hypothesis",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-successor",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-substitute",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-outer",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "assoc-inner",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "instances-and-proofs",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "peano-axioms",
+        "chapter": "9",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-A-1",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-A-2",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-A-3",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-not",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-or",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-and",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-implies",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-iff",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-member",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-nonmember",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-forall",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-exists",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-union",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-intersection",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-builder",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-naturals",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-integers",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-residues",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-rationals",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-reals",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "notation-complex",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "parity",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "even-set",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "quantifier-scope",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "sets-implication",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "implication-table",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "integer-implication",
+        "chapter": "A",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-B-1",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-B-2",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "section-B-3",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "parity-contradiction",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "induction-sum",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      },
+      {
+        "id": "subset-sums",
+        "chapter": "B",
+        "direct": true,
+        "refresh": true
+      }
+    ],
+    "searches": [
+      {
+        "q": "第9.2节",
+        "id": "section-9-2"
+      },
+      {
+        "q": "习题9.2",
+        "id": "exercise-9-2"
+      },
+      {
+        "q": "Section A.3",
+        "id": "section-A-3"
+      },
+      {
+        "q": "section a.3",
+        "id": "section-A-3"
+      },
+      {
+        "q": "Section B.2",
+        "id": "section-B-2"
+      },
+      {
+        "q": "section b.2",
+        "id": "section-B-2"
+      }
+    ],
+    "returns": [
+      {
+        "demo": "/power",
+        "source": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+        "anchorY": 5388,
+        "departure": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 6013,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "pop": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 6013,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "demoDeparture": {
+          "url": "/power?from=%2Fbook%2F9%3Fq%3Dinduction%26source%3Dproof-reader%26tag%3Dtwo%2Bwords%23assoc-outer",
+          "key": "sb6hlsyl",
+          "y": 1099,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "qz2l9k3m",
+          "y": 6013,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "stable": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "qz2l9k3m",
+          "y": 6013,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hard": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "yv2wtdar",
+          "y": 3974,
+          "open": [
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hardAnchorY": 3974
+      },
+      {
+        "demo": "/concepts/algebra",
+        "source": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+        "anchorY": 5388,
+        "departure": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 5969,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "pop": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "default",
+          "y": 5969,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "demoDeparture": {
+          "url": "/concepts/algebra?from=%2Fbook%2F9%3Fq%3Dinduction%26source%3Dproof-reader%26tag%3Dtwo%2Bwords%23assoc-outer",
+          "key": "yfdmafv0",
+          "y": 995,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "m81d07v9",
+          "y": 5969,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "stable": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "m81d07v9",
+          "y": 5969,
+          "open": [
+            "add-two-three",
+            "left-zero",
+            "zero-successor",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hard": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer",
+          "key": "el0arf62",
+          "y": 3974,
+          "open": [
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "hardAnchorY": 3974
+      }
+    ],
+    "errors": [],
+    "crossReferences": [
+      {
+        "from": "/book/9#left-zero",
+        "to": "/book/B#induction-sum",
+        "left": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#left-zero",
+          "key": "default",
+          "y": 3313,
+          "open": [
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "reached": {
+          "url": "/book/B?q=induction&source=proof-reader&tag=two+words#induction-sum",
+          "key": "365krymu",
+          "y": 767,
+          "open": [
+            "induction-sum"
+          ]
+        },
+        "returned": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#left-zero",
+          "key": "default",
+          "y": 3313,
+          "open": [
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        }
+      },
+      {
+        "from": "/book/B#induction-sum",
+        "to": "/book/9#addition-associativity",
+        "left": {
+          "url": "/book/B?q=induction&source=proof-reader&tag=two+words#induction-sum",
+          "key": "default",
+          "y": 767,
+          "open": [
+            "induction-sum"
+          ]
+        },
+        "reached": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#addition-associativity",
+          "key": "s7qpjley",
+          "y": 4023,
+          "open": [
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "returned": {
+          "url": "/book/B?q=induction&source=proof-reader&tag=two+words#induction-sum",
+          "key": "default",
+          "y": 767,
+          "open": [
+            "induction-sum"
+          ]
+        }
+      },
+      {
+        "from": "/book/A#integer-implication",
+        "to": "/book/B#parity-contradiction",
+        "left": {
+          "url": "/book/A?q=induction&source=proof-reader&tag=two+words#integer-implication",
+          "key": "default",
+          "y": 2538,
+          "open": []
+        },
+        "reached": {
+          "url": "/book/B?q=induction&source=proof-reader&tag=two+words#parity-contradiction",
+          "key": "9hlqzqoy",
+          "y": 575,
+          "open": [
+            "parity-contradiction",
+            "induction-sum"
+          ]
+        },
+        "returned": {
+          "url": "/book/A?q=induction&source=proof-reader&tag=two+words#integer-implication",
+          "key": "default",
+          "y": 2538,
+          "open": []
+        }
+      },
+      {
+        "from": "/book/B#parity-contradiction",
+        "to": "/book/A#integer-implication",
+        "left": {
+          "url": "/book/B?q=induction&source=proof-reader&tag=two+words#parity-contradiction",
+          "key": "default",
+          "y": 575,
+          "open": [
+            "parity-contradiction",
+            "induction-sum"
+          ]
+        },
+        "reached": {
+          "url": "/book/A?q=induction&source=proof-reader&tag=two+words#integer-implication",
+          "key": "riiygggr",
+          "y": 2538,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/B?q=induction&source=proof-reader&tag=two+words#parity-contradiction",
+          "key": "default",
+          "y": 575,
+          "open": [
+            "parity-contradiction",
+            "induction-sum"
+          ]
+        }
+      },
+      {
+        "from": "/book/9#induction-subset",
+        "to": "/book/A#notation-forall",
+        "left": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#induction-subset",
+          "key": "default",
+          "y": 2653,
+          "open": [
+            "induction-subset",
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        },
+        "reached": {
+          "url": "/book/A?q=induction&source=proof-reader&tag=two+words#notation-forall",
+          "key": "ynmfwhtj",
+          "y": 1081,
+          "open": [
+            "notation-forall"
+          ]
+        },
+        "returned": {
+          "url": "/book/9?q=induction&source=proof-reader&tag=two+words#induction-subset",
+          "key": "default",
+          "y": 2653,
+          "open": [
+            "induction-subset",
+            "left-zero",
+            "addition-associativity",
+            "assoc-outer"
+          ]
+        }
+      }
+    ]
+  }
+]

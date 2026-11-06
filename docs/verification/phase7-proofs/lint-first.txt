@@ -1,0 +1,19 @@
+
+> vite-react-typescript-starter@0.0.0 lint
+> eslint .
+
+
+D:\Code\fm2gp-Chinese\src\components\book\Chapter9.tsx
+  12:69  error  Irregular whitespace not allowed  no-irregular-whitespace
+  13:99  error  Irregular whitespace not allowed  no-irregular-whitespace
+  19:30  error  Irregular whitespace not allowed  no-irregular-whitespace
+  29:56  error  Irregular whitespace not allowed  no-irregular-whitespace
+  29:93  error  Irregular whitespace not allowed  no-irregular-whitespace
+
+✖ 5 problems (5 errors, 0 warnings)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { recapTopics } from '../data/bookRecap';
-import { lessonSearchCatalog } from '../data/algorithmCatalog';
+import { SourceDemoLink } from '../components/book/SourceDemoLink';
 import { bookCatalog, sectionAnchor } from '../data/bookCatalog';
 const storageKey='fm2gp-recap-open';
 const questionIds=new Set(recapTopics.flatMap(t=>t.questions.map(q=>q.id)));
@@ -17,11 +17,7 @@ export function BookRecap(){
   try{sessionStorage.setItem(storageKey,JSON.stringify(next));}catch{/* Reading still works without storage. */}
   return next;
  });
- const demo=(path:string,topic:string)=>{
-  const lesson=lessonSearchCatalog.find(l=>l.path===path)!;
-  const source=`${location.pathname}${location.search}#${topic}`;
-  return <Link key={path} className="learning-link" to={`${path}?${new URLSearchParams({from:source})}`} state={{readerSource:{key:location.key,url:source}}}>{lesson.title[lang]}</Link>;
- };
+ const demo=(path:string,topic:string)=><SourceDemoLink key={path} path={path} anchor={topic}/>;
  return <>
   <nav aria-label={zh?'全书回顾主题':'Book review topics'} className="learning-card !space-y-0 flex flex-wrap gap-3">{recapTopics.map(t=><Link key={t.id} className="learning-link" to={{pathname:location.pathname,search:location.search,hash:`#${t.id}`}}>{t.title[lang]}</Link>)}</nav>
   <p className="text-sm text-gray-600">{zh?'先尝试回答回顾问题，再展开参考解释；用相关章节和演示验证自己的理解。':'Try answering the review questions first, then open the reference explanations. Use the linked sections and demonstrations to check your understanding.'}</p>

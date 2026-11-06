@@ -33,3 +33,9 @@ it.each(recapTopics.map(t=>[t.id,t.questions[0].id]))('restores %s departure pos
 it('locates a direct hash, restores it on a fresh mount, and tolerates malformed stored disclosures',async()=>{
  sessionStorage.setItem('fm2gp-recap-open','{broken');window.history.replaceState(null,'','/book/14?q=recap#review-iterators');mount();await waitFor(()=>expect(y).toBe(300));cleanup();window.scrollTo(0,0);mount();await waitFor(()=>expect(y).toBe(300));expect(screen.getByRole('heading',{level:1})).toHaveTextContent('Conclusions');
 });
+
+it('restores the six pre-existing disclosure IDs from the phase 6 session key',()=>{
+ const ids=['power-conditions','power-matrices','gcd-loop','gcd-useful-return','iterators-forward','iterators-buffer'];
+ sessionStorage.setItem('fm2gp-recap-open',JSON.stringify(ids));mount();
+ for(const id of ids)expect(screen.getByTestId(id)).toHaveAttribute('open');
+});

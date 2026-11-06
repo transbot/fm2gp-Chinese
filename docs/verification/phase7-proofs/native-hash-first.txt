@@ -1,0 +1,10 @@
+AssertionError [ERR_ASSERTION]: left-zero: 403 vs 2045
+    at near (D:\Code\fm2gp-Chinese\scripts\verify-proofs-reference.cjs:10:32)
+    at at (D:\Code\fm2gp-Chinese\scripts\verify-proofs-reference.cjs:22:75)
+    at async D:\Code\fm2gp-Chinese\scripts\verify-proofs-reference.cjs:101:46 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}

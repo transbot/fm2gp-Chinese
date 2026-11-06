@@ -1,24 +1,39 @@
+import { useLayoutEffect, useMemo, useState } from 'react';
+import { Chapter9 } from '../components/book/Chapter9';
+import { AppendixReference } from '../components/book/AppendixReference';
+import { readingKeywords } from '../data/readingSections';
 import { BookRecap } from './BookRecap';
-import { Link, useLocation, useParams, useSearchParams } from 'react-router-dom';
+import { Link, useLocation, useNavigationType, useParams, useSearchParams } from 'react-router-dom';
 import { LearningShell } from '../components/common/LearningShell';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../i18n/translations';
 import { algorithmCatalog } from '../data/algorithmCatalog';
 import { bookCatalog, bookResources, chapterExercises, conceptLessons, sectionAlgorithms, searchBook, sectionAnchor, exerciseAnchor, repoFile } from '../data/bookCatalog';
+// A router replacement may be deferred. Keep the visible editor current on
+// every keystroke, and restore it from the URL on actual history navigation.
+function DirectorySearch({query,label,update}:{query:string;label:string;update:(q:string)=>void}) {
+    const [draft,setDraft]=useState(query);
+    const navigation=useNavigationType();
+    useLayoutEffect(()=>{if(navigation!=='REPLACE')setDraft(query);},[query,navigation]);
+    return <label className="block">{label}<input className="learning-input w-full mt-2" type="search" value={draft}
+      onChange={event=>{const next=event.target.value;setDraft(next);update(next);}}/></label>;
+}
 export function Book() {
     const { lang } = useLanguage(), zh = lang === 'zh', t = translations[lang];
     const { chapterId } = useParams();
     const location = useLocation();
     const [params, setParams] = useSearchParams();
     const query = params.get('q') || '';
+    const matches = useMemo(()=>chapterId ? [] : searchBook(query),[chapterId,query]);
     const chapter = bookCatalog.find(c => c.id === chapterId);
     const from = (anchor: string) => `?from=${encodeURIComponent(`/book/${chapterId}${query ? `?q=${encodeURIComponent(query)}` : ''}#${anchor}`)}`;
     return <LearningShell title={chapter ? `${chapter.id} · ${chapter.title[lang]}` : zh ? '按本书章节学习' : 'Learn chapter by chapter'} description={chapter?.guide[lang] ?? (zh ? '按章节寻找演示、代码和习题；没有交互的内容提供阅读导引。' : 'Find demonstrations, code, and exercises by chapter. Reading guides cover topics without an interactive lesson.')}>
     {!chapterId ? <>
-      <label className="block">{zh ? '搜索章节、节号、习题、术语或函数' : 'Search chapters, sections, exercises, terms, or functions'}<input className="learning-input w-full mt-2" type="search" value={query} onChange={e => setParams(e.target.value ? { q: e.target.value } : {}, { replace: true })}/></label>
+      <DirectorySearch query={query} label={zh ? '搜索章节、节号、习题、术语或函数' : 'Search chapters, sections, exercises, terms, or functions'}
+        update={value=>{const next=new URLSearchParams(params);if(value)next.set('q',value);else next.delete('q');setParams(next,{replace:true});}}/>
       {/* Keep enough document height below the search field when results shrink. */}
-      <div className="min-h-screen"><div className="grid sm:grid-cols-2 gap-4">{searchBook(query).map(c => <article className="learning-card" key={c.id}><h2 className="text-lg font-semibold"><Link className="learning-link" to={`/book/${c.id}${query ? `?q=${encodeURIComponent(query)}` : ''}`}>{c.id} · {c.title[lang]}</Link></h2><p className="text-sm leading-6">{c.guide[lang]}</p>{query && <ul className="space-y-2">{c.sections.map(s => <li key={s.id}><Link className="learning-link" to={`/book/${c.id}?q=${encodeURIComponent(query)}#${sectionAnchor(s.id)}`}>{zh ? '第' : 'Section '}{s.id}{zh ? '节' : ''} · {s.title[lang]}</Link></li>)}{c.exercises.map(e => <li key={e.id}><Link className="learning-link" to={`/book/${c.id}?q=${encodeURIComponent(query)}#${exerciseAnchor(e.id)}`}>{zh ? '习题' : 'Exercise'} {e.id}</Link></li>)}</ul>}</article>)}</div>
-      {!searchBook(query).length && <p role="status">{zh ? '未找到匹配资料。试试节号或函数名。' : 'No matching resources. Try a section number or function name.'}</p>}</div>
+      <div className="min-h-screen"><div className="grid sm:grid-cols-2 gap-4">{matches.map(c => <article className="learning-card" key={c.id}><h2 className="text-lg font-semibold"><Link className="learning-link" to={`/book/${c.id}${query ? `?q=${encodeURIComponent(query)}` : ''}`}>{c.id} · {c.title[lang]}</Link></h2><p className="text-sm leading-6">{c.guide[lang]}</p>{query && <ul className="space-y-2">{c.sections.map(s => <li key={s.id}><Link className="learning-link" to={`/book/${c.id}?q=${encodeURIComponent(query)}#${sectionAnchor(s.id)}`}>{zh ? '第' : 'Section '}{s.id}{zh ? '节' : ''} · {s.title[lang]}</Link></li>)}{c.exercises.map(e => <li key={e.id}><Link className="learning-link" to={`/book/${c.id}?q=${encodeURIComponent(query)}#${exerciseAnchor(e.id)}`}>{zh ? '习题' : 'Exercise'} {e.id}</Link></li>)}</ul>}</article>)}</div>
+      {!matches.length && <p role="status">{zh ? '未找到匹配资料。试试节号或函数名。' : 'No matching resources. Try a section number or function name.'}</p>}</div>
     </> : chapter ? <>
       <Link className="learning-link" to={`/book${query ? `?q=${encodeURIComponent(query)}` : ''}`}>{zh ? '返回章节目录' : 'Back to chapter directory'}</Link>
 
@@ -28,7 +43,8 @@ export function Book() {
                 const demos = sectionAlgorithms(s.id), lessons = conceptLessons.filter(l => l.sections.includes(s.id));
                 return <section className="learning-card" id={sectionAnchor(s.id)} key={s.id}>
         <h2 className="text-xl font-semibold">{zh ? '第' : 'Section '}{s.id}{zh ? '节' : ''} · {s.title[lang]}</h2>
-        {!demos.length && !lessons.length && <p>{zh ? '阅读导引：结合本章导读阅读这一节，留意定义、前提与例子之间的关系。' : 'Reading guide: use the chapter overview to connect this section’s definitions, assumptions, and examples.'}</p>}
+        {s.id in readingKeywords && (chapter.id === '9' ? <Chapter9 section={s.id}/> : <AppendixReference section={s.id}/>)}
+        {!(s.id in readingKeywords) && !demos.length && !lessons.length && <p>{zh ? '阅读导引：结合本章导读阅读这一节，留意定义、前提与例子之间的关系。' : 'Reading guide: use the chapter overview to connect this section’s definitions, assumptions, and examples.'}</p>}
         {demos.map(a => <p key={a.id}><Link className="learning-link" to={a.path + from(sectionAnchor(s.id))}>{zh ? '交互演示：' : 'Interactive: '}{t[a.titleKey]}</Link></p>)}
         {lessons.filter(l => !demos.some(a => a.path === l.path)).map(l => <p key={l.id}><Link className="learning-link" to={l.path + from(sectionAnchor(s.id))}>{zh ? '概念演示：' : 'Concept lab: '}{l.title[lang]}</Link></p>)}
       </section>;
