@@ -1,0 +1,69 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+stderr | src/pages/GroupProofSteps.test.tsx > keeps the 15 unique anchors, formulas and reasons paired in en
+⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+ ❯ src/pages/GroupProofSteps.test.tsx (4 tests | 4 failed) 71ms
+   × keeps the 15 unique anchors, formulas and reasons paired in en 38ms
+   × keeps the 15 unique anchors, formulas and reasons paired in zh 9ms
+   × toggles each reason independently and restores the mixture on remount 14ms
+   × uses native toggling when disclosure storage is unavailable 8ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/pages/GroupProofSteps.test.tsx > keeps the 15 unique anchors, formulas and reasons paired in en
+ FAIL  src/pages/GroupProofSteps.test.tsx > keeps the 15 unique anchors, formulas and reasons paired in zh
+AssertionError: order-left-translation: expected null to be an instance of HTMLDetailsElement
+ ❯ detail src/pages/GroupProofSteps.test.tsx:27:19
+     25| const detail=(id:string)=>{
+     26|   const node=document.getElementById(id);
+     27|   expect(node,id).toBeInstanceOf(HTMLDetailsElement);
+       |                   ^
+     28|   return node as HTMLDetailsElement;
+     29| };
+ ❯ src/pages/GroupProofSteps.test.tsx:40:16
+ ❯ src/pages/GroupProofSteps.test.tsx:39:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  src/pages/GroupProofSteps.test.tsx > toggles each reason independently and restores the mixture on remount
+AssertionError: order-left-translation: expected null to be an instance of HTMLDetailsElement
+ ❯ detail src/pages/GroupProofSteps.test.tsx:27:19
+     25| const detail=(id:string)=>{
+     26|   const node=document.getElementById(id);
+     27|   expect(node,id).toBeInstanceOf(HTMLDetailsElement);
+       |                   ^
+     28|   return node as HTMLDetailsElement;
+     29| };
+ ❯ toggle src/pages/GroupProofSteps.test.tsx:30:44
+ ❯ src/pages/GroupProofSteps.test.tsx:51:27
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  src/pages/GroupProofSteps.test.tsx > uses native toggling when disclosure storage is unavailable
+AssertionError: coset-cover: expected null to be an instance of HTMLDetailsElement
+ ❯ detail src/pages/GroupProofSteps.test.tsx:27:19
+     25| const detail=(id:string)=>{
+     26|   const node=document.getElementById(id);
+     27|   expect(node,id).toBeInstanceOf(HTMLDetailsElement);
+       |                   ^
+     28|   return node as HTMLDetailsElement;
+     29| };
+ ❯ toggle src/pages/GroupProofSteps.test.tsx:30:44
+ ❯ src/pages/GroupProofSteps.test.tsx:71:33
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  4 failed (4)
+   Start at  16:12:17
+   Duration  2.49s (transform 114ms, setup 212ms, import 260ms, tests 71ms, environment 1.74s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

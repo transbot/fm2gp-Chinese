@@ -4,6 +4,13 @@ const fs = require('node:fs');
 const base = process.env.READER_BASE_URL || 'http://127.0.0.1:4187';
 const out = process.env.GROUP_AUDIT_DIR || 'docs/verification/phase9-groups/browser';
 fs.mkdirSync(out,{recursive:true});
+const proofSteps = process.argv.includes('--proof-steps');
+const reasonTargets = [
+  ['element-order','order-cancel-on-right'],
+  ['cyclic-size','cyclic-period'],
+  ['coset-proof','coset-intersection'],
+];
+const mixedOpen = ['order-cancel-on-right','cyclic-period','coset-equal-size','coset-intersection'];
 const records=[];
 const save=()=>fs.writeFileSync(out+'/navigation.json',JSON.stringify(records,null,2)+'\n');
 const near=(x,y,label)=>assert.ok(Math.abs(x-y)<=2,label+': '+x+' vs '+y);
@@ -23,6 +30,44 @@ const checkState=s=>{for(const [k,v] of Object.entries(expectedState))assert.equ
 const anchorY=element=>element.evaluate(e=>Math.max(0,Math.min(
   e.getBoundingClientRect().top+scrollY-(parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop)||0),
   document.documentElement.scrollHeight-innerHeight)));
+// Store all 15 states, including closed rows, so a reset cannot hide in the log.
+async function reasonState(page) {
+  return page.locator('#element-order li > details, #cyclic-size li > details, #coset-proof li > details')
+    .evaluateAll(rows=>Object.fromEntries(rows.map(row=>[row.id,row.open])));
+}
+async function checkMixed(page) {
+  const states=await reasonState(page);
+  assert.equal(Object.keys(states).length,15);
+  assert.deepEqual(Object.keys(states).filter(id=>states[id]),mixedOpen);
+  return states;
+}
+async function checkReasonAnchors(page,log,search) {
+  log.reasonAnchors=[];
+  for(const [parent,id] of reasonTargets) {
+    const url='/book/6'+search+'#'+id;
+    const samples=[];
+    for(const action of ['direct','refresh']) {
+      // Both attempts must start with no stored hint to open this proof or row.
+      await page.evaluate(()=>Object.keys(sessionStorage).filter(k=>k.startsWith('fm2gp-reading:')).forEach(k=>sessionStorage.removeItem(k)));
+      if(action==='direct') {
+        await page.goto('about:blank');
+        await page.goto(base+url);
+      } else await page.reload();
+      const row=page.locator('#'+id);
+      await expect(row).toHaveAttribute('open','');
+      await expect(page.locator('#'+parent)).toHaveAttribute('open','');
+      await expect(row.locator('p')).toBeVisible();
+      await settle(page);
+      const state=await snapshot(page),target=await anchorY(row);
+      assert.equal(state.url,url);
+      near(state.y,target,action+' '+id);
+      const reasons=await reasonState(page);
+      assert.deepEqual(Object.keys(reasons).filter(k=>reasons[k]),[id]);
+      samples.push({action,state,target,reasons});
+    }
+    log.reasonAnchors.push({parent,id,samples});
+  }
+}
 let browser;
 
 async function verifyDemo(page,name,zh) {
@@ -88,10 +133,22 @@ async function run(width,lang) {
   await rep.focus();await page.keyboard.press('End');await expect(rep).toHaveValue('6');
   await expect(page.locator('#coset-partition')).toContainText(zh?'本节固定使用 H＝〈2〉＝{1,2,4}':'This section fixes H = 〈2〉 = {1,2,4}');
   await shot('coset-partition','representative-6');checkState(await snapshot(page));
-  await open('coset-proof');await shot('coset-proof','proof');
+  await open('coset-proof');
+  if(proofSteps) {
+    for(const [parent,id] of reasonTargets){await open(parent);await open(id);}
+    await open('coset-equal-size');
+    log.reasonsBeforeLanguage=await checkMixed(page);
+    await shot('coset-proof','mixed-reasons');
+  }
+  await shot('coset-proof','proof');
   await page.getByRole('button',{name:zh?'English':'中文',exact:true}).click();
   await expect(page.locator('#coset-proof')).toContainText(zh?'Right-multiply':'右乘');
   checkState(await snapshot(page));
+  if(proofSteps) {
+    await expect(page.locator('#coset-intersection p')).toBeVisible();
+    await expect(page.locator('#coset-cover p')).toBeHidden();
+    log.reasonsAfterLanguage=await checkMixed(page);
+  }
   await page.getByRole('button',{name:zh?'中文':'English',exact:true}).click();checkState(await snapshot(page));
 
   for(const demo of ['fermat','euler']) {
@@ -105,6 +162,7 @@ async function run(width,lang) {
     const left=await snapshot(page),anchor=await anchorY(page.locator('#'+id));
     assert.equal(left.url,'/book/6'+search+'#section-6-4');checkState(left);
     assert.ok(Math.abs(anchor-left.y)>40,'manual position distinct from anchor');
+    const reasonsLeft=proofSteps ? await checkMixed(page) : undefined;
     await link.click();await page.waitForURL(u=>u.pathname==='/'+demo);
     assert.equal(new URL(page.url()).searchParams.get('from'),source);
     const readerSource=await page.evaluate(()=>history.state.usr.readerSource);
@@ -128,6 +186,7 @@ async function run(width,lang) {
     await back.click();await page.waitForURL(u=>u.hash==='#'+id);await settle(page);
     const returned=await snapshot(page);await page.waitForTimeout(400);const stable=await snapshot(page);
     for(const s of [returned,stable]){assert.equal(s.url,source);checkState(s);assert.deepEqual(s.open,left.open);near(s.y,left.y,'explicit return');}
+    const reasonsStable=proofSteps ? await checkMixed(page) : undefined;
     await page.goBack();await page.waitForURL(u=>u.pathname==='/'+demo);await settle(page);
     const demoPop=await snapshot(page);
     // The demo remounts at its initial step, which can be shorter than the final step.
@@ -138,12 +197,17 @@ async function run(width,lang) {
     await shot('generated-subgroup','return-'+demo+'-element');await shot('coset-partition','return-'+demo+'-representative');
     await link.click();await page.waitForURL(u=>u.pathname==='/'+demo);
     // Discard disclosure hints only; saved mathematical selections must survive reload.
-    await page.evaluate(()=>Object.keys(sessionStorage).filter(k=>k.startsWith('fm2gp-reading:')).forEach(k=>sessionStorage.removeItem(k)));
+    await page.evaluate(keepReasons=>{
+      const prefix=keepReasons?'fm2gp-reading:lagrange-':'fm2gp-reading:';
+      Object.keys(sessionStorage).filter(k=>k.startsWith(prefix)).forEach(k=>sessionStorage.removeItem(k));
+    },proofSteps);
     await page.reload();await back.click();await page.waitForURL(u=>u.hash==='#'+id);
     await settle(page);await page.waitForTimeout(400);const hard=await snapshot(page);
     const target=await anchorY(page.locator('#'+id));assert.equal(hard.url,source);checkState(hard);
-    assert.deepEqual(hard.open,['lagrange-applications',id]);near(hard.y,target,'hard return');
-    log.returns.push({demo,source,readerSource,results,left,anchor,mid,sourcePop,demoForward,returned,stable,demoLeft,demoPop,popMax,forward,hard,target});save();
+    const reasonsHard=proofSteps ? await checkMixed(page) : undefined;
+    const expectedOpen=proofSteps ? left.open.filter(key=>!key.startsWith('lagrange-')).concat('lagrange-applications',id) : ['lagrange-applications',id];
+    assert.deepEqual(hard.open,expectedOpen);near(hard.y,target,'hard return');
+    log.returns.push({demo,source,readerSource,results,reasonsLeft,reasonsStable,reasonsHard,left,anchor,mid,sourcePop,demoForward,returned,stable,demoLeft,demoPop,popMax,forward,hard,target});save();
   }
   await page.getByRole('link',{name:zh?'返回章节目录':'Back to chapter directory'}).click();
   await expect(input).toHaveValue(query);await input.fill('');
@@ -165,11 +229,14 @@ async function run(width,lang) {
     }
     log.direct.push(id);
   }
+  if(proofSteps) await checkReasonAnchors(page,log,search);
   assert.deepEqual(log.errors,[]);save();await context.close();
 }
 
 (async()=>{
   browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
   for(const width of [1440,390])for(const lang of ['zh','en'])await run(width,lang);
-  await browser.close();console.log('PASS: 4 environments, 8 application round trips, 16 theorem cases, 48 direct/refresh pairs.');
+  await browser.close();
+  if(proofSteps) console.log('PASS: 12 nested reason direct/refresh pairs and 8 mixed-state application returns.');
+  console.log('PASS: 4 environments, 8 application round trips, 16 theorem cases, 48 direct/refresh pairs.');
 })().catch(async e=>{save();console.error(e);await browser?.close();process.exitCode=1;});

@@ -1,0 +1,3 @@
+ReferenceError: reasonsLeft is not defined
+    at run (D:\Code\fm2gp-Chinese\scripts\verify-finite-groups.cjs:209:56)
+    at async D:\Code\fm2gp-Chinese\scripts\verify-finite-groups.cjs:237:63

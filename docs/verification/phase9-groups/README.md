@@ -2,6 +2,8 @@
 
 基线 `f2ad685bb658b01decbd92a01c5aa5cffe0f234b`。分支 `codex/phase9-finite-groups`。本报告随评审提交归档，验收在本地生产构建预览执行。
 
+本报告记录首个第九轮评审版本；逐步展开依据的修复及对应验收请见[补充报告](../phase9-proof-steps/README.md)。
+
 ## 交付范围
 
 - /book/6#section-6-3 从有限性、左乘双射与消去推到正指数的存在，区分群阶、元素阶与任意一次重复的指数差。
