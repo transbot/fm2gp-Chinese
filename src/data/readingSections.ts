@@ -1,5 +1,8 @@
 // Section-level aliases, not chapter-wide claims about coverage.
 export const readingKeywords:Record<string,readonly string[]> = {
+  '6.3':['群的阶','元素阶','元素的阶','消去律','order of a group','order of an element','element order','cancellation'],
+  '6.4':['元素阶','元素的阶','order of an element','element order','循环群','cyclic group','子群','subgroup','生成元','generator'],
+  '6.5':['陪集','coset','左陪集','left coset','子群','subgroup','拉格朗日定理',"Lagrange's theorem",'Lagrange’s theorem','Lagrange theorem'],
   '10.2':['01000001','ASCII','数据','datum','值类型','value type','对象类型','object type','unsigned integer','无符号整数'],
   '10.3':['复杂度','complexity','语义','semantics','结合律','associativity','advance(3)','入栈','push'],
   'C.1':['模板参数','template argument','模板推导','type deduction','power_accumulate_semigroup'],

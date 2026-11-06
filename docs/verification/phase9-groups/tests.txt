@@ -1,0 +1,21 @@
+
+> vite-react-typescript-starter@0.0.0 test:run
+> vitest run
+
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+ Test Files  52 passed (52)
+      Tests  507 passed (507)
+   Start at  15:47:58
+   Duration  23.58s (transform 10.47s, setup 35.37s, import 31.43s, tests 45.56s, environment 279.16s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

@@ -1,0 +1,1923 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+ ❯ src/lib/algorithms/finiteGroup.test.ts (0 test)
+stderr | src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > defaults for null and null
+⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+ ❯ src/pages/FiniteGroups.test.tsx (9 tests | 9 failed) 549ms
+     × defaults for null and null 182ms
+     × defaults for  and  64ms
+     × defaults for 0 and 7 45ms
+     × defaults for 3x and 2.0 52ms
+     × defaults for 03 and  6 67ms
+     × reads both independently and restores the selection and ordered output on remount 56ms
+     × keeps both selectors usable when storage access throws 61ms
+     × uses the fermat card even when location has the earlier section hash 9ms
+     × uses the euler card even when location has the earlier section hash 10ms
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/lib/algorithms/finiteGroup.test.ts [ src/lib/algorithms/finiteGroup.test.ts ]
+Error: Failed to resolve import "./finiteGroup" from "src/lib/algorithms/finiteGroup.test.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: D:/Code/fm2gp-Chinese/src/lib/algorithms/finiteGroup.test.ts:2:36
+  1  |  import { expect, it } from "vitest";
+  2  |  import { group, orbit, leftCoset } from "./finiteGroup";
+     |                                           ^
+  3  |  const powers = [
+  4  |  	[1],
+ ❯ TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/node.js:30602:39
+ ❯ TransformPluginContext.error node_modules/vite/dist/node/chunks/node.js:30599:14
+ ❯ normalizeUrl node_modules/vite/dist/node/chunks/node.js:27842:18
+ ❯ node_modules/vite/dist/node/chunks/node.js:27905:30
+ ❯ TransformPluginContext.transform node_modules/vite/dist/node/chunks/node.js:27873:4
+ ❯ EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/node.js:30387:14
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/node.js:24646:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/10]⎯
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 9 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > defaults for null and null
+ FAIL  src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > defaults for  and
+ FAIL  src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > defaults for 0 and 7
+ FAIL  src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > defaults for 3x and 2.0
+ FAIL  src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > defaults for 03 and  6
+TestingLibraryElementError: Unable to find an accessible element with the role "combobox"
+
+Here are the accessible roles:
+
+  main:
+
+  Name "":
+  <main
+    class="learning-shell max-w-4xl"
+  />
+
+  --------------------------------------------------
+  banner:
+
+  Name "":
+  <header
+    class="flex flex-wrap items-center justify-between gap-3"
+  />
+
+  --------------------------------------------------
+  link:
+
+  Name "Back to Home":
+  <a
+    class="learning-secondary"
+    href="/"
+  />
+
+  Name "Browse chapters":
+  <a
+    class="learning-secondary"
+    href="/book"
+  />
+
+  Name "Back to chapter directory":
+  <a
+    class="learning-link"
+    href="/book?source=group-reader&tag=two+words&q=coset"
+  />
+
+  Name "6.1 Groups":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-1"
+  />
+
+  Name "6.2 Monoids and semigroups":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-2"
+  />
+
+  Name "6.3 Some theorems about groups":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-3"
+  />
+
+  Name "6.4 Subgroups and cyclic groups":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-4"
+  />
+
+  Name "6.5 Lagrange’s theorem":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-5"
+  />
+
+  Name "6.6 Theories and models":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-6"
+  />
+
+  Name "6.7 Examples of categorical and noncategorical theories":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-7"
+  />
+
+  Name "6.8 Summary":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-8"
+  />
+
+  Name "Concept lab: Operations and algebraic structures":
+  <a
+    class="learning-link"
+    href="/concepts/algebra?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dcoset%23section-6-1"
+  />
+
+  Name "Concept lab: Operations and algebraic structures":
+  <a
+    class="learning-link"
+    href="/concepts/algebra?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dcoset%23section-6-2"
+  />
+
+  Name "p59-kapur.pdf":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3(References)/p59-kapur.pdf"
+  />
+
+  Name "Tecton：A Language for Manipulating Generic Objects.pdf":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3(References)/Tecton%EF%BC%9AA%20Language%20for%20Manipulating%20Generic%20Objects.pdf"
+  />
+
+  Name "FM2GP_Course_Slides_Pt2.pdf":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/%E8%AF%BE%E4%BB%B6(Course%20Materials)/FM2GP_Course_Slides_Pt2.pdf"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_4.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_4.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_5.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_5.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_6.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_6.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_7.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_7.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_8.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_8.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_9.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_9.tex"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6.10.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_10.pdf"
+  />
+
+  --------------------------------------------------
+  button:
+
+  Name "中文":
+  <button
+    class="learning-primary"
+  />
+
+  --------------------------------------------------
+  heading:
+
+  Name "6 · Abstraction in mathematics":
+  <h1
+    class="learning-title min-w-0"
+  />
+
+  Name "Section 6.1 · Groups":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.2 · Monoids and semigroups":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.3 · Some theorems about groups":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.4 · Subgroups and cyclic groups":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.5 · Lagrange’s theorem":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.6 · Theories and models":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.7 · Examples of categorical and noncategorical theories":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.8 · Summary":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Companion code and reading":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Exercise 6.1":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.2":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.3":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.4":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.5":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.6":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.7":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.8":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.9":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.10":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  --------------------------------------------------
+  paragraph:
+
+  Name "":
+  <p
+    class="mt-3 text-gray-600 leading-7"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  --------------------------------------------------
+  navigation:
+
+  Name "":
+  <nav
+    class="learning-card !space-y-0 flex flex-wrap gap-3"
+  />
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <main
+      class="learning-shell max-w-4xl"
+    >
+      <header
+        class="flex flex-wrap items-center justify-between gap-3"
+      >
+        <a
+          class="learning-secondary"
+          href="/"
+        >
+          Back to Home
+        </a>
+        <a
+          class="learning-secondary"
+          href="/book"
+        >
+          Browse chapters
+        </a>
+        <button
+          class="learning-primary"
+        >
+          中文
+        </button>
+      </header>
+      <div>
+        <h1
+          class="learning-title min-w-0"
+        >
+          6 · Abstraction in mathematics
+        </h1>
+        <p
+          class="mt-3 text-gray-600 leading-7"
+        >
+          Study sets, operations, and laws together. Associativity, identities, and inverses determine which exponents the algorithms in Chapter 7 can handle.
+        </p>
+      </div>
+      <a
+        class="learning-link"
+        href="/book?source=group-reader&tag=two+words&q=coset"
+      >
+        Back to chapter directory
+      </a>
+      <nav
+        class="learning-card !space-y-0 flex flex-wrap gap-3"
+      >
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-1"
+        >
+          6.1
+
+          Groups
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-2"
+        >
+          6.2
+
+          Monoids and semigroups
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-3"
+        >
+          6.3
+
+          Some theorems about groups
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-4"
+        >
+          6.4
+
+          Subgroups and cyclic groups
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-5"
+        >
+          6.5
+
+          Lagrange’s theorem
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-6"
+        >
+          6.6
+
+          Theories and models
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-7"
+        >
+          6.7
+
+          Examples of categorical and noncategorical theories
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-8"
+        >
+          6.8
+
+          Summary
+        </a>
+      </nav>
+      <section
+        class="learning-card"
+        id="section-6-1"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          6.1
+           ·
+          Groups
+        </h2>
+        <p>
+          <a
+            class="learning-link"
+            href="/concepts/algebra?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dcoset%23section-6-1"
+          >
+            Concept lab:
+            Operations and algebraic structures
+          </a>
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-6-2"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          6.2
+           ·
+          Monoids and semigroups
+        </h2>
+        <p>
+          <a
+            class="learning-link"
+            href="/concepts/algebra?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dcoset%23section-6-2"
+          >
+            Concept lab:
+            Operations and algebraic structures
+          </a>
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-6-3"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          6.3
+           ·
+          Some theorems about groups
+        </h2>
+        <p>
+          Reading guide: use the chapter overview to connect this section’s definitions, assumptions, and examples.
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-6-4"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          6.4
+           ·
+          Subgroups and cyclic groups
+        </h2>
+        <p>
+          Reading guide: use the chapter overview to connect this section’s definitions, assumptions, and examples.
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-6-5"
+      >
+        [...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:109:15
+ ❯ selects src/pages/FiniteGroups.test.tsx:12:26
+     10|   </MemoryRouter>);
+     11| }
+     12| const selects=()=>screen.getAllByRole('combobox') as HTMLSelectElement…
+       |                          ^
+     13| const change=(i:number,value:number)=>fireEvent.change(selects()[i],{t…
+     14| const elementKey='fm2gp:book:6.4:element', repKey='fm2gp:book:6.5:repr…
+ ❯ src/pages/FiniteGroups.test.tsx:22:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/10]⎯
+
+ FAIL  src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > reads both independently and restores the selection and ordered output on remount
+TestingLibraryElementError: Unable to find an accessible element with the role "combobox"
+
+Here are the accessible roles:
+
+  main:
+
+  Name "":
+  <main
+    class="learning-shell max-w-4xl"
+  />
+
+  --------------------------------------------------
+  banner:
+
+  Name "":
+  <header
+    class="flex flex-wrap items-center justify-between gap-3"
+  />
+
+  --------------------------------------------------
+  link:
+
+  Name "Back to Home":
+  <a
+    class="learning-secondary"
+    href="/"
+  />
+
+  Name "Browse chapters":
+  <a
+    class="learning-secondary"
+    href="/book"
+  />
+
+  Name "Back to chapter directory":
+  <a
+    class="learning-link"
+    href="/book?source=group-reader&tag=two+words&q=coset"
+  />
+
+  Name "6.1 Groups":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-1"
+  />
+
+  Name "6.2 Monoids and semigroups":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-2"
+  />
+
+  Name "6.3 Some theorems about groups":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-3"
+  />
+
+  Name "6.4 Subgroups and cyclic groups":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-4"
+  />
+
+  Name "6.5 Lagrange’s theorem":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-5"
+  />
+
+  Name "6.6 Theories and models":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-6"
+  />
+
+  Name "6.7 Examples of categorical and noncategorical theories":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-7"
+  />
+
+  Name "6.8 Summary":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-8"
+  />
+
+  Name "Concept lab: Operations and algebraic structures":
+  <a
+    class="learning-link"
+    href="/concepts/algebra?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dcoset%23section-6-1"
+  />
+
+  Name "Concept lab: Operations and algebraic structures":
+  <a
+    class="learning-link"
+    href="/concepts/algebra?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dcoset%23section-6-2"
+  />
+
+  Name "p59-kapur.pdf":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3(References)/p59-kapur.pdf"
+  />
+
+  Name "Tecton：A Language for Manipulating Generic Objects.pdf":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3(References)/Tecton%EF%BC%9AA%20Language%20for%20Manipulating%20Generic%20Objects.pdf"
+  />
+
+  Name "FM2GP_Course_Slides_Pt2.pdf":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/%E8%AF%BE%E4%BB%B6(Course%20Materials)/FM2GP_Course_Slides_Pt2.pdf"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_4.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_4.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_5.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_5.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_6.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_6.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_7.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_7.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_8.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_8.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_9.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_9.tex"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6.10.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_10.pdf"
+  />
+
+  --------------------------------------------------
+  button:
+
+  Name "中文":
+  <button
+    class="learning-primary"
+  />
+
+  --------------------------------------------------
+  heading:
+
+  Name "6 · Abstraction in mathematics":
+  <h1
+    class="learning-title min-w-0"
+  />
+
+  Name "Section 6.1 · Groups":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.2 · Monoids and semigroups":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.3 · Some theorems about groups":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.4 · Subgroups and cyclic groups":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.5 · Lagrange’s theorem":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.6 · Theories and models":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.7 · Examples of categorical and noncategorical theories":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.8 · Summary":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Companion code and reading":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Exercise 6.1":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.2":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.3":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.4":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.5":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.6":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.7":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.8":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.9":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.10":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  --------------------------------------------------
+  paragraph:
+
+  Name "":
+  <p
+    class="mt-3 text-gray-600 leading-7"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  --------------------------------------------------
+  navigation:
+
+  Name "":
+  <nav
+    class="learning-card !space-y-0 flex flex-wrap gap-3"
+  />
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <main
+      class="learning-shell max-w-4xl"
+    >
+      <header
+        class="flex flex-wrap items-center justify-between gap-3"
+      >
+        <a
+          class="learning-secondary"
+          href="/"
+        >
+          Back to Home
+        </a>
+        <a
+          class="learning-secondary"
+          href="/book"
+        >
+          Browse chapters
+        </a>
+        <button
+          class="learning-primary"
+        >
+          中文
+        </button>
+      </header>
+      <div>
+        <h1
+          class="learning-title min-w-0"
+        >
+          6 · Abstraction in mathematics
+        </h1>
+        <p
+          class="mt-3 text-gray-600 leading-7"
+        >
+          Study sets, operations, and laws together. Associativity, identities, and inverses determine which exponents the algorithms in Chapter 7 can handle.
+        </p>
+      </div>
+      <a
+        class="learning-link"
+        href="/book?source=group-reader&tag=two+words&q=coset"
+      >
+        Back to chapter directory
+      </a>
+      <nav
+        class="learning-card !space-y-0 flex flex-wrap gap-3"
+      >
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-1"
+        >
+          6.1
+
+          Groups
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-2"
+        >
+          6.2
+
+          Monoids and semigroups
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-3"
+        >
+          6.3
+
+          Some theorems about groups
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-4"
+        >
+          6.4
+
+          Subgroups and cyclic groups
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-5"
+        >
+          6.5
+
+          Lagrange’s theorem
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-6"
+        >
+          6.6
+
+          Theories and models
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-7"
+        >
+          6.7
+
+          Examples of categorical and noncategorical theories
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-8"
+        >
+          6.8
+
+          Summary
+        </a>
+      </nav>
+      <section
+        class="learning-card"
+        id="section-6-1"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          6.1
+           ·
+          Groups
+        </h2>
+        <p>
+          <a
+            class="learning-link"
+            href="/concepts/algebra?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dcoset%23section-6-1"
+          >
+            Concept lab:
+            Operations and algebraic structures
+          </a>
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-6-2"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          6.2
+           ·
+          Monoids and semigroups
+        </h2>
+        <p>
+          <a
+            class="learning-link"
+            href="/concepts/algebra?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dcoset%23section-6-2"
+          >
+            Concept lab:
+            Operations and algebraic structures
+          </a>
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-6-3"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          6.3
+           ·
+          Some theorems about groups
+        </h2>
+        <p>
+          Reading guide: use the chapter overview to connect this section’s definitions, assumptions, and examples.
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-6-4"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          6.4
+           ·
+          Subgroups and cyclic groups
+        </h2>
+        <p>
+          Reading guide: use the chapter overview to connect this section’s definitions, assumptions, and examples.
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-6-5"
+      >
+        [...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:109:15
+ ❯ selects src/pages/FiniteGroups.test.tsx:12:26
+     10|   </MemoryRouter>);
+     11| }
+     12| const selects=()=>screen.getAllByRole('combobox') as HTMLSelectElement…
+       |                          ^
+     13| const change=(i:number,value:number)=>fireEvent.change(selects()[i],{t…
+     14| const elementKey='fm2gp:book:6.4:element', repKey='fm2gp:book:6.5:repr…
+ ❯ src/pages/FiniteGroups.test.tsx:26:32
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/10]⎯
+
+ FAIL  src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > keeps both selectors usable when storage access throws
+TestingLibraryElementError: Unable to find an accessible element with the role "combobox"
+
+Here are the accessible roles:
+
+  main:
+
+  Name "":
+  <main
+    class="learning-shell max-w-4xl"
+  />
+
+  --------------------------------------------------
+  banner:
+
+  Name "":
+  <header
+    class="flex flex-wrap items-center justify-between gap-3"
+  />
+
+  --------------------------------------------------
+  link:
+
+  Name "Back to Home":
+  <a
+    class="learning-secondary"
+    href="/"
+  />
+
+  Name "Browse chapters":
+  <a
+    class="learning-secondary"
+    href="/book"
+  />
+
+  Name "Back to chapter directory":
+  <a
+    class="learning-link"
+    href="/book?source=group-reader&tag=two+words&q=coset"
+  />
+
+  Name "6.1 Groups":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-1"
+  />
+
+  Name "6.2 Monoids and semigroups":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-2"
+  />
+
+  Name "6.3 Some theorems about groups":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-3"
+  />
+
+  Name "6.4 Subgroups and cyclic groups":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-4"
+  />
+
+  Name "6.5 Lagrange’s theorem":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-5"
+  />
+
+  Name "6.6 Theories and models":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-6"
+  />
+
+  Name "6.7 Examples of categorical and noncategorical theories":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-7"
+  />
+
+  Name "6.8 Summary":
+  <a
+    class="learning-link"
+    href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-8"
+  />
+
+  Name "Concept lab: Operations and algebraic structures":
+  <a
+    class="learning-link"
+    href="/concepts/algebra?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dcoset%23section-6-1"
+  />
+
+  Name "Concept lab: Operations and algebraic structures":
+  <a
+    class="learning-link"
+    href="/concepts/algebra?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dcoset%23section-6-2"
+  />
+
+  Name "p59-kapur.pdf":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3(References)/p59-kapur.pdf"
+  />
+
+  Name "Tecton：A Language for Manipulating Generic Objects.pdf":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3(References)/Tecton%EF%BC%9AA%20Language%20for%20Manipulating%20Generic%20Objects.pdf"
+  />
+
+  Name "FM2GP_Course_Slides_Pt2.pdf":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/%E8%AF%BE%E4%BB%B6(Course%20Materials)/FM2GP_Course_Slides_Pt2.pdf"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_4.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_4.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_5.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_5.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_6.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_6.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_7.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_7.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_8.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_8.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_9.pdf"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_9.tex"
+  />
+
+  Name "Reference solution · TEX":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6.10.tex"
+  />
+
+  Name "Reference solution · PDF":
+  <a
+    class="learning-link"
+    href="https://github.com/transbot/fm2gp-Chinese/blob/main/solutions/6_10.pdf"
+  />
+
+  --------------------------------------------------
+  button:
+
+  Name "中文":
+  <button
+    class="learning-primary"
+  />
+
+  --------------------------------------------------
+  heading:
+
+  Name "6 · Abstraction in mathematics":
+  <h1
+    class="learning-title min-w-0"
+  />
+
+  Name "Section 6.1 · Groups":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.2 · Monoids and semigroups":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.3 · Some theorems about groups":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.4 · Subgroups and cyclic groups":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.5 · Lagrange’s theorem":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.6 · Theories and models":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.7 · Examples of categorical and noncategorical theories":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Section 6.8 · Summary":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Companion code and reading":
+  <h2
+    class="text-xl font-semibold"
+  />
+
+  Name "Exercise 6.1":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.2":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.3":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.4":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.5":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.6":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.7":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.8":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.9":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  Name "Exercise 6.10":
+  <h2
+    class="text-lg font-semibold"
+  />
+
+  --------------------------------------------------
+  paragraph:
+
+  Name "":
+  <p
+    class="mt-3 text-gray-600 leading-7"
+  />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  Name "":
+  <p />
+
+  --------------------------------------------------
+  navigation:
+
+  Name "":
+  <nav
+    class="learning-card !space-y-0 flex flex-wrap gap-3"
+  />
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <main
+      class="learning-shell max-w-4xl"
+    >
+      <header
+        class="flex flex-wrap items-center justify-between gap-3"
+      >
+        <a
+          class="learning-secondary"
+          href="/"
+        >
+          Back to Home
+        </a>
+        <a
+          class="learning-secondary"
+          href="/book"
+        >
+          Browse chapters
+        </a>
+        <button
+          class="learning-primary"
+        >
+          中文
+        </button>
+      </header>
+      <div>
+        <h1
+          class="learning-title min-w-0"
+        >
+          6 · Abstraction in mathematics
+        </h1>
+        <p
+          class="mt-3 text-gray-600 leading-7"
+        >
+          Study sets, operations, and laws together. Associativity, identities, and inverses determine which exponents the algorithms in Chapter 7 can handle.
+        </p>
+      </div>
+      <a
+        class="learning-link"
+        href="/book?source=group-reader&tag=two+words&q=coset"
+      >
+        Back to chapter directory
+      </a>
+      <nav
+        class="learning-card !space-y-0 flex flex-wrap gap-3"
+      >
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-1"
+        >
+          6.1
+
+          Groups
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-2"
+        >
+          6.2
+
+          Monoids and semigroups
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-3"
+        >
+          6.3
+
+          Some theorems about groups
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-4"
+        >
+          6.4
+
+          Subgroups and cyclic groups
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-5"
+        >
+          6.5
+
+          Lagrange’s theorem
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-6"
+        >
+          6.6
+
+          Theories and models
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-7"
+        >
+          6.7
+
+          Examples of categorical and noncategorical theories
+        </a>
+        <a
+          class="learning-link"
+          href="/book/6?source=group-reader&tag=two+words&q=coset#section-6-8"
+        >
+          6.8
+
+          Summary
+        </a>
+      </nav>
+      <section
+        class="learning-card"
+        id="section-6-1"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          6.1
+           ·
+          Groups
+        </h2>
+        <p>
+          <a
+            class="learning-link"
+            href="/concepts/algebra?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dcoset%23section-6-1"
+          >
+            Concept lab:
+            Operations and algebraic structures
+          </a>
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-6-2"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          6.2
+           ·
+          Monoids and semigroups
+        </h2>
+        <p>
+          <a
+            class="learning-link"
+            href="/concepts/algebra?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dcoset%23section-6-2"
+          >
+            Concept lab:
+            Operations and algebraic structures
+          </a>
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-6-3"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          6.3
+           ·
+          Some theorems about groups
+        </h2>
+        <p>
+          Reading guide: use the chapter overview to connect this section’s definitions, assumptions, and examples.
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-6-4"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          6.4
+           ·
+          Subgroups and cyclic groups
+        </h2>
+        <p>
+          Reading guide: use the chapter overview to connect this section’s definitions, assumptions, and examples.
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-6-5"
+      >
+        [...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:109:15
+ ❯ selects src/pages/FiniteGroups.test.tsx:12:26
+     10|   </MemoryRouter>);
+     11| }
+     12| const selects=()=>screen.getAllByRole('combobox') as HTMLSelectElement…
+       |                          ^
+     13| const change=(i:number,value:number)=>fireEvent.change(selects()[i],{t…
+     14| const elementKey='fm2gp:book:6.4:element', repKey='fm2gp:book:6.5:repr…
+ ❯ src/pages/FiniteGroups.test.tsx:41:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/10]⎯
+
+ FAIL  src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > uses the fermat card even when location has the earlier section hash
+ FAIL  src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > uses the euler card even when location has the earlier section hash
+AssertionError: expected null to be truthy
+
+- Expected:
+true
+
++ Received:
+null
+
+ ❯ src/pages/FiniteGroups.test.tsx:47:18
+     45|   it.each(['fermat','euler'])('uses the %s card even when location has…
+     46|     mount();const link=document.querySelector('#lagrange-'+demo+' a[hr…
+     47|     expect(link).toBeTruthy();
+       |                  ^
+     48|     expect(new URL(link!.getAttribute('href')!,location.origin).search…
+     49|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/10]⎯
+
+
+ Test Files  2 failed (2)
+      Tests  9 failed (9)
+   Start at  15:39:55
+   Duration  3.52s (transform 294ms, setup 523ms, import 448ms, tests 549ms, environment 4.02s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

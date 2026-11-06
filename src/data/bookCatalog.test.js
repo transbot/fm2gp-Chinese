@@ -4,6 +4,22 @@ import { bookCatalog,bookResources,chapterExercises,searchBook,sectionAnchor,exe
 import { translations } from '../i18n/translations';
 
 describe('book directory and bilingual contract',()=>{
+  it('indexes the chapter 6 terms and separates section and exercise identifiers',()=>{
+    for(const [term,id] of [
+      ['元素阶','6.3'],['order of an element','6.3'],['循环群','6.4'],['generator','6.4'],
+      ['子群','6.4'],['subgroup','6.4'],['陪集','6.5'],['coset','6.5'],
+      ['拉格朗日定理','6.5'],["Lagrange's theorem",'6.5'],['Lagrange’s theorem','6.5']
+    ]) expect(searchBook(term).flatMap(c=>c.sections.map(s=>s.id)),term).toContain(id);
+    for(const [id,sectionQuery,exerciseQuery] of [
+      ['6.4','第6.4节','习题6.4'],['6.5','Section 6.5','Exercise 6.5']
+    ]) {
+      const section=searchBook(sectionQuery), exercise=searchBook(exerciseQuery);
+      expect(section.flatMap(c=>c.sections.map(s=>s.id))).toEqual([id]);
+      expect(section.flatMap(c=>c.exercises)).toEqual([]);
+      expect(exercise.flatMap(c=>c.exercises.map(e=>e.id))).toEqual([id]);
+      expect(exercise.flatMap(c=>c.sections)).toEqual([]);
+    }
+  });
   it('covers fourteen chapters and three appendices with unique anchors and bilingual guides',()=>{
     expect(bookCatalog).toHaveLength(17);
     const ids=bookCatalog.flatMap(c=>c.sections.map(s=>sectionAnchor(s.id))).concat(chapterExercises.map(e=>exerciseAnchor(e.id)));

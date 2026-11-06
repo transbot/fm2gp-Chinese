@@ -1,0 +1,10 @@
+AssertionError [ERR_ASSERTION]: source POP: 230 vs 3830
+    at near (D:\Code\fm2gp-Chinese\scripts\verify-finite-groups.cjs:9:32)
+    at run (D:\Code\fm2gp-Chinese\scripts\verify-finite-groups.cjs:117:64)
+    at async D:\Code\fm2gp-Chinese\scripts\verify-finite-groups.cjs:171:63 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}

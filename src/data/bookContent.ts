@@ -310,8 +310,8 @@ export const bookContent = {
         "en": "Abstraction in mathematics"
       },
       "guide": {
-        "zh": "把集合、运算和公理放在一起观察，区分半群、幺半群与群。结合律、单位元素与逆元将决定第7章算法能接受哪些指数。",
-        "en": "Study sets, operations, and laws together. Associativity, identities, and inverses determine which exponents the algorithms in Chapter 7 can handle."
+        "zh": "从半群、幺半群与群出发，在 6.3–6.5 用模 7 的幂理解元素阶和循环子群，再由陪集划分证明拉格朗日定理。",
+        "en": "From semigroups, monoids and groups, use powers modulo 7 in 6.3–6.5 to study element orders and cyclic subgroups, then prove Lagrange’s theorem by partitioning into cosets."
       },
       "sourcePdfPage": 102,
       "sections": [
