@@ -422,8 +422,8 @@ const algorithmCatalogSeed: AlgorithmCatalogSeed[] = [
     difficulty: 'intermediate',
     source: { type: 'book', section: '11.4' },
     summary: {
-      en: 'Decompose permutations into disjoint cycles.',
-      zh: '把置换分解成不相交循环。',
+      en: 'From permutations in 11.1 to source-directed cycle transfers with rotate_cycle_from in 11.4.',
+      zh: '从 11.1 的排列分解到 11.4 的循环搬移，沿来源表执行 rotate_cycle_from。',
     },
   },
   {

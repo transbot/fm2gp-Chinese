@@ -1,0 +1,3138 @@
+[
+  {
+    "base": "http://127.0.0.1:4191",
+    "width": 1440,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "direct": [
+      "section-6-3",
+      "element-order",
+      "section-6-4",
+      "generated-subgroup",
+      "cyclic-size",
+      "section-6-5",
+      "integer-cosets",
+      "coset-partition",
+      "coset-proof",
+      "lagrange-applications",
+      "lagrange-fermat",
+      "lagrange-euler"
+    ],
+    "returns": [
+      {
+        "demo": "fermat",
+        "source": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+        "readerSource": {
+          "key": "qehugnw6",
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat"
+        },
+        "results": [
+          {
+            "a": 2,
+            "mod": 7,
+            "result": 1,
+            "verdict": "定理验证成功！7 是素数，且 2^(7-1) mod 7 = 1"
+          },
+          {
+            "a": 2,
+            "mod": 9,
+            "result": 4,
+            "verdict": "9 是合数。定理不适用：2^(9-1) mod 9 = 4 ≠ 1"
+          }
+        ],
+        "reasonsLeft": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "reasonsStable": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "reasonsHard": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "left": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#section-6-4",
+          "key": "qehugnw6",
+          "y": 4501,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "anchor": 4393,
+        "mid": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-fermat",
+          "key": "f8a6t6ym",
+          "y": 230,
+          "open": []
+        },
+        "sourcePop": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#section-6-4",
+          "key": "qehugnw6",
+          "y": 4501,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoForward": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-fermat",
+          "key": "f8a6t6ym",
+          "y": 230,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+          "key": "b0c1khid",
+          "y": 4501,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "stable": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+          "key": "b0c1khid",
+          "y": 4501,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoLeft": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-fermat",
+          "key": "f8a6t6ym",
+          "y": 1171,
+          "open": []
+        },
+        "demoPop": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-fermat",
+          "key": "f8a6t6ym",
+          "y": 1073,
+          "open": []
+        },
+        "popMax": 1073,
+        "forward": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+          "key": "b0c1khid",
+          "y": 4501,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "hard": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+          "key": "3a6adbuv",
+          "y": 4393,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "target": 4393
+      },
+      {
+        "demo": "euler",
+        "source": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+        "readerSource": {
+          "key": "d12ab2k8",
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler"
+        },
+        "results": [
+          {
+            "a": 3,
+            "mod": 8,
+            "result": 1,
+            "phi": 4,
+            "expression": "34mod8=1",
+            "verdict": "定理验证成功！"
+          },
+          {
+            "a": 2,
+            "mod": 8,
+            "result": 0,
+            "phi": 4,
+            "expression": "24mod8=0",
+            "verdict": "定理不适用（a 和 n 不互素）"
+          }
+        ],
+        "reasonsLeft": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "reasonsStable": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "reasonsHard": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "left": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#section-6-4",
+          "key": "d12ab2k8",
+          "y": 4671,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "anchor": 4563,
+        "mid": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-euler",
+          "key": "ocv1huv7",
+          "y": 230,
+          "open": []
+        },
+        "sourcePop": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#section-6-4",
+          "key": "d12ab2k8",
+          "y": 4671,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoForward": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-euler",
+          "key": "ocv1huv7",
+          "y": 230,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+          "key": "rcexau6e",
+          "y": 4671,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "stable": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+          "key": "rcexau6e",
+          "y": 4671,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoLeft": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-euler",
+          "key": "ocv1huv7",
+          "y": 1485,
+          "open": []
+        },
+        "demoPop": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-euler",
+          "key": "ocv1huv7",
+          "y": 829,
+          "open": []
+        },
+        "popMax": 829,
+        "forward": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+          "key": "rcexau6e",
+          "y": 4671,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "hard": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+          "key": "n3vhe4h1",
+          "y": 4467,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "target": 4467
+      }
+    ],
+    "searches": [
+      {
+        "q": "第6.4节",
+        "id": "section-6-4"
+      },
+      {
+        "q": "习题6.4",
+        "id": "exercise-6-4"
+      },
+      {
+        "q": "Section 6.5",
+        "id": "section-6-5"
+      },
+      {
+        "q": "Exercise 6.5",
+        "id": "exercise-6-5"
+      }
+    ],
+    "errors": [],
+    "reasonsBeforeLanguage": {
+      "order-left-translation": false,
+      "order-repeated-powers": false,
+      "order-cancel-on-right": true,
+      "order-positive-exponent": false,
+      "cyclic-first-return": false,
+      "cyclic-distinct-powers": false,
+      "cyclic-period": true,
+      "cyclic-product-closure": false,
+      "cyclic-inverses": false,
+      "coset-equal-size": true,
+      "coset-cover": false,
+      "coset-intersection": true,
+      "coset-forward-inclusion": false,
+      "coset-reverse-inclusion": false,
+      "coset-count": false
+    },
+    "reasonsAfterLanguage": {
+      "order-left-translation": false,
+      "order-repeated-powers": false,
+      "order-cancel-on-right": true,
+      "order-positive-exponent": false,
+      "cyclic-first-return": false,
+      "cyclic-distinct-powers": false,
+      "cyclic-period": true,
+      "cyclic-product-closure": false,
+      "cyclic-inverses": false,
+      "coset-equal-size": true,
+      "coset-cover": false,
+      "coset-intersection": true,
+      "coset-forward-inclusion": false,
+      "coset-reverse-inclusion": false,
+      "coset-count": false
+    },
+    "reasonAnchors": [
+      {
+        "parent": "element-order",
+        "id": "order-cancel-on-right",
+        "samples": [
+          {
+            "action": "direct",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#order-cancel-on-right",
+              "key": "default",
+              "y": 1139,
+              "open": [
+                "element-order",
+                "order-cancel-on-right"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 1139,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": true,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": false,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": false,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          },
+          {
+            "action": "refresh",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#order-cancel-on-right",
+              "key": "default",
+              "y": 1139,
+              "open": [
+                "element-order",
+                "order-cancel-on-right"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 1139,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": true,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": false,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": false,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          }
+        ]
+      },
+      {
+        "parent": "cyclic-size",
+        "id": "cyclic-period",
+        "samples": [
+          {
+            "action": "direct",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#cyclic-period",
+              "key": "default",
+              "y": 1835,
+              "open": [
+                "cyclic-size",
+                "cyclic-period"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 1835,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": false,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": true,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": false,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          },
+          {
+            "action": "refresh",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#cyclic-period",
+              "key": "default",
+              "y": 1835,
+              "open": [
+                "cyclic-size",
+                "cyclic-period"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 1835,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": false,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": true,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": false,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          }
+        ]
+      },
+      {
+        "parent": "coset-proof",
+        "id": "coset-intersection",
+        "samples": [
+          {
+            "action": "direct",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#coset-intersection",
+              "key": "default",
+              "y": 2681,
+              "open": [
+                "coset-proof",
+                "coset-intersection"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 2681,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": false,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": false,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": true,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          },
+          {
+            "action": "refresh",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#coset-intersection",
+              "key": "default",
+              "y": 2681,
+              "open": [
+                "coset-proof",
+                "coset-intersection"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 2681,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": false,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": false,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": true,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "base": "http://127.0.0.1:4191",
+    "width": 1440,
+    "lang": "en",
+    "browser": "156.0.4314.58",
+    "direct": [
+      "section-6-3",
+      "element-order",
+      "section-6-4",
+      "generated-subgroup",
+      "cyclic-size",
+      "section-6-5",
+      "integer-cosets",
+      "coset-partition",
+      "coset-proof",
+      "lagrange-applications",
+      "lagrange-fermat",
+      "lagrange-euler"
+    ],
+    "returns": [
+      {
+        "demo": "fermat",
+        "source": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+        "readerSource": {
+          "key": "fm9xjb0t",
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat"
+        },
+        "results": [
+          {
+            "a": 2,
+            "mod": 7,
+            "result": 1,
+            "verdict": "Theorem verified! 7 is prime, and 2^(7-1) mod 7 = 1"
+          },
+          {
+            "a": 2,
+            "mod": 9,
+            "result": 4,
+            "verdict": "9 is composite. Theorem doesn't apply: 2^(9-1) mod 9 = 4 ≠ 1"
+          }
+        ],
+        "reasonsLeft": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "reasonsStable": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "reasonsHard": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "left": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#section-6-4",
+          "key": "fm9xjb0t",
+          "y": 4825,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "anchor": 4689,
+        "mid": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-fermat",
+          "key": "vx3qd25e",
+          "y": 230,
+          "open": []
+        },
+        "sourcePop": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#section-6-4",
+          "key": "fm9xjb0t",
+          "y": 4825,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoForward": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-fermat",
+          "key": "vx3qd25e",
+          "y": 230,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+          "key": "oa02fssv",
+          "y": 4825,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "stable": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+          "key": "oa02fssv",
+          "y": 4825,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoLeft": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-fermat",
+          "key": "vx3qd25e",
+          "y": 1171,
+          "open": []
+        },
+        "demoPop": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-fermat",
+          "key": "vx3qd25e",
+          "y": 1073,
+          "open": []
+        },
+        "popMax": 1073,
+        "forward": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+          "key": "oa02fssv",
+          "y": 4825,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "hard": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+          "key": "ik08cz70",
+          "y": 4689,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "target": 4689
+      },
+      {
+        "demo": "euler",
+        "source": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+        "readerSource": {
+          "key": "qboojzoh",
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler"
+        },
+        "results": [
+          {
+            "a": 3,
+            "mod": 8,
+            "result": 1,
+            "phi": 4,
+            "expression": "34mod8=1",
+            "verdict": "Theorem Verified!"
+          },
+          {
+            "a": 2,
+            "mod": 8,
+            "result": 0,
+            "phi": 4,
+            "expression": "24mod8=0",
+            "verdict": "Theorem does not apply (a and n are not coprime)"
+          }
+        ],
+        "reasonsLeft": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "reasonsStable": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "reasonsHard": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "left": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#section-6-4",
+          "key": "qboojzoh",
+          "y": 5023,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "anchor": 4887,
+        "mid": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-euler",
+          "key": "3wk1jgz8",
+          "y": 230,
+          "open": []
+        },
+        "sourcePop": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#section-6-4",
+          "key": "qboojzoh",
+          "y": 5023,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoForward": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-euler",
+          "key": "3wk1jgz8",
+          "y": 230,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+          "key": "v43hzwvh",
+          "y": 5023,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "stable": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+          "key": "v43hzwvh",
+          "y": 5023,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoLeft": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-euler",
+          "key": "3wk1jgz8",
+          "y": 1553,
+          "open": []
+        },
+        "demoPop": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-euler",
+          "key": "3wk1jgz8",
+          "y": 873,
+          "open": []
+        },
+        "popMax": 873,
+        "forward": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+          "key": "v43hzwvh",
+          "y": 5023,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "hard": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+          "key": "3iokhwqk",
+          "y": 4763,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "target": 4763
+      }
+    ],
+    "searches": [
+      {
+        "q": "第6.4节",
+        "id": "section-6-4"
+      },
+      {
+        "q": "习题6.4",
+        "id": "exercise-6-4"
+      },
+      {
+        "q": "Section 6.5",
+        "id": "section-6-5"
+      },
+      {
+        "q": "Exercise 6.5",
+        "id": "exercise-6-5"
+      }
+    ],
+    "errors": [],
+    "reasonsBeforeLanguage": {
+      "order-left-translation": false,
+      "order-repeated-powers": false,
+      "order-cancel-on-right": true,
+      "order-positive-exponent": false,
+      "cyclic-first-return": false,
+      "cyclic-distinct-powers": false,
+      "cyclic-period": true,
+      "cyclic-product-closure": false,
+      "cyclic-inverses": false,
+      "coset-equal-size": true,
+      "coset-cover": false,
+      "coset-intersection": true,
+      "coset-forward-inclusion": false,
+      "coset-reverse-inclusion": false,
+      "coset-count": false
+    },
+    "reasonsAfterLanguage": {
+      "order-left-translation": false,
+      "order-repeated-powers": false,
+      "order-cancel-on-right": true,
+      "order-positive-exponent": false,
+      "cyclic-first-return": false,
+      "cyclic-distinct-powers": false,
+      "cyclic-period": true,
+      "cyclic-product-closure": false,
+      "cyclic-inverses": false,
+      "coset-equal-size": true,
+      "coset-cover": false,
+      "coset-intersection": true,
+      "coset-forward-inclusion": false,
+      "coset-reverse-inclusion": false,
+      "coset-count": false
+    },
+    "reasonAnchors": [
+      {
+        "parent": "element-order",
+        "id": "order-cancel-on-right",
+        "samples": [
+          {
+            "action": "direct",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#order-cancel-on-right",
+              "key": "default",
+              "y": 1227,
+              "open": [
+                "element-order",
+                "order-cancel-on-right"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 1227,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": true,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": false,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": false,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          },
+          {
+            "action": "refresh",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#order-cancel-on-right",
+              "key": "default",
+              "y": 1227,
+              "open": [
+                "element-order",
+                "order-cancel-on-right"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 1227,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": true,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": false,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": false,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          }
+        ]
+      },
+      {
+        "parent": "cyclic-size",
+        "id": "cyclic-period",
+        "samples": [
+          {
+            "action": "direct",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#cyclic-period",
+              "key": "default",
+              "y": 1947,
+              "open": [
+                "cyclic-size",
+                "cyclic-period"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 1947,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": false,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": true,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": false,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          },
+          {
+            "action": "refresh",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#cyclic-period",
+              "key": "default",
+              "y": 1947,
+              "open": [
+                "cyclic-size",
+                "cyclic-period"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 1947,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": false,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": true,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": false,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          }
+        ]
+      },
+      {
+        "parent": "coset-proof",
+        "id": "coset-intersection",
+        "samples": [
+          {
+            "action": "direct",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#coset-intersection",
+              "key": "default",
+              "y": 2865,
+              "open": [
+                "coset-proof",
+                "coset-intersection"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 2865,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": false,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": false,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": true,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          },
+          {
+            "action": "refresh",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#coset-intersection",
+              "key": "default",
+              "y": 2865,
+              "open": [
+                "coset-proof",
+                "coset-intersection"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 2865,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": false,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": false,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": true,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "base": "http://127.0.0.1:4191",
+    "width": 390,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "direct": [
+      "section-6-3",
+      "element-order",
+      "section-6-4",
+      "generated-subgroup",
+      "cyclic-size",
+      "section-6-5",
+      "integer-cosets",
+      "coset-partition",
+      "coset-proof",
+      "lagrange-applications",
+      "lagrange-fermat",
+      "lagrange-euler"
+    ],
+    "returns": [
+      {
+        "demo": "fermat",
+        "source": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+        "readerSource": {
+          "key": "4ybt6zgo",
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat"
+        },
+        "results": [
+          {
+            "a": 2,
+            "mod": 7,
+            "result": 1,
+            "verdict": "定理验证成功！7 是素数，且 2^(7-1) mod 7 = 1"
+          },
+          {
+            "a": 2,
+            "mod": 9,
+            "result": 4,
+            "verdict": "9 是合数。定理不适用：2^(9-1) mod 9 = 4 ≠ 1"
+          }
+        ],
+        "reasonsLeft": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "reasonsStable": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "reasonsHard": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "left": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#section-6-4",
+          "key": "4ybt6zgo",
+          "y": 5533,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "anchor": 5313,
+        "mid": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-fermat",
+          "key": "t2yx3lem",
+          "y": 230,
+          "open": []
+        },
+        "sourcePop": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#section-6-4",
+          "key": "4ybt6zgo",
+          "y": 5533,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoForward": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-fermat",
+          "key": "t2yx3lem",
+          "y": 230,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+          "key": "1tar55jw",
+          "y": 5533,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "stable": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+          "key": "1tar55jw",
+          "y": 5533,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoLeft": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-fermat",
+          "key": "t2yx3lem",
+          "y": 1685,
+          "open": []
+        },
+        "demoPop": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-fermat",
+          "key": "t2yx3lem",
+          "y": 1685,
+          "open": []
+        },
+        "popMax": 1710,
+        "forward": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+          "key": "1tar55jw",
+          "y": 5533,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "hard": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+          "key": "saqhxw8i",
+          "y": 5313,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "target": 5313
+      },
+      {
+        "demo": "euler",
+        "source": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+        "readerSource": {
+          "key": "eqgn17b1",
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler"
+        },
+        "results": [
+          {
+            "a": 3,
+            "mod": 8,
+            "result": 1,
+            "phi": 4,
+            "expression": "34mod8=1",
+            "verdict": "定理验证成功！"
+          },
+          {
+            "a": 2,
+            "mod": 8,
+            "result": 0,
+            "phi": 4,
+            "expression": "24mod8=0",
+            "verdict": "定理不适用（a 和 n 不互素）"
+          }
+        ],
+        "reasonsLeft": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "reasonsStable": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "reasonsHard": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "left": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#section-6-4",
+          "key": "eqgn17b1",
+          "y": 5815,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "anchor": 5595,
+        "mid": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-euler",
+          "key": "r10kp54n",
+          "y": 230,
+          "open": []
+        },
+        "sourcePop": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#section-6-4",
+          "key": "eqgn17b1",
+          "y": 5815,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoForward": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-euler",
+          "key": "r10kp54n",
+          "y": 230,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+          "key": "n7nodyao",
+          "y": 5815,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "stable": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+          "key": "n7nodyao",
+          "y": 5815,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoLeft": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-euler",
+          "key": "r10kp54n",
+          "y": 2088,
+          "open": []
+        },
+        "demoPop": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-euler",
+          "key": "r10kp54n",
+          "y": 1435,
+          "open": []
+        },
+        "popMax": 1435,
+        "forward": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+          "key": "n7nodyao",
+          "y": 5815,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "hard": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+          "key": "wlmtywp4",
+          "y": 5387,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "target": 5387
+      }
+    ],
+    "searches": [
+      {
+        "q": "第6.4节",
+        "id": "section-6-4"
+      },
+      {
+        "q": "习题6.4",
+        "id": "exercise-6-4"
+      },
+      {
+        "q": "Section 6.5",
+        "id": "section-6-5"
+      },
+      {
+        "q": "Exercise 6.5",
+        "id": "exercise-6-5"
+      }
+    ],
+    "errors": [],
+    "reasonsBeforeLanguage": {
+      "order-left-translation": false,
+      "order-repeated-powers": false,
+      "order-cancel-on-right": true,
+      "order-positive-exponent": false,
+      "cyclic-first-return": false,
+      "cyclic-distinct-powers": false,
+      "cyclic-period": true,
+      "cyclic-product-closure": false,
+      "cyclic-inverses": false,
+      "coset-equal-size": true,
+      "coset-cover": false,
+      "coset-intersection": true,
+      "coset-forward-inclusion": false,
+      "coset-reverse-inclusion": false,
+      "coset-count": false
+    },
+    "reasonsAfterLanguage": {
+      "order-left-translation": false,
+      "order-repeated-powers": false,
+      "order-cancel-on-right": true,
+      "order-positive-exponent": false,
+      "cyclic-first-return": false,
+      "cyclic-distinct-powers": false,
+      "cyclic-period": true,
+      "cyclic-product-closure": false,
+      "cyclic-inverses": false,
+      "coset-equal-size": true,
+      "coset-cover": false,
+      "coset-intersection": true,
+      "coset-forward-inclusion": false,
+      "coset-reverse-inclusion": false,
+      "coset-count": false
+    },
+    "reasonAnchors": [
+      {
+        "parent": "element-order",
+        "id": "order-cancel-on-right",
+        "samples": [
+          {
+            "action": "direct",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#order-cancel-on-right",
+              "key": "default",
+              "y": 1299,
+              "open": [
+                "element-order",
+                "order-cancel-on-right"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 1299,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": true,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": false,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": false,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          },
+          {
+            "action": "refresh",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#order-cancel-on-right",
+              "key": "default",
+              "y": 1299,
+              "open": [
+                "element-order",
+                "order-cancel-on-right"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 1299,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": true,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": false,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": false,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          }
+        ]
+      },
+      {
+        "parent": "cyclic-size",
+        "id": "cyclic-period",
+        "samples": [
+          {
+            "action": "direct",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#cyclic-period",
+              "key": "default",
+              "y": 2187,
+              "open": [
+                "cyclic-size",
+                "cyclic-period"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 2187,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": false,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": true,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": false,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          },
+          {
+            "action": "refresh",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#cyclic-period",
+              "key": "default",
+              "y": 2187,
+              "open": [
+                "cyclic-size",
+                "cyclic-period"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 2187,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": false,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": true,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": false,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          }
+        ]
+      },
+      {
+        "parent": "coset-proof",
+        "id": "coset-intersection",
+        "samples": [
+          {
+            "action": "direct",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#coset-intersection",
+              "key": "default",
+              "y": 3265,
+              "open": [
+                "coset-proof",
+                "coset-intersection"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 3265,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": false,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": false,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": true,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          },
+          {
+            "action": "refresh",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#coset-intersection",
+              "key": "default",
+              "y": 3265,
+              "open": [
+                "coset-proof",
+                "coset-intersection"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 3265,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": false,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": false,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": true,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "base": "http://127.0.0.1:4191",
+    "width": 390,
+    "lang": "en",
+    "browser": "156.0.4314.58",
+    "direct": [
+      "section-6-3",
+      "element-order",
+      "section-6-4",
+      "generated-subgroup",
+      "cyclic-size",
+      "section-6-5",
+      "integer-cosets",
+      "coset-partition",
+      "coset-proof",
+      "lagrange-applications",
+      "lagrange-fermat",
+      "lagrange-euler"
+    ],
+    "returns": [
+      {
+        "demo": "fermat",
+        "source": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+        "readerSource": {
+          "key": "i714qbox",
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat"
+        },
+        "results": [
+          {
+            "a": 2,
+            "mod": 7,
+            "result": 1,
+            "verdict": "Theorem verified! 7 is prime, and 2^(7-1) mod 7 = 1"
+          },
+          {
+            "a": 2,
+            "mod": 9,
+            "result": 4,
+            "verdict": "9 is composite. Theorem doesn't apply: 2^(9-1) mod 9 = 4 ≠ 1"
+          }
+        ],
+        "reasonsLeft": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "reasonsStable": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "reasonsHard": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "left": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#section-6-4",
+          "key": "i714qbox",
+          "y": 6907,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "anchor": 6575,
+        "mid": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-fermat",
+          "key": "0jhmh289",
+          "y": 230,
+          "open": []
+        },
+        "sourcePop": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#section-6-4",
+          "key": "i714qbox",
+          "y": 6907,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoForward": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-fermat",
+          "key": "0jhmh289",
+          "y": 230,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+          "key": "6h764vpv",
+          "y": 6907,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "stable": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+          "key": "6h764vpv",
+          "y": 6907,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoLeft": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-fermat",
+          "key": "0jhmh289",
+          "y": 1831,
+          "open": []
+        },
+        "demoPop": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-fermat",
+          "key": "0jhmh289",
+          "y": 1831,
+          "open": []
+        },
+        "popMax": 1888,
+        "forward": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+          "key": "6h764vpv",
+          "y": 6907,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "hard": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+          "key": "s3pdqj0f",
+          "y": 6575,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "target": 6575
+      },
+      {
+        "demo": "euler",
+        "source": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+        "readerSource": {
+          "key": "yy9uz61p",
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler"
+        },
+        "results": [
+          {
+            "a": 3,
+            "mod": 8,
+            "result": 1,
+            "phi": 4,
+            "expression": "34mod8=1",
+            "verdict": "Theorem Verified!"
+          },
+          {
+            "a": 2,
+            "mod": 8,
+            "result": 0,
+            "phi": 4,
+            "expression": "24mod8=0",
+            "verdict": "Theorem does not apply (a and n are not coprime)"
+          }
+        ],
+        "reasonsLeft": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "reasonsStable": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "reasonsHard": {
+          "order-left-translation": false,
+          "order-repeated-powers": false,
+          "order-cancel-on-right": true,
+          "order-positive-exponent": false,
+          "cyclic-first-return": false,
+          "cyclic-distinct-powers": false,
+          "cyclic-period": true,
+          "cyclic-product-closure": false,
+          "cyclic-inverses": false,
+          "coset-equal-size": true,
+          "coset-cover": false,
+          "coset-intersection": true,
+          "coset-forward-inclusion": false,
+          "coset-reverse-inclusion": false,
+          "coset-count": false
+        },
+        "left": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#section-6-4",
+          "key": "yy9uz61p",
+          "y": 7273,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "anchor": 6997,
+        "mid": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-euler",
+          "key": "omteqfk9",
+          "y": 230,
+          "open": []
+        },
+        "sourcePop": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#section-6-4",
+          "key": "yy9uz61p",
+          "y": 7273,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoForward": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-euler",
+          "key": "omteqfk9",
+          "y": 230,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+          "key": "cnry6qo0",
+          "y": 7273,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "stable": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+          "key": "cnry6qo0",
+          "y": 7273,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoLeft": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-euler",
+          "key": "omteqfk9",
+          "y": 2243,
+          "open": []
+        },
+        "demoPop": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-euler",
+          "key": "omteqfk9",
+          "y": 1626,
+          "open": []
+        },
+        "popMax": 1626,
+        "forward": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+          "key": "cnry6qo0",
+          "y": 7273,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "hard": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+          "key": "cflqq7is",
+          "y": 6705,
+          "open": [
+            "element-order",
+            "order-cancel-on-right",
+            "cyclic-size",
+            "cyclic-period",
+            "coset-proof",
+            "coset-equal-size",
+            "coset-intersection",
+            "lagrange-applications",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "target": 6705
+      }
+    ],
+    "searches": [
+      {
+        "q": "第6.4节",
+        "id": "section-6-4"
+      },
+      {
+        "q": "习题6.4",
+        "id": "exercise-6-4"
+      },
+      {
+        "q": "Section 6.5",
+        "id": "section-6-5"
+      },
+      {
+        "q": "Exercise 6.5",
+        "id": "exercise-6-5"
+      }
+    ],
+    "errors": [],
+    "reasonsBeforeLanguage": {
+      "order-left-translation": false,
+      "order-repeated-powers": false,
+      "order-cancel-on-right": true,
+      "order-positive-exponent": false,
+      "cyclic-first-return": false,
+      "cyclic-distinct-powers": false,
+      "cyclic-period": true,
+      "cyclic-product-closure": false,
+      "cyclic-inverses": false,
+      "coset-equal-size": true,
+      "coset-cover": false,
+      "coset-intersection": true,
+      "coset-forward-inclusion": false,
+      "coset-reverse-inclusion": false,
+      "coset-count": false
+    },
+    "reasonsAfterLanguage": {
+      "order-left-translation": false,
+      "order-repeated-powers": false,
+      "order-cancel-on-right": true,
+      "order-positive-exponent": false,
+      "cyclic-first-return": false,
+      "cyclic-distinct-powers": false,
+      "cyclic-period": true,
+      "cyclic-product-closure": false,
+      "cyclic-inverses": false,
+      "coset-equal-size": true,
+      "coset-cover": false,
+      "coset-intersection": true,
+      "coset-forward-inclusion": false,
+      "coset-reverse-inclusion": false,
+      "coset-count": false
+    },
+    "reasonAnchors": [
+      {
+        "parent": "element-order",
+        "id": "order-cancel-on-right",
+        "samples": [
+          {
+            "action": "direct",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#order-cancel-on-right",
+              "key": "default",
+              "y": 1759,
+              "open": [
+                "element-order",
+                "order-cancel-on-right"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 1759,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": true,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": false,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": false,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          },
+          {
+            "action": "refresh",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#order-cancel-on-right",
+              "key": "default",
+              "y": 1759,
+              "open": [
+                "element-order",
+                "order-cancel-on-right"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 1759,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": true,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": false,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": false,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          }
+        ]
+      },
+      {
+        "parent": "cyclic-size",
+        "id": "cyclic-period",
+        "samples": [
+          {
+            "action": "direct",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#cyclic-period",
+              "key": "default",
+              "y": 2913,
+              "open": [
+                "cyclic-size",
+                "cyclic-period"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 2913,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": false,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": true,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": false,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          },
+          {
+            "action": "refresh",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#cyclic-period",
+              "key": "default",
+              "y": 2913,
+              "open": [
+                "cyclic-size",
+                "cyclic-period"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 2913,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": false,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": true,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": false,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          }
+        ]
+      },
+      {
+        "parent": "coset-proof",
+        "id": "coset-intersection",
+        "samples": [
+          {
+            "action": "direct",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#coset-intersection",
+              "key": "default",
+              "y": 4303,
+              "open": [
+                "coset-proof",
+                "coset-intersection"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 4303,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": false,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": false,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": true,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          },
+          {
+            "action": "refresh",
+            "state": {
+              "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#coset-intersection",
+              "key": "default",
+              "y": 4303,
+              "open": [
+                "coset-proof",
+                "coset-intersection"
+              ],
+              "element": "3",
+              "rep": "6",
+              "powers": "3 → 2 → 6 → 4 → 5 → 1",
+              "subgroup": "{1, 2, 3, 4, 5, 6}",
+              "products": "6 → 5 → 3",
+              "coset": "{3, 5, 6}"
+            },
+            "target": 4303,
+            "reasons": {
+              "order-left-translation": false,
+              "order-repeated-powers": false,
+              "order-cancel-on-right": false,
+              "order-positive-exponent": false,
+              "cyclic-first-return": false,
+              "cyclic-distinct-powers": false,
+              "cyclic-period": false,
+              "cyclic-product-closure": false,
+              "cyclic-inverses": false,
+              "coset-equal-size": false,
+              "coset-cover": false,
+              "coset-intersection": true,
+              "coset-forward-inclusion": false,
+              "coset-reverse-inclusion": false,
+              "coset-count": false
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

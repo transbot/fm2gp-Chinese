@@ -369,9 +369,10 @@ export const translations: Record<Language, TranslationMap> = {
     startReverse: 'Start',
 
     // Cycle Decomposition
-    cycleTitle: 'Section 11.4 - Cycle Decomposition',
-    cycleDescription: 'Visualizing permutation cycle decomposition - how permutations decompose into disjoint cycles',
-    devNoteCycle: 'Section 11.4 introduces cycle decomposition, a fundamental concept in permutation theory. Every permutation can be uniquely expressed as a product of disjoint cycles. This decomposition is essential for understanding permutation groups, computing permutation powers, and analyzing algorithms like the rotate algorithm (Section 11.3). The algorithm runs in O(n) time by visiting each element exactly once.',
+    cycleTitle: 'Permutation cycles and data transfers',
+    cycleDescription: 'Trace destinations to find the cycles. Follow sources to fill one position at a time.',
+    devNoteCycle: 'One rotate_cycle_from call needs O(1) auxiliary space. The complete driver takes O(n) time and O(n) auxiliary space for maps, cycle decomposition and visited indices. The player saves O(n) independent frames of size O(n), so generating and storing the replay both cost O(n²).',
+    cycleInvalidInteger: 'Enter decimal safe integers.',
     cycleEmptyArray: 'Array must not be empty',
     cyclePermutationLength: 'Permutation must have the same length as array',
     cycleTooLarge: 'Array must have at most 20 elements for visualization',
@@ -998,9 +999,10 @@ export const translations: Record<Language, TranslationMap> = {
     startReverse: '开始',
 
     // Cycle Decomposition
-    cycleTitle: '11.4节 - 循环分解',
-    cycleDescription: '置换循环分解可视化 - 展示置换如何分解为不相交的循环',
-    devNoteCycle: '11.4节介绍了循环分解，这是置换理论的基本概念。每个置换都可以唯一地表示为不相交循环的乘积。这种分解对于理解置换群、计算置换幂次以及分析旋转算法（11.3节）至关重要。算法通过恰好访问每个元素一次，实现O(n)时间复杂度。',
+    cycleTitle: '排列的循环分解与搬移',
+    cycleDescription: '沿目的地寻找循环，再沿来源逐格填入元素。',
+    devNoteCycle: '单次 rotate_cycle_from 只需 O(1) 辅助空间。完整调度耗时 O(n)，映射、循环分解和访问标记占 O(n) 辅助空间。播放器保存 O(n) 个独立快照，每帧大小为 O(n)，因此完整回放轨迹的生成时间和存储空间均为 O(n²)。',
+    cycleInvalidInteger: '请输入十进制安全整数。',
     cycleEmptyArray: '数组不能为空',
     cyclePermutationLength: '置换必须与数组长度相同',
     cycleTooLarge: '数组最多包含20个元素用于可视化',

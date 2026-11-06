@@ -716,8 +716,8 @@ export const bookContent = {
         "en": "Permutation algorithms"
       },
       "guide": {
-        "zh": "用交换、循环、旋转和反转重排序列。依赖第10章的区间模型，同时比较移动次数与额外存储。",
-        "en": "Rearrange sequences with swaps, cycles, rotations, and reversals. Use Chapter 10’s ranges and compare element movement with extra storage."
+        "zh": "在 11.1 追踪排列、对换和复合次序，在 11.4 沿来源表搬移一个循环，再比较旋转与反转的传送次数和辅助空间。",
+        "en": "Trace permutations, transpositions and composition in 11.1. Follow a source map to move a cycle in 11.4, then compare transfers and auxiliary storage in rotation and reversal."
       },
       "sourcePdfPage": 219,
       "sections": [

@@ -496,9 +496,9 @@ describe('legacy algorithm validation errors', () => {
   it('shows an invalid permutation error on cycle decomposition', () => {
     renderAlgorithm(<Cycle />);
 
-    const permutationInput = screen.getByPlaceholderText('2, 0, 1, 3, 4');
+    const permutationInput = screen.getByRole('textbox',{name:/Permutation destinations/i});
     fireEvent.change(permutationInput, { target: { value: '0, 0, 1, 2, 3, 4, 5, 6' } });
-    fireEvent.click(screen.getByRole('button', { name: /^Reset$/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^Apply input$/i }));
 
     expect(screen.getByRole('alert')).toHaveTextContent('Invalid permutation');
   });

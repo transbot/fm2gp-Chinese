@@ -192,6 +192,9 @@ export const cycleVisualization: AlgorithmVisualization<
       };
     }
 
+    if (!array.every(Number.isSafeInteger)) {
+      return {valid:false, errorKey:'cycleInvalidInteger'};
+    }
     if (!permutation || permutation.length !== array.length) {
       return {
         valid: false,
@@ -212,7 +215,7 @@ export const cycleVisualization: AlgorithmVisualization<
     const n = array.length;
     const seen = new Set<number>();
     for (const p of permutation) {
-      if (p < 0 || p >= n || seen.has(p)) {
+      if (!Number.isInteger(p) || p < 0 || p >= n || seen.has(p)) {
         return {
           valid: false,
           error: 'Invalid permutation: must be a rearrangement of 0 to n-1',
@@ -319,20 +322,15 @@ export function createDefaultCycleInput(): CycleInput {
 /**
  * Parse permutation from string input
  */
-export function parsePermutation(input: string, n: number): number[] | null {
-  try {
-    const values = input.split(/[,，\s]+/).map(s => parseInt(s.trim(), 10));  // Support both half-width and full-width commas
-    if (values.length !== n) return null;
-    if (values.some(v => isNaN(v) || v < 0 || v >= n)) return null;
+export function parseCycleIntegers(input: string): number[] | null {
+  const tokens = input.split(/[,，]/).flatMap(part => part.trim().split(/\s+/));
+  if (!tokens.every(token => /^-?\d+$/.test(token))) return null;
+  const values = tokens.map(Number);
+  return values.every(Number.isSafeInteger) ? values : null;
+}
 
-    // Check if it's a valid permutation
-    const seen = new Set<number>();
-    for (const v of values) {
-      if (seen.has(v)) return null;
-      seen.add(v);
-    }
-    return values;
-  } catch {
-    return null;
-  }
+export function parsePermutation(input: string, n: number): number[] | null {
+  const values = parseCycleIntegers(input);
+  return values && values.length === n && new Set(values).size === n &&
+    values.every(v => v >= 0 && v < n) ? values : null;
 }
