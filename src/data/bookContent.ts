@@ -630,8 +630,8 @@ export const bookContent = {
         "en": "Fundamental programming concepts"
       },
       "guide": {
-        "zh": "从值和类型走到概念、迭代器与区间。理解位置和操作能力后，再看线性查找、二分查找与第11章的排列。",
-        "en": "Move from values and types to concepts, iterators, and ranges. Understand positions and capabilities before searches and Chapter 11’s permutations."
+        "zh": "10.2 用同一串位区分数据和值；10.3 从操作、规律和代价理解概念，再到迭代器演示比较移动次数。",
+        "en": "Interpret one bit string in 10.2. In 10.3 compare operations, laws and costs, then count movements in the iterator lab."
       },
       "sourcePdfPage": 197,
       "sections": [
@@ -999,8 +999,8 @@ export const bookContent = {
         "en": "C++ syntax and constructs"
       },
       "guide": {
-        "zh": "对照书中代码查模板、函数对象、概念和迭代器语法。区分数学要求与语言中的表达方式，再返回对应算法。",
-        "en": "Consult templates, function objects, concepts, and iterator syntax alongside the book’s code. Distinguish mathematical requirements from their language representation."
+        "zh": "C.1、C.2、C.4、C.5 用第7.6节的一次调用读懂模板、概念、函数对象与调用约定。C.7 可对照迭代器演示。",
+        "en": "Follow a Section 7.6 call through templates, concepts, function objects and contracts in C.1, C.2, C.4 and C.5. Visit C.7 for the iterator lab."
       },
       "sourcePdfPage": 288,
       "sections": [

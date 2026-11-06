@@ -1,0 +1,262 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+stderr | src/pages/TypesReference.test.tsx > interprets the very same bits after keyboard or language changes
+⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+ ❯ src/pages/TypesReference.test.tsx (2 tests | 2 failed) 42ms
+   × interprets the very same bits after keyboard or language changes 35ms
+   × links from the manually opened counterexample with its own anchor and the full query 6ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/pages/TypesReference.test.tsx > interprets the very same bits after keyboard or language changes
+TestingLibraryElementError: Unable to find an element with the text: 01000001. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <main
+      class="learning-shell max-w-4xl"
+    >
+      <header
+        class="flex flex-wrap items-center justify-between gap-3"
+      >
+        <a
+          class="learning-secondary"
+          href="/"
+        >
+          Back to Home
+        </a>
+        <a
+          class="learning-secondary"
+          href="/book"
+        >
+          Browse chapters
+        </a>
+        <button
+          class="learning-primary"
+        >
+          中文
+        </button>
+      </header>
+      <div>
+        <h1
+          class="learning-title min-w-0"
+        >
+          10 · Fundamental programming concepts
+        </h1>
+        <p
+          class="mt-3 text-gray-600 leading-7"
+        >
+          Move from values and types to concepts, iterators, and ranges. Understand positions and capabilities before searches and Chapter 11’s permutations.
+        </p>
+      </div>
+      <a
+        class="learning-link"
+        href="/book?source=test&tag=two+words"
+      >
+        Back to chapter directory
+      </a>
+      <nav
+        class="learning-card !space-y-0 flex flex-wrap gap-3"
+      >
+        <a
+          class="learning-link"
+          href="/book/10?source=test&tag=two+words#section-10-1"
+        >
+          10.1
+
+          Aristotle and abstraction
+        </a>
+        <a
+          class="learning-link"
+          href="/book/10?source=test&tag=two+words#section-10-2"
+        >
+          10.2
+
+          Values and types
+        </a>
+        <a
+          class="learning-link"
+          href="/book/10?source=test&tag=two+words#section-10-3"
+        >
+          10.3
+
+          Concepts
+        </a>
+        <a
+          class="learning-link"
+          href="/book/10?source=test&tag=two+words#section-10-4"
+        >
+          10.4
+
+          Iterators
+        </a>
+        <a
+          class="learning-link"
+          href="/book/10?source=test&tag=two+words#section-10-5"
+        >
+          10.5
+
+          Iterator categories, operations, and traits
+        </a>
+        <a
+          class="learning-link"
+          href="/book/10?source=test&tag=two+words#section-10-6"
+        >
+          10.6
+
+          Ranges
+        </a>
+        <a
+          class="learning-link"
+          href="/book/10?source=test&tag=two+words#section-10-7"
+        >
+          10.7
+
+          Linear search
+        </a>
+        <a
+          class="learning-link"
+          href="/book/10?source=test&tag=two+words#section-10-8"
+        >
+          10.8
+
+          Binary search
+        </a>
+        <a
+          class="learning-link"
+          href="/book/10?source=test&tag=two+words#section-10-9"
+        >
+          10.9
+
+          Summary
+        </a>
+      </nav>
+      <section
+        class="learning-card"
+        id="section-10-1"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          10.1
+           ·
+          Aristotle and abstraction
+        </h2>
+        <p>
+          Reading guide: use the chapter overview to connect this section’s definitions, assumptions, and examples.
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-10-2"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          10.2
+           ·
+          Values and types
+        </h2>
+        <p>
+          Reading guide: use the chapter overview to connect this section’s definitions, assumptions, and examples.
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-10-3"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          10.3
+           ·
+          Concepts
+        </h2>
+        <p>
+          Reading guide: use the chapter overview to connect this section’s definitions, assumptions, and examples.
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-10-4"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          10.4
+           ·
+          Iterators
+        </h2>
+        <p>
+          <a
+            class="learning-link"
+            href="/concepts/iterators?from=%2Fbook%2F10%3Fsource%3Dtest%26tag%3Dtwo%2Bwords%23section-10-4"
+          >
+            Concept lab:
+            Iterators and ranges
+          </a>
+        </p>
+      </section>
+      <section
+        class="learning-card"
+        id="section-10-5"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Section
+          10.5
+           ·
+  ...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/pages/TypesReference.test.tsx:15:21
+     13| it('interprets the very same bits after keyboard or language changes',…
+     14|   mount('10');
+     15|   const bits=screen.getByText('01000001');
+       |                     ^
+     16|   fireEvent.click(screen.getByRole('radio',{name:'8-bit unsigned integ…
+     17|   expect(screen.getByRole('status')).toHaveTextContent('65');
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  src/pages/TypesReference.test.tsx > links from the manually opened counterexample with its own anchor and the full query
+AssertionError: expected undefined to be truthy
+
+- Expected:
+true
+
++ Received:
+undefined
+
+ ❯ src/pages/TypesReference.test.tsx:29:16
+     27|   const card=document.getElementById('cpp-subtraction');
+     28|   const link=card?.querySelector('a[href^="/concepts/algebra?"]');
+     29|   expect(link).toBeTruthy();
+       |                ^
+     30|   expect(new URL(link!.getAttribute('href')!,location.origin).searchPa…
+     31|     .toBe('/book/C?source=test&tag=two+words#cpp-subtraction');
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed (2)
+   Start at  14:12:44
+   Duration  2.57s (transform 166ms, setup 223ms, import 320ms, tests 42ms, environment 1.79s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

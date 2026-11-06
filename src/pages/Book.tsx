@@ -1,7 +1,5 @@
 import { useLayoutEffect, useMemo, useState } from 'react';
-import { Chapter9 } from '../components/book/Chapter9';
-import { AppendixReference } from '../components/book/AppendixReference';
-import { readingKeywords } from '../data/readingSections';
+import { sectionReaders } from '../components/book/sectionReaders';
 import { BookRecap } from './BookRecap';
 import { Link, useLocation, useNavigationType, useParams, useSearchParams } from 'react-router-dom';
 import { LearningShell } from '../components/common/LearningShell';
@@ -40,11 +38,12 @@ export function Book() {
       {chapter.id === '14' ? <BookRecap/> : <nav className="learning-card !space-y-0 flex flex-wrap gap-3">{chapter.sections.map(s => <Link className="learning-link" key={s.id} to={{ pathname: location.pathname, search: location.search, hash: `#${sectionAnchor(s.id)}` }}>{s.id} {s.title[lang]}</Link>)}</nav>}
       {chapter.id === '8' && <nav className="learning-card" aria-label={zh ? '多项式学习路线' : 'Polynomial learning route'}><h2 className="text-xl font-semibold">{zh ? '多项式学习路线' : 'Polynomial learning route'}</h2><p>{zh ? '先用霍纳法则求值，再用带余除法理解A(r)为何等于余数，最后把求余接入泛型GCD循环。第8.8节解释有理数系数为什么能够相除。' : 'Evaluate with Horner, use division to understand why A(r) equals the remainder, then connect remainders to generic GCD. Section 8.8 explains division of rational coefficients.'}</p><div className="flex flex-wrap gap-4"><Link className="learning-link" to={'/horner' + from(sectionAnchor('8.1'))}>{zh ? '霍纳法则' : 'Horner'}</Link><Link className="learning-link" to={'/polynomial-gcd' + from(sectionAnchor('8.7'))}>{zh ? '带余除法与GCD' : 'Division and GCD'}</Link><Link className="learning-link" to={{pathname:location.pathname,search:location.search,hash:'#section-8-8'}}>{zh ? '第8.8节：域' : 'Section 8.8: fields'}</Link></div></nav>}
       {chapter.sections.map(s => {
+                const SectionReader = sectionReaders[s.id];
                 const demos = sectionAlgorithms(s.id), lessons = conceptLessons.filter(l => l.sections.includes(s.id));
                 return <section className="learning-card" id={sectionAnchor(s.id)} key={s.id}>
         <h2 className="text-xl font-semibold">{zh ? '第' : 'Section '}{s.id}{zh ? '节' : ''} · {s.title[lang]}</h2>
-        {s.id in readingKeywords && (chapter.id === '9' ? <Chapter9 section={s.id}/> : <AppendixReference section={s.id}/>)}
-        {!(s.id in readingKeywords) && !demos.length && !lessons.length && <p>{zh ? '阅读导引：结合本章导读阅读这一节，留意定义、前提与例子之间的关系。' : 'Reading guide: use the chapter overview to connect this section’s definitions, assumptions, and examples.'}</p>}
+        {SectionReader && <SectionReader section={s.id}/>}
+        {!SectionReader && !demos.length && !lessons.length && <p>{zh ? '阅读导引：结合本章导读阅读这一节，留意定义、前提与例子之间的关系。' : 'Reading guide: use the chapter overview to connect this section’s definitions, assumptions, and examples.'}</p>}
         {demos.map(a => <p key={a.id}><Link className="learning-link" to={a.path + from(sectionAnchor(s.id))}>{zh ? '交互演示：' : 'Interactive: '}{t[a.titleKey]}</Link></p>)}
         {lessons.filter(l => !demos.some(a => a.path === l.path)).map(l => <p key={l.id}><Link className="learning-link" to={l.path + from(sectionAnchor(s.id))}>{zh ? '概念演示：' : 'Concept lab: '}{l.title[lang]}</Link></p>)}
       </section>;

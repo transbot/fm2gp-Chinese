@@ -1,0 +1,17 @@
+src/components/book/sectionReaders.ts(11,3): error TS2322: Type '({ section }: { section: string; }) => Element | null' is not assignable to type '({ section }: { section: string; }) => Element'.
+  Type 'Element | null' is not assignable to type 'Element'.
+    Type 'null' is not assignable to type 'ReactElement<any, any>'.
+src/components/book/sectionReaders.ts(11,21): error TS2322: Type '({ section }: { section: string; }) => Element | null' is not assignable to type '({ section }: { section: string; }) => Element'.
+  Type 'Element | null' is not assignable to type 'Element'.
+    Type 'null' is not assignable to type 'ReactElement<any, any>'.
+src/components/book/sectionReaders.ts(11,39): error TS2322: Type '({ section }: { section: string; }) => Element | null' is not assignable to type '({ section }: { section: string; }) => Element'.
+  Type 'Element | null' is not assignable to type 'Element'.
+    Type 'null' is not assignable to type 'ReactElement<any, any>'.
+src/components/book/sectionReaders.ts(11,57): error TS2322: Type '({ section }: { section: string; }) => Element | null' is not assignable to type '({ section }: { section: string; }) => Element'.
+  Type 'Element | null' is not assignable to type 'Element'.
+    Type 'null' is not assignable to type 'ReactElement<any, any>'.
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

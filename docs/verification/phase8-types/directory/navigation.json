@@ -1,0 +1,973 @@
+[
+  {
+    "base": "http://127.0.0.1:4187",
+    "lang": "zh",
+    "width": 1440,
+    "browser": "156.0.4314.58",
+    "states": [
+      {
+        "label": "open-directory",
+        "url": "/book?source=proof-reader&tag=two+words",
+        "key": "default",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-归",
+        "url": "/book?source=proof-reader&tag=two+words&q=%E5%BD%92",
+        "key": "9kx637c3",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-归纳",
+        "url": "/book?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3",
+        "key": "3htg4384",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "section-9.7",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#section-9-7",
+        "key": "agufgo1a",
+        "y": 1712,
+        "open": []
+      },
+      {
+        "label": "leave-proof",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#section-9-7",
+        "key": "agufgo1a",
+        "y": 2867,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "returned-proof",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#addition-associativity",
+        "key": "aq3g4882",
+        "y": 2867,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "stable-proof",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#addition-associativity",
+        "key": "aq3g4882",
+        "y": 2867,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "back-directory",
+        "url": "/book?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3",
+        "key": "hv1zky1z",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "clear-only-q",
+        "url": "/book?source=proof-reader&tag=two+words",
+        "key": "gd959qk8",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "exercise-9.2",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=9.2#exercise-9-2",
+        "key": "t4riytji",
+        "y": 3194,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "ordinary-demo-return",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=9.2#exercise-9-2",
+        "key": "cb479fr8",
+        "y": 3194,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "hard-refresh-return",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#addition-associativity",
+        "key": "5webmoi4",
+        "y": 2123,
+        "open": [
+          "addition-associativity"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3",
+        "path": "/book/9",
+        "hash": "",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "归纳"
+        }
+      },
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#section-9-7",
+        "path": "/book/9",
+        "hash": "#section-9-7",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "归纳"
+        }
+      },
+      {
+        "href": "/book?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3",
+        "path": "/book",
+        "hash": "",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "归纳"
+        }
+      },
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=9.2",
+        "path": "/book/9",
+        "hash": "",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "9.2"
+        }
+      },
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=9.2#section-9-2",
+        "path": "/book/9",
+        "hash": "#section-9-2",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "9.2"
+        }
+      },
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=9.2#exercise-9-2",
+        "path": "/book/9",
+        "hash": "#exercise-9-2",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "9.2"
+        }
+      }
+    ],
+    "errors": [],
+    "demo": {
+      "url": "/power?from=%2Fbook%2F9%3Fsource%3Dproof-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%25BD%2592%25E7%25BA%25B3%23addition-associativity",
+      "key": "8gp8gzwq",
+      "y": 2867,
+      "open": [
+        "addition-associativity",
+        "assoc-outer"
+      ]
+    },
+    "saved": {
+      "left": {
+        "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#section-9-7",
+        "key": "agufgo1a",
+        "y": 2867,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      "returned": {
+        "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#addition-associativity",
+        "key": "aq3g4882",
+        "y": 2867,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      "stable": {
+        "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#addition-associativity",
+        "key": "aq3g4882",
+        "y": 2867,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      }
+    },
+    "hard": {
+      "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#addition-associativity",
+      "key": "5webmoi4",
+      "y": 2123,
+      "open": [
+        "addition-associativity"
+      ],
+      "anchor": 2123
+    }
+  },
+  {
+    "base": "http://127.0.0.1:4187",
+    "lang": "en",
+    "width": 1440,
+    "browser": "156.0.4314.58",
+    "states": [
+      {
+        "label": "open-directory",
+        "url": "/book?source=proof-reader&tag=two+words",
+        "key": "default",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-i",
+        "url": "/book?source=proof-reader&tag=two+words&q=i",
+        "key": "8eua60fs",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-in",
+        "url": "/book?source=proof-reader&tag=two+words&q=in",
+        "key": "zlh9h3ts",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-ind",
+        "url": "/book?source=proof-reader&tag=two+words&q=ind",
+        "key": "8i812v75",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-indu",
+        "url": "/book?source=proof-reader&tag=two+words&q=indu",
+        "key": "qqmyvqky",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-induc",
+        "url": "/book?source=proof-reader&tag=two+words&q=induc",
+        "key": "ojuhscn4",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-induct",
+        "url": "/book?source=proof-reader&tag=two+words&q=induct",
+        "key": "u10bz927",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-inducti",
+        "url": "/book?source=proof-reader&tag=two+words&q=inducti",
+        "key": "dbke85z6",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-inductio",
+        "url": "/book?source=proof-reader&tag=two+words&q=inductio",
+        "key": "ui9lp1e0",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-induction",
+        "url": "/book?source=proof-reader&tag=two+words&q=induction",
+        "key": "mlbyxq58",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "section-9.7",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=induction#section-9-7",
+        "key": "dsmkl5w7",
+        "y": 1836,
+        "open": []
+      },
+      {
+        "label": "leave-proof",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=induction#section-9-7",
+        "key": "dsmkl5w7",
+        "y": 3075,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "returned-proof",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=induction#addition-associativity",
+        "key": "jz1xli2z",
+        "y": 3075,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "stable-proof",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=induction#addition-associativity",
+        "key": "jz1xli2z",
+        "y": 3075,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "back-directory",
+        "url": "/book?source=proof-reader&tag=two+words&q=induction",
+        "key": "d1x121ze",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "clear-only-q",
+        "url": "/book?source=proof-reader&tag=two+words",
+        "key": "41bctemy",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "exercise-9.2",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=9.2#exercise-9-2",
+        "key": "kaamijge",
+        "y": 3402,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "ordinary-demo-return",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=9.2#exercise-9-2",
+        "key": "474il2ih",
+        "y": 3402,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "hard-refresh-return",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=induction#addition-associativity",
+        "key": "fwjq2gac",
+        "y": 2247,
+        "open": [
+          "addition-associativity"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=induction",
+        "path": "/book/9",
+        "hash": "",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "induction"
+        }
+      },
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=induction#section-9-7",
+        "path": "/book/9",
+        "hash": "#section-9-7",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "induction"
+        }
+      },
+      {
+        "href": "/book?source=proof-reader&tag=two+words&q=induction",
+        "path": "/book",
+        "hash": "",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "induction"
+        }
+      },
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=9.2",
+        "path": "/book/9",
+        "hash": "",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "9.2"
+        }
+      },
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=9.2#section-9-2",
+        "path": "/book/9",
+        "hash": "#section-9-2",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "9.2"
+        }
+      },
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=9.2#exercise-9-2",
+        "path": "/book/9",
+        "hash": "#exercise-9-2",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "9.2"
+        }
+      }
+    ],
+    "errors": [],
+    "demo": {
+      "url": "/power?from=%2Fbook%2F9%3Fsource%3Dproof-reader%26tag%3Dtwo%2Bwords%26q%3Dinduction%23addition-associativity",
+      "key": "7i9r20yt",
+      "y": 3075,
+      "open": [
+        "addition-associativity",
+        "assoc-outer"
+      ]
+    },
+    "saved": {
+      "left": {
+        "url": "/book/9?source=proof-reader&tag=two+words&q=induction#section-9-7",
+        "key": "dsmkl5w7",
+        "y": 3075,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      "returned": {
+        "url": "/book/9?source=proof-reader&tag=two+words&q=induction#addition-associativity",
+        "key": "jz1xli2z",
+        "y": 3075,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      "stable": {
+        "url": "/book/9?source=proof-reader&tag=two+words&q=induction#addition-associativity",
+        "key": "jz1xli2z",
+        "y": 3075,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      }
+    },
+    "hard": {
+      "url": "/book/9?source=proof-reader&tag=two+words&q=induction#addition-associativity",
+      "key": "fwjq2gac",
+      "y": 2247,
+      "open": [
+        "addition-associativity"
+      ],
+      "anchor": 2247
+    }
+  },
+  {
+    "base": "http://127.0.0.1:4187",
+    "lang": "zh",
+    "width": 390,
+    "browser": "156.0.4314.58",
+    "states": [
+      {
+        "label": "open-directory",
+        "url": "/book?source=proof-reader&tag=two+words",
+        "key": "default",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-归",
+        "url": "/book?source=proof-reader&tag=two+words&q=%E5%BD%92",
+        "key": "cs39xip4",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-归纳",
+        "url": "/book?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3",
+        "key": "kb233vok",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "section-9.7",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#section-9-7",
+        "key": "bl6jzyin",
+        "y": 2152,
+        "open": []
+      },
+      {
+        "label": "leave-proof",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#section-9-7",
+        "key": "bl6jzyin",
+        "y": 3587,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "returned-proof",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#addition-associativity",
+        "key": "zryw7pba",
+        "y": 3587,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "stable-proof",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#addition-associativity",
+        "key": "zryw7pba",
+        "y": 3587,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "back-directory",
+        "url": "/book?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3",
+        "key": "f7fltxfx",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "clear-only-q",
+        "url": "/book?source=proof-reader&tag=two+words",
+        "key": "mshkuuuv",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "exercise-9.2",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=9.2#exercise-9-2",
+        "key": "uyssc5il",
+        "y": 3834,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "ordinary-demo-return",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=9.2#exercise-9-2",
+        "key": "cdcdxbp5",
+        "y": 3834,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "hard-refresh-return",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#addition-associativity",
+        "key": "ydfsqvah",
+        "y": 2619,
+        "open": [
+          "addition-associativity"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3",
+        "path": "/book/9",
+        "hash": "",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "归纳"
+        }
+      },
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#section-9-7",
+        "path": "/book/9",
+        "hash": "#section-9-7",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "归纳"
+        }
+      },
+      {
+        "href": "/book?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3",
+        "path": "/book",
+        "hash": "",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "归纳"
+        }
+      },
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=9.2",
+        "path": "/book/9",
+        "hash": "",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "9.2"
+        }
+      },
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=9.2#section-9-2",
+        "path": "/book/9",
+        "hash": "#section-9-2",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "9.2"
+        }
+      },
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=9.2#exercise-9-2",
+        "path": "/book/9",
+        "hash": "#exercise-9-2",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "9.2"
+        }
+      }
+    ],
+    "errors": [],
+    "demo": {
+      "url": "/power?from=%2Fbook%2F9%3Fsource%3Dproof-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%25BD%2592%25E7%25BA%25B3%23addition-associativity",
+      "key": "9cnbjspw",
+      "y": 3587,
+      "open": [
+        "addition-associativity",
+        "assoc-outer"
+      ]
+    },
+    "saved": {
+      "left": {
+        "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#section-9-7",
+        "key": "bl6jzyin",
+        "y": 3587,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      "returned": {
+        "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#addition-associativity",
+        "key": "zryw7pba",
+        "y": 3587,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      "stable": {
+        "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#addition-associativity",
+        "key": "zryw7pba",
+        "y": 3587,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      }
+    },
+    "hard": {
+      "url": "/book/9?source=proof-reader&tag=two+words&q=%E5%BD%92%E7%BA%B3#addition-associativity",
+      "key": "ydfsqvah",
+      "y": 2619,
+      "open": [
+        "addition-associativity"
+      ],
+      "anchor": 2619
+    }
+  },
+  {
+    "base": "http://127.0.0.1:4187",
+    "lang": "en",
+    "width": 390,
+    "browser": "156.0.4314.58",
+    "states": [
+      {
+        "label": "open-directory",
+        "url": "/book?source=proof-reader&tag=two+words",
+        "key": "default",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-i",
+        "url": "/book?source=proof-reader&tag=two+words&q=i",
+        "key": "axnjzp3h",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-in",
+        "url": "/book?source=proof-reader&tag=two+words&q=in",
+        "key": "0yjki73z",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-ind",
+        "url": "/book?source=proof-reader&tag=two+words&q=ind",
+        "key": "ujhdn2jw",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-indu",
+        "url": "/book?source=proof-reader&tag=two+words&q=indu",
+        "key": "51mwzokh",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-induc",
+        "url": "/book?source=proof-reader&tag=two+words&q=induc",
+        "key": "wnihdyk3",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-induct",
+        "url": "/book?source=proof-reader&tag=two+words&q=induct",
+        "key": "bsg17yz1",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-inducti",
+        "url": "/book?source=proof-reader&tag=two+words&q=inducti",
+        "key": "9jr5plgj",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-inductio",
+        "url": "/book?source=proof-reader&tag=two+words&q=inductio",
+        "key": "zaf0t5dv",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "type-induction",
+        "url": "/book?source=proof-reader&tag=two+words&q=induction",
+        "key": "n0qahf0v",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "section-9.7",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=induction#section-9-7",
+        "key": "mvw9j4ay",
+        "y": 2808,
+        "open": []
+      },
+      {
+        "label": "leave-proof",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=induction#section-9-7",
+        "key": "mvw9j4ay",
+        "y": 4599,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "returned-proof",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=induction#addition-associativity",
+        "key": "o1gr15o1",
+        "y": 4599,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "stable-proof",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=induction#addition-associativity",
+        "key": "o1gr15o1",
+        "y": 4599,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "back-directory",
+        "url": "/book?source=proof-reader&tag=two+words&q=induction",
+        "key": "erqce451",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "clear-only-q",
+        "url": "/book?source=proof-reader&tag=two+words",
+        "key": "u91sfgzi",
+        "y": 0,
+        "open": []
+      },
+      {
+        "label": "exercise-9.2",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=9.2#exercise-9-2",
+        "key": "u15a30y8",
+        "y": 5018,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "ordinary-demo-return",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=9.2#exercise-9-2",
+        "key": "zxl4uzn1",
+        "y": 5018,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      {
+        "label": "hard-refresh-return",
+        "url": "/book/9?source=proof-reader&tag=two+words&q=induction#addition-associativity",
+        "key": "r6dq1gnk",
+        "y": 3391,
+        "open": [
+          "addition-associativity"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=induction",
+        "path": "/book/9",
+        "hash": "",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "induction"
+        }
+      },
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=induction#section-9-7",
+        "path": "/book/9",
+        "hash": "#section-9-7",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "induction"
+        }
+      },
+      {
+        "href": "/book?source=proof-reader&tag=two+words&q=induction",
+        "path": "/book",
+        "hash": "",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "induction"
+        }
+      },
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=9.2",
+        "path": "/book/9",
+        "hash": "",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "9.2"
+        }
+      },
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=9.2#section-9-2",
+        "path": "/book/9",
+        "hash": "#section-9-2",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "9.2"
+        }
+      },
+      {
+        "href": "/book/9?source=proof-reader&tag=two+words&q=9.2#exercise-9-2",
+        "path": "/book/9",
+        "hash": "#exercise-9-2",
+        "expected": {
+          "source": "proof-reader",
+          "tag": "two words",
+          "q": "9.2"
+        }
+      }
+    ],
+    "errors": [],
+    "demo": {
+      "url": "/power?from=%2Fbook%2F9%3Fsource%3Dproof-reader%26tag%3Dtwo%2Bwords%26q%3Dinduction%23addition-associativity",
+      "key": "gnfftvlo",
+      "y": 0,
+      "open": []
+    },
+    "saved": {
+      "left": {
+        "url": "/book/9?source=proof-reader&tag=two+words&q=induction#section-9-7",
+        "key": "mvw9j4ay",
+        "y": 4599,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      "returned": {
+        "url": "/book/9?source=proof-reader&tag=two+words&q=induction#addition-associativity",
+        "key": "o1gr15o1",
+        "y": 4599,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      },
+      "stable": {
+        "url": "/book/9?source=proof-reader&tag=two+words&q=induction#addition-associativity",
+        "key": "o1gr15o1",
+        "y": 4599,
+        "open": [
+          "addition-associativity",
+          "assoc-outer"
+        ]
+      }
+    },
+    "hard": {
+      "url": "/book/9?source=proof-reader&tag=two+words&q=induction#addition-associativity",
+      "key": "r6dq1gnk",
+      "y": 3391,
+      "open": [
+        "addition-associativity"
+      ],
+      "anchor": 3391
+    }
+  }
+]

@@ -1,0 +1,11 @@
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.13.4
+** Copyright (c) 2022 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+sample.cpp
+2 * 3^5 = 486
+2 + 3*5 = 17
+Result: bbb
+check.cpp
+PASS: callable subtraction, sequential -1 vs regrouped 5, zero returns 2 with 0 calls.

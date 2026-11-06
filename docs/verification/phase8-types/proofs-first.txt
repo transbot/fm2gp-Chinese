@@ -1,0 +1,10 @@
+page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:4187/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer
+Call log:
+  - navigating to "http://127.0.0.1:4187/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer", waiting until "load"
+
+    at D:\Code\fm2gp-Chinese\scripts\verify-proofs-reference.cjs:46:94 {
+  log: [
+    '  - navigating to "http://127.0.0.1:4187/book/9?q=induction&source=proof-reader&tag=two+words#assoc-outer", waiting until "load"'
+  ],
+  name: 'Error'
+}

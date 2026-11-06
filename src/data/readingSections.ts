@@ -1,5 +1,11 @@
 // Section-level aliases, not chapter-wide claims about coverage.
 export const readingKeywords:Record<string,readonly string[]> = {
+  '10.2':['01000001','ASCII','数据','datum','值类型','value type','对象类型','object type','unsigned integer','无符号整数'],
+  '10.3':['复杂度','complexity','语义','semantics','结合律','associativity','advance(3)','入栈','push'],
+  'C.1':['模板参数','template argument','模板推导','type deduction','power_accumulate_semigroup'],
+  'C.2':['typename','requires','same_as','语义','semantics','结合律','associativity','power_accumulate_semigroup'],
+  'C.4':['函数对象','function object','lambda','字符串连接','concatenation','op(r,a)','power_accumulate_semigroup'],
+  'C.5':['前置条件','precondition','后置条件','postcondition','assert','my_ratio','纯幂','pure power','累积','accumulate','power_accumulate_semigroup'],
   '9.1':['实例','反例','观察','counterexample','examples','associativity','结合律'],
   '9.6':['皮亚诺公理','后继','successor','归纳公理','axiom of induction','Peano axioms'],
   '9.7':['后继','successor','归纳','induction','加法定义','recursive definition of addition','左单位元素','left identity','结合律','associativity'],

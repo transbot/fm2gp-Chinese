@@ -27,4 +27,16 @@ describe('book directory and bilingual contract',()=>{
     expect(Object.keys(translations.en).sort()).toEqual(Object.keys(translations.zh).sort());
     Object.values(translations).forEach(dict=>Object.values(dict).forEach(v=>expect(v.trim()).not.toBe('')));
   });
+  it('indexes the authored type and C++ reading sections in both languages',()=>{
+    for (const [query,section] of [
+      ['01000001','10.2'],['value type','10.2'],['复杂度','10.3'],['complexity','10.3'],
+      ['模板推导','C.1'],['type deduction','C.1'],['requires','C.2'],['same_as','C.2'],
+      ['op(r,a)','C.4'],['function object','C.4'],['my_ratio','C.5'],['前置条件','C.5']
+    ]) expect(searchBook(query).flatMap(c=>c.sections).map(s=>s.id),query).toContain(section);
+    for (const [query,section] of [['第10.2节','10.2'],['Section C.2','C.2'],['section c.5','C.5'],['section c.7','C.7']]) {
+      const results=searchBook(query);
+      expect(results.flatMap(c=>c.sections).map(s=>s.id),query).toEqual([section]);
+      expect(results.flatMap(c=>c.exercises),query).toEqual([]);
+    }
+  });
 });
