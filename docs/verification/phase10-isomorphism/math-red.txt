@@ -1,0 +1,37 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+ ❯ src/lib/algorithms/fourElementModels.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/lib/algorithms/fourElementModels.test.ts [ src/lib/algorithms/fourElementModels.test.ts ]
+Error: Failed to resolve import "./fourElementModels" from "src/lib/algorithms/fourElementModels.test.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: D:/Code/fm2gp-Chinese/src/lib/algorithms/fourElementModels.test.ts:2:66
+  1  |  import { expect, it } from "vitest";
+  2  |  import { z4, u5, u8, table, properties, images, compare, matchCount } from "./fourElementModels";
+     |                                                                              ^
+  3  |  // Independent expected tables and images in the specified element order.
+  4  |  const addition = [
+ ❯ TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/node.js:30602:39
+ ❯ TransformPluginContext.error node_modules/vite/dist/node/chunks/node.js:30599:14
+ ❯ normalizeUrl node_modules/vite/dist/node/chunks/node.js:27842:18
+ ❯ node_modules/vite/dist/node/chunks/node.js:27905:30
+ ❯ TransformPluginContext.transform node_modules/vite/dist/node/chunks/node.js:27873:4
+ ❯ EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/node.js:30387:14
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/node.js:24646:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  19:24:54
+   Duration  2.18s (transform 20ms, setup 216ms, import 0ms, tests 0ms, environment 1.73s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

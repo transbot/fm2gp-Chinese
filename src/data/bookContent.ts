@@ -310,8 +310,8 @@ export const bookContent = {
         "en": "Abstraction in mathematics"
       },
       "guide": {
-        "zh": "从半群、幺半群与群出发，在 6.3–6.5 用模 7 的幂理解元素阶和循环子群，再由陪集划分证明拉格朗日定理。",
-        "en": "From semigroups, monoids and groups, use powers modulo 7 in 6.3–6.5 to study element orders and cyclic subgroups, then prove Lagrange’s theorem by partitioning into cosets."
+        "zh": "从半群、幺半群与群出发，在 6.3–6.5 用模 7 的幂理解元素阶和循环子群，再由陪集划分证明拉格朗日定理。6.6–6.7 比较四元素群，检验同构并理解范畴性。",
+        "en": "From semigroups, monoids and groups, use powers modulo 7 in 6.3–6.5 to study element orders and cyclic subgroups, then prove Lagrange’s theorem by partitioning into cosets. In 6.6–6.7 compare four-element models to test isomorphism and understand categoricity."
       },
       "sourcePdfPage": 102,
       "sections": [

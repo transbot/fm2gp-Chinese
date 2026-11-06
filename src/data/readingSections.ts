@@ -1,5 +1,7 @@
 // Section-level aliases, not chapter-wide claims about coverage.
 export const readingKeywords:Record<string,readonly string[]> = {
+  '6.6':['理论','模型','同构','双射','保持运算','theory','model','isomorphism','isomorphic','bijection','operation preservation','preserves the operation'],
+  '6.7':['同构','双射','保持运算','循环群','克莱因群','范畴性','isomorphism','isomorphic','bijection','operation preservation','cyclic group','Klein group','categorical','categoricity','noncategorical'],
   '6.3':['群的阶','元素阶','元素的阶','消去律','order of a group','order of an element','element order','cancellation'],
   '6.4':['元素阶','元素的阶','order of an element','element order','循环群','cyclic group','子群','subgroup','生成元','generator'],
   '6.5':['陪集','coset','左陪集','left coset','子群','subgroup','拉格朗日定理',"Lagrange's theorem",'Lagrange’s theorem','Lagrange theorem'],

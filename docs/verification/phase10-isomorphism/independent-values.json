@@ -1,0 +1,915 @@
+{
+  "tables": {
+    "Z4": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        2,
+        3,
+        0
+      ],
+      [
+        2,
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        1,
+        2
+      ]
+    ],
+    "U5": [
+      [
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        2,
+        4,
+        1,
+        3
+      ],
+      [
+        3,
+        1,
+        4,
+        2
+      ],
+      [
+        4,
+        3,
+        2,
+        1
+      ]
+    ],
+    "U8": [
+      [
+        1,
+        3,
+        5,
+        7
+      ],
+      [
+        3,
+        1,
+        7,
+        5
+      ],
+      [
+        5,
+        7,
+        1,
+        3
+      ],
+      [
+        7,
+        5,
+        3,
+        1
+      ]
+    ]
+  },
+  "modelProperties": {
+    "Z4": {
+      "elements": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "orders": [
+        1,
+        4,
+        2,
+        4
+      ],
+      "self": [
+        0,
+        2,
+        0,
+        2
+      ],
+      "generators": [
+        1,
+        3
+      ]
+    },
+    "U5": {
+      "elements": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "orders": [
+        1,
+        4,
+        4,
+        2
+      ],
+      "self": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "generators": [
+        2,
+        3
+      ]
+    },
+    "U8": {
+      "elements": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "orders": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "self": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "generators": []
+    }
+  },
+  "maps": {
+    "f2": {
+      "images": [
+        1,
+        2,
+        4,
+        3
+      ],
+      "inverse": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "forwardPairs": [
+        {
+          "x": 0,
+          "y": 0,
+          "sum": 0,
+          "mappedSum": 1,
+          "fx": 1,
+          "fy": 1,
+          "targetProduct": 1
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "sum": 1,
+          "mappedSum": 2,
+          "fx": 1,
+          "fy": 2,
+          "targetProduct": 2
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "sum": 2,
+          "mappedSum": 4,
+          "fx": 1,
+          "fy": 4,
+          "targetProduct": 4
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "sum": 3,
+          "mappedSum": 3,
+          "fx": 1,
+          "fy": 3,
+          "targetProduct": 3
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "sum": 1,
+          "mappedSum": 2,
+          "fx": 2,
+          "fy": 1,
+          "targetProduct": 2
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "sum": 2,
+          "mappedSum": 4,
+          "fx": 2,
+          "fy": 2,
+          "targetProduct": 4
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "sum": 3,
+          "mappedSum": 3,
+          "fx": 2,
+          "fy": 4,
+          "targetProduct": 3
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "sum": 0,
+          "mappedSum": 1,
+          "fx": 2,
+          "fy": 3,
+          "targetProduct": 1
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "sum": 2,
+          "mappedSum": 4,
+          "fx": 4,
+          "fy": 1,
+          "targetProduct": 4
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "sum": 3,
+          "mappedSum": 3,
+          "fx": 4,
+          "fy": 2,
+          "targetProduct": 3
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "sum": 0,
+          "mappedSum": 1,
+          "fx": 4,
+          "fy": 4,
+          "targetProduct": 1
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "sum": 1,
+          "mappedSum": 2,
+          "fx": 4,
+          "fy": 3,
+          "targetProduct": 2
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "sum": 3,
+          "mappedSum": 3,
+          "fx": 3,
+          "fy": 1,
+          "targetProduct": 3
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "sum": 0,
+          "mappedSum": 1,
+          "fx": 3,
+          "fy": 2,
+          "targetProduct": 1
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "sum": 1,
+          "mappedSum": 2,
+          "fx": 3,
+          "fy": 4,
+          "targetProduct": 2
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "sum": 2,
+          "mappedSum": 4,
+          "fx": 3,
+          "fy": 3,
+          "targetProduct": 4
+        }
+      ],
+      "inversePairs": [
+        {
+          "u": 1,
+          "v": 1,
+          "inverseProduct": 0,
+          "sourceSum": 0
+        },
+        {
+          "u": 1,
+          "v": 2,
+          "inverseProduct": 1,
+          "sourceSum": 1
+        },
+        {
+          "u": 1,
+          "v": 3,
+          "inverseProduct": 3,
+          "sourceSum": 3
+        },
+        {
+          "u": 1,
+          "v": 4,
+          "inverseProduct": 2,
+          "sourceSum": 2
+        },
+        {
+          "u": 2,
+          "v": 1,
+          "inverseProduct": 1,
+          "sourceSum": 1
+        },
+        {
+          "u": 2,
+          "v": 2,
+          "inverseProduct": 2,
+          "sourceSum": 2
+        },
+        {
+          "u": 2,
+          "v": 3,
+          "inverseProduct": 0,
+          "sourceSum": 0
+        },
+        {
+          "u": 2,
+          "v": 4,
+          "inverseProduct": 3,
+          "sourceSum": 3
+        },
+        {
+          "u": 3,
+          "v": 1,
+          "inverseProduct": 3,
+          "sourceSum": 3
+        },
+        {
+          "u": 3,
+          "v": 2,
+          "inverseProduct": 0,
+          "sourceSum": 0
+        },
+        {
+          "u": 3,
+          "v": 3,
+          "inverseProduct": 2,
+          "sourceSum": 2
+        },
+        {
+          "u": 3,
+          "v": 4,
+          "inverseProduct": 1,
+          "sourceSum": 1
+        },
+        {
+          "u": 4,
+          "v": 1,
+          "inverseProduct": 2,
+          "sourceSum": 2
+        },
+        {
+          "u": 4,
+          "v": 2,
+          "inverseProduct": 3,
+          "sourceSum": 3
+        },
+        {
+          "u": 4,
+          "v": 3,
+          "inverseProduct": 1,
+          "sourceSum": 1
+        },
+        {
+          "u": 4,
+          "v": 4,
+          "inverseProduct": 0,
+          "sourceSum": 0
+        }
+      ],
+      "bothCompositions": "identity"
+    },
+    "f3": {
+      "images": [
+        1,
+        3,
+        4,
+        2
+      ],
+      "inverse": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "forwardPairs": [
+        {
+          "x": 0,
+          "y": 0,
+          "sum": 0,
+          "mappedSum": 1,
+          "fx": 1,
+          "fy": 1,
+          "targetProduct": 1
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "sum": 1,
+          "mappedSum": 3,
+          "fx": 1,
+          "fy": 3,
+          "targetProduct": 3
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "sum": 2,
+          "mappedSum": 4,
+          "fx": 1,
+          "fy": 4,
+          "targetProduct": 4
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "sum": 3,
+          "mappedSum": 2,
+          "fx": 1,
+          "fy": 2,
+          "targetProduct": 2
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "sum": 1,
+          "mappedSum": 3,
+          "fx": 3,
+          "fy": 1,
+          "targetProduct": 3
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "sum": 2,
+          "mappedSum": 4,
+          "fx": 3,
+          "fy": 3,
+          "targetProduct": 4
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "sum": 3,
+          "mappedSum": 2,
+          "fx": 3,
+          "fy": 4,
+          "targetProduct": 2
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "sum": 0,
+          "mappedSum": 1,
+          "fx": 3,
+          "fy": 2,
+          "targetProduct": 1
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "sum": 2,
+          "mappedSum": 4,
+          "fx": 4,
+          "fy": 1,
+          "targetProduct": 4
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "sum": 3,
+          "mappedSum": 2,
+          "fx": 4,
+          "fy": 3,
+          "targetProduct": 2
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "sum": 0,
+          "mappedSum": 1,
+          "fx": 4,
+          "fy": 4,
+          "targetProduct": 1
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "sum": 1,
+          "mappedSum": 3,
+          "fx": 4,
+          "fy": 2,
+          "targetProduct": 3
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "sum": 3,
+          "mappedSum": 2,
+          "fx": 2,
+          "fy": 1,
+          "targetProduct": 2
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "sum": 0,
+          "mappedSum": 1,
+          "fx": 2,
+          "fy": 3,
+          "targetProduct": 1
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "sum": 1,
+          "mappedSum": 3,
+          "fx": 2,
+          "fy": 4,
+          "targetProduct": 3
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "sum": 2,
+          "mappedSum": 4,
+          "fx": 2,
+          "fy": 2,
+          "targetProduct": 4
+        }
+      ],
+      "inversePairs": [
+        {
+          "u": 1,
+          "v": 1,
+          "inverseProduct": 0,
+          "sourceSum": 0
+        },
+        {
+          "u": 1,
+          "v": 2,
+          "inverseProduct": 3,
+          "sourceSum": 3
+        },
+        {
+          "u": 1,
+          "v": 3,
+          "inverseProduct": 1,
+          "sourceSum": 1
+        },
+        {
+          "u": 1,
+          "v": 4,
+          "inverseProduct": 2,
+          "sourceSum": 2
+        },
+        {
+          "u": 2,
+          "v": 1,
+          "inverseProduct": 3,
+          "sourceSum": 3
+        },
+        {
+          "u": 2,
+          "v": 2,
+          "inverseProduct": 2,
+          "sourceSum": 2
+        },
+        {
+          "u": 2,
+          "v": 3,
+          "inverseProduct": 0,
+          "sourceSum": 0
+        },
+        {
+          "u": 2,
+          "v": 4,
+          "inverseProduct": 1,
+          "sourceSum": 1
+        },
+        {
+          "u": 3,
+          "v": 1,
+          "inverseProduct": 1,
+          "sourceSum": 1
+        },
+        {
+          "u": 3,
+          "v": 2,
+          "inverseProduct": 0,
+          "sourceSum": 0
+        },
+        {
+          "u": 3,
+          "v": 3,
+          "inverseProduct": 2,
+          "sourceSum": 2
+        },
+        {
+          "u": 3,
+          "v": 4,
+          "inverseProduct": 3,
+          "sourceSum": 3
+        },
+        {
+          "u": 4,
+          "v": 1,
+          "inverseProduct": 2,
+          "sourceSum": 2
+        },
+        {
+          "u": 4,
+          "v": 2,
+          "inverseProduct": 1,
+          "sourceSum": 1
+        },
+        {
+          "u": 4,
+          "v": 3,
+          "inverseProduct": 3,
+          "sourceSum": 3
+        },
+        {
+          "u": 4,
+          "v": 4,
+          "inverseProduct": 0,
+          "sourceSum": 0
+        }
+      ],
+      "bothCompositions": "identity"
+    }
+  },
+  "permutations": [
+    {
+      "images": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "matches": 9
+    },
+    {
+      "images": [
+        1,
+        2,
+        4,
+        3
+      ],
+      "matches": 16
+    },
+    {
+      "images": [
+        1,
+        3,
+        2,
+        4
+      ],
+      "matches": 9
+    },
+    {
+      "images": [
+        1,
+        3,
+        4,
+        2
+      ],
+      "matches": 16
+    },
+    {
+      "images": [
+        1,
+        4,
+        2,
+        3
+      ],
+      "matches": 9
+    },
+    {
+      "images": [
+        1,
+        4,
+        3,
+        2
+      ],
+      "matches": 9
+    },
+    {
+      "images": [
+        2,
+        1,
+        3,
+        4
+      ],
+      "matches": 0
+    },
+    {
+      "images": [
+        2,
+        1,
+        4,
+        3
+      ],
+      "matches": 1
+    },
+    {
+      "images": [
+        2,
+        3,
+        1,
+        4
+      ],
+      "matches": 3
+    },
+    {
+      "images": [
+        2,
+        3,
+        4,
+        1
+      ],
+      "matches": 1
+    },
+    {
+      "images": [
+        2,
+        4,
+        1,
+        3
+      ],
+      "matches": 3
+    },
+    {
+      "images": [
+        2,
+        4,
+        3,
+        1
+      ],
+      "matches": 0
+    },
+    {
+      "images": [
+        3,
+        1,
+        2,
+        4
+      ],
+      "matches": 0
+    },
+    {
+      "images": [
+        3,
+        1,
+        4,
+        2
+      ],
+      "matches": 1
+    },
+    {
+      "images": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "matches": 3
+    },
+    {
+      "images": [
+        3,
+        2,
+        4,
+        1
+      ],
+      "matches": 1
+    },
+    {
+      "images": [
+        3,
+        4,
+        1,
+        2
+      ],
+      "matches": 3
+    },
+    {
+      "images": [
+        3,
+        4,
+        2,
+        1
+      ],
+      "matches": 0
+    },
+    {
+      "images": [
+        4,
+        1,
+        2,
+        3
+      ],
+      "matches": 3
+    },
+    {
+      "images": [
+        4,
+        1,
+        3,
+        2
+      ],
+      "matches": 3
+    },
+    {
+      "images": [
+        4,
+        2,
+        1,
+        3
+      ],
+      "matches": 0
+    },
+    {
+      "images": [
+        4,
+        2,
+        3,
+        1
+      ],
+      "matches": 3
+    },
+    {
+      "images": [
+        4,
+        3,
+        1,
+        2
+      ],
+      "matches": 0
+    },
+    {
+      "images": [
+        4,
+        3,
+        2,
+        1
+      ],
+      "matches": 3
+    }
+  ],
+  "counterexample": {
+    "b": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "x": 1,
+    "y": 1,
+    "paths": [
+      3,
+      4
+    ],
+    "matches": 9
+  },
+  "zeroOperand": {
+    "preset": "f3",
+    "x": 0,
+    "y": 3,
+    "paths": [
+      2,
+      2
+    ]
+  }
+}

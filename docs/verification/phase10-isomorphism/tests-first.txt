@@ -1,0 +1,112 @@
+
+> vite-react-typescript-starter@0.0.0 test:run
+> vitest run
+
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+stderr | src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > defaults for null and null
+⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+ ❯ src/pages/FiniteGroups.test.tsx (9 tests | 7 failed) 749ms
+     × defaults for null and null 244ms
+     × defaults for  and  81ms
+     × defaults for 0 and 7 75ms
+     × defaults for 3x and 2.0 68ms
+     × defaults for 03 and  6 83ms
+     × reads both independently and restores the selection and ordered output on remount 65ms
+     × keeps both selectors usable when storage access throws 51ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 7 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > defaults for null and null
+ FAIL  src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > defaults for  and
+ FAIL  src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > defaults for 0 and 7
+ FAIL  src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > defaults for 3x and 2.0
+ FAIL  src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > defaults for 03 and  6
+AssertionError: expected [ '2', '3', 'f2', '1', '1' ] to deeply equal [ '2', '3' ]
+
+- Expected
++ Received
+
+  [
+    "2",
+    "3",
++   "f2",
++   "1",
++   "1",
+  ]
+
+ ❯ src/pages/FiniteGroups.test.tsx:22:47
+     20|     if(a!==null)sessionStorage.setItem(elementKey,a);
+     21|     if(b!==null)sessionStorage.setItem(repKey,b);
+     22|     mount();expect(selects().map(s=>s.value)).toEqual(['2','3']);
+       |                                               ^
+     23|   });
+     24|   it('reads both independently and restores the selection and ordered …
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/7]⎯
+
+ FAIL  src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > reads both independently and restores the selection and ordered output on remount
+AssertionError: expected [ '3', '3', 'f2', '1', '1' ] to deeply equal [ '3', '3' ]
+
+- Expected
++ Received
+
+  [
+    "3",
+    "3",
++   "f2",
++   "1",
++   "1",
+  ]
+
+ ❯ src/pages/FiniteGroups.test.tsx:26:59
+     24|   it('reads both independently and restores the selection and ordered …
+     25|     sessionStorage.setItem(elementKey,'3');
+     26|     const first=mount();expect(selects().map(s=>s.value)).toEqual(['3'…
+       |                                                           ^
+     27|     change(1,6);expect(sessionStorage.getItem(repKey)).toBe('6');
+     28|     first.unmount();mount();expect(selects().map(s=>s.value)).toEqual(…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/7]⎯
+
+ FAIL  src/pages/FiniteGroups.test.tsx > Chapter 6 selectors > keeps both selectors usable when storage access throws
+AssertionError: expected [ '2', '3', 'f2', '1', '1' ] to deeply equal [ '2', '3' ]
+
+- Expected
++ Received
+
+  [
+    "2",
+    "3",
++   "f2",
++   "1",
++   "1",
+  ]
+
+ ❯ src/pages/FiniteGroups.test.tsx:41:47
+     39|       });
+     40|     }
+     41|     mount();expect(selects().map(s=>s.value)).toEqual(['2','3']);
+       |                                               ^
+     42|     change(0,3);change(1,6);expect(selects().map(s=>s.value)).toEqual(…
+     43|     expect(screen.getByTestId('coset-products')).toHaveTextContent('6 …
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/7]⎯
+
+
+ Test Files  1 failed | 54 passed (55)
+      Tests  7 failed | 514 passed (521)
+   Start at  19:30:25
+   Duration  20.86s (transform 12.45s, setup 30.60s, import 33.90s, tests 37.21s, environment 253.36s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

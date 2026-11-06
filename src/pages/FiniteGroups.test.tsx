@@ -9,7 +9,7 @@ function mount() {
     <LanguageProvider><Routes><Route path="/book/:chapterId" element={<Book/>}/></Routes></LanguageProvider>
   </MemoryRouter>);
 }
-const selects=()=>screen.getAllByRole('combobox') as HTMLSelectElement[];
+const selects=()=>['Choose an element','Choose a coset representative'].map(name=>screen.getByRole('combobox',{name}) as HTMLSelectElement);
 const change=(i:number,value:number)=>fireEvent.change(selects()[i],{target:{value:String(value)}});
 const elementKey='fm2gp:book:6.4:element', repKey='fm2gp:book:6.5:representative';
 beforeEach(()=>{sessionStorage.clear();localStorage.setItem('fm2gp-language','en');});
