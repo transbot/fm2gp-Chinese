@@ -1,0 +1,2190 @@
+[
+  {
+    "base": "http://127.0.0.1:4187",
+    "width": 1440,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "topics": [
+      {
+        "id": "review-power",
+        "source": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+        "directRefresh": true,
+        "keyboard": true,
+        "languagePreservesOpen": true,
+        "reloadedDemoSourceFallback": true
+      },
+      {
+        "id": "review-gcd",
+        "source": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+        "directRefresh": true,
+        "keyboard": true,
+        "languagePreservesOpen": true,
+        "reloadedDemoSourceFallback": true
+      },
+      {
+        "id": "review-iterators",
+        "source": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators",
+        "directRefresh": true,
+        "keyboard": true,
+        "languagePreservesOpen": true,
+        "reloadedDemoSourceFallback": true
+      }
+    ],
+    "roundTrips": [
+      {
+        "theme": "review-power",
+        "path": "/multiply",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "default",
+          "scrollY": 20,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "default",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/multiply?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-power",
+          "key": "d4xa9ib0",
+          "scrollY": 1340,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "v625uamu",
+          "scrollY": 20,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-power",
+        "path": "/concepts/algebra",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "v625uamu",
+          "scrollY": 40,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "v625uamu",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/concepts/algebra?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-power",
+          "key": "dm60gjli",
+          "scrollY": 279,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "1pbtiuq9",
+          "scrollY": 40,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-power",
+        "path": "/power",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "1pbtiuq9",
+          "scrollY": 60,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "1pbtiuq9",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/power?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-power",
+          "key": "p8ndg47p",
+          "scrollY": 690,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "spi3c2gy",
+          "scrollY": 60,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-power",
+        "path": "/concepts/matrices",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "spi3c2gy",
+          "scrollY": 80,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "spi3c2gy",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/concepts/matrices?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-power",
+          "key": "uluohopw",
+          "scrollY": 625,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "qi3o559s",
+          "scrollY": 80,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-power",
+        "path": "/shortest-path",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "qi3o559s",
+          "scrollY": 100,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "qi3o559s",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/shortest-path?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-power",
+          "key": "bej0c66z",
+          "scrollY": 1791,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "6h7tav0b",
+          "scrollY": 100,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "path": "/division",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "default",
+          "scrollY": 1187,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        },
+        "sourceState": {
+          "key": "default",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd"
+        },
+        "demoDeparture": {
+          "url": "/division?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-gcd",
+          "key": "hram3ygp",
+          "scrollY": 1872,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "k00ecuuo",
+          "scrollY": 1187,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "path": "/gcm",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "k00ecuuo",
+          "scrollY": 1207,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        },
+        "sourceState": {
+          "key": "k00ecuuo",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd"
+        },
+        "demoDeparture": {
+          "url": "/gcm?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-gcd",
+          "key": "qgtavk3d",
+          "scrollY": 0,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "nz7s8f5d",
+          "scrollY": 1207,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "path": "/polynomial-gcd",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "nz7s8f5d",
+          "scrollY": 1227,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        },
+        "sourceState": {
+          "key": "nz7s8f5d",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd"
+        },
+        "demoDeparture": {
+          "url": "/polynomial-gcd?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-gcd",
+          "key": "je4ds851",
+          "scrollY": 1248,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "m1bilrmc",
+          "scrollY": 1227,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "path": "/horner",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "m1bilrmc",
+          "scrollY": 1247,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        },
+        "sourceState": {
+          "key": "m1bilrmc",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd"
+        },
+        "demoDeparture": {
+          "url": "/horner?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-gcd",
+          "key": "7sxah0q1",
+          "scrollY": 906,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "o2pichku",
+          "scrollY": 1247,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        }
+      },
+      {
+        "theme": "review-iterators",
+        "path": "/concepts/iterators",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators",
+          "key": "default",
+          "scrollY": 2315,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "sourceState": {
+          "key": "default",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators"
+        },
+        "demoDeparture": {
+          "url": "/concepts/iterators?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-iterators",
+          "key": "2lj2zbuu",
+          "scrollY": 0,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators",
+          "key": "6cg2w94e",
+          "scrollY": 2315,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      },
+      {
+        "theme": "review-iterators",
+        "path": "/reverse",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators",
+          "key": "6cg2w94e",
+          "scrollY": 2335,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "sourceState": {
+          "key": "6cg2w94e",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators"
+        },
+        "demoDeparture": {
+          "url": "/reverse?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-iterators",
+          "key": "xqmpg3n0",
+          "scrollY": 1895,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators",
+          "key": "jhbcg4qh",
+          "scrollY": 2335,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      }
+    ],
+    "history": [
+      {
+        "theme": "review-power",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader",
+          "key": "default",
+          "scrollY": 0,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "arrived": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "bl92a0gj",
+          "scrollY": 370,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "reading": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "bl92a0gj",
+          "scrollY": 460,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "bl92a0gj",
+          "scrollY": 0,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "arrived": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "fplvecqx",
+          "scrollY": 1506,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "reading": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "fplvecqx",
+          "scrollY": 1596,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      },
+      {
+        "theme": "review-iterators",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "fplvecqx",
+          "scrollY": 0,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "arrived": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators",
+          "key": "9lzuw2sh",
+          "scrollY": 2634,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "reading": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators",
+          "key": "9lzuw2sh",
+          "scrollY": 2724,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      }
+    ],
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:4187",
+    "width": 1440,
+    "lang": "en",
+    "browser": "156.0.4314.58",
+    "topics": [
+      {
+        "id": "review-power",
+        "source": "/book/14?q=Conclusions&source=review-reader#review-power",
+        "directRefresh": true,
+        "keyboard": true,
+        "languagePreservesOpen": true,
+        "reloadedDemoSourceFallback": true
+      },
+      {
+        "id": "review-gcd",
+        "source": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+        "directRefresh": true,
+        "keyboard": true,
+        "languagePreservesOpen": true,
+        "reloadedDemoSourceFallback": true
+      },
+      {
+        "id": "review-iterators",
+        "source": "/book/14?q=Conclusions&source=review-reader#review-iterators",
+        "directRefresh": true,
+        "keyboard": true,
+        "languagePreservesOpen": true,
+        "reloadedDemoSourceFallback": true
+      }
+    ],
+    "roundTrips": [
+      {
+        "theme": "review-power",
+        "path": "/multiply",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "default",
+          "scrollY": 20,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "default",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/multiply?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-power",
+          "key": "cwt2f7yw",
+          "scrollY": 1420,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "sfhpmf1r",
+          "scrollY": 20,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-power",
+        "path": "/concepts/algebra",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "sfhpmf1r",
+          "scrollY": 40,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "sfhpmf1r",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/concepts/algebra?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-power",
+          "key": "fmoba2fd",
+          "scrollY": 347,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "x5nl9571",
+          "scrollY": 40,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-power",
+        "path": "/power",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "x5nl9571",
+          "scrollY": 60,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "x5nl9571",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/power?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-power",
+          "key": "hqszgama",
+          "scrollY": 774,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "80wdlgbb",
+          "scrollY": 60,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-power",
+        "path": "/concepts/matrices",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "80wdlgbb",
+          "scrollY": 80,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "80wdlgbb",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/concepts/matrices?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-power",
+          "key": "78bnd6j4",
+          "scrollY": 649,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "dvyhvbh3",
+          "scrollY": 80,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-power",
+        "path": "/shortest-path",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "dvyhvbh3",
+          "scrollY": 100,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "dvyhvbh3",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/shortest-path?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-power",
+          "key": "wjaar9o8",
+          "scrollY": 2077,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "29dji2tw",
+          "scrollY": 100,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "path": "/division",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "default",
+          "scrollY": 1695,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        },
+        "sourceState": {
+          "key": "default",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd"
+        },
+        "demoDeparture": {
+          "url": "/division?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-gcd",
+          "key": "pm619pwp",
+          "scrollY": 2160,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "4oveiwmf",
+          "scrollY": 1695,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "path": "/gcm",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "4oveiwmf",
+          "scrollY": 1715,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        },
+        "sourceState": {
+          "key": "4oveiwmf",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd"
+        },
+        "demoDeparture": {
+          "url": "/gcm?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-gcd",
+          "key": "uhzohojz",
+          "scrollY": 0,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "45b7t9ui",
+          "scrollY": 1715,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "path": "/polynomial-gcd",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "45b7t9ui",
+          "scrollY": 1735,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        },
+        "sourceState": {
+          "key": "45b7t9ui",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd"
+        },
+        "demoDeparture": {
+          "url": "/polynomial-gcd?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-gcd",
+          "key": "vc8qld57",
+          "scrollY": 1420,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "xjseyz9t",
+          "scrollY": 1735,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "path": "/horner",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "xjseyz9t",
+          "scrollY": 1755,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        },
+        "sourceState": {
+          "key": "xjseyz9t",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd"
+        },
+        "demoDeparture": {
+          "url": "/horner?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-gcd",
+          "key": "0f8odexa",
+          "scrollY": 930,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "mfn28qc9",
+          "scrollY": 1755,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        }
+      },
+      {
+        "theme": "review-iterators",
+        "path": "/concepts/iterators",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-iterators",
+          "key": "default",
+          "scrollY": 3219,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "sourceState": {
+          "key": "default",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-iterators"
+        },
+        "demoDeparture": {
+          "url": "/concepts/iterators?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-iterators",
+          "key": "nnyeh9h0",
+          "scrollY": 166,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-iterators",
+          "key": "4pkt28jo",
+          "scrollY": 3219,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      },
+      {
+        "theme": "review-iterators",
+        "path": "/reverse",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-iterators",
+          "key": "4pkt28jo",
+          "scrollY": 3239,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "sourceState": {
+          "key": "4pkt28jo",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-iterators"
+        },
+        "demoDeparture": {
+          "url": "/reverse?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-iterators",
+          "key": "yamnecpf",
+          "scrollY": 2175,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-iterators",
+          "key": "rs7gsrv1",
+          "scrollY": 3239,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      }
+    ],
+    "history": [
+      {
+        "theme": "review-power",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader",
+          "key": "default",
+          "scrollY": 0,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "arrived": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "045bi16f",
+          "scrollY": 454,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "reading": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "045bi16f",
+          "scrollY": 544,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "045bi16f",
+          "scrollY": 0,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "arrived": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "driyefxc",
+          "scrollY": 1986,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "reading": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "driyefxc",
+          "scrollY": 2076,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      },
+      {
+        "theme": "review-iterators",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "driyefxc",
+          "scrollY": 0,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "arrived": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-iterators",
+          "key": "f7tbiveb",
+          "scrollY": 3482,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "reading": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-iterators",
+          "key": "f7tbiveb",
+          "scrollY": 3572,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      }
+    ],
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:4187",
+    "width": 390,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "topics": [
+      {
+        "id": "review-power",
+        "source": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+        "directRefresh": true,
+        "keyboard": true,
+        "languagePreservesOpen": true,
+        "reloadedDemoSourceFallback": true
+      },
+      {
+        "id": "review-gcd",
+        "source": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+        "directRefresh": true,
+        "keyboard": true,
+        "languagePreservesOpen": true,
+        "reloadedDemoSourceFallback": true
+      },
+      {
+        "id": "review-iterators",
+        "source": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators",
+        "directRefresh": true,
+        "keyboard": true,
+        "languagePreservesOpen": true,
+        "reloadedDemoSourceFallback": true
+      }
+    ],
+    "roundTrips": [
+      {
+        "theme": "review-power",
+        "path": "/multiply",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "default",
+          "scrollY": 20,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "default",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/multiply?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-power",
+          "key": "r79iblxj",
+          "scrollY": 3285,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "v2dixwgi",
+          "scrollY": 20,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-power",
+        "path": "/concepts/algebra",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "v2dixwgi",
+          "scrollY": 40,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "v2dixwgi",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/concepts/algebra?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-power",
+          "key": "v80xf68g",
+          "scrollY": 419,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "3ptlidgm",
+          "scrollY": 40,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-power",
+        "path": "/power",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "3ptlidgm",
+          "scrollY": 60,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "3ptlidgm",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/power?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-power",
+          "key": "8wbd3s93",
+          "scrollY": 875,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "mx51nh1g",
+          "scrollY": 60,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-power",
+        "path": "/concepts/matrices",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "mx51nh1g",
+          "scrollY": 80,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "mx51nh1g",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/concepts/matrices?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-power",
+          "key": "wl2cek6q",
+          "scrollY": 1217,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "exif4wlc",
+          "scrollY": 80,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-power",
+        "path": "/shortest-path",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "exif4wlc",
+          "scrollY": 100,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "exif4wlc",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/shortest-path?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-power",
+          "key": "1ny1yjv5",
+          "scrollY": 2756,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "glx7d7wp",
+          "scrollY": 100,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "path": "/division",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "default",
+          "scrollY": 2203,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        },
+        "sourceState": {
+          "key": "default",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd"
+        },
+        "demoDeparture": {
+          "url": "/division?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-gcd",
+          "key": "cbyipekn",
+          "scrollY": 4681,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "84nr670b",
+          "scrollY": 2203,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "path": "/gcm",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "84nr670b",
+          "scrollY": 2223,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        },
+        "sourceState": {
+          "key": "84nr670b",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd"
+        },
+        "demoDeparture": {
+          "url": "/gcm?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-gcd",
+          "key": "mcaczi0b",
+          "scrollY": 666,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "7qgt5r0w",
+          "scrollY": 2223,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "path": "/polynomial-gcd",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "7qgt5r0w",
+          "scrollY": 2243,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        },
+        "sourceState": {
+          "key": "7qgt5r0w",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd"
+        },
+        "demoDeparture": {
+          "url": "/polynomial-gcd?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-gcd",
+          "key": "wdwhmu4e",
+          "scrollY": 2548,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "0tyhwysp",
+          "scrollY": 2243,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "path": "/horner",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "0tyhwysp",
+          "scrollY": 2263,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        },
+        "sourceState": {
+          "key": "0tyhwysp",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd"
+        },
+        "demoDeparture": {
+          "url": "/horner?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-gcd",
+          "key": "3lsbzagt",
+          "scrollY": 2132,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "pbxyl663",
+          "scrollY": 2263,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        }
+      },
+      {
+        "theme": "review-iterators",
+        "path": "/concepts/iterators",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators",
+          "key": "default",
+          "scrollY": 4299,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "sourceState": {
+          "key": "default",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators"
+        },
+        "demoDeparture": {
+          "url": "/concepts/iterators?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-iterators",
+          "key": "ycz1f60m",
+          "scrollY": 206,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators",
+          "key": "idfnxt25",
+          "scrollY": 4299,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      },
+      {
+        "theme": "review-iterators",
+        "path": "/reverse",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators",
+          "key": "idfnxt25",
+          "scrollY": 4319,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "sourceState": {
+          "key": "idfnxt25",
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators"
+        },
+        "demoDeparture": {
+          "url": "/reverse?from=%2Fbook%2F14%3Fq%3D%25E5%2585%25A8%25E4%25B9%25A6%25E6%2580%25BB%25E7%25BB%2593%26source%3Dreview-reader%23review-iterators",
+          "key": "10qffm3j",
+          "scrollY": 4851,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators",
+          "key": "0w73cmvn",
+          "scrollY": 4319,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      }
+    ],
+    "history": [
+      {
+        "theme": "review-power",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader",
+          "key": "default",
+          "scrollY": 0,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "arrived": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "5b3vm3qy",
+          "scrollY": 490,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "reading": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "5b3vm3qy",
+          "scrollY": 580,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-power",
+          "key": "5b3vm3qy",
+          "scrollY": 0,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "arrived": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "wg3mmihl",
+          "scrollY": 2474,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "reading": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "wg3mmihl",
+          "scrollY": 2564,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      },
+      {
+        "theme": "review-iterators",
+        "departure": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-gcd",
+          "key": "wg3mmihl",
+          "scrollY": 0,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "arrived": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators",
+          "key": "ayx4sdbw",
+          "scrollY": 4542,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "reading": {
+          "url": "/book/14?q=%E5%85%A8%E4%B9%A6%E6%80%BB%E7%BB%93&source=review-reader#review-iterators",
+          "key": "ayx4sdbw",
+          "scrollY": 4632,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      }
+    ],
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:4187",
+    "width": 390,
+    "lang": "en",
+    "browser": "156.0.4314.58",
+    "topics": [
+      {
+        "id": "review-power",
+        "source": "/book/14?q=Conclusions&source=review-reader#review-power",
+        "directRefresh": true,
+        "keyboard": true,
+        "languagePreservesOpen": true,
+        "reloadedDemoSourceFallback": true
+      },
+      {
+        "id": "review-gcd",
+        "source": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+        "directRefresh": true,
+        "keyboard": true,
+        "languagePreservesOpen": true,
+        "reloadedDemoSourceFallback": true
+      },
+      {
+        "id": "review-iterators",
+        "source": "/book/14?q=Conclusions&source=review-reader#review-iterators",
+        "directRefresh": true,
+        "keyboard": true,
+        "languagePreservesOpen": true,
+        "reloadedDemoSourceFallback": true
+      }
+    ],
+    "roundTrips": [
+      {
+        "theme": "review-power",
+        "path": "/multiply",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "default",
+          "scrollY": 607,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "default",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/multiply?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-power",
+          "key": "r5ctvri4",
+          "scrollY": 3721,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "bj3ewnrb",
+          "scrollY": 607,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-power",
+        "path": "/concepts/algebra",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "bj3ewnrb",
+          "scrollY": 627,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "bj3ewnrb",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/concepts/algebra?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-power",
+          "key": "svx31ddz",
+          "scrollY": 995,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "8v1z0rhs",
+          "scrollY": 627,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-power",
+        "path": "/power",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "8v1z0rhs",
+          "scrollY": 647,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "8v1z0rhs",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/power?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-power",
+          "key": "lze4h8zq",
+          "scrollY": 1099,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "41gm9o69",
+          "scrollY": 647,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-power",
+        "path": "/concepts/matrices",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "41gm9o69",
+          "scrollY": 667,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "41gm9o69",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/concepts/matrices?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-power",
+          "key": "d785mryz",
+          "scrollY": 1609,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "jc5x6w6q",
+          "scrollY": 667,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-power",
+        "path": "/shortest-path",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "jc5x6w6q",
+          "scrollY": 687,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        },
+        "sourceState": {
+          "key": "jc5x6w6q",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power"
+        },
+        "demoDeparture": {
+          "url": "/shortest-path?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-power",
+          "key": "74qn4mvx",
+          "scrollY": 3530,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "undpm96h",
+          "scrollY": 687,
+          "open": [
+            "power-conditions",
+            "power-matrices"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "path": "/division",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "default",
+          "scrollY": 3771,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        },
+        "sourceState": {
+          "key": "default",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd"
+        },
+        "demoDeparture": {
+          "url": "/division?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-gcd",
+          "key": "5vvvdoc9",
+          "scrollY": 5581,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "53eobhfn",
+          "scrollY": 3771,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "path": "/gcm",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "53eobhfn",
+          "scrollY": 3791,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        },
+        "sourceState": {
+          "key": "53eobhfn",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd"
+        },
+        "demoDeparture": {
+          "url": "/gcm?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-gcd",
+          "key": "69j046gz",
+          "scrollY": 769,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "zkpe69av",
+          "scrollY": 3791,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "path": "/polynomial-gcd",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "zkpe69av",
+          "scrollY": 3811,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        },
+        "sourceState": {
+          "key": "zkpe69av",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd"
+        },
+        "demoDeparture": {
+          "url": "/polynomial-gcd?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-gcd",
+          "key": "jat99r63",
+          "scrollY": 3168,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "ua4hhev6",
+          "scrollY": 3811,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "path": "/horner",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "ua4hhev6",
+          "scrollY": 3831,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        },
+        "sourceState": {
+          "key": "ua4hhev6",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd"
+        },
+        "demoDeparture": {
+          "url": "/horner?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-gcd",
+          "key": "kx3xh35u",
+          "scrollY": 2440,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "woebvzxg",
+          "scrollY": 3831,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return"
+          ]
+        }
+      },
+      {
+        "theme": "review-iterators",
+        "path": "/concepts/iterators",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-iterators",
+          "key": "default",
+          "scrollY": 6907,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "sourceState": {
+          "key": "default",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-iterators"
+        },
+        "demoDeparture": {
+          "url": "/concepts/iterators?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-iterators",
+          "key": "0gyp7j0x",
+          "scrollY": 622,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-iterators",
+          "key": "izzw9c57",
+          "scrollY": 6907,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      },
+      {
+        "theme": "review-iterators",
+        "path": "/reverse",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-iterators",
+          "key": "izzw9c57",
+          "scrollY": 6927,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "sourceState": {
+          "key": "izzw9c57",
+          "url": "/book/14?q=Conclusions&source=review-reader#review-iterators"
+        },
+        "demoDeparture": {
+          "url": "/reverse?from=%2Fbook%2F14%3Fq%3DConclusions%26source%3Dreview-reader%23review-iterators",
+          "key": "ga2w1hze",
+          "scrollY": 5388,
+          "open": []
+        },
+        "restored": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-iterators",
+          "key": "vqrp9mh4",
+          "scrollY": 6927,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      }
+    ],
+    "history": [
+      {
+        "theme": "review-power",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader",
+          "key": "default",
+          "scrollY": 0,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "arrived": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "8lbf0ms1",
+          "scrollY": 698,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "reading": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "8lbf0ms1",
+          "scrollY": 788,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      },
+      {
+        "theme": "review-gcd",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-power",
+          "key": "8lbf0ms1",
+          "scrollY": 0,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "arrived": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "n7owhw5c",
+          "scrollY": 3890,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "reading": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "n7owhw5c",
+          "scrollY": 3980,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      },
+      {
+        "theme": "review-iterators",
+        "departure": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-gcd",
+          "key": "n7owhw5c",
+          "scrollY": 57,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "arrived": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-iterators",
+          "key": "281pr6mb",
+          "scrollY": 7010,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        },
+        "reading": {
+          "url": "/book/14?q=Conclusions&source=review-reader#review-iterators",
+          "key": "281pr6mb",
+          "scrollY": 7100,
+          "open": [
+            "power-conditions",
+            "power-matrices",
+            "gcd-loop",
+            "gcd-useful-return",
+            "iterators-forward",
+            "iterators-buffer"
+          ]
+        }
+      }
+    ],
+    "errors": []
+  }
+]

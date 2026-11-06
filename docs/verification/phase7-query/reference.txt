@@ -1,0 +1,1 @@
+PASS: 240 direct/refresh pairs; 8 off-anchor round trips; 24 explicit searches.

@@ -1,0 +1,1 @@
+PASS: per-character scroll checks in four environments.

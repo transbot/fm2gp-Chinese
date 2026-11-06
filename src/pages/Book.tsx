@@ -26,16 +26,16 @@ export function Book() {
     const query = params.get('q') || '';
     const matches = useMemo(()=>chapterId ? [] : searchBook(query),[chapterId,query]);
     const chapter = bookCatalog.find(c => c.id === chapterId);
-    const from = (anchor: string) => `?from=${encodeURIComponent(`/book/${chapterId}${query ? `?q=${encodeURIComponent(query)}` : ''}#${anchor}`)}`;
+    const from = (anchor: string) => `?from=${encodeURIComponent(`${location.pathname}${location.search}#${anchor}`)}`;
     return <LearningShell title={chapter ? `${chapter.id} · ${chapter.title[lang]}` : zh ? '按本书章节学习' : 'Learn chapter by chapter'} description={chapter?.guide[lang] ?? (zh ? '按章节寻找演示、代码和习题；没有交互的内容提供阅读导引。' : 'Find demonstrations, code, and exercises by chapter. Reading guides cover topics without an interactive lesson.')}>
     {!chapterId ? <>
       <DirectorySearch query={query} label={zh ? '搜索章节、节号、习题、术语或函数' : 'Search chapters, sections, exercises, terms, or functions'}
         update={value=>{const next=new URLSearchParams(params);if(value)next.set('q',value);else next.delete('q');setParams(next,{replace:true});}}/>
       {/* Keep enough document height below the search field when results shrink. */}
-      <div className="min-h-screen"><div className="grid sm:grid-cols-2 gap-4">{matches.map(c => <article className="learning-card" key={c.id}><h2 className="text-lg font-semibold"><Link className="learning-link" to={`/book/${c.id}${query ? `?q=${encodeURIComponent(query)}` : ''}`}>{c.id} · {c.title[lang]}</Link></h2><p className="text-sm leading-6">{c.guide[lang]}</p>{query && <ul className="space-y-2">{c.sections.map(s => <li key={s.id}><Link className="learning-link" to={`/book/${c.id}?q=${encodeURIComponent(query)}#${sectionAnchor(s.id)}`}>{zh ? '第' : 'Section '}{s.id}{zh ? '节' : ''} · {s.title[lang]}</Link></li>)}{c.exercises.map(e => <li key={e.id}><Link className="learning-link" to={`/book/${c.id}?q=${encodeURIComponent(query)}#${exerciseAnchor(e.id)}`}>{zh ? '习题' : 'Exercise'} {e.id}</Link></li>)}</ul>}</article>)}</div>
+      <div className="min-h-screen"><div className="grid sm:grid-cols-2 gap-4">{matches.map(c => <article className="learning-card" key={c.id}><h2 className="text-lg font-semibold"><Link className="learning-link" to={{pathname: `/book/${c.id}`, search: location.search, hash: ''}}>{c.id} · {c.title[lang]}</Link></h2><p className="text-sm leading-6">{c.guide[lang]}</p>{query && <ul className="space-y-2">{c.sections.map(s => <li key={s.id}><Link className="learning-link" to={{pathname: `/book/${c.id}`, search: location.search, hash: `#${sectionAnchor(s.id)}`}}>{zh ? '第' : 'Section '}{s.id}{zh ? '节' : ''} · {s.title[lang]}</Link></li>)}{c.exercises.map(e => <li key={e.id}><Link className="learning-link" to={{pathname: `/book/${c.id}`, search: location.search, hash: `#${exerciseAnchor(e.id)}`}}>{zh ? '习题' : 'Exercise'} {e.id}</Link></li>)}</ul>}</article>)}</div>
       {!matches.length && <p role="status">{zh ? '未找到匹配资料。试试节号或函数名。' : 'No matching resources. Try a section number or function name.'}</p>}</div>
     </> : chapter ? <>
-      <Link className="learning-link" to={`/book${query ? `?q=${encodeURIComponent(query)}` : ''}`}>{zh ? '返回章节目录' : 'Back to chapter directory'}</Link>
+      <Link className="learning-link" to={{pathname: '/book', search: location.search, hash: ''}}>{zh ? '返回章节目录' : 'Back to chapter directory'}</Link>
 
       {chapter.id === '14' ? <BookRecap/> : <nav className="learning-card !space-y-0 flex flex-wrap gap-3">{chapter.sections.map(s => <Link className="learning-link" key={s.id} to={{ pathname: location.pathname, search: location.search, hash: `#${sectionAnchor(s.id)}` }}>{s.id} {s.title[lang]}</Link>)}</nav>}
       {chapter.id === '8' && <nav className="learning-card" aria-label={zh ? '多项式学习路线' : 'Polynomial learning route'}><h2 className="text-xl font-semibold">{zh ? '多项式学习路线' : 'Polynomial learning route'}</h2><p>{zh ? '先用霍纳法则求值，再用带余除法理解A(r)为何等于余数，最后把求余接入泛型GCD循环。第8.8节解释有理数系数为什么能够相除。' : 'Evaluate with Horner, use division to understand why A(r) equals the remainder, then connect remainders to generic GCD. Section 8.8 explains division of rational coefficients.'}</p><div className="flex flex-wrap gap-4"><Link className="learning-link" to={'/horner' + from(sectionAnchor('8.1'))}>{zh ? '霍纳法则' : 'Horner'}</Link><Link className="learning-link" to={'/polynomial-gcd' + from(sectionAnchor('8.7'))}>{zh ? '带余除法与GCD' : 'Division and GCD'}</Link><Link className="learning-link" to={{pathname:location.pathname,search:location.search,hash:'#section-8-8'}}>{zh ? '第8.8节：域' : 'Section 8.8: fields'}</Link></div></nav>}
@@ -62,6 +62,6 @@ export function Book() {
         {!e.resources.length && <p>{zh ? '阅读题目与本章导引；此处尚无参考解答。' : 'Read the exercise with the chapter guide; no reference solution is available here yet.'}</p>}
         {e.id === '7.1' && <p className="text-sm text-gray-600">{zh ? '原 PDF 外链已失效；现提供可访问的配套程序。' : 'The original PDF link is unavailable; the companion program remains accessible.'}</p>}
       </section>)}
-    </> : <p>{zh ? '未找到这一章。' : 'Chapter not found.'} <Link className="learning-link" to="/book">{zh ? '返回目录' : 'Back to directory'}</Link></p>}
+    </> : <p>{zh ? '未找到这一章。' : 'Chapter not found.'} <Link className="learning-link" to={{pathname: '/book', search: location.search, hash: ''}}>{zh ? '返回目录' : 'Back to directory'}</Link></p>}
   </LearningShell>;
 }

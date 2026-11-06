@@ -1,0 +1,93 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+stderr | src/pages/Book.query.test.tsx > preserves full directory context through the actual reading sequence (zh)
+⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+ ❯ src/pages/Book.query.test.tsx (4 tests | 4 failed) 168ms
+   × preserves full directory context through the actual reading sequence (zh) 120ms
+   × preserves full directory context through the actual reading sequence (en) 20ms
+   × preserves queries and exact anchors on all result kinds and ordinary demos (zh) 16ms
+   × preserves queries and exact anchors on all result kinds and ordinary demos (en) 11ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/pages/Book.query.test.tsx > preserves full directory context through the actual reading sequence (zh)
+AssertionError: expected { q: '归纳' } to deeply equal { source: 'proof-reader', …(2) }
+
+- Expected
++ Received
+
+  {
+    "q": "归纳",
+-   "source": "proof-reader",
+-   "tag": "two words",
+  }
+
+ ❯ src/pages/Book.query.test.tsx:22:80
+     20|  const expected={...original,q};
+     21|  const section=document.querySelector('a[href$="#section-9-7"]')!;
+     22|  expect(params(new URL(section.getAttribute('href')!,location.origin).…
+       |                                                                                ^
+     23|  fireEvent.click(section);
+     24|  await waitFor(()=>expect(location.pathname).toBe('/book/9'));
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  src/pages/Book.query.test.tsx > preserves full directory context through the actual reading sequence (en)
+AssertionError: expected { q: 'induction' } to deeply equal { source: 'proof-reader', …(2) }
+
+- Expected
++ Received
+
+  {
+    "q": "induction",
+-   "source": "proof-reader",
+-   "tag": "two words",
+  }
+
+ ❯ src/pages/Book.query.test.tsx:22:80
+     20|  const expected={...original,q};
+     21|  const section=document.querySelector('a[href$="#section-9-7"]')!;
+     22|  expect(params(new URL(section.getAttribute('href')!,location.origin).…
+       |                                                                                ^
+     23|  fireEvent.click(section);
+     24|  await waitFor(()=>expect(location.pathname).toBe('/book/9'));
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  src/pages/Book.query.test.tsx > preserves queries and exact anchors on all result kinds and ordinary demos (zh)
+ FAIL  src/pages/Book.query.test.tsx > preserves queries and exact anchors on all result kinds and ordinary demos (en)
+AssertionError: expected { q: '9.2' } to deeply equal { source: 'proof-reader', …(2) }
+
+- Expected
++ Received
+
+  {
+    "q": "9.2",
+-   "source": "proof-reader",
+-   "tag": "two words",
+  }
+
+ ❯ src/pages/Book.query.test.tsx:47:95
+     45|   const link=document.querySelector(hash?`a[href$="${hash}"]`:'article…
+     46|   const url=new URL(link.getAttribute('href')!,location.origin);
+     47|   expect(url.pathname).toBe('/book/9');expect(url.hash).toBe(hash);exp…
+       |                                                                                               ^
+     48|  }
+     49|  fireEvent.click(document.querySelector('a[href$="#exercise-9-2"]')!);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  4 failed (4)
+   Start at  13:07:57
+   Duration  3.89s (transform 275ms, setup 339ms, import 698ms, tests 168ms, environment 2.40s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice
