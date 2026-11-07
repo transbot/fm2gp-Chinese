@@ -22,7 +22,14 @@ describe('source-directed cycle transfers', () => {
     let checked=0;
     for(let n=1;n<=6;n++) for(const to of permutations(Array.from({length:n},(_,i)=>i))) {
       const array=to.map(i=>i%2);
-      const end=traceCycles({array,permutation:to}).slice(-1)[0];
+      const frames=traceCycles({array,permutation:to});
+      for(const frame of frames) {
+        expect(frame.cells).toHaveLength(n);
+        // A physical copy may repeat origins; each value must still match its label.
+        expect(frame.cells.every(cell=>Number.isSafeInteger(cell.origin)&&cell.origin>=0&&cell.origin<n&&cell.value===array[cell.origin])).toBe(true);
+        if(frame.locals)expect(frame.locals.tmp.value).toBe(array[frame.locals.tmp.origin]);
+      }
+      const end=frames[frames.length-1];
       const origins:number[]=[];
       to.forEach((d,i)=>{ origins[d]=i; });
       expect(end.cells).toEqual(origins.map(origin=>({origin,value:array[origin]})));

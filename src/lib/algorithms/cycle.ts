@@ -192,8 +192,11 @@ export const cycleVisualization: AlgorithmVisualization<
       };
     }
 
-    if (!array.every(Number.isSafeInteger)) {
-      return {valid:false, errorKey:'cycleInvalidInteger'};
+    // every() skips missing slots; API callers may pass a native sparse array.
+    for (let i = 0; i < array.length; i++) {
+      if (!Object.prototype.hasOwnProperty.call(array, i) || !Number.isSafeInteger(array[i])) {
+        return {valid:false, errorKey:'cycleInvalidInteger'};
+      }
     }
     if (!permutation || permutation.length !== array.length) {
       return {
