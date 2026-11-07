@@ -30,6 +30,7 @@ export const polynomialGcdCode:Record<GcdFunction,TraceLine[]>={
 };
 export const polynomialExamples=[
   {id:'book',title:['书中长除法','Book long division'],A:[3,-4,-6,10],B:[1,-2]},
+  {id:'leading-coefficient',title:['首项系数相除（伴读补充）','Dividing leading coefficients (companion example)'],A:[1,0],B:[2,0]},
   {id:'fraction',title:['分数商与余式','Fractional quotient and remainder'],A:[1,0,1],B:[2,1]},
   {id:'exercise1',title:['习题8.3（1）','Exercise 8.3 (1)'],A:[16,-56,-88,278,105],B:[16,-64,-44,232,70]},
   {id:'exercise2',title:['习题8.3（2）','Exercise 8.3 (2)'],A:[7,6,-8,-6,1],B:[11,15,-2,-5,1]},

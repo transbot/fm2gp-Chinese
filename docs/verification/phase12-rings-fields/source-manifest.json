@@ -1,0 +1,351 @@
+{
+  "baseline": "0256d3f4914ead73a8dc4a75a15477b1cebb0a11",
+  "branch": "codex/phase12-rings-fields",
+  "encoding": "SHA-256 of staged Git blob bytes; manifest excludes itself",
+  "files": [
+    {
+      "path": "dist/index.html",
+      "sha256": "b69876b32a370ae8573c5b080082d909343f1abb13787e43dfd0c9a5fb2ab860"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/README.md",
+      "sha256": "ebd870334a9247ffbf72288605bd82c59250f79c2535f75b2e26b184cedc398b"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/coefficient-term-en-1440.png",
+      "sha256": "687bea9a2aaed05d7233ebeed310034859a9ca46884ef11f5f67b24664694bea"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/coefficient-term-en-390.png",
+      "sha256": "e34c25949cd26226fe77d0dba18314a614b15d2be3aca5991e41e72b84ac322f"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/coefficient-term-zh-1440.png",
+      "sha256": "a22230f1cbd472f77c5c46dcf0a96e05f036e29e3a3b797b801ffcd38f766257"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/coefficient-term-zh-390.png",
+      "sha256": "921a6efd804b4a0a9f931dface988e67b447c3b26f2c51eb7085f699d93698f8"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/elimination-en-1440.png",
+      "sha256": "5ec0593dcb9cd2bee0dad217e0c4efab0376af667ae1a2911281822585d061fc"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/elimination-en-390.png",
+      "sha256": "27f6520c8b2162d657d7e371d20c751b9489f23b988ae195e6488bf19499c0b5"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/elimination-zh-1440.png",
+      "sha256": "ce4e11bcf9b2de9e2bc43619f94855320ff6e1250eb4dd62c02d2ffec8df9d94"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/elimination-zh-390.png",
+      "sha256": "6d7e6d5f06c2780edb2366c0636509a33339663eb2856851cc800fcfa01f358b"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/fields-en-1440.png",
+      "sha256": "6dc3c3b02606b3c875b6788fee1090cf4a6067c83c035de8d292e6c73c5fdaf8"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/fields-en-390.png",
+      "sha256": "d29689861105058ad99bff2d2876d562251cc85197792f76a695f7e2474e3115"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/fields-zh-1440.png",
+      "sha256": "0d13ca48c888c808bdab9074a5180726191e0afdbfad286b6f35f556ded71937"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/fields-zh-390.png",
+      "sha256": "5ec3acfb20b971f6e89d6f1262aca99b4a3943547437e61fd09926aac326150a"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/monic-return-en-1440.png",
+      "sha256": "0203189353e9915ea932f03e2a20567ed1390e4b77a0328bb16685ab4711e303"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/monic-return-en-390.png",
+      "sha256": "75a3b4edf945f98ae573eb22a5c70d8f02f12a54a4ed01df92a74b4c55790a39"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/monic-return-zh-1440.png",
+      "sha256": "b1dacb29bc4693bb3b965cd95fa5cde2804512c628317a4e3bbcf1253a7f7709"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/monic-return-zh-390.png",
+      "sha256": "6a5f5fecad31a5f2357f3d9add3004ea4def0bb1d22818563fe84889f8165168"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/navigation.json",
+      "sha256": "2bc01e0d2aae2bd40a891989929d8719f2e771c8594a372904a20ee900fbfcda"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/raw-return-en-1440.png",
+      "sha256": "a5d3761f907b5307c6359d717fa19a13df990b311420914b318ed41e0b0047a9"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/raw-return-en-390.png",
+      "sha256": "92d7b8c383e2e8c7cbe02dca6888264134af40607a0f72e4de9c1f4277d42798"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/raw-return-zh-1440.png",
+      "sha256": "49c58ef00279c8b353a384aebb49e31a2dfac7a681e4e926a6f42c8c2bfb172c"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/raw-return-zh-390.png",
+      "sha256": "5852b3bacd90332acacb2bddd46fa0b5e3943589e3a3662053b8e3be1e90b445"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/restored-zero-en-1440.png",
+      "sha256": "4af2c9e85d5999bae1e77858e55e946ecae934b1bc99e857e8879363a25768c2"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/restored-zero-en-390.png",
+      "sha256": "cc179e79837bebdf76b334165ae6ec5e7763b3ab5d2d3879c1ccee410b9f17c3"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/restored-zero-zh-1440.png",
+      "sha256": "ae420e4e8cebc3a3f23291777045140f7715dd9cf4799addacd590496336cfc2"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/restored-zero-zh-390.png",
+      "sha256": "ae98b849c30f517a6b31d5a1df9b490f51a04628de087340638910e48ce96aca"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/search-en-1440.png",
+      "sha256": "95f7c6a11ec01123fc0508e8f59783f052f82090e579640f779f0a01c22ef379"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/search-en-390.png",
+      "sha256": "8ec11cb1b7702f644106c8d9561dfea1957cc31d9881c8b452df544cdeb73536"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/search-zh-1440.png",
+      "sha256": "fc911176aab41c05c13e182766b50739d9c5e03c31efc8acf44e1e349797b4c6"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/search-zh-390.png",
+      "sha256": "dfca49495d5fad2f115d3bccbe030d63f5f76fb9a4f87e3b71fa06fe1f6be46a"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/six-step-proof-en-1440.png",
+      "sha256": "31c696575c2db7c533ddc5a2faec7c51e995058e0edb0140a75aa8e2f51a98b7"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/six-step-proof-en-390.png",
+      "sha256": "76c677e67606fe742d5104276eb80e3524576d179071a36b4cfd03f8a6d2c52c"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/six-step-proof-zh-1440.png",
+      "sha256": "33a394c80e75599093705feca7d9675d703081ebb0a335676b4a2fce56a4e024"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/six-step-proof-zh-390.png",
+      "sha256": "a0d6e950329a1afe6cb592b00f7006d4ec9b7a9ed8168c5c3aa07d72f78a178b"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/source-card-en-1440.png",
+      "sha256": "692d148911ffceb0c5ad8406ca51b2f5bc32a2e2e5c68642ca63a45275797e13"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/source-card-en-390.png",
+      "sha256": "b38e23f3c51d9c63bc7889663c8dc3ea92a58d945849d6f7825fdc6477e0d225"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/source-card-zh-1440.png",
+      "sha256": "fd9a001f21a3998b42357fa4ea087d107d448c2e8964bc06585abfbf666d389e"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/source-card-zh-390.png",
+      "sha256": "fdbe001d81bf3d3a21355728513ee6441e2b5fe962020b385a13839475c45daf"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/z5-two-en-1440.png",
+      "sha256": "c7d49e3be3b34b0e174a67d08625771470d78cffd5b5dbb0f9cf850d9483fb2b"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/z5-two-en-390.png",
+      "sha256": "4bc15e75befa26eab0d90902e652ef88ba6b32d0deffa0423a5ca0297227884a"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/z5-two-zh-1440.png",
+      "sha256": "0b78fe81658712a836915fe822263e3eaedf72abc1c3836b69aaed5b60908c21"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/z5-two-zh-390.png",
+      "sha256": "a5596c51e2efb8ee28816bd50bf197c1da517b6c9d5996f8c4ff55889a8bb7d4"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/z6-two-en-1440.png",
+      "sha256": "6d0a7a65a255d5bf6aa8070731caecd3c73bad827d959c655301523aef2bdf47"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/z6-two-en-390.png",
+      "sha256": "5f08cc93dbfa7e5c773a6b9c85b370a5d8a2b9e1b9855ecf539c784fd157cd39"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/z6-two-zh-1440.png",
+      "sha256": "72f86082d826a809d10bc748a723c49a39c1b77b83b20742516a6bf8105b62af"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/browser/z6-two-zh-390.png",
+      "sha256": "6ed30f191c9808fa5bfa54e44a88e44944ae133e466c0ce58478062e7201d8c1"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/build-manifest.json",
+      "sha256": "51ac66bfe03afba69da0db11635df4e0612e396d2ec3659f59bf0df562986163"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/checks/build.txt",
+      "sha256": "dd022b6a66059b0db7357d66347c5a5315ba45e23c02bccf13b320b82c4eb1ea"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/checks/cycles.txt",
+      "sha256": "e90e608b0aaa77e62680ef17c29a9140d24b8ca6bda3689c9042d0243a07ab01"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/checks/focused-green.txt",
+      "sha256": "d5b50e436d1647faa99020901d5079327d42121ace45750a4c42af07db48c042"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/checks/focused.txt",
+      "sha256": "65782c680e7d425573786a273ff6c8da09b05e622e0c79467c178d8031a0c904"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/checks/history.txt",
+      "sha256": "f7143a050e91ec1070e2771c09c1cd124f8f0843ba2c0716be325bfe773eb77a"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/checks/isomorphism.txt",
+      "sha256": "e0c8180f2ee695d1c711fb1d080f26ad350f78135fbd809bacb9d55f4f39396c"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/checks/lint.txt",
+      "sha256": "16f05036416817d268334a4f2e14ffd367a3de4b6b9e3b5674f9d802bd2866ed"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/checks/red.txt",
+      "sha256": "bb5efd997172a97bdd018bf5356308167ced986d83ac615cf79aa4b75c408c38"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/checks/ring-green.txt",
+      "sha256": "621160b998fc00b9ffec04f8664e4935dfa9ab0f8bf986fc8dc0ba72db9800bf"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/checks/rings-browser.txt",
+      "sha256": "dd24307e28d345930d4bbb8c7d10ba40938bdb53902079d9f8dacbbfd3c9d48a"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/checks/scroll.txt",
+      "sha256": "38b93fb3319cf983ff61f3d450728da9c532fd721d424e70d86f01a0419b121f"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/checks/types-app.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/checks/types-node.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/checks/vitest.txt",
+      "sha256": "d741a0cc85e50e7f86328c164dec4429b6371e04ba8fd66960fa8b25dbce3db5"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/closeout-checklist.md",
+      "sha256": "c85b8996bb4ed0f80995afb3b6210369afbdf8abe196b4fe57d03d4ae4032c95"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/mathematics.md",
+      "sha256": "8226edef0832d845d27685be68f461c254dd6ed7ec8ad59d4c70077e22dc7b9a"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/prior-failures/browser-history-failure.json",
+      "sha256": "8f8a89c4d2e812592f84422dc13b67db324701707410c0662171972e4b983ab6"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/prior-failures/browser-name-failure.json",
+      "sha256": "7a8dfcc4e4dce54282e0d173dca61f6b8df6da850c6ab2ebc620a688a9ca79a3"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/prior-failures/browser-sandbox.txt",
+      "sha256": "7bc91b8784f4fc66d2b8f54b321c8302cab89502ff95bd8018d51b8dcdc77734"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/prior-failures/browser-timing-failure.json",
+      "sha256": "82c843a1481dce17bf7ba28269164dde745430150a141b3ec38e0cee4c696147"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/regressions/cycles.json",
+      "sha256": "67b66bea7f808e72a74aa758506b22269ffbb9a3fd87fc546eb8d5d6c64062ba"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/regressions/history.json",
+      "sha256": "bf534b61316b6424203be2ec63c917375bac1f7f0e0e7f9af00530e32f5148a0"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/regressions/isomorphism.json",
+      "sha256": "56802ad04f4cfc24709a3ebe2f0a8721902eaab7c40e928aeb0fa97955fff31a"
+    },
+    {
+      "path": "docs/verification/phase12-rings-fields/regressions/scroll.json",
+      "sha256": "467d089a86db45cfab601fc870c4d82e64e8c79e222c1c8b2f7d31edda258a4b"
+    },
+    {
+      "path": "scripts/verify-rings-fields.cjs",
+      "sha256": "86b14dc79d4e801aa66f4ac5f6ef0b8e55c25ef2a45e62d30ef4017cac95710d"
+    },
+    {
+      "path": "src/components/book/Chapter8.tsx",
+      "sha256": "404a59fc185060d5bca4ef4ebfa955db634ff33899ff8fc0c896f90da03b38e8"
+    },
+    {
+      "path": "src/components/book/sectionReaders.ts",
+      "sha256": "dc123ec69ee5f78741862d6e99f94b9c860dc845552679e6fbf0dc7aeba25b9a"
+    },
+    {
+      "path": "src/components/concepts/PolynomialGcd.test.tsx",
+      "sha256": "d533cb3d4bb1bfa7299506f5a799a4d7bfc82e65e5ed4022556a2ddb5b4e663c"
+    },
+    {
+      "path": "src/components/concepts/PolynomialGcd.tsx",
+      "sha256": "94a8c4eaa367bae584ec4338d780b1fe486a2a258880784903942ccc9fe1839a"
+    },
+    {
+      "path": "src/components/concepts/polynomialGcdPresentation.ts",
+      "sha256": "53f5011b972797432ed03406693153c3f9a954b48fab1644203964a03d6466f9"
+    },
+    {
+      "path": "src/data/bookContent.ts",
+      "sha256": "812b9a5b9fa3e7e2423e6b9b340a64e3de23c2a004e558498b6125abc02dfa7b"
+    },
+    {
+      "path": "src/data/readingSections.ts",
+      "sha256": "99d3559954ae582ee73e6197562ebf76a07c9cd85f3e5a40c0b53d55744213cc"
+    },
+    {
+      "path": "src/data/ringProofs.ts",
+      "sha256": "1f6f9781a972ae11a11aeddde5ba553d5fd0635a7164de5e52559bef51ddafbb"
+    },
+    {
+      "path": "src/lib/algorithms/polynomialGcd.test.ts",
+      "sha256": "03635c50457e54a996b9a7f4e45a4419313d7234bce5094df1b40a84e73e2377"
+    },
+    {
+      "path": "src/lib/algorithms/residueRing.test.ts",
+      "sha256": "3bbe8481db87e938c51f9b33c8966cb2d1709e4d6194bb8c911cbf9ed89c04f5"
+    },
+    {
+      "path": "src/lib/algorithms/residueRing.ts",
+      "sha256": "5ef194123cf85c313cf0bb20d32e131f26f27becd04c43483ac58b2447bb62d5"
+    },
+    {
+      "path": "src/pages/Book.tsx",
+      "sha256": "c8ddb2aba4090dfe56e09d53e14484c3a0fa99635e7e49d8104c2b98c695ed1c"
+    },
+    {
+      "path": "src/pages/RingsFields.test.tsx",
+      "sha256": "e1dcf4a9839160a10ae4127bb6c32dda4c7952f2fd328d97977c2aa698bfd08e"
+    }
+  ]
+}

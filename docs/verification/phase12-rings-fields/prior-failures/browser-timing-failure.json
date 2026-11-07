@@ -1,0 +1,106 @@
+[
+  {
+    "base": "http://127.0.0.1:4192",
+    "width": 1440,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "errors": [],
+    "navigation": [],
+    "polynomial": [
+      {
+        "event": "term",
+        "fn": "remainder",
+        "step": "4",
+        "line": "term",
+        "counts": [
+          "0",
+          "0"
+        ],
+        "formulas": {
+          "A": "A = x",
+          "B": "B = 2x",
+          "Q": "Q = 0",
+          "R": "R = x",
+          "T": "T = 1/2",
+          "T × B": "T × B = x"
+        }
+      },
+      {
+        "event": "eliminate",
+        "fn": "remainder",
+        "step": "5",
+        "line": "update",
+        "counts": [
+          "0",
+          "1"
+        ],
+        "formulas": {
+          "A": "A = x",
+          "B": "B = 2x",
+          "Q": "Q = 1/2",
+          "R": "R = 0",
+          "T": "T = 1/2",
+          "T × B": "T × B = x"
+        },
+        "identity": "已精确验证 A = BQ + Rx = (2x) × (1/2) + (0)"
+      },
+      {
+        "event": "gcdReturn",
+        "fn": "gcd",
+        "step": "14",
+        "line": "return",
+        "counts": [
+          "1",
+          "1"
+        ],
+        "formulas": {
+          "a": "a = 2x",
+          "b": "b = 0",
+          "最近返回值": "最近返回值 = 2x",
+          "原始GCD返回值": "原始GCD返回值 = 2x"
+        }
+      },
+      {
+        "event": "monic",
+        "fn": "monic",
+        "step": "15",
+        "line": "normalize",
+        "counts": [
+          "1",
+          "1"
+        ],
+        "formulas": {
+          "a": "a = 2x",
+          "b": "b = 0",
+          "最近返回值": "最近返回值 = x",
+          "原始GCD返回值": "原始GCD返回值 = 2x",
+          "首一GCD": "首一GCD = x"
+        }
+      },
+      {
+        "event": "eliminate",
+        "fn": "remainder",
+        "step": "5",
+        "line": "update",
+        "counts": [
+          "0",
+          "1"
+        ],
+        "formulas": {
+          "A": "A = x",
+          "B": "B = 2x",
+          "Q": "Q = 1/2",
+          "R": "R = 0",
+          "T": "T = 1/2",
+          "T × B": "T × B = x"
+        },
+        "identity": "已精确验证 A = BQ + Rx = (2x) × (1/2) + (0)"
+      }
+    ],
+    "direct": []
+  },
+  {
+    "status": "FAIL",
+    "message": "AssertionError [ERR_ASSERTION]: session initial: 0 vs 4000\n    at near (D:\\Code\\fm2gp-Chinese\\scripts\\verify-rings-fields.cjs:8:32)\n    at run (D:\\Code\\fm2gp-Chinese\\scripts\\verify-rings-fields.cjs:96:2)\n    at async D:\\Code\\fm2gp-Chinese\\scripts\\verify-rings-fields.cjs:129:201"
+  }
+]

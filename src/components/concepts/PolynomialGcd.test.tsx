@@ -49,7 +49,7 @@ it('shows the exact companion gcd body and complete bilingual event/error dictio
  for(const pair of Object.values(gcdMessages)){expect(pair).toHaveLength(2);expect(pair[0].trim()).not.toBe('');expect(pair[1].trim()).not.toBe('');expect(pair[1]).not.toMatch(/[\u3400-\u9fff]/);}
 });
 it.each([
- ['book','6','1'],['exercise1','−4x² + 24x − 35','x² − 6x + 35/4'],
+ ['book','6','1'],['leading-coefficient','2x','x'],['exercise1','−4x² + 24x − 35','x² − 6x + 35/4'],
  ['exercise2','(605/1521)x² + (1210/1521)x + 605/1521','x² + 2x + 1'],['constants','6','1'],['zero','0','0'],
 ])('restores fixed adjacent return displays for %s',(id,raw,result)=>{
  mount();fireEvent.click(screen.getByTestId(`example-${id}`));end();

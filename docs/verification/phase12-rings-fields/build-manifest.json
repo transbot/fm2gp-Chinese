@@ -1,0 +1,297 @@
+{
+  "baseline": "0256d3f4914ead73a8dc4a75a15477b1cebb0a11",
+  "files": [
+    {
+      "path": "dist/assets/Algebra-B23LH1Jp.js",
+      "sha256": "381f2c2985235f8dc47f5a1ee52ac59a5267e1645255a5a4098bd37b0f99630b"
+    },
+    {
+      "path": "dist/assets/AlgorithmLayout-qeHs1HLq.js",
+      "sha256": "ea80ebe63fb82acfdd367687875aab864c638a9d787ac758b829a81e663e54b3"
+    },
+    {
+      "path": "dist/assets/AnimatePresence-BgRp6YA_.js",
+      "sha256": "91fb2df7fadd138e3349dba7076b6734ffeb139cd18a8de2ba7199612ee2c752"
+    },
+    {
+      "path": "dist/assets/BinarySearch-BHrENkIO.js",
+      "sha256": "38c9d8c73063db91720e86cea8142a3f417e4206095f71d5406a8c138f71a12a"
+    },
+    {
+      "path": "dist/assets/Book-BYVP-Zac.js",
+      "sha256": "3d84c1eae913daee5b382c5fca7ca2f64fe215a361e3008a7887e81c544810e8"
+    },
+    {
+      "path": "dist/assets/BubbleSort-Zp1YywO3.js",
+      "sha256": "76c0ba599d392742dceec65af114519b6cd64fbfbfdfe38a8c077a0259892a0d"
+    },
+    {
+      "path": "dist/assets/Calculator-BSt-xAo0.js",
+      "sha256": "931a65507f87cfde859233ffe1e1cbf28ceaf4cf0af2449d3b586e9481dfa7f8"
+    },
+    {
+      "path": "dist/assets/Cycle-9qQaR1zV.js",
+      "sha256": "62a8868d5fe056ff7c047e1453346ca57a5ddd299bbe309af6143b3581f0bf59"
+    },
+    {
+      "path": "dist/assets/DeveloperNote-D1ycKAgU.js",
+      "sha256": "427314ea4cdbd2e25e7c0821701efeea1050a5006c4d2b66eb6d6b7df210d1b4"
+    },
+    {
+      "path": "dist/assets/Division-DpPH3TUD.js",
+      "sha256": "61b99d37117212a17ed2666869c2d5117f17fb657ebfbb5144e127e24baf5fe8"
+    },
+    {
+      "path": "dist/assets/EulerTheorem-DCaxcbZu.js",
+      "sha256": "d78a918a1697054e666122850acfd7b1ea5bcb0fd77161b304e76cbf3ce9de9f"
+    },
+    {
+      "path": "dist/assets/ExplanationPanel-DGLrxa9S.js",
+      "sha256": "63dbd9f35eb6466e9e9de8ab00424bc5f66ca855cbb8826ac3a227c4249a6b9a"
+    },
+    {
+      "path": "dist/assets/ExtendedGcd-BHN3Po2d.js",
+      "sha256": "3cdc82e177891688f5247d838f8f25dbc8d22ac06d5a75a0cba7f8b7a243a544"
+    },
+    {
+      "path": "dist/assets/FastFibonacci-d6AZiljl.js",
+      "sha256": "abbc9dad3d626055adffc2e61e0dfa0c852f15a9442cad12d343cbd01978e455"
+    },
+    {
+      "path": "dist/assets/FermatTheorem-DMJqMcd4.js",
+      "sha256": "f34a7e946aba51f6bbd948fb9010a49fede24d8ed2590ee33c129561676eac4c"
+    },
+    {
+      "path": "dist/assets/Fibonacci-CKXdeFid.js",
+      "sha256": "bb403b565569cade1216223a204fcc358351253664c9ceb26603d0e9569d0ccf"
+    },
+    {
+      "path": "dist/assets/FrequencyCount-BT9ZWnOR.js",
+      "sha256": "8cb3572e8d3fa8076738a14a45cafc266ab06e41637e0dcbd4ef25319b9d54a3"
+    },
+    {
+      "path": "dist/assets/GcdComparison-Bm5CHYHg.js",
+      "sha256": "96616afb6afeb8253efb6d062463faeaf91395ccd980ae2fa4c20e089ca5c550"
+    },
+    {
+      "path": "dist/assets/Gcm-DDbp5b2S.js",
+      "sha256": "bb19d9f493081ff7a38c41191952a41a6e5b7ebb4e40d36db012e00400c649d2"
+    },
+    {
+      "path": "dist/assets/GraphTraversal-3eJpSLGt.js",
+      "sha256": "3b64c13777ad2af0bf5d4394edd79486307976efa660277987dbd80dc066e2e2"
+    },
+    {
+      "path": "dist/assets/GraphTraversal-spzl8Vqr.css",
+      "sha256": "f86a91ead16f350c5af61f805d0466fbf488680ccb79957c0f5b062703af8907"
+    },
+    {
+      "path": "dist/assets/HeapOperations-CX_jBnTw.js",
+      "sha256": "f1087ba351b68756cf4e36a43b306207199865b6ab6c52a36a14b1276ea2c5a0"
+    },
+    {
+      "path": "dist/assets/Home-CyFe0ugT.js",
+      "sha256": "ef71bc525229ccaa58982afe31ab8998d105b5151ecbcbbd8c682d992ce399b8"
+    },
+    {
+      "path": "dist/assets/Horner-kKMMznHE.js",
+      "sha256": "2200cc59bb75826de7baa629a2e453a4123d792eeeba53cd9e6ca372c404489e"
+    },
+    {
+      "path": "dist/assets/InsertionSort-AwaqVP0h.js",
+      "sha256": "c303406504d1e1a17ef264d566a332e8499db90050bd3f541babc3b3c052c9f1"
+    },
+    {
+      "path": "dist/assets/Iterators-eg7Q9NHB.js",
+      "sha256": "c4d27bdeed0d0e633423158e987c34d0986558c000c516d7b31dd9439bdb6191"
+    },
+    {
+      "path": "dist/assets/LearningShell-APtpfNZ1.js",
+      "sha256": "103bb6d9dc50ba326a2efd59d88e92f454dc918b47e0d66ab3ecbdbf2de35a90"
+    },
+    {
+      "path": "dist/assets/LinearSearch-CZes3C2I.js",
+      "sha256": "12e383e6f694e877c337bfec17ba4bc938f690dd80781a85a3413352192364ae"
+    },
+    {
+      "path": "dist/assets/Links-DTEFwUGm.js",
+      "sha256": "e1d1d956fb059d36923676cb6db9afd96b329de45887377731dab165bdb4a49a"
+    },
+    {
+      "path": "dist/assets/Matrices-DxTDb9HG.js",
+      "sha256": "7ebc27131ea5f9bac5bb7f9967996d1c797d71e589f02c8e7f6331019fd15c87"
+    },
+    {
+      "path": "dist/assets/MergeSort-SVbtoplG.js",
+      "sha256": "e6b8fc2237199adf56c8f8237f03cddde3bec1eaab16d6a4e2c6fe15a434aed8"
+    },
+    {
+      "path": "dist/assets/MillerRabin-2__uhOv0.js",
+      "sha256": "8eee3c433fd7b51abbfe52b84a623878b02a179f9261583d047fadd97886ba3c"
+    },
+    {
+      "path": "dist/assets/PalindromicPrimes-PyLZjPpa.js",
+      "sha256": "286372739866d0d922de3a8bfabddf440a97caadb1967b6088b741c010298ba8"
+    },
+    {
+      "path": "dist/assets/PiUpperBound-Bryph55v.js",
+      "sha256": "bcd687ab1eab1f6779dac7d152858d0a1a3a5fc2fe8262935783bb87fc58bdb5"
+    },
+    {
+      "path": "dist/assets/PolynomialGcd-Bt2dM6tg.js",
+      "sha256": "a20a1cbb9797b21d6304f6a7ff1ed611f86be6704c16ea754314edefa0eeea66"
+    },
+    {
+      "path": "dist/assets/PowerAlgorithm-uDpeFoT1.js",
+      "sha256": "3486a413df2f9b14fe2143f4426a93d56649ed1fe4219fe3f7917cc8c3cf0410"
+    },
+    {
+      "path": "dist/assets/PrefixSum-Dk1VtrAm.js",
+      "sha256": "474fefbce7a0e622fe43df2a00800aec1ac6acfd323975abd37589d4fbed96b2"
+    },
+    {
+      "path": "dist/assets/PrimeChecker-Ddj--l3e.js",
+      "sha256": "948fbbe2ab34a078a4e02e934c782167fd3fe45c1ced9218c9fda03830f344b2"
+    },
+    {
+      "path": "dist/assets/PrimeCounting-BW5VAdr2.js",
+      "sha256": "e8e668fe7383a98042d204e42f7b26341f48c1e129e5c499ba6d112d6fda83a1"
+    },
+    {
+      "path": "dist/assets/QuickSort-RHt71RO0.js",
+      "sha256": "6bd1b86ee0e42bc63f474b2d5732cd5ff4632ae57b391f8519a0f74b3ab156bf"
+    },
+    {
+      "path": "dist/assets/ResponsiveVisualFrame-BNMHYY-c.js",
+      "sha256": "a2afe11af0da0865ad75706bcd4e6fad222275f3b4d9ab7f48400672370d7a36"
+    },
+    {
+      "path": "dist/assets/Reverse-B_L9_VmF.js",
+      "sha256": "30f5b6bfc8a2c53d4b938bb276394a88f7a7e9eed9fea12b46a8a4b4f2279dd6"
+    },
+    {
+      "path": "dist/assets/Rotate-Brg54PNl.js",
+      "sha256": "8f9f1a73d8132351cc55427cc8f68f8bf44a4ea24ae19cc978b8174091a06d18"
+    },
+    {
+      "path": "dist/assets/Rsa-Cvu1O8Qo.js",
+      "sha256": "b4a355449f095daf48ff1b6f8dd8a0d6196152b3bdbc8ecc460ed81d09b5b340"
+    },
+    {
+      "path": "dist/assets/SelectionSort-CJ8O5Cd-.js",
+      "sha256": "f4f1c91c9852ee35cbdbeea9ec4cde0245a6c6b1706fdeae2704a71bbd43e15f"
+    },
+    {
+      "path": "dist/assets/ShortestPath-CQ0Y3R-F.js",
+      "sha256": "93c57e42eab8108704cad5a873edd6c20896eaf5974ccc2f3b379b3d03b2ccfe"
+    },
+    {
+      "path": "dist/assets/Sieve-Bb9ygrkz.js",
+      "sha256": "e28d73e018773fe10f1bc910485df73a21a4b4b1e583995df81bed7dcba4ae39"
+    },
+    {
+      "path": "dist/assets/SteinGcd-CvcioSJF.js",
+      "sha256": "f49c31284ba91b2ee53f009937928a5cc7a2d7dce8740625ce670e4a166e194c"
+    },
+    {
+      "path": "dist/assets/StepController-DVPcEjh9.js",
+      "sha256": "465d5559ef68679004ab2c1dd469458478c999a9af59bd83bc0f129cf5e8b355"
+    },
+    {
+      "path": "dist/assets/Swap-De35u_MM.js",
+      "sha256": "f96caf219f93acf1cd9488f18bb2d6fb163a6599226f52c48552048bd96f3f4c"
+    },
+    {
+      "path": "dist/assets/TraceCode-EncTIQGU.js",
+      "sha256": "c731c3dd91c5672054ea1423f8af87dfc34ec29b1d42021af98763c670fd8845"
+    },
+    {
+      "path": "dist/assets/TwoSum-0p0TY3Vm.js",
+      "sha256": "af252a62ba560c7bd03b157900c66650486ddcb2672e8dd58d7cc3cb1a51afff"
+    },
+    {
+      "path": "dist/assets/ValidationMessage-SO0f_qwX.js",
+      "sha256": "b4d764e2213b88cda9e0bfe0f62947f03b416f6790a166fe80c2b95b393f02b3"
+    },
+    {
+      "path": "dist/assets/concepts-ChC0jsB_.js",
+      "sha256": "e92f98428a4409b03b9deded087618004d934972ada04556039bf13def632f81"
+    },
+    {
+      "path": "dist/assets/index-DBaRx9X9.css",
+      "sha256": "870d94d27fa3e3854b2fa38435dc4f83bb903923705ecd279152e7581b7bd2cc"
+    },
+    {
+      "path": "dist/assets/index-DW8i5Dxg.js",
+      "sha256": "c846b60590b517bf7a3dcf14048b0c3982a681a973dda7e2a510be17f53e50de"
+    },
+    {
+      "path": "dist/assets/languages-CRxH3_Ij.js",
+      "sha256": "c68e27b0ee954dc21ddb83f55862f65152caeb6e7e845f25ffd1443a2cef2256"
+    },
+    {
+      "path": "dist/assets/pause-BRbEq45g.js",
+      "sha256": "c2d753fe933aed84944496882542043d5061c51f76e65f82a7f573a10a4e8501"
+    },
+    {
+      "path": "dist/assets/play-MO-cHpNn.js",
+      "sha256": "c74be4a800caad7b93885d2a4f7a4503bc893fb26a234e136df55debf865ff65"
+    },
+    {
+      "path": "dist/assets/rotate-ccw-CZ4AoAxT.js",
+      "sha256": "046ab20410b7d1401365bf98b95e8b787c90ffd0bc4e8af5c9d4f96e9a81a21d"
+    },
+    {
+      "path": "dist/assets/shared-DpDk9665.js",
+      "sha256": "7899ae5b74bca23171bdf6ae4756708c1fbeec8ad898969f92527df777aa8c94"
+    },
+    {
+      "path": "dist/assets/shuffle-Dq-8TzVB.js",
+      "sha256": "ed851b9addd6f80a0ba0c49368512c2ec0edb68a3155581685f36dcb127a2695"
+    },
+    {
+      "path": "dist/assets/translations-ogW1edRl.js",
+      "sha256": "1e91f50ccb1ac99658bd197ee3ab6eb1108bdb83ae2161e3c88ff91304d97301"
+    },
+    {
+      "path": "dist/assets/trash-2-Bdwbdt-W.js",
+      "sha256": "0f6d1352082ab7ba0b5cb498578ae38e13b9b51109639b0499fd6b7b0f870e20"
+    },
+    {
+      "path": "dist/assets/usePlayback-sOMm4JuK.js",
+      "sha256": "35b0f0a2138c51b3a8fbb24a96af35412e433202588f17b4bf31a08eef9cca2e"
+    },
+    {
+      "path": "dist/assets/utils-BzOWElVW.js",
+      "sha256": "8c3b1a2200f48a551b6ed5a37357ad62fe5c844696e4cbb3d9698c30223e6336"
+    },
+    {
+      "path": "dist/favicon.gif",
+      "sha256": "693162dd33479d5a7be7ac1a5a06baab7575e9b94febe97b975f69abadfad2c1"
+    },
+    {
+      "path": "dist/images/ChineseEditionCover.png",
+      "sha256": "7c4d8d7dbd19e1e3c91a43b1d3bc1f25533e548f4619f27f8e476d974c416404"
+    },
+    {
+      "path": "dist/images/EnglishEditionCover.png",
+      "sha256": "9253ae732b51c0a1d2eeac0670c5585a3d163f5f1763d8c78500be516745959b"
+    },
+    {
+      "path": "dist/images/mobile-web-qr.png",
+      "sha256": "ca70011fb035bf2c95fa697d27cf39647c8608c59ca3f273fb4ba1a8da29dab9"
+    },
+    {
+      "path": "dist/images/p.147.directed.graph.png",
+      "sha256": "8e4bebe207be4ac3fb7bb1ee7538c416162fd6075eda56fab36b671800910a59"
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "b69876b32a370ae8573c5b080082d909343f1abb13787e43dfd0c9a5fb2ab860"
+    },
+    {
+      "path": "dist/数学与泛型编程：高效编程的奥秘-平展封.png",
+      "sha256": "7bed86735a8a9430db81d5164b8f78404a08a66618f49f1dfd7ff14e046cd691"
+    }
+  ]
+}

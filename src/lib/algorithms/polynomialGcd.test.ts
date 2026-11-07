@@ -2,6 +2,20 @@ import { expect, it } from 'vitest';
 import { fraction, fractionText, fromIntegers, parseGcdPolynomial, polynomialDivision, polynomialGcdTrace, divisionTrace, degree, polynomialText, addPoly, multiplyPoly, equalPoly, isZero } from './polynomialGcd';
 const P=fromIntegers;
 const coefficients=(p:ReturnType<typeof P>)=>p.map(fractionText);
+it('locks the coefficient-field companion example at all four checkpoints',()=>{
+ const d=divisionTrace(P([1,0]),P([2,0])),g=polynomialGcdTrace(P([1,0]),P([2,0]));
+ const term=d.find(s=>s.event==='term')!,eliminate=d.find(s=>s.event==='eliminate')!;
+ expect(coefficients(term.inner!.T)).toEqual(['1/2']);expect(coefficients(term.inner!.Q)).toEqual(['0']);expect(coefficients(term.inner!.R)).toEqual(['1','0']);
+ expect(term.counts).toEqual({gcdRounds:0,eliminations:0});expect(term.line).toBe('term');
+ expect(coefficients(eliminate.inner!.Q)).toEqual(['1/2']);expect(coefficients(eliminate.inner!.R)).toEqual(['0']);expect(eliminate.identity).toBe(true);
+ expect(eliminate.counts).toEqual({gcdRounds:0,eliminations:1});expect(eliminate.line).toBe('update');
+ const raw=g[g.length-2],monic=g[g.length-1];
+ expect([raw.event,raw.fn,raw.line]).toEqual(['gcdReturn','gcd','return']);
+ expect([monic.event,monic.fn,monic.line]).toEqual(['monic','monic','normalize']);
+ expect(coefficients(raw.returned!)).toEqual(['2','0']);expect(coefficients(monic.returned!)).toEqual(['1','0']);expect(coefficients(monic.result!)).toEqual(['1','0']);
+ for(const s of [raw,monic]){expect(coefficients(s.rawGcd!)).toEqual(['2','0']);expect(s.counts).toEqual({gcdRounds:1,eliminations:1});}
+ expect(raw.returned).not.toBe(monic.returned);
+});
 it('normalizes exact fractions without floating point',()=>{
   expect(fraction(6n,-8n)).toEqual({n:-3n,d:4n});expect(fraction(0n,-99n)).toEqual({n:0n,d:1n});
   expect(fractionText(fraction(123456789012345678901n,3n))).toBe('123456789012345678901/3');

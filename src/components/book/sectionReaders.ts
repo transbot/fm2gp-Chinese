@@ -3,6 +3,7 @@ import { Chapter6Models } from './Chapter6Models';
 import { Chapter6 } from './Chapter6';
 import { Chapter10 } from './Chapter10';
 import { Chapter11 } from './Chapter11';
+import { Chapter8 } from './Chapter8';
 import { AppendixC } from './AppendixC';
 import { Chapter9 } from './Chapter9';
 import { AppendixReference } from './AppendixReference';
@@ -12,6 +13,7 @@ import { AppendixReference } from './AppendixReference';
 export const sectionReaders: Readonly<Partial<Record<string, ComponentType<{section:string}>>>> = {
   '6.3': Chapter6, '6.4': Chapter6, '6.5': Chapter6,
   '6.6': Chapter6Models, '6.7': Chapter6Models,
+  '8.4': Chapter8, '8.8': Chapter8,
   '9.1': Chapter9, '9.6': Chapter9, '9.7': Chapter9,
   '10.2': Chapter10, '10.3': Chapter10,
   '11.1': Chapter11, '11.4': Chapter11,

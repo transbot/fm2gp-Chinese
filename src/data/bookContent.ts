@@ -466,8 +466,8 @@ export const bookContent = {
         "en": "More algebraic structures"
       },
       "guide": {
-        "zh": "从霍纳求值到多项式带余除法，再把求余接入泛型GCD循环；第8.8节解释系数域。另一路先看一个矩阵结果格怎样计算，再更换连接与汇总规则。从第7章的幂算法走向可达性与最短路径。",
-        "en": "Follow Horner evaluation with polynomial division and the generic GCD loop; Section 8.8 explains coefficient fields. A second route inspects how one matrix cell is computed, then changes the composition and aggregation rules. Apply Chapter 7’s power algorithm to reachability and shortest paths."
+        "zh": "从霍纳求值到多项式带余除法，再把求余接入泛型GCD循环；第8.4节比较环的两种运算、单位与零因子，第8.8节用域解释首项系数相除。另一路先看一个矩阵结果格怎样计算，再更换连接与汇总规则。从第7章的幂算法走向可达性与最短路径。",
+        "en": "Follow Horner evaluation with polynomial division and the generic GCD loop. Section 8.4 compares ring operations, units and zero divisors; Section 8.8 uses fields to explain leading coefficient division. A second route inspects how one matrix cell is computed, then changes the composition and aggregation rules. Apply Chapter 7’s power algorithm to reachability and shortest paths."
       },
       "sourcePdfPage": 148,
       "sections": [

@@ -1,0 +1,2638 @@
+[
+  {
+    "base": "http://127.0.0.1:4192",
+    "width": 1440,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "errors": [],
+    "targets": [
+      {
+        "id": "section-6-6",
+        "action": "direct",
+        "y": 2520,
+        "target": 2520,
+        "open": []
+      },
+      {
+        "id": "section-6-6",
+        "action": "refresh",
+        "y": 2520,
+        "target": 2520,
+        "open": []
+      },
+      {
+        "id": "theory-model-isomorphism",
+        "action": "direct",
+        "y": 2589,
+        "target": 2589,
+        "open": []
+      },
+      {
+        "id": "theory-model-isomorphism",
+        "action": "refresh",
+        "y": 2589,
+        "target": 2589,
+        "open": []
+      },
+      {
+        "id": "even-natural-monoids",
+        "action": "direct",
+        "y": 2889,
+        "target": 2889,
+        "open": [
+          "even-natural-monoids"
+        ]
+      },
+      {
+        "id": "even-natural-monoids",
+        "action": "refresh",
+        "y": 2889,
+        "target": 2889,
+        "open": [
+          "even-natural-monoids"
+        ]
+      },
+      {
+        "id": "section-6-7",
+        "action": "direct",
+        "y": 3040,
+        "target": 3040,
+        "open": []
+      },
+      {
+        "id": "section-6-7",
+        "action": "refresh",
+        "y": 3040,
+        "target": 3040,
+        "open": []
+      },
+      {
+        "id": "isomorphism-map",
+        "action": "direct",
+        "y": 3109,
+        "target": 3109,
+        "open": []
+      },
+      {
+        "id": "isomorphism-map",
+        "action": "refresh",
+        "y": 3109,
+        "target": 3109,
+        "open": []
+      },
+      {
+        "id": "isomorphism-counterexample",
+        "action": "direct",
+        "y": 3878,
+        "target": 3878,
+        "open": [
+          "isomorphism-counterexample"
+        ]
+      },
+      {
+        "id": "isomorphism-counterexample",
+        "action": "refresh",
+        "y": 3878,
+        "target": 3878,
+        "open": [
+          "isomorphism-counterexample"
+        ]
+      },
+      {
+        "id": "four-group-properties",
+        "action": "direct",
+        "y": 3960,
+        "target": 3960,
+        "open": []
+      },
+      {
+        "id": "four-group-properties",
+        "action": "refresh",
+        "y": 3960,
+        "target": 3960,
+        "open": []
+      },
+      {
+        "id": "klein-nonisomorphism",
+        "action": "direct",
+        "y": 4472,
+        "target": 4472,
+        "open": [
+          "klein-nonisomorphism"
+        ]
+      },
+      {
+        "id": "klein-nonisomorphism",
+        "action": "refresh",
+        "y": 4472,
+        "target": 4472,
+        "open": [
+          "klein-nonisomorphism"
+        ]
+      },
+      {
+        "id": "klein-identity",
+        "action": "direct",
+        "y": 5010,
+        "target": 5010,
+        "open": [
+          "klein-nonisomorphism",
+          "klein-identity"
+        ]
+      },
+      {
+        "id": "klein-identity",
+        "action": "refresh",
+        "y": 5010,
+        "target": 5010,
+        "open": [
+          "klein-nonisomorphism",
+          "klein-identity"
+        ]
+      },
+      {
+        "id": "cyclic-four-categorical",
+        "action": "direct",
+        "y": 4666,
+        "target": 4666,
+        "open": [
+          "cyclic-four-categorical"
+        ]
+      },
+      {
+        "id": "cyclic-four-categorical",
+        "action": "refresh",
+        "y": 4666,
+        "target": 4666,
+        "open": [
+          "cyclic-four-categorical"
+        ]
+      },
+      {
+        "id": "cyclic4-reduce",
+        "action": "direct",
+        "y": 4982,
+        "target": 4982,
+        "open": [
+          "cyclic-four-categorical",
+          "cyclic4-reduce"
+        ]
+      },
+      {
+        "id": "cyclic4-reduce",
+        "action": "refresh",
+        "y": 4982,
+        "target": 4982,
+        "open": [
+          "cyclic-four-categorical",
+          "cyclic4-reduce"
+        ]
+      },
+      {
+        "id": "generic-model-range",
+        "action": "direct",
+        "y": 4792,
+        "target": 4792,
+        "open": [
+          "generic-model-range"
+        ]
+      },
+      {
+        "id": "generic-model-range",
+        "action": "refresh",
+        "y": 4792,
+        "target": 4792,
+        "open": [
+          "generic-model-range"
+        ]
+      }
+    ],
+    "power": [
+      {
+        "model": "multiply",
+        "base": 3,
+        "n": 5,
+        "result": "243"
+      },
+      {
+        "model": "add",
+        "base": 3,
+        "n": 5,
+        "result": "15"
+      }
+    ],
+    "failure": {
+      "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#isomorphism-map",
+      "key": "wwri0ihc",
+      "y": 3205,
+      "choices": [
+        "b",
+        "1",
+        "1"
+      ],
+      "image": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "paths": [
+        "(1 + 1) mod 4 = 2",
+        "b(2) = 3",
+        "b(1) = 2, b(1) = 2",
+        "(2 × 2) mod 5 = 4"
+      ],
+      "reasons": {
+        "klein-assume": false,
+        "klein-source-sum": false,
+        "klein-preserve": false,
+        "klein-square": false,
+        "klein-identity": false,
+        "klein-injective": false,
+        "cyclic4-generator": false,
+        "cyclic4-bijection": false,
+        "cyclic4-reduce": false,
+        "cyclic4-compose": false,
+        "cyclic4-categorical": false
+      },
+      "open": [
+        "even-natural-monoids",
+        "isomorphism-counterexample"
+      ]
+    },
+    "success": {
+      "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#isomorphism-map",
+      "key": "wwri0ihc",
+      "y": 3205,
+      "choices": [
+        "f3",
+        "0",
+        "3"
+      ],
+      "image": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "paths": [
+        "(0 + 3) mod 4 = 3",
+        "f₃(3) = 2",
+        "f₃(0) = 1, f₃(3) = 2",
+        "(1 × 2) mod 5 = 2"
+      ],
+      "reasons": {
+        "klein-assume": false,
+        "klein-source-sum": false,
+        "klein-preserve": false,
+        "klein-square": false,
+        "klein-identity": false,
+        "klein-injective": false,
+        "cyclic4-generator": false,
+        "cyclic4-bijection": false,
+        "cyclic4-reduce": false,
+        "cyclic4-compose": false,
+        "cyclic4-categorical": false
+      },
+      "open": [
+        "even-natural-monoids",
+        "isomorphism-counterexample"
+      ]
+    },
+    "beforeLanguage": {
+      "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#klein-source-sum",
+      "key": "default",
+      "y": 5517,
+      "choices": [
+        "f3",
+        "0",
+        "3"
+      ],
+      "image": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "paths": [
+        "(0 + 3) mod 4 = 3",
+        "f₃(3) = 2",
+        "f₃(0) = 1, f₃(3) = 2",
+        "(1 × 2) mod 5 = 2"
+      ],
+      "reasons": {
+        "klein-assume": false,
+        "klein-source-sum": true,
+        "klein-preserve": false,
+        "klein-square": false,
+        "klein-identity": true,
+        "klein-injective": false,
+        "cyclic4-generator": false,
+        "cyclic4-bijection": false,
+        "cyclic4-reduce": true,
+        "cyclic4-compose": false,
+        "cyclic4-categorical": false
+      },
+      "open": [
+        "even-natural-monoids",
+        "isomorphism-counterexample",
+        "klein-nonisomorphism",
+        "klein-source-sum",
+        "klein-identity",
+        "cyclic-four-categorical",
+        "cyclic4-reduce",
+        "generic-model-range"
+      ]
+    },
+    "afterLanguage": {
+      "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#klein-source-sum",
+      "key": "default",
+      "y": 0,
+      "choices": [
+        "f3",
+        "0",
+        "3"
+      ],
+      "image": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "paths": [
+        "(0 + 3) mod 4 = 3",
+        "f₃(3) = 2",
+        "f₃(0) = 1, f₃(3) = 2",
+        "(1 × 2) mod 5 = 2"
+      ],
+      "reasons": {
+        "klein-assume": false,
+        "klein-source-sum": true,
+        "klein-preserve": false,
+        "klein-square": false,
+        "klein-identity": true,
+        "klein-injective": false,
+        "cyclic4-generator": false,
+        "cyclic4-bijection": false,
+        "cyclic4-reduce": true,
+        "cyclic4-compose": false,
+        "cyclic4-categorical": false
+      },
+      "open": [
+        "even-natural-monoids",
+        "isomorphism-counterexample",
+        "klein-nonisomorphism",
+        "klein-source-sum",
+        "klein-identity",
+        "cyclic-four-categorical",
+        "cyclic4-reduce",
+        "generic-model-range"
+      ]
+    },
+    "navigation": {
+      "source": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#generic-model-range",
+      "readerSource": {
+        "key": "default",
+        "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#generic-model-range"
+      },
+      "left": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#klein-source-sum",
+        "key": "default",
+        "y": 6636,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "entry": 6383,
+      "mid": {
+        "url": "/power?from=%2Fbook%2F6%3Fsource%3Dmodel-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2590%258C%25E6%259E%2584%23generic-model-range",
+        "key": "7o9yobil",
+        "y": 210,
+        "choices": null,
+        "image": null,
+        "paths": null,
+        "reasons": {},
+        "open": []
+      },
+      "pop": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#klein-source-sum",
+        "key": "default",
+        "y": 6636,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "forward": {
+        "url": "/power?from=%2Fbook%2F6%3Fsource%3Dmodel-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2590%258C%25E6%259E%2584%23generic-model-range",
+        "key": "7o9yobil",
+        "y": 210,
+        "choices": null,
+        "image": null,
+        "paths": null,
+        "reasons": {},
+        "open": []
+      },
+      "returned": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#generic-model-range",
+        "key": "9dzz2ydu",
+        "y": 6636,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "stable": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#generic-model-range",
+        "key": "9dzz2ydu",
+        "y": 6636,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "hard": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#generic-model-range",
+        "key": "88fyaz0a",
+        "y": 6383,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "target": 6383
+    },
+    "searches": [
+      {
+        "term": "第6.6节",
+        "id": "section-6-6"
+      },
+      {
+        "term": "Section 6.7",
+        "id": "section-6-7"
+      },
+      {
+        "term": "习题6.6",
+        "id": "exercise-6-6"
+      }
+    ]
+  },
+  {
+    "base": "http://127.0.0.1:4192",
+    "width": 1440,
+    "lang": "en",
+    "browser": "156.0.4314.58",
+    "errors": [],
+    "targets": [
+      {
+        "id": "section-6-6",
+        "action": "direct",
+        "y": 2704,
+        "target": 2704,
+        "open": []
+      },
+      {
+        "id": "section-6-6",
+        "action": "refresh",
+        "y": 2704,
+        "target": 2704,
+        "open": []
+      },
+      {
+        "id": "theory-model-isomorphism",
+        "action": "direct",
+        "y": 2773,
+        "target": 2773,
+        "open": []
+      },
+      {
+        "id": "theory-model-isomorphism",
+        "action": "refresh",
+        "y": 2773,
+        "target": 2773,
+        "open": []
+      },
+      {
+        "id": "even-natural-monoids",
+        "action": "direct",
+        "y": 3121,
+        "target": 3121,
+        "open": [
+          "even-natural-monoids"
+        ]
+      },
+      {
+        "id": "even-natural-monoids",
+        "action": "refresh",
+        "y": 3121,
+        "target": 3121,
+        "open": [
+          "even-natural-monoids"
+        ]
+      },
+      {
+        "id": "section-6-7",
+        "action": "direct",
+        "y": 3272,
+        "target": 3272,
+        "open": []
+      },
+      {
+        "id": "section-6-7",
+        "action": "refresh",
+        "y": 3272,
+        "target": 3272,
+        "open": []
+      },
+      {
+        "id": "isomorphism-map",
+        "action": "direct",
+        "y": 3341,
+        "target": 3341,
+        "open": []
+      },
+      {
+        "id": "isomorphism-map",
+        "action": "refresh",
+        "y": 3341,
+        "target": 3341,
+        "open": []
+      },
+      {
+        "id": "isomorphism-counterexample",
+        "action": "direct",
+        "y": 4134,
+        "target": 4134,
+        "open": [
+          "isomorphism-counterexample"
+        ]
+      },
+      {
+        "id": "isomorphism-counterexample",
+        "action": "refresh",
+        "y": 4134,
+        "target": 4134,
+        "open": [
+          "isomorphism-counterexample"
+        ]
+      },
+      {
+        "id": "four-group-properties",
+        "action": "direct",
+        "y": 4216,
+        "target": 4216,
+        "open": []
+      },
+      {
+        "id": "four-group-properties",
+        "action": "refresh",
+        "y": 4216,
+        "target": 4216,
+        "open": []
+      },
+      {
+        "id": "klein-nonisomorphism",
+        "action": "direct",
+        "y": 4752,
+        "target": 4752,
+        "open": [
+          "klein-nonisomorphism"
+        ]
+      },
+      {
+        "id": "klein-nonisomorphism",
+        "action": "refresh",
+        "y": 4752,
+        "target": 4752,
+        "open": [
+          "klein-nonisomorphism"
+        ]
+      },
+      {
+        "id": "klein-identity",
+        "action": "direct",
+        "y": 5290,
+        "target": 5290,
+        "open": [
+          "klein-nonisomorphism",
+          "klein-identity"
+        ]
+      },
+      {
+        "id": "klein-identity",
+        "action": "refresh",
+        "y": 5290,
+        "target": 5290,
+        "open": [
+          "klein-nonisomorphism",
+          "klein-identity"
+        ]
+      },
+      {
+        "id": "cyclic-four-categorical",
+        "action": "direct",
+        "y": 4946,
+        "target": 4946,
+        "open": [
+          "cyclic-four-categorical"
+        ]
+      },
+      {
+        "id": "cyclic-four-categorical",
+        "action": "refresh",
+        "y": 4946,
+        "target": 4946,
+        "open": [
+          "cyclic-four-categorical"
+        ]
+      },
+      {
+        "id": "cyclic4-reduce",
+        "action": "direct",
+        "y": 5262,
+        "target": 5262,
+        "open": [
+          "cyclic-four-categorical",
+          "cyclic4-reduce"
+        ]
+      },
+      {
+        "id": "cyclic4-reduce",
+        "action": "refresh",
+        "y": 5262,
+        "target": 5262,
+        "open": [
+          "cyclic-four-categorical",
+          "cyclic4-reduce"
+        ]
+      },
+      {
+        "id": "generic-model-range",
+        "action": "direct",
+        "y": 5096,
+        "target": 5096,
+        "open": [
+          "generic-model-range"
+        ]
+      },
+      {
+        "id": "generic-model-range",
+        "action": "refresh",
+        "y": 5096,
+        "target": 5096,
+        "open": [
+          "generic-model-range"
+        ]
+      }
+    ],
+    "power": [
+      {
+        "model": "multiply",
+        "base": 3,
+        "n": 5,
+        "result": "243"
+      },
+      {
+        "model": "add",
+        "base": 3,
+        "n": 5,
+        "result": "15"
+      }
+    ],
+    "failure": {
+      "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#isomorphism-map",
+      "key": "cad9rvu3",
+      "y": 3437,
+      "choices": [
+        "b",
+        "1",
+        "1"
+      ],
+      "image": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "paths": [
+        "(1 + 1) mod 4 = 2",
+        "b(2) = 3",
+        "b(1) = 2, b(1) = 2",
+        "(2 × 2) mod 5 = 4"
+      ],
+      "reasons": {
+        "klein-assume": false,
+        "klein-source-sum": false,
+        "klein-preserve": false,
+        "klein-square": false,
+        "klein-identity": false,
+        "klein-injective": false,
+        "cyclic4-generator": false,
+        "cyclic4-bijection": false,
+        "cyclic4-reduce": false,
+        "cyclic4-compose": false,
+        "cyclic4-categorical": false
+      },
+      "open": [
+        "even-natural-monoids",
+        "isomorphism-counterexample"
+      ]
+    },
+    "success": {
+      "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#isomorphism-map",
+      "key": "cad9rvu3",
+      "y": 3437,
+      "choices": [
+        "f3",
+        "0",
+        "3"
+      ],
+      "image": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "paths": [
+        "(0 + 3) mod 4 = 3",
+        "f₃(3) = 2",
+        "f₃(0) = 1, f₃(3) = 2",
+        "(1 × 2) mod 5 = 2"
+      ],
+      "reasons": {
+        "klein-assume": false,
+        "klein-source-sum": false,
+        "klein-preserve": false,
+        "klein-square": false,
+        "klein-identity": false,
+        "klein-injective": false,
+        "cyclic4-generator": false,
+        "cyclic4-bijection": false,
+        "cyclic4-reduce": false,
+        "cyclic4-compose": false,
+        "cyclic4-categorical": false
+      },
+      "open": [
+        "even-natural-monoids",
+        "isomorphism-counterexample"
+      ]
+    },
+    "beforeLanguage": {
+      "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#klein-source-sum",
+      "key": "default",
+      "y": 5797,
+      "choices": [
+        "f3",
+        "0",
+        "3"
+      ],
+      "image": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "paths": [
+        "(0 + 3) mod 4 = 3",
+        "f₃(3) = 2",
+        "f₃(0) = 1, f₃(3) = 2",
+        "(1 × 2) mod 5 = 2"
+      ],
+      "reasons": {
+        "klein-assume": false,
+        "klein-source-sum": true,
+        "klein-preserve": false,
+        "klein-square": false,
+        "klein-identity": true,
+        "klein-injective": false,
+        "cyclic4-generator": false,
+        "cyclic4-bijection": false,
+        "cyclic4-reduce": true,
+        "cyclic4-compose": false,
+        "cyclic4-categorical": false
+      },
+      "open": [
+        "even-natural-monoids",
+        "isomorphism-counterexample",
+        "klein-nonisomorphism",
+        "klein-source-sum",
+        "klein-identity",
+        "cyclic-four-categorical",
+        "cyclic4-reduce",
+        "generic-model-range"
+      ]
+    },
+    "afterLanguage": {
+      "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#klein-source-sum",
+      "key": "default",
+      "y": 0,
+      "choices": [
+        "f3",
+        "0",
+        "3"
+      ],
+      "image": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "paths": [
+        "(0 + 3) mod 4 = 3",
+        "f₃(3) = 2",
+        "f₃(0) = 1, f₃(3) = 2",
+        "(1 × 2) mod 5 = 2"
+      ],
+      "reasons": {
+        "klein-assume": false,
+        "klein-source-sum": true,
+        "klein-preserve": false,
+        "klein-square": false,
+        "klein-identity": true,
+        "klein-injective": false,
+        "cyclic4-generator": false,
+        "cyclic4-bijection": false,
+        "cyclic4-reduce": true,
+        "cyclic4-compose": false,
+        "cyclic4-categorical": false
+      },
+      "open": [
+        "even-natural-monoids",
+        "isomorphism-counterexample",
+        "klein-nonisomorphism",
+        "klein-source-sum",
+        "klein-identity",
+        "cyclic-four-categorical",
+        "cyclic4-reduce",
+        "generic-model-range"
+      ]
+    },
+    "navigation": {
+      "source": "/book/6?source=model-reader&tag=two+words&q=isomorphism#generic-model-range",
+      "readerSource": {
+        "key": "default",
+        "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#generic-model-range"
+      },
+      "left": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#klein-source-sum",
+        "key": "default",
+        "y": 7068,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "entry": 6715,
+      "mid": {
+        "url": "/power?from=%2Fbook%2F6%3Fsource%3Dmodel-reader%26tag%3Dtwo%2Bwords%26q%3Disomorphism%23generic-model-range",
+        "key": "lggs9a5b",
+        "y": 210,
+        "choices": null,
+        "image": null,
+        "paths": null,
+        "reasons": {},
+        "open": []
+      },
+      "pop": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#klein-source-sum",
+        "key": "default",
+        "y": 7068,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "forward": {
+        "url": "/power?from=%2Fbook%2F6%3Fsource%3Dmodel-reader%26tag%3Dtwo%2Bwords%26q%3Disomorphism%23generic-model-range",
+        "key": "lggs9a5b",
+        "y": 210,
+        "choices": null,
+        "image": null,
+        "paths": null,
+        "reasons": {},
+        "open": []
+      },
+      "returned": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#generic-model-range",
+        "key": "vd31yv47",
+        "y": 7068,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "stable": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#generic-model-range",
+        "key": "vd31yv47",
+        "y": 7068,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "hard": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#generic-model-range",
+        "key": "9zo7imdb",
+        "y": 6715,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "target": 6715
+    },
+    "searches": [
+      {
+        "term": "第6.6节",
+        "id": "section-6-6"
+      },
+      {
+        "term": "Section 6.7",
+        "id": "section-6-7"
+      },
+      {
+        "term": "习题6.6",
+        "id": "exercise-6-6"
+      }
+    ]
+  },
+  {
+    "base": "http://127.0.0.1:4192",
+    "width": 390,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "errors": [],
+    "targets": [
+      {
+        "id": "section-6-6",
+        "action": "direct",
+        "y": 3072,
+        "target": 3072,
+        "open": []
+      },
+      {
+        "id": "section-6-6",
+        "action": "refresh",
+        "y": 3072,
+        "target": 3072,
+        "open": []
+      },
+      {
+        "id": "theory-model-isomorphism",
+        "action": "direct",
+        "y": 3133,
+        "target": 3133,
+        "open": []
+      },
+      {
+        "id": "theory-model-isomorphism",
+        "action": "refresh",
+        "y": 3133,
+        "target": 3133,
+        "open": []
+      },
+      {
+        "id": "even-natural-monoids",
+        "action": "direct",
+        "y": 3625,
+        "target": 3625,
+        "open": [
+          "even-natural-monoids"
+        ]
+      },
+      {
+        "id": "even-natural-monoids",
+        "action": "refresh",
+        "y": 3625,
+        "target": 3625,
+        "open": [
+          "even-natural-monoids"
+        ]
+      },
+      {
+        "id": "section-6-7",
+        "action": "direct",
+        "y": 3768,
+        "target": 3768,
+        "open": []
+      },
+      {
+        "id": "section-6-7",
+        "action": "refresh",
+        "y": 3768,
+        "target": 3768,
+        "open": []
+      },
+      {
+        "id": "isomorphism-map",
+        "action": "direct",
+        "y": 3829,
+        "target": 3829,
+        "open": []
+      },
+      {
+        "id": "isomorphism-map",
+        "action": "refresh",
+        "y": 3829,
+        "target": 3829,
+        "open": []
+      },
+      {
+        "id": "isomorphism-counterexample",
+        "action": "direct",
+        "y": 5070,
+        "target": 5070,
+        "open": [
+          "isomorphism-counterexample"
+        ]
+      },
+      {
+        "id": "isomorphism-counterexample",
+        "action": "refresh",
+        "y": 5070,
+        "target": 5070,
+        "open": [
+          "isomorphism-counterexample"
+        ]
+      },
+      {
+        "id": "four-group-properties",
+        "action": "direct",
+        "y": 5180,
+        "target": 5180,
+        "open": []
+      },
+      {
+        "id": "four-group-properties",
+        "action": "refresh",
+        "y": 5180,
+        "target": 5180,
+        "open": []
+      },
+      {
+        "id": "klein-nonisomorphism",
+        "action": "direct",
+        "y": 6116,
+        "target": 6116,
+        "open": [
+          "klein-nonisomorphism"
+        ]
+      },
+      {
+        "id": "klein-nonisomorphism",
+        "action": "refresh",
+        "y": 6116,
+        "target": 6116,
+        "open": [
+          "klein-nonisomorphism"
+        ]
+      },
+      {
+        "id": "klein-identity",
+        "action": "direct",
+        "y": 6654,
+        "target": 6654,
+        "open": [
+          "klein-nonisomorphism",
+          "klein-identity"
+        ]
+      },
+      {
+        "id": "klein-identity",
+        "action": "refresh",
+        "y": 6654,
+        "target": 6654,
+        "open": [
+          "klein-nonisomorphism",
+          "klein-identity"
+        ]
+      },
+      {
+        "id": "cyclic-four-categorical",
+        "action": "direct",
+        "y": 6382,
+        "target": 6382,
+        "open": [
+          "cyclic-four-categorical"
+        ]
+      },
+      {
+        "id": "cyclic-four-categorical",
+        "action": "refresh",
+        "y": 6382,
+        "target": 6382,
+        "open": [
+          "cyclic-four-categorical"
+        ]
+      },
+      {
+        "id": "cyclic4-reduce",
+        "action": "direct",
+        "y": 6726,
+        "target": 6726,
+        "open": [
+          "cyclic-four-categorical",
+          "cyclic4-reduce"
+        ]
+      },
+      {
+        "id": "cyclic4-reduce",
+        "action": "refresh",
+        "y": 6726,
+        "target": 6726,
+        "open": [
+          "cyclic-four-categorical",
+          "cyclic4-reduce"
+        ]
+      },
+      {
+        "id": "generic-model-range",
+        "action": "direct",
+        "y": 6556,
+        "target": 6556,
+        "open": [
+          "generic-model-range"
+        ]
+      },
+      {
+        "id": "generic-model-range",
+        "action": "refresh",
+        "y": 6556,
+        "target": 6556,
+        "open": [
+          "generic-model-range"
+        ]
+      }
+    ],
+    "power": [
+      {
+        "model": "multiply",
+        "base": 3,
+        "n": 5,
+        "result": "243"
+      },
+      {
+        "model": "add",
+        "base": 3,
+        "n": 5,
+        "result": "15"
+      }
+    ],
+    "failure": {
+      "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#isomorphism-map",
+      "key": "gauxg3dz",
+      "y": 3531,
+      "choices": [
+        "b",
+        "1",
+        "1"
+      ],
+      "image": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "paths": [
+        "(1 + 1) mod 4 = 2",
+        "b(2) = 3",
+        "b(1) = 2, b(1) = 2",
+        "(2 × 2) mod 5 = 4"
+      ],
+      "reasons": {
+        "klein-assume": false,
+        "klein-source-sum": false,
+        "klein-preserve": false,
+        "klein-square": false,
+        "klein-identity": false,
+        "klein-injective": false,
+        "cyclic4-generator": false,
+        "cyclic4-bijection": false,
+        "cyclic4-reduce": false,
+        "cyclic4-compose": false,
+        "cyclic4-categorical": false
+      },
+      "open": [
+        "even-natural-monoids",
+        "isomorphism-counterexample"
+      ]
+    },
+    "success": {
+      "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#isomorphism-map",
+      "key": "gauxg3dz",
+      "y": 4009,
+      "choices": [
+        "f3",
+        "0",
+        "3"
+      ],
+      "image": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "paths": [
+        "(0 + 3) mod 4 = 3",
+        "f₃(3) = 2",
+        "f₃(0) = 1, f₃(3) = 2",
+        "(1 × 2) mod 5 = 2"
+      ],
+      "reasons": {
+        "klein-assume": false,
+        "klein-source-sum": false,
+        "klein-preserve": false,
+        "klein-square": false,
+        "klein-identity": false,
+        "klein-injective": false,
+        "cyclic4-generator": false,
+        "cyclic4-bijection": false,
+        "cyclic4-reduce": false,
+        "cyclic4-compose": false,
+        "cyclic4-categorical": false
+      },
+      "open": [
+        "even-natural-monoids",
+        "isomorphism-counterexample"
+      ]
+    },
+    "beforeLanguage": {
+      "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#klein-source-sum",
+      "key": "default",
+      "y": 7966,
+      "choices": [
+        "f3",
+        "0",
+        "3"
+      ],
+      "image": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "paths": [
+        "(0 + 3) mod 4 = 3",
+        "f₃(3) = 2",
+        "f₃(0) = 1, f₃(3) = 2",
+        "(1 × 2) mod 5 = 2"
+      ],
+      "reasons": {
+        "klein-assume": false,
+        "klein-source-sum": true,
+        "klein-preserve": false,
+        "klein-square": false,
+        "klein-identity": true,
+        "klein-injective": false,
+        "cyclic4-generator": false,
+        "cyclic4-bijection": false,
+        "cyclic4-reduce": true,
+        "cyclic4-compose": false,
+        "cyclic4-categorical": false
+      },
+      "open": [
+        "even-natural-monoids",
+        "isomorphism-counterexample",
+        "klein-nonisomorphism",
+        "klein-source-sum",
+        "klein-identity",
+        "cyclic-four-categorical",
+        "cyclic4-reduce",
+        "generic-model-range"
+      ]
+    },
+    "afterLanguage": {
+      "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#klein-source-sum",
+      "key": "default",
+      "y": 0,
+      "choices": [
+        "f3",
+        "0",
+        "3"
+      ],
+      "image": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "paths": [
+        "(0 + 3) mod 4 = 3",
+        "f₃(3) = 2",
+        "f₃(0) = 1, f₃(3) = 2",
+        "(1 × 2) mod 5 = 2"
+      ],
+      "reasons": {
+        "klein-assume": false,
+        "klein-source-sum": true,
+        "klein-preserve": false,
+        "klein-square": false,
+        "klein-identity": true,
+        "klein-injective": false,
+        "cyclic4-generator": false,
+        "cyclic4-bijection": false,
+        "cyclic4-reduce": true,
+        "cyclic4-compose": false,
+        "cyclic4-categorical": false
+      },
+      "open": [
+        "even-natural-monoids",
+        "isomorphism-counterexample",
+        "klein-nonisomorphism",
+        "klein-source-sum",
+        "klein-identity",
+        "cyclic-four-categorical",
+        "cyclic4-reduce",
+        "generic-model-range"
+      ]
+    },
+    "navigation": {
+      "source": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#generic-model-range",
+      "readerSource": {
+        "key": "default",
+        "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#generic-model-range"
+      },
+      "left": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#klein-source-sum",
+        "key": "default",
+        "y": 8992,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "entry": 8427,
+      "mid": {
+        "url": "/power?from=%2Fbook%2F6%3Fsource%3Dmodel-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2590%258C%25E6%259E%2584%23generic-model-range",
+        "key": "dx4l7w74",
+        "y": 210,
+        "choices": null,
+        "image": null,
+        "paths": null,
+        "reasons": {},
+        "open": []
+      },
+      "pop": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#klein-source-sum",
+        "key": "default",
+        "y": 8992,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "forward": {
+        "url": "/power?from=%2Fbook%2F6%3Fsource%3Dmodel-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2590%258C%25E6%259E%2584%23generic-model-range",
+        "key": "dx4l7w74",
+        "y": 210,
+        "choices": null,
+        "image": null,
+        "paths": null,
+        "reasons": {},
+        "open": []
+      },
+      "returned": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#generic-model-range",
+        "key": "pd827oe8",
+        "y": 8992,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "stable": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#generic-model-range",
+        "key": "pd827oe8",
+        "y": 8992,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "hard": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=%E5%90%8C%E6%9E%84#generic-model-range",
+        "key": "fmp1i0k5",
+        "y": 8427,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "target": 8427
+    },
+    "searches": [
+      {
+        "term": "第6.6节",
+        "id": "section-6-6"
+      },
+      {
+        "term": "Section 6.7",
+        "id": "section-6-7"
+      },
+      {
+        "term": "习题6.6",
+        "id": "exercise-6-6"
+      }
+    ]
+  },
+  {
+    "base": "http://127.0.0.1:4192",
+    "width": 390,
+    "lang": "en",
+    "browser": "156.0.4314.58",
+    "errors": [],
+    "targets": [
+      {
+        "id": "section-6-6",
+        "action": "direct",
+        "y": 4088,
+        "target": 4088,
+        "open": []
+      },
+      {
+        "id": "section-6-6",
+        "action": "refresh",
+        "y": 4088,
+        "target": 4088,
+        "open": []
+      },
+      {
+        "id": "theory-model-isomorphism",
+        "action": "direct",
+        "y": 4177,
+        "target": 4177,
+        "open": []
+      },
+      {
+        "id": "theory-model-isomorphism",
+        "action": "refresh",
+        "y": 4177,
+        "target": 4177,
+        "open": []
+      },
+      {
+        "id": "even-natural-monoids",
+        "action": "direct",
+        "y": 4889,
+        "target": 4889,
+        "open": [
+          "even-natural-monoids"
+        ]
+      },
+      {
+        "id": "even-natural-monoids",
+        "action": "refresh",
+        "y": 4889,
+        "target": 4889,
+        "open": [
+          "even-natural-monoids"
+        ]
+      },
+      {
+        "id": "section-6-7",
+        "action": "direct",
+        "y": 5124,
+        "target": 5124,
+        "open": []
+      },
+      {
+        "id": "section-6-7",
+        "action": "refresh",
+        "y": 5124,
+        "target": 5124,
+        "open": []
+      },
+      {
+        "id": "isomorphism-map",
+        "action": "direct",
+        "y": 5241,
+        "target": 5241,
+        "open": []
+      },
+      {
+        "id": "isomorphism-map",
+        "action": "refresh",
+        "y": 5241,
+        "target": 5241,
+        "open": []
+      },
+      {
+        "id": "isomorphism-counterexample",
+        "action": "direct",
+        "y": 6654,
+        "target": 6654,
+        "open": [
+          "isomorphism-counterexample"
+        ]
+      },
+      {
+        "id": "isomorphism-counterexample",
+        "action": "refresh",
+        "y": 6654,
+        "target": 6654,
+        "open": [
+          "isomorphism-counterexample"
+        ]
+      },
+      {
+        "id": "four-group-properties",
+        "action": "direct",
+        "y": 6792,
+        "target": 6792,
+        "open": []
+      },
+      {
+        "id": "four-group-properties",
+        "action": "refresh",
+        "y": 6792,
+        "target": 6792,
+        "open": []
+      },
+      {
+        "id": "klein-nonisomorphism",
+        "action": "direct",
+        "y": 7804,
+        "target": 7804,
+        "open": [
+          "klein-nonisomorphism"
+        ]
+      },
+      {
+        "id": "klein-nonisomorphism",
+        "action": "refresh",
+        "y": 7804,
+        "target": 7804,
+        "open": [
+          "klein-nonisomorphism"
+        ]
+      },
+      {
+        "id": "klein-identity",
+        "action": "direct",
+        "y": 8370,
+        "target": 8370,
+        "open": [
+          "klein-nonisomorphism",
+          "klein-identity"
+        ]
+      },
+      {
+        "id": "klein-identity",
+        "action": "refresh",
+        "y": 8370,
+        "target": 8370,
+        "open": [
+          "klein-nonisomorphism",
+          "klein-identity"
+        ]
+      },
+      {
+        "id": "cyclic-four-categorical",
+        "action": "direct",
+        "y": 8146,
+        "target": 8146,
+        "open": [
+          "cyclic-four-categorical"
+        ]
+      },
+      {
+        "id": "cyclic-four-categorical",
+        "action": "refresh",
+        "y": 8146,
+        "target": 8146,
+        "open": [
+          "cyclic-four-categorical"
+        ]
+      },
+      {
+        "id": "cyclic4-reduce",
+        "action": "direct",
+        "y": 8518,
+        "target": 8518,
+        "open": [
+          "cyclic-four-categorical",
+          "cyclic4-reduce"
+        ]
+      },
+      {
+        "id": "cyclic4-reduce",
+        "action": "refresh",
+        "y": 8518,
+        "target": 8518,
+        "open": [
+          "cyclic-four-categorical",
+          "cyclic4-reduce"
+        ]
+      },
+      {
+        "id": "generic-model-range",
+        "action": "direct",
+        "y": 8396,
+        "target": 8396,
+        "open": [
+          "generic-model-range"
+        ]
+      },
+      {
+        "id": "generic-model-range",
+        "action": "refresh",
+        "y": 8396,
+        "target": 8396,
+        "open": [
+          "generic-model-range"
+        ]
+      }
+    ],
+    "power": [
+      {
+        "model": "multiply",
+        "base": 3,
+        "n": 5,
+        "result": "243"
+      },
+      {
+        "model": "add",
+        "base": 3,
+        "n": 5,
+        "result": "15"
+      }
+    ],
+    "failure": {
+      "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#isomorphism-map",
+      "key": "5wxecwx6",
+      "y": 5041,
+      "choices": [
+        "b",
+        "1",
+        "1"
+      ],
+      "image": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "paths": [
+        "(1 + 1) mod 4 = 2",
+        "b(2) = 3",
+        "b(1) = 2, b(1) = 2",
+        "(2 × 2) mod 5 = 4"
+      ],
+      "reasons": {
+        "klein-assume": false,
+        "klein-source-sum": false,
+        "klein-preserve": false,
+        "klein-square": false,
+        "klein-identity": false,
+        "klein-injective": false,
+        "cyclic4-generator": false,
+        "cyclic4-bijection": false,
+        "cyclic4-reduce": false,
+        "cyclic4-compose": false,
+        "cyclic4-categorical": false
+      },
+      "open": [
+        "even-natural-monoids",
+        "isomorphism-counterexample"
+      ]
+    },
+    "success": {
+      "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#isomorphism-map",
+      "key": "5wxecwx6",
+      "y": 5505,
+      "choices": [
+        "f3",
+        "0",
+        "3"
+      ],
+      "image": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "paths": [
+        "(0 + 3) mod 4 = 3",
+        "f₃(3) = 2",
+        "f₃(0) = 1, f₃(3) = 2",
+        "(1 × 2) mod 5 = 2"
+      ],
+      "reasons": {
+        "klein-assume": false,
+        "klein-source-sum": false,
+        "klein-preserve": false,
+        "klein-square": false,
+        "klein-identity": false,
+        "klein-injective": false,
+        "cyclic4-generator": false,
+        "cyclic4-bijection": false,
+        "cyclic4-reduce": false,
+        "cyclic4-compose": false,
+        "cyclic4-categorical": false
+      },
+      "open": [
+        "even-natural-monoids",
+        "isomorphism-counterexample"
+      ]
+    },
+    "beforeLanguage": {
+      "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#klein-source-sum",
+      "key": "default",
+      "y": 10100,
+      "choices": [
+        "f3",
+        "0",
+        "3"
+      ],
+      "image": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "paths": [
+        "(0 + 3) mod 4 = 3",
+        "f₃(3) = 2",
+        "f₃(0) = 1, f₃(3) = 2",
+        "(1 × 2) mod 5 = 2"
+      ],
+      "reasons": {
+        "klein-assume": false,
+        "klein-source-sum": true,
+        "klein-preserve": false,
+        "klein-square": false,
+        "klein-identity": true,
+        "klein-injective": false,
+        "cyclic4-generator": false,
+        "cyclic4-bijection": false,
+        "cyclic4-reduce": true,
+        "cyclic4-compose": false,
+        "cyclic4-categorical": false
+      },
+      "open": [
+        "even-natural-monoids",
+        "isomorphism-counterexample",
+        "klein-nonisomorphism",
+        "klein-source-sum",
+        "klein-identity",
+        "cyclic-four-categorical",
+        "cyclic4-reduce",
+        "generic-model-range"
+      ]
+    },
+    "afterLanguage": {
+      "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#klein-source-sum",
+      "key": "default",
+      "y": 0,
+      "choices": [
+        "f3",
+        "0",
+        "3"
+      ],
+      "image": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "paths": [
+        "(0 + 3) mod 4 = 3",
+        "f₃(3) = 2",
+        "f₃(0) = 1, f₃(3) = 2",
+        "(1 × 2) mod 5 = 2"
+      ],
+      "reasons": {
+        "klein-assume": false,
+        "klein-source-sum": true,
+        "klein-preserve": false,
+        "klein-square": false,
+        "klein-identity": true,
+        "klein-injective": false,
+        "cyclic4-generator": false,
+        "cyclic4-bijection": false,
+        "cyclic4-reduce": true,
+        "cyclic4-compose": false,
+        "cyclic4-categorical": false
+      },
+      "open": [
+        "even-natural-monoids",
+        "isomorphism-counterexample",
+        "klein-nonisomorphism",
+        "klein-source-sum",
+        "klein-identity",
+        "cyclic-four-categorical",
+        "cyclic4-reduce",
+        "generic-model-range"
+      ]
+    },
+    "navigation": {
+      "source": "/book/6?source=model-reader&tag=two+words&q=isomorphism#generic-model-range",
+      "readerSource": {
+        "key": "default",
+        "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#generic-model-range"
+      },
+      "left": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#klein-source-sum",
+        "key": "default",
+        "y": 11364,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "entry": 10547,
+      "mid": {
+        "url": "/power?from=%2Fbook%2F6%3Fsource%3Dmodel-reader%26tag%3Dtwo%2Bwords%26q%3Disomorphism%23generic-model-range",
+        "key": "doqqafec",
+        "y": 210,
+        "choices": null,
+        "image": null,
+        "paths": null,
+        "reasons": {},
+        "open": []
+      },
+      "pop": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#klein-source-sum",
+        "key": "default",
+        "y": 11364,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "forward": {
+        "url": "/power?from=%2Fbook%2F6%3Fsource%3Dmodel-reader%26tag%3Dtwo%2Bwords%26q%3Disomorphism%23generic-model-range",
+        "key": "doqqafec",
+        "y": 210,
+        "choices": null,
+        "image": null,
+        "paths": null,
+        "reasons": {},
+        "open": []
+      },
+      "returned": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#generic-model-range",
+        "key": "0uyarb72",
+        "y": 11364,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "stable": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#generic-model-range",
+        "key": "0uyarb72",
+        "y": 11364,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "hard": {
+        "url": "/book/6?source=model-reader&tag=two+words&q=isomorphism#generic-model-range",
+        "key": "p06whl1i",
+        "y": 10547,
+        "choices": [
+          "f3",
+          "0",
+          "3"
+        ],
+        "image": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "paths": [
+          "(0 + 3) mod 4 = 3",
+          "f₃(3) = 2",
+          "f₃(0) = 1, f₃(3) = 2",
+          "(1 × 2) mod 5 = 2"
+        ],
+        "reasons": {
+          "klein-assume": false,
+          "klein-source-sum": true,
+          "klein-preserve": false,
+          "klein-square": false,
+          "klein-identity": true,
+          "klein-injective": false,
+          "cyclic4-generator": false,
+          "cyclic4-bijection": false,
+          "cyclic4-reduce": true,
+          "cyclic4-compose": false,
+          "cyclic4-categorical": false
+        },
+        "open": [
+          "even-natural-monoids",
+          "isomorphism-counterexample",
+          "klein-nonisomorphism",
+          "klein-source-sum",
+          "klein-identity",
+          "cyclic-four-categorical",
+          "cyclic4-reduce",
+          "generic-model-range"
+        ]
+      },
+      "target": 10547
+    },
+    "searches": [
+      {
+        "term": "第6.6节",
+        "id": "section-6-6"
+      },
+      {
+        "term": "Section 6.7",
+        "id": "section-6-7"
+      },
+      {
+        "term": "习题6.6",
+        "id": "exercise-6-6"
+      }
+    ]
+  }
+]

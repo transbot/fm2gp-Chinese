@@ -1,5 +1,7 @@
 // Section-level aliases, not chapter-wide claims about coverage.
 export const readingKeywords:Record<string,readonly string[]> = {
+  '8.4':['环','单位','乘法单位元素','可逆','零因子','整环','ring','unit','multiplicative identity','invertible','zero divisor','integral domain'],
+  '8.8':['域','整环','单位','系数域','首项系数相除','field','integral domain','unit','coefficient field','dividing leading coefficients'],
   '11.1':['排列','排列复合','对换','平凡循环','不动点','permutation','composition','transposition','trivial cycle','fixed point'],
   '11.4':['排列','循环搬移','来源表','数据传送','permutation','cycle transfer','source map','rotate_cycle_from','rotate_transform'],
   '6.6':['理论','模型','同构','双射','保持运算','theory','model','isomorphism','isomorphic','bijection','operation preservation','preserves the operation'],

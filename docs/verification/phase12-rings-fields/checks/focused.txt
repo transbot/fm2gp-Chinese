@@ -1,0 +1,54 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+ ❯ src/pages/RingsFields.test.tsx (7 tests | 2 failed) 504ms
+   × pairs all six formulas and bilingual accessible reasons in en 31ms
+   × pairs all six formulas and bilingual accessible reasons in zh 23ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/pages/RingsFields.test.tsx > pairs all six formulas and bilingual accessible reasons in en
+AssertionError: expected 'under the assumption that a is invert…' to contain 'inverse'
+
+Expected: "inverse"
+Received: "under the assumption that a is invertible, a⁻¹a=1. substitute this product for 1."
+
+ ❯ src/pages/RingsFields.test.tsx:42:64
+     40|   expect(d(id).parentElement?.querySelector('code')).toHaveTextContent…
+     41|   expect(d(id).querySelector('summary')).toHaveAccessibleName((lang===…
+     42|   expect(d(id).querySelector('p')?.textContent?.toLowerCase()).toConta…
+       |                                                                ^
+     43|  });
+     44| });
+ ❯ src/pages/RingsFields.test.tsx:39:7
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  src/pages/RingsFields.test.tsx > pairs all six formulas and bilingual accessible reasons in zh
+AssertionError: expected '反设 a 可逆，故 a⁻¹a=1。用这个等式替换左侧的 1。' to contain '逆元'
+
+Expected: "逆元"
+Received: "反设 a 可逆，故 a⁻¹a=1。用这个等式替换左侧的 1。"
+
+ ❯ src/pages/RingsFields.test.tsx:42:64
+     40|   expect(d(id).parentElement?.querySelector('code')).toHaveTextContent…
+     41|   expect(d(id).querySelector('summary')).toHaveAccessibleName((lang===…
+     42|   expect(d(id).querySelector('p')?.textContent?.toLowerCase()).toConta…
+       |                                                                ^
+     43|  });
+     44| });
+ ❯ src/pages/RingsFields.test.tsx:39:7
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed | 2 passed (3)
+      Tests  2 failed | 21 passed (23)
+   Start at  12:10:32
+   Duration  4.21s (transform 610ms, setup 787ms, import 1.03s, tests 1.79s, environment 6.06s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

@@ -1,0 +1,16 @@
+[
+  {
+    "base": "http://127.0.0.1:4192",
+    "width": 1440,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "errors": [],
+    "navigation": [],
+    "polynomial": [],
+    "direct": []
+  },
+  {
+    "status": "FAIL",
+    "message": "Error: expect(locator).toHaveAccessibleName(expected) failed\n\nLocator:  locator('#zero-unit-contradiction').locator('> summary')\nExpected: \"查看本步依据: b = 0 ∧ b ≠ 0\"\nReceived: \"查看本步依据 : b = 0 ∧ b ≠ 0\"\nTimeout:  5000ms\n\nCall log:\n  - Expect \"to.have.accessible.name\" with timeout 5000ms\n  - waiting for locator('#zero-unit-contradiction').locator('> summary')\n    14 × locator resolved to <summary class=\"cursor-pointer font-semibold rounded focus-visible:outline focus-visible:outline-blue-600\">…</summary>\n       - unexpected value \"查看本步依据 : b = 0 ∧ b ≠ 0\"\n\n    at captureRawStack (C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1104-1290-0_26.1104.1290.0_x64__3k8sg7r9htsxt\\dependencies\\node\\node_modules\\playwright-core\\lib\\coreBundle.js:9681:17)\n    at callMatcherAsStep (C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1104-1290-0_26.1104.1290.0_x64__3k8sg7r9htsxt\\dependencies\\node\\node_modules\\playwright\\lib\\matchers\\expect.js:13310:57)\n    at Object.toHaveAccessibleName (C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1104-1290-0_26.1104.1290.0_x64__3k8sg7r9htsxt\\dependencies\\node\\node_modules\\playwright\\lib\\matchers\\expect.js:13300:23)\n    at run (D:\\Code\\fm2gp-Chinese\\scripts\\verify-rings-fields.cjs:45:42)\n    at async D:\\Code\\fm2gp-Chinese\\scripts\\verify-rings-fields.cjs:129:201"
+  }
+]

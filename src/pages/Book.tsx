@@ -1,6 +1,7 @@
 import { useLayoutEffect, useMemo, useState } from 'react';
 import { sectionReaders } from '../components/book/sectionReaders';
 import { BookRecap } from './BookRecap';
+import { ReadingLink } from '../components/book/ReadingTools';
 import { Link, useLocation, useNavigationType, useParams, useSearchParams } from 'react-router-dom';
 import { LearningShell } from '../components/common/LearningShell';
 import { useLanguage } from '../context/LanguageContext';
@@ -58,7 +59,8 @@ export function Book() {
         {e.id === '11.13' && <Link className="learning-link" to={'/reverse' + from(exerciseAnchor(e.id))}>{zh ? '递归反转演示：九元素' : 'Recursive reverse demonstration: nine elements'}</Link>}
         {e.id === '8.3' && <Link className="learning-link" to={'/polynomial-gcd' + from(exerciseAnchor(e.id))}>{zh ? '多项式GCD演示：前两题' : 'Polynomial GCD demonstration: first two parts'}</Link>}
         {e.id === '8.7' && <Link className="learning-link" to={'/concepts/matrices' + from(exerciseAnchor(e.id))}>{zh ? '可达性演示' : 'Reachability demonstration'}</Link>}
-        {!e.resources.length && <p>{zh ? '阅读题目与本章导引；此处尚无参考解答。' : 'Read the exercise with the chapter guide; no reference solution is available here yet.'}</p>}
+        {e.id === '8.6' && <ReadingLink to="/book/8#zero-divisor-not-unit">{zh ? '章内参考推导' : 'In-chapter reference derivation'}</ReadingLink>}
+        {!e.resources.length && e.id !== '8.6' && <p>{zh ? '阅读题目与本章导引；此处尚无参考解答。' : 'Read the exercise with the chapter guide; no reference solution is available here yet.'}</p>}
         {e.id === '7.1' && <p className="text-sm text-gray-600">{zh ? '原 PDF 外链已失效；现提供可访问的配套程序。' : 'The original PDF link is unavailable; the companion program remains accessible.'}</p>}
       </section>)}
     </> : <p>{zh ? '未找到这一章。' : 'Chapter not found.'} <Link className="learning-link" to={{pathname: '/book', search: location.search, hash: ''}}>{zh ? '返回目录' : 'Back to directory'}</Link></p>}

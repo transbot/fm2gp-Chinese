@@ -1,0 +1,1353 @@
+[
+  {
+    "base": "http://127.0.0.1:4192",
+    "width": 1440,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "errors": [],
+    "navigation": [
+      {
+        "kind": "session",
+        "depart": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#section-8-8",
+          "key": "yzctsce0",
+          "y": 4000,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "initial": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#polynomial-leading-division",
+          "key": "xc0ylhga",
+          "y": 4000,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "stable": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#polynomial-leading-division",
+          "key": "xc0ylhga",
+          "y": 4000,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "sourceState": {
+          "key": "yzctsce0",
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#polynomial-leading-division"
+        }
+      },
+      {
+        "kind": "back-forward",
+        "beforeHistory": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#polynomial-leading-division",
+          "key": "xc0ylhga",
+          "y": 4000,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "forward": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#polynomial-leading-division",
+          "key": "xc0ylhga",
+          "y": 4000,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        }
+      },
+      {
+        "kind": "hard-refresh",
+        "hard": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#polynomial-leading-division",
+          "key": "ajveedwr",
+          "y": 4379,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "target": 4379
+      },
+      {
+        "kind": "exercise-proof",
+        "proofDeparture": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#zero-divisor-not-unit",
+          "key": "yuf940bg",
+          "y": 2400,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": true,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-identity",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "exercise": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#exercise-8-6",
+          "key": "0xi70bqu",
+          "y": 5636,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": true,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-identity",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "proofBack": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#zero-divisor-not-unit",
+          "key": "yuf940bg",
+          "y": 2400,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": true,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-identity",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        }
+      }
+    ],
+    "polynomial": [
+      {
+        "event": "term",
+        "fn": "remainder",
+        "step": "4",
+        "line": "term",
+        "counts": [
+          "0",
+          "0"
+        ],
+        "formulas": {
+          "A": "A = x",
+          "B": "B = 2x",
+          "Q": "Q = 0",
+          "R": "R = x",
+          "T": "T = 1/2",
+          "T × B": "T × B = x"
+        }
+      },
+      {
+        "event": "eliminate",
+        "fn": "remainder",
+        "step": "5",
+        "line": "update",
+        "counts": [
+          "0",
+          "1"
+        ],
+        "formulas": {
+          "A": "A = x",
+          "B": "B = 2x",
+          "Q": "Q = 1/2",
+          "R": "R = 0",
+          "T": "T = 1/2",
+          "T × B": "T × B = x"
+        },
+        "identity": "已精确验证 A = BQ + Rx = (2x) × (1/2) + (0)"
+      },
+      {
+        "event": "gcdReturn",
+        "fn": "gcd",
+        "step": "14",
+        "line": "return",
+        "counts": [
+          "1",
+          "1"
+        ],
+        "formulas": {
+          "a": "a = 2x",
+          "b": "b = 0",
+          "最近返回值": "最近返回值 = 2x",
+          "原始GCD返回值": "原始GCD返回值 = 2x"
+        }
+      },
+      {
+        "event": "monic",
+        "fn": "monic",
+        "step": "15",
+        "line": "normalize",
+        "counts": [
+          "1",
+          "1"
+        ],
+        "formulas": {
+          "a": "a = 2x",
+          "b": "b = 0",
+          "最近返回值": "最近返回值 = x",
+          "原始GCD返回值": "原始GCD返回值 = 2x",
+          "首一GCD": "首一GCD = x"
+        }
+      },
+      {
+        "event": "eliminate",
+        "fn": "remainder",
+        "step": "5",
+        "line": "update",
+        "counts": [
+          "0",
+          "1"
+        ],
+        "formulas": {
+          "A": "A = x",
+          "B": "B = 2x",
+          "Q": "Q = 1/2",
+          "R": "R = 0",
+          "T": "T = 1/2",
+          "T × B": "T × B = x"
+        },
+        "identity": "已精确验证 A = BQ + Rx = (2x) × (1/2) + (0)"
+      }
+    ],
+    "direct": [
+      {
+        "id": "zero-unit-inverse",
+        "action": "direct",
+        "s": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#zero-unit-inverse",
+          "key": "default",
+          "y": 2685,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": true,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-identity",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "target": 2685
+      },
+      {
+        "id": "zero-unit-inverse",
+        "action": "refresh",
+        "s": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#zero-unit-inverse",
+          "key": "default",
+          "y": 2645,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": false
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "target": 2645
+      },
+      {
+        "id": "zero-unit-contradiction",
+        "action": "direct",
+        "s": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#zero-unit-contradiction",
+          "key": "default",
+          "y": 3129,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "target": 3129
+      },
+      {
+        "id": "zero-unit-contradiction",
+        "action": "refresh",
+        "s": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#zero-unit-contradiction",
+          "key": "default",
+          "y": 3089,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": false,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-contradiction"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "target": 3089
+      }
+    ],
+    "status": "PASS"
+  },
+  {
+    "base": "http://127.0.0.1:4192",
+    "width": 1440,
+    "lang": "en",
+    "browser": "156.0.4314.58",
+    "errors": [],
+    "navigation": [
+      {
+        "kind": "session",
+        "depart": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=zero+divisor#section-8-8",
+          "key": "sybovsdi",
+          "y": 4200,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "Selected multiplication row · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "initial": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=zero+divisor#polynomial-leading-division",
+          "key": "kt26jnoj",
+          "y": 4200,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "Selected multiplication row · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "stable": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=zero+divisor#polynomial-leading-division",
+          "key": "kt26jnoj",
+          "y": 4200,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "Selected multiplication row · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "sourceState": {
+          "key": "sybovsdi",
+          "url": "/book/8?source=ring-reader&tag=two+words&q=zero+divisor#polynomial-leading-division"
+        }
+      },
+      {
+        "kind": "back-forward",
+        "beforeHistory": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=zero+divisor#polynomial-leading-division",
+          "key": "kt26jnoj",
+          "y": 4200,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "Selected multiplication row · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "forward": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=zero+divisor#polynomial-leading-division",
+          "key": "kt26jnoj",
+          "y": 4200,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "Selected multiplication row · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        }
+      },
+      {
+        "kind": "hard-refresh",
+        "hard": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=zero+divisor#polynomial-leading-division",
+          "key": "e3s8xhab",
+          "y": 4647,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "Selected multiplication row · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "target": 4647
+      },
+      {
+        "kind": "exercise-proof",
+        "proofDeparture": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=zero+divisor#zero-divisor-not-unit",
+          "key": "plppnyxo",
+          "y": 2572,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": true,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-identity",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "Selected multiplication row · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "exercise": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=zero+divisor#exercise-8-6",
+          "key": "vwi7frdn",
+          "y": 5960,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": true,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-identity",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "Selected multiplication row · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "proofBack": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=zero+divisor#zero-divisor-not-unit",
+          "key": "plppnyxo",
+          "y": 2572,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": true,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-identity",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "Selected multiplication row · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        }
+      }
+    ],
+    "polynomial": [
+      {
+        "event": "term",
+        "fn": "remainder",
+        "step": "4",
+        "line": "term",
+        "counts": [
+          "0",
+          "0"
+        ],
+        "formulas": {
+          "A": "A = x",
+          "B": "B = 2x",
+          "Q": "Q = 0",
+          "R": "R = x",
+          "T": "T = 1/2",
+          "T × B": "T × B = x"
+        }
+      },
+      {
+        "event": "eliminate",
+        "fn": "remainder",
+        "step": "5",
+        "line": "update",
+        "counts": [
+          "0",
+          "1"
+        ],
+        "formulas": {
+          "A": "A = x",
+          "B": "B = 2x",
+          "Q": "Q = 1/2",
+          "R": "R = 0",
+          "T": "T = 1/2",
+          "T × B": "T × B = x"
+        },
+        "identity": "Exactly verified: A = BQ + Rx = (2x) × (1/2) + (0)"
+      },
+      {
+        "event": "gcdReturn",
+        "fn": "gcd",
+        "step": "14",
+        "line": "return",
+        "counts": [
+          "1",
+          "1"
+        ],
+        "formulas": {
+          "a": "a = 2x",
+          "b": "b = 0",
+          "Latest returned value": "Latest returned value = 2x",
+          "Raw GCD return": "Raw GCD return = 2x"
+        }
+      },
+      {
+        "event": "monic",
+        "fn": "monic",
+        "step": "15",
+        "line": "normalize",
+        "counts": [
+          "1",
+          "1"
+        ],
+        "formulas": {
+          "a": "a = 2x",
+          "b": "b = 0",
+          "Latest returned value": "Latest returned value = x",
+          "Raw GCD return": "Raw GCD return = 2x",
+          "Monic GCD": "Monic GCD = x"
+        }
+      },
+      {
+        "event": "eliminate",
+        "fn": "remainder",
+        "step": "5",
+        "line": "update",
+        "counts": [
+          "0",
+          "1"
+        ],
+        "formulas": {
+          "A": "A = x",
+          "B": "B = 2x",
+          "Q": "Q = 1/2",
+          "R": "R = 0",
+          "T": "T = 1/2",
+          "T × B": "T × B = x"
+        },
+        "identity": "Exactly verified: A = BQ + Rx = (2x) × (1/2) + (0)"
+      }
+    ],
+    "direct": [
+      {
+        "id": "zero-unit-inverse",
+        "action": "direct",
+        "s": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=zero+divisor#zero-unit-inverse",
+          "key": "default",
+          "y": 2857,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": true,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-identity",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "Selected multiplication row · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "target": 2857
+      },
+      {
+        "id": "zero-unit-inverse",
+        "action": "refresh",
+        "s": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=zero+divisor#zero-unit-inverse",
+          "key": "default",
+          "y": 2817,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": false
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse"
+          ],
+          "row": "Selected multiplication row · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "target": 2817
+      },
+      {
+        "id": "zero-unit-contradiction",
+        "action": "direct",
+        "s": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=zero+divisor#zero-unit-contradiction",
+          "key": "default",
+          "y": 3301,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction"
+          ],
+          "row": "Selected multiplication row · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "target": 3301
+      },
+      {
+        "id": "zero-unit-contradiction",
+        "action": "refresh",
+        "s": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=zero+divisor#zero-unit-contradiction",
+          "key": "default",
+          "y": 3261,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": false,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-contradiction"
+          ],
+          "row": "Selected multiplication row · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "target": 3261
+      }
+    ],
+    "status": "PASS"
+  },
+  {
+    "base": "http://127.0.0.1:4192",
+    "width": 390,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "errors": [],
+    "navigation": [
+      {
+        "kind": "session",
+        "depart": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#section-8-8",
+          "key": "txeol1dj",
+          "y": 4620,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "initial": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#polynomial-leading-division",
+          "key": "q3hz3lof",
+          "y": 4620,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "stable": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#polynomial-leading-division",
+          "key": "q3hz3lof",
+          "y": 4620,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "sourceState": {
+          "key": "txeol1dj",
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#polynomial-leading-division"
+        }
+      },
+      {
+        "kind": "back-forward",
+        "beforeHistory": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#polynomial-leading-division",
+          "key": "q3hz3lof",
+          "y": 4620,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "forward": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#polynomial-leading-division",
+          "key": "q3hz3lof",
+          "y": 4620,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        }
+      },
+      {
+        "kind": "hard-refresh",
+        "hard": {
+          "url": "/book/8?source=ring-reader&tag=two+words&q=%E9%9B%B6%E5%9B%A0%E5%AD%90#polynomial-leading-division",
+          "key": "aw8zjr4k",
+          "y": 5167,
+          "choices": [
+            "z5",
+            "0"
+          ],
+          "reasons": {
+            "zero-unit-identity": false,
+            "zero-unit-inverse": true,
+            "zero-unit-associate": false,
+            "zero-unit-product": false,
+            "zero-unit-absorb": false,
+            "zero-unit-contradiction": true
+          },
+          "open": [
+            "zero-divisor-not-unit",
+            "zero-unit-inverse",
+            "zero-unit-contradiction",
+            "integer-two-boundary",
+            "polynomial-leading-division"
+          ],
+          "row": "当前乘法行 · [0, 0, 0, 0, 0]",
+          "storage": {
+            "fm2gp:book:8.4:z5:element": "0",
+            "fm2gp:book:8.4:model": "z5",
+            "fm2gp:book:8.4:z6:element": "5"
+          }
+        },
+        "target": 5167
+      }
+    ],
+    "polynomial": [
+      {
+        "event": "term",
+        "fn": "remainder",
+        "step": "4",
+        "line": "term",
+        "counts": [
+          "0",
+          "0"
+        ],
+        "formulas": {
+          "A": "A = x",
+          "B": "B = 2x",
+          "Q": "Q = 0",
+          "R": "R = x",
+          "T": "T = 1/2",
+          "T × B": "T × B = x"
+        }
+      },
+      {
+        "event": "eliminate",
+        "fn": "remainder",
+        "step": "5",
+        "line": "update",
+        "counts": [
+          "0",
+          "1"
+        ],
+        "formulas": {
+          "A": "A = x",
+          "B": "B = 2x",
+          "Q": "Q = 1/2",
+          "R": "R = 0",
+          "T": "T = 1/2",
+          "T × B": "T × B = x"
+        },
+        "identity": "已精确验证 A = BQ + Rx = (2x) × (1/2) + (0)"
+      },
+      {
+        "event": "gcdReturn",
+        "fn": "gcd",
+        "step": "14",
+        "line": "return",
+        "counts": [
+          "1",
+          "1"
+        ],
+        "formulas": {
+          "a": "a = 2x",
+          "b": "b = 0",
+          "最近返回值": "最近返回值 = 2x",
+          "原始GCD返回值": "原始GCD返回值 = 2x"
+        }
+      },
+      {
+        "event": "monic",
+        "fn": "monic",
+        "step": "15",
+        "line": "normalize",
+        "counts": [
+          "1",
+          "1"
+        ],
+        "formulas": {
+          "a": "a = 2x",
+          "b": "b = 0",
+          "最近返回值": "最近返回值 = x",
+          "原始GCD返回值": "原始GCD返回值 = 2x",
+          "首一GCD": "首一GCD = x"
+        }
+      },
+      {
+        "event": "eliminate",
+        "fn": "remainder",
+        "step": "5",
+        "line": "update",
+        "counts": [
+          "0",
+          "1"
+        ],
+        "formulas": {
+          "A": "A = x",
+          "B": "B = 2x",
+          "Q": "Q = 1/2",
+          "R": "R = 0",
+          "T": "T = 1/2",
+          "T × B": "T × B = x"
+        },
+        "identity": "已精确验证 A = BQ + Rx = (2x) × (1/2) + (0)"
+      }
+    ],
+    "direct": []
+  },
+  {
+    "status": "FAIL",
+    "message": "AssertionError [ERR_ASSERTION]: exercise proof Back: 3404 vs 2884\n    at near (D:\\Code\\fm2gp-Chinese\\scripts\\verify-rings-fields.cjs:8:32)\n    at run (D:\\Code\\fm2gp-Chinese\\scripts\\verify-rings-fields.cjs:111:132)\n    at async D:\\Code\\fm2gp-Chinese\\scripts\\verify-rings-fields.cjs:130:201"
+  }
+]
