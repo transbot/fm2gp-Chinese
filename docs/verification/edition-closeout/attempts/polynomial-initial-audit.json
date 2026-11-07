@@ -1,0 +1,3355 @@
+[
+  {
+    "base": "http://127.0.0.1:4193",
+    "width": 1440,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "checks": [
+      "direct-open-refresh"
+    ],
+    "states": [
+      {
+        "tag": "book",
+        "mode": "division",
+        "index": 0,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "init",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "division",
+        "index": 1,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "division",
+        "index": 2,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "division",
+        "index": 3,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "division",
+        "index": 4,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "division",
+        "index": 5,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "division",
+        "index": 6,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "division",
+        "index": 7,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "division",
+        "index": 8,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "division",
+        "index": 9,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "division",
+        "index": 10,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "division",
+        "index": 11,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "division",
+        "index": 12,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "division",
+        "index": 13,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 0,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "init",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 1,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 2,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 3,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "call",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 4,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 5,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 6,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 7,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 8,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 9,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 10,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 11,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 12,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 13,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 14,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 15,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 16,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 17,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "assign",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 18,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "swap",
+        "line": "swap",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 19,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 20,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "call",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 21,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 22,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 23,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 24,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 25,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 26,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 27,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 28,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 29,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 30,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 31,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "assign",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 32,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "swap",
+        "line": "swap",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 33,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 34,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "book",
+        "mode": "gcd",
+        "index": 35,
+        "lang": "zh",
+        "fn": "monic",
+        "event": "monic",
+        "line": "normalize",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "division",
+        "index": 0,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "init",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "division",
+        "index": 1,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "division",
+        "index": 2,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "division",
+        "index": 3,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "division",
+        "index": 4,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "division",
+        "index": 5,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "division",
+        "index": 6,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "division",
+        "index": 7,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "gcd",
+        "index": 0,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "init",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "gcd",
+        "index": 1,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "gcd",
+        "index": 2,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "gcd",
+        "index": 3,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "call",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "gcd",
+        "index": 4,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "gcd",
+        "index": 5,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "gcd",
+        "index": 6,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "gcd",
+        "index": 7,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "gcd",
+        "index": 8,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "gcd",
+        "index": 9,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "gcd",
+        "index": 10,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "gcd",
+        "index": 11,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "assign",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "gcd",
+        "index": 12,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "swap",
+        "line": "swap",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "gcd",
+        "index": 13,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "gcd",
+        "index": 14,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "leading-coefficient",
+        "mode": "gcd",
+        "index": 15,
+        "lang": "zh",
+        "fn": "monic",
+        "event": "monic",
+        "line": "normalize",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "division",
+        "index": 0,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "init",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "division",
+        "index": 1,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "division",
+        "index": 2,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "division",
+        "index": 3,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "division",
+        "index": 4,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "division",
+        "index": 5,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "division",
+        "index": 6,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "division",
+        "index": 7,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "division",
+        "index": 8,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "division",
+        "index": 9,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "division",
+        "index": 10,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 0,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "init",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 1,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 2,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 3,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "call",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 4,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 5,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 6,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 7,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 8,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 9,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 10,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 11,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 12,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 13,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 14,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "assign",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 15,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "swap",
+        "line": "swap",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 16,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 17,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "call",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 18,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 19,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 20,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 21,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 22,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 23,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 24,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 25,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 26,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 27,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 28,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "assign",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 29,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "swap",
+        "line": "swap",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 30,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 31,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "fraction",
+        "mode": "gcd",
+        "index": 32,
+        "lang": "zh",
+        "fn": "monic",
+        "event": "monic",
+        "line": "normalize",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "division",
+        "index": 0,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "init",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "division",
+        "index": 1,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "division",
+        "index": 2,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "division",
+        "index": 3,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "division",
+        "index": 4,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "division",
+        "index": 5,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "division",
+        "index": 6,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "division",
+        "index": 7,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 0,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "init",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 1,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 2,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 3,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "call",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 4,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 5,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 6,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 7,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 8,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 9,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 10,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 11,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "assign",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 12,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "swap",
+        "line": "swap",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 13,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 14,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "call",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 15,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 16,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 17,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 18,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 19,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 20,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 21,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 22,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 23,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 24,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 25,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "assign",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 26,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "swap",
+        "line": "swap",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 27,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 28,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "call",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 29,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 30,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 31,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 32,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 33,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 34,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 35,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 36,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 37,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 38,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 39,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "assign",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 40,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "swap",
+        "line": "swap",
+        "counts": {
+          "gcdRounds": 3,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 41,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 3,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 42,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 3,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "exercise1",
+        "mode": "gcd",
+        "index": 43,
+        "lang": "zh",
+        "fn": "monic",
+        "event": "monic",
+        "line": "normalize",
+        "counts": {
+          "gcdRounds": 3,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "division",
+        "index": 0,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "init",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "division",
+        "index": 1,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "division",
+        "index": 2,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "division",
+        "index": 3,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "division",
+        "index": 4,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "division",
+        "index": 5,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "division",
+        "index": 6,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "division",
+        "index": 7,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 0,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "init",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 1,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 2,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 3,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "call",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 4,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 5,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 6,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 7,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 8,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 9,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 10,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 11,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "assign",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 12,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "swap",
+        "line": "swap",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 13,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 14,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "call",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 15,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 16,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 17,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 18,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 19,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 20,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 21,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 2
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 22,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 23,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 24,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 25,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "assign",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 26,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "swap",
+        "line": "swap",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 27,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 28,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "call",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 29,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 30,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 31,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 32,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 33,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 34,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 35,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 4
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 36,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 37,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 38,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 39,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "assign",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 2,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 40,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "swap",
+        "line": "swap",
+        "counts": {
+          "gcdRounds": 3,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 41,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 3,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 42,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 3,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "exercise2",
+        "mode": "gcd",
+        "index": 43,
+        "lang": "zh",
+        "fn": "monic",
+        "event": "monic",
+        "line": "normalize",
+        "counts": {
+          "gcdRounds": 3,
+          "eliminations": 5
+        }
+      },
+      {
+        "tag": "zero",
+        "mode": "gcd",
+        "index": 0,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "init",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "zero",
+        "mode": "gcd",
+        "index": 1,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "zero",
+        "mode": "gcd",
+        "index": 2,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "zero",
+        "mode": "gcd",
+        "index": 3,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "zero",
+        "mode": "gcd",
+        "index": 4,
+        "lang": "zh",
+        "fn": "monic",
+        "event": "monic",
+        "line": "zero",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "division",
+        "index": 0,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "init",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "division",
+        "index": 1,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "division",
+        "index": 2,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "division",
+        "index": 3,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "division",
+        "index": 4,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "division",
+        "index": 5,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "division",
+        "index": 6,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "division",
+        "index": 7,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "gcd",
+        "index": 0,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "init",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "gcd",
+        "index": 1,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "gcd",
+        "index": 2,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "gcd",
+        "index": 3,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "call",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "gcd",
+        "index": 4,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionEnter",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "gcd",
+        "index": 5,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionInit",
+        "line": "init",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "gcd",
+        "index": 6,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "gcd",
+        "index": 7,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "term",
+        "line": "term",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "gcd",
+        "index": 8,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "eliminate",
+        "line": "update",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "gcd",
+        "index": 9,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "gcd",
+        "index": 10,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "gcd",
+        "index": 11,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "assign",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "gcd",
+        "index": 12,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "swap",
+        "line": "swap",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "gcd",
+        "index": 13,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdCheck",
+        "line": "check",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "gcd",
+        "index": 14,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "gcdReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "constants",
+        "mode": "gcd",
+        "index": 15,
+        "lang": "zh",
+        "fn": "monic",
+        "event": "monic",
+        "line": "normalize",
+        "counts": {
+          "gcdRounds": 1,
+          "eliminations": 1
+        }
+      },
+      {
+        "tag": "restore",
+        "mode": "gcd",
+        "index": 17,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "assign",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "back",
+        "mode": "gcd",
+        "index": 16,
+        "lang": "zh",
+        "fn": "remainder",
+        "event": "divisionReturn",
+        "line": "return",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "forward",
+        "mode": "gcd",
+        "index": 17,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "assign",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "language",
+        "mode": "gcd",
+        "index": 17,
+        "lang": "en",
+        "fn": "gcd",
+        "event": "assign",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "continue",
+        "mode": "gcd",
+        "index": 17,
+        "lang": "en",
+        "fn": "gcd",
+        "event": "assign",
+        "line": "remainder",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 3
+        }
+      },
+      {
+        "tag": "reset",
+        "mode": "gcd",
+        "index": 0,
+        "lang": "zh",
+        "fn": "gcd",
+        "event": "init",
+        "line": "entry",
+        "counts": {
+          "gcdRounds": 0,
+          "eliminations": 0
+        }
+      }
+    ],
+    "errors": []
+  }
+]

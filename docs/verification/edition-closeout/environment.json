@@ -1,0 +1,44 @@
+{
+  "platform": "win32",
+  "node": "v22.17.1",
+  "npm": "11.7.0",
+  "browser": "Microsoft Edge 156.0.4314.58",
+  "timezone": "Asia/Shanghai",
+  "baseUrl": "http://127.0.0.1:4193",
+  "storePreview": "http://127.0.0.1:4194",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 1000
+    }
+  ],
+  "locales": [
+    "zh-CN",
+    "en-US"
+  ],
+  "playwrightNodePath": "C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1104-1290-0_26.1104.1290.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules",
+  "commands": [
+    "npx eslint . --max-warnings=0",
+    "npx tsc -p tsconfig.app.json --noEmit",
+    "npx tsc -p tsconfig.node.json --noEmit",
+    "npm run test:run",
+    "npm run build",
+    "node scripts/build-edition-inventory.cjs",
+    "node scripts/sync-edition-readme.cjs",
+    "node scripts/verify-edition-cycle.cjs",
+    "node scripts/verify-edition-site.cjs",
+    "node scripts/verify-edition-specials.cjs",
+    "node scripts/verify-polynomial-gcd.cjs (retest, stable fixture IDs)",
+    "node scripts/verify-types-reference.cjs (retest, full ASCII copy)",
+    "node scripts/build-edition-store-preview.mjs",
+    "node scripts/verify-edition-cover.cjs",
+    "node scripts/verify-edition-assets.cjs"
+  ],
+  "vitestTemp": "checkout .local",
+  "qrDecoder": "OpenCV 4.6.0 QRCodeDetector.detectAndDecode; checked expected URL and white border",
+  "sourceChangesAfterBuild": "README, coverage documentation and verification harness only; application source unchanged"
+}

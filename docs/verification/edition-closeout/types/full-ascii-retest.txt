@@ -1,0 +1,1 @@
+PASS: 4 reading journeys, 8 iterator moves, 16 power cases, 64 direct/refresh pairs.

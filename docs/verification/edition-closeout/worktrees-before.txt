@@ -1,0 +1,3 @@
+worktree D:/Code/fm2gp-Chinese
+HEAD f19725917d9fa24c8f33b2e9c288e48da3338392
+branch refs/heads/main

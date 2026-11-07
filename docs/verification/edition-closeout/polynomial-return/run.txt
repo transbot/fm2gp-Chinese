@@ -1,0 +1,1 @@
+PASS: fixed adjacent returns, raw/result/latest, code/counts, forward/back/seek/replay/language; five cases in four contexts.

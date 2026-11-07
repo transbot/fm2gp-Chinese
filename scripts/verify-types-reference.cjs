@@ -109,7 +109,7 @@ async function check(width,lang) {
   await expect(page.getByRole('status')).toContainText('65');
   const bits=page.getByText('01000001',{exact:true});await expect(bits).toHaveCount(1);
   await shot('integer');await page.keyboard.press('ArrowRight');
-  await expect(radios.nth(1)).toBeChecked();await expect(page.getByRole('status')).toContainText('A');
+  await expect(radios.nth(1)).toBeChecked();await expect(page.getByRole('status')).toHaveText(lang==='zh'?'按 ASCII 解码，最高位补零。低七位的码值为 65，对应大写字母 A。':'The high bit is zero padding. The low seven bits give ASCII code 65, which represents uppercase A.');
   await switchLang();await expect(radios.nth(1)).toBeChecked();await restoreLang();
   await expect(bits).toHaveCount(1);await bits.scrollIntoViewIfNeeded();await shot('ascii');
 

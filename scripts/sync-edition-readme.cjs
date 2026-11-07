@@ -1,0 +1,19 @@
+// Consume the audited, path-deduplicated catalog rather than maintain a second list.
+const fs=require('node:fs');
+const inventory=JSON.parse(fs.readFileSync('docs/verification/edition-closeout/entry-inventory.json','utf8'));
+let text=fs.readFileSync('README.md','utf8').replaceAll('\r\n','\n');
+for(const lang of ['zh','en']){
+ const zh=lang==='zh';
+ const begin=zh?'## 当前产品状态':'## Current Product Status';
+ const end=zh?'## 技术栈':'## Tech Stack';
+ let s=begin+'\n\n'+(zh?'本版按章提供 14 章、3 个附录的目录，包含 107 个节入口和 69 个习题入口。按路径去重有 **40 个演示**、**24 节专门正文**，以及第14章三个全书回顾主题。目录覆盖不等于每节都有交互或完整解答；逐节状态、资源和待补项见[本版覆盖清单](docs/book-coverage.md)。':'The chapter directory covers 14 chapters, 3 appendices, 107 section entries and 69 exercise entries. There are **40 unique demos**, **24 authored section readers**, and three Chapter 14 recap themes. Directory coverage does not imply a demo or complete solution for every entry; see the [edition coverage inventory](docs/book-coverage.md).')+'\n\n';
+ s+=zh?'- **跟着本书学**：埃及乘法 → 泛型幂 → 矩阵与斐波那契 → 图上最短路。原有数组、排序与查找路线保留为“算法入门”。\n- **章内阅读**：群与同构、环与域、归纳证明、类型与概念、排列，以及附录速查；逐行依据可独立展开。\n- **一致的阅读导航**：双语搜索、节与习题精确定位、完整来源查询参数和历史阅读位置恢复。\n- **输入与回放**：新增的轨迹演示提供草稿应用、独立步骤回看及语言切换；旧演示的交互能力以各页面和验收记录为准。\n\n':'- **Learn with the book**: Egyptian multiplication → generic power → matrices and Fibonacci → shortest paths. Array, sorting and search routes remain under Algorithm foundations.\n- **Chapter reading**: groups and isomorphisms, rings and fields, induction, types and concepts, permutations and appendix reference cards, with independently expandable proof reasons.\n- **Reading navigation**: bilingual search, exact section/exercise lookup, complete source query strings and history position restoration.\n- **Input and replay**: newer trace demos support input application, independent snapshots and language switching; older demos retain their documented interaction capabilities.\n\n';
+ s+= (zh?'## 已实现的算法可视化':'## Implemented Algorithm Visualizations')+'\n\n'+(zh?'| 来源 | 演示 | 说明 |':'| Source | Demo | Description |')+'\n|---|---|---|\n';
+ for(const d of inventory.demos){const source=d.source.type==='extra'?(zh?'扩展':'Extra'):d.source.type==='exercise'?(zh?'习题 ':'Exercise ')+d.source.section:d.sections.join('、');const extra=d.path==='/pi-upper-bound'?(zh?' 六边形：3 < π < 2√3 ≈ 3.464102。':' Hexagons: 3 < π < 2√3 ≈ 3.464102.') : '';s+=`| ${source} | [${d.title[lang]}](https://fm2gp-chinese.bookzhou.com${d.path}) | ${d.summary[lang]}${extra} |\n`;}
+ text=text.slice(0,text.indexOf(begin))+s+'\n'+text.slice(text.indexOf(end));
+}
+text=text.replaceAll('npx tsc -p tsconfig.app.json --noEmit\nnpm','npx tsc -p tsconfig.app.json --noEmit\nnpx tsc -p tsconfig.node.json --noEmit\nnpm');
+const fixed='https://github.com/transbot/fm2gp-Chinese/blob/f19725917d9fa24c8f33b2e9c288e48da3338392/docs/verification/2026-11-05-reader-update.md';
+text=text.replace(/历史验证基线[\s\S]*?(?=## 项目结构)/,'本次集中收尾的实际检查结果见[评审验收报告](docs/verification/edition-closeout/README.md)。这是待合并的评审版本；正式发布验收另行执行。\n\n历史记录：[2026-11-05 读者入口调整]('+fixed+')；[第一、二轮发布证据归档](https://github.com/transbot/fm2gp-Chinese/tree/archive/release-phase1-phase2-evidence/docs/verification/release-phase1-phase2)。这些记录保留原日期与测试基线，不作为本次通过数量。\n\n');
+text=text.replace(/Historical verification baseline[\s\S]*?(?=## Project Structure)/,'Current results are recorded in the [edition closeout review report](docs/verification/edition-closeout/README.md). This is a review version; production acceptance follows the later merge.\n\nHistorical records: [reader update, 2026-11-05]('+fixed+'); [Phase 1–2 release evidence archive](https://github.com/transbot/fm2gp-Chinese/tree/archive/release-phase1-phase2-evidence/docs/verification/release-phase1-phase2). Their original dates and test baselines are preserved and are not this run’s passing counts.\n\n');
+fs.writeFileSync('README.md',text);

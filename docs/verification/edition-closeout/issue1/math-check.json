@@ -1,0 +1,360 @@
+{
+  "cases": 873,
+  "frames": 33964,
+  "cells": 197727,
+  "sparse": [
+    {
+      "input": "Array(2)",
+      "confirmedMissingSlots": [
+        0,
+        1
+      ],
+      "validation": {
+        "valid": false,
+        "errorKey": "cycleInvalidInteger"
+      },
+      "traceError": "RangeError"
+    },
+    {
+      "input": "[10,,30]",
+      "confirmedMissingSlots": [
+        1
+      ],
+      "validation": {
+        "valid": false,
+        "errorKey": "cycleInvalidInteger"
+      },
+      "traceError": "RangeError"
+    }
+  ],
+  "transfers": [
+    {
+      "event": "save",
+      "locals": {
+        "i": 0,
+        "start": null,
+        "j": null,
+        "tmp": {
+          "value": 0,
+          "origin": 0
+        }
+      },
+      "cells": [
+        {
+          "value": 0,
+          "origin": 0
+        },
+        {
+          "value": 1,
+          "origin": 1
+        },
+        {
+          "value": 2,
+          "origin": 2
+        },
+        {
+          "value": 3,
+          "origin": 3
+        },
+        {
+          "value": 4,
+          "origin": 4
+        },
+        {
+          "value": 5,
+          "origin": 5
+        }
+      ],
+      "copies": 1,
+      "writes": 0,
+      "total": 1
+    },
+    {
+      "event": "write",
+      "locals": {
+        "i": 0,
+        "start": 0,
+        "j": 4,
+        "tmp": {
+          "value": 0,
+          "origin": 0
+        }
+      },
+      "cells": [
+        {
+          "value": 4,
+          "origin": 4
+        },
+        {
+          "value": 1,
+          "origin": 1
+        },
+        {
+          "value": 2,
+          "origin": 2
+        },
+        {
+          "value": 3,
+          "origin": 3
+        },
+        {
+          "value": 4,
+          "origin": 4
+        },
+        {
+          "value": 5,
+          "origin": 5
+        }
+      ],
+      "copies": 1,
+      "writes": 1,
+      "total": 2
+    },
+    {
+      "event": "write",
+      "locals": {
+        "i": 4,
+        "start": 0,
+        "j": 2,
+        "tmp": {
+          "value": 0,
+          "origin": 0
+        }
+      },
+      "cells": [
+        {
+          "value": 4,
+          "origin": 4
+        },
+        {
+          "value": 1,
+          "origin": 1
+        },
+        {
+          "value": 2,
+          "origin": 2
+        },
+        {
+          "value": 3,
+          "origin": 3
+        },
+        {
+          "value": 2,
+          "origin": 2
+        },
+        {
+          "value": 5,
+          "origin": 5
+        }
+      ],
+      "copies": 1,
+      "writes": 2,
+      "total": 3
+    },
+    {
+      "event": "write",
+      "locals": {
+        "i": 2,
+        "start": 0,
+        "j": 1,
+        "tmp": {
+          "value": 0,
+          "origin": 0
+        }
+      },
+      "cells": [
+        {
+          "value": 4,
+          "origin": 4
+        },
+        {
+          "value": 1,
+          "origin": 1
+        },
+        {
+          "value": 1,
+          "origin": 1
+        },
+        {
+          "value": 3,
+          "origin": 3
+        },
+        {
+          "value": 2,
+          "origin": 2
+        },
+        {
+          "value": 5,
+          "origin": 5
+        }
+      ],
+      "copies": 1,
+      "writes": 3,
+      "total": 4
+    },
+    {
+      "event": "close",
+      "locals": {
+        "i": 1,
+        "start": 0,
+        "j": null,
+        "tmp": {
+          "value": 0,
+          "origin": 0
+        }
+      },
+      "cells": [
+        {
+          "value": 4,
+          "origin": 4
+        },
+        {
+          "value": 0,
+          "origin": 0
+        },
+        {
+          "value": 1,
+          "origin": 1
+        },
+        {
+          "value": 3,
+          "origin": 3
+        },
+        {
+          "value": 2,
+          "origin": 2
+        },
+        {
+          "value": 5,
+          "origin": 5
+        }
+      ],
+      "copies": 1,
+      "writes": 4,
+      "total": 5
+    },
+    {
+      "event": "save",
+      "locals": {
+        "i": 3,
+        "start": null,
+        "j": null,
+        "tmp": {
+          "value": 3,
+          "origin": 3
+        }
+      },
+      "cells": [
+        {
+          "value": 4,
+          "origin": 4
+        },
+        {
+          "value": 0,
+          "origin": 0
+        },
+        {
+          "value": 1,
+          "origin": 1
+        },
+        {
+          "value": 3,
+          "origin": 3
+        },
+        {
+          "value": 2,
+          "origin": 2
+        },
+        {
+          "value": 5,
+          "origin": 5
+        }
+      ],
+      "copies": 2,
+      "writes": 4,
+      "total": 6
+    },
+    {
+      "event": "write",
+      "locals": {
+        "i": 3,
+        "start": 3,
+        "j": 5,
+        "tmp": {
+          "value": 3,
+          "origin": 3
+        }
+      },
+      "cells": [
+        {
+          "value": 4,
+          "origin": 4
+        },
+        {
+          "value": 0,
+          "origin": 0
+        },
+        {
+          "value": 1,
+          "origin": 1
+        },
+        {
+          "value": 5,
+          "origin": 5
+        },
+        {
+          "value": 2,
+          "origin": 2
+        },
+        {
+          "value": 5,
+          "origin": 5
+        }
+      ],
+      "copies": 2,
+      "writes": 5,
+      "total": 7
+    },
+    {
+      "event": "close",
+      "locals": {
+        "i": 5,
+        "start": 3,
+        "j": null,
+        "tmp": {
+          "value": 3,
+          "origin": 3
+        }
+      },
+      "cells": [
+        {
+          "value": 4,
+          "origin": 4
+        },
+        {
+          "value": 0,
+          "origin": 0
+        },
+        {
+          "value": 1,
+          "origin": 1
+        },
+        {
+          "value": 5,
+          "origin": 5
+        },
+        {
+          "value": 2,
+          "origin": 2
+        },
+        {
+          "value": 3,
+          "origin": 3
+        }
+      ],
+      "copies": 2,
+      "writes": 6,
+      "total": 8
+    }
+  ]
+}

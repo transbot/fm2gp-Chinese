@@ -1,0 +1,3042 @@
+[
+  {
+    "base": "http://127.0.0.1:4193",
+    "width": 1440,
+    "height": 1100,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "states": [
+      {
+        "case": "book",
+        "action": "forward-raw",
+        "language": "zh",
+        "index": 34,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 6",
+        "raw": "原始GCD返回值 = 6",
+        "result": null,
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "forward-monic",
+        "language": "zh",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "back",
+        "language": "zh",
+        "index": 34,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 6",
+        "raw": "原始GCD返回值 = 6",
+        "result": null,
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "seek",
+        "language": "zh",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "language",
+        "language": "en",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "language-back",
+        "language": "en",
+        "index": 34,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 6",
+        "raw": "Raw GCD return = 6",
+        "result": null,
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "language-continue",
+        "language": "en",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "language-restored",
+        "language": "zh",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "replay-raw",
+        "language": "zh",
+        "index": 34,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 6",
+        "raw": "原始GCD返回值 = 6",
+        "result": null,
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "replay-monic",
+        "language": "zh",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "forward-raw",
+        "language": "zh",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = −4x² + 24x − 35",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "forward-monic",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² − 6x + 35/4",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": "首一GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "back",
+        "language": "zh",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = −4x² + 24x − 35",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "seek",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² − 6x + 35/4",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": "首一GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "language",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² − 6x + 35/4",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": "Monic GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "language-back",
+        "language": "en",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = −4x² + 24x − 35",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "language-continue",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² − 6x + 35/4",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": "Monic GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "language-restored",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² − 6x + 35/4",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": "首一GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "replay-raw",
+        "language": "zh",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = −4x² + 24x − 35",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "replay-monic",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² − 6x + 35/4",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": "首一GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "forward-raw",
+        "language": "zh",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "forward-monic",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² + 2x + 1",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "首一GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "back",
+        "language": "zh",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "seek",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² + 2x + 1",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "首一GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "language",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² + 2x + 1",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "Monic GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "language-back",
+        "language": "en",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = (605/1521)x² + (1210/1521)x + 605/1521",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "language-continue",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² + 2x + 1",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "Monic GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "language-restored",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² + 2x + 1",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "首一GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "replay-raw",
+        "language": "zh",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "replay-monic",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² + 2x + 1",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "首一GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "forward-raw",
+        "language": "zh",
+        "index": 14,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 6",
+        "raw": "原始GCD返回值 = 6",
+        "result": null,
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "forward-monic",
+        "language": "zh",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "back",
+        "language": "zh",
+        "index": 14,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 6",
+        "raw": "原始GCD返回值 = 6",
+        "result": null,
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "seek",
+        "language": "zh",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "language",
+        "language": "en",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "language-back",
+        "language": "en",
+        "index": 14,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 6",
+        "raw": "Raw GCD return = 6",
+        "result": null,
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "language-continue",
+        "language": "en",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "language-restored",
+        "language": "zh",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "replay-raw",
+        "language": "zh",
+        "index": 14,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 6",
+        "raw": "原始GCD返回值 = 6",
+        "result": null,
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "replay-monic",
+        "language": "zh",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "forward-raw",
+        "language": "zh",
+        "index": 3,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": null,
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "forward-monic",
+        "language": "zh",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": "首一GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "back",
+        "language": "zh",
+        "index": 3,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": null,
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "seek",
+        "language": "zh",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": "首一GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "language",
+        "language": "en",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": "Monic GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "language-back",
+        "language": "en",
+        "index": 3,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": null,
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "language-continue",
+        "language": "en",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": "Monic GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "language-restored",
+        "language": "zh",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": "首一GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "replay-raw",
+        "language": "zh",
+        "index": 3,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": null,
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "replay-monic",
+        "language": "zh",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": "首一GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:4193",
+    "width": 1440,
+    "height": 1100,
+    "lang": "en",
+    "browser": "156.0.4314.58",
+    "states": [
+      {
+        "case": "book",
+        "action": "forward-raw",
+        "language": "en",
+        "index": 34,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 6",
+        "raw": "Raw GCD return = 6",
+        "result": null,
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "forward-monic",
+        "language": "en",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "back",
+        "language": "en",
+        "index": 34,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 6",
+        "raw": "Raw GCD return = 6",
+        "result": null,
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "seek",
+        "language": "en",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "language",
+        "language": "zh",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "language-back",
+        "language": "zh",
+        "index": 34,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 6",
+        "raw": "原始GCD返回值 = 6",
+        "result": null,
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "language-continue",
+        "language": "zh",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "language-restored",
+        "language": "en",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "replay-raw",
+        "language": "en",
+        "index": 34,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 6",
+        "raw": "Raw GCD return = 6",
+        "result": null,
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "replay-monic",
+        "language": "en",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "forward-raw",
+        "language": "en",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = −4x² + 24x − 35",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "forward-monic",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² − 6x + 35/4",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": "Monic GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "back",
+        "language": "en",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = −4x² + 24x − 35",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "seek",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² − 6x + 35/4",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": "Monic GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "language",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² − 6x + 35/4",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": "首一GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "language-back",
+        "language": "zh",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = −4x² + 24x − 35",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "language-continue",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² − 6x + 35/4",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": "首一GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "language-restored",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² − 6x + 35/4",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": "Monic GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "replay-raw",
+        "language": "en",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = −4x² + 24x − 35",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "replay-monic",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² − 6x + 35/4",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": "Monic GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "forward-raw",
+        "language": "en",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = (605/1521)x² + (1210/1521)x + 605/1521",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "forward-monic",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² + 2x + 1",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "Monic GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "back",
+        "language": "en",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = (605/1521)x² + (1210/1521)x + 605/1521",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "seek",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² + 2x + 1",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "Monic GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "language",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² + 2x + 1",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "首一GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "language-back",
+        "language": "zh",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "language-continue",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² + 2x + 1",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "首一GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "language-restored",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² + 2x + 1",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "Monic GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "replay-raw",
+        "language": "en",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = (605/1521)x² + (1210/1521)x + 605/1521",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "replay-monic",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² + 2x + 1",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "Monic GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "forward-raw",
+        "language": "en",
+        "index": 14,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 6",
+        "raw": "Raw GCD return = 6",
+        "result": null,
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "forward-monic",
+        "language": "en",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "back",
+        "language": "en",
+        "index": 14,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 6",
+        "raw": "Raw GCD return = 6",
+        "result": null,
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "seek",
+        "language": "en",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "language",
+        "language": "zh",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "language-back",
+        "language": "zh",
+        "index": 14,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 6",
+        "raw": "原始GCD返回值 = 6",
+        "result": null,
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "language-continue",
+        "language": "zh",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "language-restored",
+        "language": "en",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "replay-raw",
+        "language": "en",
+        "index": 14,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 6",
+        "raw": "Raw GCD return = 6",
+        "result": null,
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "replay-monic",
+        "language": "en",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "forward-raw",
+        "language": "en",
+        "index": 3,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": null,
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "forward-monic",
+        "language": "en",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": "Monic GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "back",
+        "language": "en",
+        "index": 3,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": null,
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "seek",
+        "language": "en",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": "Monic GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "language",
+        "language": "zh",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": "首一GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "language-back",
+        "language": "zh",
+        "index": 3,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": null,
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "language-continue",
+        "language": "zh",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": "首一GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "language-restored",
+        "language": "en",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": "Monic GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "replay-raw",
+        "language": "en",
+        "index": 3,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": null,
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "replay-monic",
+        "language": "en",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": "Monic GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:4193",
+    "width": 390,
+    "height": 1100,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "states": [
+      {
+        "case": "book",
+        "action": "forward-raw",
+        "language": "zh",
+        "index": 34,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 6",
+        "raw": "原始GCD返回值 = 6",
+        "result": null,
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "forward-monic",
+        "language": "zh",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "back",
+        "language": "zh",
+        "index": 34,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 6",
+        "raw": "原始GCD返回值 = 6",
+        "result": null,
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "seek",
+        "language": "zh",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "language",
+        "language": "en",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "language-back",
+        "language": "en",
+        "index": 34,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 6",
+        "raw": "Raw GCD return = 6",
+        "result": null,
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "language-continue",
+        "language": "en",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "language-restored",
+        "language": "zh",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "replay-raw",
+        "language": "zh",
+        "index": 34,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 6",
+        "raw": "原始GCD返回值 = 6",
+        "result": null,
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "replay-monic",
+        "language": "zh",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "forward-raw",
+        "language": "zh",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = −4x² + 24x − 35",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "forward-monic",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² − 6x + 35/4",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": "首一GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "back",
+        "language": "zh",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = −4x² + 24x − 35",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "seek",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² − 6x + 35/4",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": "首一GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "language",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² − 6x + 35/4",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": "Monic GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "language-back",
+        "language": "en",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = −4x² + 24x − 35",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "language-continue",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² − 6x + 35/4",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": "Monic GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "language-restored",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² − 6x + 35/4",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": "首一GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "replay-raw",
+        "language": "zh",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = −4x² + 24x − 35",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "replay-monic",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² − 6x + 35/4",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": "首一GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "forward-raw",
+        "language": "zh",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "forward-monic",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² + 2x + 1",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "首一GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "back",
+        "language": "zh",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "seek",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² + 2x + 1",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "首一GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "language",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² + 2x + 1",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "Monic GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "language-back",
+        "language": "en",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = (605/1521)x² + (1210/1521)x + 605/1521",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "language-continue",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² + 2x + 1",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "Monic GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "language-restored",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² + 2x + 1",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "首一GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "replay-raw",
+        "language": "zh",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "replay-monic",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² + 2x + 1",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "首一GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "forward-raw",
+        "language": "zh",
+        "index": 14,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 6",
+        "raw": "原始GCD返回值 = 6",
+        "result": null,
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "forward-monic",
+        "language": "zh",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "back",
+        "language": "zh",
+        "index": 14,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 6",
+        "raw": "原始GCD返回值 = 6",
+        "result": null,
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "seek",
+        "language": "zh",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "language",
+        "language": "en",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "language-back",
+        "language": "en",
+        "index": 14,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 6",
+        "raw": "Raw GCD return = 6",
+        "result": null,
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "language-continue",
+        "language": "en",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "language-restored",
+        "language": "zh",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "replay-raw",
+        "language": "zh",
+        "index": 14,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 6",
+        "raw": "原始GCD返回值 = 6",
+        "result": null,
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "replay-monic",
+        "language": "zh",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "forward-raw",
+        "language": "zh",
+        "index": 3,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": null,
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "forward-monic",
+        "language": "zh",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": "首一GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "back",
+        "language": "zh",
+        "index": 3,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": null,
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "seek",
+        "language": "zh",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": "首一GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "language",
+        "language": "en",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": "Monic GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "language-back",
+        "language": "en",
+        "index": 3,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": null,
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "language-continue",
+        "language": "en",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": "Monic GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "language-restored",
+        "language": "zh",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": "首一GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "replay-raw",
+        "language": "zh",
+        "index": 3,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": null,
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "replay-monic",
+        "language": "zh",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": "首一GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:4193",
+    "width": 390,
+    "height": 1100,
+    "lang": "en",
+    "browser": "156.0.4314.58",
+    "states": [
+      {
+        "case": "book",
+        "action": "forward-raw",
+        "language": "en",
+        "index": 34,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 6",
+        "raw": "Raw GCD return = 6",
+        "result": null,
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "forward-monic",
+        "language": "en",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "back",
+        "language": "en",
+        "index": 34,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 6",
+        "raw": "Raw GCD return = 6",
+        "result": null,
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "seek",
+        "language": "en",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "language",
+        "language": "zh",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "language-back",
+        "language": "zh",
+        "index": 34,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 6",
+        "raw": "原始GCD返回值 = 6",
+        "result": null,
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "language-continue",
+        "language": "zh",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "language-restored",
+        "language": "en",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "replay-raw",
+        "language": "en",
+        "index": 34,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 6",
+        "raw": "Raw GCD return = 6",
+        "result": null,
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "book",
+        "action": "replay-monic",
+        "language": "en",
+        "index": 35,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          2,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "forward-raw",
+        "language": "en",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = −4x² + 24x − 35",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "forward-monic",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² − 6x + 35/4",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": "Monic GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "back",
+        "language": "en",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = −4x² + 24x − 35",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "seek",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² − 6x + 35/4",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": "Monic GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "language",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² − 6x + 35/4",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": "首一GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "language-back",
+        "language": "zh",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = −4x² + 24x − 35",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "language-continue",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² − 6x + 35/4",
+        "raw": "原始GCD返回值 = −4x² + 24x − 35",
+        "result": "首一GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "language-restored",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² − 6x + 35/4",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": "Monic GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "replay-raw",
+        "language": "en",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = −4x² + 24x − 35",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise1",
+        "action": "replay-monic",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² − 6x + 35/4",
+        "raw": "Raw GCD return = −4x² + 24x − 35",
+        "result": "Monic GCD = x² − 6x + 35/4",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "forward-raw",
+        "language": "en",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = (605/1521)x² + (1210/1521)x + 605/1521",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "forward-monic",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² + 2x + 1",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "Monic GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "back",
+        "language": "en",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = (605/1521)x² + (1210/1521)x + 605/1521",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "seek",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² + 2x + 1",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "Monic GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "language",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² + 2x + 1",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "首一GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "language-back",
+        "language": "zh",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "language-continue",
+        "language": "zh",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = x² + 2x + 1",
+        "raw": "原始GCD返回值 = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "首一GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "language-restored",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² + 2x + 1",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "Monic GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "replay-raw",
+        "language": "en",
+        "index": 42,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = (605/1521)x² + (1210/1521)x + 605/1521",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": null,
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "exercise2",
+        "action": "replay-monic",
+        "language": "en",
+        "index": 43,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = x² + 2x + 1",
+        "raw": "Raw GCD return = (605/1521)x² + (1210/1521)x + 605/1521",
+        "result": "Monic GCD = x² + 2x + 1",
+        "counts": [
+          3,
+          5
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "forward-raw",
+        "language": "en",
+        "index": 14,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 6",
+        "raw": "Raw GCD return = 6",
+        "result": null,
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "forward-monic",
+        "language": "en",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "back",
+        "language": "en",
+        "index": 14,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 6",
+        "raw": "Raw GCD return = 6",
+        "result": null,
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "seek",
+        "language": "en",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "language",
+        "language": "zh",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "language-back",
+        "language": "zh",
+        "index": 14,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 6",
+        "raw": "原始GCD返回值 = 6",
+        "result": null,
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "language-continue",
+        "language": "zh",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "最近返回值 = 1",
+        "raw": "原始GCD返回值 = 6",
+        "result": "首一GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "language-restored",
+        "language": "en",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "replay-raw",
+        "language": "en",
+        "index": 14,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 6",
+        "raw": "Raw GCD return = 6",
+        "result": null,
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "constants",
+        "action": "replay-monic",
+        "language": "en",
+        "index": 15,
+        "fn": "monic",
+        "line": "normalize",
+        "latest": "Latest returned value = 1",
+        "raw": "Raw GCD return = 6",
+        "result": "Monic GCD = 1",
+        "counts": [
+          1,
+          1
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "forward-raw",
+        "language": "en",
+        "index": 3,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": null,
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "forward-monic",
+        "language": "en",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": "Monic GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "back",
+        "language": "en",
+        "index": 3,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": null,
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "seek",
+        "language": "en",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": "Monic GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "language",
+        "language": "zh",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": "首一GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "language-back",
+        "language": "zh",
+        "index": 3,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": null,
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "language-continue",
+        "language": "zh",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "最近返回值 = 0",
+        "raw": "原始GCD返回值 = 0",
+        "result": "首一GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "language-restored",
+        "language": "en",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": "Monic GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "replay-raw",
+        "language": "en",
+        "index": 3,
+        "fn": "gcd",
+        "line": "return",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": null,
+        "counts": [
+          0,
+          0
+        ]
+      },
+      {
+        "case": "zero",
+        "action": "replay-monic",
+        "language": "en",
+        "index": 4,
+        "fn": "monic",
+        "line": "zero",
+        "latest": "Latest returned value = 0",
+        "raw": "Raw GCD return = 0",
+        "result": "Monic GCD = 0",
+        "counts": [
+          0,
+          0
+        ]
+      }
+    ],
+    "errors": []
+  }
+]

@@ -1,0 +1,438 @@
+[
+  {
+    "base": "http://127.0.0.1:4193",
+    "width": 1440,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "anchors": [
+      "section-10-2",
+      "interpret-byte",
+      "datum-to-object",
+      "section-10-3",
+      "concept-subtraction",
+      "advance-cost",
+      "section-C-1",
+      "template-arguments",
+      "section-C-2",
+      "cpp-constraints",
+      "cpp-subtraction",
+      "section-C-4",
+      "operation-order",
+      "section-C-5",
+      "accumulation-contract",
+      "section-C-7"
+    ],
+    "errors": [],
+    "iterator": [
+      {
+        "model": "forward",
+        "costText": "累计移动操作次数：3 · 当前模型：逐项移动",
+        "position": "位置 3\n\nend\n\n↑"
+      },
+      {
+        "model": "random",
+        "costText": "累计移动操作次数：1 · 当前模型：直接跳转",
+        "position": "位置 3\n\nend\n\n↑"
+      }
+    ],
+    "power": [
+      {
+        "model": "multiply",
+        "n": "5",
+        "result": "243"
+      },
+      {
+        "model": "add",
+        "n": "5",
+        "result": "15"
+      },
+      {
+        "model": "add",
+        "n": "0",
+        "result": "0"
+      },
+      {
+        "model": "multiply",
+        "n": "0",
+        "result": "1"
+      }
+    ],
+    "from": "/book/C?source=proof-reader&tag=two+words&q=%E5%A4%8D%E6%9D%82%E5%BA%A6#cpp-subtraction",
+    "navigation": {
+      "entry": 962,
+      "left": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=%E5%A4%8D%E6%9D%82%E5%BA%A6#section-C-2",
+        "y": 1130,
+        "key": "rjcw1qbs",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "returned": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=%E5%A4%8D%E6%9D%82%E5%BA%A6#cpp-subtraction",
+        "y": 1130,
+        "key": "wv1ghyg6",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "stable": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=%E5%A4%8D%E6%9D%82%E5%BA%A6#cpp-subtraction",
+        "y": 1130,
+        "key": "wv1ghyg6",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "pop": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=%E5%A4%8D%E6%9D%82%E5%BA%A6#cpp-subtraction",
+        "y": 1130,
+        "key": "wv1ghyg6",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "hard": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=%E5%A4%8D%E6%9D%82%E5%BA%A6#cpp-subtraction",
+        "y": 962,
+        "key": "k0qqscbu",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "target": 962
+    }
+  },
+  {
+    "base": "http://127.0.0.1:4193",
+    "width": 1440,
+    "lang": "en",
+    "browser": "156.0.4314.58",
+    "anchors": [
+      "section-10-2",
+      "interpret-byte",
+      "datum-to-object",
+      "section-10-3",
+      "concept-subtraction",
+      "advance-cost",
+      "section-C-1",
+      "template-arguments",
+      "section-C-2",
+      "cpp-constraints",
+      "cpp-subtraction",
+      "section-C-4",
+      "operation-order",
+      "section-C-5",
+      "accumulation-contract",
+      "section-C-7"
+    ],
+    "errors": [],
+    "iterator": [
+      {
+        "model": "forward",
+        "costText": "Total movement operations: 3 · Current model: successor/predecessor steps",
+        "position": "Position 3\n\nend\n\n↑"
+      },
+      {
+        "model": "random",
+        "costText": "Total movement operations: 1 · Current model: direct jumps",
+        "position": "Position 3\n\nend\n\n↑"
+      }
+    ],
+    "power": [
+      {
+        "model": "multiply",
+        "n": "5",
+        "result": "243"
+      },
+      {
+        "model": "add",
+        "n": "5",
+        "result": "15"
+      },
+      {
+        "model": "add",
+        "n": "0",
+        "result": "0"
+      },
+      {
+        "model": "multiply",
+        "n": "0",
+        "result": "1"
+      }
+    ],
+    "from": "/book/C?source=proof-reader&tag=two+words&q=complexity#cpp-subtraction",
+    "navigation": {
+      "entry": 1082,
+      "left": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=complexity#section-C-2",
+        "y": 1335,
+        "key": "jxjxjz5j",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "returned": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=complexity#cpp-subtraction",
+        "y": 1335,
+        "key": "hcp8vrsg",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "stable": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=complexity#cpp-subtraction",
+        "y": 1335,
+        "key": "hcp8vrsg",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "pop": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=complexity#cpp-subtraction",
+        "y": 1335,
+        "key": "hcp8vrsg",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "hard": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=complexity#cpp-subtraction",
+        "y": 1082,
+        "key": "ka7sl3tx",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "target": 1082
+    }
+  },
+  {
+    "base": "http://127.0.0.1:4193",
+    "width": 390,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "anchors": [
+      "section-10-2",
+      "interpret-byte",
+      "datum-to-object",
+      "section-10-3",
+      "concept-subtraction",
+      "advance-cost",
+      "section-C-1",
+      "template-arguments",
+      "section-C-2",
+      "cpp-constraints",
+      "cpp-subtraction",
+      "section-C-4",
+      "operation-order",
+      "section-C-5",
+      "accumulation-contract",
+      "section-C-7"
+    ],
+    "errors": [],
+    "iterator": [
+      {
+        "model": "forward",
+        "costText": "累计移动操作次数：3 · 当前模型：逐项移动",
+        "position": "位置 3\n\nend\n\n↑"
+      },
+      {
+        "model": "random",
+        "costText": "累计移动操作次数：1 · 当前模型：直接跳转",
+        "position": "位置 3\n\nend\n\n↑"
+      }
+    ],
+    "power": [
+      {
+        "model": "multiply",
+        "n": "5",
+        "result": "243"
+      },
+      {
+        "model": "add",
+        "n": "5",
+        "result": "15"
+      },
+      {
+        "model": "add",
+        "n": "0",
+        "result": "0"
+      },
+      {
+        "model": "multiply",
+        "n": "0",
+        "result": "1"
+      }
+    ],
+    "from": "/book/C?source=proof-reader&tag=two+words&q=%E5%A4%8D%E6%9D%82%E5%BA%A6#cpp-subtraction",
+    "navigation": {
+      "entry": 1368,
+      "left": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=%E5%A4%8D%E6%9D%82%E5%BA%A6#section-C-2",
+        "y": 1790,
+        "key": "4kfjyge5",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "returned": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=%E5%A4%8D%E6%9D%82%E5%BA%A6#cpp-subtraction",
+        "y": 1790,
+        "key": "0ehrn7yk",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "stable": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=%E5%A4%8D%E6%9D%82%E5%BA%A6#cpp-subtraction",
+        "y": 1790,
+        "key": "0ehrn7yk",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "pop": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=%E5%A4%8D%E6%9D%82%E5%BA%A6#cpp-subtraction",
+        "y": 1790,
+        "key": "0ehrn7yk",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "hard": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=%E5%A4%8D%E6%9D%82%E5%BA%A6#cpp-subtraction",
+        "y": 1368,
+        "key": "shiwug9w",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "target": 1368
+    }
+  },
+  {
+    "base": "http://127.0.0.1:4193",
+    "width": 390,
+    "lang": "en",
+    "browser": "156.0.4314.58",
+    "anchors": [
+      "section-10-2",
+      "interpret-byte",
+      "datum-to-object",
+      "section-10-3",
+      "concept-subtraction",
+      "advance-cost",
+      "section-C-1",
+      "template-arguments",
+      "section-C-2",
+      "cpp-constraints",
+      "cpp-subtraction",
+      "section-C-4",
+      "operation-order",
+      "section-C-5",
+      "accumulation-contract",
+      "section-C-7"
+    ],
+    "errors": [],
+    "iterator": [
+      {
+        "model": "forward",
+        "costText": "Total movement operations: 3 · Current model: successor/predecessor steps",
+        "position": "Position 3\n\nend\n\n↑"
+      },
+      {
+        "model": "random",
+        "costText": "Total movement operations: 1 · Current model: direct jumps",
+        "position": "Position 3\n\nend\n\n↑"
+      }
+    ],
+    "power": [
+      {
+        "model": "multiply",
+        "n": "5",
+        "result": "243"
+      },
+      {
+        "model": "add",
+        "n": "5",
+        "result": "15"
+      },
+      {
+        "model": "add",
+        "n": "0",
+        "result": "0"
+      },
+      {
+        "model": "multiply",
+        "n": "0",
+        "result": "1"
+      }
+    ],
+    "from": "/book/C?source=proof-reader&tag=two+words&q=complexity#cpp-subtraction",
+    "navigation": {
+      "entry": 1828,
+      "left": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=complexity#section-C-2",
+        "y": 2389,
+        "key": "wz3j0121",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "returned": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=complexity#cpp-subtraction",
+        "y": 2389,
+        "key": "abf9xfac",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "stable": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=complexity#cpp-subtraction",
+        "y": 2389,
+        "key": "abf9xfac",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "pop": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=complexity#cpp-subtraction",
+        "y": 2389,
+        "key": "abf9xfac",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "hard": {
+        "url": "/book/C?source=proof-reader&tag=two+words&q=complexity#cpp-subtraction",
+        "y": 1828,
+        "key": "bsx6isl4",
+        "open": [
+          "cpp-constraints",
+          "cpp-subtraction"
+        ]
+      },
+      "target": 1828
+    }
+  }
+]

@@ -1,0 +1,151 @@
+[
+  {
+    "configured": false,
+    "width": 1440,
+    "lang": "zh",
+    "size": {
+      "naturalWidth": 1298,
+      "naturalHeight": 1691,
+      "width": 320,
+      "height": 416.875,
+      "left": 292.5,
+      "right": 612.5,
+      "cursor": "auto"
+    },
+    "qr": "/images/mobile-web-qr.png",
+    "keyboardLink": "no anchor",
+    "languageInitialization": "browser preference; saved choice after reload"
+  },
+  {
+    "configured": false,
+    "width": 1440,
+    "lang": "en",
+    "size": {
+      "naturalWidth": 1298,
+      "naturalHeight": 1691,
+      "width": 320,
+      "height": 416.875,
+      "left": 827.5,
+      "right": 1147.5,
+      "cursor": "auto"
+    },
+    "qr": "/images/mobile-web-qr.png",
+    "keyboardLink": "no anchor",
+    "languageInitialization": "browser preference; saved choice after reload"
+  },
+  {
+    "configured": false,
+    "width": 390,
+    "lang": "zh",
+    "size": {
+      "naturalWidth": 1298,
+      "naturalHeight": 1691,
+      "width": 308,
+      "height": 401.25,
+      "left": 41,
+      "right": 349,
+      "cursor": "auto"
+    },
+    "qr": "/images/mobile-web-qr.png",
+    "keyboardLink": "no anchor",
+    "languageInitialization": "browser preference; saved choice after reload"
+  },
+  {
+    "configured": false,
+    "width": 390,
+    "lang": "en",
+    "size": {
+      "naturalWidth": 1298,
+      "naturalHeight": 1691,
+      "width": 308,
+      "height": 401.25,
+      "left": 41,
+      "right": 349,
+      "cursor": "auto"
+    },
+    "qr": "/images/mobile-web-qr.png",
+    "keyboardLink": "no anchor",
+    "languageInitialization": "browser preference; saved choice after reload"
+  },
+  {
+    "configured": true,
+    "width": 1440,
+    "lang": "zh",
+    "size": {
+      "naturalWidth": 1298,
+      "naturalHeight": 1691,
+      "width": 320,
+      "height": 416.875,
+      "left": 292.5,
+      "right": 612.5,
+      "cursor": "pointer"
+    },
+    "qr": "/images/mobile-web-qr.png",
+    "keyboardLink": "Enter opened isolated fixture",
+    "languageInitialization": "browser preference; saved choice after reload"
+  },
+  {
+    "configured": true,
+    "width": 1440,
+    "lang": "en",
+    "size": {
+      "naturalWidth": 1298,
+      "naturalHeight": 1691,
+      "width": 320,
+      "height": 416.875,
+      "left": 827.5,
+      "right": 1147.5,
+      "cursor": "pointer"
+    },
+    "qr": "/images/mobile-web-qr.png",
+    "keyboardLink": "Enter opened isolated fixture",
+    "languageInitialization": "browser preference; saved choice after reload"
+  },
+  {
+    "configured": true,
+    "width": 390,
+    "lang": "zh",
+    "size": {
+      "naturalWidth": 1298,
+      "naturalHeight": 1691,
+      "width": 308,
+      "height": 401.25,
+      "left": 41,
+      "right": 349,
+      "cursor": "pointer"
+    },
+    "qr": "/images/mobile-web-qr.png",
+    "keyboardLink": "Enter opened isolated fixture",
+    "languageInitialization": "browser preference; saved choice after reload"
+  },
+  {
+    "configured": true,
+    "width": 390,
+    "lang": "en",
+    "size": {
+      "naturalWidth": 1298,
+      "naturalHeight": 1691,
+      "width": 308,
+      "height": 401.25,
+      "left": 41,
+      "right": 349,
+      "cursor": "pointer"
+    },
+    "qr": "/images/mobile-web-qr.png",
+    "keyboardLink": "Enter opened isolated fixture",
+    "languageInitialization": "browser preference; saved choice after reload"
+  },
+  {
+    "languages": [
+      "fr-FR",
+      "zh-CN"
+    ],
+    "expected": "zh-CN"
+  },
+  {
+    "languages": [
+      "fr-FR"
+    ],
+    "expected": "en"
+  }
+]

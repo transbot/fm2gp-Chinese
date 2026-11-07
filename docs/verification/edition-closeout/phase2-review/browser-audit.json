@@ -1,0 +1,306 @@
+[
+  {
+    "baseUrl": "http://127.0.0.1:4193",
+    "browser": "156.0.4314.58",
+    "width": 1440,
+    "lang": "zh",
+    "screenshotQueries": {
+      "home": "霍纳",
+      "chapter": "霍纳"
+    },
+    "explicitSections": [
+      [
+        "第C.7节",
+        "C-7"
+      ],
+      [
+        "Section C.7",
+        "C-7"
+      ],
+      [
+        "section c.7",
+        "C-7"
+      ],
+      [
+        "第a.1节",
+        "A-1"
+      ],
+      [
+        "section b.1",
+        "B-1"
+      ],
+      [
+        "第9.2节",
+        "9-2"
+      ],
+      [
+        "Section 10.8",
+        "10-8"
+      ]
+    ],
+    "exerciseQueries": [
+      "习题9.2",
+      "Exercise 9.2",
+      "exercise 9.2"
+    ],
+    "queries": [
+      "霍纳",
+      "Horner",
+      "8.1",
+      "矩阵与可达性",
+      "Matrices and reachability",
+      "运算与代数结构",
+      "Operations and algebraic structures",
+      "迭代器与区间",
+      "Iterators and ranges",
+      "同一个幂算法",
+      "One power algorithm",
+      "Horner's rule",
+      "矩阵可达性",
+      "generic power"
+    ],
+    "homePathsUnique": true,
+    "rejectedOriginalTokens": [
+      "[1.00000000000000001,2]",
+      "[1e-400,2]"
+    ],
+    "overflow": {
+      "term": 1000000000000,
+      "power": 2,
+      "multiplications": 2,
+      "review": "pass",
+      "autoplayReplay": "pass",
+      "languageSwitch": "pass"
+    },
+    "navigation": "home entry, refresh, chapter source return and back passed",
+    "errors": []
+  },
+  {
+    "baseUrl": "http://127.0.0.1:4193",
+    "browser": "156.0.4314.58",
+    "width": 1440,
+    "lang": "en",
+    "screenshotQueries": {
+      "home": "Horner",
+      "chapter": "Horner"
+    },
+    "explicitSections": [
+      [
+        "第C.7节",
+        "C-7"
+      ],
+      [
+        "Section C.7",
+        "C-7"
+      ],
+      [
+        "section c.7",
+        "C-7"
+      ],
+      [
+        "第a.1节",
+        "A-1"
+      ],
+      [
+        "section b.1",
+        "B-1"
+      ],
+      [
+        "第9.2节",
+        "9-2"
+      ],
+      [
+        "Section 10.8",
+        "10-8"
+      ]
+    ],
+    "exerciseQueries": [
+      "习题9.2",
+      "Exercise 9.2",
+      "exercise 9.2"
+    ],
+    "queries": [
+      "霍纳",
+      "Horner",
+      "8.1",
+      "矩阵与可达性",
+      "Matrices and reachability",
+      "运算与代数结构",
+      "Operations and algebraic structures",
+      "迭代器与区间",
+      "Iterators and ranges",
+      "同一个幂算法",
+      "One power algorithm",
+      "Horner's rule",
+      "矩阵可达性",
+      "generic power"
+    ],
+    "homePathsUnique": true,
+    "rejectedOriginalTokens": [
+      "[1.00000000000000001,2]",
+      "[1e-400,2]"
+    ],
+    "overflow": {
+      "term": 1000000000000,
+      "power": 2,
+      "multiplications": 2,
+      "review": "pass",
+      "autoplayReplay": "pass",
+      "languageSwitch": "pass"
+    },
+    "navigation": "home entry, refresh, chapter source return and back passed",
+    "errors": []
+  },
+  {
+    "baseUrl": "http://127.0.0.1:4193",
+    "browser": "156.0.4314.58",
+    "width": 390,
+    "lang": "zh",
+    "screenshotQueries": {
+      "home": "霍纳",
+      "chapter": "霍纳"
+    },
+    "explicitSections": [
+      [
+        "第C.7节",
+        "C-7"
+      ],
+      [
+        "Section C.7",
+        "C-7"
+      ],
+      [
+        "section c.7",
+        "C-7"
+      ],
+      [
+        "第a.1节",
+        "A-1"
+      ],
+      [
+        "section b.1",
+        "B-1"
+      ],
+      [
+        "第9.2节",
+        "9-2"
+      ],
+      [
+        "Section 10.8",
+        "10-8"
+      ]
+    ],
+    "exerciseQueries": [
+      "习题9.2",
+      "Exercise 9.2",
+      "exercise 9.2"
+    ],
+    "queries": [
+      "霍纳",
+      "Horner",
+      "8.1",
+      "矩阵与可达性",
+      "Matrices and reachability",
+      "运算与代数结构",
+      "Operations and algebraic structures",
+      "迭代器与区间",
+      "Iterators and ranges",
+      "同一个幂算法",
+      "One power algorithm",
+      "Horner's rule",
+      "矩阵可达性",
+      "generic power"
+    ],
+    "homePathsUnique": true,
+    "rejectedOriginalTokens": [
+      "[1.00000000000000001,2]",
+      "[1e-400,2]"
+    ],
+    "overflow": {
+      "term": 1000000000000,
+      "power": 2,
+      "multiplications": 2,
+      "review": "pass",
+      "autoplayReplay": "pass",
+      "languageSwitch": "pass"
+    },
+    "navigation": "home entry, refresh, chapter source return and back passed",
+    "errors": []
+  },
+  {
+    "baseUrl": "http://127.0.0.1:4193",
+    "browser": "156.0.4314.58",
+    "width": 390,
+    "lang": "en",
+    "screenshotQueries": {
+      "home": "Horner",
+      "chapter": "Horner"
+    },
+    "explicitSections": [
+      [
+        "第C.7节",
+        "C-7"
+      ],
+      [
+        "Section C.7",
+        "C-7"
+      ],
+      [
+        "section c.7",
+        "C-7"
+      ],
+      [
+        "第a.1节",
+        "A-1"
+      ],
+      [
+        "section b.1",
+        "B-1"
+      ],
+      [
+        "第9.2节",
+        "9-2"
+      ],
+      [
+        "Section 10.8",
+        "10-8"
+      ]
+    ],
+    "exerciseQueries": [
+      "习题9.2",
+      "Exercise 9.2",
+      "exercise 9.2"
+    ],
+    "queries": [
+      "霍纳",
+      "Horner",
+      "8.1",
+      "矩阵与可达性",
+      "Matrices and reachability",
+      "运算与代数结构",
+      "Operations and algebraic structures",
+      "迭代器与区间",
+      "Iterators and ranges",
+      "同一个幂算法",
+      "One power algorithm",
+      "Horner's rule",
+      "矩阵可达性",
+      "generic power"
+    ],
+    "homePathsUnique": true,
+    "rejectedOriginalTokens": [
+      "[1.00000000000000001,2]",
+      "[1e-400,2]"
+    ],
+    "overflow": {
+      "term": 1000000000000,
+      "power": 2,
+      "multiplications": 2,
+      "review": "pass",
+      "autoplayReplay": "pass",
+      "languageSwitch": "pass"
+    },
+    "navigation": "home entry, refresh, chapter source return and back passed",
+    "errors": []
+  }
+]

@@ -1,0 +1,248 @@
+{
+  "reviewBinding": "The enclosing Git commit contains the reviewed artifacts; source-manifest hashes staged Git blobs, excluding itself.",
+  "baseline": "f19725917d9fa24c8f33b2e9c288e48da3338392",
+  "fixCommit": "99c4b0f23b22feb2806e3a1cae464e74120ebbea",
+  "generated": "2026-11-07T05:32:58.807Z",
+  "gates": {
+    "eslint": 0,
+    "typescriptApp": 0,
+    "typescriptNode": 0,
+    "vitest": {
+      "exitCode": 0,
+      "files": 60,
+      "tests": 570
+    },
+    "build": 0
+  },
+  "site": {
+    "entries": 59,
+    "environments": 4,
+    "checks": 236,
+    "passed": 236
+  },
+  "specials": {
+    "suites": 21,
+    "environmentRuns": 82,
+    "records": [
+      {
+        "name": "isomorphism",
+        "script": "scripts/verify-isomorphism.cjs",
+        "args": [],
+        "started": "2026-11-07T05:21:33.900Z",
+        "finished": "2026-11-07T05:22:03.547Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "cycles",
+        "script": "docs/verification/edition-closeout/harness/verify-cycle-release.cjs",
+        "args": [],
+        "started": "2026-11-07T05:21:33.892Z",
+        "finished": "2026-11-07T05:22:16.121Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "groups",
+        "script": "scripts/verify-finite-groups.cjs",
+        "args": [],
+        "started": "2026-11-07T05:22:03.551Z",
+        "finished": "2026-11-07T05:22:38.305Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "rings",
+        "script": "docs/verification/edition-closeout/harness/verify-rings-release.cjs",
+        "args": [],
+        "started": "2026-11-07T05:21:33.883Z",
+        "finished": "2026-11-07T05:22:39.334Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "reasons",
+        "script": "scripts/verify-finite-groups.cjs",
+        "args": [
+          "--proof-steps"
+        ],
+        "started": "2026-11-07T05:22:16.123Z",
+        "finished": "2026-11-07T05:22:56.434Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "types",
+        "script": "docs/verification/edition-closeout/harness/verify-types-reference.cjs",
+        "args": [],
+        "started": "2026-11-07T05:22:38.306Z",
+        "finished": "2026-11-07T05:23:09.317Z",
+        "exitCode": 0,
+        "firstExitCode": 0,
+        "strengthenedRetestLog": "types/full-ascii-retest.txt",
+        "retestScript": "scripts/verify-types-reference.cjs"
+      },
+      {
+        "name": "query",
+        "script": "scripts/verify-book-query.cjs",
+        "args": [],
+        "started": "2026-11-07T05:22:56.436Z",
+        "finished": "2026-11-07T05:23:11.125Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "scroll",
+        "script": "scripts/verify-search-scroll.cjs",
+        "args": [],
+        "started": "2026-11-07T05:23:11.127Z",
+        "finished": "2026-11-07T05:23:53.631Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "recap",
+        "script": "scripts/verify-book-recap.cjs",
+        "args": [],
+        "started": "2026-11-07T05:23:09.318Z",
+        "finished": "2026-11-07T05:23:53.647Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "history",
+        "script": "scripts/verify-chapter-history.cjs",
+        "args": [],
+        "started": "2026-11-07T05:23:53.633Z",
+        "finished": "2026-11-07T05:24:06.464Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "horner",
+        "script": "scripts/verify-horner.cjs",
+        "args": [],
+        "started": "2026-11-07T05:24:06.465Z",
+        "finished": "2026-11-07T05:24:21.211Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "egyptian",
+        "script": "docs/verification/edition-closeout/harness/verify-egyptian.cjs",
+        "args": [],
+        "started": "2026-11-07T05:24:21.212Z",
+        "finished": "2026-11-07T05:24:40.553Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "proofs",
+        "script": "scripts/verify-proofs-reference.cjs",
+        "args": [],
+        "started": "2026-11-07T05:22:39.335Z",
+        "finished": "2026-11-07T05:24:42.587Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "division",
+        "script": "scripts/verify-division.cjs",
+        "args": [],
+        "started": "2026-11-07T05:23:53.649Z",
+        "finished": "2026-11-07T05:24:47.888Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "phase2-review",
+        "script": "docs/verification/edition-closeout/harness/verify-phase2-review.cjs",
+        "args": [],
+        "started": "2026-11-07T05:24:40.555Z",
+        "finished": "2026-11-07T05:24:57.551Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "polynomial",
+        "script": "scripts/verify-polynomial-gcd.cjs",
+        "args": [],
+        "started": "2026-11-07T05:24:57.552Z",
+        "finished": "2026-11-07T05:25:12.119Z",
+        "exitCode": 0,
+        "firstExitCode": 1,
+        "retestLog": "polynomial/retest.txt",
+        "correction": "Use stable fixture IDs after insertion of leading-coefficient preset"
+      },
+      {
+        "name": "reverse-return",
+        "script": "scripts/verify-reverse-return.cjs",
+        "args": [],
+        "started": "2026-11-07T05:24:47.890Z",
+        "finished": "2026-11-07T05:25:22.480Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "reverse",
+        "script": "scripts/verify-reverse.cjs",
+        "args": [],
+        "started": "2026-11-07T05:24:42.587Z",
+        "finished": "2026-11-07T05:25:48.467Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "flows",
+        "script": "scripts/verify-reader-flows.cjs",
+        "args": [],
+        "started": "2026-11-07T05:25:48.468Z",
+        "finished": "2026-11-07T05:25:56.964Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "production",
+        "script": "scripts/verify-reader-production.cjs",
+        "args": [],
+        "started": "2026-11-07T05:25:22.481Z",
+        "finished": "2026-11-07T05:26:02.723Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      },
+      {
+        "name": "polynomial-return",
+        "script": "scripts/verify-polynomial-return.cjs",
+        "args": [],
+        "started": "2026-11-07T05:25:12.121Z",
+        "finished": "2026-11-07T05:26:22.349Z",
+        "exitCode": 0,
+        "firstExitCode": 0
+      }
+    ]
+  },
+  "cycle": {
+    "permutations": 873,
+    "frames": 33964,
+    "arrayCells": 197727,
+    "transfers": 8
+  },
+  "cover": {
+    "configurationChecks": 8,
+    "languageFallbacks": 2,
+    "deliveredStoreUrl": "",
+    "testUrlAbsentFromDeliveredBuild": true
+  },
+  "resources": {
+    "htmlEntries": 59,
+    "browserLoaded": 69,
+    "buildFiles": 73,
+    "zipSha256": "68471de81e80367996af313d44ee4fa23765c0f38a10ba3fa2baa3390ccfeee8"
+  },
+  "issue1": {
+    "state": "open",
+    "reviewStatus": "fixed pending merge",
+    "closeOnlyAfter": "merge into main and production-domain acceptance"
+  },
+  "productionRelease": "Not performed in this review"
+}

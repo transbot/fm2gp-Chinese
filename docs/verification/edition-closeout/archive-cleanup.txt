@@ -1,0 +1,4 @@
+local=97c5f21ec350bd032fa7d0619008ca3bf60c30cb
+remoteTagPeeled=97c5f21ec350bd032fa7d0619008ca3bf60c30cb
+worktreeOccupied=false
+Deleted branch codex/release-phase1-phase2-evidence (was 97c5f21).

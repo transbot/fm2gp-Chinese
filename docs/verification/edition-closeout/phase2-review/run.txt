@@ -1,0 +1,1 @@
+PASS: both search entry points (14 queries), localized screenshot queries, exact appendix sections, section/exercise separation, exact input rejection, overflow review/replay, in both languages at 1440/390.

@@ -33,57 +33,57 @@
 
 ## 当前产品状态
 
-当前 Web app 已从单纯的算法列表升级为双语学习工具：
+本版按章提供 14 章、3 个附录的目录，包含 107 个节入口和 69 个习题入口。按路径去重有 **40 个演示**、**24 节专门正文**，以及第14章三个全书回顾主题。目录覆盖不等于每节都有交互或完整解答；逐节状态、资源和待补项见[本版覆盖清单](docs/book-coverage.md)。
 
-- **主题化首页**：按“查找与序列、排序与堆、数论基础、GCD 与模运算、综合应用与图”组织算法，并支持搜索、主题、来源和难度筛选。
-- **统一算法元数据**：`src/data/algorithmCatalog.ts` 维护路径、主题、难度、来源、排序、双语标题、双语摘要和核心概念。
-- **双语搜索体验**：搜索会索引中英文标题、摘要、核心概念和补充说明，例如中文“线性”和英文 `linear` 都能找到线性查找。
-- **跟着本书学**：第 2.1 节埃及乘法 → 第 7.5 节幂算法 → 第 7.7 节斐波那契数 → 第 8.6 节图上最短路，展示同一算法在不同运算上的复用。
-- **算法入门**：推荐路线按“数组扫描与表、基础排序、有序查找”组织，帮助初学者逐步进入二分查找。
-- **页内学习导航**：每个算法页自动显示当前主题、来源、难度、上一篇和下一篇。
-- **入门扩展算法**：新增冒泡排序、插入排序、选择排序、前缀和、频率计数和两数之和，作为非书中内容的基础补充。
-- **路由级懒加载**：算法页按需加载，主入口 chunk 已从约 900 kB 降到约 255 kB。
-- **Vite 8 工具链**：构建无 chunk-size 和 Vite React 插件废弃警告；2026 年 11 月验收仍出现 Browserslist 数据过期提示，详见验证记录。
+- **跟着本书学**：埃及乘法 → 泛型幂 → 矩阵与斐波那契 → 图上最短路。原有数组、排序与查找路线保留为“算法入门”。
+- **章内阅读**：群与同构、环与域、归纳证明、类型与概念、排列，以及附录速查；逐行依据可独立展开。
+- **一致的阅读导航**：双语搜索、节与习题精确定位、完整来源查询参数和历史阅读位置恢复。
+- **输入与回放**：新增的轨迹演示提供草稿应用、独立步骤回看及语言切换；旧演示的交互能力以各页面和验收记录为准。
 
 ## 已实现的算法可视化
 
-| 来源 | 难度 | 算法 | 说明 |
-|------|------|------|------|
-| 2.1 | 入门 | [埃及乘法](https://fm2gp-chinese.bookzhou.com/multiply) | 俄式乘法，用倍增和选择替代重复加法 |
-| 3.2-3.3 | 入门 | [埃拉托色尼筛法](https://fm2gp-chinese.bookzhou.com/sieve) | 批量筛出素数，理解空间换时间 |
-| 习题 3.3 | 进阶 | [素数计数函数](https://fm2gp-chinese.bookzhou.com/prime-counting) | 观察 π(n) 与 n/ln(n) 的近似关系 |
-| 习题 3.4 | 入门 | [回文素数](https://fm2gp-chinese.bookzhou.com/palindromic-primes) | 探索不同进制下的回文素数 |
-| 4.2 | 入门 | [欧几里得算法](https://fm2gp-chinese.bookzhou.com/gcm) | 用余数反复缩小 GCD 问题 |
-| 4.5—4.6 | 入门 | [求余与求商](https://fm2gp-chinese.bookzhou.com/division) | 比较逐次减法、倍增与斐波那契求余，再同时求商与余数 |
-| 5.1 | 入门 | [素数判定](https://fm2gp-chinese.bookzhou.com/prime-checker) | 用试除法判断一个数是否为素数 |
-| 5.2 | 进阶 | [费马小定理](https://fm2gp-chinese.bookzhou.com/fermat) | 理解概率素性测试的基础 |
-| 5.5 | 进阶 | [欧拉定理](https://fm2gp-chinese.bookzhou.com/euler) | 把费马小定理推广到互素整数 |
-| 7.5 | 进阶 | [幂算法](https://fm2gp-chinese.bookzhou.com/power) | 把埃及乘法推广到快速幂 |
-| 习题 7.1 | 入门 | [基础斐波那契](https://fm2gp-chinese.bookzhou.com/fibonacci) | 观察朴素递归的指数增长 |
-| 7.7 | 高级 | [快速斐波那契](https://fm2gp-chinese.bookzhou.com/fast-fibonacci) | 用矩阵幂在 O(log n) 时间计算斐波那契数 |
-| 8.6 | 高级 | [有向图最短距离](https://fm2gp-chinese.bookzhou.com/shortest-path) | 在热带半环上复用矩阵幂思想 |
-| 习题 9.2 | 入门 | [π 的下界与上界](https://fm2gp-chinese.bookzhou.com/pi-upper-bound) | 内接半周长给出下界，外切半周长给出上界；六边形：3 < π < 2√3 ≈ 3.464102 |
-| 10.7 | 入门 | [线性查找](https://fm2gp-chinese.bookzhou.com/linear-search) | 逐个比较元素，理解最基本的遍历 |
-| 10.8 | 进阶 | [二分查找](https://fm2gp-chinese.bookzhou.com/binary-search) | 在有序区间中定位边界 |
-| 11.2 | 入门 | [区间交换](https://fm2gp-chinese.bookzhou.com/swap) | 交换相邻区间，作为旋转等算法的基础 |
-| 11.3 | 进阶 | [旋转算法](https://fm2gp-chinese.bookzhou.com/rotate) | 用区间交换理解序列旋转 |
-| 11.4 | 进阶 | [循环分解](https://fm2gp-chinese.bookzhou.com/cycle) | 把置换分解成不相交循环 |
-| 11.5—11.7 | 入门 | [反转](https://fm2gp-chinese.bookzhou.com/reverse) | 比较双向、前向递归与共享缓冲区自适应反转 |
-| 习题 12.1 | 进阶 | [GCD 性能对比](https://fm2gp-chinese.bookzhou.com/gcd-comparison) | 比较欧几里得算法和斯坦因算法性能 |
-| 12.1-12.2 | 进阶 | [斯坦因 GCD](https://fm2gp-chinese.bookzhou.com/stein-gcd) | 用移位和减法替代除法 |
-| 12.3-12.4 | 高级 | [扩展 GCD](https://fm2gp-chinese.bookzhou.com/extended-gcd) | 求出贝祖系数和模逆元 |
-| 13.3 | 高级 | [米勒-拉宾测试](https://fm2gp-chinese.bookzhou.com/miller-rabin) | 用概率测试快速筛选大素数 |
-| 13.4 | 高级 | [RSA 演示](https://fm2gp-chinese.bookzhou.com/rsa) | 组合素数、GCD、模逆元和快速幂 |
-| 扩展 | 入门 | [前缀和](https://fm2gp-chinese.bookzhou.com/prefix-sum) | 预处理累计和，快速回答区间查询 |
-| 扩展 | 入门 | [频率计数](https://fm2gp-chinese.bookzhou.com/frequency-count) | 一次扫描统计每个值出现的次数 |
-| 扩展 | 入门 | [两数之和](https://fm2gp-chinese.bookzhou.com/two-sum) | 记录已见过的值，寻找满足目标和的一对元素 |
-| 扩展 | 入门 | [冒泡排序](https://fm2gp-chinese.bookzhou.com/bubble-sort) | 通过比较和交换相邻元素完成排序 |
-| 扩展 | 入门 | [插入排序](https://fm2gp-chinese.bookzhou.com/insertion-sort) | 维护有序前缀，把新元素插入正确位置 |
-| 扩展 | 入门 | [选择排序](https://fm2gp-chinese.bookzhou.com/selection-sort) | 每轮选择未排序部分的最小元素 |
-| 扩展 | 进阶 | [归并排序](https://fm2gp-chinese.bookzhou.com/merge-sort) | 稳定的分治排序，适合理解递归合并 |
-| 扩展 | 高级 | [快速排序](https://fm2gp-chinese.bookzhou.com/quick-sort) | 通过基准分区实现高效原地排序 |
-| 扩展 | 进阶 | [堆操作](https://fm2gp-chinese.bookzhou.com/heap) | 用数组表示近似完全二叉树 |
-| 扩展 | 入门 | [图遍历](https://fm2gp-chinese.bookzhou.com/graph-traversal) | 比较 BFS 队列和 DFS 栈 |
+| 来源 | 演示 | 说明 |
+|---|---|---|
+| 10.7 | [10.7节 - 线性查找](https://fm2gp-chinese.bookzhou.com/linear-search) | 逐个比较元素，理解最基本的遍历。 |
+| 扩展 | [前缀和](https://fm2gp-chinese.bookzhou.com/prefix-sum) | 预处理累计和，快速回答区间查询。 |
+| 10.8 | [10.8节 - 二叉(二分)查找](https://fm2gp-chinese.bookzhou.com/binary-search) | 在有序区间中定位边界。 |
+| 扩展 | [频率计数](https://fm2gp-chinese.bookzhou.com/frequency-count) | 一次扫描统计每个值出现的次数。 |
+| 扩展 | [两数之和](https://fm2gp-chinese.bookzhou.com/two-sum) | 记录已见过的值，寻找满足目标和的一对元素。 |
+| 11.2 | [11.2节 - 区间交换](https://fm2gp-chinese.bookzhou.com/swap) | 交换相邻区间，作为旋转等算法的基础。 |
+| 11.3 | [11.3节 - 演示序列的"旋转"算法](https://fm2gp-chinese.bookzhou.com/rotate) | 用区间交换理解序列旋转。 |
+| 11.4 | [排列的循环分解与搬移](https://fm2gp-chinese.bookzhou.com/cycle) | 从 11.1 的排列分解到 11.4 的循环搬移，沿来源表执行 rotate_cycle_from。 |
+| 11.5、11.6、11.7 | [反转：递归与内存自适应](https://fm2gp-chinese.bookzhou.com/reverse) | 比较双向反转、前向递归反转和共享缓冲区的自适应反转。 |
+| 扩展 | [冒泡排序](https://fm2gp-chinese.bookzhou.com/bubble-sort) | 通过比较和交换相邻元素完成排序。 |
+| 扩展 | [插入排序](https://fm2gp-chinese.bookzhou.com/insertion-sort) | 维护有序前缀，把新元素插入正确位置。 |
+| 扩展 | [选择排序](https://fm2gp-chinese.bookzhou.com/selection-sort) | 每轮选择未排序部分的最小元素。 |
+| 扩展 | [归并排序](https://fm2gp-chinese.bookzhou.com/merge-sort) | 稳定的分治排序，适合理解递归合并。 |
+| 扩展 | [快速排序](https://fm2gp-chinese.bookzhou.com/quick-sort) | 通过基准分区实现高效原地排序。 |
+| 扩展 | [堆操作](https://fm2gp-chinese.bookzhou.com/heap) | 用数组表示近似完全二叉树。 |
+| 3.2、3.3 | [3.2节-3.3节 - 埃拉托色尼筛法](https://fm2gp-chinese.bookzhou.com/sieve) | 批量筛出素数，理解空间换时间。 |
+| 习题 3.3 | [习题3.3 - 素数计数函数 (计算较慢，请耐心等待)](https://fm2gp-chinese.bookzhou.com/prime-counting) | 观察 π(n) 与 n/ln(n) 的近似关系。 |
+| 习题 3.4 | [习题3.4 - 回文素数](https://fm2gp-chinese.bookzhou.com/palindromic-primes) | 探索不同进制下的回文素数。 |
+| 5.1 | [5.1节 - 判断一个数是否为素数](https://fm2gp-chinese.bookzhou.com/prime-checker) | 用试除法判断一个数是否为素数。 |
+| 5.2 | [5.2节 - 费马小定理](https://fm2gp-chinese.bookzhou.com/fermat) | 理解概率素性测试的基础。 |
+| 5.5 | [5.5节 - 欧拉定理](https://fm2gp-chinese.bookzhou.com/euler) | 把费马小定理推广到互素整数。 |
+| 4.2 | [4.2节 - 欧几里得算法(GCM/GCD)](https://fm2gp-chinese.bookzhou.com/gcm) | 用余数反复缩小 GCD 问题。 |
+| 4.5、4.6 | [求余与求商：倍增和斐波那契](https://fm2gp-chinese.bookzhou.com/division) | 从逐次减法到倍增与斐波那契求余；观察候选量、运算次数与商余共享。 |
+| 12.1、12.2 | [12.1-12.2节 - 斯坦因GCD算法（二进制GCD）](https://fm2gp-chinese.bookzhou.com/stein-gcd) | 用移位和减法替代除法。 |
+| 12.3、12.4 | [12.3节和12.4节 - 贝祖定理与扩展GCD算法(含习题12.7）](https://fm2gp-chinese.bookzhou.com/extended-gcd) | 求出贝祖系数和模逆元。 |
+| 习题 12.1 | [习题12.1 - 对比用斯坦因算法和欧几里得算法计算GCD的性能](https://fm2gp-chinese.bookzhou.com/gcd-comparison) | 比较欧几里得算法和斯坦因算法性能。 |
+| 2.1、2.2 | [2.1—2.2节 - 埃及乘法：递归与迭代](https://fm2gp-chinese.bookzhou.com/multiply) | 用倍增和选择替代重复加法。 |
+| 7.1、7.2、7.3、7.4、7.5、7.6 | [同一个幂算法](https://fm2gp-chinese.bookzhou.com/power) | 保持折半与累积流程，更换对象和合并运算。 |
+| 习题 7.1 | [习题7.1 - 最初级的斐波那契数列算法需要执行多少次加法（时间复杂度:O(φⁿ)）](https://fm2gp-chinese.bookzhou.com/fibonacci) | 观察朴素递归的指数增长。 |
+| 7.7 | [7.7节 - 使用幂算法计算第n个斐波那契数（时间复杂度:O(log⁡n)）](https://fm2gp-chinese.bookzhou.com/fast-fibonacci) | 用矩阵幂在 O(log n) 时间计算斐波那契数。 |
+| 8.6 | [8.6节 - 找出有向图中任意两个节点之间的最短距离](https://fm2gp-chinese.bookzhou.com/shortest-path) | 在热带半环上复用矩阵幂思想。 |
+| 扩展 | [图遍历（BFS/DFS）](https://fm2gp-chinese.bookzhou.com/graph-traversal) | 比较 BFS 队列和 DFS 栈。 |
+| 习题 9.2 | [习题9.2 - π 的下界与上界](https://fm2gp-chinese.bookzhou.com/pi-upper-bound) | 内接半周长给出 π 的下界，外切半周长给出上界。 六边形：3 < π < 2√3 ≈ 3.464102。 |
+| 13.3 | [13.3节 - 米勒-拉宾(Miller-Rabin)素性测试](https://fm2gp-chinese.bookzhou.com/miller-rabin) | 用概率测试快速筛选大素数。 |
+| 13.4 | [13.4节 - RSA公钥密码系统](https://fm2gp-chinese.bookzhou.com/rsa) | 组合素数、GCD、模逆元和快速幂。 |
+| 8.1、8.7、8.8 | [多项式带余除法与最大公约数](https://fm2gp-chinese.bookzhou.com/polynomial-gcd) | 在有理数系数多项式中逐步消元、求余，复用泛型GCD循环，最后首一化。 |
+| 8.1 | [霍纳法则：多项式求值](https://fm2gp-chinese.bookzhou.com/horner) | 比较逐项求值与嵌套累积，观察表达式、变量和运算次数。 |
+| 6.1、6.2 | [运算与代数结构](https://fm2gp-chinese.bookzhou.com/concepts/algebra) | 从集合与运算的例子理解结合律、单位元素和逆元。 |
+| 8.5、8.6 | [矩阵与可达性](https://fm2gp-chinese.bookzhou.com/concepts/matrices) | 从矩阵中的一个格子理解乘法，再用布尔运算研究图的可达性。 |
+| 10.4、10.5、10.6、C.7 | [迭代器与区间](https://fm2gp-chinese.bookzhou.com/concepts/iterators) | 比较迭代器能力、移动代价和半开区间的尾后位置。 |
 
 ## 技术栈
 
@@ -115,26 +115,14 @@ http://127.0.0.1:5173/
 ```bash
 npx eslint . --max-warnings=0
 npx tsc -p tsconfig.app.json --noEmit
+npx tsc -p tsconfig.node.json --noEmit
 npm run test:run
 npm run build
 ```
 
-历史验证基线（2026 年 6 月；本次验收见 [验证记录](docs/verification/2026-11-05-reader-update.md)）：
+本次集中收尾的实际检查结果见[评审验收报告](docs/verification/edition-closeout/README.md)。这是待合并的评审版本；正式发布验收另行执行。
 
-- ESLint 通过
-- TypeScript 类型检查通过
-- Vitest：17 个测试文件，178 个测试通过
-- 生产构建通过
-- 构建输出无 Browserslist 过期提示、无 chunk-size 警告、无 Vite React 插件废弃警告
-
-### 移动端基线检查
-
-- 390 x 844：主页、二分查找、RSA、素数计数、最短路径
-- 430 x 932：图遍历
-- 768 x 1024：堆操作
-- 已修复旧页面移动端 header 裁切，并降低素数计数默认计算规模
-- 宽图表、图片和矩阵使用局部横向滚动容器，避免整页横向溢出
-- 素数计数和最短路径已为宽视觉内容接入局部滚动 frame；上架前仍建议在真机中复核手势滚动体验
+历史记录：[2026-11-05 读者入口调整](https://github.com/transbot/fm2gp-Chinese/blob/f19725917d9fa24c8f33b2e9c288e48da3338392/docs/verification/2026-11-05-reader-update.md)；[第一、二轮发布证据归档](https://github.com/transbot/fm2gp-Chinese/tree/archive/release-phase1-phase2-evidence/docs/verification/release-phase1-phase2)。这些记录保留原日期与测试基线，不作为本次通过数量。
 
 ## 项目结构
 
@@ -196,57 +184,57 @@ Reader resources: [Demos by chapter](https://fm2gp-chinese.bookzhou.com/book) ·
 
 ## Current Product Status
 
-The Web app has evolved from a flat algorithm list into a bilingual learning tool:
+The chapter directory covers 14 chapters, 3 appendices, 107 section entries and 69 exercise entries. There are **40 unique demos**, **24 authored section readers**, and three Chapter 14 recap themes. Directory coverage does not imply a demo or complete solution for every entry; see the [edition coverage inventory](docs/book-coverage.md).
 
-- **Topic dashboard**: algorithms are grouped into Search and Sequences, Sorting and Heaps, Number Theory Basics, GCD and Modular Arithmetic, and Applications and Graphs, with search plus topic, source, and difficulty filters.
-- **Central algorithm metadata**: `src/data/algorithmCatalog.ts` stores path, topic, difficulty, source, order, bilingual titles, bilingual summaries, and core concepts.
-- **Bilingual search experience**: search indexes English and Chinese titles, summaries, core concepts, and supplemental notes, so Chinese `线性` and English `linear` both find Linear Search.
-- **Learn with the book**: Section 2.1 Egyptian multiplication → Section 7.5 power algorithm → Section 7.7 Fibonacci → Section 8.6 shortest paths, reusing one algorithm with different operations.
-- **Algorithm foundations**: the recommended route now moves through Array Scans and Tables, Basic Sorting, and Ordered Search before Binary Search.
-- **In-page learning navigation**: each algorithm page shows the current topic, source, difficulty, previous algorithm, and next algorithm.
-- **Beginner extension algorithms**: Bubble Sort, Insertion Sort, Selection Sort, Prefix Sum, Frequency Count, and Two Sum are included as non-book foundational supplements.
-- **Route-level lazy loading**: algorithm pages are loaded on demand; the main entry chunk was reduced from about 900 kB to about 255 kB.
-- **Vite 8 toolchain**: builds have no chunk-size or Vite React plugin deprecation warnings; the November 2026 verification still reports outdated Browserslist data, as recorded in the verification notes.
+- **Learn with the book**: Egyptian multiplication → generic power → matrices and Fibonacci → shortest paths. Array, sorting and search routes remain under Algorithm foundations.
+- **Chapter reading**: groups and isomorphisms, rings and fields, induction, types and concepts, permutations and appendix reference cards, with independently expandable proof reasons.
+- **Reading navigation**: bilingual search, exact section/exercise lookup, complete source query strings and history position restoration.
+- **Input and replay**: newer trace demos support input application, independent snapshots and language switching; older demos retain their documented interaction capabilities.
 
 ## Implemented Algorithm Visualizations
 
-| Source | Difficulty | Algorithm | Description |
-|--------|------------|-----------|-------------|
-| 2.1 | Beginner | [Egyptian Multiplication](https://fm2gp-chinese.bookzhou.com/multiply) | Replace repeated addition with doubling and selection |
-| 3.2-3.3 | Beginner | [Sieve of Eratosthenes](https://fm2gp-chinese.bookzhou.com/sieve) | Find primes in batches and see space-for-time tradeoffs |
-| Exercise 3.3 | Intermediate | [Prime Counting Function](https://fm2gp-chinese.bookzhou.com/prime-counting) | Compare pi(n) with the approximation n/ln(n) |
-| Exercise 3.4 | Beginner | [Palindromic Primes](https://fm2gp-chinese.bookzhou.com/palindromic-primes) | Explore palindromic primes in different bases |
-| 4.2 | Beginner | [Euclidean Algorithm](https://fm2gp-chinese.bookzhou.com/gcm) | Repeatedly reduce a GCD problem using remainders |
-| 4.5–4.6 | Beginner | [Remainders and quotients](https://fm2gp-chinese.bookzhou.com/division) | Compare repeated subtraction, doubling and Fibonacci remainder, then compute quotient and remainder together |
-| 5.1 | Beginner | [Prime Checker](https://fm2gp-chinese.bookzhou.com/prime-checker) | Use trial division to test primality |
-| 5.2 | Intermediate | [Fermat's Little Theorem](https://fm2gp-chinese.bookzhou.com/fermat) | Understand the basis of probabilistic primality tests |
-| 5.5 | Intermediate | [Euler's Theorem](https://fm2gp-chinese.bookzhou.com/euler) | Generalize Fermat to coprime integers |
-| 7.5 | Intermediate | [Power Algorithm](https://fm2gp-chinese.bookzhou.com/power) | Generalize Egyptian multiplication into fast power |
-| Exercise 7.1 | Beginner | [Basic Fibonacci](https://fm2gp-chinese.bookzhou.com/fibonacci) | Observe exponential growth in naive recursion |
-| 7.7 | Advanced | [Fast Fibonacci](https://fm2gp-chinese.bookzhou.com/fast-fibonacci) | Use matrix powers to compute Fibonacci in O(log n) |
-| 8.6 | Advanced | [Shortest Path in Directed Graph](https://fm2gp-chinese.bookzhou.com/shortest-path) | Reuse matrix power over the tropical semiring |
-| Exercise 9.2 | Beginner | [Lower and Upper Bounds for π](https://fm2gp-chinese.bookzhou.com/pi-upper-bound) | Inscribed half-perimeters give lower bounds; circumscribed ones give upper bounds; hexagons: 3 < π < 2√3 ≈ 3.464102 |
-| 10.7 | Beginner | [Linear Search](https://fm2gp-chinese.bookzhou.com/linear-search) | Check elements one by one and learn basic iteration |
-| 10.8 | Intermediate | [Binary Search](https://fm2gp-chinese.bookzhou.com/binary-search) | Find boundaries inside an ordered range |
-| 11.2 | Beginner | [Range Swap](https://fm2gp-chinese.bookzhou.com/swap) | Exchange adjacent ranges as a building block |
-| 11.3 | Intermediate | [Rotation Algorithm](https://fm2gp-chinese.bookzhou.com/rotate) | Understand rotation through range exchange |
-| 11.4 | Intermediate | [Cycle Decomposition](https://fm2gp-chinese.bookzhou.com/cycle) | Decompose permutations into disjoint cycles |
-| 11.5–11.7 | Beginner | [Reverse](https://fm2gp-chinese.bookzhou.com/reverse) | Compare bidirectional, forward recursive, and shared-buffer adaptive reversal |
-| Exercise 12.1 | Intermediate | [GCD Performance Comparison](https://fm2gp-chinese.bookzhou.com/gcd-comparison) | Compare Euclidean and Stein GCD performance |
-| 12.1-12.2 | Intermediate | [Stein's GCD](https://fm2gp-chinese.bookzhou.com/stein-gcd) | Replace division with shifts and subtraction |
-| 12.3-12.4 | Advanced | [Extended GCD](https://fm2gp-chinese.bookzhou.com/extended-gcd) | Compute Bezout coefficients and modular inverses |
-| 13.3 | Advanced | [Miller-Rabin Test](https://fm2gp-chinese.bookzhou.com/miller-rabin) | Quickly screen large prime candidates probabilistically |
-| 13.4 | Advanced | [RSA Demo](https://fm2gp-chinese.bookzhou.com/rsa) | Combine primes, GCD, inverses, and fast modular power |
-| Extra | Beginner | [Prefix Sum](https://fm2gp-chinese.bookzhou.com/prefix-sum) | Preprocess cumulative sums for fast range queries |
-| Extra | Beginner | [Frequency Count](https://fm2gp-chinese.bookzhou.com/frequency-count) | Count how many times each value appears in one scan |
-| Extra | Beginner | [Two Sum](https://fm2gp-chinese.bookzhou.com/two-sum) | Find a pair by storing values already seen |
-| Extra | Beginner | [Bubble Sort](https://fm2gp-chinese.bookzhou.com/bubble-sort) | Sort by comparing and swapping adjacent values |
-| Extra | Beginner | [Insertion Sort](https://fm2gp-chinese.bookzhou.com/insertion-sort) | Maintain a sorted prefix and insert each new key |
-| Extra | Beginner | [Selection Sort](https://fm2gp-chinese.bookzhou.com/selection-sort) | Repeatedly select the smallest remaining element |
-| Extra | Intermediate | [Merge Sort](https://fm2gp-chinese.bookzhou.com/merge-sort) | A stable divide-and-conquer sort built around merging |
-| Extra | Advanced | [Quick Sort](https://fm2gp-chinese.bookzhou.com/quick-sort) | Sort in place by partitioning around a pivot |
-| Extra | Intermediate | [Heap Operations](https://fm2gp-chinese.bookzhou.com/heap) | Represent a nearly complete binary tree in an array |
-| Extra | Beginner | [Graph Traversal](https://fm2gp-chinese.bookzhou.com/graph-traversal) | Compare BFS queues and DFS stacks |
+| Source | Demo | Description |
+|---|---|---|
+| 10.7 | [Section 10.7 - Linear Search](https://fm2gp-chinese.bookzhou.com/linear-search) | Check elements one by one and learn basic iteration. |
+| Extra | [Prefix Sum](https://fm2gp-chinese.bookzhou.com/prefix-sum) | Preprocess cumulative sums for fast range queries. |
+| 10.8 | [Section 10.8 - Binary Search](https://fm2gp-chinese.bookzhou.com/binary-search) | Find boundaries inside an ordered range. |
+| Extra | [Frequency Count](https://fm2gp-chinese.bookzhou.com/frequency-count) | Count how many times each value appears in one scan. |
+| Extra | [Two Sum](https://fm2gp-chinese.bookzhou.com/two-sum) | Find a pair by storing values already seen. |
+| 11.2 | [Section 11.2 - Range Swap](https://fm2gp-chinese.bookzhou.com/swap) | Exchange adjacent ranges as a building block. |
+| 11.3 | [Section 11.3 - Demonstration of Sequence Rotation Algorithm](https://fm2gp-chinese.bookzhou.com/rotate) | Understand rotation through range exchange. |
+| 11.4 | [Permutation cycles and data transfers](https://fm2gp-chinese.bookzhou.com/cycle) | From permutations in 11.1 to source-directed cycle transfers with rotate_cycle_from in 11.4. |
+| 11.5、11.6、11.7 | [Reversal: recursion and memory adaptation](https://fm2gp-chinese.bookzhou.com/reverse) | Compare bidirectional, forward recursive, and shared-buffer adaptive reversal. |
+| Extra | [Bubble Sort](https://fm2gp-chinese.bookzhou.com/bubble-sort) | Sort by comparing and swapping adjacent values. |
+| Extra | [Insertion Sort](https://fm2gp-chinese.bookzhou.com/insertion-sort) | Maintain a sorted prefix and insert each new key. |
+| Extra | [Selection Sort](https://fm2gp-chinese.bookzhou.com/selection-sort) | Repeatedly select the smallest remaining element. |
+| Extra | [Merge Sort](https://fm2gp-chinese.bookzhou.com/merge-sort) | A stable divide-and-conquer sort built around merging. |
+| Extra | [Quick Sort](https://fm2gp-chinese.bookzhou.com/quick-sort) | Sort in place by partitioning around a pivot. |
+| Extra | [Heap Operations](https://fm2gp-chinese.bookzhou.com/heap) | Represent a nearly complete binary tree in an array. |
+| 3.2、3.3 | [Section 3.2-3.3 - Sieve of Eratosthenes](https://fm2gp-chinese.bookzhou.com/sieve) | Find primes in batches and see space-for-time tradeoffs. |
+| Exercise 3.3 | [Exercise 3.3 - Prime Counting Function](https://fm2gp-chinese.bookzhou.com/prime-counting) | Compare pi(n) with the approximation n/ln(n). |
+| Exercise 3.4 | [Exercise 3.4 - Palindromic Primes](https://fm2gp-chinese.bookzhou.com/palindromic-primes) | Explore palindromic primes in different bases. |
+| 5.1 | [Section 5.1 - Prime Number Checker](https://fm2gp-chinese.bookzhou.com/prime-checker) | Use trial division to test primality. |
+| 5.2 | [Section 5.2 - Fermat's Little Theorem](https://fm2gp-chinese.bookzhou.com/fermat) | Understand the basis of probabilistic primality tests. |
+| 5.5 | [Section 5.5 - Euler's Theorem](https://fm2gp-chinese.bookzhou.com/euler) | Generalize Fermat to coprime integers. |
+| 4.2 | [Section 4.2 - Euclidean Algorithm (GCM/GCD)](https://fm2gp-chinese.bookzhou.com/gcm) | Repeatedly reduce a GCD problem using remainders. |
+| 4.5、4.6 | [Remainders and quotients: doubling and Fibonacci](https://fm2gp-chinese.bookzhou.com/division) | From repeated subtraction to doubling and Fibonacci remainder; follow candidates, counts, and shared quotient/remainder work. |
+| 12.1、12.2 | [Section 12.1-12.2 - Stein's GCD Algorithm (Binary GCD)](https://fm2gp-chinese.bookzhou.com/stein-gcd) | Replace division with shifts and subtraction. |
+| 12.3、12.4 | [Section 12.3 & 12.4 - Bézout's Identity & Extended GCD (Including Exercise 12.7)](https://fm2gp-chinese.bookzhou.com/extended-gcd) | Compute Bezout coefficients and modular inverses. |
+| Exercise 12.1 | [Exercise 12.1 - Performance Comparison of Stein and Euclidean GCD Algorithms](https://fm2gp-chinese.bookzhou.com/gcd-comparison) | Compare Euclidean and Stein GCD performance. |
+| 2.1、2.2 | [Sections 2.1–2.2 - Egyptian Multiplication: Recursion and Iteration](https://fm2gp-chinese.bookzhou.com/multiply) | Replace repeated addition with doubling and selection. |
+| 7.1、7.2、7.3、7.4、7.5、7.6 | [One power algorithm](https://fm2gp-chinese.bookzhou.com/power) | Keep halving and accumulation while changing objects and the combining operation. |
+| Exercise 7.1 | [Exercise 7.1 - How Many Additions Does the Basic Fibonacci Algorithm Need? (Time Complexity: O(φⁿ))](https://fm2gp-chinese.bookzhou.com/fibonacci) | Observe exponential growth in naive recursion. |
+| 7.7 | [Section 7.7 - Calculate nth Fibonacci Number Using Power Algorithm (Time Complexity: O(log n))](https://fm2gp-chinese.bookzhou.com/fast-fibonacci) | Use matrix powers to compute Fibonacci in O(log n). |
+| 8.6 | [Section 8.6 - Finding Shortest Distance Between Any Two Nodes in a Directed Graph](https://fm2gp-chinese.bookzhou.com/shortest-path) | Reuse matrix power over the tropical semiring. |
+| Extra | [Graph Traversal (BFS/DFS)](https://fm2gp-chinese.bookzhou.com/graph-traversal) | Compare BFS queues and DFS stacks. |
+| Exercise 9.2 | [Exercise 9.2 - Lower and Upper Bounds for π](https://fm2gp-chinese.bookzhou.com/pi-upper-bound) | Inscribed half-perimeters bound π below; circumscribed half-perimeters bound it above. Hexagons: 3 < π < 2√3 ≈ 3.464102. |
+| 13.3 | [Section 13.3 - Miller-Rabin Primality Test](https://fm2gp-chinese.bookzhou.com/miller-rabin) | Quickly screen large prime candidates probabilistically. |
+| 13.4 | [Section 13.4 - RSA Algorithm](https://fm2gp-chinese.bookzhou.com/rsa) | Combine primes, GCD, inverses, and fast modular power. |
+| 8.1、8.7、8.8 | [Polynomial division with remainder and GCD](https://fm2gp-chinese.bookzhou.com/polynomial-gcd) | Eliminate leading terms with exact rational coefficients, reuse the generic GCD loop, then make the result monic. |
+| 8.1 | [Horner’s rule: polynomial evaluation](https://fm2gp-chinese.bookzhou.com/horner) | Compare direct evaluation with nested accumulation through expressions, variables, and operation counts. |
+| 6.1、6.2 | [Operations and algebraic structures](https://fm2gp-chinese.bookzhou.com/concepts/algebra) | Explore associativity, identities, and inverses through sets and operations. |
+| 8.5、8.6 | [Matrices and reachability](https://fm2gp-chinese.bookzhou.com/concepts/matrices) | Understand multiplication one matrix cell at a time, then explore graph reachability with Boolean operations. |
+| 10.4、10.5、10.6、C.7 | [Iterators and ranges](https://fm2gp-chinese.bookzhou.com/concepts/iterators) | Compare iterator capabilities, movement costs, and the past-the-end position of half-open ranges. |
 
 ## Tech Stack
 
@@ -278,26 +266,14 @@ http://127.0.0.1:5173/
 ```bash
 npx eslint . --max-warnings=0
 npx tsc -p tsconfig.app.json --noEmit
+npx tsc -p tsconfig.node.json --noEmit
 npm run test:run
 npm run build
 ```
 
-Historical verification baseline (June 2026; see the [current verification record](docs/verification/2026-11-05-reader-update.md)):
+Current results are recorded in the [edition closeout review report](docs/verification/edition-closeout/README.md). This is a review version; production acceptance follows the later merge.
 
-- ESLint passes
-- TypeScript typecheck passes
-- Vitest: 17 test files, 178 tests pass
-- Production build passes
-- Build output has no Browserslist outdated warning, no chunk-size warning, and no Vite React plugin deprecation warning
-
-### Mobile Baseline Checks
-
-- 390 x 844: home, binary search, RSA, prime counting, shortest path
-- 430 x 932: graph traversal
-- 768 x 1024: heap operations
-- Legacy mobile header clipping has been fixed, and the default prime-counting workload has been reduced
-- Wide charts, images, and matrices use localized horizontal frames to avoid whole-page horizontal overflow
-- Prime counting and shortest path now use localized frames for wide visuals; before app-store release, verify the touch scrolling experience on real devices
+Historical records: [reader update, 2026-11-05](https://github.com/transbot/fm2gp-Chinese/blob/f19725917d9fa24c8f33b2e9c288e48da3338392/docs/verification/2026-11-05-reader-update.md); [Phase 1–2 release evidence archive](https://github.com/transbot/fm2gp-Chinese/tree/archive/release-phase1-phase2-evidence/docs/verification/release-phase1-phase2). Their original dates and test baselines are preserved and are not this run’s passing counts.
 
 ## Project Structure
 

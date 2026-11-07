@@ -1,0 +1,10 @@
+{
+  "tool": "OpenCV 4.6.0",
+  "image": "public/images/mobile-web-qr.png",
+  "target": "https://fm2gp-chinese.bookzhou.com/",
+  "width": 370,
+  "height": 370,
+  "whiteMarginPixels": 40,
+  "min": 0,
+  "max": 255
+}

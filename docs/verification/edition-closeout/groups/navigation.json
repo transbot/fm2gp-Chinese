@@ -1,0 +1,1354 @@
+[
+  {
+    "base": "http://127.0.0.1:4193",
+    "width": 1440,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "direct": [
+      "section-6-3",
+      "element-order",
+      "section-6-4",
+      "generated-subgroup",
+      "cyclic-size",
+      "section-6-5",
+      "integer-cosets",
+      "coset-partition",
+      "coset-proof",
+      "lagrange-applications",
+      "lagrange-fermat",
+      "lagrange-euler"
+    ],
+    "returns": [
+      {
+        "demo": "fermat",
+        "source": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+        "readerSource": {
+          "key": "r6rqv49z",
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat"
+        },
+        "results": [
+          {
+            "a": 2,
+            "mod": 7,
+            "result": 1,
+            "verdict": "定理验证成功！7 是素数，且 2^(7-1) mod 7 = 1"
+          },
+          {
+            "a": 2,
+            "mod": 9,
+            "result": 4,
+            "verdict": "9 是合数。定理不适用：2^(9-1) mod 9 = 4 ≠ 1"
+          }
+        ],
+        "left": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#section-6-4",
+          "key": "r6rqv49z",
+          "y": 3786,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "anchor": 3678,
+        "mid": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-fermat",
+          "key": "qm10h4pq",
+          "y": 230,
+          "open": []
+        },
+        "sourcePop": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#section-6-4",
+          "key": "r6rqv49z",
+          "y": 3786,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoForward": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-fermat",
+          "key": "qm10h4pq",
+          "y": 230,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+          "key": "2jo2gfmt",
+          "y": 3786,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "stable": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+          "key": "2jo2gfmt",
+          "y": 3786,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoLeft": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-fermat",
+          "key": "qm10h4pq",
+          "y": 1171,
+          "open": []
+        },
+        "demoPop": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-fermat",
+          "key": "qm10h4pq",
+          "y": 1073,
+          "open": []
+        },
+        "popMax": 1073,
+        "forward": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+          "key": "2jo2gfmt",
+          "y": 3786,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "hard": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+          "key": "atssoct4",
+          "y": 2568,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "target": 2568
+      },
+      {
+        "demo": "euler",
+        "source": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+        "readerSource": {
+          "key": "393s1wz3",
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler"
+        },
+        "results": [
+          {
+            "a": 3,
+            "mod": 8,
+            "result": 1,
+            "phi": 4,
+            "expression": "34mod8=1",
+            "verdict": "定理验证成功！"
+          },
+          {
+            "a": 2,
+            "mod": 8,
+            "result": 0,
+            "phi": 4,
+            "expression": "24mod8=0",
+            "verdict": "定理不适用（a 和 n 不互素）"
+          }
+        ],
+        "left": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#section-6-4",
+          "key": "393s1wz3",
+          "y": 2846,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "anchor": 2738,
+        "mid": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-euler",
+          "key": "74jv28th",
+          "y": 230,
+          "open": []
+        },
+        "sourcePop": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#section-6-4",
+          "key": "393s1wz3",
+          "y": 2846,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoForward": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-euler",
+          "key": "74jv28th",
+          "y": 230,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+          "key": "qtrdgi5v",
+          "y": 2846,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "stable": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+          "key": "qtrdgi5v",
+          "y": 2846,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoLeft": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-euler",
+          "key": "74jv28th",
+          "y": 1485,
+          "open": []
+        },
+        "demoPop": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-euler",
+          "key": "74jv28th",
+          "y": 829,
+          "open": []
+        },
+        "popMax": 829,
+        "forward": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+          "key": "qtrdgi5v",
+          "y": 2846,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "hard": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+          "key": "f51wvl8u",
+          "y": 2642,
+          "open": [
+            "lagrange-applications",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "target": 2642
+      }
+    ],
+    "searches": [
+      {
+        "q": "第6.4节",
+        "id": "section-6-4"
+      },
+      {
+        "q": "习题6.4",
+        "id": "exercise-6-4"
+      },
+      {
+        "q": "Section 6.5",
+        "id": "section-6-5"
+      },
+      {
+        "q": "Exercise 6.5",
+        "id": "exercise-6-5"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:4193",
+    "width": 1440,
+    "lang": "en",
+    "browser": "156.0.4314.58",
+    "direct": [
+      "section-6-3",
+      "element-order",
+      "section-6-4",
+      "generated-subgroup",
+      "cyclic-size",
+      "section-6-5",
+      "integer-cosets",
+      "coset-partition",
+      "coset-proof",
+      "lagrange-applications",
+      "lagrange-fermat",
+      "lagrange-euler"
+    ],
+    "returns": [
+      {
+        "demo": "fermat",
+        "source": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+        "readerSource": {
+          "key": "qxf2nipz",
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat"
+        },
+        "results": [
+          {
+            "a": 2,
+            "mod": 7,
+            "result": 1,
+            "verdict": "Theorem verified! 7 is prime, and 2^(7-1) mod 7 = 1"
+          },
+          {
+            "a": 2,
+            "mod": 9,
+            "result": 4,
+            "verdict": "9 is composite. Theorem doesn't apply: 2^(9-1) mod 9 = 4 ≠ 1"
+          }
+        ],
+        "left": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#section-6-4",
+          "key": "qxf2nipz",
+          "y": 4026,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "anchor": 3890,
+        "mid": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-fermat",
+          "key": "7x9ctyhu",
+          "y": 230,
+          "open": []
+        },
+        "sourcePop": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#section-6-4",
+          "key": "qxf2nipz",
+          "y": 4026,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoForward": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-fermat",
+          "key": "7x9ctyhu",
+          "y": 230,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+          "key": "34rlrq9s",
+          "y": 4026,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "stable": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+          "key": "34rlrq9s",
+          "y": 4026,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoLeft": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-fermat",
+          "key": "7x9ctyhu",
+          "y": 1171,
+          "open": []
+        },
+        "demoPop": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-fermat",
+          "key": "7x9ctyhu",
+          "y": 1073,
+          "open": []
+        },
+        "popMax": 1073,
+        "forward": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+          "key": "34rlrq9s",
+          "y": 4026,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "hard": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+          "key": "4av9fjwy",
+          "y": 2780,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "target": 2780
+      },
+      {
+        "demo": "euler",
+        "source": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+        "readerSource": {
+          "key": "esvypqai",
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler"
+        },
+        "results": [
+          {
+            "a": 3,
+            "mod": 8,
+            "result": 1,
+            "phi": 4,
+            "expression": "34mod8=1",
+            "verdict": "Theorem Verified!"
+          },
+          {
+            "a": 2,
+            "mod": 8,
+            "result": 0,
+            "phi": 4,
+            "expression": "24mod8=0",
+            "verdict": "Theorem does not apply (a and n are not coprime)"
+          }
+        ],
+        "left": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#section-6-4",
+          "key": "esvypqai",
+          "y": 3114,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "anchor": 2978,
+        "mid": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-euler",
+          "key": "p5l2a8t5",
+          "y": 230,
+          "open": []
+        },
+        "sourcePop": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#section-6-4",
+          "key": "esvypqai",
+          "y": 3114,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoForward": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-euler",
+          "key": "p5l2a8t5",
+          "y": 230,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+          "key": "8ir6h61e",
+          "y": 3114,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "stable": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+          "key": "8ir6h61e",
+          "y": 3114,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoLeft": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-euler",
+          "key": "p5l2a8t5",
+          "y": 1553,
+          "open": []
+        },
+        "demoPop": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-euler",
+          "key": "p5l2a8t5",
+          "y": 873,
+          "open": []
+        },
+        "popMax": 873,
+        "forward": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+          "key": "8ir6h61e",
+          "y": 3114,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "hard": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+          "key": "9t4tdyi3",
+          "y": 2854,
+          "open": [
+            "lagrange-applications",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "target": 2854
+      }
+    ],
+    "searches": [
+      {
+        "q": "第6.4节",
+        "id": "section-6-4"
+      },
+      {
+        "q": "习题6.4",
+        "id": "exercise-6-4"
+      },
+      {
+        "q": "Section 6.5",
+        "id": "section-6-5"
+      },
+      {
+        "q": "Exercise 6.5",
+        "id": "exercise-6-5"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:4193",
+    "width": 390,
+    "lang": "zh",
+    "browser": "156.0.4314.58",
+    "direct": [
+      "section-6-3",
+      "element-order",
+      "section-6-4",
+      "generated-subgroup",
+      "cyclic-size",
+      "section-6-5",
+      "integer-cosets",
+      "coset-partition",
+      "coset-proof",
+      "lagrange-applications",
+      "lagrange-fermat",
+      "lagrange-euler"
+    ],
+    "returns": [
+      {
+        "demo": "fermat",
+        "source": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+        "readerSource": {
+          "key": "zxfpd8o6",
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat"
+        },
+        "results": [
+          {
+            "a": 2,
+            "mod": 7,
+            "result": 1,
+            "verdict": "定理验证成功！7 是素数，且 2^(7-1) mod 7 = 1"
+          },
+          {
+            "a": 2,
+            "mod": 9,
+            "result": 4,
+            "verdict": "9 是合数。定理不适用：2^(9-1) mod 9 = 4 ≠ 1"
+          }
+        ],
+        "left": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#section-6-4",
+          "key": "zxfpd8o6",
+          "y": 4594,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "anchor": 4374,
+        "mid": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-fermat",
+          "key": "mhivyq23",
+          "y": 230,
+          "open": []
+        },
+        "sourcePop": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#section-6-4",
+          "key": "zxfpd8o6",
+          "y": 4594,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoForward": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-fermat",
+          "key": "mhivyq23",
+          "y": 230,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+          "key": "atqwhkkw",
+          "y": 4594,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "stable": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+          "key": "atqwhkkw",
+          "y": 4594,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoLeft": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-fermat",
+          "key": "mhivyq23",
+          "y": 1685,
+          "open": []
+        },
+        "demoPop": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-fermat",
+          "key": "mhivyq23",
+          "y": 1685,
+          "open": []
+        },
+        "popMax": 1710,
+        "forward": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+          "key": "atqwhkkw",
+          "y": 4594,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "hard": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-fermat",
+          "key": "whfggtyp",
+          "y": 3236,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "target": 3236
+      },
+      {
+        "demo": "euler",
+        "source": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+        "readerSource": {
+          "key": "obdilntk",
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler"
+        },
+        "results": [
+          {
+            "a": 3,
+            "mod": 8,
+            "result": 1,
+            "phi": 4,
+            "expression": "34mod8=1",
+            "verdict": "定理验证成功！"
+          },
+          {
+            "a": 2,
+            "mod": 8,
+            "result": 0,
+            "phi": 4,
+            "expression": "24mod8=0",
+            "verdict": "定理不适用（a 和 n 不互素）"
+          }
+        ],
+        "left": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#section-6-4",
+          "key": "obdilntk",
+          "y": 3738,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "anchor": 3518,
+        "mid": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-euler",
+          "key": "now33enn",
+          "y": 230,
+          "open": []
+        },
+        "sourcePop": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#section-6-4",
+          "key": "obdilntk",
+          "y": 3738,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoForward": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-euler",
+          "key": "now33enn",
+          "y": 230,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+          "key": "u738cqx7",
+          "y": 3738,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "stable": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+          "key": "u738cqx7",
+          "y": 3738,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoLeft": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-euler",
+          "key": "now33enn",
+          "y": 2088,
+          "open": []
+        },
+        "demoPop": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3D%25E5%2585%2583%25E7%25B4%25A0%25E9%2598%25B6%23lagrange-euler",
+          "key": "now33enn",
+          "y": 1435,
+          "open": []
+        },
+        "popMax": 1435,
+        "forward": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+          "key": "u738cqx7",
+          "y": 3738,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "hard": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=%E5%85%83%E7%B4%A0%E9%98%B6#lagrange-euler",
+          "key": "g34gv6w9",
+          "y": 3310,
+          "open": [
+            "lagrange-applications",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "target": 3310
+      }
+    ],
+    "searches": [
+      {
+        "q": "第6.4节",
+        "id": "section-6-4"
+      },
+      {
+        "q": "习题6.4",
+        "id": "exercise-6-4"
+      },
+      {
+        "q": "Section 6.5",
+        "id": "section-6-5"
+      },
+      {
+        "q": "Exercise 6.5",
+        "id": "exercise-6-5"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:4193",
+    "width": 390,
+    "lang": "en",
+    "browser": "156.0.4314.58",
+    "direct": [
+      "section-6-3",
+      "element-order",
+      "section-6-4",
+      "generated-subgroup",
+      "cyclic-size",
+      "section-6-5",
+      "integer-cosets",
+      "coset-partition",
+      "coset-proof",
+      "lagrange-applications",
+      "lagrange-fermat",
+      "lagrange-euler"
+    ],
+    "returns": [
+      {
+        "demo": "fermat",
+        "source": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+        "readerSource": {
+          "key": "ikh8abev",
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat"
+        },
+        "results": [
+          {
+            "a": 2,
+            "mod": 7,
+            "result": 1,
+            "verdict": "Theorem verified! 7 is prime, and 2^(7-1) mod 7 = 1"
+          },
+          {
+            "a": 2,
+            "mod": 9,
+            "result": 4,
+            "verdict": "9 is composite. Theorem doesn't apply: 2^(9-1) mod 9 = 4 ≠ 1"
+          }
+        ],
+        "left": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#section-6-4",
+          "key": "ikh8abev",
+          "y": 5828,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "anchor": 5496,
+        "mid": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-fermat",
+          "key": "mltb217r",
+          "y": 230,
+          "open": []
+        },
+        "sourcePop": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#section-6-4",
+          "key": "ikh8abev",
+          "y": 5828,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoForward": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-fermat",
+          "key": "mltb217r",
+          "y": 230,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+          "key": "deet8rtn",
+          "y": 5828,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "stable": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+          "key": "deet8rtn",
+          "y": 5828,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoLeft": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-fermat",
+          "key": "mltb217r",
+          "y": 1831,
+          "open": []
+        },
+        "demoPop": {
+          "url": "/fermat?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-fermat",
+          "key": "mltb217r",
+          "y": 1831,
+          "open": []
+        },
+        "popMax": 1888,
+        "forward": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+          "key": "deet8rtn",
+          "y": 5828,
+          "open": [
+            "element-order",
+            "coset-proof",
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "hard": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-fermat",
+          "key": "vgqsuza8",
+          "y": 4358,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "target": 4358
+      },
+      {
+        "demo": "euler",
+        "source": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+        "readerSource": {
+          "key": "0iuhlgog",
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler"
+        },
+        "results": [
+          {
+            "a": 3,
+            "mod": 8,
+            "result": 1,
+            "phi": 4,
+            "expression": "34mod8=1",
+            "verdict": "Theorem Verified!"
+          },
+          {
+            "a": 2,
+            "mod": 8,
+            "result": 0,
+            "phi": 4,
+            "expression": "24mod8=0",
+            "verdict": "Theorem does not apply (a and n are not coprime)"
+          }
+        ],
+        "left": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#section-6-4",
+          "key": "0iuhlgog",
+          "y": 5056,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "anchor": 4780,
+        "mid": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-euler",
+          "key": "omdf0twf",
+          "y": 230,
+          "open": []
+        },
+        "sourcePop": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#section-6-4",
+          "key": "0iuhlgog",
+          "y": 5056,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoForward": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-euler",
+          "key": "omdf0twf",
+          "y": 230,
+          "open": []
+        },
+        "returned": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+          "key": "wrlydacu",
+          "y": 5056,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "stable": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+          "key": "wrlydacu",
+          "y": 5056,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "demoLeft": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-euler",
+          "key": "omdf0twf",
+          "y": 2243,
+          "open": []
+        },
+        "demoPop": {
+          "url": "/euler?from=%2Fbook%2F6%3Fsource%3Dgroup-reader%26tag%3Dtwo%2Bwords%26q%3Dorder%2Bof%2Ban%2Belement%23lagrange-euler",
+          "key": "omdf0twf",
+          "y": 1626,
+          "open": []
+        },
+        "popMax": 1626,
+        "forward": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+          "key": "wrlydacu",
+          "y": 5056,
+          "open": [
+            "lagrange-applications",
+            "lagrange-fermat",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "hard": {
+          "url": "/book/6?source=group-reader&tag=two+words&q=order+of+an+element#lagrange-euler",
+          "key": "jqqszbpr",
+          "y": 4488,
+          "open": [
+            "lagrange-applications",
+            "lagrange-euler"
+          ],
+          "element": "3",
+          "rep": "6",
+          "powers": "3 → 2 → 6 → 4 → 5 → 1",
+          "subgroup": "{1, 2, 3, 4, 5, 6}",
+          "products": "6 → 5 → 3",
+          "coset": "{3, 5, 6}"
+        },
+        "target": 4488
+      }
+    ],
+    "searches": [
+      {
+        "q": "第6.4节",
+        "id": "section-6-4"
+      },
+      {
+        "q": "习题6.4",
+        "id": "exercise-6-4"
+      },
+      {
+        "q": "Section 6.5",
+        "id": "section-6-5"
+      },
+      {
+        "q": "Exercise 6.5",
+        "id": "exercise-6-5"
+      }
+    ],
+    "errors": []
+  }
+]

@@ -1,0 +1,4138 @@
+{
+  "baseline": "f19725917d9fa24c8f33b2e9c288e48da3338392",
+  "counts": {
+    "chapters": 14,
+    "appendices": 3,
+    "sections": 107,
+    "exercises": 69,
+    "authoredSectionReaders": 24,
+    "recapThemes": 3,
+    "demos": 40,
+    "entries": 59,
+    "resources": 86,
+    "trackedResourceFiles": 92
+  },
+  "routes": [
+    "/",
+    "/book",
+    "/book/1",
+    "/book/2",
+    "/book/3",
+    "/book/4",
+    "/book/5",
+    "/book/6",
+    "/book/7",
+    "/book/8",
+    "/book/9",
+    "/book/10",
+    "/book/11",
+    "/book/12",
+    "/book/13",
+    "/book/14",
+    "/book/A",
+    "/book/B",
+    "/book/C",
+    "/linear-search",
+    "/prefix-sum",
+    "/binary-search",
+    "/frequency-count",
+    "/two-sum",
+    "/swap",
+    "/rotate",
+    "/cycle",
+    "/reverse",
+    "/bubble-sort",
+    "/insertion-sort",
+    "/selection-sort",
+    "/merge-sort",
+    "/quick-sort",
+    "/heap",
+    "/sieve",
+    "/prime-counting",
+    "/palindromic-primes",
+    "/prime-checker",
+    "/fermat",
+    "/euler",
+    "/gcm",
+    "/division",
+    "/stein-gcd",
+    "/extended-gcd",
+    "/gcd-comparison",
+    "/multiply",
+    "/power",
+    "/fibonacci",
+    "/fast-fibonacci",
+    "/shortest-path",
+    "/graph-traversal",
+    "/pi-upper-bound",
+    "/miller-rabin",
+    "/rsa",
+    "/polynomial-gcd",
+    "/horner",
+    "/concepts/algebra",
+    "/concepts/matrices",
+    "/concepts/iterators"
+  ],
+  "demos": [
+    {
+      "path": "/linear-search",
+      "title": {
+        "zh": "10.7节 - 线性查找",
+        "en": "Section 10.7 - Linear Search"
+      },
+      "source": {
+        "type": "book",
+        "section": "10.7"
+      },
+      "sections": [
+        "10.7"
+      ],
+      "summary": {
+        "en": "Check elements one by one and learn basic iteration.",
+        "zh": "逐个比较元素，理解最基本的遍历。"
+      }
+    },
+    {
+      "path": "/prefix-sum",
+      "title": {
+        "zh": "前缀和",
+        "en": "Prefix Sum"
+      },
+      "source": {
+        "type": "extra"
+      },
+      "sections": [],
+      "summary": {
+        "en": "Preprocess cumulative sums for fast range queries.",
+        "zh": "预处理累计和，快速回答区间查询。"
+      }
+    },
+    {
+      "path": "/binary-search",
+      "title": {
+        "zh": "10.8节 - 二叉(二分)查找",
+        "en": "Section 10.8 - Binary Search"
+      },
+      "source": {
+        "type": "book",
+        "section": "10.8"
+      },
+      "sections": [
+        "10.8"
+      ],
+      "summary": {
+        "en": "Find boundaries inside an ordered range.",
+        "zh": "在有序区间中定位边界。"
+      }
+    },
+    {
+      "path": "/frequency-count",
+      "title": {
+        "zh": "频率计数",
+        "en": "Frequency Count"
+      },
+      "source": {
+        "type": "extra"
+      },
+      "sections": [],
+      "summary": {
+        "en": "Count how many times each value appears in one scan.",
+        "zh": "一次扫描统计每个值出现的次数。"
+      }
+    },
+    {
+      "path": "/two-sum",
+      "title": {
+        "zh": "两数之和",
+        "en": "Two Sum"
+      },
+      "source": {
+        "type": "extra"
+      },
+      "sections": [],
+      "summary": {
+        "en": "Find a pair by storing values already seen.",
+        "zh": "记录已见过的值，寻找满足目标和的一对元素。"
+      }
+    },
+    {
+      "path": "/swap",
+      "title": {
+        "zh": "11.2节 - 区间交换",
+        "en": "Section 11.2 - Range Swap"
+      },
+      "source": {
+        "type": "book",
+        "section": "11.2"
+      },
+      "sections": [
+        "11.2"
+      ],
+      "summary": {
+        "en": "Exchange adjacent ranges as a building block.",
+        "zh": "交换相邻区间，作为旋转等算法的基础。"
+      }
+    },
+    {
+      "path": "/rotate",
+      "title": {
+        "zh": "11.3节 - 演示序列的\"旋转\"算法",
+        "en": "Section 11.3 - Demonstration of Sequence Rotation Algorithm"
+      },
+      "source": {
+        "type": "book",
+        "section": "11.3"
+      },
+      "sections": [
+        "11.3"
+      ],
+      "summary": {
+        "en": "Understand rotation through range exchange.",
+        "zh": "用区间交换理解序列旋转。"
+      }
+    },
+    {
+      "path": "/cycle",
+      "title": {
+        "zh": "排列的循环分解与搬移",
+        "en": "Permutation cycles and data transfers"
+      },
+      "source": {
+        "type": "book",
+        "section": "11.4"
+      },
+      "sections": [
+        "11.4"
+      ],
+      "summary": {
+        "en": "From permutations in 11.1 to source-directed cycle transfers with rotate_cycle_from in 11.4.",
+        "zh": "从 11.1 的排列分解到 11.4 的循环搬移，沿来源表执行 rotate_cycle_from。"
+      }
+    },
+    {
+      "path": "/reverse",
+      "title": {
+        "zh": "反转：递归与内存自适应",
+        "en": "Reversal: recursion and memory adaptation"
+      },
+      "source": {
+        "type": "book",
+        "section": "11.5-11.7"
+      },
+      "sections": [
+        "11.5",
+        "11.6",
+        "11.7"
+      ],
+      "summary": {
+        "zh": "比较双向反转、前向递归反转和共享缓冲区的自适应反转。",
+        "en": "Compare bidirectional, forward recursive, and shared-buffer adaptive reversal."
+      }
+    },
+    {
+      "path": "/bubble-sort",
+      "title": {
+        "zh": "冒泡排序",
+        "en": "Bubble Sort"
+      },
+      "source": {
+        "type": "extra"
+      },
+      "sections": [],
+      "summary": {
+        "en": "Sort by comparing and swapping adjacent values.",
+        "zh": "通过比较和交换相邻元素完成排序。"
+      }
+    },
+    {
+      "path": "/insertion-sort",
+      "title": {
+        "zh": "插入排序",
+        "en": "Insertion Sort"
+      },
+      "source": {
+        "type": "extra"
+      },
+      "sections": [],
+      "summary": {
+        "en": "Maintain a sorted prefix and insert each new key.",
+        "zh": "维护有序前缀，把新元素插入正确位置。"
+      }
+    },
+    {
+      "path": "/selection-sort",
+      "title": {
+        "zh": "选择排序",
+        "en": "Selection Sort"
+      },
+      "source": {
+        "type": "extra"
+      },
+      "sections": [],
+      "summary": {
+        "en": "Repeatedly select the smallest remaining element.",
+        "zh": "每轮选择未排序部分的最小元素。"
+      }
+    },
+    {
+      "path": "/merge-sort",
+      "title": {
+        "zh": "归并排序",
+        "en": "Merge Sort"
+      },
+      "source": {
+        "type": "extra"
+      },
+      "sections": [],
+      "summary": {
+        "en": "A stable divide-and-conquer sort built around merging.",
+        "zh": "稳定的分治排序，适合理解递归合并。"
+      }
+    },
+    {
+      "path": "/quick-sort",
+      "title": {
+        "zh": "快速排序",
+        "en": "Quick Sort"
+      },
+      "source": {
+        "type": "extra"
+      },
+      "sections": [],
+      "summary": {
+        "en": "Sort in place by partitioning around a pivot.",
+        "zh": "通过基准分区实现高效原地排序。"
+      }
+    },
+    {
+      "path": "/heap",
+      "title": {
+        "zh": "堆操作",
+        "en": "Heap Operations"
+      },
+      "source": {
+        "type": "extra"
+      },
+      "sections": [],
+      "summary": {
+        "en": "Represent a nearly complete binary tree in an array.",
+        "zh": "用数组表示近似完全二叉树。"
+      }
+    },
+    {
+      "path": "/sieve",
+      "title": {
+        "zh": "3.2节-3.3节 - 埃拉托色尼筛法",
+        "en": "Section 3.2-3.3 - Sieve of Eratosthenes"
+      },
+      "source": {
+        "type": "book",
+        "section": "3.2-3.3"
+      },
+      "sections": [
+        "3.2",
+        "3.3"
+      ],
+      "summary": {
+        "en": "Find primes in batches and see space-for-time tradeoffs.",
+        "zh": "批量筛出素数，理解空间换时间。"
+      }
+    },
+    {
+      "path": "/prime-counting",
+      "title": {
+        "zh": "习题3.3 - 素数计数函数 (计算较慢，请耐心等待)",
+        "en": "Exercise 3.3 - Prime Counting Function"
+      },
+      "source": {
+        "type": "exercise",
+        "section": "3.3"
+      },
+      "sections": [],
+      "summary": {
+        "en": "Compare pi(n) with the approximation n/ln(n).",
+        "zh": "观察 π(n) 与 n/ln(n) 的近似关系。"
+      }
+    },
+    {
+      "path": "/palindromic-primes",
+      "title": {
+        "zh": "习题3.4 - 回文素数",
+        "en": "Exercise 3.4 - Palindromic Primes"
+      },
+      "source": {
+        "type": "exercise",
+        "section": "3.4"
+      },
+      "sections": [],
+      "summary": {
+        "en": "Explore palindromic primes in different bases.",
+        "zh": "探索不同进制下的回文素数。"
+      }
+    },
+    {
+      "path": "/prime-checker",
+      "title": {
+        "zh": "5.1节 - 判断一个数是否为素数",
+        "en": "Section 5.1 - Prime Number Checker"
+      },
+      "source": {
+        "type": "book",
+        "section": "5.1"
+      },
+      "sections": [
+        "5.1"
+      ],
+      "summary": {
+        "en": "Use trial division to test primality.",
+        "zh": "用试除法判断一个数是否为素数。"
+      }
+    },
+    {
+      "path": "/fermat",
+      "title": {
+        "zh": "5.2节 - 费马小定理",
+        "en": "Section 5.2 - Fermat's Little Theorem"
+      },
+      "source": {
+        "type": "book",
+        "section": "5.2"
+      },
+      "sections": [
+        "5.2"
+      ],
+      "summary": {
+        "en": "Understand the basis of probabilistic primality tests.",
+        "zh": "理解概率素性测试的基础。"
+      }
+    },
+    {
+      "path": "/euler",
+      "title": {
+        "zh": "5.5节 - 欧拉定理",
+        "en": "Section 5.5 - Euler's Theorem"
+      },
+      "source": {
+        "type": "book",
+        "section": "5.5"
+      },
+      "sections": [
+        "5.5"
+      ],
+      "summary": {
+        "en": "Generalize Fermat to coprime integers.",
+        "zh": "把费马小定理推广到互素整数。"
+      }
+    },
+    {
+      "path": "/gcm",
+      "title": {
+        "zh": "4.2节 - 欧几里得算法(GCM/GCD)",
+        "en": "Section 4.2 - Euclidean Algorithm (GCM/GCD)"
+      },
+      "source": {
+        "type": "book",
+        "section": "4.2"
+      },
+      "sections": [
+        "4.2"
+      ],
+      "summary": {
+        "en": "Repeatedly reduce a GCD problem using remainders.",
+        "zh": "用余数反复缩小 GCD 问题。"
+      }
+    },
+    {
+      "path": "/division",
+      "title": {
+        "zh": "求余与求商：倍增和斐波那契",
+        "en": "Remainders and quotients: doubling and Fibonacci"
+      },
+      "source": {
+        "type": "book",
+        "section": "4.5-4.6"
+      },
+      "sections": [
+        "4.5",
+        "4.6"
+      ],
+      "summary": {
+        "zh": "从逐次减法到倍增与斐波那契求余；观察候选量、运算次数与商余共享。",
+        "en": "From repeated subtraction to doubling and Fibonacci remainder; follow candidates, counts, and shared quotient/remainder work."
+      }
+    },
+    {
+      "path": "/stein-gcd",
+      "title": {
+        "zh": "12.1-12.2节 - 斯坦因GCD算法（二进制GCD）",
+        "en": "Section 12.1-12.2 - Stein's GCD Algorithm (Binary GCD)"
+      },
+      "source": {
+        "type": "book",
+        "section": "12.1-12.2"
+      },
+      "sections": [
+        "12.1",
+        "12.2"
+      ],
+      "summary": {
+        "en": "Replace division with shifts and subtraction.",
+        "zh": "用移位和减法替代除法。"
+      }
+    },
+    {
+      "path": "/extended-gcd",
+      "title": {
+        "zh": "12.3节和12.4节 - 贝祖定理与扩展GCD算法(含习题12.7）",
+        "en": "Section 12.3 & 12.4 - Bézout's Identity & Extended GCD (Including Exercise 12.7)"
+      },
+      "source": {
+        "type": "book",
+        "section": "12.3-12.4"
+      },
+      "sections": [
+        "12.3",
+        "12.4"
+      ],
+      "summary": {
+        "en": "Compute Bezout coefficients and modular inverses.",
+        "zh": "求出贝祖系数和模逆元。"
+      }
+    },
+    {
+      "path": "/gcd-comparison",
+      "title": {
+        "zh": "习题12.1 - 对比用斯坦因算法和欧几里得算法计算GCD的性能",
+        "en": "Exercise 12.1 - Performance Comparison of Stein and Euclidean GCD Algorithms"
+      },
+      "source": {
+        "type": "exercise",
+        "section": "12.1"
+      },
+      "sections": [],
+      "summary": {
+        "en": "Compare Euclidean and Stein GCD performance.",
+        "zh": "比较欧几里得算法和斯坦因算法性能。"
+      }
+    },
+    {
+      "path": "/multiply",
+      "title": {
+        "zh": "2.1—2.2节 - 埃及乘法：递归与迭代",
+        "en": "Sections 2.1–2.2 - Egyptian Multiplication: Recursion and Iteration"
+      },
+      "source": {
+        "type": "book",
+        "section": "2.1-2.2"
+      },
+      "sections": [
+        "2.1",
+        "2.2"
+      ],
+      "summary": {
+        "en": "Replace repeated addition with doubling and selection.",
+        "zh": "用倍增和选择替代重复加法。"
+      }
+    },
+    {
+      "path": "/power",
+      "title": {
+        "zh": "同一个幂算法",
+        "en": "One power algorithm"
+      },
+      "source": {
+        "type": "book",
+        "section": "7.5"
+      },
+      "sections": [
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4",
+        "7.5",
+        "7.6"
+      ],
+      "summary": {
+        "zh": "保持折半与累积流程，更换对象和合并运算。",
+        "en": "Keep halving and accumulation while changing objects and the combining operation."
+      }
+    },
+    {
+      "path": "/fibonacci",
+      "title": {
+        "zh": "习题7.1 - 最初级的斐波那契数列算法需要执行多少次加法（时间复杂度:O(φⁿ)）",
+        "en": "Exercise 7.1 - How Many Additions Does the Basic Fibonacci Algorithm Need? (Time Complexity: O(φⁿ))"
+      },
+      "source": {
+        "type": "exercise",
+        "section": "7.1"
+      },
+      "sections": [],
+      "summary": {
+        "en": "Observe exponential growth in naive recursion.",
+        "zh": "观察朴素递归的指数增长。"
+      }
+    },
+    {
+      "path": "/fast-fibonacci",
+      "title": {
+        "zh": "7.7节 - 使用幂算法计算第n个斐波那契数（时间复杂度:O(log⁡n)）",
+        "en": "Section 7.7 - Calculate nth Fibonacci Number Using Power Algorithm (Time Complexity: O(log n))"
+      },
+      "source": {
+        "type": "book",
+        "section": "7.7"
+      },
+      "sections": [
+        "7.7"
+      ],
+      "summary": {
+        "en": "Use matrix powers to compute Fibonacci in O(log n).",
+        "zh": "用矩阵幂在 O(log n) 时间计算斐波那契数。"
+      }
+    },
+    {
+      "path": "/shortest-path",
+      "title": {
+        "zh": "8.6节 - 找出有向图中任意两个节点之间的最短距离",
+        "en": "Section 8.6 - Finding Shortest Distance Between Any Two Nodes in a Directed Graph"
+      },
+      "source": {
+        "type": "book",
+        "section": "8.6"
+      },
+      "sections": [
+        "8.6"
+      ],
+      "summary": {
+        "en": "Reuse matrix power over the tropical semiring.",
+        "zh": "在热带半环上复用矩阵幂思想。"
+      }
+    },
+    {
+      "path": "/graph-traversal",
+      "title": {
+        "zh": "图遍历（BFS/DFS）",
+        "en": "Graph Traversal (BFS/DFS)"
+      },
+      "source": {
+        "type": "extra"
+      },
+      "sections": [],
+      "summary": {
+        "en": "Compare BFS queues and DFS stacks.",
+        "zh": "比较 BFS 队列和 DFS 栈。"
+      }
+    },
+    {
+      "path": "/pi-upper-bound",
+      "title": {
+        "zh": "习题9.2 - π 的下界与上界",
+        "en": "Exercise 9.2 - Lower and Upper Bounds for π"
+      },
+      "source": {
+        "type": "exercise",
+        "section": "9.2"
+      },
+      "sections": [],
+      "summary": {
+        "en": "Inscribed half-perimeters bound π below; circumscribed half-perimeters bound it above.",
+        "zh": "内接半周长给出 π 的下界，外切半周长给出上界。"
+      }
+    },
+    {
+      "path": "/miller-rabin",
+      "title": {
+        "zh": "13.3节 - 米勒-拉宾(Miller-Rabin)素性测试",
+        "en": "Section 13.3 - Miller-Rabin Primality Test"
+      },
+      "source": {
+        "type": "book",
+        "section": "13.3"
+      },
+      "sections": [
+        "13.3"
+      ],
+      "summary": {
+        "en": "Quickly screen large prime candidates probabilistically.",
+        "zh": "用概率测试快速筛选大素数。"
+      }
+    },
+    {
+      "path": "/rsa",
+      "title": {
+        "zh": "13.4节 - RSA公钥密码系统",
+        "en": "Section 13.4 - RSA Algorithm"
+      },
+      "source": {
+        "type": "book",
+        "section": "13.4"
+      },
+      "sections": [
+        "13.4"
+      ],
+      "summary": {
+        "en": "Combine primes, GCD, inverses, and fast modular power.",
+        "zh": "组合素数、GCD、模逆元和快速幂。"
+      }
+    },
+    {
+      "path": "/polynomial-gcd",
+      "title": {
+        "zh": "多项式带余除法与最大公约数",
+        "en": "Polynomial division with remainder and GCD"
+      },
+      "source": {
+        "type": "book"
+      },
+      "sections": [
+        "8.1",
+        "8.7",
+        "8.8"
+      ],
+      "summary": {
+        "zh": "在有理数系数多项式中逐步消元、求余，复用泛型GCD循环，最后首一化。",
+        "en": "Eliminate leading terms with exact rational coefficients, reuse the generic GCD loop, then make the result monic."
+      }
+    },
+    {
+      "path": "/horner",
+      "title": {
+        "zh": "霍纳法则：多项式求值",
+        "en": "Horner’s rule: polynomial evaluation"
+      },
+      "source": {
+        "type": "book"
+      },
+      "sections": [
+        "8.1"
+      ],
+      "summary": {
+        "zh": "比较逐项求值与嵌套累积，观察表达式、变量和运算次数。",
+        "en": "Compare direct evaluation with nested accumulation through expressions, variables, and operation counts."
+      }
+    },
+    {
+      "path": "/concepts/algebra",
+      "title": {
+        "zh": "运算与代数结构",
+        "en": "Operations and algebraic structures"
+      },
+      "source": {
+        "type": "book"
+      },
+      "sections": [
+        "6.1",
+        "6.2"
+      ],
+      "summary": {
+        "zh": "从集合与运算的例子理解结合律、单位元素和逆元。",
+        "en": "Explore associativity, identities, and inverses through sets and operations."
+      }
+    },
+    {
+      "path": "/concepts/matrices",
+      "title": {
+        "zh": "矩阵与可达性",
+        "en": "Matrices and reachability"
+      },
+      "source": {
+        "type": "book"
+      },
+      "sections": [
+        "8.5",
+        "8.6"
+      ],
+      "summary": {
+        "zh": "从矩阵中的一个格子理解乘法，再用布尔运算研究图的可达性。",
+        "en": "Understand multiplication one matrix cell at a time, then explore graph reachability with Boolean operations."
+      }
+    },
+    {
+      "path": "/concepts/iterators",
+      "title": {
+        "zh": "迭代器与区间",
+        "en": "Iterators and ranges"
+      },
+      "source": {
+        "type": "book"
+      },
+      "sections": [
+        "10.4",
+        "10.5",
+        "10.6",
+        "C.7"
+      ],
+      "summary": {
+        "zh": "比较迭代器能力、移动代价和半开区间的尾后位置。",
+        "en": "Compare iterator capabilities, movement costs, and the past-the-end position of half-open ranges."
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "id": "1",
+      "title": {
+        "zh": "绪论",
+        "en": "Introduction"
+      },
+      "path": "/book/1",
+      "recap": false,
+      "sections": [
+        {
+          "id": "1.1",
+          "title": {
+            "zh": "编程与数学",
+            "en": "Programming and mathematics"
+          },
+          "anchor": "section-1-1",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "1.2",
+          "title": {
+            "zh": "历史视角",
+            "en": "A historical perspective"
+          },
+          "anchor": "section-1-2",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "1.3",
+          "title": {
+            "zh": "预备知识",
+            "en": "Prerequisites"
+          },
+          "anchor": "section-1-3",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "1.4",
+          "title": {
+            "zh": "全书导览",
+            "en": "Overview of the book"
+          },
+          "anchor": "section-1-4",
+          "reader": null,
+          "demos": []
+        }
+      ],
+      "exercises": [],
+      "resources": [
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt1.pdf",
+          "kind": "slides"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": {
+        "zh": "初探算法",
+        "en": "The first algorithm"
+      },
+      "path": "/book/2",
+      "recap": false,
+      "sections": [
+        {
+          "id": "2.1",
+          "title": {
+            "zh": "埃及乘法",
+            "en": "Egyptian multiplication"
+          },
+          "anchor": "section-2-1",
+          "reader": null,
+          "demos": [
+            "/multiply"
+          ]
+        },
+        {
+          "id": "2.2",
+          "title": {
+            "zh": "改进算法",
+            "en": "Improving the algorithm"
+          },
+          "anchor": "section-2-2",
+          "reader": null,
+          "demos": [
+            "/multiply"
+          ]
+        },
+        {
+          "id": "2.3",
+          "title": {
+            "zh": "小结",
+            "en": "Summary"
+          },
+          "anchor": "section-2-3",
+          "reader": null,
+          "demos": []
+        }
+      ],
+      "exercises": [
+        {
+          "id": "2.1",
+          "anchor": "exercise-2-1",
+          "resources": [
+            {
+              "path": "solutions/2_1.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            },
+            {
+              "path": "solutions/2_1.tex",
+              "kind": "solution",
+              "format": "tex"
+            }
+          ],
+          "links": []
+        }
+      ],
+      "resources": [
+        {
+          "path": "配套代码(fm2gpcode)/ch02.cpp",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "main",
+              "line": 27
+            }
+          ]
+        },
+        {
+          "path": "配套代码(fm2gpcode)/ch02.h",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "odd",
+              "line": 24
+            },
+            {
+              "name": "half",
+              "line": 25
+            },
+            {
+              "name": "multiply0",
+              "line": 27
+            },
+            {
+              "name": "multiply1",
+              "line": 32
+            },
+            {
+              "name": "multiply_by_15",
+              "line": 39
+            },
+            {
+              "name": "mult_acc0",
+              "line": 47
+            },
+            {
+              "name": "mult_acc1",
+              "line": 56
+            },
+            {
+              "name": "mult_acc2",
+              "line": 62
+            },
+            {
+              "name": "mult_acc3",
+              "line": 70
+            },
+            {
+              "name": "mult_acc4",
+              "line": 80
+            },
+            {
+              "name": "multiply2",
+              "line": 91
+            },
+            {
+              "name": "multiply3",
+              "line": 96
+            },
+            {
+              "name": "multiply4",
+              "line": 105
+            }
+          ]
+        },
+        {
+          "path": "参考文档(References)/Addition Machines by Floyd & Knuth.pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt1.pdf",
+          "kind": "slides"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": {
+        "zh": "古希腊数论",
+        "en": "Ancient Greek number theory"
+      },
+      "path": "/book/3",
+      "recap": false,
+      "sections": [
+        {
+          "id": "3.1",
+          "title": {
+            "zh": "整数的几何性质",
+            "en": "Geometric properties of integers"
+          },
+          "anchor": "section-3-1",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "3.2",
+          "title": {
+            "zh": "筛选素数",
+            "en": "Sieving primes"
+          },
+          "anchor": "section-3-2",
+          "reader": null,
+          "demos": [
+            "/sieve"
+          ]
+        },
+        {
+          "id": "3.3",
+          "title": {
+            "zh": "实现埃拉托色尼筛法并优化代码",
+            "en": "Implementing and optimizing the sieve of Eratosthenes"
+          },
+          "anchor": "section-3-3",
+          "reader": null,
+          "demos": [
+            "/sieve"
+          ]
+        },
+        {
+          "id": "3.4",
+          "title": {
+            "zh": "完全数",
+            "en": "Perfect numbers"
+          },
+          "anchor": "section-3-4",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "3.5",
+          "title": {
+            "zh": "毕达哥拉斯学派的构想",
+            "en": "The Pythagorean program"
+          },
+          "anchor": "section-3-5",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "3.6",
+          "title": {
+            "zh": "毕氏构想的严重缺陷",
+            "en": "A fatal flaw in the Pythagorean program"
+          },
+          "anchor": "section-3-6",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "3.7",
+          "title": {
+            "zh": "小结",
+            "en": "Summary"
+          },
+          "anchor": "section-3-7",
+          "reader": null,
+          "demos": []
+        }
+      ],
+      "exercises": [
+        {
+          "id": "3.1",
+          "anchor": "exercise-3-1",
+          "resources": [
+            {
+              "path": "solutions/3_1.md",
+              "kind": "solution",
+              "format": "md"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "3.2",
+          "anchor": "exercise-3-2",
+          "resources": [
+            {
+              "path": "solutions/3_2.cpp",
+              "kind": "program",
+              "format": "cpp"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "3.3",
+          "anchor": "exercise-3-3",
+          "resources": [
+            {
+              "path": "solutions/3_3.md",
+              "kind": "solution",
+              "format": "md"
+            }
+          ],
+          "links": [
+            "/prime-counting"
+          ]
+        },
+        {
+          "id": "3.4",
+          "anchor": "exercise-3-4",
+          "resources": [
+            {
+              "path": "solutions/3_4.md",
+              "kind": "solution",
+              "format": "md"
+            }
+          ],
+          "links": [
+            "/palindromic-primes"
+          ]
+        },
+        {
+          "id": "3.5",
+          "anchor": "exercise-3-5",
+          "resources": [
+            {
+              "path": "solutions/3_5.md",
+              "kind": "solution",
+              "format": "md"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "3.6",
+          "anchor": "exercise-3-6",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "3.7",
+          "anchor": "exercise-3-7",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "3.8",
+          "anchor": "exercise-3-8",
+          "resources": [],
+          "links": []
+        }
+      ],
+      "resources": [
+        {
+          "path": "配套代码(fm2gpcode)/ch03.cpp",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "print_sieve",
+              "line": 27
+            },
+            {
+              "name": "main",
+              "line": 40
+            }
+          ]
+        },
+        {
+          "path": "配套代码(fm2gpcode)/ch03.h",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "mark_sieve",
+              "line": 30
+            },
+            {
+              "name": "sift0",
+              "line": 40
+            },
+            {
+              "name": "sift1",
+              "line": 57
+            },
+            {
+              "name": "sift",
+              "line": 73
+            },
+            {
+              "name": "gcm",
+              "line": 93
+            }
+          ]
+        },
+        {
+          "path": "参考文档(References)/It is easy to determine whether a given integer is prime.pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt1.pdf",
+          "kind": "slides"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt1.pdf",
+          "kind": "slides"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": {
+        "zh": "欧几里得算法",
+        "en": "Euclid’s algorithm"
+      },
+      "path": "/book/4",
+      "recap": false,
+      "sections": [
+        {
+          "id": "4.1",
+          "title": {
+            "zh": "雅典与亚历山大",
+            "en": "Athens and Alexandria"
+          },
+          "anchor": "section-4-1",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "4.2",
+          "title": {
+            "zh": "欧几里得最大公度算法",
+            "en": "Euclid’s greatest common measure algorithm"
+          },
+          "anchor": "section-4-2",
+          "reader": null,
+          "demos": [
+            "/gcm"
+          ]
+        },
+        {
+          "id": "4.3",
+          "title": {
+            "zh": "数学的千年停滞",
+            "en": "A millennium of mathematical stagnation"
+          },
+          "anchor": "section-4-3",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "4.4",
+          "title": {
+            "zh": "零的奇特历史",
+            "en": "The strange history of zero"
+          },
+          "anchor": "section-4-4",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "4.5",
+          "title": {
+            "zh": "求余求商算法",
+            "en": "Remainder and quotient algorithms"
+          },
+          "anchor": "section-4-5",
+          "reader": null,
+          "demos": [
+            "/division"
+          ]
+        },
+        {
+          "id": "4.6",
+          "title": {
+            "zh": "共享代码",
+            "en": "Sharing code"
+          },
+          "anchor": "section-4-6",
+          "reader": null,
+          "demos": [
+            "/division"
+          ]
+        },
+        {
+          "id": "4.7",
+          "title": {
+            "zh": "验证算法有效性",
+            "en": "Establishing algorithm correctness"
+          },
+          "anchor": "section-4-7",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "4.8",
+          "title": {
+            "zh": "小结",
+            "en": "Summary"
+          },
+          "anchor": "section-4-8",
+          "reader": null,
+          "demos": []
+        }
+      ],
+      "exercises": [
+        {
+          "id": "4.1",
+          "anchor": "exercise-4-1",
+          "resources": [
+            {
+              "path": "solutions/4_1.md",
+              "kind": "solution",
+              "format": "md"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "4.2",
+          "anchor": "exercise-4-2",
+          "resources": [
+            {
+              "path": "solutions/4_2.md",
+              "kind": "solution",
+              "format": "md"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "4.3",
+          "anchor": "exercise-4-3",
+          "resources": [
+            {
+              "path": "solutions/4_3.md",
+              "kind": "solution",
+              "format": "md"
+            },
+            {
+              "path": "solutions/4_3.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            },
+            {
+              "path": "solutions/4_3.tex",
+              "kind": "solution",
+              "format": "tex"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "4.4",
+          "anchor": "exercise-4-4",
+          "resources": [
+            {
+              "path": "solutions/4_4.md",
+              "kind": "solution",
+              "format": "md"
+            },
+            {
+              "path": "solutions/4_4.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            },
+            {
+              "path": "solutions/4_4.tex",
+              "kind": "solution",
+              "format": "tex"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "4.5",
+          "anchor": "exercise-4-5",
+          "resources": [
+            {
+              "path": "solutions/4_5.md",
+              "kind": "solution",
+              "format": "md"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "4.6",
+          "anchor": "exercise-4-6",
+          "resources": [
+            {
+              "path": "solutions/4_6.md",
+              "kind": "solution",
+              "format": "md"
+            }
+          ],
+          "links": [
+            "/division"
+          ]
+        },
+        {
+          "id": "4.7",
+          "anchor": "exercise-4-7",
+          "resources": [
+            {
+              "path": "solutions/4_7.cpp",
+              "kind": "program",
+              "format": "cpp"
+            }
+          ],
+          "links": []
+        }
+      ],
+      "resources": [
+        {
+          "path": "配套代码(fm2gpcode)/ch04.cpp",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "main",
+              "line": 25
+            }
+          ]
+        },
+        {
+          "path": "配套代码(fm2gpcode)/ch04.h",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "odd",
+              "line": 29
+            },
+            {
+              "name": "half",
+              "line": 30
+            },
+            {
+              "name": "gcm0",
+              "line": 32
+            },
+            {
+              "name": "gcm1",
+              "line": 40
+            },
+            {
+              "name": "segment_remainder",
+              "line": 48
+            },
+            {
+              "name": "gcm",
+              "line": 53
+            },
+            {
+              "name": "fast_segment_remainder",
+              "line": 61
+            },
+            {
+              "name": "fast_segment_gcm",
+              "line": 69
+            },
+            {
+              "name": "fast_segment_remainder1",
+              "line": 79
+            },
+            {
+              "name": "largest_doubling",
+              "line": 88
+            },
+            {
+              "name": "remainder",
+              "line": 94
+            },
+            {
+              "name": "quotient",
+              "line": 106
+            },
+            {
+              "name": "remainder_fibonacci",
+              "line": 133
+            },
+            {
+              "name": "gcm_remainder",
+              "line": 147
+            },
+            {
+              "name": "gcd",
+              "line": 155
+            }
+          ]
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt1.pdf",
+          "kind": "slides"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt1.pdf",
+          "kind": "slides"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": {
+        "zh": "现代数论的兴起",
+        "en": "The emergence of modern number theory"
+      },
+      "path": "/book/5",
+      "recap": false,
+      "sections": [
+        {
+          "id": "5.1",
+          "title": {
+            "zh": "梅森素数与费马素数",
+            "en": "Mersenne and Fermat primes"
+          },
+          "anchor": "section-5-1",
+          "reader": null,
+          "demos": [
+            "/prime-checker"
+          ]
+        },
+        {
+          "id": "5.2",
+          "title": {
+            "zh": "费马小定理",
+            "en": "Fermat’s little theorem"
+          },
+          "anchor": "section-5-2",
+          "reader": null,
+          "demos": [
+            "/fermat"
+          ]
+        },
+        {
+          "id": "5.3",
+          "title": {
+            "zh": "消去",
+            "en": "Cancellation"
+          },
+          "anchor": "section-5-3",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "5.4",
+          "title": {
+            "zh": "证明费马小定理",
+            "en": "Proving Fermat’s little theorem"
+          },
+          "anchor": "section-5-4",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "5.5",
+          "title": {
+            "zh": "欧拉定理",
+            "en": "Euler’s theorem"
+          },
+          "anchor": "section-5-5",
+          "reader": null,
+          "demos": [
+            "/euler"
+          ]
+        },
+        {
+          "id": "5.6",
+          "title": {
+            "zh": "模运算的应用",
+            "en": "Applications of modular arithmetic"
+          },
+          "anchor": "section-5-6",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "5.7",
+          "title": {
+            "zh": "小结",
+            "en": "Summary"
+          },
+          "anchor": "section-5-7",
+          "reader": null,
+          "demos": []
+        }
+      ],
+      "exercises": [
+        {
+          "id": "5.1",
+          "anchor": "exercise-5-1",
+          "resources": [
+            {
+              "path": "solutions/5_1.md",
+              "kind": "solution",
+              "format": "md"
+            },
+            {
+              "path": "solutions/5_1.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            },
+            {
+              "path": "solutions/5_1.tex",
+              "kind": "solution",
+              "format": "tex"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "5.2",
+          "anchor": "exercise-5-2",
+          "resources": [],
+          "links": []
+        }
+      ],
+      "resources": [
+        {
+          "path": "参考文档(References)/致德国公主的书信.pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt1.pdf",
+          "kind": "slides"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt1.pdf",
+          "kind": "slides"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": {
+        "zh": "数学中的抽象",
+        "en": "Abstraction in mathematics"
+      },
+      "path": "/book/6",
+      "recap": false,
+      "sections": [
+        {
+          "id": "6.1",
+          "title": {
+            "zh": "群",
+            "en": "Groups"
+          },
+          "anchor": "section-6-1",
+          "reader": null,
+          "demos": [
+            "/concepts/algebra"
+          ]
+        },
+        {
+          "id": "6.2",
+          "title": {
+            "zh": "幺半群和半群",
+            "en": "Monoids and semigroups"
+          },
+          "anchor": "section-6-2",
+          "reader": null,
+          "demos": [
+            "/concepts/algebra"
+          ]
+        },
+        {
+          "id": "6.3",
+          "title": {
+            "zh": "关于群的一些定理",
+            "en": "Some theorems about groups"
+          },
+          "anchor": "section-6-3",
+          "reader": "Chapter6",
+          "demos": []
+        },
+        {
+          "id": "6.4",
+          "title": {
+            "zh": "子群和循环群",
+            "en": "Subgroups and cyclic groups"
+          },
+          "anchor": "section-6-4",
+          "reader": "Chapter6",
+          "demos": []
+        },
+        {
+          "id": "6.5",
+          "title": {
+            "zh": "拉格朗日定理",
+            "en": "Lagrange’s theorem"
+          },
+          "anchor": "section-6-5",
+          "reader": "Chapter6",
+          "demos": []
+        },
+        {
+          "id": "6.6",
+          "title": {
+            "zh": "理论与模型",
+            "en": "Theories and models"
+          },
+          "anchor": "section-6-6",
+          "reader": "Chapter6Models",
+          "demos": []
+        },
+        {
+          "id": "6.7",
+          "title": {
+            "zh": "范畴与非范畴理论的例子",
+            "en": "Examples of categorical and noncategorical theories"
+          },
+          "anchor": "section-6-7",
+          "reader": "Chapter6Models",
+          "demos": []
+        },
+        {
+          "id": "6.8",
+          "title": {
+            "zh": "小结",
+            "en": "Summary"
+          },
+          "anchor": "section-6-8",
+          "reader": null,
+          "demos": []
+        }
+      ],
+      "exercises": [
+        {
+          "id": "6.1",
+          "anchor": "exercise-6-1",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "6.2",
+          "anchor": "exercise-6-2",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "6.3",
+          "anchor": "exercise-6-3",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "6.4",
+          "anchor": "exercise-6-4",
+          "resources": [
+            {
+              "path": "solutions/6_4.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            },
+            {
+              "path": "solutions/6_4.tex",
+              "kind": "solution",
+              "format": "tex"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "6.5",
+          "anchor": "exercise-6-5",
+          "resources": [
+            {
+              "path": "solutions/6_5.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            },
+            {
+              "path": "solutions/6_5.tex",
+              "kind": "solution",
+              "format": "tex"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "6.6",
+          "anchor": "exercise-6-6",
+          "resources": [
+            {
+              "path": "solutions/6_6.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            },
+            {
+              "path": "solutions/6_6.tex",
+              "kind": "solution",
+              "format": "tex"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "6.7",
+          "anchor": "exercise-6-7",
+          "resources": [
+            {
+              "path": "solutions/6_7.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            },
+            {
+              "path": "solutions/6_7.tex",
+              "kind": "solution",
+              "format": "tex"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "6.8",
+          "anchor": "exercise-6-8",
+          "resources": [
+            {
+              "path": "solutions/6_8.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            },
+            {
+              "path": "solutions/6_8.tex",
+              "kind": "solution",
+              "format": "tex"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "6.9",
+          "anchor": "exercise-6-9",
+          "resources": [
+            {
+              "path": "solutions/6_9.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            },
+            {
+              "path": "solutions/6_9.tex",
+              "kind": "solution",
+              "format": "tex"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "6.10",
+          "anchor": "exercise-6-10",
+          "resources": [
+            {
+              "path": "solutions/6.10.tex",
+              "kind": "solution",
+              "format": "tex"
+            },
+            {
+              "path": "solutions/6_10.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            }
+          ],
+          "links": []
+        }
+      ],
+      "resources": [
+        {
+          "path": "参考文档(References)/p59-kapur.pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "参考文档(References)/Tecton：A Language for Manipulating Generic Objects.pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt2.pdf",
+          "kind": "slides"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt2.pdf",
+          "kind": "slides"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": {
+        "zh": "推导泛型算法",
+        "en": "Deriving a generic algorithm"
+      },
+      "path": "/book/7",
+      "recap": false,
+      "sections": [
+        {
+          "id": "7.1",
+          "title": {
+            "zh": "梳理算法的要求",
+            "en": "Identifying algorithm requirements"
+          },
+          "anchor": "section-7-1",
+          "reader": null,
+          "demos": [
+            "/power"
+          ]
+        },
+        {
+          "id": "7.2",
+          "title": {
+            "zh": "对A 的要求",
+            "en": "Requirements on A"
+          },
+          "anchor": "section-7-2",
+          "reader": null,
+          "demos": [
+            "/power"
+          ]
+        },
+        {
+          "id": "7.3",
+          "title": {
+            "zh": "对N 的要求",
+            "en": "Requirements on N"
+          },
+          "anchor": "section-7-3",
+          "reader": null,
+          "demos": [
+            "/power"
+          ]
+        },
+        {
+          "id": "7.4",
+          "title": {
+            "zh": "新的要求",
+            "en": "New requirements"
+          },
+          "anchor": "section-7-4",
+          "reader": null,
+          "demos": [
+            "/power"
+          ]
+        },
+        {
+          "id": "7.5",
+          "title": {
+            "zh": "将乘法转换为幂运算",
+            "en": "From multiplication to exponentiation"
+          },
+          "anchor": "section-7-5",
+          "reader": null,
+          "demos": [
+            "/power"
+          ]
+        },
+        {
+          "id": "7.6",
+          "title": {
+            "zh": "运算的泛化",
+            "en": "Generalizing the operation"
+          },
+          "anchor": "section-7-6",
+          "reader": null,
+          "demos": [
+            "/power"
+          ]
+        },
+        {
+          "id": "7.7",
+          "title": {
+            "zh": "计算斐波那契数",
+            "en": "Computing Fibonacci numbers"
+          },
+          "anchor": "section-7-7",
+          "reader": null,
+          "demos": [
+            "/fast-fibonacci"
+          ]
+        },
+        {
+          "id": "7.8",
+          "title": {
+            "zh": "小结",
+            "en": "Summary"
+          },
+          "anchor": "section-7-8",
+          "reader": null,
+          "demos": []
+        }
+      ],
+      "exercises": [
+        {
+          "id": "7.1",
+          "anchor": "exercise-7-1",
+          "resources": [
+            {
+              "path": "solutions/7_1.cpp",
+              "kind": "program",
+              "format": "cpp"
+            }
+          ],
+          "links": [
+            "/fibonacci"
+          ]
+        },
+        {
+          "id": "7.2",
+          "anchor": "exercise-7-2",
+          "resources": [
+            {
+              "path": "solutions/7_2.cpp",
+              "kind": "program",
+              "format": "cpp"
+            }
+          ],
+          "links": []
+        }
+      ],
+      "resources": [
+        {
+          "path": "配套代码(fm2gpcode)/ch07.cpp",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "main",
+              "line": 25
+            }
+          ]
+        },
+        {
+          "path": "配套代码(fm2gpcode)/ch07.h",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "odd",
+              "line": 39
+            },
+            {
+              "name": "half",
+              "line": 42
+            },
+            {
+              "name": "mult_acc4",
+              "line": 44
+            },
+            {
+              "name": "multiply_accumulate0",
+              "line": 56
+            },
+            {
+              "name": "multiply_accumulate",
+              "line": 73
+            },
+            {
+              "name": "multiply_accumulate_semigroup",
+              "line": 86
+            },
+            {
+              "name": "multiply_semigroup",
+              "line": 100
+            },
+            {
+              "name": "multiply_monoid",
+              "line": 114
+            },
+            {
+              "name": "multiply_group",
+              "line": 121
+            },
+            {
+              "name": "power_accumulate_semigroup",
+              "line": 132
+            },
+            {
+              "name": "power_semigroup",
+              "line": 146
+            },
+            {
+              "name": "power_monoid",
+              "line": 157
+            },
+            {
+              "name": "multiplicative_inverse",
+              "line": 164
+            },
+            {
+              "name": "power_group",
+              "line": 169
+            },
+            {
+              "name": "power_accumulate_semigroup",
+              "line": 181
+            },
+            {
+              "name": "power_semigroup",
+              "line": 196
+            },
+            {
+              "name": "identity_element",
+              "line": 207
+            },
+            {
+              "name": "identity_element",
+              "line": 212
+            },
+            {
+              "name": "power_monoid",
+              "line": 218
+            },
+            {
+              "name": "inverse_operation",
+              "line": 225
+            },
+            {
+              "name": "inverse_operation",
+              "line": 237
+            },
+            {
+              "name": "power_group",
+              "line": 243
+            },
+            {
+              "name": "fib0",
+              "line": 254
+            },
+            {
+              "name": "fibonacci_iterative",
+              "line": 260
+            }
+          ]
+        },
+        {
+          "path": "配套代码(fm2gpcode)/ch07_6.cpp",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "power_accumulate_semigroup",
+              "line": 32
+            },
+            {
+              "name": "main",
+              "line": 45
+            }
+          ]
+        },
+        {
+          "path": "参考文档(References)/Addition Machines by Floyd & Knuth.pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "参考文档(References)/Generic Programming by Musser & Stepanov.pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "参考文档(References)/MapReduce：Simplied Data Processing on Large Clusters.pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "参考文档(References)/Tecton：A Language for Manipulating Generic Objects.pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt2.pdf",
+          "kind": "slides"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt2.pdf",
+          "kind": "slides"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": {
+        "zh": "更多代数结构",
+        "en": "More algebraic structures"
+      },
+      "path": "/book/8",
+      "recap": false,
+      "sections": [
+        {
+          "id": "8.1",
+          "title": {
+            "zh": "斯蒂文、多项式与最大公约数",
+            "en": "Stevin, polynomials, and GCD"
+          },
+          "anchor": "section-8-1",
+          "reader": null,
+          "demos": [
+            "/polynomial-gcd",
+            "/horner"
+          ]
+        },
+        {
+          "id": "8.2",
+          "title": {
+            "zh": "哥廷根与德国数学",
+            "en": "Göttingen and German mathematics"
+          },
+          "anchor": "section-8-2",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "8.3",
+          "title": {
+            "zh": "诺特与抽象代数的诞生",
+            "en": "Noether and the birth of abstract algebra"
+          },
+          "anchor": "section-8-3",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "8.4",
+          "title": {
+            "zh": "环",
+            "en": "Rings"
+          },
+          "anchor": "section-8-4",
+          "reader": "Chapter8",
+          "demos": []
+        },
+        {
+          "id": "8.5",
+          "title": {
+            "zh": "矩阵乘法与半环",
+            "en": "Matrix multiplication and semirings"
+          },
+          "anchor": "section-8-5",
+          "reader": null,
+          "demos": [
+            "/concepts/matrices"
+          ]
+        },
+        {
+          "id": "8.6",
+          "title": {
+            "zh": "应用：社交网络与最短路径",
+            "en": "Application: social networks and shortest paths"
+          },
+          "anchor": "section-8-6",
+          "reader": null,
+          "demos": [
+            "/shortest-path",
+            "/concepts/matrices"
+          ]
+        },
+        {
+          "id": "8.7",
+          "title": {
+            "zh": "欧几里得整环",
+            "en": "Euclidean domains"
+          },
+          "anchor": "section-8-7",
+          "reader": null,
+          "demos": [
+            "/polynomial-gcd"
+          ]
+        },
+        {
+          "id": "8.8",
+          "title": {
+            "zh": "域和其他代数结构",
+            "en": "Fields and other algebraic structures"
+          },
+          "anchor": "section-8-8",
+          "reader": "Chapter8",
+          "demos": [
+            "/polynomial-gcd"
+          ]
+        },
+        {
+          "id": "8.9",
+          "title": {
+            "zh": "小结",
+            "en": "Summary"
+          },
+          "anchor": "section-8-9",
+          "reader": null,
+          "demos": []
+        }
+      ],
+      "exercises": [
+        {
+          "id": "8.1",
+          "anchor": "exercise-8-1",
+          "resources": [
+            {
+              "path": "solutions/8_1.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "8.2",
+          "anchor": "exercise-8-2",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "8.3",
+          "anchor": "exercise-8-3",
+          "resources": [],
+          "links": [
+            "/polynomial-gcd"
+          ]
+        },
+        {
+          "id": "8.4",
+          "anchor": "exercise-8-4",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "8.5",
+          "anchor": "exercise-8-5",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "8.6",
+          "anchor": "exercise-8-6",
+          "resources": [],
+          "links": [
+            "/book/8#zero-divisor-not-unit"
+          ]
+        },
+        {
+          "id": "8.7",
+          "anchor": "exercise-8-7",
+          "resources": [
+            {
+              "path": "solutions/8_7.cpp",
+              "kind": "program",
+              "format": "cpp"
+            }
+          ],
+          "links": [
+            "/concepts/matrices"
+          ]
+        },
+        {
+          "id": "8.8",
+          "anchor": "exercise-8-8",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "8.9",
+          "anchor": "exercise-8-9",
+          "resources": [],
+          "links": []
+        }
+      ],
+      "resources": [
+        {
+          "path": "配套代码(fm2gpcode)/ch08.cpp",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "main",
+              "line": 25
+            }
+          ]
+        },
+        {
+          "path": "配套代码(fm2gpcode)/ch08.h",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "polynomial_value",
+              "line": 28
+            }
+          ]
+        },
+        {
+          "path": "参考文档(References)/p59-kapur.pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "参考文档(References)/Simon Stevin of Bruges (1548-1620).pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt2.pdf",
+          "kind": "slides"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt2.pdf",
+          "kind": "slides"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": {
+        "zh": "组织数学知识",
+        "en": "Organizing mathematical knowledge"
+      },
+      "path": "/book/9",
+      "recap": false,
+      "sections": [
+        {
+          "id": "9.1",
+          "title": {
+            "zh": "证明",
+            "en": "Proofs"
+          },
+          "anchor": "section-9-1",
+          "reader": "Chapter9",
+          "demos": []
+        },
+        {
+          "id": "9.2",
+          "title": {
+            "zh": "第一个定理",
+            "en": "The first theorem"
+          },
+          "anchor": "section-9-2",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "9.3",
+          "title": {
+            "zh": "欧几里得与公理化方法",
+            "en": "Euclid and the axiomatic method"
+          },
+          "anchor": "section-9-3",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "9.4",
+          "title": {
+            "zh": "非欧几何",
+            "en": "Non-Euclidean geometry"
+          },
+          "anchor": "section-9-4",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "9.5",
+          "title": {
+            "zh": "希尔伯特的形式主义方法",
+            "en": "Hilbert’s formalist approach"
+          },
+          "anchor": "section-9-5",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "9.6",
+          "title": {
+            "zh": "皮亚诺和他的公理",
+            "en": "Peano and his axioms"
+          },
+          "anchor": "section-9-6",
+          "reader": "Chapter9",
+          "demos": []
+        },
+        {
+          "id": "9.7",
+          "title": {
+            "zh": "构建算术体系",
+            "en": "Constructing arithmetic"
+          },
+          "anchor": "section-9-7",
+          "reader": "Chapter9",
+          "demos": []
+        },
+        {
+          "id": "9.8",
+          "title": {
+            "zh": "小结",
+            "en": "Summary"
+          },
+          "anchor": "section-9-8",
+          "reader": null,
+          "demos": []
+        }
+      ],
+      "exercises": [
+        {
+          "id": "9.1",
+          "anchor": "exercise-9-1",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "9.2",
+          "anchor": "exercise-9-2",
+          "resources": [],
+          "links": [
+            "/pi-upper-bound"
+          ]
+        },
+        {
+          "id": "9.3",
+          "anchor": "exercise-9-3",
+          "resources": [
+            {
+              "path": "solutions/9_3.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            },
+            {
+              "path": "solutions/9_3.tex",
+              "kind": "solution",
+              "format": "tex"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "9.4",
+          "anchor": "exercise-9-4",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "9.5",
+          "anchor": "exercise-9-5",
+          "resources": [],
+          "links": []
+        }
+      ],
+      "resources": [
+        {
+          "path": "参考文档(References)/Social Processes and Proofs of Theorems and Programs.pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "参考文档(References)/Twelve Articles on Giuseppe Peano.pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt2.pdf",
+          "kind": "slides"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt2.pdf",
+          "kind": "slides"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": {
+        "zh": "基本编程概念",
+        "en": "Fundamental programming concepts"
+      },
+      "path": "/book/10",
+      "recap": false,
+      "sections": [
+        {
+          "id": "10.1",
+          "title": {
+            "zh": "亚里士多德与抽象",
+            "en": "Aristotle and abstraction"
+          },
+          "anchor": "section-10-1",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "10.2",
+          "title": {
+            "zh": "值和类型",
+            "en": "Values and types"
+          },
+          "anchor": "section-10-2",
+          "reader": "Chapter10",
+          "demos": []
+        },
+        {
+          "id": "10.3",
+          "title": {
+            "zh": "概念",
+            "en": "Concepts"
+          },
+          "anchor": "section-10-3",
+          "reader": "Chapter10",
+          "demos": []
+        },
+        {
+          "id": "10.4",
+          "title": {
+            "zh": "迭代器",
+            "en": "Iterators"
+          },
+          "anchor": "section-10-4",
+          "reader": null,
+          "demos": [
+            "/concepts/iterators"
+          ]
+        },
+        {
+          "id": "10.5",
+          "title": {
+            "zh": "迭代器类别、操作和trait",
+            "en": "Iterator categories, operations, and traits"
+          },
+          "anchor": "section-10-5",
+          "reader": null,
+          "demos": [
+            "/concepts/iterators"
+          ]
+        },
+        {
+          "id": "10.6",
+          "title": {
+            "zh": "区间",
+            "en": "Ranges"
+          },
+          "anchor": "section-10-6",
+          "reader": null,
+          "demos": [
+            "/concepts/iterators"
+          ]
+        },
+        {
+          "id": "10.7",
+          "title": {
+            "zh": "线性查找",
+            "en": "Linear search"
+          },
+          "anchor": "section-10-7",
+          "reader": null,
+          "demos": [
+            "/linear-search"
+          ]
+        },
+        {
+          "id": "10.8",
+          "title": {
+            "zh": "二叉查找",
+            "en": "Binary search"
+          },
+          "anchor": "section-10-8",
+          "reader": null,
+          "demos": [
+            "/binary-search"
+          ]
+        },
+        {
+          "id": "10.9",
+          "title": {
+            "zh": "小结",
+            "en": "Summary"
+          },
+          "anchor": "section-10-9",
+          "reader": null,
+          "demos": []
+        }
+      ],
+      "exercises": [
+        {
+          "id": "10.1",
+          "anchor": "exercise-10-1",
+          "resources": [],
+          "links": []
+        }
+      ],
+      "resources": [
+        {
+          "path": "配套代码(fm2gpcode)/ch10.cpp",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "main",
+              "line": 36
+            }
+          ]
+        },
+        {
+          "path": "配套代码(fm2gpcode)/ch10.h",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "distance",
+              "line": 46
+            },
+            {
+              "name": "distance",
+              "line": 57
+            },
+            {
+              "name": "distance",
+              "line": 63
+            },
+            {
+              "name": "advance",
+              "line": 70
+            },
+            {
+              "name": "advance",
+              "line": 78
+            },
+            {
+              "name": "advance",
+              "line": 83
+            },
+            {
+              "name": "find_if",
+              "line": 90
+            },
+            {
+              "name": "partition_point_n",
+              "line": 105
+            },
+            {
+              "name": "partition_point",
+              "line": 121
+            },
+            {
+              "name": "lower_bound",
+              "line": 126
+            },
+            {
+              "name": "upper_bound",
+              "line": 132
+            }
+          ]
+        },
+        {
+          "path": "参考文档(References)/Generic Programming by Musser & Stepanov.pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "参考文档(References)/The Standard Template Library by Stepanov & Lee.pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt3.pdf",
+          "kind": "slides"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt3.pdf",
+          "kind": "slides"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": {
+        "zh": "排列算法",
+        "en": "Permutation algorithms"
+      },
+      "path": "/book/11",
+      "recap": false,
+      "sections": [
+        {
+          "id": "11.1",
+          "title": {
+            "zh": "排列与对换",
+            "en": "Permutations and transpositions"
+          },
+          "anchor": "section-11-1",
+          "reader": "Chapter11",
+          "demos": []
+        },
+        {
+          "id": "11.2",
+          "title": {
+            "zh": "区间交换",
+            "en": "Swapping ranges"
+          },
+          "anchor": "section-11-2",
+          "reader": null,
+          "demos": [
+            "/swap"
+          ]
+        },
+        {
+          "id": "11.3",
+          "title": {
+            "zh": "旋转",
+            "en": "Rotation"
+          },
+          "anchor": "section-11-3",
+          "reader": null,
+          "demos": [
+            "/rotate"
+          ]
+        },
+        {
+          "id": "11.4",
+          "title": {
+            "zh": "使用循环",
+            "en": "Using cycles"
+          },
+          "anchor": "section-11-4",
+          "reader": "Chapter11",
+          "demos": [
+            "/cycle"
+          ]
+        },
+        {
+          "id": "11.5",
+          "title": {
+            "zh": "反转",
+            "en": "Reversal"
+          },
+          "anchor": "section-11-5",
+          "reader": null,
+          "demos": [
+            "/reverse"
+          ]
+        },
+        {
+          "id": "11.6",
+          "title": {
+            "zh": "空间复杂度",
+            "en": "Space complexity"
+          },
+          "anchor": "section-11-6",
+          "reader": null,
+          "demos": [
+            "/reverse"
+          ]
+        },
+        {
+          "id": "11.7",
+          "title": {
+            "zh": "内存自适应算法",
+            "en": "Memory-adaptive algorithms"
+          },
+          "anchor": "section-11-7",
+          "reader": null,
+          "demos": [
+            "/reverse"
+          ]
+        },
+        {
+          "id": "11.8",
+          "title": {
+            "zh": "小结",
+            "en": "Summary"
+          },
+          "anchor": "section-11-8",
+          "reader": null,
+          "demos": []
+        }
+      ],
+      "exercises": [
+        {
+          "id": "11.1",
+          "anchor": "exercise-11-1",
+          "resources": [
+            {
+              "path": "solutions/11_1.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            },
+            {
+              "path": "solutions/11_1.tex",
+              "kind": "solution",
+              "format": "tex"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "11.2",
+          "anchor": "exercise-11-2",
+          "resources": [
+            {
+              "path": "solutions/11_2.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            },
+            {
+              "path": "solutions/11_2.tex",
+              "kind": "solution",
+              "format": "tex"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "11.3",
+          "anchor": "exercise-11-3",
+          "resources": [
+            {
+              "path": "solutions/11_3.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            },
+            {
+              "path": "solutions/11_3.tex",
+              "kind": "solution",
+              "format": "tex"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "11.4",
+          "anchor": "exercise-11-4",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "11.5",
+          "anchor": "exercise-11-5",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "11.6",
+          "anchor": "exercise-11-6",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "11.7",
+          "anchor": "exercise-11-7",
+          "resources": [
+            {
+              "path": "solutions/11_7.cpp",
+              "kind": "program",
+              "format": "cpp"
+            },
+            {
+              "path": "solutions/11_7.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "11.8",
+          "anchor": "exercise-11-8",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "11.9",
+          "anchor": "exercise-11-9",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "11.10",
+          "anchor": "exercise-11-10",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "11.11",
+          "anchor": "exercise-11-11",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "11.12",
+          "anchor": "exercise-11-12",
+          "resources": [
+            {
+              "path": "solutions/11_12.pdf",
+              "kind": "solution",
+              "format": "pdf"
+            },
+            {
+              "path": "solutions/11_12.tex",
+              "kind": "solution",
+              "format": "tex"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "11.13",
+          "anchor": "exercise-11-13",
+          "resources": [],
+          "links": [
+            "/reverse"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "path": "配套代码(fm2gpcode)/ch11.cpp",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "print_range",
+              "line": 27
+            },
+            {
+              "name": "main",
+              "line": 32
+            }
+          ]
+        },
+        {
+          "path": "配套代码(fm2gpcode)/ch11.h",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "odd",
+              "line": 38
+            },
+            {
+              "name": "half",
+              "line": 41
+            },
+            {
+              "name": "swap",
+              "line": 61
+            },
+            {
+              "name": "swap_ranges",
+              "line": 71
+            },
+            {
+              "name": "swap_ranges",
+              "line": 77
+            },
+            {
+              "name": "swap_ranges_n",
+              "line": 85
+            },
+            {
+              "name": "gries_mills_rotate",
+              "line": 96
+            },
+            {
+              "name": "rotate_unguarded",
+              "line": 112
+            },
+            {
+              "name": "rotate",
+              "line": 123
+            },
+            {
+              "name": "rotate_cycle_from",
+              "line": 142
+            },
+            {
+              "name": "gcd",
+              "line": 169
+            },
+            {
+              "name": "rotate",
+              "line": 178
+            },
+            {
+              "name": "reverse",
+              "line": 190
+            },
+            {
+              "name": "reverse_n",
+              "line": 195
+            },
+            {
+              "name": "reverse",
+              "line": 203
+            },
+            {
+              "name": "three_reverse_rotate",
+              "line": 208
+            },
+            {
+              "name": "reverse_until",
+              "line": 215
+            },
+            {
+              "name": "rotate",
+              "line": 221
+            },
+            {
+              "name": "rotate",
+              "line": 231
+            },
+            {
+              "name": "reverse_recursive",
+              "line": 236
+            },
+            {
+              "name": "reverse",
+              "line": 248
+            },
+            {
+              "name": "reverse",
+              "line": 253
+            },
+            {
+              "name": "reverse_copy",
+              "line": 260
+            },
+            {
+              "name": "reverse_n_with_buffer",
+              "line": 266
+            },
+            {
+              "name": "reverse_n_adaptive",
+              "line": 274
+            }
+          ]
+        },
+        {
+          "path": "参考文档(References)/The Standard Template Library by Stepanov & Lee.pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt3.pdf",
+          "kind": "slides"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt3.pdf",
+          "kind": "slides"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": {
+        "zh": "再论最大公约数算法",
+        "en": "Revisiting GCD"
+      },
+      "path": "/book/12",
+      "recap": false,
+      "sections": [
+        {
+          "id": "12.1",
+          "title": {
+            "zh": "硬件限制与一种更高效的算法",
+            "en": "Hardware constraints and a more efficient algorithm"
+          },
+          "anchor": "section-12-1",
+          "reader": null,
+          "demos": [
+            "/stein-gcd"
+          ]
+        },
+        {
+          "id": "12.2",
+          "title": {
+            "zh": "推广斯坦因算法",
+            "en": "Generalizing Stein’s algorithm"
+          },
+          "anchor": "section-12-2",
+          "reader": null,
+          "demos": [
+            "/stein-gcd"
+          ]
+        },
+        {
+          "id": "12.3",
+          "title": {
+            "zh": "贝祖定理",
+            "en": "Bézout’s theorem"
+          },
+          "anchor": "section-12-3",
+          "reader": null,
+          "demos": [
+            "/extended-gcd"
+          ]
+        },
+        {
+          "id": "12.4",
+          "title": {
+            "zh": "扩展最大公约数算法",
+            "en": "The extended GCD algorithm"
+          },
+          "anchor": "section-12-4",
+          "reader": null,
+          "demos": [
+            "/extended-gcd"
+          ]
+        },
+        {
+          "id": "12.5",
+          "title": {
+            "zh": "GCD 的应用",
+            "en": "Applications of GCD"
+          },
+          "anchor": "section-12-5",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "12.6",
+          "title": {
+            "zh": "小结",
+            "en": "Summary"
+          },
+          "anchor": "section-12-6",
+          "reader": null,
+          "demos": []
+        }
+      ],
+      "exercises": [
+        {
+          "id": "12.1",
+          "anchor": "exercise-12-1",
+          "resources": [
+            {
+              "path": "solutions/12_1.cpp",
+              "kind": "program",
+              "format": "cpp"
+            }
+          ],
+          "links": [
+            "/gcd-comparison"
+          ]
+        },
+        {
+          "id": "12.2",
+          "anchor": "exercise-12-2",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "12.3",
+          "anchor": "exercise-12-3",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "12.4",
+          "anchor": "exercise-12-4",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "12.5",
+          "anchor": "exercise-12-5",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "12.6",
+          "anchor": "exercise-12-6",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "12.7",
+          "anchor": "exercise-12-7",
+          "resources": [],
+          "links": []
+        }
+      ],
+      "resources": [
+        {
+          "path": "配套代码(fm2gpcode)/ch12.cpp",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "main",
+              "line": 26
+            }
+          ]
+        },
+        {
+          "path": "配套代码(fm2gpcode)/ch12.h",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "even",
+              "line": 31
+            },
+            {
+              "name": "stein_gcd",
+              "line": 34
+            },
+            {
+              "name": "gcd",
+              "line": 64
+            },
+            {
+              "name": "extended_gcd",
+              "line": 83
+            }
+          ]
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt3.pdf",
+          "kind": "slides"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt3.pdf",
+          "kind": "slides"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": {
+        "zh": "实际应用",
+        "en": "Real-world applications"
+      },
+      "path": "/book/13",
+      "recap": false,
+      "sections": [
+        {
+          "id": "13.1",
+          "title": {
+            "zh": "密码学",
+            "en": "Cryptography"
+          },
+          "anchor": "section-13-1",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "13.2",
+          "title": {
+            "zh": "素性测试",
+            "en": "Primality testing"
+          },
+          "anchor": "section-13-2",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "13.3",
+          "title": {
+            "zh": "米勒-拉宾测试",
+            "en": "The Miller–Rabin test"
+          },
+          "anchor": "section-13-3",
+          "reader": null,
+          "demos": [
+            "/miller-rabin"
+          ]
+        },
+        {
+          "id": "13.4",
+          "title": {
+            "zh": "RSA 算法：工作方式和原理",
+            "en": "RSA: how it works and why"
+          },
+          "anchor": "section-13-4",
+          "reader": null,
+          "demos": [
+            "/rsa"
+          ]
+        },
+        {
+          "id": "13.5",
+          "title": {
+            "zh": "小结",
+            "en": "Summary"
+          },
+          "anchor": "section-13-5",
+          "reader": null,
+          "demos": []
+        }
+      ],
+      "exercises": [
+        {
+          "id": "13.1",
+          "anchor": "exercise-13-1",
+          "resources": [
+            {
+              "path": "solutions/13_1-13_2.cpp",
+              "kind": "program",
+              "format": "cpp"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "13.2",
+          "anchor": "exercise-13-2",
+          "resources": [
+            {
+              "path": "solutions/13_1-13_2.cpp",
+              "kind": "program",
+              "format": "cpp"
+            }
+          ],
+          "links": []
+        },
+        {
+          "id": "13.3",
+          "anchor": "exercise-13-3",
+          "resources": [],
+          "links": []
+        },
+        {
+          "id": "13.4",
+          "anchor": "exercise-13-4",
+          "resources": [],
+          "links": []
+        }
+      ],
+      "resources": [
+        {
+          "path": "配套代码(fm2gpcode)/ch13.cpp",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "main",
+              "line": 27
+            }
+          ]
+        },
+        {
+          "path": "配套代码(fm2gpcode)/ch13.h",
+          "kind": "code",
+          "functions": [
+            {
+              "name": "divides",
+              "line": 40
+            },
+            {
+              "name": "smallest_divisor",
+              "line": 45
+            },
+            {
+              "name": "is_prime",
+              "line": 55
+            },
+            {
+              "name": "identity_element",
+              "line": 70
+            },
+            {
+              "name": "multiplicative_inverse_fermat",
+              "line": 75
+            },
+            {
+              "name": "fermat_test",
+              "line": 81
+            },
+            {
+              "name": "miller_rabin_test",
+              "line": 92
+            },
+            {
+              "name": "multiplicative_inverse",
+              "line": 113
+            }
+          ]
+        },
+        {
+          "path": "参考文档(References)/It is easy to determine whether a given integer is prime.pdf",
+          "kind": "reference"
+        },
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt3.pdf",
+          "kind": "slides"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": {
+        "zh": "全书总结",
+        "en": "Conclusions"
+      },
+      "path": "/book/14",
+      "recap": true,
+      "sections": [],
+      "exercises": [],
+      "resources": [
+        {
+          "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt3.pdf",
+          "kind": "slides"
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "title": {
+        "zh": "记法",
+        "en": "Notation"
+      },
+      "path": "/book/A",
+      "recap": false,
+      "sections": [
+        {
+          "id": "A.1",
+          "title": {
+            "zh": "记法",
+            "en": "Notation"
+          },
+          "anchor": "section-A-1",
+          "reader": "AppendixReference",
+          "demos": []
+        },
+        {
+          "id": "A.2",
+          "title": {
+            "zh": "示例",
+            "en": "Examples"
+          },
+          "anchor": "section-A-2",
+          "reader": "AppendixReference",
+          "demos": []
+        },
+        {
+          "id": "A.3",
+          "title": {
+            "zh": "蕴含与逆否命题",
+            "en": "Implication and contraposition"
+          },
+          "anchor": "section-A-3",
+          "reader": "AppendixReference",
+          "demos": []
+        }
+      ],
+      "exercises": [],
+      "resources": []
+    },
+    {
+      "id": "B",
+      "title": {
+        "zh": "常用的证明方法",
+        "en": "Common proof techniques"
+      },
+      "path": "/book/B",
+      "recap": false,
+      "sections": [
+        {
+          "id": "B.1",
+          "title": {
+            "zh": "反证法",
+            "en": "Proof by contradiction"
+          },
+          "anchor": "section-B-1",
+          "reader": "AppendixReference",
+          "demos": []
+        },
+        {
+          "id": "B.2",
+          "title": {
+            "zh": "数学归纳法",
+            "en": "Mathematical induction"
+          },
+          "anchor": "section-B-2",
+          "reader": "AppendixReference",
+          "demos": []
+        },
+        {
+          "id": "B.3",
+          "title": {
+            "zh": "鸽巢原理",
+            "en": "The pigeonhole principle"
+          },
+          "anchor": "section-B-3",
+          "reader": "AppendixReference",
+          "demos": []
+        }
+      ],
+      "exercises": [],
+      "resources": []
+    },
+    {
+      "id": "C",
+      "title": {
+        "zh": "C++特有的语法或构造",
+        "en": "C++ syntax and constructs"
+      },
+      "path": "/book/C",
+      "recap": false,
+      "sections": [
+        {
+          "id": "C.1",
+          "title": {
+            "zh": "模板函数",
+            "en": "Function templates"
+          },
+          "anchor": "section-C-1",
+          "reader": "AppendixC",
+          "demos": []
+        },
+        {
+          "id": "C.2",
+          "title": {
+            "zh": "概念",
+            "en": "Concepts"
+          },
+          "anchor": "section-C-2",
+          "reader": "AppendixC",
+          "demos": []
+        },
+        {
+          "id": "C.3",
+          "title": {
+            "zh": "声明语法和类型常量",
+            "en": "Declaration syntax and type constants"
+          },
+          "anchor": "section-C-3",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "C.4",
+          "title": {
+            "zh": "函数对象",
+            "en": "Function objects"
+          },
+          "anchor": "section-C-4",
+          "reader": "AppendixC",
+          "demos": []
+        },
+        {
+          "id": "C.5",
+          "title": {
+            "zh": "前置条件、后置条件和断言",
+            "en": "Preconditions, postconditions, and assertions"
+          },
+          "anchor": "section-C-5",
+          "reader": "AppendixC",
+          "demos": []
+        },
+        {
+          "id": "C.6",
+          "title": {
+            "zh": "STL 算法和数据结构",
+            "en": "STL algorithms and data structures"
+          },
+          "anchor": "section-C-6",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "C.7",
+          "title": {
+            "zh": "迭代器与区间",
+            "en": "Iterators and ranges"
+          },
+          "anchor": "section-C-7",
+          "reader": null,
+          "demos": [
+            "/concepts/iterators"
+          ]
+        },
+        {
+          "id": "C.8",
+          "title": {
+            "zh": "使用using 实现类型别名和类型函数",
+            "en": "Type aliases and type functions with using"
+          },
+          "anchor": "section-C-8",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "C.9",
+          "title": {
+            "zh": "C++11 中的初始化列表",
+            "en": "Initializer lists in C++11"
+          },
+          "anchor": "section-C-9",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "C.10",
+          "title": {
+            "zh": "lambda 函数",
+            "en": "Lambda functions"
+          },
+          "anchor": "section-C-10",
+          "reader": null,
+          "demos": []
+        },
+        {
+          "id": "C.11",
+          "title": {
+            "zh": "关于inline 的说明",
+            "en": "About inline"
+          },
+          "anchor": "section-C-11",
+          "reader": null,
+          "demos": []
+        }
+      ],
+      "exercises": [],
+      "resources": [
+        {
+          "path": "参考文档(References)/The Standard Template Library by Stepanov & Lee.pdf",
+          "kind": "reference"
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "path": "配套代码(fm2gpcode)/ch02.cpp",
+      "bytes": 1720,
+      "sha256": "bbe85864d9c8bfa549d184a0291c300dccdb9656bf02bd4cd5e4683df430f11d"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch02.h",
+      "bytes": 2767,
+      "sha256": "4f1277e7a5bb1acef6b032949cf59d65b87a316743defa7be492362ca65b4a1f"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch03.cpp",
+      "bytes": 1651,
+      "sha256": "8eeb95814c20cdc41016f11420cd236df03a6f45c4e17ac79a72dd23d2c911de"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch03.h",
+      "bytes": 2962,
+      "sha256": "68ed368e0e62ae32e3d4f8352a923e146331d53b03c50777be2fecd219daee4f"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch04.cpp",
+      "bytes": 1821,
+      "sha256": "3365553871573fc1db520620ce2c471e15673673dbbc005ec014ffea8ff993b3"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch04.h",
+      "bytes": 4206,
+      "sha256": "92ccb800da37e7fed899df49f6863fc8def1ccae4e46a485854ee06b99179c45"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch07.cpp",
+      "bytes": 2656,
+      "sha256": "69612bc894a53cf0778ce39beedd9e198e141f31ffb56904ae4e9aa72b9bf254"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch07.h",
+      "bytes": 6470,
+      "sha256": "7629f0bcdda6fa4385c609ac30b4c769fd496acdd7d5d32c75f60e71d3fbc2b1"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch07_6.cpp",
+      "bytes": 3121,
+      "sha256": "5753d9a61c72e488a600f0b5f8879a3b19cfbe5351173e634d5904c59d9cc822"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch08.cpp",
+      "bytes": 1130,
+      "sha256": "43bf3c9359aa02c6c2551cc36cf08ad7eecf5f8ddf6be79c8efe2c0ae7a32367"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch08.h",
+      "bytes": 1248,
+      "sha256": "48c5cbc312d9bca72c28ca78226489b9499f8116c0a79aa1917bc41a43193fdc"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch10.cpp",
+      "bytes": 3635,
+      "sha256": "b42d0e60485dc579a0b068940e0465a566ffcf0ab636efecdbb2f1be847d1603"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch10.h",
+      "bytes": 3695,
+      "sha256": "b796160f88b4088378986c8afc7e1a11dffb7aa02ee860aa1ccea52fa9550c8b"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch11.cpp",
+      "bytes": 4453,
+      "sha256": "042f5a73d11456a3d0853c069400a82c0c470f6110072648d6902f8e53557c7a"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch11.h",
+      "bytes": 7821,
+      "sha256": "5a8f9c75d6590b8eb3d0523892e5f2943e1a8fe4e01815b4f481bfe147f9eb1e"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch12.cpp",
+      "bytes": 1295,
+      "sha256": "4e80290a83b4d9fcc42ebf2d0bf44c44dd26e499661c759b56038c7ff110f6c2"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch12.h",
+      "bytes": 3799,
+      "sha256": "6e6da5bfc010928f9c7c5420198ad549e700ddca286562871bbe87fb0cc6211c"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch13.cpp",
+      "bytes": 2241,
+      "sha256": "10402dd6cedb5e2a28b4e2cda1db4f848fa5d909127018329e6a91e6a967f5df"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/ch13.h",
+      "bytes": 3304,
+      "sha256": "e94ca12542f29d49291e278107791302a88064db67826406f12f8b592382b99c"
+    },
+    {
+      "path": "参考文档(References)/Addition Machines by Floyd & Knuth.pdf",
+      "bytes": 646656,
+      "sha256": "f4f09a88d8a28edc6f5966a1f5ce92875f4ebe842d0eed7d1ebb75490482228e"
+    },
+    {
+      "path": "参考文档(References)/Generic Programming by Musser & Stepanov.pdf",
+      "bytes": 226209,
+      "sha256": "a00a9dac9ce892439b1adb3d67cadc76115cecfda0e5d06c62282c25b5c4b27b"
+    },
+    {
+      "path": "参考文档(References)/It is easy to determine whether a given integer is prime.pdf",
+      "bytes": 524879,
+      "sha256": "373397a7deeca36699995eebc822412408b559c22d9ee4526d8d1d87fa5568d5"
+    },
+    {
+      "path": "参考文档(References)/MapReduce：Simplied Data Processing on Large Clusters.pdf",
+      "bytes": 195816,
+      "sha256": "c46d8fcc7e1fc43961def7d8ee16f1bf7468d39760390d77e29b887c84846410"
+    },
+    {
+      "path": "参考文档(References)/p59-kapur.pdf",
+      "bytes": 456539,
+      "sha256": "f3471af542ad4966bf223f3df7476d2af972c054f47d652ce9fade26cc6647ac"
+    },
+    {
+      "path": "参考文档(References)/Simon Stevin of Bruges (1548-1620).pdf",
+      "bytes": 4287608,
+      "sha256": "ffdbd9ee613a832d6a6b7266fd49225735b0e50840c0bfa45ef23a61abe84b37"
+    },
+    {
+      "path": "参考文档(References)/Social Processes and Proofs of Theorems and Programs.pdf",
+      "bytes": 1115068,
+      "sha256": "c8f714918981d36ef2d10959fac22394d8f5f79a24e641743db7ff1bcdfb24df"
+    },
+    {
+      "path": "参考文档(References)/Tecton：A Language for Manipulating Generic Objects.pdf",
+      "bytes": 642626,
+      "sha256": "af32d8752be90eae418c0a2dc08b3aa6c843d94f6bc8a539d04fec79adf573c4"
+    },
+    {
+      "path": "参考文档(References)/The Standard Template Library by Stepanov & Lee.pdf",
+      "bytes": 143281,
+      "sha256": "2bcec4a900419627aa11db9239c64a6fdb49b83cc187551e0a15be7ec7b10ec7"
+    },
+    {
+      "path": "参考文档(References)/Twelve Articles on Giuseppe Peano.pdf",
+      "bytes": 444096,
+      "sha256": "21892c67898534df825d78a39feaeee7902fedfadd7746ecea9d3f9364d2b56e"
+    },
+    {
+      "path": "参考文档(References)/致德国公主的书信.pdf",
+      "bytes": 19111218,
+      "sha256": "6f1a7896dadc5201675148db15331a89d444fbd258cfa28447ee772eb34015f5"
+    },
+    {
+      "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt1.pdf",
+      "bytes": 11678810,
+      "sha256": "fdc8705aab080302d9f5e86e4e9a80e7fa87e0a428191ae482ea7befd6efa630"
+    },
+    {
+      "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt2.pdf",
+      "bytes": 8214504,
+      "sha256": "30ad8c731d316b81f79e1463459fb17161224f0459e4c9e484bafa7ef4d48782"
+    },
+    {
+      "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt3.pdf",
+      "bytes": 4486850,
+      "sha256": "a0052821cf08e98b71439c5dbd488769efbafb496dac9ff19f1905c606a686a4"
+    },
+    {
+      "path": "solutions/2_1.pdf",
+      "bytes": 207235,
+      "sha256": "e9b69b78402df29a9e38ee9ca53cf9b531802e0a7727dc7a49b366fd10c961c1"
+    },
+    {
+      "path": "solutions/2_1.tex",
+      "bytes": 1106,
+      "sha256": "b3fef252811592603ac7259edabead5d9bf15d1fb00a52dbb4698766f1dee845"
+    },
+    {
+      "path": "solutions/3_1.md",
+      "bytes": 4093,
+      "sha256": "5831f5173c2ee53dcb5b451bfd5c7dc0e56a3f75c999061d23d65a5a90825fee"
+    },
+    {
+      "path": "solutions/3_2.cpp",
+      "bytes": 2201,
+      "sha256": "7704489112a87bb62d2ee5fb28e93ad669acfaf5baedec6d1406a2abcf3c4a1b"
+    },
+    {
+      "path": "solutions/3_3.md",
+      "bytes": 301,
+      "sha256": "05153e76a92cdd6462905f52610ffafa001a15b662c14848d1732b7ffa4a51f0"
+    },
+    {
+      "path": "solutions/3_4.md",
+      "bytes": 1557,
+      "sha256": "6bceeceddb3c885b236a99d4cf9e8ab79c7dfa86a79e54ebf85a4e413c94caf8"
+    },
+    {
+      "path": "solutions/3_5.md",
+      "bytes": 343,
+      "sha256": "c33f3997b31e2f4fab3844fa2054607a8282411f24699c6cb296e546d1660337"
+    },
+    {
+      "path": "solutions/4_1.md",
+      "bytes": 1411,
+      "sha256": "f4768214ca40bf52a39b1bec3ca95e870e611974872c6ad2390e30d7e29a2fe9"
+    },
+    {
+      "path": "solutions/4_2.md",
+      "bytes": 713,
+      "sha256": "e3da031ca83a9d331bf493afe84f0c5465892b061156424ff186f2ffc719dd13"
+    },
+    {
+      "path": "solutions/4_3.md",
+      "bytes": 1288,
+      "sha256": "b74ea9e22770137a71c3d1d83c6320b0f06e2dca742650a1c4fe5b081d141646"
+    },
+    {
+      "path": "solutions/4_3.pdf",
+      "bytes": 145792,
+      "sha256": "9ccbd60230a8ba3c9157e5a36b4a1a8e966a1f5349a916d79f082adfc9d2970a"
+    },
+    {
+      "path": "solutions/4_3.tex",
+      "bytes": 859,
+      "sha256": "fc55897ba6bbf0e6b08deffc0306158543fa592f86b2ab2eb9d71dcb2c316360"
+    },
+    {
+      "path": "solutions/4_4.md",
+      "bytes": 984,
+      "sha256": "05e081daeb8716cef6308ff2056ca87db8272348be63149064900e8f8a8c1c49"
+    },
+    {
+      "path": "solutions/4_4.pdf",
+      "bytes": 29930,
+      "sha256": "6efdfe35b4d21334ce85f4e652b3c3ba18dd1f4120e2237ca8d4fbf2f30ce8c6"
+    },
+    {
+      "path": "solutions/4_4.tex",
+      "bytes": 1242,
+      "sha256": "320ab2b24c404a246093857b00f2554a3842ae561da8f9bb27b95ba7cb745a60"
+    },
+    {
+      "path": "solutions/4_5.md",
+      "bytes": 1063,
+      "sha256": "4582cf9cfd914d098296f832372e33488805bac76e9774388c10ab917ef4ea03"
+    },
+    {
+      "path": "solutions/4_6.md",
+      "bytes": 2609,
+      "sha256": "83dc8e1342c0b69037d22d22dea2a408d30e062011ac56bb8c07499a295e7fe6"
+    },
+    {
+      "path": "solutions/4_7.cpp",
+      "bytes": 2613,
+      "sha256": "2b3e39352bebcd3d6ea420859d6acdb13ba962e523f139ca08cd4b426fe2336e"
+    },
+    {
+      "path": "solutions/5_1.md",
+      "bytes": 1171,
+      "sha256": "c37751cb7171ccbce98e6fb8e0b582c2aba0c7eb1c4b0ed3711283b7fe78b51e"
+    },
+    {
+      "path": "solutions/5_1.pdf",
+      "bytes": 133465,
+      "sha256": "4b366a5d40ed4d38395001034d51d558c5e42ebbef803e9787d24b5bf7fd846e"
+    },
+    {
+      "path": "solutions/5_1.tex",
+      "bytes": 1462,
+      "sha256": "5296ee0d55e3207f767808f02abdc3390e783d270826770d0dfab0a9aa9bfd1c"
+    },
+    {
+      "path": "solutions/6_4.pdf",
+      "bytes": 154977,
+      "sha256": "2f07571f73e8ddf08f36318a619e7d3f4c92a596b0ec4c6b13af9c79b9a10f23"
+    },
+    {
+      "path": "solutions/6_4.tex",
+      "bytes": 756,
+      "sha256": "b36664908075470f4c4881e4d35fc41d9275b240c0767f2799ff7bfe1b22bcdb"
+    },
+    {
+      "path": "solutions/6_5.pdf",
+      "bytes": 136675,
+      "sha256": "032a0e96c1ceb8f0923fbfd55628e40102e3e14854f2e6e5a4e61295c5b3d453"
+    },
+    {
+      "path": "solutions/6_5.tex",
+      "bytes": 483,
+      "sha256": "85873b35333dc174c4fb5f3c64868b6c984b43d91acf7db4a5a35f0e5655f9c2"
+    },
+    {
+      "path": "solutions/6_6.pdf",
+      "bytes": 183217,
+      "sha256": "beaeadf948edcef1a975e7cf4ac29e26e7016b37caedd430923b38bbbc0e62d8"
+    },
+    {
+      "path": "solutions/6_6.tex",
+      "bytes": 2152,
+      "sha256": "bbbd09beca5d29b13bf3a1b58ff342defa8d3f288ea742005d66720675b244e7"
+    },
+    {
+      "path": "solutions/6_7.pdf",
+      "bytes": 133477,
+      "sha256": "e46a28da3cd3d0e9c4116531737f930588aa41fa4ed0001b0e4feeb53cc4a17f"
+    },
+    {
+      "path": "solutions/6_7.tex",
+      "bytes": 2568,
+      "sha256": "016f7f7034aa6c0f3fb6302e68766b146589a80e6a8b5167a0076f82aba4019d"
+    },
+    {
+      "path": "solutions/6_8.pdf",
+      "bytes": 118568,
+      "sha256": "a7dac9f6284b5ef1799affe6aee4cc9d008ab8605f0bb51906c88e5d4d44cf9d"
+    },
+    {
+      "path": "solutions/6_8.tex",
+      "bytes": 680,
+      "sha256": "bd3ad17cbc39b899a110e1e794952f736ce05483808ed2cc210cded3f6cc5895"
+    },
+    {
+      "path": "solutions/6_9.pdf",
+      "bytes": 117774,
+      "sha256": "9eb93789566740b23951f2602eeb51d49ba04df9e4a91f78d0815c3780a71f03"
+    },
+    {
+      "path": "solutions/6_9.tex",
+      "bytes": 890,
+      "sha256": "5ddb0deed2408065a406570389d5fce73acdd352072b7ba7cb3d622eccc89101"
+    },
+    {
+      "path": "solutions/6.10.tex",
+      "bytes": 1457,
+      "sha256": "72481d13a993228c03e39a666877b84d51eb7cea403d4fef876705c8a5b66d1d"
+    },
+    {
+      "path": "solutions/6_10.pdf",
+      "bytes": 125159,
+      "sha256": "9a6b5eeccd60b28a23a1aa9d4a411897c068ecae93c17e0d7db6c079cb62c97f"
+    },
+    {
+      "path": "solutions/7_1.cpp",
+      "bytes": 1708,
+      "sha256": "68adf23617e100ded925d921c5c0719438e777b1fe9188d598d00ca4deffb918"
+    },
+    {
+      "path": "solutions/7_2.cpp",
+      "bytes": 1859,
+      "sha256": "5b37bd30e1364a9245caa1a29f961b52d1cd2cedd1908d21985dd647065436e5"
+    },
+    {
+      "path": "solutions/8_1.pdf",
+      "bytes": 190092,
+      "sha256": "1f35dc8f642bc892e7ffa25525f09d2a14d347fd865ac55a62423cb295baaa29"
+    },
+    {
+      "path": "solutions/8_7.cpp",
+      "bytes": 3433,
+      "sha256": "965102b262d25ea646dcb38dbda7bf833e02be04f430985641fd4a311522c77b"
+    },
+    {
+      "path": "solutions/9_3.pdf",
+      "bytes": 101821,
+      "sha256": "a1a17ab1a0d1446aa563fa268e11cf6a72d7492c04c4d44ad44a09ae4043c0d8"
+    },
+    {
+      "path": "solutions/9_3.tex",
+      "bytes": 5023,
+      "sha256": "86b5c0a3bf44a66bf66bb7aca787ae09c31974ef20f53b5cda54d22fe3e49238"
+    },
+    {
+      "path": "solutions/11_1.pdf",
+      "bytes": 150373,
+      "sha256": "60ee2d12763565521e1b873f1f9451dd0a542849b576a59d1b0dd1865a0a7139"
+    },
+    {
+      "path": "solutions/11_1.tex",
+      "bytes": 2975,
+      "sha256": "5e11e5d88baadc0acc114959d3e73f77d1dcc8fcceb5f77b416985518dfef36a"
+    },
+    {
+      "path": "solutions/11_2.pdf",
+      "bytes": 120039,
+      "sha256": "671e1162c5ea958931dde659d4a60c56e433c1d4dbb7c4816106be5fae88b71e"
+    },
+    {
+      "path": "solutions/11_2.tex",
+      "bytes": 892,
+      "sha256": "1830040c58a897bb136a49da62e986e2de4096668cba122518bb1b356cc40df6"
+    },
+    {
+      "path": "solutions/11_3.pdf",
+      "bytes": 141189,
+      "sha256": "c74bbdf41bba8bbd7a18898c1f1bf4db6adfbf7c210c1fb34cdb86f6ca5870be"
+    },
+    {
+      "path": "solutions/11_3.tex",
+      "bytes": 1232,
+      "sha256": "801534f3e7588e3abfb57b0dda278b524cae856bcf3ca043782e142bc6eed1a4"
+    },
+    {
+      "path": "solutions/11_7.cpp",
+      "bytes": 770,
+      "sha256": "5efd7c7ac02573be3f676c92c7fc9dfb9bcdc6d78f653dc2a3a6ea3f3d4893df"
+    },
+    {
+      "path": "solutions/11_7.pdf",
+      "bytes": 185410,
+      "sha256": "97597ae96f2ed38b8af2518e038f4bb2153897fd070cf738380c1cd133d80564"
+    },
+    {
+      "path": "solutions/11_12.pdf",
+      "bytes": 69490,
+      "sha256": "8b10fd109c7882b873ed8e8d122e6737d38c0e045358a6829cc5909258efb037"
+    },
+    {
+      "path": "solutions/11_12.tex",
+      "bytes": 1425,
+      "sha256": "173f1bb3fb9283e415fd2e8556f0333b4eb64ddc8085c25fcee982496ae47632"
+    },
+    {
+      "path": "solutions/12_1.cpp",
+      "bytes": 3511,
+      "sha256": "0eea7c98fc6d91e08e1338d42b1f378d5039eac402932612bafe2d64fc7bd1fd"
+    },
+    {
+      "path": "solutions/13_1-13_2.cpp",
+      "bytes": 1528,
+      "sha256": "b906feb580bec349e6d15888d918b8d0e934893b6310649738f13788b96fe5e0"
+    }
+  ],
+  "unindexedResources": [
+    {
+      "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt1.pptx",
+      "bytes": 13119519,
+      "sha256": "73f9416f81534c5dac5a401219ba7d069932b3195d3f676d3dbc74ec69f82782"
+    },
+    {
+      "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt2.pptx",
+      "bytes": 9507055,
+      "sha256": "db5eb381ecb1b3dfe5ad2c7d0538d37dffeeedeac41a4795fe24ac3825675262"
+    },
+    {
+      "path": "课件(Course Materials)/FM2GP_Course_Slides_Pt3.pptx",
+      "bytes": 5398005,
+      "sha256": "203a854538132fbfdc764646c756a9ec199d6ff7b86f636617fe6bfff9a44c93"
+    },
+    {
+      "path": "课件(Course Materials)/NoteToInstructors.pdf",
+      "bytes": 97855,
+      "sha256": "40a188e76f14e41d32df1bdf8bc8f3c7b70124470698c3036fddfb13cf9eb2a5"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/swap_ranges_CPP20.h",
+      "bytes": 445,
+      "sha256": "3e40fe3081ef892c68f952617d39935919dcad0bd429e2faa7f60d35807361e4"
+    },
+    {
+      "path": "配套代码(fm2gpcode)/编译开关.txt",
+      "bytes": 92,
+      "sha256": "55a064757752a22cc15f64be5f4c5e6613bc25b82e076f8c0eaabcd870fc777f"
+    }
+  ],
+  "resourceHashEncoding": "SHA-256 of working-tree bytes (text may have Windows CRLF); source-manifest.json separately hashes staged Git blobs."
+}

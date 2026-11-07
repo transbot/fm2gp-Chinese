@@ -1,0 +1,1 @@
+PASS: four contexts, four saved and refreshed returns, eight power results, 48 direct/refresh pairs.

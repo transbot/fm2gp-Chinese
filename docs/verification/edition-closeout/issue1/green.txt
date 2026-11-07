@@ -1,0 +1,14 @@
+
+ RUN  v4.1.8 D:/Code/fm2gp-Chinese
+
+
+ Test Files  2 passed (2)
+      Tests  32 passed (32)
+   Start at  13:17:32
+   Duration  3.15s (transform 80ms, setup 411ms, import 64ms, tests 988ms, environment 3.49s)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

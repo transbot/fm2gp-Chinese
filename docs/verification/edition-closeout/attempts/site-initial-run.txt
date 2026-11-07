@@ -1,0 +1,138 @@
+zh 1440 [
+  [
+    '/binary-search',
+    'locator.click: Timeout 6000ms exceeded.\n' +
+      'Call log:\n' +
+      "\x1B[2m  - waiting for getByRole('button', { name: /Auto-Sort|自动排序/ }).fi"
+  ],
+  [ '/rotate', 'No valid-operation recipe /rotate' ],
+  [
+    '/stein-gcd',
+    'expect(locator).toBeVisible() failed\n' +
+      '\n' +
+      "Locator: getByRole('alert').first()\n" +
+      'Expected: visible\n' +
+      'Timeout: 5000ms\n' +
+      'Error: eleme'
+  ],
+  [
+    '/fibonacci',
+    'expect(locator).toBeVisible() failed\n' +
+      '\n' +
+      "Locator: getByRole('alert').first()\n" +
+      'Expected: visible\n' +
+      'Timeout: 5000ms\n' +
+      'Error: eleme'
+  ],
+  [
+    '/fast-fibonacci',
+    'expect(locator).toBeVisible() failed\n' +
+      '\n' +
+      "Locator: getByRole('alert').first()\n" +
+      'Expected: visible\n' +
+      'Timeout: 5000ms\n' +
+      'Error: eleme'
+  ]
+]
+en 1440 [
+  [
+    '/stein-gcd',
+    'expect(locator).toBeVisible() failed\n' +
+      '\n' +
+      "Locator: getByRole('alert').first()\n" +
+      'Expected: visible\n' +
+      'Timeout: 5000ms\n' +
+      'Error: eleme'
+  ],
+  [
+    '/fibonacci',
+    'expect(locator).toBeVisible() failed\n' +
+      '\n' +
+      "Locator: getByRole('alert').first()\n" +
+      'Expected: visible\n' +
+      'Timeout: 5000ms\n' +
+      'Error: eleme'
+  ],
+  [
+    '/fast-fibonacci',
+    'expect(locator).toBeVisible() failed\n' +
+      '\n' +
+      "Locator: getByRole('alert').first()\n" +
+      'Expected: visible\n' +
+      'Timeout: 5000ms\n' +
+      'Error: eleme'
+  ]
+]
+zh 390 [
+  [
+    '/binary-search',
+    'locator.click: Timeout 6000ms exceeded.\n' +
+      'Call log:\n' +
+      "\x1B[2m  - waiting for getByRole('button', { name: /Auto-Sort|自动排序/ }).fi"
+  ],
+  [ '/rotate', 'No valid-operation recipe /rotate' ],
+  [
+    '/stein-gcd',
+    'expect(locator).toBeVisible() failed\n' +
+      '\n' +
+      "Locator: getByRole('alert').first()\n" +
+      'Expected: visible\n' +
+      'Timeout: 5000ms\n' +
+      'Error: eleme'
+  ],
+  [
+    '/fibonacci',
+    'expect(locator).toBeVisible() failed\n' +
+      '\n' +
+      "Locator: getByRole('alert').first()\n" +
+      'Expected: visible\n' +
+      'Timeout: 5000ms\n' +
+      'Error: eleme'
+  ],
+  [
+    '/fast-fibonacci',
+    'expect(locator).toBeVisible() failed\n' +
+      '\n' +
+      "Locator: getByRole('alert').first()\n" +
+      'Expected: visible\n' +
+      'Timeout: 5000ms\n' +
+      'Error: eleme'
+  ]
+]
+en 390 [
+  [
+    '/stein-gcd',
+    'expect(locator).toBeVisible() failed\n' +
+      '\n' +
+      "Locator: getByRole('alert').first()\n" +
+      'Expected: visible\n' +
+      'Timeout: 5000ms\n' +
+      'Error: eleme'
+  ],
+  [
+    '/fibonacci',
+    'expect(locator).toBeVisible() failed\n' +
+      '\n' +
+      "Locator: getByRole('alert').first()\n" +
+      'Expected: visible\n' +
+      'Timeout: 5000ms\n' +
+      'Error: eleme'
+  ],
+  [
+    '/fast-fibonacci',
+    'expect(locator).toBeVisible() failed\n' +
+      '\n' +
+      "Locator: getByRole('alert').first()\n" +
+      'Expected: visible\n' +
+      'Timeout: 5000ms\n' +
+      'Error: eleme'
+  ]
+]
+AssertionError [ERR_ASSERTION]: 16 failed of 236
+    at D:\Code\fm2gp-Chinese\scripts\verify-edition-site.cjs:71:30 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}

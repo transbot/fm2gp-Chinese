@@ -1,0 +1,2178 @@
+[
+  {
+    "route": "/",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "《数学与泛型编程：高效编程的奥秘》\n交互式算法演示"
+  },
+  {
+    "route": "/book",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "按本书章节学习"
+  },
+  {
+    "route": "/book/1",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "1 · 绪论",
+    "anchors": 4
+  },
+  {
+    "route": "/book/2",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "2 · 初探算法",
+    "anchors": 4
+  },
+  {
+    "route": "/book/3",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "3 · 古希腊数论",
+    "anchors": 15
+  },
+  {
+    "route": "/book/4",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "4 · 欧几里得算法",
+    "anchors": 15
+  },
+  {
+    "route": "/book/5",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "5 · 现代数论的兴起",
+    "anchors": 9
+  },
+  {
+    "route": "/book/6",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "6 · 数学中的抽象",
+    "anchors": 18
+  },
+  {
+    "route": "/book/7",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "7 · 推导泛型算法",
+    "anchors": 10
+  },
+  {
+    "route": "/book/8",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "8 · 更多代数结构",
+    "anchors": 18
+  },
+  {
+    "route": "/book/9",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "9 · 组织数学知识",
+    "anchors": 13
+  },
+  {
+    "route": "/book/10",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "10 · 基本编程概念",
+    "anchors": 10
+  },
+  {
+    "route": "/book/11",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "11 · 排列算法",
+    "anchors": 21
+  },
+  {
+    "route": "/book/12",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "12 · 再论最大公约数算法",
+    "anchors": 13
+  },
+  {
+    "route": "/book/13",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "13 · 实际应用",
+    "anchors": 9
+  },
+  {
+    "route": "/book/14",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "14 · 全书总结",
+    "anchors": 0
+  },
+  {
+    "route": "/book/A",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "A · 记法",
+    "anchors": 3
+  },
+  {
+    "route": "/book/B",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "B · 常用的证明方法",
+    "anchors": 3
+  },
+  {
+    "route": "/book/C",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "C · C++特有的语法或构造",
+    "anchors": 11
+  },
+  {
+    "route": "/linear-search",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "10.7节 - 线性查找",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/prefix-sum",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "前缀和",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/binary-search",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "10.8节 - 二叉(二分)查找",
+    "operation": "three sorted values, key 0",
+    "error": "请先排序数组，再开始二分查找",
+    "translatedError": "Sort the array before starting binary search"
+  },
+  {
+    "route": "/frequency-count",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "频率计数",
+    "operation": "seek intermediate, end, then start",
+    "error": "值列表不能为空",
+    "translatedError": "Values must not be empty"
+  },
+  {
+    "route": "/two-sum",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "两数之和",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组至少需要两个值",
+    "translatedError": "Array must contain at least two values"
+  },
+  {
+    "route": "/swap",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "11.2节 - 区间交换",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/rotate",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "序列旋转算法",
+    "operation": "seek intermediate, end, then start",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/cycle",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "排列的循环分解与搬移",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/reverse",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "反转：递归与内存自适应",
+    "operation": "seek intermediate, end, then start",
+    "error": "待填写：请输入序列，或选择“空序列”预设。",
+    "translatedError": "Enter a sequence, or select the explicit Empty sequence preset."
+  },
+  {
+    "route": "/bubble-sort",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "冒泡排序",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/insertion-sort",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "插入排序",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/selection-sort",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "选择排序",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/merge-sort",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "归并排序 (进阶)",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/quick-sort",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "快速排序 (进阶)",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/heap",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "堆操作 (进阶)",
+    "operation": "seek intermediate, end, then start",
+    "error": "堆化/删除操作要求数组不能为空",
+    "translatedError": "Array must not be empty for heapify/delete operations"
+  },
+  {
+    "route": "/sieve",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "埃拉托色尼筛法",
+    "operation": "generate primes through 30",
+    "error": "请输入一个2到9999之间的数",
+    "translatedError": "Please enter a number between 2 and 9999"
+  },
+  {
+    "route": "/prime-counting",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "素数计数函数",
+    "operation": "rendered chart; no input/player by design",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/palindromic-primes",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "回文素数",
+    "operation": "generate primes through 30",
+    "error": "请输入一个 2 到 9999 之间的数字",
+    "translatedError": "Please enter a number between 2 and 9999"
+  },
+  {
+    "route": "/prime-checker",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "素数判定",
+    "operation": "check 17",
+    "error": "请输入一个数字",
+    "translatedError": "Please enter a number"
+  },
+  {
+    "route": "/fermat",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "5.2节 - 费马小定理",
+    "operation": "seek intermediate, end, then start",
+    "error": "输入无效",
+    "translatedError": "Invalid input"
+  },
+  {
+    "route": "/euler",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "5.5节 - 欧拉定理",
+    "operation": "seek intermediate, end, then start",
+    "error": "输入无效",
+    "translatedError": "Invalid input"
+  },
+  {
+    "route": "/gcm",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "欧几里得算法(GCM/GCD)",
+    "operation": "GCD 45,6",
+    "error": "请输入两个数",
+    "translatedError": "Both numbers are required"
+  },
+  {
+    "route": "/division",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "求余与求商：倍增和斐波那契",
+    "operation": "seek intermediate, end, then start",
+    "error": "请输入整数；空白不是零。",
+    "translatedError": "Enter an integer; blank is not zero."
+  },
+  {
+    "route": "/stein-gcd",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "12.1-12.2节 - 斯坦因GCD算法（二进制GCD）",
+    "operation": "seek intermediate, end, then start",
+    "error": "数字必须为非负数",
+    "translatedError": "Numbers must be non-negative"
+  },
+  {
+    "route": "/extended-gcd",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "扩展GCD算法对比",
+    "operation": "initialize and step",
+    "error": "请输入两个数",
+    "translatedError": "Both numbers are required"
+  },
+  {
+    "route": "/gcd-comparison",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "GCD算法性能对比",
+    "operation": "run comparison",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/multiply",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "埃及乘法：从递归到迭代",
+    "operation": "seek intermediate, end, then start",
+    "error": "请填写 n 和 a；空白不是零。",
+    "translatedError": "Both n and a are required; blank is not zero."
+  },
+  {
+    "route": "/power",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "同一个幂算法",
+    "operation": "seek intermediate, end, then start",
+    "error": "指数必须为非负数；负指数需要逆运算，请参看群的说明。",
+    "translatedError": "Exponent must be non-negative; negative powers require an inverse. See groups."
+  },
+  {
+    "route": "/fibonacci",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "最初级的斐波那契数列算法",
+    "operation": "seek intermediate, end, then start",
+    "error": "n 必须为非负数",
+    "translatedError": "n must be non-negative"
+  },
+  {
+    "route": "/fast-fibonacci",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "快速斐波那契数计算器",
+    "operation": "seek intermediate, end, then start",
+    "error": "n 必须为非负数",
+    "translatedError": "n must be non-negative"
+  },
+  {
+    "route": "/shortest-path",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "使用矩阵幂计算最短距离",
+    "operation": "advance matrix power",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/graph-traversal",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "图遍历（BFS/DFS） (进阶)",
+    "operation": "seek intermediate, end, then start",
+    "error": "请先输入节点标签",
+    "translatedError": "Enter a node label before adding a node"
+  },
+  {
+    "route": "/pi-upper-bound",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "π 的下界与上界：几何证明",
+    "operation": "select 12 sides",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/miller-rabin",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "米勒-拉宾素性测试",
+    "operation": "initialize and step",
+    "error": "n 必须大于 1",
+    "translatedError": "n must be > 1"
+  },
+  {
+    "route": "/rsa",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "RSA公钥密码系统",
+    "operation": "generate key pair",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/polynomial-gcd",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "多项式带余除法与最大公约数",
+    "operation": "seek intermediate, end, then start",
+    "error": "请提供非空系数数组；零多项式请明确输入 [0]。",
+    "translatedError": "Provide a nonempty coefficient array; enter [0] explicitly for the zero polynomial."
+  },
+  {
+    "route": "/horner",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "霍纳法则：逐项累积多项式",
+    "operation": "seek intermediate, end, then start",
+    "error": "请填写系数与 x；留空不是零。空序列请明确输入 []。",
+    "translatedError": "Enter coefficients and x; blank is not zero. Use [] for an explicitly empty sequence."
+  },
+  {
+    "route": "/concepts/algebra",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "运算与代数结构",
+    "operation": "compare grouping",
+    "error": "请按当前集合输入 −1000 到 1000 内的整数。",
+    "translatedError": "Enter integers from −1000 to 1000 that belong to the selected set."
+  },
+  {
+    "route": "/concepts/matrices",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "矩阵与可达性",
+    "operation": "seek intermediate, end, then start",
+    "error": "矩阵格式、维数或精确计算范围不符合要求。",
+    "translatedError": "Invalid matrix format, dimensions, or exact arithmetic range."
+  },
+  {
+    "route": "/concepts/iterators",
+    "width": 1440,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "迭代器与区间",
+    "operation": "advance to end",
+    "error": "容器尾后位置 end 没有元素，不能解引用。",
+    "translatedError": "The container’s past-the-end position has no element and cannot be dereferenced."
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "From Mathematics to Generic Programming\nInteractive Algorithm Visualizations"
+  },
+  {
+    "route": "/book",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Learn chapter by chapter"
+  },
+  {
+    "route": "/book/1",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "1 · Introduction",
+    "anchors": 4
+  },
+  {
+    "route": "/book/2",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "2 · The first algorithm",
+    "anchors": 4
+  },
+  {
+    "route": "/book/3",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "3 · Ancient Greek number theory",
+    "anchors": 15
+  },
+  {
+    "route": "/book/4",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "4 · Euclid’s algorithm",
+    "anchors": 15
+  },
+  {
+    "route": "/book/5",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "5 · The emergence of modern number theory",
+    "anchors": 9
+  },
+  {
+    "route": "/book/6",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "6 · Abstraction in mathematics",
+    "anchors": 18
+  },
+  {
+    "route": "/book/7",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "7 · Deriving a generic algorithm",
+    "anchors": 10
+  },
+  {
+    "route": "/book/8",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "8 · More algebraic structures",
+    "anchors": 18
+  },
+  {
+    "route": "/book/9",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "9 · Organizing mathematical knowledge",
+    "anchors": 13
+  },
+  {
+    "route": "/book/10",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "10 · Fundamental programming concepts",
+    "anchors": 10
+  },
+  {
+    "route": "/book/11",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "11 · Permutation algorithms",
+    "anchors": 21
+  },
+  {
+    "route": "/book/12",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "12 · Revisiting GCD",
+    "anchors": 13
+  },
+  {
+    "route": "/book/13",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "13 · Real-world applications",
+    "anchors": 9
+  },
+  {
+    "route": "/book/14",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "14 · Conclusions",
+    "anchors": 0
+  },
+  {
+    "route": "/book/A",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "A · Notation",
+    "anchors": 3
+  },
+  {
+    "route": "/book/B",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "B · Common proof techniques",
+    "anchors": 3
+  },
+  {
+    "route": "/book/C",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "C · C++ syntax and constructs",
+    "anchors": 11
+  },
+  {
+    "route": "/linear-search",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Section 10.7 - Linear Search",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/prefix-sum",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Prefix Sum",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/binary-search",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Section 10.8 - Binary Search",
+    "operation": "three sorted values, key 0",
+    "error": "Sort the array before starting binary search",
+    "translatedError": "请先排序数组，再开始二分查找"
+  },
+  {
+    "route": "/frequency-count",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Frequency Count",
+    "operation": "seek intermediate, end, then start",
+    "error": "Values must not be empty",
+    "translatedError": "值列表不能为空"
+  },
+  {
+    "route": "/two-sum",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Two Sum",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must contain at least two values",
+    "translatedError": "数组至少需要两个值"
+  },
+  {
+    "route": "/swap",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Section 11.2 - Range Swap",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/rotate",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Sequence Rotation Algorithm",
+    "operation": "seek intermediate, end, then start",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/cycle",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Permutation cycles and data transfers",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/reverse",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Reversal: recursion and memory adaptation",
+    "operation": "seek intermediate, end, then start",
+    "error": "Enter a sequence, or select the explicit Empty sequence preset.",
+    "translatedError": "待填写：请输入序列，或选择“空序列”预设。"
+  },
+  {
+    "route": "/bubble-sort",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Bubble Sort",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/insertion-sort",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Insertion Sort",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/selection-sort",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Selection Sort",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/merge-sort",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Merge Sort (Advanced)",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/quick-sort",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Quick Sort (Advanced)",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/heap",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Heap Operations (Advanced)",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty for heapify/delete operations",
+    "translatedError": "堆化/删除操作要求数组不能为空"
+  },
+  {
+    "route": "/sieve",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Sieve of Eratosthenes",
+    "operation": "generate primes through 30",
+    "error": "Please enter a number between 2 and 9999",
+    "translatedError": "请输入一个2到9999之间的数"
+  },
+  {
+    "route": "/prime-counting",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Prime Counting Function",
+    "operation": "rendered chart; no input/player by design",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/palindromic-primes",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Palindromic Primes",
+    "operation": "generate primes through 30",
+    "error": "Please enter a number between 2 and 9999",
+    "translatedError": "请输入一个 2 到 9999 之间的数字"
+  },
+  {
+    "route": "/prime-checker",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Prime Number Checker",
+    "operation": "check 17",
+    "error": "Please enter a number",
+    "translatedError": "请输入一个数字"
+  },
+  {
+    "route": "/fermat",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Section 5.2 - Fermat's Little Theorem",
+    "operation": "seek intermediate, end, then start",
+    "error": "Invalid input",
+    "translatedError": "输入无效"
+  },
+  {
+    "route": "/euler",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Section 5.5 - Euler's Theorem",
+    "operation": "seek intermediate, end, then start",
+    "error": "Invalid input",
+    "translatedError": "输入无效"
+  },
+  {
+    "route": "/gcm",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Euclidean Algorithm (GCM/GCD)",
+    "operation": "GCD 45,6",
+    "error": "Both numbers are required",
+    "translatedError": "请输入两个数"
+  },
+  {
+    "route": "/division",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Remainders and quotients: doubling and Fibonacci",
+    "operation": "seek intermediate, end, then start",
+    "error": "Enter an integer; blank is not zero.",
+    "translatedError": "请输入整数；空白不是零。"
+  },
+  {
+    "route": "/stein-gcd",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Section 12.1-12.2 - Stein's GCD Algorithm (Binary GCD)",
+    "operation": "seek intermediate, end, then start",
+    "error": "Numbers must be non-negative",
+    "translatedError": "数字必须为非负数"
+  },
+  {
+    "route": "/extended-gcd",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Extended GCD Algorithms",
+    "operation": "initialize and step",
+    "error": "Both numbers are required",
+    "translatedError": "请输入两个数"
+  },
+  {
+    "route": "/gcd-comparison",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "GCD Algorithm Performance Comparison",
+    "operation": "run comparison",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/multiply",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Egyptian multiplication: from recursion to iteration",
+    "operation": "seek intermediate, end, then start",
+    "error": "Both n and a are required; blank is not zero.",
+    "translatedError": "请填写 n 和 a；空白不是零。"
+  },
+  {
+    "route": "/power",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "One power algorithm",
+    "operation": "seek intermediate, end, then start",
+    "error": "Exponent must be non-negative; negative powers require an inverse. See groups.",
+    "translatedError": "指数必须为非负数；负指数需要逆运算，请参看群的说明。"
+  },
+  {
+    "route": "/fibonacci",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Basic Fibonacci Algorithm",
+    "operation": "seek intermediate, end, then start",
+    "error": "n must be non-negative",
+    "translatedError": "n 必须为非负数"
+  },
+  {
+    "route": "/fast-fibonacci",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Fast Fibonacci Calculator",
+    "operation": "seek intermediate, end, then start",
+    "error": "n must be non-negative",
+    "translatedError": "n 必须为非负数"
+  },
+  {
+    "route": "/shortest-path",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Finding Shortest Distance Using Matrix Power",
+    "operation": "advance matrix power",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/graph-traversal",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Graph Traversal (BFS/DFS) (Advanced)",
+    "operation": "seek intermediate, end, then start",
+    "error": "Enter a node label before adding a node",
+    "translatedError": "请先输入节点标签"
+  },
+  {
+    "route": "/pi-upper-bound",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Visual Proof of π's Bounds",
+    "operation": "select 12 sides",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/miller-rabin",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Miller-Rabin Primality Test",
+    "operation": "initialize and step",
+    "error": "n must be > 1",
+    "translatedError": "n 必须大于 1"
+  },
+  {
+    "route": "/rsa",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "RSA Public Key Cryptography",
+    "operation": "generate key pair",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/polynomial-gcd",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Polynomial division with remainder and GCD",
+    "operation": "seek intermediate, end, then start",
+    "error": "Provide a nonempty coefficient array; enter [0] explicitly for the zero polynomial.",
+    "translatedError": "请提供非空系数数组；零多项式请明确输入 [0]。"
+  },
+  {
+    "route": "/horner",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Horner’s rule: accumulating a polynomial",
+    "operation": "seek intermediate, end, then start",
+    "error": "Enter coefficients and x; blank is not zero. Use [] for an explicitly empty sequence.",
+    "translatedError": "请填写系数与 x；留空不是零。空序列请明确输入 []。"
+  },
+  {
+    "route": "/concepts/algebra",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Operations and algebraic structures",
+    "operation": "compare grouping",
+    "error": "Enter integers from −1000 to 1000 that belong to the selected set.",
+    "translatedError": "请按当前集合输入 −1000 到 1000 内的整数。"
+  },
+  {
+    "route": "/concepts/matrices",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Matrices and reachability",
+    "operation": "seek intermediate, end, then start",
+    "error": "Invalid matrix format, dimensions, or exact arithmetic range.",
+    "translatedError": "矩阵格式、维数或精确计算范围不符合要求。"
+  },
+  {
+    "route": "/concepts/iterators",
+    "width": 1440,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Iterators and ranges",
+    "operation": "advance to end",
+    "error": "The container’s past-the-end position has no element and cannot be dereferenced.",
+    "translatedError": "容器尾后位置 end 没有元素，不能解引用。"
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "《数学与泛型编程：高效编程的奥秘》\n交互式算法演示"
+  },
+  {
+    "route": "/book",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "按本书章节学习"
+  },
+  {
+    "route": "/book/1",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "1 · 绪论",
+    "anchors": 4
+  },
+  {
+    "route": "/book/2",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "2 · 初探算法",
+    "anchors": 4
+  },
+  {
+    "route": "/book/3",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "3 · 古希腊数论",
+    "anchors": 15
+  },
+  {
+    "route": "/book/4",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "4 · 欧几里得算法",
+    "anchors": 15
+  },
+  {
+    "route": "/book/5",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "5 · 现代数论的兴起",
+    "anchors": 9
+  },
+  {
+    "route": "/book/6",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "6 · 数学中的抽象",
+    "anchors": 18
+  },
+  {
+    "route": "/book/7",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "7 · 推导泛型算法",
+    "anchors": 10
+  },
+  {
+    "route": "/book/8",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "8 · 更多代数结构",
+    "anchors": 18
+  },
+  {
+    "route": "/book/9",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "9 · 组织数学知识",
+    "anchors": 13
+  },
+  {
+    "route": "/book/10",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "10 · 基本编程概念",
+    "anchors": 10
+  },
+  {
+    "route": "/book/11",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "11 · 排列算法",
+    "anchors": 21
+  },
+  {
+    "route": "/book/12",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "12 · 再论最大公约数算法",
+    "anchors": 13
+  },
+  {
+    "route": "/book/13",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "13 · 实际应用",
+    "anchors": 9
+  },
+  {
+    "route": "/book/14",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "14 · 全书总结",
+    "anchors": 0
+  },
+  {
+    "route": "/book/A",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "A · 记法",
+    "anchors": 3
+  },
+  {
+    "route": "/book/B",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "B · 常用的证明方法",
+    "anchors": 3
+  },
+  {
+    "route": "/book/C",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "C · C++特有的语法或构造",
+    "anchors": 11
+  },
+  {
+    "route": "/linear-search",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "10.7节 - 线性查找",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/prefix-sum",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "前缀和",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/binary-search",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "10.8节 - 二叉(二分)查找",
+    "operation": "three sorted values, key 0",
+    "error": "请先排序数组，再开始二分查找",
+    "translatedError": "Sort the array before starting binary search"
+  },
+  {
+    "route": "/frequency-count",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "频率计数",
+    "operation": "seek intermediate, end, then start",
+    "error": "值列表不能为空",
+    "translatedError": "Values must not be empty"
+  },
+  {
+    "route": "/two-sum",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "两数之和",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组至少需要两个值",
+    "translatedError": "Array must contain at least two values"
+  },
+  {
+    "route": "/swap",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "11.2节 - 区间交换",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/rotate",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "序列旋转算法",
+    "operation": "seek intermediate, end, then start",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/cycle",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "排列的循环分解与搬移",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/reverse",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "反转：递归与内存自适应",
+    "operation": "seek intermediate, end, then start",
+    "error": "待填写：请输入序列，或选择“空序列”预设。",
+    "translatedError": "Enter a sequence, or select the explicit Empty sequence preset."
+  },
+  {
+    "route": "/bubble-sort",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "冒泡排序",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/insertion-sort",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "插入排序",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/selection-sort",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "选择排序",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/merge-sort",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "归并排序 (进阶)",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/quick-sort",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "快速排序 (进阶)",
+    "operation": "seek intermediate, end, then start",
+    "error": "数组不能为空",
+    "translatedError": "Array must not be empty"
+  },
+  {
+    "route": "/heap",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "堆操作 (进阶)",
+    "operation": "seek intermediate, end, then start",
+    "error": "堆化/删除操作要求数组不能为空",
+    "translatedError": "Array must not be empty for heapify/delete operations"
+  },
+  {
+    "route": "/sieve",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "埃拉托色尼筛法",
+    "operation": "generate primes through 30",
+    "error": "请输入一个2到9999之间的数",
+    "translatedError": "Please enter a number between 2 and 9999"
+  },
+  {
+    "route": "/prime-counting",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "素数计数函数",
+    "operation": "rendered chart; no input/player by design",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/palindromic-primes",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "回文素数",
+    "operation": "generate primes through 30",
+    "error": "请输入一个 2 到 9999 之间的数字",
+    "translatedError": "Please enter a number between 2 and 9999"
+  },
+  {
+    "route": "/prime-checker",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "素数判定",
+    "operation": "check 17",
+    "error": "请输入一个数字",
+    "translatedError": "Please enter a number"
+  },
+  {
+    "route": "/fermat",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "5.2节 - 费马小定理",
+    "operation": "seek intermediate, end, then start",
+    "error": "输入无效",
+    "translatedError": "Invalid input"
+  },
+  {
+    "route": "/euler",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "5.5节 - 欧拉定理",
+    "operation": "seek intermediate, end, then start",
+    "error": "输入无效",
+    "translatedError": "Invalid input"
+  },
+  {
+    "route": "/gcm",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "欧几里得算法(GCM/GCD)",
+    "operation": "GCD 45,6",
+    "error": "请输入两个数",
+    "translatedError": "Both numbers are required"
+  },
+  {
+    "route": "/division",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "求余与求商：倍增和斐波那契",
+    "operation": "seek intermediate, end, then start",
+    "error": "请输入整数；空白不是零。",
+    "translatedError": "Enter an integer; blank is not zero."
+  },
+  {
+    "route": "/stein-gcd",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "12.1-12.2节 - 斯坦因GCD算法（二进制GCD）",
+    "operation": "seek intermediate, end, then start",
+    "error": "数字必须为非负数",
+    "translatedError": "Numbers must be non-negative"
+  },
+  {
+    "route": "/extended-gcd",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "扩展GCD算法对比",
+    "operation": "initialize and step",
+    "error": "请输入两个数",
+    "translatedError": "Both numbers are required"
+  },
+  {
+    "route": "/gcd-comparison",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "GCD算法性能对比",
+    "operation": "run comparison",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/multiply",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "埃及乘法：从递归到迭代",
+    "operation": "seek intermediate, end, then start",
+    "error": "请填写 n 和 a；空白不是零。",
+    "translatedError": "Both n and a are required; blank is not zero."
+  },
+  {
+    "route": "/power",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "同一个幂算法",
+    "operation": "seek intermediate, end, then start",
+    "error": "指数必须为非负数；负指数需要逆运算，请参看群的说明。",
+    "translatedError": "Exponent must be non-negative; negative powers require an inverse. See groups."
+  },
+  {
+    "route": "/fibonacci",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "最初级的斐波那契数列算法",
+    "operation": "seek intermediate, end, then start",
+    "error": "n 必须为非负数",
+    "translatedError": "n must be non-negative"
+  },
+  {
+    "route": "/fast-fibonacci",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "快速斐波那契数计算器",
+    "operation": "seek intermediate, end, then start",
+    "error": "n 必须为非负数",
+    "translatedError": "n must be non-negative"
+  },
+  {
+    "route": "/shortest-path",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "使用矩阵幂计算最短距离",
+    "operation": "advance matrix power",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/graph-traversal",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "图遍历（BFS/DFS） (进阶)",
+    "operation": "seek intermediate, end, then start",
+    "error": "请先输入节点标签",
+    "translatedError": "Enter a node label before adding a node"
+  },
+  {
+    "route": "/pi-upper-bound",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "π 的下界与上界：几何证明",
+    "operation": "select 12 sides",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/miller-rabin",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "米勒-拉宾素性测试",
+    "operation": "initialize and step",
+    "error": "n 必须大于 1",
+    "translatedError": "n must be > 1"
+  },
+  {
+    "route": "/rsa",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "RSA公钥密码系统",
+    "operation": "generate key pair",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/polynomial-gcd",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "多项式带余除法与最大公约数",
+    "operation": "seek intermediate, end, then start",
+    "error": "请提供非空系数数组；零多项式请明确输入 [0]。",
+    "translatedError": "Provide a nonempty coefficient array; enter [0] explicitly for the zero polynomial."
+  },
+  {
+    "route": "/horner",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "霍纳法则：逐项累积多项式",
+    "operation": "seek intermediate, end, then start",
+    "error": "请填写系数与 x；留空不是零。空序列请明确输入 []。",
+    "translatedError": "Enter coefficients and x; blank is not zero. Use [] for an explicitly empty sequence."
+  },
+  {
+    "route": "/concepts/algebra",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "运算与代数结构",
+    "operation": "compare grouping",
+    "error": "请按当前集合输入 −1000 到 1000 内的整数。",
+    "translatedError": "Enter integers from −1000 to 1000 that belong to the selected set."
+  },
+  {
+    "route": "/concepts/matrices",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "矩阵与可达性",
+    "operation": "seek intermediate, end, then start",
+    "error": "矩阵格式、维数或精确计算范围不符合要求。",
+    "translatedError": "Invalid matrix format, dimensions, or exact arithmetic range."
+  },
+  {
+    "route": "/concepts/iterators",
+    "width": 390,
+    "lang": "zh",
+    "passed": true,
+    "initialTitle": "迭代器与区间",
+    "operation": "advance to end",
+    "error": "容器尾后位置 end 没有元素，不能解引用。",
+    "translatedError": "The container’s past-the-end position has no element and cannot be dereferenced."
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "From Mathematics to Generic Programming\nInteractive Algorithm Visualizations"
+  },
+  {
+    "route": "/book",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Learn chapter by chapter"
+  },
+  {
+    "route": "/book/1",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "1 · Introduction",
+    "anchors": 4
+  },
+  {
+    "route": "/book/2",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "2 · The first algorithm",
+    "anchors": 4
+  },
+  {
+    "route": "/book/3",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "3 · Ancient Greek number theory",
+    "anchors": 15
+  },
+  {
+    "route": "/book/4",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "4 · Euclid’s algorithm",
+    "anchors": 15
+  },
+  {
+    "route": "/book/5",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "5 · The emergence of modern number theory",
+    "anchors": 9
+  },
+  {
+    "route": "/book/6",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "6 · Abstraction in mathematics",
+    "anchors": 18
+  },
+  {
+    "route": "/book/7",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "7 · Deriving a generic algorithm",
+    "anchors": 10
+  },
+  {
+    "route": "/book/8",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "8 · More algebraic structures",
+    "anchors": 18
+  },
+  {
+    "route": "/book/9",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "9 · Organizing mathematical knowledge",
+    "anchors": 13
+  },
+  {
+    "route": "/book/10",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "10 · Fundamental programming concepts",
+    "anchors": 10
+  },
+  {
+    "route": "/book/11",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "11 · Permutation algorithms",
+    "anchors": 21
+  },
+  {
+    "route": "/book/12",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "12 · Revisiting GCD",
+    "anchors": 13
+  },
+  {
+    "route": "/book/13",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "13 · Real-world applications",
+    "anchors": 9
+  },
+  {
+    "route": "/book/14",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "14 · Conclusions",
+    "anchors": 0
+  },
+  {
+    "route": "/book/A",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "A · Notation",
+    "anchors": 3
+  },
+  {
+    "route": "/book/B",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "B · Common proof techniques",
+    "anchors": 3
+  },
+  {
+    "route": "/book/C",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "C · C++ syntax and constructs",
+    "anchors": 11
+  },
+  {
+    "route": "/linear-search",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Section 10.7 - Linear Search",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/prefix-sum",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Prefix Sum",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/binary-search",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Section 10.8 - Binary Search",
+    "operation": "three sorted values, key 0",
+    "error": "Sort the array before starting binary search",
+    "translatedError": "请先排序数组，再开始二分查找"
+  },
+  {
+    "route": "/frequency-count",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Frequency Count",
+    "operation": "seek intermediate, end, then start",
+    "error": "Values must not be empty",
+    "translatedError": "值列表不能为空"
+  },
+  {
+    "route": "/two-sum",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Two Sum",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must contain at least two values",
+    "translatedError": "数组至少需要两个值"
+  },
+  {
+    "route": "/swap",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Section 11.2 - Range Swap",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/rotate",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Sequence Rotation Algorithm",
+    "operation": "seek intermediate, end, then start",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/cycle",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Permutation cycles and data transfers",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/reverse",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Reversal: recursion and memory adaptation",
+    "operation": "seek intermediate, end, then start",
+    "error": "Enter a sequence, or select the explicit Empty sequence preset.",
+    "translatedError": "待填写：请输入序列，或选择“空序列”预设。"
+  },
+  {
+    "route": "/bubble-sort",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Bubble Sort",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/insertion-sort",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Insertion Sort",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/selection-sort",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Selection Sort",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/merge-sort",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Merge Sort (Advanced)",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/quick-sort",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Quick Sort (Advanced)",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty",
+    "translatedError": "数组不能为空"
+  },
+  {
+    "route": "/heap",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Heap Operations (Advanced)",
+    "operation": "seek intermediate, end, then start",
+    "error": "Array must not be empty for heapify/delete operations",
+    "translatedError": "堆化/删除操作要求数组不能为空"
+  },
+  {
+    "route": "/sieve",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Sieve of Eratosthenes",
+    "operation": "generate primes through 30",
+    "error": "Please enter a number between 2 and 9999",
+    "translatedError": "请输入一个2到9999之间的数"
+  },
+  {
+    "route": "/prime-counting",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Prime Counting Function",
+    "operation": "rendered chart; no input/player by design",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/palindromic-primes",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Palindromic Primes",
+    "operation": "generate primes through 30",
+    "error": "Please enter a number between 2 and 9999",
+    "translatedError": "请输入一个 2 到 9999 之间的数字"
+  },
+  {
+    "route": "/prime-checker",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Prime Number Checker",
+    "operation": "check 17",
+    "error": "Please enter a number",
+    "translatedError": "请输入一个数字"
+  },
+  {
+    "route": "/fermat",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Section 5.2 - Fermat's Little Theorem",
+    "operation": "seek intermediate, end, then start",
+    "error": "Invalid input",
+    "translatedError": "输入无效"
+  },
+  {
+    "route": "/euler",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Section 5.5 - Euler's Theorem",
+    "operation": "seek intermediate, end, then start",
+    "error": "Invalid input",
+    "translatedError": "输入无效"
+  },
+  {
+    "route": "/gcm",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Euclidean Algorithm (GCM/GCD)",
+    "operation": "GCD 45,6",
+    "error": "Both numbers are required",
+    "translatedError": "请输入两个数"
+  },
+  {
+    "route": "/division",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Remainders and quotients: doubling and Fibonacci",
+    "operation": "seek intermediate, end, then start",
+    "error": "Enter an integer; blank is not zero.",
+    "translatedError": "请输入整数；空白不是零。"
+  },
+  {
+    "route": "/stein-gcd",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Section 12.1-12.2 - Stein's GCD Algorithm (Binary GCD)",
+    "operation": "seek intermediate, end, then start",
+    "error": "Numbers must be non-negative",
+    "translatedError": "数字必须为非负数"
+  },
+  {
+    "route": "/extended-gcd",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Extended GCD Algorithms",
+    "operation": "initialize and step",
+    "error": "Both numbers are required",
+    "translatedError": "请输入两个数"
+  },
+  {
+    "route": "/gcd-comparison",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "GCD Algorithm Performance Comparison",
+    "operation": "run comparison",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/multiply",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Egyptian multiplication: from recursion to iteration",
+    "operation": "seek intermediate, end, then start",
+    "error": "Both n and a are required; blank is not zero.",
+    "translatedError": "请填写 n 和 a；空白不是零。"
+  },
+  {
+    "route": "/power",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "One power algorithm",
+    "operation": "seek intermediate, end, then start",
+    "error": "Exponent must be non-negative; negative powers require an inverse. See groups.",
+    "translatedError": "指数必须为非负数；负指数需要逆运算，请参看群的说明。"
+  },
+  {
+    "route": "/fibonacci",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Basic Fibonacci Algorithm",
+    "operation": "seek intermediate, end, then start",
+    "error": "n must be non-negative",
+    "translatedError": "n 必须为非负数"
+  },
+  {
+    "route": "/fast-fibonacci",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Fast Fibonacci Calculator",
+    "operation": "seek intermediate, end, then start",
+    "error": "n must be non-negative",
+    "translatedError": "n 必须为非负数"
+  },
+  {
+    "route": "/shortest-path",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Finding Shortest Distance Using Matrix Power",
+    "operation": "advance matrix power",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/graph-traversal",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Graph Traversal (BFS/DFS) (Advanced)",
+    "operation": "seek intermediate, end, then start",
+    "error": "Enter a node label before adding a node",
+    "translatedError": "请先输入节点标签"
+  },
+  {
+    "route": "/pi-upper-bound",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Visual Proof of π's Bounds",
+    "operation": "select 12 sides",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/miller-rabin",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Miller-Rabin Primality Test",
+    "operation": "initialize and step",
+    "error": "n must be > 1",
+    "translatedError": "n 必须大于 1"
+  },
+  {
+    "route": "/rsa",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "RSA Public Key Cryptography",
+    "operation": "generate key pair",
+    "error": "N/A: fixed data or constrained selector, no free invalid input"
+  },
+  {
+    "route": "/polynomial-gcd",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Polynomial division with remainder and GCD",
+    "operation": "seek intermediate, end, then start",
+    "error": "Provide a nonempty coefficient array; enter [0] explicitly for the zero polynomial.",
+    "translatedError": "请提供非空系数数组；零多项式请明确输入 [0]。"
+  },
+  {
+    "route": "/horner",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Horner’s rule: accumulating a polynomial",
+    "operation": "seek intermediate, end, then start",
+    "error": "Enter coefficients and x; blank is not zero. Use [] for an explicitly empty sequence.",
+    "translatedError": "请填写系数与 x；留空不是零。空序列请明确输入 []。"
+  },
+  {
+    "route": "/concepts/algebra",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Operations and algebraic structures",
+    "operation": "compare grouping",
+    "error": "Enter integers from −1000 to 1000 that belong to the selected set.",
+    "translatedError": "请按当前集合输入 −1000 到 1000 内的整数。"
+  },
+  {
+    "route": "/concepts/matrices",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Matrices and reachability",
+    "operation": "seek intermediate, end, then start",
+    "error": "Invalid matrix format, dimensions, or exact arithmetic range.",
+    "translatedError": "矩阵格式、维数或精确计算范围不符合要求。"
+  },
+  {
+    "route": "/concepts/iterators",
+    "width": 390,
+    "lang": "en",
+    "passed": true,
+    "initialTitle": "Iterators and ranges",
+    "operation": "advance to end",
+    "error": "The container’s past-the-end position has no element and cannot be dereferenced.",
+    "translatedError": "容器尾后位置 end 没有元素，不能解引用。"
+  }
+]
