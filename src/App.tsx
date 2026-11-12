@@ -1,3 +1,4 @@
+import { RouteSeo } from './seo/RouteSeo';
 import { ReaderNavigation } from './components/common/ReaderNavigation';
 import { lazy, Suspense } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
@@ -65,6 +66,7 @@ function RouteLoadingFallback() {
 function AppRoutes() {
   return (
     <BrowserRouter future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
+      <RouteSeo />
       <Suspense fallback={<RouteLoadingFallback />}>
         <Routes>
           <Route path="/" element={<Home />} />
