@@ -36,9 +36,9 @@
 
 | 位置 | 中文桌面 | 中文手机 | English desktop | English mobile |
 | --- | --- | --- | --- | --- |
-| 首页搜索 | [桌面](home-search-zh-1440.png) | [手机](home-search-zh-390.png) | [Desktop](home-search-en-1440.png) | [Mobile](home-search-en-390.png) |
-| 章节搜索 | [桌面](chapter-search-zh-1440.png) | [手机](chapter-search-zh-390.png) | [Desktop](chapter-search-en-1440.png) | [Mobile](chapter-search-en-390.png) |
-| 溢出保留状态 | [桌面](overflow-state-zh-1440.png) | [手机](overflow-state-zh-390.png) | [Desktop](overflow-state-en-1440.png) | [Mobile](overflow-state-en-390.png) |
+| 首页搜索 | [桌面](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-review-fixes/home-search-zh-1440.png) | [手机](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-review-fixes/home-search-zh-390.png) | [Desktop](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-review-fixes/home-search-en-1440.png) | [Mobile](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-review-fixes/home-search-en-390.png) |
+| 章节搜索 | [桌面](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-review-fixes/chapter-search-zh-1440.png) | [手机](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-review-fixes/chapter-search-zh-390.png) | [Desktop](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-review-fixes/chapter-search-en-1440.png) | [Mobile](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-review-fixes/chapter-search-en-390.png) |
+| 溢出保留状态 | [桌面](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-review-fixes/overflow-state-zh-1440.png) | [手机](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-review-fixes/overflow-state-zh-390.png) | [Desktop](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-review-fixes/overflow-state-en-1440.png) | [Mobile](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-review-fixes/overflow-state-en-390.png) |
 
 ## 用户提供的独立复核
 

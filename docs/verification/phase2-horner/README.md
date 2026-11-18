@@ -23,8 +23,8 @@
 
 | 语言 | 桌面 | 手机 |
 | --- | --- | --- |
-| 中文 | [桌面](horner-zh-1440.png) | [手机](horner-zh-390.png) |
-| English | [Desktop](horner-en-1440.png) | [Mobile](horner-en-390.png) |
+| 中文 | [桌面](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-horner/horner-zh-1440.png) | [手机](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-horner/horner-zh-390.png) |
+| English | [Desktop](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-horner/horner-en-1440.png) | [Mobile](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-horner/horner-en-390.png) |
 
 复现：构建后启动 Vite preview，设置 NODE_PATH 指向桌面运行时 Playwright，执行 `node scripts/verify-horner.cjs`。首次重复启动 preview 提示端口已占用，实际验收复用了该端口现有的生产预览服务；未停止其他进程。
 

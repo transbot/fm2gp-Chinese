@@ -100,7 +100,7 @@
 ## 本地开发
 
 ```bash
-npm install
+npm ci
 npm run dev -- --host 127.0.0.1
 ```
 
@@ -109,6 +109,12 @@ npm run dev -- --host 127.0.0.1
 ```text
 http://127.0.0.1:5173/
 ```
+
+## 自行部署
+
+使用 Node.js 22（22.12 或更新的 22.x 版本），执行 `npm ci`、`npm run build`，将生成的 `dist/` 发布到静态托管服务。Netlify 可直接导入仓库，构建和路由配置已包含在 `netlify.toml` 中，无需数据库或密钥。
+
+完整步骤、浅克隆及自定义域名说明见[部署指南](docs/deployment.md)。[历史验收截图和构建包](docs/verification/README.md)已改为固定提交归档链接，不参与部署。
 
 ## 验证命令
 
@@ -251,7 +257,7 @@ The chapter directory covers 14 chapters, 3 appendices, 107 section entries and 
 ## Local Development
 
 ```bash
-npm install
+npm ci
 npm run dev -- --host 127.0.0.1
 ```
 
@@ -260,6 +266,12 @@ Default development URL:
 ```text
 http://127.0.0.1:5173/
 ```
+
+## Self-hosting
+
+Use Node.js 22 (22.12 or a newer 22.x release), run `npm ci` and `npm run build`, then publish `dist/` to a static host. Netlify can import this repository directly using the included `netlify.toml`; no database or secrets are required.
+
+See the [deployment guide](docs/deployment.md) for shallow cloning, hosting and custom-domain notes. [Historical screenshots and build archives](docs/verification/README.md) remain available at a fixed commit and are not deployment inputs.
 
 ## Verification Commands
 

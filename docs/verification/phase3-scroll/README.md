@@ -70,8 +70,8 @@
 
 | 页面 | 中文桌面 | 中文390 | 英文桌面 | 英文390 |
 | --- | --- | --- | --- | --- |
-| 首页搜索 | [图](after-home-zh-1440.png) | [图](after-home-zh-390.png) | [图](after-home-en-1440.png) | [图](after-home-en-390.png) |
-| 章节搜索 | [图](after-book-zh-1440.png) | [图](after-book-zh-390.png) | [图](after-book-en-1440.png) | [图](after-book-en-390.png) |
+| 首页搜索 | [图](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase3-scroll/after-home-zh-1440.png) | [图](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase3-scroll/after-home-zh-390.png) | [图](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase3-scroll/after-home-en-1440.png) | [图](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase3-scroll/after-home-en-390.png) |
+| 章节搜索 | [图](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase3-scroll/after-book-zh-1440.png) | [图](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase3-scroll/after-book-zh-390.png) | [图](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase3-scroll/after-book-en-1440.png) | [图](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase3-scroll/after-book-en-390.png) |
 
 工程命令：`npm run lint`、`npx tsc -b --pretty false`、`npm run test:run`、`npm run build`。Windows测试 TEMP/TMP 指向仓库 `.local`。
 

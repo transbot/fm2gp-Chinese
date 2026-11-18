@@ -43,8 +43,8 @@
 
 | 案例 | 中文桌面 | 中文手机 | English desktop | English mobile |
 | --- | --- | --- | --- | --- |
-| 默认书例首一化 | [图](final-book-zh-1440.png) | [图](final-book-zh-390.png) | [Image](final-book-en-1440.png) | [Image](final-book-en-390.png) |
-| 习题8.3（1）首一化 | [图](final-exercise1-zh-1440.png) | [图](final-exercise1-zh-390.png) | [Image](final-exercise1-en-1440.png) | [Image](final-exercise1-en-390.png) |
+| 默认书例首一化 | [图](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase5-return-fix/final-book-zh-1440.png) | [图](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase5-return-fix/final-book-zh-390.png) | [Image](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase5-return-fix/final-book-en-1440.png) | [Image](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase5-return-fix/final-book-en-390.png) |
+| 习题8.3（1）首一化 | [图](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase5-return-fix/final-exercise1-zh-1440.png) | [图](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase5-return-fix/final-exercise1-zh-390.png) | [Image](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase5-return-fix/final-exercise1-en-1440.png) | [Image](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase5-return-fix/final-exercise1-en-390.png) |
 
 文件清单：[source-manifest.json](../phase5-polynomial/source-manifest.json)，包括本修复源码、脚本、构建入口和两组验收证据；文本LF归一化、二进制原样SHA-256，清单排除自身。既有npm升级和Browserslist更新提醒不影响验收，未升级依赖。
 ## 发布资源校验脚本预检

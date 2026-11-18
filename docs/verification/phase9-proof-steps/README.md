@@ -47,10 +47,10 @@ Windows，Node 22.17.1，Vitest 4.1.8，Vite 8.0.16。[ESLint](eslint.txt)、[Ty
 
 | 视口 | 陪集证明中部分展开、部分收起 |
 |---|---|
-| zh 1440 | [截图](reasons/mixed-reasons-zh-1440.png) |
-| en 1440 | [截图](reasons/mixed-reasons-en-1440.png) |
-| zh 390 | [截图](reasons/mixed-reasons-zh-390.png) |
-| en 390 | [截图](reasons/mixed-reasons-en-390.png) |
+| zh 1440 | [截图](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase9-proof-steps/reasons/mixed-reasons-zh-1440.png) |
+| en 1440 | [截图](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase9-proof-steps/reasons/mixed-reasons-en-1440.png) |
+| zh 390 | [截图](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase9-proof-steps/reasons/mixed-reasons-zh-390.png) |
+| en 390 | [截图](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase9-proof-steps/reasons/mixed-reasons-en-390.png) |
 
 第一次运行新增浏览器记录器时，有一个尚未定义的局部变量，脚本在保存结果前退出。[首次日志](audit-first.txt)。修正采样变量后，普通模式和修复模式都在最终构建上重新完整运行，全部通过。
 

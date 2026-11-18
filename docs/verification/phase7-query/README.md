@@ -50,10 +50,10 @@ Edge 156.0.4314.58，Playwright 独立无头上下文；生产构建预览 http:
 
 | 视口 | 目录搜索 | 已展开的证明依据 |
 |---|---|---|
-| 中文1440 | [搜索](directory/directory-zh-1440.png) | [证明](directory/proof-zh-1440.png) |
-| 英文1440 | [搜索](directory/directory-en-1440.png) | [证明](directory/proof-en-1440.png) |
-| 中文390 | [搜索](directory/directory-zh-390.png) | [证明](directory/proof-zh-390.png) |
-| 英文390 | [搜索](directory/directory-en-390.png) | [证明](directory/proof-en-390.png) |
+| 中文1440 | [搜索](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-query/directory/directory-zh-1440.png) | [证明](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-query/directory/proof-zh-1440.png) |
+| 英文1440 | [搜索](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-query/directory/directory-en-1440.png) | [证明](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-query/directory/proof-en-1440.png) |
+| 中文390 | [搜索](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-query/directory/directory-zh-390.png) | [证明](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-query/directory/proof-zh-390.png) |
+| 英文390 | [搜索](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-query/directory/directory-en-390.png) | [证明](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-query/directory/proof-en-390.png) |
 
 本目录下 reference 子目录还有更新后的证明、A.3 真值表与搜索截图。复现时对脚本设 READER_BASE_URL，分别用 QUERY_AUDIT_DIR、PROOF_AUDIT_DIR、RECAP_AUDIT_DIR、SCROLL_AUDIT_DIR、HISTORY_AUDIT_DIR 指定输出目录。
 

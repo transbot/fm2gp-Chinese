@@ -58,10 +58,10 @@ Microsoft Edge 156.0.4314.58 无头模式，使用生产构建的 Vite preview�
 
 | 语言与宽度 | 结合律证明：已展开的依据 | A.3：真值表与整数例 | 章节搜索 |
 |---|---|---|---|
-| 中文 1440 | [证明](reference/proof-zh-1440.png) | [真值表](reference/truth-zh-1440.png) | [归纳](reference/search-zh-1440.png) |
-| 英文 1440 | [Proof](reference/proof-en-1440.png) | [Truth table](reference/truth-en-1440.png) | [induction](reference/search-en-1440.png) |
-| 中文 390 | [证明](reference/proof-zh-390.png) | [真值表](reference/truth-zh-390.png) | [归纳](reference/search-zh-390.png) |
-| 英文 390 | [Proof](reference/proof-en-390.png) | [Truth table](reference/truth-en-390.png) | [induction](reference/search-en-390.png) |
+| 中文 1440 | [证明](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-proofs/reference/proof-zh-1440.png) | [真值表](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-proofs/reference/truth-zh-1440.png) | [归纳](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-proofs/reference/search-zh-1440.png) |
+| 英文 1440 | [Proof](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-proofs/reference/proof-en-1440.png) | [Truth table](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-proofs/reference/truth-en-1440.png) | [induction](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-proofs/reference/search-en-1440.png) |
+| 中文 390 | [证明](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-proofs/reference/proof-zh-390.png) | [真值表](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-proofs/reference/truth-zh-390.png) | [归纳](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-proofs/reference/search-zh-390.png) |
+| 英文 390 | [Proof](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-proofs/reference/proof-en-390.png) | [Truth table](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-proofs/reference/truth-en-390.png) | [induction](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase7-proofs/reference/search-en-390.png) |
 
 ## 首次失败与复测
 

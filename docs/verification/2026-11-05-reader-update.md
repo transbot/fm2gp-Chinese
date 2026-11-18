@@ -48,11 +48,11 @@ Used isolated headless Microsoft Edge via bundled Playwright against the product
 
 Screenshots:
 
-- [Chinese desktop, 1440px viewport](home-bottom-zh-1440.png)
-- [Chinese mobile, 390px viewport](home-bottom-zh-390.png)
-- [English desktop, 1440px viewport](home-bottom-en-1440.png)
-- [English mobile, 390px viewport](home-bottom-en-390.png)
-- [Hexagon geometry on mobile](pi-hexagon-mobile.png)
+- [Chinese desktop, 1440px viewport](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/home-bottom-zh-1440.png)
+- [Chinese mobile, 390px viewport](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/home-bottom-zh-390.png)
+- [English desktop, 1440px viewport](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/home-bottom-en-1440.png)
+- [English mobile, 390px viewport](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/home-bottom-en-390.png)
+- [Hexagon geometry on mobile](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/pi-hexagon-mobile.png)
 
 ## QR and PDF artifacts
 

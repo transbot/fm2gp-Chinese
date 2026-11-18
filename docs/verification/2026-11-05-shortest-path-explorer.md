@@ -31,7 +31,7 @@ Real browser checks exercised both presets, longer and shortest candidate highli
 
 Visual review identified and corrected curved-edge labels near vertices. A geometry check sampled each of the twelve rendered edge curves at 1001 positions: all remain inside the SVG and stay clear of unrelated vertex circles. Final screenshots were reviewed after those corrections; all edge weights remain readable while unused edge strokes are de-emphasized.
 
-- [Desktop route and comparison](shortest-explorer-zh-1440.png)
-- [Mobile route and comparison](shortest-explorer-zh-390.png)
+- [Desktop route and comparison](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/shortest-explorer-zh-1440.png)
+- [Mobile route and comparison](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/shortest-explorer-zh-390.png)
 
 This record covers local implementation and verification; it does not claim a GitHub push or live-site deployment.

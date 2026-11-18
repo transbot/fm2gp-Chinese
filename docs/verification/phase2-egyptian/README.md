@@ -41,8 +41,8 @@
 
 | 演示 | 中文桌面 | 中文手机 | English desktop | English mobile |
 | --- | --- | --- | --- | --- |
-| 埃及乘法 | [桌面](egyptian-zh-1440.png) | [手机](egyptian-zh-390.png) | [Desktop](egyptian-en-1440.png) | [Mobile](egyptian-en-390.png) |
-| 霍纳法则最终回归 | [桌面](horner-regression/horner-zh-1440.png) | [手机](horner-regression/horner-zh-390.png) | [Desktop](horner-regression/horner-en-1440.png) | [Mobile](horner-regression/horner-en-390.png) |
+| 埃及乘法 | [桌面](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-egyptian/egyptian-zh-1440.png) | [手机](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-egyptian/egyptian-zh-390.png) | [Desktop](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-egyptian/egyptian-en-1440.png) | [Mobile](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-egyptian/egyptian-en-390.png) |
+| 霍纳法则最终回归 | [桌面](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-egyptian/horner-regression/horner-zh-1440.png) | [手机](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-egyptian/horner-regression/horner-zh-390.png) | [Desktop](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-egyptian/horner-regression/horner-en-1440.png) | [Mobile](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase2-egyptian/horner-regression/horner-en-390.png) |
 
 ## 复现与边界
 

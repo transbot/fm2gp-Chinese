@@ -50,8 +50,8 @@ RED：旧代码下新增4组全部失败（其余31项通过），见[red.txt](r
 
 | 语言 | 1440桌面 | 390手机 |
 | --- | --- | --- |
-| 中文 | [修复前](before-right-return-zh-1440.png) / [修复后](after-right-return-zh-1440.png) | [修复前](before-right-return-zh-390.png) / [修复后](after-right-return-zh-390.png) |
-| 英文 | [修复前](before-right-return-en-1440.png) / [修复后](after-right-return-en-1440.png) | [修复前](before-right-return-en-390.png) / [修复后](after-right-return-en-390.png) |
+| 中文 | [修复前](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase4-return-fix/before-right-return-zh-1440.png) / [修复后](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase4-return-fix/after-right-return-zh-1440.png) | [修复前](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase4-return-fix/before-right-return-zh-390.png) / [修复后](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase4-return-fix/after-right-return-zh-390.png) |
+| 英文 | [修复前](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase4-return-fix/before-right-return-en-1440.png) / [修复后](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase4-return-fix/after-right-return-en-1440.png) | [修复前](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase4-return-fix/before-right-return-en-390.png) / [修复后](https://github.com/transbot/fm2gp-Chinese/blob/256e659104d1c078ffa9b029aeb648f0760ac8e8/docs/verification/phase4-return-fix/after-right-return-en-390.png) |
 
 修复后视口可同时看到父帧f=5,n=4、辅助函数名reverse_n_with_buffer、buffer_end=4、原序列返回9(end)及对应return代码高亮。
 
